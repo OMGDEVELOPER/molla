@@ -1,0 +1,153 @@
+{
+  "sections": {
+    "1566114146403": {
+      "type": "kt_slideshow",
+      "blocks": {
+        "1566114146403-0": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/slide-1_58d50586-14ba-488f-aec3-86f6702a7768.jpg",
+            "lazypreload": false,
+            "heading": "<p>SEASONAL PICKS<\/p>",
+            "font_heading": "poppins_n3",
+            "subheading": "<p>Get All<\/p>\n<p>The Good Stuff<\/p>\n<p><\/p>",
+            "font_subheading": "poppins_n3",
+            "description": "",
+            "font_description": "poppins_n3",
+            "text_alignment_top": 50,
+            "text_alignment_left": 0,
+            "text_alignment": "",
+            "text_alignment_mb": "",
+            "style_btn_1": "btn-outline-primary-2",
+            "style_btn_rounded_1": "",
+            "btn_shadow_1": false,
+            "link_1": "#",
+            "textBtn_1": "<span>DISCOVER MORE<\/span><i class=\"fkt-long-arrow-right\"><\/i>",
+            "style_btn_2": "btn-outline-primary-2",
+            "style_btn_rounded_2": "",
+            "btn_shadow_2": false,
+            "textBtn_2": "",
+            "turnoff": false,
+            "title": "Item image",
+            "width_section": true,
+            "css_block": ".block_id {}"
+          }
+        },
+        "1566118503884": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/slide-2_e97fab06-8bda-4e1b-93dd-10800ffac4c7.jpg",
+            "lazypreload": false,
+            "heading": "<p>all at 50% off<\/p>",
+            "font_heading": "poppins_n3",
+            "subheading": "<p>The Most Beautiful<\/p>\n<p>Novelties In Our Shop<\/p>\n<p><\/p>",
+            "font_subheading": "poppins_n3",
+            "description": "",
+            "font_description": "poppins_n3",
+            "text_alignment_top": 50,
+            "text_alignment_left": 0,
+            "text_alignment": "center",
+            "text_alignment_mb": "center",
+            "style_btn_1": "btn-outline-primary-2",
+            "style_btn_rounded_1": "",
+            "btn_shadow_1": false,
+            "link_1": "#",
+            "textBtn_1": "<span>SHOP NOW<\/span><i class=\"fkt-long-arrow-right\"><\/i>",
+            "style_btn_2": "btn-outline-primary-2",
+            "style_btn_rounded_2": "",
+            "btn_shadow_2": false,
+            "textBtn_2": "",
+            "turnoff": false,
+            "title": "Item image",
+            "width_section": true,
+            "css_block": ".block_id .slideshow__subtitle{\n  color: #fff;\n}"
+          }
+        }
+      },
+      "block_order": [
+        "1566114146403-0",
+        "1566118503884"
+      ],
+      "settings": {
+        "title": "Slideshow",
+        "off_mobile": false,
+        "off_desktop": false,
+        "width_section": "w-100",
+        "width_content": false,
+        "section_margin_top": "",
+        "section_margin_bottom": "",
+        "section_padding": "",
+        "section_bg": "",
+        "section_bg_op": 1,
+        "no_overflow": false,
+        "fullscreen": false,
+        "autoplay": false,
+        "use_navigation": true,
+        "nav_style": "-default",
+        "nav_mode": "default",
+        "nav_position": "nav-default",
+        "use_dots": false,
+        "dots_mode": "default",
+        "use_scrollbar": false,
+        "h_reponsive": "350",
+        "h_reponsive_768": "",
+        "h_reponsive_992": "560",
+        "h_reponsive_1200": "",
+        "autoplay_speed": 7,
+        "responsive": "{\n  \"0\": {\n    \"slidesPerView\": 1,\n    \"spaceBetween\": 10\n  },\n  \"320\": {\n    \"slidesPerView\": 1,\n    \"spaceBetween\": 10\n  },\n  \"768\": {\n    \"slidesPerView\": 1,\n    \"spaceBetween\": 10\n  },\n  \"992\": {\n    \"slidesPerView\": 1,\n    \"spaceBetween\": 10\n  },\n  \"1200\": {\n    \"slidesPerView\": 1,\n    \"spaceBetween\": 10\n  }\n}",
+        "content_type": "type-1",
+        "css_section": ".section_id .slideshow__title{\n  color: var(--primary);\n  display: inline-block;\n  margin-bottom: 0;\n  font-size: 1.2rem;\n}\n.section_id .slideshow__subtitle{\n  color: #333333;\n  letter-spacing: -.025em;\n  line-height: 1.2;\n  margin-bottom: 1.2rem;\n  font-size: 3rem;\n}\n.section_id .slideshow__description{\n  color: #fff;\n  display: inline-block;\n  margin-bottom: 0;\n  clear: both;\n  font-size: 1.4rem;\n  line-height: 2.4rem;\n}\n@media (min-width: 576px){\n  .section_id .slideshow__subtitle{\n    font-size: 3.6rem;\n    margin-bottom: 1.3rem;\n  }\n}\n@media (min-width: 768px){\n  .section_id .slideshow__title{\n    font-size: 1.4rem;\n    margin-bottom: 1.2rem;\n  }\n  .section_id .slideshow__subtitle{\n    font-size: 4.2rem;\n    margin-bottom: 1.7rem;\n  }\n  .section_id .slideshow__description{\n    line-height: 3.6rem;\n    font-size: 2.4rem;\n    letter-spacing: 0.05em;\n  }\n}\n@media (min-width: 992px){\n  .section_id .slideshow__title{\n    font-size: 1.6rem;\n    margin-bottom: 1.5rem;\n  }\n  .section_id .slideshow__subtitle{\n    font-size: 4.6rem;\n  }\n}\n@media (min-width: 1200px){\n  .section_id .slideshow__subtitle{\n    font-size: 5rem;\n  }\n}"
+      }
+    },
+    "1566966423764": {
+      "type": "md_product_section_tab_load_2",
+      "blocks": {
+        "1566966435264": {
+          "type": "item",
+          "settings": {
+            "title": "Featured",
+            "stitle": "",
+            "margin_btitle": 3,
+            "products_1": "all-h11-1",
+            "products_2": "furniture-h1-1",
+            "products_3": "decoration-h2-2",
+            "products_4": "lighting-h1-1",
+            "products_5": "",
+            "products_6": "",
+            "t_tranform": "text-capitalize",
+            "fsize_name_tab": 1.6,
+            "load_btn": true,
+            "style_btn": "btn-outline-darker",
+            "style_btn_rounded": "",
+            "btn_shadow": false,
+            "limit_per_row": 4,
+            "limit": 12,
+            "range_row": 2
+          }
+        }
+      },
+      "block_order": [
+        "1566966435264"
+      ],
+      "settings": {
+        "off_mobile": false,
+        "off_desktop": false,
+        "title": "Products Tab",
+        "width_section": "container",
+        "width_content": false,
+        "section_margin_top": "5rem",
+        "section_margin_bottom": "5rem",
+        "section_padding": "",
+        "section_bg": "",
+        "section_bg_op": 1,
+        "use_lazyload": true,
+        "product_grid_layout": "",
+        "use_nospace": false
+      }
+    }
+  },
+  "order": [
+    "1566114146403",
+    "1566966423764"
+  ]
+}

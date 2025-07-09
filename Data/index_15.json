@@ -1,0 +1,358 @@
+{
+  "sections": {
+    "1566781334514": {
+      "type": "kt_slideshow",
+      "blocks": {
+        "1566781334514-0": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/slide-1_aeb6e207-945b-4df2-919e-8b2b86ca053b.jpg",
+            "lazypreload": false,
+            "heading": "Want to know what's hot?",
+            "font_heading": "poppins_n4",
+            "subheading": "Spring Lookbook 2019",
+            "font_subheading": "poppins_n6",
+            "description": "",
+            "font_description": "poppins_n4",
+            "text_alignment_top": 50,
+            "text_alignment_left": 50,
+            "text_alignment": "center",
+            "text_alignment_top_mb": 16,
+            "text_alignment_left_mb": 16,
+            "text_alignment_mb": "center",
+            "style_btn_1": "btn-outline-primary-2",
+            "style_btn_rounded_1": "",
+            "btn_shadow_1": false,
+            "link_1": "#shopify-section-1567493918230",
+            "textBtn_1": "START SCROLLING  <i class=\"fkt-long-arrow-down\"><\/i>",
+            "style_btn_2": "btn-outline-primary-2",
+            "style_btn_rounded_2": "",
+            "btn_shadow_2": false,
+            "textBtn_2": "",
+            "turnoff": false,
+            "title": "Item image",
+            "width_section": true,
+            "css_block": ""
+          }
+        }
+      },
+      "block_order": [
+        "1566781334514-0"
+      ],
+      "settings": {
+        "title": "Slideshow",
+        "off_mobile": false,
+        "off_desktop": false,
+        "width_section": "w-100",
+        "width_content": false,
+        "section_margin_top": "",
+        "section_margin_bottom": "",
+        "section_padding": "",
+        "section_bg": "",
+        "section_bg_op": 1,
+        "no_overflow": false,
+        "fullscreen": true,
+        "autoplay": false,
+        "use_navigation": true,
+        "nav_style": "-default",
+        "nav_mode": "default",
+        "nav_position": "nav-default",
+        "use_dots": false,
+        "dots_mode": "default",
+        "use_scrollbar": false,
+        "h_reponsive": "",
+        "h_reponsive_768": "",
+        "h_reponsive_992": "",
+        "h_reponsive_1200": "",
+        "h_reponsive_1400": "",
+        "autoplay_speed": 7,
+        "responsive": "{\n  \"0\": {\n    \"slidesPerView\": 1,\n    \"spaceBetween\": 10\n  },\n  \"320\": {\n    \"slidesPerView\": 1,\n    \"spaceBetween\": 10\n  },\n  \"768\": {\n    \"slidesPerView\": 1,\n    \"spaceBetween\": 10\n  },\n  \"992\": {\n    \"slidesPerView\": 1,\n    \"spaceBetween\": 10\n  },\n  \"1200\": {\n    \"slidesPerView\": 1,\n    \"spaceBetween\": 10\n  }\n}",
+        "content_type": "type-1",
+        "css_section": ".section_id .btn-outline-primary-2,\n.section_id .btn-outline-primary-2 i {\n  color: #fff;\n}\n.section_id .slideshow__title{\n  color: #fff;\n  font-weight: 300;\n  font-size: 1.4rem;\n  letter-spacing: -.025em;\n  margin-bottom: 1rem;\n}\n.section_id .slideshow__subtitle{\n  color: #fff;\n  font-size: 3rem;\n  line-height: 1.2;\n  letter-spacing: 0;\n  margin-bottom: 1.8rem;\n}\n@media (max-width: 767px){\n  .section_id .btn {\n    padding: .65rem 1rem;\n  }\n}\n@media (min-width: 576px){\n  .section_id .slideshow__title{\n    font-size: 1.6rem;\n  }\n  .section_id .slideshow__subtitle{\n    font-size: 3.6rem;\n  }\n}\n@media (min-width: 768px){\n  .section_id .slideshow__subtitle{\n    font-size: 4.2rem;\n  }\n}\n@media (min-width: 1200px){\n  .section_id .btn {\n    min-width: 19rem;\n    padding-top: 1.15rem;\n    padding-bottom: 1.15rem;\n  }\n  .section_id .slideshow__subtitle{\n    font-size: 5rem;\n  }\n}"
+      }
+    },
+    "1567493918230": {
+      "type": "md_banner_products_set_2",
+      "blocks": {
+        "1567493925090": {
+          "type": "1",
+          "settings": {
+            "dark_mode": true,
+            "title": "About This Look",
+            "desc": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Donec odio. Quisque volutpat mattis eros. Nullam malesuada erat ut turpis.",
+            "product_1": "suede-moto-jacket",
+            "product_2": "henry-leather-backpack",
+            "product_3": "",
+            "banner_left": false,
+            "image_banner": "shopify:\/\/shop_images\/banner-1_62ba4062-2fa1-48ce-be8e-9d103303beba.jpg",
+            "image_link": "shopify:\/\/products\/suede-moto-jacket",
+            "title_banner": "01. Get your <br>inspiration <br>in the street.",
+            "stitle_banner": "IN THIS LOOK",
+            "name_btn": "<span>BUY ALL<\/span><i class=\"fkt-long-arrow-right\"><\/i>"
+          }
+        }
+      },
+      "block_order": [
+        "1567493925090"
+      ],
+      "settings": {
+        "off_mobile": false,
+        "off_desktop": false,
+        "title": "Banner product set 2",
+        "width_section": "container-fluid wide",
+        "width_content": false,
+        "section_margin_top": "10rem",
+        "section_margin_bottom": "",
+        "section_padding": "",
+        "section_bg": "",
+        "section_bg_op": 1,
+        "product_grid_layout": ""
+      }
+    },
+    "1567499740862": {
+      "type": "md_banner_products_set_2",
+      "blocks": {
+        "1567499774494": {
+          "type": "1",
+          "settings": {
+            "dark_mode": false,
+            "title": "About This Look",
+            "desc": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Donec odio. Quisque volutpat mattis eros. Nullam malesuada erat ut turpis.",
+            "product_1": "light-grey-linen-shirt-dress",
+            "product_2": "gold-colour-textured-doorknocker-earrings",
+            "product_3": "gold-colour-textured-doorknocker",
+            "banner_left": true,
+            "image_banner": "shopify:\/\/shop_images\/banner-2_ceba5b98-9e68-4948-be1e-dfc78affb7a6.jpg",
+            "image_link": "shopify:\/\/products\/light-grey-linen-shirt-dress",
+            "title_banner": "02. Dresses for <br>every spring day.",
+            "stitle_banner": "IN THIS LOOK",
+            "name_btn": "<span>BUY ALL<\/span><i class=\"fkt-long-arrow-right\"><\/i>"
+          }
+        }
+      },
+      "block_order": [
+        "1567499774494"
+      ],
+      "settings": {
+        "off_mobile": false,
+        "off_desktop": false,
+        "title": "Banner product set 2",
+        "width_section": "container-fluid wide",
+        "width_content": false,
+        "section_margin_top": "10rem",
+        "section_margin_bottom": "",
+        "section_padding": "10rem 0",
+        "section_bg": "#fafafa",
+        "section_bg_op": 1,
+        "product_grid_layout": ""
+      }
+    },
+    "1567500267254": {
+      "type": "md_video_banner_1",
+      "settings": {
+        "off_mobile": false,
+        "off_desktop": false,
+        "title": "Video banner 1",
+        "width_content": true,
+        "section_margin_top": "",
+        "section_margin_bottom": "",
+        "section_padding": "15rem 0|20rem 0|25rem 0|30rem 0|30rem 0",
+        "section_bg": "",
+        "section_bg_op": 1,
+        "image": "shopify:\/\/shop_images\/bg-1_c49d226e-01e7-4365-a829-31ad120b0c9a.jpg",
+        "titlex": "Spring \/ Summer",
+        "stitle": "The New Romantic Collection 2019",
+        "video_url": "https:\/\/www.youtube.com\/watch?v=YbJOTdZBX1g",
+        "btn_style": "bold"
+      }
+    },
+    "1567500446721": {
+      "type": "md_banner_products_set_2",
+      "blocks": {
+        "1567500453215": {
+          "type": "1",
+          "settings": {
+            "dark_mode": true,
+            "title": "About This Look",
+            "desc": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Donec odio. Quisque volutpat mattis eros. Nullam malesuada erat ut turpis.",
+            "product_1": "botanical-print-crepe-dress",
+            "product_2": "cunningham-leather-sandal",
+            "product_3": "cece-medium-leather-shoulder-bag",
+            "banner_left": false,
+            "image_banner": "shopify:\/\/shop_images\/banner-3_be5eb434-9a4d-483c-9bfc-05c8e04de944.jpg",
+            "image_link": "shopify:\/\/products\/botanical-print-crepe-dress",
+            "title_banner": "03. Beautiful <br>dresses perfect <br>for any occasion.",
+            "stitle_banner": "IN THIS LOOK",
+            "name_btn": "<span>BUY ALL<\/span><i class=\"fkt-long-arrow-right\"><\/i>"
+          }
+        }
+      },
+      "block_order": [
+        "1567500453215"
+      ],
+      "settings": {
+        "off_mobile": false,
+        "off_desktop": false,
+        "title": "Banner product set 2",
+        "width_section": "container-fluid wide",
+        "width_content": false,
+        "section_margin_top": "",
+        "section_margin_bottom": "",
+        "section_padding": "10rem 0",
+        "section_bg": "#fafafa",
+        "section_bg_op": 1,
+        "product_grid_layout": ""
+      }
+    },
+    "1567500933234": {
+      "type": "md_banner_products_set_2",
+      "blocks": {
+        "1567500939556": {
+          "type": "1",
+          "settings": {
+            "dark_mode": false,
+            "title": "About This Look",
+            "desc": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Donec odio. Quisque volutpat mattis eros. Nullam malesuada erat ut turpis.",
+            "product_1": "black-zebra-print-leather-heel-mules",
+            "product_2": "black-mini-boxy-cross-body-bag",
+            "product_3": "",
+            "banner_left": true,
+            "image_banner": "shopify:\/\/shop_images\/banner-4_63d8ea51-ba7a-442b-8090-4c7aae12d478.jpg",
+            "image_link": "shopify:\/\/products\/black-zebra-print-leather-heel-mules",
+            "title_banner": "04. Complete your <br>look with the latest <br>accessories.",
+            "stitle_banner": "IN THIS LOOK",
+            "name_btn": "<span>BUY ALL<\/span><i class=\"fkt-long-arrow-right\"><\/i>"
+          }
+        }
+      },
+      "block_order": [
+        "1567500939556"
+      ],
+      "settings": {
+        "off_mobile": false,
+        "off_desktop": false,
+        "title": "Banner product set 2",
+        "width_section": "container-fluid wide",
+        "width_content": false,
+        "section_margin_top": "10rem",
+        "section_margin_bottom": "",
+        "section_padding": "",
+        "section_bg": "",
+        "section_bg_op": 1,
+        "product_grid_layout": ""
+      }
+    },
+    "1567501287537": {
+      "type": "md_blog",
+      "blocks": {
+        "1567501320238": {
+          "type": "3",
+          "settings": {
+            "title_section": "From Our Blog",
+            "stitle_section": "Donec odio. Quisque volutpat mattis eros.<br> Nullam malesuada erat",
+            "reverse": false,
+            "title_align": "text-center",
+            "margin_btitle": 4,
+            "blog": "fashion-4",
+            "limit": 8,
+            "nav_style": "1",
+            "nav_position": "nav-default",
+            "autoplay": false,
+            "use_dots": false,
+            "responsive": "{\n  \"0\": {\n    \"slidesPerView\": 1,\n    \"spaceBetween\": 20\n  },\n  \"320\": {\n    \"slidesPerView\": 1,\n    \"spaceBetween\": 20\n  },\n  \"768\": {\n    \"slidesPerView\": 2,\n    \"spaceBetween\": 20\n  },\n  \"992\": {\n    \"slidesPerView\": 3,\n    \"spaceBetween\": 20\n  },\n  \"1200\": {\n    \"slidesPerView\": 4,\n    \"spaceBetween\": 20\n  }\n}",
+            "load_btn": false,
+            "style_btn": "btn-outline-darker",
+            "style_btn_rounded": "",
+            "btn_shadow": false
+          }
+        }
+      },
+      "block_order": [
+        "1567501320238"
+      ],
+      "settings": {
+        "title": "Related post",
+        "off_mobile": false,
+        "off_desktop": false,
+        "width_section": "container-fluid wide",
+        "width_content": false,
+        "section_margin_top": "4rem",
+        "section_margin_bottom": "6rem",
+        "section_padding": "",
+        "section_bg": "",
+        "section_bg_op": 1,
+        "fweight_title": "600",
+        "fsize_stitle": 1.8,
+        "color_title": "#333333",
+        "margin_btitle": 0.8,
+        "fweight_description": "300",
+        "fsize_description": 1.4,
+        "color_desc": "#999999",
+        "margin_bdescription": 0.8,
+        "use_lazyload": false
+      }
+    },
+    "1567503204904": {
+      "type": "md_socials_and_customers_say",
+      "blocks": {
+        "1567503204904-0": {
+          "type": "socials",
+          "settings": {
+            "title_socials": "Shop Social",
+            "stitle_socials": "Donec nec justo eget felis facilisis fermentum. Aliquam porttitor mauris sit amet orci."
+          }
+        },
+        "1567503204904-1": {
+          "type": "customers_say",
+          "settings": {
+            "title_customers": "Our Costumers Say",
+            "name_1": "Charly Smith",
+            "info_1": "Customer",
+            "content_1": "Donec nec justo eget felis facilisis fermentum. Aliquam porttitor mauris sit amet orci. Aenean dignissim pellentesque felis.",
+            "name_2": "Damon Stone",
+            "info_2": "Customer",
+            "content_2": "Impedit, ratione sequi, sunt incidunt magnam et. Delectus obcaecati optio eius error libero perferendis nesciunt atque.",
+            "name_3": "John Smith",
+            "info_3": "Customer",
+            "content_3": "Perferendis perspiciatis, voluptate, distinctio earum veritatis animi tempora eget blandit nunc tortor eu nibh.",
+            "name_4": "",
+            "info_4": "",
+            "content_4": "",
+            "name_5": "",
+            "info_5": "",
+            "content_5": ""
+          }
+        }
+      },
+      "block_order": [
+        "1567503204904-0",
+        "1567503204904-1"
+      ],
+      "settings": {
+        "title": "Call to Action",
+        "off_mobile": false,
+        "off_desktop": false,
+        "width_section": "container-fluid wide",
+        "width_content": false,
+        "section_margin_top": "6rem",
+        "section_margin_bottom": "",
+        "section_padding": "6rem 0 3rem",
+        "section_bg": "",
+        "section_bg_op": 1,
+        "color_title": "#333333",
+        "color_desc": "#cccccc",
+        "preview": false
+      }
+    }
+  },
+  "order": [
+    "1566781334514",
+    "1567493918230",
+    "1567499740862",
+    "1567500267254",
+    "1567500446721",
+    "1567500933234",
+    "1567503204904",
+    "1567501287537"
+  ]
+}

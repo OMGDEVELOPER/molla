@@ -1,0 +1,445 @@
+{
+  "sections": {
+    "1562059653538": {
+      "type": "md_icon_boxes",
+      "blocks": {
+        "1562830641477": {
+          "type": "item_icon_side",
+          "settings": {
+            "icon_font": "fkt-truck",
+            "title": "PAYMENT & DELIVERY",
+            "content": "Free shipping for orders over $50"
+          }
+        },
+        "1562830647171": {
+          "type": "item_icon_side",
+          "settings": {
+            "icon_font": "",
+            "title": "RETURN & REFUND",
+            "content": "Free 100% money back guarantee"
+          }
+        },
+        "1562830659398": {
+          "type": "item_icon_side",
+          "settings": {
+            "icon_font": "fkt-headphones",
+            "title": "QUALITY SUPPORT",
+            "content": "Alway online feedback 24\/7"
+          }
+        }
+      },
+      "block_order": [
+        "1562830641477",
+        "1562830647171",
+        "1562830659398"
+      ],
+      "settings": {
+        "title": "Icon Boxes",
+        "off_mobile": false,
+        "off_desktop": false,
+        "width_section": "w-100",
+        "width_content": true,
+        "section_margin_top": "",
+        "section_margin_bottom": "",
+        "section_padding": "2rem 0 2.5rem",
+        "section_bg": "#ffffff",
+        "section_bg_op": 1,
+        "color_icon": "#333333",
+        "color_title": "#333333",
+        "color_desc": "#999999",
+        "title_font_weight": "400",
+        "use_slide": false,
+        "responsive": "{\n  \"0\": {\n    \"slidesPerView\": 1,\n    \"spaceBetween\": 20\n  },\n  \"320\": {\n    \"slidesPerView\": 1,\n    \"spaceBetween\": 20\n  },\n  \"476\": {\n    \"slidesPerView\": 2,\n    \"spaceBetween\": 20\n  },\n  \"768\": {\n    \"slidesPerView\": 2,\n    \"spaceBetween\": 20\n  },\n  \"992\": {\n    \"slidesPerView\": 3,\n    \"spaceBetween\": 20\n  },\n  \"1200\": {\n    \"slidesPerView\": 4,\n    \"spaceBetween\": 20\n  }\n}"
+      }
+    },
+    "1562580013929": {
+      "type": "md_product_section_tab_slide",
+      "blocks": {
+        "1562580052237": {
+          "type": "item",
+          "settings": {
+            "title": "FEATURED PRODUCTS",
+            "stitle": "",
+            "title_align": "text-center",
+            "margin_btitle": 1,
+            "products_1": "womens-clothing-h7-1",
+            "products_2": "mens-clothing-h7-1",
+            "products_3": "",
+            "products_4": "",
+            "products_5": "",
+            "products_6": "",
+            "limit": 8,
+            "load_btn": false,
+            "style_btn": "btn-outline-darker",
+            "style_btn_rounded": "",
+            "btn_shadow": false,
+            "autoplay": false,
+            "use_navigation": true,
+            "nav_style": "1",
+            "nav_mode": "default",
+            "nav_position": "nav-default",
+            "use_dots": true,
+            "dots_mode": "primary",
+            "dots_position": "outside",
+            "responsive": "{\n  \"0\": {\n    \"slidesPerView\": 1,\n    \"spaceBetween\": 20\n  },\n  \"375\": {\n    \"slidesPerView\": 2,\n    \"spaceBetween\": 20\n  },\n  \"768\": {\n    \"slidesPerView\": 3,\n    \"spaceBetween\": 20\n  },\n  \"992\": {\n    \"slidesPerView\": 3,\n    \"spaceBetween\": 20\n  },\n  \"1200\": {\n    \"slidesPerView\": 5,\n    \"spaceBetween\": 20\n  }\n}"
+          }
+        }
+      },
+      "block_order": [
+        "1562580052237"
+      ],
+      "settings": {
+        "off_mobile": false,
+        "off_desktop": false,
+        "title": "Products Tab(slide)",
+        "width_section": "container-fluid wide",
+        "width_content": false,
+        "section_margin_top": "",
+        "section_margin_bottom": "6rem",
+        "section_padding": "6rem 0",
+        "section_bg": "#f9f9f9",
+        "section_bg_op": 1,
+        "use_lazyload": true,
+        "product_grid_layout": ""
+      }
+    },
+    "1562596427369": {
+      "type": "md_product_section_tab_load",
+      "blocks": {
+        "1562596438992": {
+          "type": "item",
+          "settings": {
+            "title": "NEW ARRIVALS",
+            "stitle": "",
+            "title_align": "text-center",
+            "t_tranform": "text-uppercase",
+            "fsize_name_tab": 1.4,
+            "margin_btitles": 1.5,
+            "margin_btitle": 3,
+            "products_1": "womens-clothing-h7-2",
+            "products_2": "mens-clothing-h7-2",
+            "products_3": "",
+            "products_4": "",
+            "products_5": "",
+            "products_6": "",
+            "limit_per_row": 5,
+            "limit": 10,
+            "range_row": 2,
+            "load_btn": true,
+            "name_btn": "<span>View more<\/span><i class=\"fkt-long-arrow-right\" aria-hidden=\"true\"><\/i>",
+            "style_btn": "btn-outline-dark",
+            "style_btn_rounded": "",
+            "btn_shadow": false
+          }
+        }
+      },
+      "block_order": [
+        "1562596438992"
+      ],
+      "settings": {
+        "off_mobile": false,
+        "off_desktop": false,
+        "title": "Products Tab",
+        "width_section": "container-fluid wide",
+        "width_content": false,
+        "section_margin_top": "6rem",
+        "section_margin_bottom": "7rem",
+        "section_padding": "",
+        "section_bg": "",
+        "section_bg_op": 1,
+        "use_lazyload": true,
+        "product_grid_layout": "",
+        "use_nospace": false
+      }
+    },
+    "1562745074407": {
+      "type": "md_blog",
+      "blocks": {
+        "1562749569766": {
+          "type": "2",
+          "settings": {
+            "title_section": "FROM OUR BLOG",
+            "stitle_section": "",
+            "reverse": false,
+            "title_align": "text-center",
+            "margin_btitle": 3,
+            "blog": "fashion-2",
+            "limit": 8,
+            "nav_style": "1",
+            "nav_position": "nav-default",
+            "autoplay": false,
+            "use_dots": true,
+            "dots_mode": "default",
+            "dots_position": "inside",
+            "responsive": "{\n  \"0\": {\n    \"slidesPerView\": 1,\n    \"spaceBetween\": 0\n  },\n  \"320\": {\n    \"slidesPerView\": 1,\n    \"spaceBetween\": 10\n  },\n  \"768\": {\n    \"slidesPerView\": 2,\n    \"spaceBetween\": 20\n  },\n  \"992\": {\n    \"slidesPerView\": 3,\n    \"spaceBetween\": 20\n  },\n  \"1200\": {\n    \"slidesPerView\": 4,\n    \"spaceBetween\": 20\n  }\n}"
+          }
+        }
+      },
+      "block_order": [
+        "1562749569766"
+      ],
+      "settings": {
+        "title": "Related post",
+        "off_mobile": false,
+        "off_desktop": false,
+        "width_section": "container-fluid wide",
+        "width_content": true,
+        "section_margin_top": "6rem",
+        "section_margin_bottom": "3rem",
+        "section_padding": "",
+        "section_bg": "",
+        "section_bg_op": 1,
+        "fweight_title": "600",
+        "fsize_stitle": 1.8,
+        "color_title": "#333333",
+        "margin_btitle": 0.8,
+        "fweight_description": "300",
+        "fsize_description": 1.4,
+        "color_desc": "#999999",
+        "margin_bdescription": 0.8,
+        "use_lazyload": false
+      }
+    },
+    "1562826347275": {
+      "type": "md_banner_template_2",
+      "blocks": {
+        "1562826361277": {
+          "type": "1",
+          "settings": {
+            "turnoff": false,
+            "title": "Banner type 1",
+            "banner-effect": "banner-effect1",
+            "content_type": "type_1",
+            "image_1": "shopify:\/\/shop_images\/banner-1_64e915e9-dfc8-4c80-8563-af95f42dc407.jpg",
+            "stitle_1": "New Collection",
+            "titlex_1": "SHOP WOMEN'S",
+            "name_btn_1": "Discover Now",
+            "style_btn_1": "btn-underline",
+            "style_btn_rounded_1": "",
+            "btn_shadow_1": false,
+            "image_2": "shopify:\/\/shop_images\/banner-2_db1dfd98-8da4-459b-894b-3d2b8cab647b.jpg",
+            "stitle_2": "New Collection",
+            "titlex_2": "SHOP MEN'S",
+            "name_btn_2": "Discover Now",
+            "style_btn_2": "btn-underline",
+            "style_btn_rounded_2": "",
+            "btn_shadow_2": false
+          }
+        },
+        "1562829192132": {
+          "type": "2",
+          "settings": {
+            "turnoff": false,
+            "title": "Banner type 2",
+            "banner-effect": "banner-effect1",
+            "content_type": "type_1",
+            "image_1": "shopify:\/\/shop_images\/banner-3_08e8bb9c-e961-492b-9164-fb08419037ad.jpg",
+            "stitle_1": "Flip Flop",
+            "titlex_1": "<strong>Summer<\/strong> <br>sale -70% off",
+            "name_btn_1": "Shop Now",
+            "style_btn_1": "btn-underline",
+            "style_btn_rounded_1": "",
+            "btn_shadow_1": false,
+            "image_2": "shopify:\/\/shop_images\/banner-4_b45cf305-2ffe-4d51-9bff-4723cd551229.jpg",
+            "stitle_2": "Accessories",
+            "titlex_2": "<strong>2019 Winter<\/strong> <br>up to 50% off",
+            "name_btn_2": "Shop Now",
+            "style_btn_2": "btn-underline btn-underline-dark",
+            "style_btn_rounded_2": "",
+            "btn_shadow_2": false,
+            "image_3": "shopify:\/\/shop_images\/banner-5_c752ee88-6e56-44b3-8af9-26a2ae12836f.jpg",
+            "stitle_3": "New in",
+            "titlex_3": "<strong>Women’s <\/strong> <br>sportswear",
+            "name_btn_3": "Shop Now",
+            "style_btn_3": "btn-underline",
+            "style_btn_rounded_3": "",
+            "btn_shadow_3": false
+          }
+        }
+      },
+      "block_order": [
+        "1562826361277",
+        "1562829192132"
+      ],
+      "settings": {
+        "title": "Banner template 2",
+        "off_mobile": false,
+        "off_desktop": false,
+        "width_section": "container-fluid wide",
+        "width_content": false,
+        "section_margin_top": "",
+        "section_margin_bottom": "",
+        "section_padding": "",
+        "section_bg": "",
+        "section_bg_op": 1,
+        "preview": false
+      }
+    },
+    "1562227619804": {
+      "type": "md_brand",
+      "blocks": {
+        "1562227637354": {
+          "type": "item",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/logo-1.png"
+          }
+        },
+        "1562227667176": {
+          "type": "item",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/logo-4.png"
+          }
+        },
+        "1562227678904": {
+          "type": "item",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/logo-2.png"
+          }
+        },
+        "1562227689840": {
+          "type": "item",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/logo-3.png"
+          }
+        },
+        "1562227699832": {
+          "type": "item",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/logo-5.png"
+          }
+        },
+        "1562227712014": {
+          "type": "item",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/logo-8.png"
+          }
+        },
+        "1562227713752": {
+          "type": "item",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/logo98.png"
+          }
+        },
+        "1562227727241": {
+          "type": "item",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/logo-6.png"
+          }
+        }
+      },
+      "block_order": [
+        "1562227637354",
+        "1562227667176",
+        "1562227678904",
+        "1562227689840",
+        "1562227699832",
+        "1562227712014",
+        "1562227713752",
+        "1562227727241"
+      ],
+      "settings": {
+        "title": "Brand",
+        "off_section": false,
+        "off_mobile": false,
+        "off_desktop": false,
+        "width_section": "w-100",
+        "width_content": false,
+        "section_margin_top": "",
+        "section_margin_bottom": "",
+        "section_padding": "",
+        "section_bg": "#333333",
+        "section_bg_op": 1,
+        "brand_style": "default",
+        "autoplay": false,
+        "use_navigation": true,
+        "nav_style": "-default",
+        "nav_mode": "default",
+        "nav_position": "nav-default",
+        "use_dots": false,
+        "dots_mode": "default",
+        "dots_position": "inside",
+        "responsive": "{\n  \"0\": {\n    \"slidesPerView\": 1,\n    \"spaceBetween\": 0\n  },\n  \"320\": {\n    \"slidesPerView\": 2,\n    \"spaceBetween\": 0\n  },\n  \"768\": {\n    \"slidesPerView\": 4,\n    \"spaceBetween\": 0\n  },\n  \"992\": {\n    \"slidesPerView\": 6,\n    \"spaceBetween\": 0\n  },\n  \"1200\": {\n    \"slidesPerView\": 7,\n    \"spaceBetween\": 0\n  }\n}"
+      }
+    },
+    "1563248837632": {
+      "type": "md_testimonials",
+      "blocks": {
+        "1563248849415": {
+          "type": "item_title",
+          "settings": {
+            "title_section": "OUR CUSTOMERS SAY",
+            "stitle_section": "",
+            "reverse": false,
+            "title_align": "text-center",
+            "name_link": "",
+            "style_link": ""
+          }
+        },
+        "1563250647305": {
+          "type": "item_2",
+          "settings": {
+            "name": "Jenson Gregory",
+            "info": "Customer",
+            "title": "Really great store",
+            "content": "Molestias animi illo natus ut quod neque ad accusamus praesentium fuga! Dolores odio alias sapiente odit delectus quasi, explicabo a, modi voluptatibus. Perferendis perspiciatis, voluptate, distinctio earum veritatis animi tempora eget blandit nunc tortor mollis"
+          }
+        },
+        "1563252056400": {
+          "type": "item_2",
+          "settings": {
+            "name": "Damon Stone",
+            "info": "Customer",
+            "title": "Friendly Support",
+            "content": "Impedit, ratione sequi, sunt incidunt magnam et. Delectus obcaecati optio eius error libero perferendis nesciunt atque dolores magni recusandae! Doloremque quidem error eum quis similique doloribus natus qui ut ipsum."
+          }
+        },
+        "1563252668826": {
+          "type": "item_2",
+          "settings": {
+            "name": "John Smith",
+            "info": "Customer",
+            "title": "Free Shipping",
+            "content": "Donec nec justo eget felis facilisis fermentum. Aliquam porttitor mauris sit amet orci. Aenean dignissim pellentesque felis. Morbi in sem quis dui placerat ornare. Pellentesque odio nisi, euismod in, pharetra a, ultricies in, diam. Sed arcu."
+          }
+        }
+      },
+      "block_order": [
+        "1563248849415",
+        "1563250647305",
+        "1563252056400",
+        "1563252668826"
+      ],
+      "settings": {
+        "title": "Testimonials",
+        "off_mobile": false,
+        "off_desktop": false,
+        "width_section": "w-100",
+        "width_content": true,
+        "section_margin_top": "",
+        "section_margin_bottom": "",
+        "section_padding": "6rem 0",
+        "section_bg": "#f9f9f9",
+        "section_bg_op": 1,
+        "autoplay": false,
+        "use_navigation": true,
+        "nav_style": "1",
+        "nav_mode": "default",
+        "nav_position": "nav-default",
+        "use_dots": true,
+        "dots_mode": "default",
+        "dots_position": "inside",
+        "responsive": "{\n  \"0\": {\n    \"slidesPerView\": 1,\n    \"spaceBetween\": 0\n  },\n  \"320\": {\n    \"slidesPerView\": 1,\n    \"spaceBetween\": 10\n  },\n  \"768\": {\n    \"slidesPerView\": 1,\n    \"spaceBetween\": 20\n  },\n  \"992\": {\n    \"slidesPerView\": 1,\n    \"spaceBetween\": 20\n  },\n  \"1200\": {\n    \"slidesPerView\": 1,\n    \"spaceBetween\": 20\n  }\n}",
+        "color_text": ""
+      }
+    }
+  },
+  "order": [
+    "1562826347275",
+    "1562059653538",
+    "1562580013929",
+    "1562596427369",
+    "1562745074407",
+    "1563248837632",
+    "1562227619804"
+  ]
+}

@@ -1,0 +1,753 @@
+{
+  "sections": {
+    "1562059653538": {
+      "type": "md_icon_boxes",
+      "blocks": {
+        "1562060264177": {
+          "type": "item_icon_side",
+          "settings": {
+            "icon_font": "fkt-rocket",
+            "title": "Free Shipping",
+            "content": "Orders $50 or more",
+            "url": ""
+          }
+        },
+        "1562060266449": {
+          "type": "item_icon_side",
+          "settings": {
+            "icon_font": "",
+            "title": "Free Return",
+            "content": "Within 30 days",
+            "url": ""
+          }
+        },
+        "1562060267673": {
+          "type": "item_icon_side",
+          "settings": {
+            "icon_font": "fkt-exclamation-circle",
+            "title": "Get 20% Off 1 Item",
+            "content": "when you sign up",
+            "url": ""
+          }
+        },
+        "1562060269073": {
+          "type": "item_icon_side",
+          "settings": {
+            "icon_font": "fkt-life-bouy",
+            "title": "We Support",
+            "content": "24\/7 amazing services",
+            "url": ""
+          }
+        }
+      },
+      "block_order": [
+        "1562060264177",
+        "1562060266449",
+        "1562060267673",
+        "1562060269073"
+      ],
+      "settings": {
+        "title": "Icon Boxes",
+        "off_mobile": false,
+        "off_desktop": false,
+        "width_section": "w-100",
+        "width_content": true,
+        "section_margin_top": "",
+        "section_margin_bottom": "",
+        "section_padding": "4rem 0",
+        "section_bg": "#ffffff",
+        "section_bg_op": 1,
+        "color_icon": "#333333",
+        "color_title": "#333333",
+        "color_desc": "#cccccc",
+        "title_font_weight": "400",
+        "use_slide": false,
+        "responsive": "{\n  \"0\": {\n    \"slidesPerView\": 1,\n    \"spaceBetween\": 20\n  },\n  \"320\": {\n    \"slidesPerView\": 1,\n    \"spaceBetween\": 20\n  },\n  \"476\": {\n    \"slidesPerView\": 2,\n    \"spaceBetween\": 20\n  },\n  \"768\": {\n    \"slidesPerView\": 2,\n    \"spaceBetween\": 20\n  },\n  \"992\": {\n    \"slidesPerView\": 3,\n    \"spaceBetween\": 20\n  },\n  \"1200\": {\n    \"slidesPerView\": 4,\n    \"spaceBetween\": 20\n  }\n}"
+      }
+    },
+    "1562220204858": {
+      "type": "md_countdown_section_with_products_1",
+      "blocks": {
+        "1562226077061": {
+          "type": "item_title",
+          "settings": {
+            "title_section": "Deals &amp; Outlet",
+            "stitle_section": "Today’s deal and more",
+            "reverse": false,
+            "title_align": "text-center",
+            "link_to": "",
+            "name_link": "",
+            "style_link": "",
+            "margin_btitle": 1.6
+          }
+        },
+        "1562220204858-0": {
+          "type": "product_count_down",
+          "settings": {
+            "title": "Product countdown",
+            "titlex": "<p>Deal of the Day.<\/p>",
+            "stitle": "<p>Limited quantities. <\/p>",
+            "product": "apple-11-inch-ipad-pro-with-wi-fi-256gb",
+            "name_btn": "Shop now<i class=\"fkt-long-arrow-right\"><\/i>",
+            "image": "shopify:\/\/shop_images\/bg-2_93b5719c-74fc-4939-b33a-47a4464fbd50.jpg"
+          }
+        },
+        "1562575322895": {
+          "type": "product_count_down",
+          "settings": {
+            "title": "Product countdown",
+            "titlex": "<p>Your Exclusive Offers.<\/p>",
+            "stitle": "<p>Sign in to see amazing deals.<\/p>",
+            "product": "apple-apple-watch-series-3-with-white-sport-band",
+            "name_btn": "Sign In and Save money<i class=\"fkt-long-arrow-right\"><\/i>",
+            "image": "shopify:\/\/shop_images\/bg-3.jpg"
+          }
+        },
+        "1562227105375": {
+          "type": "item_button",
+          "settings": {
+            "link_to": "",
+            "name_btn": "Shop more Outlet deals <i class=\"fkt-long-arrow-right\"><\/i>",
+            "title_align": "text-center"
+          }
+        }
+      },
+      "block_order": [
+        "1562226077061",
+        "1562220204858-0",
+        "1562575322895",
+        "1562227105375"
+      ],
+      "settings": {
+        "off_mobile": false,
+        "off_desktop": false,
+        "title": "Countdown and products",
+        "width_section": "w-100",
+        "width_content": true,
+        "section_margin_top": "",
+        "section_margin_bottom": "5rem",
+        "section_padding": "",
+        "section_bg": "#ffffff",
+        "section_bg_op": 1,
+        "parallax_speed": 0.2
+      }
+    },
+    "1562227619804": {
+      "type": "md_brand",
+      "blocks": {
+        "1562227637354": {
+          "type": "item",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/logo-1.png",
+            "brand_call_to_action": ""
+          }
+        },
+        "1562227667176": {
+          "type": "item",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/logo-4.png",
+            "brand_call_to_action": ""
+          }
+        },
+        "1562227678904": {
+          "type": "item",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/logo-2.png",
+            "brand_call_to_action": ""
+          }
+        },
+        "1562227689840": {
+          "type": "item",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/logo-3.png",
+            "brand_call_to_action": ""
+          }
+        },
+        "1562227699832": {
+          "type": "item",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/logo-5.png",
+            "brand_call_to_action": ""
+          }
+        },
+        "1562227712014": {
+          "type": "item",
+          "settings": {
+            "brand_call_to_action": ""
+          }
+        },
+        "1562227713752": {
+          "type": "item",
+          "settings": {
+            "brand_call_to_action": ""
+          }
+        },
+        "1562227727241": {
+          "type": "item",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/logo-6.png",
+            "brand_call_to_action": ""
+          }
+        }
+      },
+      "block_order": [
+        "1562227637354",
+        "1562227667176",
+        "1562227678904",
+        "1562227689840",
+        "1562227699832",
+        "1562227712014",
+        "1562227713752",
+        "1562227727241"
+      ],
+      "settings": {
+        "title": "Brand",
+        "off_section": false,
+        "off_mobile": false,
+        "off_desktop": false,
+        "width_section": "container",
+        "width_content": false,
+        "section_margin_top": "",
+        "section_margin_bottom": "",
+        "section_padding": "4rem 0",
+        "section_bg": "",
+        "section_bg_op": 1,
+        "brand_style": "type01",
+        "autoplay": false,
+        "use_navigation": true,
+        "nav_style": "-default",
+        "nav_mode": "default",
+        "nav_position": "nav-default",
+        "use_dots": false,
+        "dots_mode": "default",
+        "dots_position": "inside",
+        "responsive": "{\n  \"0\": {\n    \"slidesPerView\": 1,\n    \"spaceBetween\": 0\n  },\n  \"320\": {\n    \"slidesPerView\": 2,\n    \"spaceBetween\": 10\n  },\n  \"768\": {\n    \"slidesPerView\": 4,\n    \"spaceBetween\": 20\n  },\n  \"992\": {\n    \"slidesPerView\": 5,\n    \"spaceBetween\": 20\n  },\n  \"1200\": {\n    \"slidesPerView\": 6,\n    \"spaceBetween\": 20\n  }\n}"
+      }
+    },
+    "1562310633983": {
+      "type": "md_list_item_cattegories_1",
+      "blocks": {
+        "1562310633983-0": {
+          "type": "item",
+          "settings": {
+            "image_1": "shopify:\/\/shop_images\/1cat.jpg",
+            "icon_svg_1": "t-shirt",
+            "link_1": "",
+            "title_1": "Computer & Laptop",
+            "image_2": "shopify:\/\/shop_images\/2cat.jpg",
+            "icon_svg_2": "t-shirt",
+            "link_2": "",
+            "title_2": "Digital Cameras"
+          }
+        },
+        "1562310642718": {
+          "type": "item",
+          "settings": {
+            "image_1": "shopify:\/\/shop_images\/3cat.jpg",
+            "icon_svg_1": "t-shirt",
+            "link_1": "",
+            "title_1": "Smart Phones",
+            "image_2": "shopify:\/\/shop_images\/4cat.jpg",
+            "icon_svg_2": "t-shirt",
+            "link_2": "",
+            "title_2": "Televisions"
+          }
+        },
+        "1562310647388": {
+          "type": "item",
+          "settings": {
+            "image_1": "shopify:\/\/shop_images\/5cat.jpg",
+            "icon_svg_1": "t-shirt",
+            "link_1": "",
+            "title_1": "Audio",
+            "image_2": "shopify:\/\/shop_images\/6cat.jpg",
+            "icon_svg_2": "t-shirt",
+            "link_2": "",
+            "title_2": "Smart Watches"
+          }
+        },
+        "1562312306169": {
+          "type": "item_title",
+          "settings": {
+            "title_section": "Explore Popular Categories",
+            "stitle_section": "",
+            "reverse": false,
+            "title_align": "text-center",
+            "link_to": "",
+            "name_link": "",
+            "style_link": ""
+          }
+        }
+      },
+      "block_order": [
+        "1562310633983-0",
+        "1562310642718",
+        "1562310647388",
+        "1562312306169"
+      ],
+      "settings": {
+        "off_mobile": false,
+        "off_desktop": false,
+        "title": "List categories",
+        "width_section": "container",
+        "width_content": false,
+        "section_margin_top": "5rem",
+        "section_margin_bottom": "",
+        "section_padding": "",
+        "section_bg": "",
+        "section_bg_op": 1,
+        "content_type": "type_1"
+      }
+    },
+    "1562569085705": {
+      "type": "md_banner_template_1",
+      "blocks": {
+        "1562569094784": {
+          "type": "3",
+          "settings": {
+            "turnoff": false,
+            "title": "Banner type 3",
+            "grid_gutter": 10,
+            "content_type": "type_1",
+            "banner-effect": "",
+            "image_1": "shopify:\/\/shop_images\/banner-1_390626ba-b931-425a-b637-a00a163a8819.jpg",
+            "image_link_1": "",
+            "stitle_1": "Smart Offer",
+            "color_stitle_1": "#666666",
+            "titlex_1": "Save $150 <strong>on Samsung <br>Galaxy Note9<\/strong>",
+            "color_titlex_1": "#212529",
+            "name_btn_1": "Shop Now<i class=\"fkt-long-arrow-right\"><\/i>",
+            "style_btn_1": "btn-outline-primary-2",
+            "style_btn_rounded_1": "",
+            "btn_shadow_1": false,
+            "image_2": "shopify:\/\/shop_images\/banner-2_637ba67c-2439-4d6c-82cf-e0fbf2a35660.jpg",
+            "image_link_2": "",
+            "stitle_2": "Time Deals",
+            "color_stitle_2": "#666666",
+            "titlex_2": "<strong>Bose SoundSport<\/strong> <br>Time Deal -30%",
+            "color_titlex_2": "#212529",
+            "name_btn_2": "Shop Now<i class=\"fkt-long-arrow-right\"><\/i>",
+            "style_btn_2": "btn-outline-primary-2",
+            "style_btn_rounded_2": "",
+            "btn_shadow_2": false,
+            "image_3": "shopify:\/\/shop_images\/banner-3_4c4220ff-2602-4606-b80f-10f3804234f9.jpg",
+            "image_link_3": "",
+            "stitle_3": "Clearance",
+            "color_stitle_3": "#666666",
+            "titlex_3": "<strong>GoPro - Fusion 360<\/strong> <br>Save $70",
+            "color_titlex_3": "#212529",
+            "name_btn_3": "Shop Now<i class=\"fkt-long-arrow-right\"><\/i>",
+            "style_btn_3": "btn-outline-primary-2",
+            "style_btn_rounded_3": "",
+            "btn_shadow_3": false,
+            "css": ""
+          }
+        }
+      },
+      "block_order": [
+        "1562569094784"
+      ],
+      "settings": {
+        "title": "Banner template",
+        "off_mobile": false,
+        "off_desktop": false,
+        "width_section": "container",
+        "width_content": false,
+        "section_margin_top": "6rem",
+        "section_margin_bottom": "6rem",
+        "section_padding": "",
+        "section_bg": "",
+        "section_bg_op": 1,
+        "preview": false
+      }
+    },
+    "1562572009880": {
+      "type": "md_call_to_action",
+      "blocks": {
+        "1562573560650": {
+          "type": "design_9",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/camera.png",
+            "description_cta": "Shop Today’s Deals <br><strong>Awesome Made Easy. HERO7 Black<\/strong>",
+            "link_cta": "",
+            "style_btn_rounded_1": "btn-round",
+            "btn_name_cta": "Shop Now - $429.99<i class=\"fkt-long-arrow-right\"><\/i>"
+          }
+        }
+      },
+      "block_order": [
+        "1562573560650"
+      ],
+      "settings": {
+        "title": "Call to Action",
+        "off_mobile": false,
+        "off_desktop": false,
+        "width_section": "container",
+        "width_content": true,
+        "section_margin_top": "",
+        "section_margin_bottom": "5rem",
+        "section_padding": "4.8rem 0 4.8rem",
+        "section_bg": "",
+        "section_bg_op": 1,
+        "image": "shopify:\/\/shop_images\/bg-1_225a713c-a93d-4286-85cf-031a52280ca9.jpg",
+        "use_round": false,
+        "color_title": "#ffffff",
+        "color_desc": "#cccccc",
+        "color_text_input": "#999999",
+        "color_border_input": "#dadada",
+        "color_placeholder": "#999999",
+        "color_bg_input": "#ffffff",
+        "preview": false
+      }
+    },
+    "1562576431667": {
+      "type": "md_call_to_action",
+      "blocks": {
+        "1562576472626": {
+          "type": "design_2",
+          "settings": {
+            "title": "Join Our Newsletter",
+            "description": "and receive <span class=\"font-weight-normal\">$20 coupon<\/span> for first shopping",
+            "style_btn": "btn-primary",
+            "style_btn_rounded": "",
+            "btn_shadow": false,
+            "btn_name_cta": "Subscribe<i class=\"fkt-long-arrow-right\"><\/i>"
+          }
+        }
+      },
+      "block_order": [
+        "1562576472626"
+      ],
+      "settings": {
+        "title": "Call to Action",
+        "off_mobile": false,
+        "off_desktop": false,
+        "width_section": "w-100",
+        "width_content": true,
+        "section_margin_top": "",
+        "section_margin_bottom": "",
+        "section_padding": "4rem 0",
+        "section_bg": "",
+        "section_bg_op": 1,
+        "image": "shopify:\/\/shop_images\/bg-5.jpg",
+        "use_round": true,
+        "color_title": "#ffffff",
+        "color_desc": "#ffffff",
+        "color_text_input": "#999999",
+        "color_border_input": "#dadada",
+        "color_placeholder": "#999999",
+        "color_bg_input": "#ffffff",
+        "preview": false
+      }
+    },
+    "1564285191407": {
+      "type": "md_product_section_tab_slide_2",
+      "blocks": {
+        "1564285220732": {
+          "type": "item",
+          "settings": {
+            "title": "New Arrivals",
+            "stitle": "",
+            "margin_btitle": 2,
+            "use_border": false,
+            "products_1": "all-h3-2",
+            "products_2": "tv-h3-2",
+            "products_3": "computers-h3-2",
+            "products_4": "tablets-cell-phones-h3-2",
+            "products_5": "smartwatches-h3-2",
+            "products_6": "accessories-h3-2",
+            "t_tranform": "text-uppercase",
+            "fsize_name_tab": 1.4,
+            "limit": 8,
+            "load_btn": false,
+            "style_btn": "btn-outline-darker",
+            "style_btn_rounded": "",
+            "btn_shadow": false,
+            "autoplay": false,
+            "use_navigation": true,
+            "nav_style": "3",
+            "nav_mode": "default",
+            "nav_position": "nav-default",
+            "use_dots": true,
+            "dots_mode": "primary",
+            "dots_position": "outside",
+            "responsive": "{\n  \"0\": {\n    \"slidesPerView\": 1,\n    \"spaceBetween\": 0\n  },\n  \"320\": {\n    \"slidesPerView\": 2,\n    \"spaceBetween\": 20\n  },\n  \"768\": {\n    \"slidesPerView\": 3,\n    \"spaceBetween\": 20\n  },\n  \"992\": {\n    \"slidesPerView\": 4,\n    \"spaceBetween\": 20\n  },\n  \"1200\": {\n    \"slidesPerView\": 5,\n    \"spaceBetween\": 20\n  }\n}"
+          }
+        }
+      },
+      "block_order": [
+        "1564285220732"
+      ],
+      "settings": {
+        "title": "Products Tab(slide 2)",
+        "off_mobile": false,
+        "off_desktop": false,
+        "width_section": "w-100",
+        "width_content": true,
+        "section_margin_top": "",
+        "section_margin_bottom": "5rem",
+        "section_padding": "",
+        "section_bg": "",
+        "section_bg_op": 1,
+        "use_lazyload": true,
+        "product_grid_layout": ""
+      }
+    },
+    "1564285424081": {
+      "type": "md_product_section_tab_slide_banner",
+      "blocks": {
+        "1564285433631": {
+          "type": "item",
+          "settings": {
+            "title": "Trending Products",
+            "stitle": "",
+            "title_align": "text-center",
+            "margin_btitle": 3,
+            "image_banner": "shopify:\/\/shop_images\/banner-4_3ae9a694-2357-4fc3-ba7c-249ce18fac7f.jpg",
+            "image_link_banner": "shopify:\/\/products\/annie-washed-high-waist-denim-shorts",
+            "title_banner": "",
+            "name_btn_banner": "",
+            "products_1": "top-rated-h4-2",
+            "products_2": "best-selling-h4-2",
+            "products_3": "on-sale-h4-2",
+            "products_4": "",
+            "products_5": "",
+            "products_6": "",
+            "limit": 8,
+            "load_btn": false,
+            "style_btn": "btn-outline-darker",
+            "style_btn_rounded": "",
+            "btn_shadow": false,
+            "autoplay": false,
+            "use_navigation": true,
+            "nav_style": "3",
+            "nav_mode": "default",
+            "nav_position": "nav-default",
+            "use_dots": false,
+            "dots_mode": "default",
+            "dots_position": "inside",
+            "responsive": "{\n  \"0\": {\n    \"slidesPerView\": 1,\n    \"spaceBetween\": 0\n  },\n  \"320\": {\n    \"slidesPerView\": 2,\n    \"spaceBetween\": 20\n  },\n  \"768\": {\n    \"slidesPerView\": 3,\n    \"spaceBetween\": 20\n  },\n  \"992\": {\n    \"slidesPerView\": 3,\n    \"spaceBetween\": 20\n  },\n  \"1200\": {\n    \"slidesPerView\": 4,\n    \"spaceBetween\": 20\n  }\n}"
+          }
+        }
+      },
+      "block_order": [
+        "1564285433631"
+      ],
+      "settings": {
+        "title": "Products Tab(slide+banner)",
+        "off_mobile": false,
+        "off_desktop": false,
+        "width_section": "w-100",
+        "width_content": true,
+        "section_margin_top": "",
+        "section_margin_bottom": "5rem",
+        "section_padding": "6rem 0",
+        "section_bg": "#f4f7ff",
+        "section_bg_op": 1,
+        "use_lazyload": true,
+        "product_grid_layout": ""
+      }
+    },
+    "1564325655054": {
+      "type": "md_product_section_show",
+      "blocks": {
+        "1564325710838": {
+          "type": "item",
+          "settings": {
+            "title_section": "Recommendation For You",
+            "stitle_section": "",
+            "reverse": false,
+            "title_align": "",
+            "link_to": "shopify:\/\/collections\/alls",
+            "name_link": "View All Recommendadion <i class=\"fkt-long-arrow-right\"><\/i>",
+            "style_link": "",
+            "margin_btitle": 3,
+            "products": "recommendation-for-you-h4-3",
+            "limit_per_row": 4,
+            "limit": 8,
+            "range_row": 2,
+            "name_btn": "VIEW MORE <i class=\"fkt-long-arrow-right\"><\/i>",
+            "load_btn": false,
+            "margin_tbutton": 3,
+            "style_btn": "btn-outline-darker",
+            "style_btn_rounded": "",
+            "btn_shadow": false
+          }
+        }
+      },
+      "block_order": [
+        "1564325710838"
+      ],
+      "settings": {
+        "off_mobile": false,
+        "off_desktop": false,
+        "title": "Products Show(grid)",
+        "width_section": "container",
+        "width_content": false,
+        "section_margin_top": "",
+        "section_margin_bottom": "5rem",
+        "section_padding": "",
+        "section_bg": "",
+        "section_bg_op": 1,
+        "use_lazyload": true,
+        "product_grid_layout": "",
+        "use_nospace": false
+      }
+    },
+    "1566612744653": {
+      "type": "kt_slideshow",
+      "blocks": {
+        "1566612744653-1": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/slider_banner_1.png",
+            "lazypreload": false,
+            "heading": "Deals and Promotions",
+            "font_heading": "poppins_n3",
+            "subheading": "Beats by <br>Dre Studio 3",
+            "font_subheading": "poppins_n7",
+            "description": "<sup class=\"intro-old-price\">$349,95<\/sup><span class=\"text-primary\">$279<sup>.99<\/sup><\/span>",
+            "font_description": "poppins_n7",
+            "text_alignment_top": 50,
+            "text_alignment_left": 90,
+            "text_alignment": "",
+            "text_alignment_top_mb": 16,
+            "text_alignment_left_mb": 16,
+            "text_alignment_mb": "",
+            "style_btn_1": "btn-primary",
+            "style_btn_rounded_1": "btn-round",
+            "btn_shadow_1": false,
+            "link_1": "#",
+            "textBtn_1": "<span>Click Here<\/span><i class=\"fkt-long-arrow-right\"><\/i>",
+            "style_btn_2": "btn-outline-primary-2",
+            "style_btn_rounded_2": "",
+            "btn_shadow_2": false,
+            "link_2": "",
+            "textBtn_2": "",
+            "turnoff": false,
+            "title": "Item image",
+            "width_section": true,
+            "css_block": ""
+          }
+        },
+        "1566612744653-0": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/slider_banner_2.png",
+            "lazypreload": false,
+            "heading": "New Arrival",
+            "font_heading": "poppins_n3",
+            "subheading": "Apple iPad Pro <br>12.9 Inch, 64GB",
+            "font_subheading": "poppins_n7",
+            "description": "<sup>Today:<\/sup><span class=\"text-primary\">$999<sup>.99<\/sup><\/span>",
+            "font_description": "poppins_n7",
+            "text_alignment_top": 50,
+            "text_alignment_left": 90,
+            "text_alignment": "center",
+            "text_alignment_top_mb": 16,
+            "text_alignment_left_mb": 16,
+            "text_alignment_mb": "center",
+            "style_btn_1": "btn-primary",
+            "style_btn_rounded_1": "btn-round",
+            "btn_shadow_1": false,
+            "link_1": "#",
+            "textBtn_1": "<span>Shop More <\/span><i class=\"fkt-long-arrow-right\"><\/i>",
+            "style_btn_2": "btn-outline-primary-2",
+            "style_btn_rounded_2": "",
+            "btn_shadow_2": false,
+            "link_2": "",
+            "textBtn_2": "",
+            "turnoff": false,
+            "title": "Item image",
+            "width_section": true,
+            "css_block": ""
+          }
+        },
+        "1579250367679": {
+          "type": "video",
+          "settings": {
+            "delay_speed": 20,
+            "video_url": "https:\/\/www.youtube.com\/watch?v=vk4xkl1epco",
+            "data_property": ", autoPlay:true, quality:'highres', stopMovieOnBlur: false, abundance: 0",
+            "image": "shopify:\/\/shop_images\/slide_video.jpg",
+            "heading": "",
+            "font_heading": "poppins_n7",
+            "subheading": "",
+            "font_subheading": "poppins_n7",
+            "description": "",
+            "font_description": "poppins_n4",
+            "text_alignment_top": 16,
+            "text_alignment_left": 16,
+            "text_alignment": "center",
+            "text_alignment_top_mb": 16,
+            "text_alignment_left_mb": 16,
+            "text_alignment_mb": "center",
+            "style_btn_1": "btn-primary",
+            "style_btn_rounded_1": "",
+            "btn_shadow_1": false,
+            "link_1": "shopify:\/\/products\/apple-apple-watch-series-3-with-white-sport-band",
+            "textBtn_1": "",
+            "style_btn_2": "btn-outline-primary-2",
+            "style_btn_rounded_2": "",
+            "btn_shadow_2": false,
+            "link_2": "",
+            "textBtn_2": "",
+            "turnoff": false,
+            "title": "Item image",
+            "width_section": true,
+            "css_block": ".block_id {}"
+          }
+        }
+      },
+      "block_order": [
+        "1566612744653-1",
+        "1566612744653-0",
+        "1579250367679"
+      ],
+      "settings": {
+        "title": "Slideshow",
+        "off_mobile": false,
+        "off_desktop": false,
+        "width_section": "w-100",
+        "width_content": false,
+        "section_margin_top": "",
+        "section_margin_bottom": "",
+        "section_padding": "",
+        "section_bg": "",
+        "section_bg_op": 1,
+        "no_overflow": false,
+        "fullscreen": false,
+        "autoplay": true,
+        "use_navigation": true,
+        "nav_style": "1",
+        "nav_mode": "default",
+        "nav_position": "nav-center-center",
+        "use_dots": false,
+        "dots_mode": "default",
+        "use_scrollbar": false,
+        "h_reponsive": "",
+        "h_reponsive_768": "350",
+        "h_reponsive_992": "",
+        "h_reponsive_1200": "400",
+        "h_reponsive_1400": "",
+        "autoplay_speed": 42,
+        "responsive": "{\n  \"0\": {\n    \"slidesPerView\": 1,\n    \"spaceBetween\": 10\n  },\n  \"320\": {\n    \"slidesPerView\": 1,\n    \"spaceBetween\": 10\n  },\n  \"768\": {\n    \"slidesPerView\": 1,\n    \"spaceBetween\": 10\n  },\n  \"992\": {\n    \"slidesPerView\": 1,\n    \"spaceBetween\": 10\n  },\n  \"1200\": {\n    \"slidesPerView\": 1,\n    \"spaceBetween\": 10\n  }\n}",
+        "content_type": "type-2",
+        "css_section": ".section_id .slideshow__title{\n  color: var(--primary);\n  font-size: 1.4rem;\n  letter-spacing: -.01em;\n  margin-bottom: .5rem;\n}\n.section_id .slideshow__subtitle{\n  color: #333;\n  font-size: 3rem;\n  line-height: 1.2;\n  letter-spacing: -.03em;\n  margin-bottom: 1.2rem;\n}\n.section_id .slideshow__description{\n  color: #333333;\n  font-size: 3rem;\n  line-height: 1.2;\n  letter-spacing: -.025em;\n  margin-bottom: 1rem;\n}\n.section_id .slideshow__description .intro-old-price:after {\n  content: '';\n  display: block;\n  width: 100%;\n  height: 1px;\n  position: absolute;\n  top: 50%;\n  left: 0;\n  background-color: #333333;\n}\n.section_id .slideshow__description sup {\n  top: -.8em;\n  font-weight: 400;\n  font-size: 1.4rem;\n  letter-spacing: -.03em;\n}\n@media (min-width: 576px){\n  .section_id .slideshow__title{\n    font-size: 1.6rem;\n  }\n  .section_id .slideshow__subtitle{\n    font-size: 3.6rem;\n    margin-bottom: 1.3rem;\n  }\n  .section_id .slideshow__description sup {\n    font-size: 1.5rem;\n  }\n}\n@media (min-width: 768px){\n  .section_id .slideshow__title{\n    font-size: 1.8rem;\n  }\n  .section_id .slideshow__subtitle{\n    font-size: 4.2rem;\n    margin-bottom: 1.7rem;\n  }\n  .section_id .slideshow__description{\n    font-size: 4rem;\n  }\n  .section_id .slideshow__description sup {\n    font-size: 1.8rem;\n  }\n}\n@media (min-width: 1200px){\n  .section_id .slideshow__title{\n    font-size: 2rem;\n  }\n  .section_id .slideshow__subtitle{\n    font-size: 5.2rem;\n  }\n  .section_id .slideshow__description{\n    font-size: 5rem;\n  }\n  .section_id .slideshow__description sup {\n    top: -1.1em;\n    font-size: 2rem;\n  }\n}"
+      }
+    }
+  },
+  "order": [
+    "1566612744653",
+    "1562310633983",
+    "1562569085705",
+    "1564285191407",
+    "1562572009880",
+    "1562220204858",
+    "1562227619804",
+    "1564285424081",
+    "1564325655054",
+    "1562059653538",
+    "1562576431667"
+  ]
+}

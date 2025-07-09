@@ -1,0 +1,470 @@
+{
+  "sections": {
+    "1566404133629": {
+      "type": "md_icon_boxes",
+      "blocks": {
+        "1566547298816": {
+          "type": "item_icon_side",
+          "settings": {
+            "icon_font": "fkt-truck",
+            "title": "Payment & Delivery",
+            "content": "Free shipping for orders over $50"
+          }
+        },
+        "1566547302546": {
+          "type": "item_icon_side",
+          "settings": {
+            "icon_font": "fkt-rotate-left",
+            "title": "Return & Refund",
+            "content": "Free 100% money back guarantee"
+          }
+        },
+        "1566547305340": {
+          "type": "item_icon_side",
+          "settings": {
+            "icon_font": "fkt-headphones",
+            "title": "Quality Support",
+            "content": "Alway online feedback 24\/7"
+          }
+        },
+        "1566547307469": {
+          "type": "item_icon_side",
+          "settings": {
+            "icon_font": "fkt-envelope",
+            "title": "JOIN OUR NEWSLETTER",
+            "content": "10% off by subscribing to our newsletter"
+          }
+        }
+      },
+      "block_order": [
+        "1566547298816",
+        "1566547302546",
+        "1566547305340",
+        "1566547307469"
+      ],
+      "settings": {
+        "title": "Icon Boxes",
+        "off_mobile": false,
+        "off_desktop": false,
+        "width_section": "container-fluid wide",
+        "width_content": false,
+        "section_margin_top": "",
+        "section_margin_bottom": "",
+        "section_padding": "1.6rem 0 0",
+        "section_bg": "#222222",
+        "section_bg_op": 1,
+        "color_icon": "#ffffff",
+        "color_title": "#ffffff",
+        "color_desc": "#999999",
+        "title_font_weight": "400",
+        "use_slide": false,
+        "responsive": "{\n  \"0\": {\n    \"slidesPerView\": 1,\n    \"spaceBetween\": 10\n  },\n  \"320\": {\n    \"slidesPerView\": 1,\n    \"spaceBetween\": 10\n  },\n  \"476\": {\n    \"slidesPerView\": 2,\n    \"spaceBetween\": 10\n  },\n  \"768\": {\n    \"slidesPerView\": 2,\n    \"spaceBetween\": 10\n  },\n  \"992\": {\n    \"slidesPerView\": 3,\n    \"spaceBetween\": 10\n  },\n  \"1200\": {\n    \"slidesPerView\": 4,\n    \"spaceBetween\": 10\n  }\n}"
+      }
+    },
+    "1566371829835": {
+      "type": "kt_slideshow",
+      "blocks": {
+        "1566373570019-1": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/slide-1_0bf3b12f-c05d-4a5e-87ec-ddcdbf0c5800.jpg",
+            "lazypreload": true,
+            "heading": "Hear it First",
+            "font_heading": "poppins_n7",
+            "subheading": "Control Your Sound",
+            "font_subheading": "poppins_n7",
+            "description": "Featuring Active Noise Cancelling that gives you the space to create with fully immersive sound.",
+            "font_description": "poppins_n4",
+            "text_alignment_top": 60,
+            "text_alignment_left": 0,
+            "text_alignment": "",
+            "text_alignment_top_mb": 16,
+            "text_alignment_left_mb": 16,
+            "text_alignment_mb": "",
+            "style_btn_1": "btn-primary",
+            "style_btn_rounded_1": "btn-round",
+            "btn_shadow_1": false,
+            "link_1": "#",
+            "textBtn_1": "<i class=\"fkt-lg fkt-cart-plus\" style=\"margin-top: -.3rem\"><\/i> <span>ADD TO CART<\/span>",
+            "style_btn_2": "btn-outline-white",
+            "style_btn_rounded_2": "btn-round",
+            "btn_shadow_2": false,
+            "link_2": "#",
+            "textBtn_2": "Discover Now",
+            "turnoff": false,
+            "title": "Item image",
+            "width_section": true,
+            "css_block": ""
+          }
+        }
+      },
+      "block_order": [
+        "1566373570019-1"
+      ],
+      "settings": {
+        "title": "Slideshow",
+        "off_mobile": false,
+        "off_desktop": false,
+        "width_section": "w-100",
+        "width_content": false,
+        "section_margin_top": "",
+        "section_margin_bottom": "",
+        "section_padding": "",
+        "section_bg": "#ffffff",
+        "section_bg_op": 1,
+        "no_overflow": false,
+        "fullscreen": false,
+        "autoplay": false,
+        "use_navigation": false,
+        "nav_style": "-default",
+        "nav_mode": "white",
+        "nav_position": "nav-default",
+        "use_dots": true,
+        "dots_mode": "white",
+        "use_scrollbar": false,
+        "h_reponsive": "560",
+        "h_reponsive_768": "660",
+        "h_reponsive_992": "",
+        "h_reponsive_1200": "860",
+        "h_reponsive_1400": "",
+        "autoplay_speed": 7,
+        "responsive": "{\n  \"0\": {\n    \"slidesPerView\": 1,\n    \"spaceBetween\": 10\n  },\n  \"320\": {\n    \"slidesPerView\": 1,\n    \"spaceBetween\": 10\n  },\n  \"768\": {\n    \"slidesPerView\": 1,\n    \"spaceBetween\": 10\n  },\n  \"992\": {\n    \"slidesPerView\": 1,\n    \"spaceBetween\": 10\n  },\n  \"1200\": {\n    \"slidesPerView\": 1,\n    \"spaceBetween\": 10\n  }\n}",
+        "content_type": "type-1",
+        "css_section": ".section_id .page-width {\n  max-width: 48rem;\n}\n.section_id .slideshow__title{\n  font-size: 1.8rem;\n  color: #fff;\n  line-height: 1.2;\n  margin-bottom: 1rem;\n}\n.section_id .slideshow__subtitle{\n  font-size: 4.5rem;\n  color: #fff;\n  line-height: 1;\n  margin-bottom: 2.5rem;\n}\n.section_id .slideshow__description{\n  font-size: 1.6rem;\n  color: #fff;\n  line-height: 1.2;\n  margin-bottom: 2.5rem;\n}\n@media (min-width: 768px){\n  .section_id .slideshow__title{\n    font-size: 2.4rem;\n  }\n  .section_id .slideshow__subtitle{\n    font-size: 6rem;\n  }\n  .section_id .slideshow__description{\n    font-size: 2rem;\n  }\n}"
+      }
+    },
+    "1588300997887": {
+      "type": "md_banner_with_text_1",
+      "blocks": {
+        "1588301941954": {
+          "type": "1",
+          "settings": {
+            "banner_align": "6 col-xl-5 offset-xl-1 order-lg-last",
+            "text_align": "",
+            "title_section": "Hear your music, not the noise.",
+            "stitle_section": "Natural Sound",
+            "reverse": false,
+            "content_text": "<span>Morbi in sem quis dui placerat ornare. Pellentesque odio nisi, euismod in, pharetra a, ultricies in, diam. Sed arcu. Cras consequat.\n<\/span>\n\n<div class=\"row mt-3\">\n<div class=\"col-12 col-sm-6 mb-1\">\n<svg class=\"molla-svg-icon text-primary\" viewbox=\"0 0 32 32\" style=\"width: 3.6rem;\"><use xlink:href=\"#icon-bell-slash\"><\/use><\/svg>\n<span class=\"px-2\">\nNoise Cancelling\n<\/span>\n<\/div>\n\n<div class=\"col-12 col-sm-6 mb-1\">\n<svg class=\"molla-svg-icon text-primary\" viewbox=\"0 0 32 32\" style=\"width: 3.6rem;\"><use xlink:href=\"#icon-battery-full-solid\"><\/use><\/svg><span class=\"px-2\">\nPlaytime 20 + Hours\n<\/span>\n<\/div>\n\n<div class=\"col-12 col-sm-6 mb-1\">\n<svg class=\"molla-svg-icon text-primary\" viewbox=\"0 0 32 32\" style=\"width: 3.6rem;\"><use xlink:href=\"#icon-bluetooth\"><\/use><\/svg>\n<span class=\"px-2\">\nWireless\n<\/span>\n<\/div>\n\n<div class=\"col-12 col-sm-6 mb-1\">\n<svg class=\"molla-svg-icon text-primary\" viewbox=\"0 0 32 32\" style=\"width: 3.6rem;\"><use xlink:href=\"#icon-mobile\"><\/use><\/svg>\n<span class=\"px-2\">\nPhone Functionality\n<\/span>\n<\/div>\n\n<\/div>",
+            "color_title": "#ffffff",
+            "color_sub_title": "#ffffff",
+            "color_desc": "#999999",
+            "name_btn": "",
+            "style_btn": "btn-primary",
+            "style_btn_rounded": "",
+            "btn_shadow": false
+          }
+        }
+      },
+      "block_order": [
+        "1588301941954"
+      ],
+      "settings": {
+        "off_mobile": false,
+        "off_desktop": false,
+        "title": "Banner with text 1",
+        "width_section": "w-100",
+        "width_content": true,
+        "section_margin_top": "",
+        "section_margin_bottom": "",
+        "section_padding": "6.5rem 0 0|6.5rem 0 0|6.5rem 0 0|6.5rem 0 24rem",
+        "section_bg": "#222222",
+        "section_bg_op": 1,
+        "image": "shopify:\/\/shop_images\/gbc_3d9184c3-521d-457b-b726-0b21d1d22747.jpg",
+        "css": "@media (max-width:768px){\n.section_id.bg-image {\n  background-image: none !important;\n}\n}\n.section_id h3.title{font-size:2.4rem;font-weight:700}\n.section_id .sub-title{line-height:1;font-size:4.5rem;font-weight:700}\n.section_id .box-dashed{border:1px dashed #222;border-radius:.5rem;padding:.7rem 1.2rem;text-transform:uppercase;font-size:1.4rem;color:#222;text-align:center;min-width:10rem}\n.section_id .molla-svg-icon{width:2.8rem!important}\n.section_id .molla-svg-icon+span{padding:0 .5rem!important}\n.section_id .box-dashed span{display:block;line-height:1.2}\n.section_id .box-dashed span:nth-child(2){font-weight:700;font-size:4.2rem}\n\n@media (min-width:576px){\n.section_id .sub-title{font-size:6rem}\n.section_id .content-text{font-size:1.6rem}\n.section_id .molla-svg-icon{width:3.6rem!important}\n.section_id .molla-svg-icon+span{padding:0 1rem!important}\n}"
+      }
+    },
+    "1589439884181": {
+      "type": "md_banner_with_text_1",
+      "blocks": {
+        "1589440091894": {
+          "type": "1",
+          "settings": {
+            "banner_align": "",
+            "text_align": "",
+            "title_section": "Listen all day",
+            "stitle_section": "20+ Hours of\nPlaytime",
+            "reverse": false,
+            "content_text": "<span class=\"d-inline-block\" style=\"max-width: 45rem\">Donec nec justo eget felis facilisis fermentum. Aliquam porttitor mauris sit amet orci. Aenean dignissim \npellentesque felis.<\/span>\n\n<div class=\"row mt-3\">\n<div class=\"col-auto\">\n<div class=\"box-dashed\">      <span>Charge<\/span>      <span>2<\/span>      <span>Hours<\/span>\n<\/div>\n<\/div>\n\n<div class=\"col-auto\">\n<div class=\"box-dashed\">\n<span>Playtime<\/span><span>20<\/span>    <span>Hours<\/span>\n<\/div>\n<\/div>\n<\/div>",
+            "color_title": "#222222",
+            "color_sub_title": "#222222",
+            "color_desc": "#666666",
+            "name_btn": "",
+            "style_btn": "btn-outline-darker",
+            "style_btn_rounded": "",
+            "btn_shadow": false
+          }
+        }
+      },
+      "block_order": [
+        "1589440091894"
+      ],
+      "settings": {
+        "off_mobile": false,
+        "off_desktop": false,
+        "title": "Banner with text 1",
+        "width_section": "w-100",
+        "width_content": true,
+        "section_margin_top": "",
+        "section_margin_bottom": "",
+        "section_padding": "2rem 0 7rem|7rem 0 2rem|7rem 0 2rem|10rem 0",
+        "section_bg": "",
+        "section_bg_op": 1,
+        "image": "shopify:\/\/shop_images\/section_bg_2_307b43ae-52ac-4678-a476-dea7a72d0bd9.png",
+        "css": "@media (max-width:768px){\n.section_id.bg-image {\n  background-image: none !important;\n}\n}\n.section_id h3.title{font-size:2.4rem;font-weight:700}\n\n.section_id .sub-title{line-height:1;font-size:4.5rem;font-weight:700}\n\n.section_id .box-dashed{border:1px dashed #222;border-radius:.5rem;padding:.7rem 1.2rem;text-transform:uppercase;font-size:1.4rem;color:#222;text-align:center;min-width:10rem}\n\n.section_id .molla-svg-icon{width:2.8rem!important}\n\n.section_id .molla-svg-icon+span{padding:0 .5rem!important}\n\n.section_id .box-dashed span{display:block;line-height:1.2}\n\n.section_id .box-dashed span:nth-child(2){font-weight:700;font-size:4.2rem}\n\n@media (min-width:576px){\n.section_id .sub-title{font-size:6rem}\n\n.section_id .content-text{font-size:1.6rem}\n\n.section_id .molla-svg-icon{width:3.6rem!important}\n\n.section_id .molla-svg-icon+span{padding:0 1rem!important}\n}"
+      }
+    },
+    "1589536851469": {
+      "type": "md_featured_product",
+      "blocks": {
+        "1589536868818": {
+          "type": "1",
+          "settings": {
+            "text_align": "",
+            "title_section": "Find Your Color",
+            "stitle_section": "Material &amp; Design",
+            "reverse": true,
+            "content_text": "Featuring Active Noise Cancelling that gives you the space to create with \nfully immersive sound.",
+            "featured_product": "one-product"
+          }
+        }
+      },
+      "block_order": [
+        "1589536868818"
+      ],
+      "settings": {
+        "off_mobile": false,
+        "off_desktop": false,
+        "title": "Featured product 1",
+        "width_section": "container",
+        "width_content": false,
+        "section_margin_top": "3rem",
+        "section_margin_bottom": "",
+        "section_padding": "",
+        "section_bg": "",
+        "section_bg_op": 1
+      }
+    },
+    "1589879049920": {
+      "type": "md_banner_template_6",
+      "blocks": {
+        "1589879260255": {
+          "type": "4",
+          "settings": {
+            "turnoff": false,
+            "title": "Banner type 29",
+            "stitle_1": "Material & Design",
+            "titlex_1": "Product<br>Gallery",
+            "desc_1": "Donec nec justo eget felis facilisis fermentum. Aliquam porttitor mauris sit amet orci. Aenean dignissim pellentesque felis.",
+            "banner-effect": "",
+            "image_1": "shopify:\/\/shop_images\/Rectangle_2-2.jpg",
+            "image_2": "shopify:\/\/shop_images\/Rectangle_2-1.jpg",
+            "image_3": "shopify:\/\/shop_images\/Rectangle_2.jpg"
+          }
+        }
+      },
+      "block_order": [
+        "1589879260255"
+      ],
+      "settings": {
+        "title": "Banner template 6",
+        "off_mobile": false,
+        "off_desktop": false,
+        "width_section": "w-100",
+        "width_content": true,
+        "section_margin_top": "0|0|0|5rem",
+        "section_margin_bottom": "",
+        "section_padding": "8rem 0|8rem 0|8rem 0|17rem 0",
+        "section_bg": "",
+        "section_bg_op": 1,
+        "image": "shopify:\/\/shop_images\/section-bg-3.png",
+        "preview": false
+      }
+    },
+    "1589882871668": {
+      "type": "md_video_banner_1",
+      "settings": {
+        "off_mobile": false,
+        "off_desktop": false,
+        "title": "Video banner 1",
+        "width_content": false,
+        "section_margin_top": "",
+        "section_margin_bottom": "",
+        "section_padding": "19.5rem 0",
+        "section_bg": "",
+        "section_bg_op": 1,
+        "image": "shopify:\/\/shop_images\/Layer_917.jpg",
+        "titlex": "",
+        "stitle": "",
+        "video_url": "https:\/\/www.youtube.com\/watch?v=2lAe1cqCOXo",
+        "btn_style": "thin"
+      }
+    },
+    "1589883121408": {
+      "type": "md_call_to_action",
+      "blocks": {
+        "1589883148243": {
+          "type": "design_2",
+          "settings": {
+            "title": "<span style=\"font-size: 2.4rem;font-weight: 700\">Get The Latest Deals<\/span>",
+            "description": "and receive $20 coupon for first shopping",
+            "style_btn": "btn-white-primary",
+            "style_btn_rounded": "",
+            "btn_shadow": false,
+            "btn_name_cta": "Subscribe<i class=\"fkt-long-arrow-right\"><\/i>"
+          }
+        }
+      },
+      "block_order": [
+        "1589883148243"
+      ],
+      "settings": {
+        "title": "Call to Action",
+        "off_mobile": false,
+        "off_desktop": false,
+        "width_section": "w-100",
+        "width_content": true,
+        "section_margin_top": "",
+        "section_margin_bottom": "",
+        "section_padding": "6rem 0",
+        "section_bg": "#222222",
+        "section_bg_op": 1,
+        "use_round": true,
+        "color_title": "#ffffff",
+        "color_desc": "#cccccc",
+        "color_text_input": "#999999",
+        "color_border_input": "#ffffff",
+        "color_placeholder": "#999999",
+        "color_bg_input": "#ffffff",
+        "preview": false
+      }
+    },
+    "1590136811007": {
+      "type": "md_testimonials",
+      "blocks": {
+        "1590136823830": {
+          "type": "item_4",
+          "settings": {
+            "rate": 5,
+            "image": "shopify:\/\/shop_images\/Ellipse-2.jpg",
+            "title": "It's a very good product.",
+            "content": "Dolor sit amet, consectetuer adipiscing elit. \nPhasellus hendrerit. Pellentesque aliquet",
+            "name": "Sakina Stout"
+          }
+        },
+        "1590136827949": {
+          "type": "item_4",
+          "settings": {
+            "rate": 5,
+            "image": "shopify:\/\/shop_images\/Ellipse-1.jpg",
+            "title": "5 stars indeed.",
+            "content": "In nisi neque, dapibus Sed pretium, ligula \nsollicitudin laoreet viverra, tortor libero sodales leo, eget blandit nunc tortor eu nibh.",
+            "name": "Sakina Stout"
+          }
+        },
+        "1590136830178": {
+          "type": "item_4",
+          "settings": {
+            "rate": 5,
+            "image": "shopify:\/\/shop_images\/Ellipse.jpg",
+            "title": "Excelente sound.",
+            "content": "Phasellus hendrerit. Pellentesque aliquet \nnibh nec urna. In nisi neque, dapibus",
+            "name": "Sakina Stout"
+          }
+        },
+        "1590207821638": {
+          "type": "item_title",
+          "settings": {
+            "title_section": "Customer Reviews",
+            "stitle_section": "Our users love us",
+            "reverse": true,
+            "title_align": "text-center",
+            "name_link": "",
+            "style_link": "",
+            "margin_btitle": 0
+          }
+        }
+      },
+      "block_order": [
+        "1590136823830",
+        "1590136827949",
+        "1590136830178",
+        "1590207821638"
+      ],
+      "settings": {
+        "title": "Testimonials",
+        "off_mobile": false,
+        "off_desktop": false,
+        "width_section": "container-fluid wide",
+        "width_content": true,
+        "section_margin_top": "",
+        "section_margin_bottom": "6rem|6rem|6rem|14rem",
+        "section_padding": "",
+        "section_bg": "",
+        "section_bg_op": 1,
+        "autoplay": false,
+        "use_navigation": true,
+        "nav_style": "-default",
+        "nav_mode": "default",
+        "nav_position": "nav-default",
+        "use_dots": false,
+        "dots_mode": "default",
+        "dots_position": "inside",
+        "responsive": "{\n  \"0\": {\n    \"slidesPerView\": 1,\n    \"spaceBetween\": 0\n  },\n  \"320\": {\n    \"slidesPerView\": 1,\n    \"spaceBetween\": 10\n  },\n  \"768\": {\n    \"slidesPerView\": 2,\n    \"spaceBetween\": 20\n  },\n  \"992\": {\n    \"slidesPerView\": 3,\n    \"spaceBetween\": 20\n  },\n  \"1200\": {\n    \"slidesPerView\": 3,\n    \"spaceBetween\": 20\n  }\n}",
+        "color_text": ""
+      }
+    },
+    "1590142877603": {
+      "type": "md_banner_with_text_1",
+      "blocks": {
+        "1590142897318": {
+          "type": "1",
+          "settings": {
+            "banner_align": "",
+            "image_link": "shopify:\/\/products\/one-product",
+            "text_align": "",
+            "title_section": "Product Overview",
+            "stitle_section": "Specification",
+            "reverse": true,
+            "content_text": "<ul>\n<li>\n<i class=\"fkt-check\"><\/i><span>Noise Cancelling actively blocks external noise<\/span>\n<\/li>\n<li>\n<i class=\"fkt-check\"><\/i><span>Up to 20+ hours of listening time<\/span>\n<\/li>\n<li>\n<i class=\"fkt-check\"><\/i><span>Class 1 Wireless Bluetooth<\/span>\n<\/li>\n<li>\n<i class=\"fkt-check\"><\/i><span>Product box uses 70% recycled fiber<\/span>\n<\/li>\n<\/ul>",
+            "color_title": "#222222",
+            "color_sub_title": "#222222",
+            "color_desc": "#666666",
+            "name_btn": "<i class=\"fkt-cart-plus fkt-lg\"><\/i><span>Add To Cart<\/span>",
+            "style_btn": "btn-primary",
+            "style_btn_rounded": "btn-round",
+            "btn_shadow": true
+          }
+        }
+      },
+      "block_order": [
+        "1590142897318"
+      ],
+      "settings": {
+        "off_mobile": false,
+        "off_desktop": false,
+        "title": "Banner with text 1",
+        "width_section": "w-100",
+        "width_content": true,
+        "section_margin_top": "",
+        "section_margin_bottom": "",
+        "section_padding": "5.5rem 0 5rem",
+        "section_bg": "#4f52d8",
+        "section_bg_op": 1,
+        "image": "shopify:\/\/shop_images\/headphones.jpg",
+        "css": "@media (max-width:768px){\n.section_id.bg-image {\n  background-image: none !important;\n}\n}\n.section_id{\n  background-position: top center;\n  background-repeat: no-repeat;\n}\n.section_id .sub-title{font-size:2.4rem;font-weight:700;color:#fff}\n\n.section_id h3.title{line-height:1;font-size:4.5rem;font-weight:700;color:#fff;max-width: 435px}\n\n.section_id .content-text{color:#fff;margin-top:5rem;margin-bottom:5rem;}\n\n.section_id .content-text ul li{margin-bottom: .5rem;}\n\n.section_id .content-text ul li i{padding-right: 1rem;}\n\n.section_id .content-text ul li span{font-size: 1.6rem; font-weight: 600; line-height: 1.5}\n.section_id .product-price {\nmargin-bottom: 0;\n  padding-top: 1rem;\n  padding-bottom: 1rem;\n  font-size: 2.4rem;\n  color: #fff;\n  font-weight: 700;\n}\n@media (min-width:576px){\n.section_id h3.title{font-size:6rem}\n.section_id .btn{\n  padding: .8rem 4.7rem;\n  text-transform: capitalize;\n  font-weight: 500;\n}\n.section_id .btn i {\n  font-size: 2.8rem;\n}\n}"
+      }
+    }
+  },
+  "order": [
+    "1566371829835",
+    "1566404133629",
+    "1588300997887",
+    "1589439884181",
+    "1589536851469",
+    "1589879049920",
+    "1590136811007",
+    "1590142877603",
+    "1589882871668",
+    "1589883121408"
+  ]
+}

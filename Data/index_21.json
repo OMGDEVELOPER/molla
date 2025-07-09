@@ -1,0 +1,609 @@
+{
+  "sections": {
+    "1566404133629": {
+      "type": "md_icon_boxes",
+      "blocks": {
+        "1566547298816": {
+          "type": "item_icon_side",
+          "settings": {
+            "icon_font": "fkt-truck",
+            "title": "Payment & Delivery",
+            "content": "Free shipping for orders over $50",
+            "url": ""
+          }
+        },
+        "1566547302546": {
+          "type": "item_icon_side",
+          "settings": {
+            "icon_font": "",
+            "title": "Return & Refund",
+            "content": "Free 100% money back guarantee",
+            "url": ""
+          }
+        },
+        "1566547305340": {
+          "type": "item_icon_side",
+          "settings": {
+            "icon_font": "fkt-life-ring",
+            "title": "Quality Support",
+            "content": "Alway online feedback 24\/7",
+            "url": ""
+          }
+        },
+        "1566547307469": {
+          "type": "item_icon_side",
+          "settings": {
+            "icon_font": "fkt-envelope",
+            "title": "JOIN OUR NEWSLETTER",
+            "content": "10% off by subscribing to our newsletter",
+            "url": ""
+          }
+        }
+      },
+      "block_order": [
+        "1566547298816",
+        "1566547302546",
+        "1566547305340",
+        "1566547307469"
+      ],
+      "settings": {
+        "title": "Icon Boxes",
+        "off_mobile": false,
+        "off_desktop": false,
+        "width_section": "w-100",
+        "width_content": true,
+        "section_margin_top": "",
+        "section_margin_bottom": "",
+        "section_padding": "",
+        "section_bg": "#ffffff",
+        "section_bg_op": 1,
+        "color_icon": "#333333",
+        "color_title": "#333333",
+        "color_desc": "#777777",
+        "title_font_weight": "400",
+        "use_slide": false,
+        "responsive": "{\n  \"0\": {\n    \"slidesPerView\": 1,\n    \"spaceBetween\": 20\n  },\n  \"320\": {\n    \"slidesPerView\": 1,\n    \"spaceBetween\": 20\n  },\n  \"476\": {\n    \"slidesPerView\": 2,\n    \"spaceBetween\": 20\n  },\n  \"768\": {\n    \"slidesPerView\": 2,\n    \"spaceBetween\": 20\n  },\n  \"992\": {\n    \"slidesPerView\": 3,\n    \"spaceBetween\": 20\n  },\n  \"1200\": {\n    \"slidesPerView\": 4,\n    \"spaceBetween\": 20\n  }\n}"
+      }
+    },
+    "1566442643300": {
+      "type": "md_call_to_action",
+      "blocks": {
+        "1575516733475": {
+          "type": "design_15",
+          "settings": {
+            "title": "Subscribe for Our Newsletter",
+            "description": "Learn about new offers and get more deals by joining our newsletter"
+          }
+        }
+      },
+      "block_order": [
+        "1575516733475"
+      ],
+      "settings": {
+        "title": "Call to Action",
+        "off_mobile": false,
+        "off_desktop": false,
+        "width_section": "container",
+        "width_content": true,
+        "section_margin_top": "",
+        "section_margin_bottom": "4rem",
+        "section_padding": "7.5rem 0 8rem",
+        "section_bg": "",
+        "section_bg_op": 1,
+        "image": "shopify:\/\/shop_images\/banner_bd4f4ef1-6a1f-4394-a965-fdc0f86dcb4e.jpg",
+        "use_round": false,
+        "color_title": "#ffffff",
+        "color_desc": "#ffffff",
+        "color_text_input": "#999999",
+        "color_border_input": "#dadada",
+        "color_placeholder": "#999999",
+        "color_bg_input": "#ffffff",
+        "preview": false
+      }
+    },
+    "1566371829835": {
+      "type": "kt_slideshow",
+      "blocks": {
+        "1566373570019-1": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/slide-1.png",
+            "lazypreload": true,
+            "heading": "WOMEN'S",
+            "font_heading": "poppins_n7",
+            "subheading": "RUNNING &amp;<br>TRAINING SHIRTS",
+            "font_subheading": "poppins_n7",
+            "description": "SAVE UP TO 30%",
+            "font_description": "poppins_n7",
+            "text_alignment_top": 50,
+            "text_alignment_left": 100,
+            "text_alignment": "",
+            "text_alignment_top_mb": 16,
+            "text_alignment_left_mb": 16,
+            "text_alignment_mb": "",
+            "style_btn_1": "btn-primary",
+            "style_btn_rounded_1": "",
+            "btn_shadow_1": false,
+            "link_1": "#",
+            "textBtn_1": "DISCOVER NOW",
+            "style_btn_2": "btn-primary",
+            "style_btn_rounded_2": "",
+            "btn_shadow_2": false,
+            "link_2": "",
+            "textBtn_2": "",
+            "turnoff": false,
+            "title": "Item image",
+            "width_section": true,
+            "css_block": ""
+          }
+        },
+        "1566373570019-2": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/slide-2_fdc1772b-7c6a-429f-a5c3-722f96705b1b.jpg",
+            "lazypreload": false,
+            "heading": "DEAL OF THE DAY",
+            "font_heading": "poppins_n7",
+            "subheading": "IT'S TIME TO UPGRADE<br>YOUR HIKING KIT",
+            "font_subheading": "poppins_n7",
+            "description": "SAVE UP TO 15%",
+            "font_description": "poppins_n7",
+            "text_alignment_top": 50,
+            "text_alignment_left": 100,
+            "text_alignment": "",
+            "text_alignment_top_mb": 16,
+            "text_alignment_left_mb": 16,
+            "text_alignment_mb": "",
+            "style_btn_1": "btn-primary",
+            "style_btn_rounded_1": "",
+            "btn_shadow_1": false,
+            "link_1": "#",
+            "textBtn_1": "DISCOVER NOW",
+            "style_btn_2": "btn-outline-primary-2",
+            "style_btn_rounded_2": "",
+            "btn_shadow_2": false,
+            "link_2": "",
+            "textBtn_2": "",
+            "turnoff": false,
+            "title": "Item image",
+            "width_section": true,
+            "css_block": ".block_id .slideshow__title, .block_id .slideshow__description{\n  color: #fff;\n}"
+          }
+        }
+      },
+      "block_order": [
+        "1566373570019-1",
+        "1566373570019-2"
+      ],
+      "settings": {
+        "title": "Slideshow",
+        "off_mobile": false,
+        "off_desktop": false,
+        "width_section": "w-100",
+        "width_content": false,
+        "section_margin_top": "",
+        "section_margin_bottom": "5rem",
+        "section_padding": "",
+        "section_bg": "#ffffff",
+        "section_bg_op": 1,
+        "no_overflow": false,
+        "fullscreen": false,
+        "autoplay": false,
+        "use_navigation": false,
+        "nav_style": "-default",
+        "nav_mode": "white",
+        "nav_position": "nav-default",
+        "use_dots": true,
+        "dots_mode": "white",
+        "use_scrollbar": false,
+        "h_reponsive": "360",
+        "h_reponsive_768": "441",
+        "h_reponsive_992": "352",
+        "h_reponsive_1200": "600",
+        "h_reponsive_1400": "",
+        "autoplay_speed": 7,
+        "responsive": "{\n  \"0\": {\n    \"slidesPerView\": 1,\n    \"spaceBetween\": 10\n  },\n  \"320\": {\n    \"slidesPerView\": 1,\n    \"spaceBetween\": 10\n  },\n  \"768\": {\n    \"slidesPerView\": 1,\n    \"spaceBetween\": 10\n  },\n  \"992\": {\n    \"slidesPerView\": 1,\n    \"spaceBetween\": 10\n  },\n  \"1200\": {\n    \"slidesPerView\": 1,\n    \"spaceBetween\": 10\n  }\n}",
+        "content_type": "type-1",
+        "css_section": ".section_id .slideshow__title{\n  color: #666;\n  font-size: 2.4rem;\n  letter-spacing: -.025em;\n  margin-bottom: .7rem;\n  text-indent: .2rem;\n}\n.section_id .slideshow__subtitle{\n  color: #fff;\n  font-size: 3rem;\n  letter-spacing: -.025em;\n  margin-bottom: 0;\n  line-height: 1em;\n}\n.section_id .slideshow__description{\n  color: #666;\n  font-size: 2.4rem;\n  letter-spacing: -.025em;\n  margin-bottom: .7rem;\n  text-indent: .2rem;\n}\n@media (min-width: 768px){\n  .section_id .slideshow__subtitle{\n    font-size: 6rem;\n  }\n  .section_id .slideshow__description{\n    font-size: 3.4rem;\n  }\n}"
+      }
+    },
+    "1566375748123": {
+      "type": "md_brand",
+      "blocks": {
+        "1566375770693": {
+          "type": "item",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/logo-2.png",
+            "brand_call_to_action": ""
+          }
+        },
+        "1566375778375": {
+          "type": "item",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/logo-4.png",
+            "brand_call_to_action": ""
+          }
+        },
+        "1566375785672": {
+          "type": "item",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/logo-3.png",
+            "brand_call_to_action": ""
+          }
+        },
+        "1566375792262": {
+          "type": "item",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/logo-8.png",
+            "brand_call_to_action": ""
+          }
+        },
+        "1566375798087": {
+          "type": "item",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/logo98.png",
+            "brand_call_to_action": ""
+          }
+        },
+        "1566375854429": {
+          "type": "item",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/logo-1.png",
+            "brand_call_to_action": ""
+          }
+        },
+        "1566375861746": {
+          "type": "item",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/logo-6.png",
+            "brand_call_to_action": ""
+          }
+        },
+        "1566375867631": {
+          "type": "item",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/logo.png",
+            "brand_call_to_action": ""
+          }
+        },
+        "1566375873048": {
+          "type": "item",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/logo-5.png",
+            "brand_call_to_action": ""
+          }
+        },
+        "1566375877804": {
+          "type": "item",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/logo-7.png",
+            "brand_call_to_action": ""
+          }
+        }
+      },
+      "block_order": [
+        "1566375770693",
+        "1566375778375",
+        "1566375785672",
+        "1566375792262",
+        "1566375798087",
+        "1566375854429",
+        "1566375861746",
+        "1566375867631",
+        "1566375873048",
+        "1566375877804"
+      ],
+      "settings": {
+        "title": "Brand",
+        "off_section": false,
+        "off_mobile": false,
+        "off_desktop": false,
+        "width_section": "w-100",
+        "width_content": true,
+        "section_margin_top": "",
+        "section_margin_bottom": "3rem",
+        "section_padding": "",
+        "section_bg": "#ffffff",
+        "section_bg_op": 1,
+        "brand_style": "type01",
+        "autoplay": false,
+        "use_navigation": true,
+        "nav_style": "1",
+        "nav_mode": "default",
+        "nav_position": "nav-default",
+        "use_dots": false,
+        "dots_mode": "default",
+        "dots_position": "outside",
+        "responsive": "{\n  \"0\": {\n    \"slidesPerView\": 2,\n    \"spaceBetween\": 0\n  },\n  \"480\": {\n    \"slidesPerView\": 3,\n    \"spaceBetween\": 0\n  },\n  \"768\": {\n    \"slidesPerView\": 4,\n    \"spaceBetween\": 0\n  },\n  \"992\": {\n    \"slidesPerView\": 5,\n    \"spaceBetween\": 0\n  },\n  \"1200\": {\n    \"slidesPerView\": 6,\n    \"spaceBetween\": 0\n  }\n}"
+      }
+    },
+    "1566535719773": {
+      "type": "md_product_section_tab_load",
+      "blocks": {
+        "1566535734515": {
+          "type": "item",
+          "settings": {
+            "title": "NEW ARRIVALS",
+            "stitle": "",
+            "title_align": "text-center",
+            "t_tranform": "text-uppercase",
+            "fsize_name_tab": 1.6,
+            "margin_btitles": 1.5,
+            "margin_btitle": 2.8,
+            "products_1": "all-h21-3",
+            "products_2": "women-h21-3",
+            "products_3": "men-h21-3",
+            "products_4": "shoes-h21-3",
+            "products_5": "accessories-h21-3",
+            "products_6": "",
+            "limit_per_row": 5,
+            "limit": 10,
+            "range_row": 2,
+            "load_btn": true,
+            "name_btn": "<span>VIEW MORE PRODUCTS<\/span><i class=\"fkt-long-arrow-right\" aria-hidden=\"true\"><\/i>",
+            "style_btn": "btn-outline-darker",
+            "style_btn_rounded": "",
+            "btn_shadow": false
+          }
+        }
+      },
+      "block_order": [
+        "1566535734515"
+      ],
+      "settings": {
+        "off_mobile": false,
+        "off_desktop": false,
+        "title": "Products Tab",
+        "width_section": "container",
+        "width_content": false,
+        "section_margin_top": "5rem",
+        "section_margin_bottom": "7rem",
+        "section_padding": "",
+        "section_bg": "",
+        "section_bg_op": 1,
+        "use_lazyload": true,
+        "product_grid_layout": "",
+        "use_nospace": false
+      }
+    },
+    "1575434115749": {
+      "type": "md_banner_template_5",
+      "blocks": {
+        "1575434126670": {
+          "type": "3",
+          "settings": {
+            "turnoff": false,
+            "title": "Banner type 23",
+            "banner-effect": "banner-effect1",
+            "image_1": "shopify:\/\/shop_images\/banner-1_b0b17cdf-06c9-48ae-bf57-e3eb397aaf43.jpg",
+            "image_link_1": "",
+            "stitle_1": "It's a lifestyle.",
+            "color_stitle_1": "#ffffff",
+            "titlex_1": "Running Apparel <br>END OF SEASON SALE",
+            "color_titlex_1": "#ffffff",
+            "name_btn_1": "SHOP NOW <i class=\"fkt-long-arrow-right\"><\/i>",
+            "style_btn_1": "btn-outline-white-4",
+            "style_btn_rounded_1": "",
+            "btn_shadow_1": false,
+            "image_2": "shopify:\/\/shop_images\/banner-2_c1a612b0-6735-4aa3-b706-9cd28834479e.jpg",
+            "image_link_2": "",
+            "stitle_2": "Hike Your Next Trail",
+            "color_stitle_2": "#ffffff",
+            "titlex_2": "NEW SEASON <br>NEW GEAR",
+            "color_titlex_2": "#ffffff",
+            "name_btn_2": "DISCOVER NOW <i class=\"fkt-long-arrow-right\"><\/i>",
+            "style_btn_2": "btn-outline-white-4",
+            "style_btn_rounded_2": "",
+            "btn_shadow_2": false,
+            "image_3": "shopify:\/\/shop_images\/banner-3_c0c19b05-4c25-4d1c-abf6-540ef836066c.jpg",
+            "image_link_3": "",
+            "stitle_3": "Summer Sale",
+            "color_stitle_3": "#ffffff",
+            "titlex_3": "Swimwear sale <br>Save up to 30%",
+            "color_titlex_3": "#ffffff",
+            "name_btn_3": "Shop Now <i class=\"fkt-long-arrow-right\"><\/i>",
+            "style_btn_3": "btn-outline-white-4",
+            "style_btn_rounded_3": "",
+            "btn_shadow_3": false
+          }
+        }
+      },
+      "block_order": [
+        "1575434126670"
+      ],
+      "settings": {
+        "title": "Banner template 5",
+        "off_mobile": false,
+        "off_desktop": false,
+        "width_section": "container",
+        "width_content": false,
+        "section_margin_top": "-10rem",
+        "section_margin_bottom": "3rem",
+        "section_padding": "",
+        "section_bg": "",
+        "section_bg_op": 1,
+        "preview": false
+      }
+    },
+    "1575439912432": {
+      "type": "md_product_section_slide",
+      "blocks": {
+        "1575439937760": {
+          "type": "item",
+          "settings": {
+            "title_section": "BEST SELLERS",
+            "stitle_section": "The Trends Boutique: The latest fashion trends from top brands!",
+            "reverse": false,
+            "title_align": "text-center",
+            "link_to": "",
+            "name_link": "",
+            "style_link": "",
+            "margin_btitle": 3,
+            "products": "best-seller-h21-1",
+            "limit": 8,
+            "load_btn": false,
+            "style_btn": "btn-outline-darker",
+            "style_btn_rounded": "",
+            "btn_shadow": false,
+            "autoplay": false,
+            "use_navigation": true,
+            "nav_style": "-default",
+            "nav_mode": "default",
+            "nav_position": "nav-default",
+            "use_dots": false,
+            "dots_mode": "default",
+            "dots_position": "inside",
+            "responsive": "{\n  \"0\": {\n    \"slidesPerView\": 1,\n    \"spaceBetween\": 20\n  },\n  \"320\": {\n    \"slidesPerView\": 2,\n    \"spaceBetween\": 20\n  },\n  \"768\": {\n    \"slidesPerView\": 3,\n    \"spaceBetween\": 20\n  },\n  \"992\": {\n    \"slidesPerView\": 3,\n    \"spaceBetween\": 20\n  },\n  \"1200\": {\n    \"slidesPerView\": 4,\n    \"spaceBetween\": 20\n  }\n}"
+          }
+        }
+      },
+      "block_order": [
+        "1575439937760"
+      ],
+      "settings": {
+        "title": "Products slide",
+        "off_mobile": false,
+        "off_desktop": false,
+        "width_section": "w-100",
+        "width_content": true,
+        "section_margin_top": "",
+        "section_margin_bottom": "5rem",
+        "section_padding": "",
+        "section_bg": "",
+        "section_bg_op": 1,
+        "use_lazyload": true,
+        "product_grid_layout": ""
+      }
+    },
+    "1575445734709": {
+      "type": "md_banner_products_set_4",
+      "blocks": {
+        "1575445774237": {
+          "type": "1",
+          "settings": {
+            "dark_mode": true,
+            "title": "About This Look",
+            "desc": "Donec odio. Quisque volutpat mattis eros. Nullam malesuada erat ut turpis.",
+            "product_1": "stowell-hood-fleece",
+            "product_2": "force-tight",
+            "product_3": "blitzing-cap",
+            "banner_left": true,
+            "image_banner": "shopify:\/\/shop_images\/banner_296c9b12-456c-4d78-a1ba-06fc7e0c17c1.jpg",
+            "image_link": "",
+            "title_banner": "Get Your<br>\nInspiration<br>\nIn The Street.",
+            "stitle_banner": "IN THIS LOOK",
+            "name_btn": "<span>BUY ALL<\/span><i class=\"fkt-long-arrow-right\"><\/i>"
+          }
+        }
+      },
+      "block_order": [
+        "1575445774237"
+      ],
+      "settings": {
+        "off_mobile": false,
+        "off_desktop": false,
+        "title": "Banner product set 4",
+        "section_margin_top": "",
+        "section_margin_bottom": "7.5rem",
+        "section_padding": "5rem 0 2.5rem",
+        "section_bg": "",
+        "section_bg_op": 1,
+        "image": "shopify:\/\/shop_images\/background.png",
+        "product_grid_layout": "02 p-style-20"
+      }
+    },
+    "1575452826466": {
+      "type": "md_list_item_cattegories_2",
+      "blocks": {
+        "1575452898947": {
+          "type": "item",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/footware.jpg",
+            "link": "#",
+            "title": "FOOTWEAR",
+            "name_btn": "SHOP NOW <i class=\"fkt-long-arrow-right\"><\/i>"
+          }
+        },
+        "1575452826466-0": {
+          "type": "item",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/accessories.jpg",
+            "link": "#",
+            "title": "ACCESSORIES",
+            "name_btn": "SHOP NOW <i class=\"fkt-long-arrow-right\"><\/i>"
+          }
+        },
+        "1575452909795": {
+          "type": "item",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/mens.jpg",
+            "link": "#",
+            "title": "MEN'S",
+            "name_btn": "SHOP NOW <i class=\"fkt-long-arrow-right\"><\/i>"
+          }
+        },
+        "1575452922782": {
+          "type": "item",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/womens.jpg",
+            "link": "#",
+            "title": "WOMEN'S",
+            "name_btn": "SHOP NOW <i class=\"fkt-long-arrow-right\"><\/i>"
+          }
+        }
+      },
+      "block_order": [
+        "1575452898947",
+        "1575452826466-0",
+        "1575452909795",
+        "1575452922782"
+      ],
+      "settings": {
+        "off_mobile": false,
+        "off_desktop": false,
+        "title": "List categories",
+        "width_section": "container",
+        "width_content": false,
+        "section_margin_top": "",
+        "section_margin_bottom": "7.5rem",
+        "section_padding": "",
+        "section_bg": "",
+        "section_bg_op": 1
+      }
+    },
+    "1575518545461": {
+      "type": "kt_instagram_3",
+      "settings": {
+        "off_mobile": false,
+        "off_desktop": false,
+        "title": "Instagram 3",
+        "width_section": "container",
+        "width_content": false,
+        "section_margin_top": "",
+        "section_margin_bottom": "",
+        "section_padding": "",
+        "section_bg": "",
+        "section_bg_op": 1,
+        "responsive": "{\n  \"0\": {\n    \"slidesPerView\": 1,\n    \"spaceBetween\": 20\n  },\n  \"320\": {\n    \"slidesPerView\": 1,\n    \"spaceBetween\": 20\n  },\n  \"768\": {\n    \"slidesPerView\": 2,\n    \"spaceBetween\": 20\n  },\n  \"992\": {\n    \"slidesPerView\": 3,\n    \"spaceBetween\": 20\n  },\n  \"1200\": {\n    \"slidesPerView\": 6,\n    \"spaceBetween\": 20\n  }\n}",
+        "title_section": "INSTAGRAM STORE",
+        "stitle_section": "",
+        "reverse": false,
+        "title_align": "text-center",
+        "margin_btitle": 4,
+        "images_limit": 7
+      }
+    }
+  },
+  "order": [
+    "1566371829835",
+    "1575434115749",
+    "1566375748123",
+    "1575439912432",
+    "1575445734709",
+    "1575452826466",
+    "1566535719773",
+    "1566442643300",
+    "1566404133629",
+    "1575518545461"
+  ]
+}

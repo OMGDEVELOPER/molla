@@ -1,0 +1,576 @@
+{
+  "sections": {
+    "1562059653538": {
+      "type": "md_icon_boxes",
+      "blocks": {
+        "1563414733119": {
+          "type": "item_icon_side",
+          "settings": {
+            "icon_font": "fkt-rocket",
+            "title": "Free Shipping",
+            "content": "Orders $50 or more"
+          }
+        },
+        "1563414741601": {
+          "type": "item_icon_side",
+          "settings": {
+            "icon_font": "",
+            "title": "Free Returns",
+            "content": "Within 30 days"
+          }
+        },
+        "1563414745154": {
+          "type": "item_icon_side",
+          "settings": {
+            "icon_font": "fkt-info-circle",
+            "title": "Get 20% Off 1 Item",
+            "content": "when you sign up"
+          }
+        },
+        "1563414747881": {
+          "type": "item_icon_side",
+          "settings": {
+            "icon_font": "fkt-life-ring",
+            "title": "We Support",
+            "content": "24\/7 amazing services"
+          }
+        }
+      },
+      "block_order": [
+        "1563414733119",
+        "1563414741601",
+        "1563414745154",
+        "1563414747881"
+      ],
+      "settings": {
+        "title": "Icon Boxes",
+        "off_mobile": true,
+        "off_desktop": false,
+        "width_section": "w-100",
+        "width_content": true,
+        "section_margin_top": "",
+        "section_margin_bottom": "",
+        "section_padding": "0 0 1px",
+        "section_bg": "#343a40",
+        "section_bg_op": 1,
+        "color_icon": "#666666",
+        "color_title": "#ffffff",
+        "color_desc": "#999999",
+        "title_font_weight": "400",
+        "use_slide": false,
+        "responsive": "{\n  \"0\": {\n    \"slidesPerView\": 1,\n    \"spaceBetween\": 20\n  },\n  \"320\": {\n    \"slidesPerView\": 1,\n    \"spaceBetween\": 20\n  },\n  \"476\": {\n    \"slidesPerView\": 2,\n    \"spaceBetween\": 20\n  },\n  \"768\": {\n    \"slidesPerView\": 2,\n    \"spaceBetween\": 20\n  },\n  \"992\": {\n    \"slidesPerView\": 3,\n    \"spaceBetween\": 20\n  },\n  \"1200\": {\n    \"slidesPerView\": 4,\n    \"spaceBetween\": 20\n  }\n}"
+      }
+    },
+    "1562227619804": {
+      "type": "md_brand",
+      "blocks": {
+        "1562227637354": {
+          "type": "item",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/logo-1.png"
+          }
+        },
+        "1562227667176": {
+          "type": "item",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/logo-4.png"
+          }
+        },
+        "1562227678904": {
+          "type": "item",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/logo-2.png"
+          }
+        },
+        "1562227689840": {
+          "type": "item",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/logo-3.png"
+          }
+        },
+        "1562227699832": {
+          "type": "item",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/logo-5.png"
+          }
+        },
+        "1562227712014": {
+          "type": "item",
+          "settings": {
+          }
+        },
+        "1562227713752": {
+          "type": "item",
+          "settings": {
+          }
+        },
+        "1562227727241": {
+          "type": "item",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/logo-6.png"
+          }
+        }
+      },
+      "block_order": [
+        "1562227637354",
+        "1562227667176",
+        "1562227678904",
+        "1562227689840",
+        "1562227699832",
+        "1562227712014",
+        "1562227713752",
+        "1562227727241"
+      ],
+      "settings": {
+        "title": "Brand",
+        "off_section": false,
+        "off_mobile": false,
+        "off_desktop": false,
+        "width_section": "w-100",
+        "width_content": true,
+        "section_margin_top": "",
+        "section_margin_bottom": "1rem",
+        "section_padding": "3.5rem 0 3.5rem",
+        "section_bg": "#ffffff",
+        "section_bg_op": 1,
+        "brand_style": "type01",
+        "autoplay": false,
+        "use_navigation": true,
+        "nav_style": "-default",
+        "nav_mode": "default",
+        "nav_position": "nav-default",
+        "use_dots": false,
+        "dots_mode": "default",
+        "dots_position": "inside",
+        "responsive": "{\n  \"0\": {\n    \"slidesPerView\": 1,\n    \"spaceBetween\": 0\n  },\n  \"320\": {\n    \"slidesPerView\": 2,\n    \"spaceBetween\": 0\n  },\n  \"768\": {\n    \"slidesPerView\": 4,\n    \"spaceBetween\": 0\n  },\n  \"992\": {\n    \"slidesPerView\": 6,\n    \"spaceBetween\": 0\n  },\n  \"1200\": {\n    \"slidesPerView\": 6,\n    \"spaceBetween\": 0\n  }\n}"
+      }
+    },
+    "1563258463318": {
+      "type": "md_banner_template_2",
+      "blocks": {
+        "1563419006018": {
+          "type": "5",
+          "settings": {
+            "turnoff": false,
+            "title": "Banner type 5",
+            "banner-effect": "banner-effect1",
+            "image_1": "shopify:\/\/shop_images\/banner-1_bd95c65e-e38f-4d38-aa17-27252a62f291.jpg",
+            "stitle_1": "Clearance",
+            "titlex_1": "<strong>Winter Collection<\/strong><br>from $19.00",
+            "name_btn_1": "SHOP NOW",
+            "style_btn_1": "btn-outline-white-4",
+            "style_btn_rounded_1": "",
+            "btn_shadow_1": false,
+            "image_2": "shopify:\/\/shop_images\/banner-2_743995a0-5343-4c8c-affe-505080f09111.jpg",
+            "stitle_2": "New Arrivals",
+            "titlex_2": "<strong>Accessories <br>and Wallets<\/strong>",
+            "name_btn_2": "DISCOVER NOW",
+            "style_btn_2": "btn-outline-white-4",
+            "style_btn_rounded_2": "",
+            "btn_shadow_2": false,
+            "image_3": "shopify:\/\/shop_images\/banner-3_65c71030-b5a2-4d30-8c86-eccc8c78b87b.jpg",
+            "stitle_3": "New Arrivals",
+            "titlex_3": "<strong>Spring 2019<\/strong>",
+            "name_btn_3": "DISCOVER NOW",
+            "style_btn_3": "btn-outline-white-4",
+            "style_btn_rounded_3": "",
+            "btn_shadow_3": false,
+            "image_4": "shopify:\/\/shop_images\/banner-4_ce6663fe-8530-4998-be32-ecc6a448ca77.jpg",
+            "stitle_4": "On Sale",
+            "titlex_4": "<strong>Women's Sportswear<\/strong> <br>from $39.00",
+            "name_btn_4": "DISCOVER NOW",
+            "style_btn_4": "btn-outline-white-4",
+            "style_btn_rounded_4": "",
+            "btn_shadow_4": false
+          }
+        }
+      },
+      "block_order": [
+        "1563419006018"
+      ],
+      "settings": {
+        "title": "Banner template 2",
+        "off_mobile": false,
+        "off_desktop": false,
+        "width_section": "w-100",
+        "width_content": true,
+        "section_margin_top": "",
+        "section_margin_bottom": "1rem",
+        "section_padding": "",
+        "section_bg": "#ffffff",
+        "section_bg_op": 1,
+        "preview": false
+      }
+    },
+    "1563265667015": {
+      "type": "kt_instagram_2",
+      "settings": {
+        "off_mobile": false,
+        "off_desktop": false,
+        "title": "Instagram 1",
+        "width_section": "w-100",
+        "width_content": false,
+        "section_margin_top": "",
+        "section_margin_bottom": "",
+        "section_padding": "",
+        "section_bg": "",
+        "section_bg_op": 1,
+        "responsive": "{\n  \"0\": {\n    \"slidesPerView\": 1,\n    \"spaceBetween\": 0\n  },\n  \"320\": {\n    \"slidesPerView\": 2,\n    \"spaceBetween\": 0\n  },\n  \"768\": {\n    \"slidesPerView\": 3,\n    \"spaceBetween\": 0\n  },\n  \"992\": {\n    \"slidesPerView\": 4,\n    \"spaceBetween\": 0\n  },\n  \"1200\": {\n    \"slidesPerView\": 5,\n    \"spaceBetween\": 0\n  },\n  \"1500\": {\n    \"slidesPerView\": 6,\n    \"spaceBetween\": 0\n  }\n}",
+        "title_section": "",
+        "stitle_section": "",
+        "reverse": false,
+        "title_align": "text-center",
+        "margin_btitle": 3,
+        "images_limit": 12,
+        "load_btn": false,
+        "name_btn": "@Midas Instagram",
+        "style_btn": "btn-outline-darker",
+        "style_btn_rounded": "",
+        "btn_shadow": false
+      }
+    },
+    "1564382878614": {
+      "type": "md_product_section_tab_slide_2",
+      "blocks": {
+        "1564382887541": {
+          "type": "item",
+          "settings": {
+            "title": "Trending Items",
+            "stitle": "",
+            "margin_btitle": 2,
+            "use_border": false,
+            "products_1": "womens-clothing-h9-1",
+            "products_2": "mens-clothing-h9-1",
+            "products_3": "",
+            "products_4": "",
+            "products_5": "",
+            "products_6": "",
+            "t_tranform": "text-uppercase",
+            "fsize_name_tab": 1.4,
+            "limit": 8,
+            "load_btn": false,
+            "style_btn": "btn-outline-darker",
+            "style_btn_rounded": "",
+            "btn_shadow": false,
+            "autoplay": false,
+            "use_navigation": false,
+            "nav_style": "1",
+            "nav_mode": "default",
+            "nav_position": "nav-default",
+            "use_dots": false,
+            "dots_mode": "default",
+            "dots_position": "inside",
+            "responsive": "{\n  \"0\": {\n    \"slidesPerView\": 1,\n    \"spaceBetween\": 0\n  },\n  \"320\": {\n    \"slidesPerView\": 2,\n    \"spaceBetween\": 10\n  },\n  \"768\": {\n    \"slidesPerView\": 3,\n    \"spaceBetween\": 20\n  },\n  \"992\": {\n    \"slidesPerView\": 3,\n    \"spaceBetween\": 20\n  },\n  \"1200\": {\n    \"slidesPerView\": 4,\n    \"spaceBetween\": 20\n  }\n}"
+          }
+        }
+      },
+      "block_order": [
+        "1564382887541"
+      ],
+      "settings": {
+        "title": "Products Tab(slide 2)",
+        "off_mobile": false,
+        "off_desktop": false,
+        "width_section": "w-100",
+        "width_content": true,
+        "section_margin_top": "",
+        "section_margin_bottom": "",
+        "section_padding": "6rem 0 0",
+        "section_bg": "#fafafa",
+        "section_bg_op": 1,
+        "use_lazyload": false,
+        "product_grid_layout": ""
+      }
+    },
+    "1564385624528": {
+      "type": "md_call_to_action",
+      "blocks": {
+        "1564385663687": {
+          "type": "design_2",
+          "settings": {
+            "title": "Sign up for the latest fashion news",
+            "description": "and receive <span class=\"font-weight-normal\">$20 coupon<\/span> for first shopping",
+            "style_btn": "btn-primary",
+            "style_btn_rounded": "",
+            "btn_shadow": false,
+            "btn_name_cta": "Subscribe<i class=\"fkt-long-arrow-right\"><\/i>"
+          }
+        }
+      },
+      "block_order": [
+        "1564385663687"
+      ],
+      "settings": {
+        "title": "Call to Action",
+        "off_mobile": false,
+        "off_desktop": false,
+        "width_section": "w-100",
+        "width_content": true,
+        "section_margin_top": "",
+        "section_margin_bottom": "",
+        "section_padding": "6rem 0",
+        "section_bg": "#ffffff",
+        "section_bg_op": 1,
+        "use_round": false,
+        "color_title": "#333333",
+        "color_desc": "#999999",
+        "color_text_input": "#999999",
+        "color_border_input": "#dadada",
+        "color_placeholder": "#999999",
+        "color_bg_input": "#ffffff",
+        "preview": false
+      }
+    },
+    "1564387810114": {
+      "type": "md_product_section_tab_slide_banner_2",
+      "blocks": {
+        "1564387818040": {
+          "type": "item",
+          "settings": {
+            "title": "Featured Footwear",
+            "stitle": "",
+            "margin_btitle": 3,
+            "image_banner": "shopify:\/\/shop_images\/banner-5_b62931bd-f5a8-4457-9972-010d396dddef.jpg",
+            "image_link_banner": "shopify:\/\/products\/sandals-4",
+            "use_content_banner": true,
+            "title_banner": "<i class=\"fkt-star-o\"><\/i><h3 class=\"text-white\">Our Experts<br>Recommend<\/h3>",
+            "name_btn_banner": "SHOP NOW",
+            "products_1": "womens-shoes-h9-2",
+            "products_2": "mens-shoes-h9-2",
+            "products_3": "",
+            "products_4": "",
+            "products_5": "",
+            "products_6": "",
+            "limit": 8,
+            "load_btn": false,
+            "style_btn": "btn-outline-darker",
+            "style_btn_rounded": "",
+            "btn_shadow": false,
+            "autoplay": false,
+            "use_navigation": true,
+            "nav_style": "1",
+            "nav_mode": "default",
+            "nav_position": "nav-default",
+            "use_dots": false,
+            "dots_mode": "default",
+            "dots_position": "inside",
+            "responsive": "{\n  \"0\": {\n    \"slidesPerView\": 1,\n    \"spaceBetween\": 0\n  },\n  \"320\": {\n    \"slidesPerView\": 2,\n    \"spaceBetween\": 20\n  },\n  \"768\": {\n    \"slidesPerView\": 3,\n    \"spaceBetween\": 20\n  },\n  \"992\": {\n    \"slidesPerView\": 3,\n    \"spaceBetween\": 20\n  },\n  \"1200\": {\n    \"slidesPerView\": 3,\n    \"spaceBetween\": 20\n  }\n}"
+          }
+        }
+      },
+      "block_order": [
+        "1564387818040"
+      ],
+      "settings": {
+        "title": "Products Tab(slide+banner)",
+        "off_mobile": false,
+        "off_desktop": false,
+        "width_section": "container",
+        "width_content": false,
+        "section_margin_top": "5rem",
+        "section_margin_bottom": "",
+        "section_padding": "",
+        "section_bg": "",
+        "section_bg_op": 1,
+        "use_lazyload": false,
+        "product_grid_layout": ""
+      }
+    },
+    "1566891404247": {
+      "type": "kt_slideshow",
+      "blocks": {
+        "1566891486150": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/slide-1_4ea8f732-d471-48d5-b381-d685f35ce7f1.jpg",
+            "lazypreload": false,
+            "heading": "New Collection",
+            "font_heading": "poppins_n3",
+            "subheading": "Women’s <br>Sportswear &amp; Joggers",
+            "font_subheading": "poppins_n7",
+            "description": "2019",
+            "font_description": "poppins_n4",
+            "text_alignment_top": 50,
+            "text_alignment_left": 10,
+            "text_alignment": "",
+            "text_alignment_mb": "",
+            "style_btn_1": "btn-primary",
+            "style_btn_rounded_1": "",
+            "btn_shadow_1": false,
+            "link_1": "#",
+            "textBtn_1": "<span>SHOP NOW<\/span><i class=\"fkt-long-arrow-right\"><\/i>",
+            "style_btn_2": "btn-outline-primary-2",
+            "style_btn_rounded_2": "",
+            "btn_shadow_2": false,
+            "textBtn_2": "",
+            "turnoff": false,
+            "title": "Item image",
+            "width_section": true,
+            "css_block": ".block_id {}"
+          }
+        },
+        "1566891486150-1": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/slide-2_701caa06-98f7-49ca-af75-c6d5a63938dc.jpg",
+            "lazypreload": false,
+            "heading": "New Collection",
+            "font_heading": "poppins_n3",
+            "subheading": "Men’s <br>Coats &amp; Jackets",
+            "font_subheading": "poppins_n7",
+            "description": "",
+            "font_description": "poppins_n4",
+            "text_alignment_top": 50,
+            "text_alignment_left": 10,
+            "text_alignment": "",
+            "text_alignment_mb": "",
+            "style_btn_1": "btn-primary",
+            "style_btn_rounded_1": "",
+            "btn_shadow_1": false,
+            "link_1": "#",
+            "textBtn_1": "<span>DISCOVER NOW<\/span><i class=\"fkt-long-arrow-right\"><\/i>",
+            "style_btn_2": "btn-outline-primary-2",
+            "style_btn_rounded_2": "",
+            "btn_shadow_2": false,
+            "textBtn_2": "",
+            "turnoff": false,
+            "title": "Item image",
+            "width_section": true,
+            "css_block": ".block_id .slideshow__subtitle{\n  margin-bottom: 1.4rem;\n}"
+          }
+        },
+        "1566891486150-2": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/slide-3_941eeec7-3846-4ed6-b9dc-c2d303bd735e.jpg",
+            "lazypreload": false,
+            "heading": "Deals and Promotions",
+            "font_heading": "poppins_n3",
+            "subheading": "Sneakers &amp; Athletic Shoes",
+            "font_subheading": "poppins_n7",
+            "description": "from $9.99",
+            "font_description": "poppins_n4",
+            "text_alignment_top": 50,
+            "text_alignment_left": 10,
+            "text_alignment": "",
+            "text_alignment_mb": "",
+            "style_btn_1": "btn-primary",
+            "style_btn_rounded_1": "",
+            "btn_shadow_1": false,
+            "link_1": "#",
+            "textBtn_1": "<span>SHOP NOW<\/span><i class=\"fkt-long-arrow-right\"><\/i>",
+            "style_btn_2": "btn-outline-primary-2",
+            "style_btn_rounded_2": "",
+            "btn_shadow_2": false,
+            "textBtn_2": "",
+            "turnoff": false,
+            "title": "Item image",
+            "width_section": true,
+            "css_block": ".block_id {}"
+          }
+        }
+      },
+      "block_order": [
+        "1566891486150",
+        "1566891486150-1",
+        "1566891486150-2"
+      ],
+      "settings": {
+        "title": "Slideshow",
+        "off_mobile": false,
+        "off_desktop": false,
+        "width_section": "w-100",
+        "width_content": true,
+        "section_margin_top": "",
+        "section_margin_bottom": "3rem",
+        "section_padding": "",
+        "section_bg": "",
+        "section_bg_op": 1,
+        "no_overflow": true,
+        "fullscreen": false,
+        "autoplay": true,
+        "use_navigation": true,
+        "nav_style": "-default",
+        "nav_mode": "white",
+        "nav_position": "nav-center-outside",
+        "use_dots": true,
+        "dots_mode": "white",
+        "use_scrollbar": false,
+        "h_reponsive": "250",
+        "h_reponsive_768": "300",
+        "h_reponsive_992": "",
+        "h_reponsive_1200": "510",
+        "autoplay_speed": 7,
+        "responsive": "{\n  \"0\": {\n    \"slidesPerView\": 1,\n    \"spaceBetween\": 0\n  },\n  \"320\": {\n    \"slidesPerView\": 1,\n    \"spaceBetween\": 0\n  },\n  \"768\": {\n    \"slidesPerView\": 1,\n    \"spaceBetween\": 0\n  },\n  \"992\": {\n    \"slidesPerView\": 1,\n    \"spaceBetween\": 0\n  },\n  \"1200\": {\n    \"slidesPerView\": 1,\n    \"spaceBetween\": 0\n  }\n}",
+        "content_type": "type-1",
+        "css_section": ".section_id .slideshow__title{\n  color: var(--primary);\n  font-size: 1.4rem;\n  letter-spacing: -.01em;\n  margin-bottom: .5rem;\n}\n.section_id .slideshow__subtitle{\n  color: #fff;\n  font-size: 2.4rem;\n  line-height: 1.2;\n  letter-spacing: -.03em;\n}\n.section_id .slideshow__description{\n  color: #fff;\n  margin-bottom: 1rem;\n  clear: both;\n  font-size: 1.4rem;\n  line-height: 2.4rem;\n}\n@media (min-width: 576px){\n  .section_id .slideshow__title{\n    font-size: 1.6rem;\n  }\n  .section_id .slideshow__subtitle{\n    font-size: 3.6rem;\n  }\n}\n@media (min-width: 768px){\n  .section_id .slideshow__title{\n    font-size: 1.8rem;\n  }\n  .section_id .slideshow__subtitle{\n    font-size: 4.2rem;\n  }\n  .section_id .slideshow__description{\n    line-height: 3.6rem;\n    font-size: 2.4rem;\n    letter-spacing: 0.05em;\n  }\n}\n@media (min-width: 1200px){\n  .section_id .slideshow__title{\n    font-size: 2rem;\n  }\n  .section_id .slideshow__subtitle{\n    font-size: 5.2rem;\n  }\n}"
+      }
+    },
+    "1573705673637": {
+      "type": "md_product_section_tab_slide_banner_2",
+      "blocks": {
+        "1573705692320": {
+          "type": "item",
+          "settings": {
+            "title": "Bags & Accessories",
+            "stitle": "",
+            "margin_btitle": 3,
+            "image_banner": "shopify:\/\/shop_images\/banner-6_39e45094-6be7-406c-9124-cbf5a2bb8486.jpg",
+            "image_link_banner": "shopify:\/\/products\/backpack",
+            "use_content_banner": true,
+            "title_banner": "<i class=\"fkt-star-o\"><\/i><h3 class=\"text-white\">Our Experts<br>Recommend<\/h3>",
+            "name_btn_banner": "DISCOVER NOW",
+            "products_1": "womens-h9-3",
+            "products_2": "mens-h9-3",
+            "products_3": "",
+            "products_4": "",
+            "products_5": "",
+            "products_6": "",
+            "limit": 8,
+            "load_btn": false,
+            "style_btn": "btn-outline-darker",
+            "style_btn_rounded": "",
+            "btn_shadow": false,
+            "autoplay": false,
+            "use_navigation": true,
+            "nav_style": "-default",
+            "nav_mode": "default",
+            "nav_position": "nav-default",
+            "use_dots": false,
+            "dots_mode": "default",
+            "dots_position": "inside",
+            "responsive": "{\n  \"0\": {\n    \"slidesPerView\": 1,\n    \"spaceBetween\": 0\n  },\n  \"320\": {\n    \"slidesPerView\": 2,\n    \"spaceBetween\": 10\n  },\n  \"768\": {\n    \"slidesPerView\": 2,\n    \"spaceBetween\": 20\n  },\n  \"992\": {\n    \"slidesPerView\": 3,\n    \"spaceBetween\": 20\n  },\n  \"1200\": {\n    \"slidesPerView\": 3,\n    \"spaceBetween\": 20\n  }\n}"
+          }
+        }
+      },
+      "block_order": [
+        "1573705692320"
+      ],
+      "settings": {
+        "title": "Products Tab(slide+banner)",
+        "off_mobile": false,
+        "off_desktop": false,
+        "width_section": "container",
+        "width_content": false,
+        "section_margin_top": "",
+        "section_margin_bottom": "",
+        "section_padding": "",
+        "section_bg": "",
+        "section_bg_op": 1,
+        "use_lazyload": false,
+        "product_grid_layout": ""
+      }
+    }
+  },
+  "order": [
+    "1562059653538",
+    "1566891404247",
+    "1563258463318",
+    "1562227619804",
+    "1564382878614",
+    "1564387810114",
+    "1573705673637",
+    "1564385624528",
+    "1563265667015"
+  ]
+}

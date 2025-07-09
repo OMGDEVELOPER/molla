@@ -1,0 +1,848 @@
+{
+  "sections": {
+    "1566404133629": {
+      "type": "md_icon_boxes",
+      "blocks": {
+        "1566547298816": {
+          "type": "item_icon_side",
+          "settings": {
+            "icon_font": "fkt-truck",
+            "title": "Payment & Delivery",
+            "content": "Free shipping for orders over $50"
+          }
+        },
+        "1566547302546": {
+          "type": "item_icon_side",
+          "settings": {
+            "icon_font": "fkt-rotate-left",
+            "title": "Return & Refund",
+            "content": "Free 100% money back guarantee"
+          }
+        },
+        "1566547305340": {
+          "type": "item_icon_side",
+          "settings": {
+            "icon_font": "fkt-headphones",
+            "title": "Quality Support",
+            "content": "Alway online feedback 24\/7"
+          }
+        },
+        "1566547307469": {
+          "type": "item_icon_side",
+          "settings": {
+            "icon_font": "fkt-envelope",
+            "title": "Join Our Newsletter",
+            "content": "10% off by subscribing to our newsletter"
+          }
+        }
+      },
+      "block_order": [
+        "1566547298816",
+        "1566547302546",
+        "1566547305340",
+        "1566547307469"
+      ],
+      "settings": {
+        "title": "Icon Boxes",
+        "off_mobile": false,
+        "off_desktop": false,
+        "width_section": "w-100",
+        "width_content": true,
+        "section_margin_top": "",
+        "section_margin_bottom": "",
+        "section_padding": ".5rem 0 2.5rem",
+        "section_bg": "#ffffff",
+        "section_bg_op": 0,
+        "color_icon": "#999999",
+        "color_title": "#999999",
+        "color_desc": "#999999",
+        "title_font_weight": "600",
+        "use_slide": true,
+        "responsive": "{\n  \"0\": {\n    \"slidesPerView\": 1,\n    \"spaceBetween\": 10\n  },\n  \"320\": {\n    \"slidesPerView\": 1,\n    \"spaceBetween\": 10\n  },\n  \"476\": {\n    \"slidesPerView\": 2,\n    \"spaceBetween\": 10\n  },\n  \"768\": {\n    \"slidesPerView\": 2,\n    \"spaceBetween\": 10\n  },\n  \"992\": {\n    \"slidesPerView\": 3,\n    \"spaceBetween\": 10\n  },\n  \"1200\": {\n    \"slidesPerView\": 4,\n    \"spaceBetween\": 10\n  }\n}"
+      }
+    },
+    "1591244978544": {
+      "type": "md_call_to_action",
+      "blocks": {
+        "1593765171033": {
+          "type": "design_7",
+          "settings": {
+            "title": "Join Our Newsletter",
+            "description": "Lorem ipsum dolor sit amet adipiscing.",
+            "style_btn": "btn-primary",
+            "style_btn_rounded": "btn-rounded",
+            "btn_shadow": false,
+            "btn_name_cta": "SUBSCRIBE<i class=\"fkt-long-arrow-right\"><\/i>"
+          }
+        }
+      },
+      "block_order": [
+        "1593765171033"
+      ],
+      "settings": {
+        "title": "Call to Action",
+        "off_mobile": false,
+        "off_desktop": false,
+        "width_section": "w-100",
+        "width_content": true,
+        "section_margin_top": "",
+        "section_margin_bottom": "",
+        "section_padding": "",
+        "section_bg": "#222222",
+        "section_bg_op": 1,
+        "use_round": false,
+        "color_title": "#ffffff",
+        "color_desc": "#999999",
+        "color_text_input": "#999999",
+        "color_border_input": "#ebebeb",
+        "color_placeholder": "#999999",
+        "color_bg_input": "#ffffff",
+        "preview": false
+      }
+    },
+    "1592551122488": {
+      "type": "md_banner_template_1",
+      "blocks": {
+        "1592551137021": {
+          "type": "3",
+          "settings": {
+            "turnoff": false,
+            "title": "Banner type 3",
+            "content_type": "type_6",
+            "banner-effect": "",
+            "image_1": "shopify:\/\/shop_images\/banner_bg-1-h-26.jpg",
+            "stitle_1": "Headphone Savings",
+            "color_stitle_1": "#ffffff",
+            "titlex_1": "Headphone<br>Trending JBL<br>Harman",
+            "color_titlex_1": "#ffffff",
+            "name_btn_1": "<strong>Shop Now<\/strong><i class=\"fkt-long-arrow-right\"><\/i>",
+            "style_btn_1": "btn-secondary",
+            "style_btn_rounded_1": "btn-rounded",
+            "btn_shadow_1": false,
+            "image_2": "shopify:\/\/shop_images\/banner_bg-h-26.jpg",
+            "stitle_2": "Weekend Sale",
+            "color_stitle_2": "#222222",
+            "titlex_2": "Home Furnishings<br>Outdoor & Office",
+            "color_titlex_2": "#222222",
+            "name_btn_2": "<strong>Shop Now<\/strong><i class=\"fkt-long-arrow-right\"><\/i>",
+            "style_btn_2": "btn-secondary",
+            "style_btn_rounded_2": "btn-rounded",
+            "btn_shadow_2": false,
+            "image_3": "shopify:\/\/shop_images\/img_bg-h-26.jpg",
+            "stitle_3": "Amazing Value",
+            "color_stitle_3": "#efefef",
+            "titlex_3": "Clothes Trending<br>Spring \/ Summer<br>\n<span class=\"font-weight-normal\" style=\"color: var(--secondary)\">from $12,99<\/span>",
+            "color_titlex_3": "#ffffff",
+            "name_btn_3": "<strong>Discover Now<\/strong><i class=\"fkt-long-arrow-right\"><\/i>",
+            "style_btn_3": "btn-white",
+            "style_btn_rounded_3": "btn-rounded",
+            "btn_shadow_3": false,
+            "css": ""
+          }
+        }
+      },
+      "block_order": [
+        "1592551137021"
+      ],
+      "settings": {
+        "title": "Banner template 1",
+        "off_mobile": false,
+        "off_desktop": false,
+        "width_section": "w-100",
+        "width_content": true,
+        "section_margin_top": "",
+        "section_margin_bottom": "",
+        "section_padding": "1rem 0 0",
+        "section_bg": "#ffffff",
+        "section_bg_op": 0,
+        "preview": false
+      }
+    },
+    "1592552083889": {
+      "type": "md_list_item_cattegories_1",
+      "blocks": {
+        "1593594703333": {
+          "type": "item_title",
+          "settings": {
+            "title_section": "Explore Popular Categories",
+            "stitle_section": "",
+            "reverse": false,
+            "title_align": "text-center",
+            "name_link": "",
+            "style_link": ""
+          }
+        },
+        "1592552083889-0": {
+          "type": "item",
+          "settings": {
+            "icon_svg_1": "t-shirt",
+            "link_1": "shopify:\/\/collections\/meat-h28-1",
+            "title_1": "Meat",
+            "icon_svg_2": "desktop",
+            "link_2": "shopify:\/\/collections\/fruits-h28-1",
+            "title_2": "Fruits"
+          }
+        },
+        "1592552197943": {
+          "type": "item",
+          "settings": {
+            "icon_svg_1": "lamp-2",
+            "link_1": "shopify:\/\/collections\/bakery-h28-1",
+            "title_1": "Bakery",
+            "icon_svg_2": "smartphones",
+            "link_2": "shopify:\/\/collections\/vegetable-h28-1",
+            "title_2": "Vegetable"
+          }
+        },
+        "1592552238252": {
+          "type": "item",
+          "settings": {
+            "icon_svg_1": "monitor",
+            "link_1": "shopify:\/\/collections\/seafood-h28-1",
+            "title_1": "Seafood",
+            "icon_svg_2": "blender",
+            "link_2": "shopify:\/\/collections\/drinks-h28-1",
+            "title_2": "Drinks"
+          }
+        },
+        "1592552297125": {
+          "type": "item",
+          "settings": {
+            "icon_svg_1": "couch",
+            "link_1": "shopify:\/\/collections\/dairy-cheese-h28-1",
+            "title_1": "Dairy & Cheese",
+            "icon_svg_2": "controller-1",
+            "link_2": "shopify:\/\/collections\/wine-h28-1",
+            "title_2": "Wine"
+          }
+        }
+      },
+      "block_order": [
+        "1593594703333",
+        "1592552083889-0",
+        "1592552197943",
+        "1592552238252",
+        "1592552297125"
+      ],
+      "settings": {
+        "off_mobile": false,
+        "off_desktop": false,
+        "title": "List categories",
+        "width_section": "w-100",
+        "width_content": true,
+        "section_margin_top": "",
+        "section_margin_bottom": "",
+        "section_padding": "4rem 0 4rem",
+        "section_bg": "",
+        "section_bg_op": 1,
+        "content_type": "type_3"
+      }
+    },
+    "1566375748123": {
+      "type": "md_brand",
+      "blocks": {
+        "1566375770693": {
+          "type": "item",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/logo-2.png"
+          }
+        },
+        "1566375778375": {
+          "type": "item",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/logo-4.png"
+          }
+        },
+        "1566375785672": {
+          "type": "item",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/logo-3.png"
+          }
+        },
+        "1566375792262": {
+          "type": "item",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/logo-8.png"
+          }
+        },
+        "1566375798087": {
+          "type": "item",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/logo98.png"
+          }
+        },
+        "1566375854429": {
+          "type": "item",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/logo-1.png"
+          }
+        },
+        "1566375861746": {
+          "type": "item",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/logo-6.png"
+          }
+        },
+        "1566375867631": {
+          "type": "item",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/logo.png"
+          }
+        },
+        "1566375873048": {
+          "type": "item",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/logo-5.png"
+          }
+        },
+        "1566375877804": {
+          "type": "item",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/logo-7.png"
+          }
+        }
+      },
+      "block_order": [
+        "1566375770693",
+        "1566375778375",
+        "1566375785672",
+        "1566375792262",
+        "1566375798087",
+        "1566375854429",
+        "1566375861746",
+        "1566375867631",
+        "1566375873048",
+        "1566375877804"
+      ],
+      "settings": {
+        "title": "Brand",
+        "off_section": false,
+        "off_mobile": false,
+        "off_desktop": false,
+        "width_section": "w-100",
+        "width_content": true,
+        "section_margin_top": "",
+        "section_margin_bottom": "",
+        "section_padding": "2rem 0",
+        "section_bg": "#ffffff",
+        "section_bg_op": 1,
+        "brand_style": "type01",
+        "autoplay": false,
+        "use_navigation": true,
+        "nav_style": "1",
+        "nav_mode": "default",
+        "nav_position": "nav-default",
+        "use_dots": false,
+        "dots_mode": "default",
+        "dots_position": "outside",
+        "responsive": "{\n  \"0\": {\n    \"slidesPerView\": 2,\n    \"spaceBetween\": 0\n  },\n  \"480\": {\n    \"slidesPerView\": 3,\n    \"spaceBetween\": 0\n  },\n  \"768\": {\n    \"slidesPerView\": 4,\n    \"spaceBetween\": 0\n  },\n  \"992\": {\n    \"slidesPerView\": 5,\n    \"spaceBetween\": 0\n  },\n  \"1200\": {\n    \"slidesPerView\": 6,\n    \"spaceBetween\": 0\n  }\n}"
+      }
+    },
+    "1592808951937": {
+      "type": "md_blog",
+      "blocks": {
+        "1592808966892": {
+          "type": "title",
+          "settings": {
+            "title_section": "From Our Blog",
+            "stitle_section": "",
+            "reverse": false,
+            "title_align": "",
+            "link_to": "shopify:\/\/blogs\/food",
+            "name_link": "<span style=\"color: #999\">VIEW MORE POST <i class=\"fkt-long-arrow-right\"><\/i><\/span>",
+            "style_link": "",
+            "margin_btitle": 3
+          }
+        },
+        "1592809026654": {
+          "type": "6",
+          "settings": {
+            "blog": "market-2",
+            "limit": 8,
+            "content_align": "",
+            "margin_btitle": 1.6,
+            "use_date": true,
+            "use_content": true,
+            "use_readmore": false,
+            "use_bg": false,
+            "use_shadow": false,
+            "limit_per_row": 4,
+            "use_slide": true,
+            "autoplay": false,
+            "use_navigation": true,
+            "nav_style": "-default",
+            "nav_mode": "default",
+            "nav_position": "nav-default",
+            "use_dots": false,
+            "dots_mode": "default",
+            "dots_position": "inside",
+            "responsive": "{\n  \"0\": {\n    \"slidesPerView\": 1,\n    \"spaceBetween\": 20\n  },\n  \"320\": {\n    \"slidesPerView\": 1,\n    \"spaceBetween\": 20\n  },\n  \"768\": {\n    \"slidesPerView\": 2,\n    \"spaceBetween\": 20\n  },\n  \"992\": {\n    \"slidesPerView\": 3,\n    \"spaceBetween\": 20\n  },\n  \"1200\": {\n    \"slidesPerView\": 4,\n    \"spaceBetween\": 20\n  }\n}",
+            "load_btn": false,
+            "style_btn": "btn-outline-darker",
+            "style_btn_rounded": "",
+            "btn_shadow": false
+          }
+        }
+      },
+      "block_order": [
+        "1592808966892",
+        "1592809026654"
+      ],
+      "settings": {
+        "title": "Related post",
+        "off_mobile": false,
+        "off_desktop": false,
+        "width_section": "w-100",
+        "width_content": true,
+        "section_margin_top": "",
+        "section_margin_bottom": "",
+        "section_padding": "6rem 0",
+        "section_bg": "#ffffff",
+        "section_bg_op": 1,
+        "fweight_title": "600",
+        "fsize_stitle": 1.8,
+        "color_title": "#222222",
+        "margin_btitle": 1.5,
+        "fweight_description": "300",
+        "fsize_description": 1.4,
+        "color_desc": "#999999",
+        "margin_bdescription": 0.8,
+        "use_lazyload": true
+      }
+    },
+    "1593143507209": {
+      "type": "md_product_section_sale_1",
+      "blocks": {
+        "1593143524456": {
+          "type": "item",
+          "settings": {
+            "title_section": "Today’s Best Deal",
+            "stitle_section": "",
+            "reverse": false,
+            "title_align": "text-center",
+            "name_link": "",
+            "style_link": "",
+            "margin_btitle": 3,
+            "stock_countdown": false,
+            "time_countdown": "",
+            "products": "today-s-best-deal-h26-1",
+            "limit": 8,
+            "load_btn": false,
+            "style_btn": "btn-outline-darker",
+            "style_btn_rounded": "",
+            "btn_shadow": false,
+            "autoplay": false,
+            "use_navigation": true,
+            "nav_style": "-default",
+            "nav_mode": "default",
+            "nav_position": "nav-default",
+            "use_dots": false,
+            "dots_mode": "default",
+            "dots_position": "inside",
+            "responsive": "{\n  \"0\": {\n    \"slidesPerView\": 1,\n    \"spaceBetween\": 0\n  },\n  \"576\": {\n    \"slidesPerView\": 2,\n    \"spaceBetween\": 0\n  },\n  \"768\": {\n    \"slidesPerView\": 3,\n    \"spaceBetween\": 0\n  },\n  \"992\": {\n    \"slidesPerView\": 4,\n    \"spaceBetween\": 0\n  },\n  \"1200\": {\n    \"slidesPerView\": 5,\n    \"spaceBetween\": 0\n  }\n}"
+          }
+        }
+      },
+      "block_order": [
+        "1593143524456"
+      ],
+      "settings": {
+        "title": "Products sale 1",
+        "off_mobile": false,
+        "off_desktop": false,
+        "width_section": "w-100",
+        "width_content": true,
+        "section_margin_top": "",
+        "section_margin_bottom": "",
+        "section_padding": "5rem 0",
+        "section_bg": "#fafafa",
+        "section_bg_op": 1,
+        "use_lazyload": true,
+        "product_grid_layout": "28 p-style-28_"
+      }
+    },
+    "1593501530615": {
+      "type": "kt_slideshowCategoryBanner",
+      "blocks": {
+        "1593501530615-0": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/slide_bg_592be838-8238-4f00-903b-e6b78752ca25.jpg",
+            "lazypreload": true,
+            "heading": "Trade-In Offer",
+            "font_heading": "poppins_n4",
+            "subheading": "Multi-motion<br>\nFood Processor",
+            "font_subheading": "poppins_n7",
+            "description": "<sup class=\"intro-old-price\">From <span class=\"text-primary\">$<\/span><\/sup>\n<span class=\"text-primary\">199<sup>.99<\/sup>\n<\/span>",
+            "font_description": "poppins_n6",
+            "text_alignment_top": 50,
+            "text_alignment_left": 16,
+            "text_alignment": "",
+            "text_alignment_top_mb": 16,
+            "text_alignment_left_mb": 16,
+            "text_alignment_mb": "",
+            "style_btn_1": "btn-secondary",
+            "style_btn_rounded_1": "btn-rounded",
+            "btn_shadow_1": false,
+            "link_1": "#",
+            "textBtn_1": "SHOP NOW <i class=\"fkt-long-arrow-right\"><\/i>",
+            "style_btn_2": "btn-outline-primary-2",
+            "style_btn_rounded_2": "",
+            "btn_shadow_2": false,
+            "textBtn_2": "",
+            "turnoff": false,
+            "title": "Item image",
+            "width_section": true,
+            "css_block": ".block_id {}"
+          }
+        },
+        "1593590234813": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/slide-bg-2.jpg",
+            "lazypreload": false,
+            "heading": "new arrivals",
+            "font_heading": "poppins_n7",
+            "subheading": "New Collection!<br>\nAir More Uptempo",
+            "font_subheading": "poppins_n7",
+            "description": "<sup class=\"intro-old-price\">From $<\/sup>\n<span>79<sup>.99<\/sup>\n<\/span>",
+            "font_description": "poppins_n6",
+            "text_alignment_top": 50,
+            "text_alignment_left": 16,
+            "text_alignment": "",
+            "text_alignment_top_mb": 16,
+            "text_alignment_left_mb": 16,
+            "text_alignment_mb": "",
+            "style_btn_1": "btn-secondary",
+            "style_btn_rounded_1": "btn-rounded",
+            "btn_shadow_1": false,
+            "link_1": "#",
+            "textBtn_1": "SHOP NOW <i class=\"fkt-long-arrow-right\"><\/i>",
+            "style_btn_2": "btn-outline-primary-2",
+            "style_btn_rounded_2": "",
+            "btn_shadow_2": false,
+            "textBtn_2": "",
+            "turnoff": false,
+            "title": "Item image",
+            "width_section": true,
+            "css_block": ".block_id {}"
+          }
+        },
+        "1593593328199": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/slide_bg_3.jpg",
+            "lazypreload": false,
+            "heading": "Design special",
+            "font_heading": "poppins_n7",
+            "subheading": "Lamps Made<br>Of Natural Materials",
+            "font_subheading": "poppins_n7",
+            "description": "Extra 25% Off",
+            "font_description": "poppins_n3",
+            "text_alignment_top": 50,
+            "text_alignment_left": 16,
+            "text_alignment": "",
+            "text_alignment_top_mb": 16,
+            "text_alignment_left_mb": 16,
+            "text_alignment_mb": "",
+            "style_btn_1": "btn-secondary",
+            "style_btn_rounded_1": "btn-rounded",
+            "btn_shadow_1": false,
+            "link_1": "#",
+            "textBtn_1": "SHOP NOW <i class=\"fkt-long-arrow-right\"><\/i>",
+            "style_btn_2": "btn-outline-primary-2",
+            "style_btn_rounded_2": "",
+            "btn_shadow_2": false,
+            "textBtn_2": "",
+            "turnoff": false,
+            "title": "Item image",
+            "width_section": true,
+            "css_block": ".block_id {}"
+          }
+        },
+        "1593501895384": {
+          "type": "banner",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Banner_a687129a-dbbe-41a1-a99c-b7292ed0d1fa.jpg"
+          }
+        }
+      },
+      "block_order": [
+        "1593501530615-0",
+        "1593590234813",
+        "1593593328199",
+        "1593501895384"
+      ],
+      "settings": {
+        "title": "Slideshow + Category + Banner",
+        "off_mobile": false,
+        "off_desktop": false,
+        "width_section": "w-100",
+        "width_content": true,
+        "section_margin_top": "",
+        "section_margin_bottom": "",
+        "section_padding": "2rem 0",
+        "section_bg": "#fafafa",
+        "section_bg_op": 1,
+        "title_categories": "Browse Categories",
+        "categories_dropdown": true,
+        "no_overflow": false,
+        "fullscreen": false,
+        "autoplay": false,
+        "use_navigation": true,
+        "nav_style": "-default",
+        "nav_mode": "default",
+        "nav_position": "nav-default",
+        "use_dots": false,
+        "dots_mode": "default",
+        "use_scrollbar": false,
+        "h_reponsive": "486",
+        "h_reponsive_768": "",
+        "h_reponsive_992": "",
+        "h_reponsive_1200": "auto",
+        "h_reponsive_1400": "",
+        "autoplay_speed": 7,
+        "responsive": "{\n  \"0\": {\n    \"slidesPerView\": 1,\n    \"spaceBetween\": 10\n  },\n  \"320\": {\n    \"slidesPerView\": 1,\n    \"spaceBetween\": 10\n  },\n  \"768\": {\n    \"slidesPerView\": 1,\n    \"spaceBetween\": 10\n  },\n  \"992\": {\n    \"slidesPerView\": 1,\n    \"spaceBetween\": 10\n  },\n  \"1200\": {\n    \"slidesPerView\": 1,\n    \"spaceBetween\": 10\n  }\n}",
+        "css_section": ".section_id .slideshow__title{\n  font-size: 1.3rem;\n  letter-spacing: .01em;\n  margin-bottom: .5rem;\ntext-transform: uppercase;\n}\n.section_id .slideshow__subtitle{\n  color: #333;\n  font-size: 4rem;\n  line-height: 1.2;\n  letter-spacing: -.03em;\n  margin-bottom: 1.2rem;\n}\n.section_id .slideshow__description{\n  color: #333333;\n  font-size: 3.5rem;\n  line-height: 1.2;\n  letter-spacing: -.025em;\n  margin-bottom: 1rem;\n}\n.section_id .slideshow__description sup{\n  font-size: 2rem;\n  top: -.7em;\n  font-weight: 400;\n}\n.section_id .btn{\n  font-weight: 600;\n}\n@media screen and (min-width: 768px){\n.section_id .slideshow__description{\n  font-size: 4rem;\n}\n}"
+      }
+    },
+    "1593853075695": {
+      "type": "md_banner_template_1",
+      "blocks": {
+        "1593853100309": {
+          "type": "5",
+          "settings": {
+            "turnoff": false,
+            "title": "Banner type 5",
+            "content_type": "type_5",
+            "banner-effect": "banner-effect2",
+            "image_1": "shopify:\/\/shop_images\/banner_bg-1-h-26-1.jpg",
+            "stitle_1": "Spring Sale is Coming",
+            "color_stitle_1": "#ffffff",
+            "titlex_1": "<strong>All Smartwatches<br>& Accessories Discount  <\/strong> <br>\n<span style=\"color: var(--secondary)\">15% off<\/span>",
+            "color_titlex_1": "#ffffff",
+            "name_btn_1": "<strong>SHOP NOW<\/strong> <i class=\"fkt-long-arrow-right\"><\/i>",
+            "style_btn_1": "btn-secondary",
+            "style_btn_rounded_1": "btn-rounded",
+            "btn_shadow_1": false,
+            "image_2": "shopify:\/\/shop_images\/banner_bg-h-26-1.jpg",
+            "stitle_2": "Amazing Value",
+            "color_stitle_2": "#ffffff",
+            "titlex_2": "<strong>Headphones Trending<br> Audio-Technica Professional<\/strong><br>\n<span style=\"color: var(--secondary)\">from $129,99<\/span>",
+            "color_titlex_2": "#ffffff",
+            "name_btn_2": "<strong>SHOP NOW<\/strong> <i class=\"fkt-long-arrow-right\"><\/i>",
+            "style_btn_2": "btn-secondary",
+            "style_btn_rounded_2": "btn-rounded",
+            "btn_shadow_2": false
+          }
+        }
+      },
+      "block_order": [
+        "1593853100309"
+      ],
+      "settings": {
+        "title": "Banner template 1",
+        "off_mobile": false,
+        "off_desktop": false,
+        "width_section": "w-100",
+        "width_content": true,
+        "section_margin_top": "",
+        "section_margin_bottom": "6rem",
+        "section_padding": "",
+        "section_bg": "",
+        "section_bg_op": 1,
+        "preview": false
+      }
+    },
+    "1594192395496": {
+      "type": "md_product_section_tab_slide_banner_3",
+      "blocks": {
+        "1594192395496-0": {
+          "type": "item",
+          "settings": {
+            "title": "Electronics",
+            "stitle": "",
+            "margin_btitle": 3,
+            "products_1": "cell-phonesh-26-2",
+            "products_2": "computers-h26-2",
+            "products_3": "tv-video-h26-2",
+            "products_4": "smart-home-h26-2",
+            "products_5": "audio-h26-2",
+            "products_6": "home-audio-theater-h26-2",
+            "limit": 8,
+            "load_btn": false,
+            "style_btn": "btn-outline-darker",
+            "style_btn_rounded": "",
+            "btn_shadow": false,
+            "autoplay": false,
+            "use_navigation": true,
+            "nav_style": "1",
+            "nav_mode": "default",
+            "nav_position": "nav-center-center",
+            "use_dots": false,
+            "dots_mode": "default",
+            "dots_position": "inside",
+            "responsive": "{\n  \"0\": {\n    \"slidesPerView\": 1,\n    \"spaceBetween\": 0\n  },\n  \"576\": {\n    \"slidesPerView\": 2,\n    \"spaceBetween\": 0\n  },\n  \"768\": {\n    \"slidesPerView\": 3,\n    \"spaceBetween\": 0\n  },\n  \"992\": {\n    \"slidesPerView\": 4,\n    \"spaceBetween\": 0\n  },\n  \"1200\": {\n    \"slidesPerView\": 5,\n    \"spaceBetween\": 0\n  },\n  \"1400\": {\n    \"slidesPerView\": 6,\n    \"spaceBetween\": 0\n  }\n}"
+          }
+        },
+        "1594192395496-1": {
+          "type": "item_banner_1",
+          "settings": {
+            "position_in_slide": 5,
+            "image": "shopify:\/\/shop_images\/img_bg__slide.jpg",
+            "use_content_banner": true,
+            "flash_label": "Best Deal",
+            "titlex": "<span style=\"color: #222\">Apple Watch Starting at $199<\/span>",
+            "name_btn": "DISCOVER NOW<i class=\"fkt-long-arrow-right\"><\/i>",
+            "style_btn": "btn-secondary",
+            "style_btn_rounded": "btn-rounded",
+            "btn_shadow": true
+          }
+        }
+      },
+      "block_order": [
+        "1594192395496-0",
+        "1594192395496-1"
+      ],
+      "settings": {
+        "title": "Tab slide(grid) +Banner 3",
+        "off_mobile": false,
+        "off_desktop": false,
+        "width_section": "container",
+        "width_content": false,
+        "section_margin_top": "",
+        "section_margin_bottom": "4.5rem",
+        "section_padding": "",
+        "section_bg": "",
+        "section_bg_op": 1,
+        "use_lazyload": true,
+        "product_grid_layout": ""
+      }
+    },
+    "1594265322047": {
+      "type": "md_product_section_tab_slide_banner_3",
+      "blocks": {
+        "1594265322047-0": {
+          "type": "item",
+          "settings": {
+            "title": "Fashion & Clothing",
+            "stitle": "",
+            "margin_btitle": 3,
+            "products_1": "best-sellers-26-3",
+            "products_2": "trending-h26-3",
+            "products_3": "women-h26-3",
+            "products_4": "man-h26-3",
+            "products_5": "shoes-h26-3",
+            "products_6": "accessories-h26-3",
+            "limit": 8,
+            "load_btn": false,
+            "style_btn": "btn-outline-darker",
+            "style_btn_rounded": "",
+            "btn_shadow": false,
+            "autoplay": false,
+            "use_navigation": true,
+            "nav_style": "-default",
+            "nav_mode": "default",
+            "nav_position": "nav-default",
+            "use_dots": false,
+            "dots_mode": "default",
+            "dots_position": "inside",
+            "responsive": "{\n  \"0\": {\n    \"slidesPerView\": 1,\n    \"spaceBetween\": 0\n  },\n  \"576\": {\n    \"slidesPerView\": 2,\n    \"spaceBetween\": 0\n  },\n  \"768\": {\n    \"slidesPerView\": 3,\n    \"spaceBetween\": 0\n  },\n  \"992\": {\n    \"slidesPerView\": 4,\n    \"spaceBetween\": 0\n  },\n  \"1200\": {\n    \"slidesPerView\": 5,\n    \"spaceBetween\": 0\n  },\n  \"1400\": {\n    \"slidesPerView\": 6,\n    \"spaceBetween\": 0\n  }\n}"
+          }
+        },
+        "1594265322047-1": {
+          "type": "item_banner_1",
+          "settings": {
+            "position_in_slide": 2,
+            "image": "shopify:\/\/shop_images\/img_bg_77f4b9ae-19be-4416-9915-65a39b0ef555.jpg",
+            "use_content_banner": true,
+            "flash_label": "Best Deal",
+            "titlex": "<span style=\"color: #FFF\">Women’s Sportswear & Joggers <\/span>",
+            "name_btn": "DISCOVER NOW<i class=\"fkt-long-arrow-right\"><\/i>",
+            "style_btn": "btn-secondary",
+            "style_btn_rounded": "btn-rounded",
+            "btn_shadow": false
+          }
+        }
+      },
+      "block_order": [
+        "1594265322047-0",
+        "1594265322047-1"
+      ],
+      "settings": {
+        "title": "Tab slide(grid) +Banner 3",
+        "off_mobile": false,
+        "off_desktop": false,
+        "width_section": "container",
+        "width_content": false,
+        "section_margin_top": "",
+        "section_margin_bottom": "4.5rem",
+        "section_padding": "",
+        "section_bg": "",
+        "section_bg_op": 1,
+        "use_lazyload": true,
+        "product_grid_layout": ""
+      }
+    },
+    "1594371306196": {
+      "type": "md_product_section_show_4",
+      "blocks": {
+        "1594371306196-0": {
+          "type": "item",
+          "settings": {
+            "name_link": "VIEW MORE <i class=\"fkt-long-arrow-right\"><\/i>",
+            "products": "new-arrivals-h26-4",
+            "limit": 3
+          }
+        },
+        "1594371319044": {
+          "type": "item",
+          "settings": {
+            "name_link": "VIEW MORE <i class=\"fkt-long-arrow-right\"><\/i>",
+            "products": "recommended-products-h26-1",
+            "limit": 3
+          }
+        },
+        "1594371322592": {
+          "type": "item",
+          "settings": {
+            "name_link": "VIEW MORE <i class=\"fkt-long-arrow-right\"><\/i>",
+            "products": "expert-picks-h26-4",
+            "limit": 3
+          }
+        }
+      },
+      "block_order": [
+        "1594371306196-0",
+        "1594371319044",
+        "1594371322592"
+      ],
+      "settings": {
+        "off_mobile": false,
+        "off_desktop": false,
+        "title": "Show(list)",
+        "width_section": "container",
+        "width_content": false,
+        "section_margin_top": "",
+        "section_margin_bottom": "4.5rem",
+        "section_padding": "",
+        "section_bg": "",
+        "section_bg_op": 1
+      }
+    }
+  },
+  "order": [
+    "1593501530615",
+    "1566404133629",
+    "1592552083889",
+    "1592551122488",
+    "1593143507209",
+    "1594192395496",
+    "1594265322047",
+    "1593853075695",
+    "1594371306196",
+    "1566375748123",
+    "1592808951937",
+    "1591244978544"
+  ]
+}

@@ -1,0 +1,627 @@
+{
+  "sections": {
+    "1566375748123": {
+      "type": "md_brand",
+      "blocks": {
+        "1566375770693": {
+          "type": "item",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/logo-2.png"
+          }
+        },
+        "1566375778375": {
+          "type": "item",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/logo-4.png"
+          }
+        },
+        "1566375785672": {
+          "type": "item",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/logo-3.png"
+          }
+        },
+        "1566375792262": {
+          "type": "item",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/logo-8.png"
+          }
+        },
+        "1566375798087": {
+          "type": "item",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/logo98.png"
+          }
+        },
+        "1566375854429": {
+          "type": "item",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/logo-1.png"
+          }
+        },
+        "1566375861746": {
+          "type": "item",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/logo-6.png"
+          }
+        },
+        "1566375867631": {
+          "type": "item",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/logo.png"
+          }
+        },
+        "1566375873048": {
+          "type": "item",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/logo-5.png"
+          }
+        },
+        "1566375877804": {
+          "type": "item",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/logo-7.png"
+          }
+        }
+      },
+      "block_order": [
+        "1566375770693",
+        "1566375778375",
+        "1566375785672",
+        "1566375792262",
+        "1566375798087",
+        "1566375854429",
+        "1566375861746",
+        "1566375867631",
+        "1566375873048",
+        "1566375877804"
+      ],
+      "settings": {
+        "title": "Brand",
+        "off_section": false,
+        "off_mobile": false,
+        "off_desktop": false,
+        "width_section": "container",
+        "width_content": false,
+        "section_margin_top": "",
+        "section_margin_bottom": "",
+        "section_padding": "3rem 0",
+        "section_bg": "#ffffff",
+        "section_bg_op": 1,
+        "brand_style": "type01",
+        "autoplay": false,
+        "use_navigation": true,
+        "nav_style": "1",
+        "nav_mode": "default",
+        "nav_position": "nav-default",
+        "use_dots": false,
+        "dots_mode": "default",
+        "dots_position": "inside",
+        "responsive": "{\n  \"0\": {\n    \"slidesPerView\": 2,\n    \"spaceBetween\": 0\n  },\n  \"480\": {\n    \"slidesPerView\": 3,\n    \"spaceBetween\": 0\n  },\n  \"768\": {\n    \"slidesPerView\": 4,\n    \"spaceBetween\": 0\n  },\n  \"992\": {\n    \"slidesPerView\": 5,\n    \"spaceBetween\": 0\n  },\n  \"1200\": {\n    \"slidesPerView\": 6,\n    \"spaceBetween\": 0\n  }\n}"
+      }
+    },
+    "1566404133629": {
+      "type": "md_icon_boxes",
+      "blocks": {
+        "1566547298816": {
+          "type": "item_icon_side",
+          "settings": {
+            "icon_font": "fkt-rocket",
+            "title": "Free Shipping",
+            "content": "Orders $50 or more"
+          }
+        },
+        "1566547302546": {
+          "type": "item_icon_side",
+          "settings": {
+            "icon_font": "",
+            "title": "Free Returns",
+            "content": "Within 30 days"
+          }
+        },
+        "1566547305340": {
+          "type": "item_icon_side",
+          "settings": {
+            "icon_font": "fkt-info-circle",
+            "title": "Get 20% Off 1 Item",
+            "content": "when you sign up"
+          }
+        },
+        "1566547307469": {
+          "type": "item_icon_side",
+          "settings": {
+            "icon_font": "fkt-life-ring",
+            "title": "We Support",
+            "content": "24\/7 amazing services"
+          }
+        }
+      },
+      "block_order": [
+        "1566547298816",
+        "1566547302546",
+        "1566547305340",
+        "1566547307469"
+      ],
+      "settings": {
+        "title": "Icon Boxes",
+        "off_mobile": false,
+        "off_desktop": false,
+        "width_section": "w-100",
+        "width_content": true,
+        "section_margin_top": "",
+        "section_margin_bottom": "",
+        "section_padding": "3rem 0",
+        "section_bg": "#ffffff",
+        "section_bg_op": 1,
+        "color_icon": "#333333",
+        "color_title": "#333333",
+        "color_desc": "#999999",
+        "title_font_weight": "400",
+        "use_slide": false,
+        "responsive": "{\n  \"0\": {\n    \"slidesPerView\": 1,\n    \"spaceBetween\": 20\n  },\n  \"320\": {\n    \"slidesPerView\": 1,\n    \"spaceBetween\": 20\n  },\n  \"476\": {\n    \"slidesPerView\": 2,\n    \"spaceBetween\": 20\n  },\n  \"768\": {\n    \"slidesPerView\": 2,\n    \"spaceBetween\": 20\n  },\n  \"992\": {\n    \"slidesPerView\": 3,\n    \"spaceBetween\": 20\n  },\n  \"1200\": {\n    \"slidesPerView\": 4,\n    \"spaceBetween\": 20\n  }\n}"
+      }
+    },
+    "1566437726874": {
+      "type": "md_product_section_tab_slide",
+      "blocks": {
+        "1566437735175": {
+          "type": "item",
+          "settings": {
+            "title": "",
+            "stitle": "",
+            "title_align": "text-center",
+            "margin_btitle": 4,
+            "products_1": "featured-h3-1",
+            "products_2": "on-sale-h3-1",
+            "products_3": "top-rated-h3-1",
+            "products_4": "",
+            "products_5": "",
+            "products_6": "",
+            "limit": 8,
+            "load_btn": false,
+            "style_btn": "btn-outline-darker",
+            "style_btn_rounded": "",
+            "btn_shadow": false,
+            "autoplay": false,
+            "use_navigation": true,
+            "nav_style": "3",
+            "nav_mode": "default",
+            "nav_position": "nav-default",
+            "use_dots": true,
+            "dots_mode": "primary",
+            "dots_position": "outside",
+            "responsive": "{\n  \"0\": {\n    \"slidesPerView\": 1,\n    \"spaceBetween\": 0\n  },\n  \"320\": {\n    \"slidesPerView\": 2,\n    \"spaceBetween\": 20\n  },\n  \"768\": {\n    \"slidesPerView\": 3,\n    \"spaceBetween\": 20\n  },\n  \"992\": {\n    \"slidesPerView\": 4,\n    \"spaceBetween\": 20\n  },\n  \"1200\": {\n    \"slidesPerView\": 4,\n    \"spaceBetween\": 20\n  }\n}"
+          }
+        }
+      },
+      "block_order": [
+        "1566437735175"
+      ],
+      "settings": {
+        "off_mobile": false,
+        "off_desktop": false,
+        "title": "Products Tab(slide)",
+        "width_section": "w-100",
+        "width_content": true,
+        "section_margin_top": "5rem",
+        "section_margin_bottom": "6rem",
+        "section_padding": "",
+        "section_bg": "",
+        "section_bg_op": 1,
+        "use_lazyload": true,
+        "product_grid_layout": ""
+      }
+    },
+    "1566442643300": {
+      "type": "md_call_to_action",
+      "blocks": {
+        "1566717947582": {
+          "type": "design_8",
+          "settings": {
+            "title_socials": "Shop Social",
+            "stitle_socials": "Donec nec justo eget felis facilisis fermentum. Aliquam porttitor mauris sit amet orci.",
+            "title": "Get the latest deals",
+            "description": "and<br> receive <span class=\"highlight\">$20 coupon<\/span> for first shopping"
+          }
+        }
+      },
+      "block_order": [
+        "1566717947582"
+      ],
+      "settings": {
+        "title": "Call to Action",
+        "off_mobile": false,
+        "off_desktop": false,
+        "width_section": "container",
+        "width_content": true,
+        "section_margin_top": "",
+        "section_margin_bottom": "",
+        "section_padding": "1rem",
+        "section_bg": "",
+        "section_bg_op": 1,
+        "image": "shopify:\/\/shop_images\/bg-2_21ffcbec-81ae-4937-be71-ab3dbbe88109.jpg",
+        "use_round": false,
+        "color_title": "#333333",
+        "color_desc": "#999999",
+        "color_text_input": "#999999",
+        "color_border_input": "#dadada",
+        "color_placeholder": "#999999",
+        "color_bg_input": "#ffffff",
+        "preview": false
+      }
+    },
+    "1566554827480": {
+      "type": "md_call_to_action",
+      "blocks": {
+        "1566554876935": {
+          "type": "design_5",
+          "settings": {
+            "title_cta": "<span class=\"text-primary\">New Deals<\/span> <br>Start Daily at 12pm e.t.",
+            "description_cta": "Get <span class=\"text-dark font-weight-normal\">FREE SHIPPING* &amp; 5% rewards<\/span> on <br>every order with Molla Theme rewards program",
+            "style_btn_rounded_1": "btn-round",
+            "btn_name_cta": "Add to Cart for $50.00\/yr<i class=\"fkt-long-arrow-right\"><\/i>"
+          }
+        }
+      },
+      "block_order": [
+        "1566554876935"
+      ],
+      "settings": {
+        "title": "Call to Action",
+        "off_mobile": false,
+        "off_desktop": false,
+        "width_section": "container",
+        "width_content": true,
+        "section_margin_top": "",
+        "section_margin_bottom": "",
+        "section_padding": "1rem",
+        "section_bg": "",
+        "section_bg_op": 1,
+        "image": "shopify:\/\/shop_images\/bg-1_70d27d4e-a36e-4566-bd04-03d8168fc804.jpg",
+        "use_round": false,
+        "color_title": "#333333",
+        "color_desc": "#cccccc",
+        "color_text_input": "#999999",
+        "color_border_input": "#dadada",
+        "color_placeholder": "#999999",
+        "color_bg_input": "#ffffff",
+        "preview": false
+      }
+    },
+    "1566612744653": {
+      "type": "kt_slideshow",
+      "blocks": {
+        "1566612744653-0": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/slide-1_d64a49c9-464e-4bee-b9c3-c8a53fed1f09.jpg",
+            "lazypreload": true,
+            "heading": "Daily Deals",
+            "font_heading": "poppins_n3",
+            "subheading": "AirPods <br>Earphones",
+            "font_subheading": "poppins_n7",
+            "description": "<sup>Today:<\/sup><span class=\"text-primary\">$247<sup>.99<\/sup><\/span>",
+            "font_description": "poppins_n7",
+            "text_alignment_top": 50,
+            "text_alignment_left": 16,
+            "text_alignment": "",
+            "text_alignment_top_mb": 16,
+            "text_alignment_left_mb": 16,
+            "text_alignment_mb": "",
+            "style_btn_1": "btn-primary",
+            "style_btn_rounded_1": "btn-round",
+            "btn_shadow_1": false,
+            "link_1": "#",
+            "textBtn_1": "<span>Click Here<\/span><i class=\"fkt-long-arrow-right\"><\/i>",
+            "style_btn_2": "btn-outline-primary-2",
+            "style_btn_rounded_2": "",
+            "btn_shadow_2": false,
+            "textBtn_2": "",
+            "turnoff": false,
+            "title": "Item image",
+            "width_section": true,
+            "css_block": ""
+          }
+        },
+        "1566612744653-1": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/slide-2_63df45a5-08e6-4d02-9cf7-a9a50c977249.jpg",
+            "lazypreload": false,
+            "heading": "Deals and Promotions",
+            "font_heading": "poppins_n3",
+            "subheading": "Echo Dot <br>3rd Gen",
+            "font_subheading": "poppins_n7",
+            "description": "<sup class=\"intro-old-price\">$49,99<\/sup><span class=\"text-primary\">$29<sup>.99<\/sup><\/span>",
+            "font_description": "poppins_n7",
+            "text_alignment_top": 50,
+            "text_alignment_left": 16,
+            "text_alignment": "",
+            "text_alignment_top_mb": 16,
+            "text_alignment_left_mb": 16,
+            "text_alignment_mb": "",
+            "style_btn_1": "btn-primary",
+            "style_btn_rounded_1": "btn-round",
+            "btn_shadow_1": false,
+            "link_1": "#",
+            "textBtn_1": "<span>Click Here<\/span><i class=\"fkt-long-arrow-right\"><\/i>",
+            "style_btn_2": "btn-outline-primary-2",
+            "style_btn_rounded_2": "",
+            "btn_shadow_2": false,
+            "textBtn_2": "",
+            "turnoff": false,
+            "title": "Item image",
+            "width_section": true,
+            "css_block": ""
+          }
+        },
+        "1566612772792": {
+          "type": "banner",
+          "settings": {
+            "banner-effect": "",
+            "image": "shopify:\/\/shop_images\/img_bg-2.jpg",
+            "title": "Top Product",
+            "color_title": "#999",
+            "stitle": "Edifier <br>Stereo Bluetooth",
+            "color_stitle": "#333",
+            "btn_name": "Shop Now <i class=\"fkt-long-arrow-right\"><\/i>",
+            "style_btn": "btn-link"
+          }
+        },
+        "1566612780594": {
+          "type": "banner",
+          "settings": {
+            "banner-effect": "",
+            "image": "shopify:\/\/shop_images\/img_bg-1.jpg",
+            "title": "Clearance",
+            "color_title": "#999",
+            "stitle": "GoPro - Fusion 360 <span>Save $70<\/span>",
+            "color_stitle": "#333",
+            "btn_name": "Shop Now <i class=\"fkt-long-arrow-right\"><\/i>",
+            "style_btn": "btn-link"
+          }
+        },
+        "1566612784764": {
+          "type": "banner",
+          "settings": {
+            "banner-effect": "",
+            "image": "shopify:\/\/shop_images\/img_bg.jpg",
+            "title": "Featured",
+            "color_title": "#999",
+            "stitle": "Apple Watch 4 <span>Our Hottest Deals<\/span>",
+            "color_stitle": "#333",
+            "btn_name": "Shop Now <i class=\"fkt-long-arrow-right\"><\/i>",
+            "style_btn": "btn-link"
+          }
+        }
+      },
+      "block_order": [
+        "1566612744653-0",
+        "1566612744653-1",
+        "1566612772792",
+        "1566612780594",
+        "1566612784764"
+      ],
+      "settings": {
+        "title": "Slideshow",
+        "off_mobile": false,
+        "off_desktop": false,
+        "width_section": "container",
+        "width_content": false,
+        "section_margin_top": "3rem",
+        "section_margin_bottom": "",
+        "section_padding": "",
+        "section_bg": "",
+        "section_bg_op": 1,
+        "no_overflow": false,
+        "fullscreen": false,
+        "autoplay": true,
+        "use_navigation": true,
+        "nav_style": "-default",
+        "nav_mode": "default",
+        "nav_position": "nav-default",
+        "use_dots": false,
+        "dots_mode": "default",
+        "use_scrollbar": false,
+        "h_reponsive": "",
+        "h_reponsive_768": "",
+        "h_reponsive_992": "",
+        "h_reponsive_1200": "",
+        "h_reponsive_1400": "",
+        "autoplay_speed": 7,
+        "responsive": "{\n  \"0\": {\n    \"slidesPerView\": 1,\n    \"spaceBetween\": 10\n  },\n  \"320\": {\n    \"slidesPerView\": 1,\n    \"spaceBetween\": 10\n  },\n  \"768\": {\n    \"slidesPerView\": 1,\n    \"spaceBetween\": 10\n  },\n  \"992\": {\n    \"slidesPerView\": 1,\n    \"spaceBetween\": 10\n  },\n  \"1200\": {\n    \"slidesPerView\": 1,\n    \"spaceBetween\": 10\n  }\n}",
+        "content_type": "type-2",
+        "css_section": ".section_id .slideshow__title{\n  color: var(--primary);\n  font-size: 1.4rem;\n  letter-spacing: -.01em;\n  margin-bottom: .5rem;\n}\n.section_id .slideshow__subtitle{\n  color: #333;\n  font-size: 3rem;\n  line-height: 1.2;\n  letter-spacing: -.03em;\n  margin-bottom: 1.2rem;\n}\n.section_id .slideshow__description{\n  color: #333333;\n  font-size: 3rem;\n  line-height: 1.2;\n  letter-spacing: -.025em;\n  margin-bottom: 1rem;\n}\n.section_id .slideshow__description .intro-old-price:after {\n  content: '';\n  display: block;\n  width: 100%;\n  height: 1px;\n  position: absolute;\n  top: 50%;\n  left: 0;\n  background-color: #333333;\n}\n.section_id .slideshow__description sup {\n  top: -.8em;\n  font-weight: 400;\n  font-size: 1.4rem;\n  letter-spacing: -.03em;\n}\n@media (min-width: 576px){\n  .section_id .slideshow__title{\n    font-size: 1.6rem;\n  }\n  .section_id .slideshow__subtitle{\n    font-size: 3.6rem;\n    margin-bottom: 1.3rem;\n  }\n  .section_id .slideshow__description sup {\n    font-size: 1.5rem;\n  }\n}\n@media (min-width: 768px){\n  .section_id .slideshow__title{\n    font-size: 1.8rem;\n  }\n  .section_id .slideshow__subtitle{\n    font-size: 4.2rem;\n    margin-bottom: 1.7rem;\n  }\n  .section_id .slideshow__description{\n    font-size: 4rem;\n  }\n  .section_id .slideshow__description sup {\n    font-size: 1.8rem;\n  }\n}\n@media (min-width: 1200px){\n  .section_id .slideshow__title{\n    font-size: 2rem;\n  }\n  .section_id .slideshow__subtitle{\n    font-size: 5.2rem;\n  }\n  .section_id .slideshow__description{\n    font-size: 5rem;\n  }\n  .section_id .slideshow__description sup {\n    top: -1.1em;\n    font-size: 2rem;\n  }\n}"
+      }
+    },
+    "1566655647916": {
+      "type": "md_countdown_section_with_products_1",
+      "blocks": {
+        "1566657989989": {
+          "type": "item_title",
+          "settings": {
+            "title_section": "Deals &amp; Outlet",
+            "stitle_section": "Today’s deal and more",
+            "reverse": false,
+            "title_align": "text-center",
+            "name_link": "",
+            "style_link": "",
+            "margin_btitle": 3
+          }
+        },
+        "1566655647916-0": {
+          "type": "product_count_down",
+          "settings": {
+            "title": "Product countdown",
+            "titlex": "<p>Deal of the Day.<\/p>",
+            "stitle": "<p>Limited quantities.<\/p>",
+            "product": "apple-apple-watch-series-3-with-white-sport-band",
+            "name_btn": "Shop now<i class=\"fkt-long-arrow-right\"><\/i>",
+            "image": "shopify:\/\/shop_images\/bg-1_20b16e16-7250-4a86-b199-dac67025b268.jpg"
+          }
+        },
+        "1566655647916-1": {
+          "type": "product",
+          "settings": {
+            "title": "Product grid nearby",
+            "grid_layout": "",
+            "product": "canon-eos-5d-mark-iv-dslr-camera"
+          }
+        },
+        "1566655647916-2": {
+          "type": "product",
+          "settings": {
+            "title": "Product grid nearby",
+            "grid_layout": "",
+            "product": "apple-smart-keyboard-folio-for-11-inch-ipad-pro"
+          }
+        },
+        "1566657985142": {
+          "type": "item_button",
+          "settings": {
+            "name_btn": "Shop more Outlet deals <i class=\"fkt-long-arrow-right\"><\/i>",
+            "title_align": "text-center"
+          }
+        }
+      },
+      "block_order": [
+        "1566657989989",
+        "1566655647916-0",
+        "1566655647916-1",
+        "1566655647916-2",
+        "1566657985142"
+      ],
+      "settings": {
+        "off_mobile": false,
+        "off_desktop": false,
+        "title": "Countdown and products 1",
+        "width_section": "w-100",
+        "width_content": true,
+        "section_margin_top": "",
+        "section_margin_bottom": "",
+        "section_padding": "6rem 0",
+        "section_bg": "#f4f7ff",
+        "section_bg_op": 1,
+        "parallax_speed": 0.2
+      }
+    },
+    "1566700483499": {
+      "type": "md_product_section_tab_slide_banner",
+      "blocks": {
+        "1566700494120": {
+          "type": "item",
+          "settings": {
+            "title": "Trending Products",
+            "stitle": "",
+            "title_align": "text-center",
+            "margin_btitle": 3,
+            "image_banner": "shopify:\/\/shop_images\/banner-4_8a6648dd-5a94-4149-9b92-e873e8a8ba70.jpg",
+            "title_banner": "",
+            "name_btn_banner": "",
+            "products_1": "all-h3-2",
+            "products_2": "tv-h3-2",
+            "products_3": "computers-h3-2",
+            "products_4": "tablets-cell-phones-h3-2",
+            "products_5": "smartwatches-h3-2",
+            "products_6": "accessories-h3-2",
+            "limit": 8,
+            "load_btn": false,
+            "style_btn": "btn-outline-darker",
+            "style_btn_rounded": "",
+            "btn_shadow": false,
+            "autoplay": false,
+            "use_navigation": true,
+            "nav_style": "3",
+            "nav_mode": "default",
+            "nav_position": "nav-default",
+            "use_dots": false,
+            "dots_mode": "default",
+            "dots_position": "inside",
+            "responsive": "{\n  \"0\": {\n    \"slidesPerView\": 1,\n    \"spaceBetween\": 0\n  },\n  \"320\": {\n    \"slidesPerView\": 2,\n    \"spaceBetween\": 10\n  },\n  \"768\": {\n    \"slidesPerView\": 3,\n    \"spaceBetween\": 20\n  },\n  \"992\": {\n    \"slidesPerView\": 3,\n    \"spaceBetween\": 20\n  },\n  \"1200\": {\n    \"slidesPerView\": 4,\n    \"spaceBetween\": 20\n  }\n}"
+          }
+        }
+      },
+      "block_order": [
+        "1566700494120"
+      ],
+      "settings": {
+        "title": "Products Tab(slide+banner)",
+        "off_mobile": false,
+        "off_desktop": false,
+        "width_section": "container",
+        "width_content": false,
+        "section_margin_top": "5rem",
+        "section_margin_bottom": "",
+        "section_padding": "",
+        "section_bg": "",
+        "section_bg_op": 1,
+        "use_lazyload": true,
+        "product_grid_layout": ""
+      }
+    },
+    "1566717434440": {
+      "type": "md_product_section_tab_slide_2",
+      "blocks": {
+        "1566717449478": {
+          "type": "item",
+          "settings": {
+            "title": "Top Selling Products",
+            "stitle": "",
+            "margin_btitle": 3,
+            "use_border": false,
+            "products_1": "all-h3-2",
+            "products_2": "tv-h3-3",
+            "products_3": "computers-h3-2",
+            "products_4": "tablets-cell-phones-h3-2",
+            "products_5": "smartwatches-h3-2",
+            "products_6": "accessories-h3-2",
+            "t_tranform": "text-uppercase",
+            "fsize_name_tab": 1.4,
+            "limit": 8,
+            "load_btn": false,
+            "style_btn": "btn-outline-darker",
+            "style_btn_rounded": "",
+            "btn_shadow": false,
+            "autoplay": false,
+            "use_navigation": true,
+            "nav_style": "3",
+            "nav_mode": "default",
+            "nav_position": "nav-default",
+            "use_dots": false,
+            "dots_mode": "default",
+            "dots_position": "inside",
+            "responsive": "{\n  \"0\": {\n    \"slidesPerView\": 1,\n    \"spaceBetween\": 0\n  },\n  \"320\": {\n    \"slidesPerView\": 2,\n    \"spaceBetween\": 10\n  },\n  \"768\": {\n    \"slidesPerView\": 3,\n    \"spaceBetween\": 20\n  },\n  \"992\": {\n    \"slidesPerView\": 3,\n    \"spaceBetween\": 20\n  },\n  \"1200\": {\n    \"slidesPerView\": 5,\n    \"spaceBetween\": 20\n  }\n}"
+          }
+        }
+      },
+      "block_order": [
+        "1566717449478"
+      ],
+      "settings": {
+        "title": "Products Tab(slide 2)",
+        "off_mobile": false,
+        "off_desktop": false,
+        "width_section": "container",
+        "width_content": false,
+        "section_margin_top": "",
+        "section_margin_bottom": "5rem",
+        "section_padding": "",
+        "section_bg": "",
+        "section_bg_op": 1,
+        "use_lazyload": true,
+        "product_grid_layout": ""
+      }
+    }
+  },
+  "order": [
+    "1566612744653",
+    "1566437726874",
+    "1566554827480",
+    "1566655647916",
+    "1566375748123",
+    "1566700483499",
+    "1566717434440",
+    "1566404133629",
+    "1566442643300"
+  ]
+}

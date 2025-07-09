@@ -1,0 +1,2601 @@
+Dear customer,
+
+Thank you so much for choose us, to start with Molla, you need
+
+1 - Upload theme file Molla v*.*.*.zip to your Shopify store
+2 - Open document folder and check our guide (we will update it every day) or follow from our website: http://the4studio.net/shopify/molla/
+
+If you have any problem, I hope you can send us a email to: the4studio.net@gail.com or our forum: https://support.the4.co/
+
+We will try our best to answer your email / forum as soon as possible, I hope you won't give us bad review.
+
+Thank you for choosing us
+
+Kind Regard
+-------------------------------
+31/Otc/2022: Updated to version 2.0.1
+	- Fixed Some small errors.
+	-------------------------------
+	- Modifided assets/kiti-var.css.liquid
+	- Modifided config/settings_schema.json
+
+20/Otc/2022: Updated to version 2.0.0
+	- Update system to Shopify 2.0.
+	-------------------------------
+
+	- Added assets/kt_toolkit.js
+	- Added sections/kt_search_result.liquid
+	- Added sections/main-blog-5.liquid
+	- Added sections/main-blog.liquid
+	- Added sections/main-collection.liquid
+	- Added sections/main-page.liquid
+	- Added snippets/kt_filters_form.liquid
+	- Added templates/404.json
+	- Added templates/article.fullwidth-sidebar.json
+	- Added templates/article.fullwidth.json
+	- Added templates/article.json
+	- Added templates/blog.json
+	- Added templates/blog.layout2.json
+	- Added templates/blog.layout3.json
+	- Added templates/blog.layout4.json
+	- Added templates/blog.layout5.json
+	- Added templates/blog.layout6.json
+	- Added templates/cart.json
+	- Added templates/collection.json
+	- Added templates/index.json
+	- Added templates/list-collections.json
+	- Added templates/page.json
+	- Added templates/product.json
+
+	- Modifided assets/custom.min.js
+	- Modifided assets/jquery-ui.slider.min.js
+	- Modifided assets/kt_filters.min.css
+	- Modifided assets/ktjs_product_sg.min.js
+	- Modifided assets/md_prd_card_grid-rtl.css
+	- Modifided assets/md_prd_card_grid.css
+	- Modifided assets/style-speed.css.liquid
+	- Modifided assets/style.min.css
+	- Modifided assets/theme-rtl.min.css
+	- Modifided assets/theme.ajax-cart.min.js
+	- Modifided assets/theme.get-shipping.js
+	- Modifided assets/theme.min.css
+	- Modifided assets/theme.min.js
+	- Modifided assets/theme_footer_js.js.liquid
+	- Modifided assets/workerktlz.js
+	- Modifided assets/workerktlz.min.js
+	- Modifided config/settings_schema.json
+	- Modifided layout/theme.liquid
+	- Modifided locales/en.default.json
+	- Modifided sections/header-01.liquid
+	- Modifided sections/header-02.liquid
+	- Modifided sections/header-03.liquid
+	- Modifided sections/header-04.liquid
+	- Modifided sections/header-05.liquid
+	- Modifided sections/header-06.liquid
+	- Modifided sections/header-07.liquid
+	- Modifided sections/header-08.liquid
+	- Modifided sections/header-09.liquid
+	- Modifided sections/header-10.liquid
+	- Modifided sections/header-11.liquid
+	- Modifided sections/header-12.liquid
+	- Modifided sections/header-13.liquid
+	- Modifided sections/header-14.liquid
+	- Modifided sections/header-15.liquid
+	- Modifided sections/header-16.liquid
+	- Modifided sections/header-17.liquid
+	- Modifided sections/header-18.liquid
+	- Modifided sections/header-19.liquid
+	- Modifided sections/header-20.liquid
+	- Modifided sections/header-mobile.liquid
+	- Modifided sections/header.liquid
+	- Modifided sections/md_banner_template_1.liquid
+	- Modifided sections/md_banner_template_2.liquid
+	- Modifided sections/md_banner_template_3.liquid
+	- Modifided sections/md_banner_template_5.liquid
+	- Modifided sections/md_banner_template_6.liquid
+	- Modifided sections/md_banner_template_7.liquid
+	- Modifided sections/md_blog.liquid
+	- Modifided sections/md_testimonials.liquid
+	- Modifided snippets/collection-template.liquid
+	- Modifided snippets/header-02.liquid
+	- Modifided snippets/kt_currency_widget.liquid
+	- Modifided snippets/kt_gridlist_layout.liquid
+	- Modifided snippets/kt_header-top.liquid
+	- Modifided snippets/kt_product_tabs.liquid
+	- Modifided snippets/md_banner_template_1_3.liquid
+	- Modifided snippets/md_banner_template_1_4.liquid
+	- Modifided snippets/md_banner_template_1_5.liquid
+	- Modifided snippets/pagination.liquid
+	- Modifided snippets/product-grid-item.liquid
+	- Modifided snippets/product-layout1.liquid
+	- Modifided snippets/rating_star.liquid
+	- Modifided snippets/search-bar.liquid
+	- Modifided snippets/t4-toolkit.liquid
+	- Modifided snippets/theme_header_js.liquid
+	- Modifided templates/page.about-main.liquid
+
+-------------------------------
+09/Dec/2021: Updated to version 1.7.5
+	- Fixed Some small errors.
+	-------------------------------
+	Updated details:
+		- Modifided assets/custom.js
+		- Modifided assets/jquery.currencies.js
+		- Modifided assets/ktjs_product_sg.js
+		- Modifided assets/style-speed.css.liquid
+		- Modifided assets/theme.min.css
+		- Modifided assets/workerktlz.min.js
+		- Modifided locales/en.default.json
+		- Modifided sections/kt_slideshowSimple.liquid
+		- Modifided sections/md_blog.liquid
+		- Modifided sections/md_list_item_cattegories_1.liquid
+		- Modifided sections/md_lookbook_2.liquid
+		- Modifided sections/md_product_section_show.liquid
+		- Modifided sections/md_product_section_tab_load.liquid
+		- Modifided snippets/kt_product_media.liquid
+		- Modifided snippets/md_banner_template_1_3.liquid
+		- Modifided snippets/product-layout7.liquid
+		- Modifided templates/cart.kt_cart_drawer.liquid
+
+06/Jul/2021: Updated to version 1.7.4
+	- Fixed Some small errors.
+	-------------------------------
+	Updated details:
+		- Added snippets/kt_psgl_form.liquid
+		- Added snippets/kt_psgl_swatch.liquid
+
+		- Modifided assets/custom.min.js
+		- Modifided assets/jquery.mb.YTPlayer.min.js
+		- Modifided assets/kt_filters.min.css
+		- Modifided assets/ktjs_filters.min.js
+		- Modifided assets/ktjs_multi_filters.min.js
+		- Modifided assets/ktjs_product_sg.min.js
+		- Modifided assets/md_prd_card_grid-rtl.min.css
+		- Modifided assets/md_prd_card_grid.min.css
+		- Modifided assets/theme-rtl.min.css
+		- Modifided assets/theme.min.css
+		- Modifided assets/theme.min.js
+		- Modifided assets/workerktlz.min.js
+		- Modifided config/settings_schema.json
+		- Modifided layout/gift_card.liquid
+		- Modifided layout/password.liquid
+		- Modifided layout/theme.liquid
+		- Modifided layout/theme.prd-additional.liquid
+		- Modifided locales/en.default.json
+		- Modifided sections/collection-filter.liquid
+		- Modifided sections/header-01.liquid
+		- Modifided sections/kt_instagram_5.liquid
+		- Modifided sections/kt_slideshow.liquid
+		- Modifided sections/kt_slideshowCategoryBanner.liquid
+		- Modifided sections/kt_slideshow_2.liquid
+		- Modifided sections/md-collection-banners-box.liquid
+		- Modifided sections/md_featured_product.liquid
+		- Modifided sections/newsletter-popup.liquid
+		- Modifided sections/product-template.liquid
+		- Modifided snippets/fbt-layout.liquid
+		- Modifided snippets/header-04.liquid
+		- Modifided snippets/header-14.liquid
+		- Modifided snippets/kt_notify-available.liquid
+		- Modifided snippets/kt_product_media.liquid
+		- Modifided snippets/kt_product_tabs.liquid
+		- Modifided snippets/kt_stickyAddCart.liquid
+		- Modifided snippets/kt_variants_options.liquid
+		- Modifided snippets/md-quickviewModal.liquid
+		- Modifided snippets/product-grid-item.liquid
+		- Modifided snippets/product-layout1.liquid
+		- Modifided snippets/product-layout2.liquid
+		- Modifided snippets/product-layout3.liquid
+		- Modifided snippets/product-layout4.liquid
+		- Modifided snippets/product-layout5.liquid
+		- Modifided snippets/product-layout6.liquid
+		- Modifided snippets/product-layout7.liquid
+		- Modifided snippets/product-layout8.liquid
+		- Modifided templates/cart.kt_cart_drawer.liquid
+		- Modifided templates/cart.listjson.liquid
+		- Modifided templates/page.prd-additional.liquid
+		- Modifided templates/product.edit-opts.liquid
+		- Modifided templates/product.quickView.liquid
+		- Modifided templates/search.prd-additional.liquid
+
+17/May/2021: Updated to version 1.7.3.1
+	- Fixed Admin editor.
+	-------------------------------
+	Updated details:
+		- Modifided assets/custom.min.js
+		- Modifided assets/md_prd_card_grid-rtl.min.css
+		- Modifided assets/md_prd_card_grid.min.css
+		- Modifided assets/theme-rtl.min.css
+		- Modifided assets/theme.min.css
+		- Modifided config/settings_schema.json
+		- Modifided locales/en.default.json
+		- Modifided sections/fbt-recommen.liquid
+		- Modifided snippets/product-grid-item.liquid
+		- Modifided snippets/theme_header_js.liquid
+
+12/May/2021: Updated to version 1.7.3
+	- Fixed Some small errors.
+	-------------------------------
+	Updated details:
+		- Modifided assets/ktjs_filters.min.js
+		- Modifided assets/ktjs_multi_filters.min.js
+		- Modifided assets/ktjs_product_sg.min.js
+		- Modifided assets/md_prd_card_grid-rtl.min.css
+		- Modifided assets/md_prd_card_grid.min.css
+		- Modifided assets/style-speed.css.liquid
+		- Modifided assets/theme-rtl.min.css
+		- Modifided assets/theme.min.css
+		- Modifided assets/theme.min.js
+		- Modifided assets/theme_footer_js.js.liquid
+
+		- Modifided config/settings_schema.json
+		- Modifided layout/theme.liquid
+		- Modifided sections/cart-template.liquid
+		- Modifided sections/cookies_popup.liquid
+		- Modifided sections/footer_06.liquid
+		- Modifided sections/kt_bottom_bar.liquid
+		- Modifided sections/kt_instagram_1.liquid
+		- Modifided sections/kt_mega_mn-vertical.liquid
+		- Modifided sections/kt_related-products.liquid
+		- Modifided sections/md_product_section_show_4.liquid
+		- Modifided sections/newsletter-popup-2.liquid
+		- Modifided sections/newsletter-popup.liquid
+		- Modifided snippets/bgset.liquid
+		- Modifided snippets/fbt-layout.liquid
+		
+		- Modifided snippets/header-01.liquid
+		- Modifided snippets/header-02.liquid
+		- Modifided snippets/header-03.liquid
+		- Modifided snippets/header-04.liquid
+		- Modifided snippets/header-06.liquid
+		- Modifided snippets/header-07.liquid
+		- Modifided snippets/header-08.liquid
+		- Modifided snippets/header-09.liquid
+		- Modifided snippets/header-10.liquid
+		- Modifided snippets/header-11.liquid
+		- Modifided snippets/header-12.liquid
+		- Modifided snippets/header-13.liquid
+		- Modifided snippets/header-14.liquid
+		- Modifided snippets/header-15.liquid
+		- Modifided snippets/header-16.liquid
+		- Modifided snippets/header-18.liquid
+		- Modifided snippets/header-19.liquid
+		- Modifided snippets/header-20.liquid
+		- Modifided snippets/kt_currency_widget.liquid
+		- Modifided snippets/kt_logo_header.liquid
+		- Modifided snippets/kt_product_sidebar.liquid
+		- Modifided snippets/meta-tags.liquid
+		- Modifided snippets/product-layout1.liquid
+		- Modifided snippets/product-layout2.liquid
+		- Modifided snippets/product-layout3.liquid
+		- Modifided snippets/product-layout4.liquid
+		- Modifided snippets/product-layout5.liquid
+		- Modifided snippets/product-layout6.liquid
+		- Modifided snippets/product-layout7.liquid
+		- Modifided snippets/theme_header_js.liquid
+		- Modifided templates/cart.kt_cart_popup.liquid
+
+03/May/2021: Updated to version 1.7.2
+	- Fixed Some small errors.
+	-------------------------------
+	Updated details:
+		- Replace sections/ { kt_relatedProduct.liquid → kt_related-products.liquid }
+		- Replace sections/ { kt_relatedProducts_cartPopup.liquid → kt_related-products_cart-popup.liquid }
+		- Replace sections/ { kt_relatedProduct_sidebar.liquid → kt_related-products_sidebar.liquid }
+
+		- Modifided assets/custom.min.js
+		- Modifided assets/kiti-var.css.liquid
+		- Modifided assets/kt_filters.min.css
+		- Modifided assets/ktjs_multi_filters.min.js
+		- Modifided assets/lazysizes.min.js
+		- Modifided assets/product.related.liquid
+		- Modifided assets/style-rtl.min.css
+		- Modifided assets/style.min.css
+		- Modifided assets/theme-rtl.min.css
+		- Modifided assets/theme.ajax-cart.min.js
+		- Modifided assets/theme.min.css
+		- Modifided assets/theme.min.js
+		- Modifided assets/theme_footer_js.js.liquid
+		- Modifided config/settings_schema.json
+		- Modifided layout/password.liquid
+		- Modifided layout/theme.liquid
+		- Modifided layout/theme.prd-additional.liquid
+		- Modifided locales/en.default.json
+		- Modifided sections/collection-filter.liquid
+		- Modifided sections/collection-template.liquid
+		- Modifided sections/header-01.liquid
+		- Modifided sections/header-02.liquid
+		- Modifided sections/header-03.liquid
+		- Modifided sections/header-04.liquid
+		- Modifided sections/header-05.liquid
+		- Modifided sections/header-06.liquid
+		- Modifided sections/header-07.liquid
+		- Modifided sections/header-08.liquid
+		- Modifided sections/header-09.liquid
+		- Modifided sections/header-10.liquid
+		- Modifided sections/header-11.liquid
+		- Modifided sections/header-12.liquid
+		- Modifided sections/header-13.liquid
+		- Modifided sections/header-14.liquid
+		- Modifided sections/header-15.liquid
+		- Modifided sections/header-16.liquid
+		- Modifided sections/header-17.liquid
+		- Modifided sections/header-18.liquid
+		- Modifided sections/header-19.liquid
+		- Modifided sections/header-20.liquid
+		- Modifided sections/header.liquid
+		- Modifided sections/kt_bottom_bar.liquid
+		- Modifided sections/kt_instagram_5.liquid
+		- Modifided sections/md_banner_with_text_1.liquid
+		- Modifided sections/md_brand.liquid
+		- Modifided sections/md_countdown_section_2.liquid
+		- Modifided sections/md_list_item_cattegories_1.liquid
+		- Modifided sections/md_video_with_text_1.liquid
+		- Modifided sections/md_video_with_text_2.liquid
+		- Modifided snippets/fbt-content.liquid
+		- Modifided snippets/header-01.liquid
+		- Modifided snippets/header-02.liquid
+		- Modifided snippets/header-03.liquid
+		- Modifided snippets/header-04.liquid
+		- Modifided snippets/header-06.liquid
+		- Modifided snippets/header-07.liquid
+		- Modifided snippets/header-08.liquid
+		- Modifided snippets/header-09.liquid
+		- Modifided snippets/header-10.liquid
+		- Modifided snippets/header-11.liquid
+		- Modifided snippets/header-12.liquid
+		- Modifided snippets/header-13.liquid
+		- Modifided snippets/header-14.liquid
+		- Modifided snippets/header-15.liquid
+		- Modifided snippets/header-16.liquid
+		- Modifided snippets/header-17.liquid
+		- Modifided snippets/header-18.liquid
+		- Modifided snippets/header-19.liquid
+		- Modifided snippets/header-20.liquid
+		- Modifided snippets/kt_button_has_variant.liquid
+		- Modifided snippets/kt_button_no_variant.liquid
+		- Modifided snippets/kt_product_sidebar.liquid
+		- Modifided snippets/kt_product_tabs.liquid
+		- Modifided snippets/kt_stickyAddCart.liquid
+		- Modifided snippets/multi-filters.liquid
+		- Modifided snippets/product-grid-item.liquid
+		- Modifided snippets/product-item-prices.liquid
+		- Modifided snippets/product-layout1.liquid
+		- Modifided snippets/product-layout2.liquid
+		- Modifided snippets/product-layout3.liquid
+		- Modifided snippets/product-layout4.liquid
+		- Modifided snippets/product-layout5.liquid
+		- Modifided snippets/product-layout6.liquid
+		- Modifided snippets/product-layout7.liquid
+		- Modifided snippets/product-layout8.liquid
+		- Modifided snippets/product-list-item-mini-3.liquid
+		- Modifided snippets/product-list-item-mini.liquid
+		- Modifided snippets/product-list-item-mini2.liquid
+		- Modifided snippets/product-list-item.liquid
+		- Modifided snippets/rating_star.liquid
+		- Modifided snippets/search-bar.liquid
+		- Modifided snippets/t4-toolkit.liquid
+		- Modifided templates/cart.kt_cart_drawer.liquid
+		- Modifided templates/cart.kt_cart_popup.liquid
+		- Modifided templates/cart.liquid
+		- Modifided templates/cart.listjson.liquid
+		- Modifided templates/page.wishlist.liquid
+		- Modifided templates/product.edit-opts.liquid
+		- Modifided templates/product.liquid
+		- Modifided templates/product.mix-a-match.liquid
+		- Modifided templates/product.qshop.liquid
+		- Modifided templates/product.related.liquid
+		- Modifided templates/product.wishlist-local.liquid
+		- Modifided templates/search.sections_preset.liquid
+
+
+09/Apr/2021: Updated to version 1.7.1
+	- Fixed Some small errors.
+	-------------------------------
+	Updated details:
+		- Modifided assets/style-speed.css.liquid
+		- Modifided assets/theme-rtl.min.css
+		- Modifided assets/theme.min.css
+		- Modifided assets/workerktlz.min.js
+		- Modifided layout/theme.liquid
+		- Modifided sections/header-mobile.liquid
+		- Modifided sections/kt_bottom_bar.liquid
+		- Modifided sections/kt_slideshow.liquid
+		- Modifided sections/kt_slideshowCategoryBanner.liquid
+		- Modifided sections/md-collection-banners-box.liquid
+		- Modifided sections/md_product_section_show.liquid
+		- Modifided sections/md_product_section_slide.liquid
+		- Modifided sections/newsletter-popup.liquid
+		- Modifided snippets/account-popup.liquid
+		- Modifided snippets/kt_header-top.liquid
+		- Modifided snippets/theme_header_js.liquid
+		- Modifided templates/cart.kt_cart_drawer.liquid
+		- Modifided templates/cart.listShipping.liquid
+		- Modifided templates/page.wishlist.liquid
+
+06/Apr/2021: Updated to version 1.7.0
+	- Added New wishlist function.
+	- Fixed Some small errors.
+	- Modified: Speed loading.
+	-------------------------------
+	Updated details:
+		- Added assets/kt_filters.min.css
+		- Added assets/theme-cp-newletter.min.js
+		- Added templates/cart.kt_cart_drawer.liquid
+		- Added templates/cart.kt_cart_popup.liquid
+		- Added templates/page.wishlist-local.liquid
+		- Added templates/product.wishlist-local.liquid
+
+		- Modifided assets/custom.min.js
+		- Modifided assets/jquery.currencies.min.js
+		- Modifided assets/kiti-var.css.liquid
+		- Modifided assets/kt-c_edit-opts.min.css
+		- Modifided assets/ktjs_multi_filters.min.js
+		- Modifided assets/ktjs_product_sg.min.js
+		- Modifided assets/md_prd_card_grid-rtl.min.css
+		- Modifided assets/md_prd_card_grid.min.css
+		- Modifided assets/style-rtl.min.css
+		- Modifided assets/style-speed.css.liquid
+		- Modifided assets/style.min.css
+		- Modifided assets/theme-rtl.min.css
+		- Modifided assets/theme.ajax-cart.min.js
+		- Modifided assets/theme.min.css
+		- Modifided assets/theme.min.js
+		- Modifided assets/theme_footer_js.js.liquid
+		- Modifided config/settings_schema.json
+		- Modifided layout/password.liquid
+		- Modifided layout/theme.liquid
+		- Modifided layout/theme.prd-additional.liquid
+		- Modifided sections/collection-des.liquid
+		- Modifided sections/collection-template.liquid
+		- Modifided sections/custom_color.liquid
+		- Modifided sections/footer.liquid
+		- Modifided sections/header-01.liquid
+		- Modifided sections/header-02.liquid
+		- Modifided sections/header-03.liquid
+		- Modifided sections/header-04.liquid
+		- Modifided sections/header-05.liquid
+		- Modifided sections/header-06.liquid
+		- Modifided sections/header-07.liquid
+		- Modifided sections/header-08.liquid
+		- Modifided sections/header-09.liquid
+		- Modifided sections/header-10.liquid
+		- Modifided sections/header-11.liquid
+		- Modifided sections/header-12.liquid
+		- Modifided sections/header-13.liquid
+		- Modifided sections/header-14.liquid
+		- Modifided sections/header-15.liquid
+		- Modifided sections/header-16.liquid
+		- Modifided sections/header-17.liquid
+		- Modifided sections/header-18.liquid
+		- Modifided sections/header-19.liquid
+		- Modifided sections/header-20.liquid
+		- Modifided sections/header-mobile.liquid
+		- Modifided sections/header.liquid
+		- Modifided sections/kt_HTML.liquid
+		- Modifided sections/kt_ageVerification.liquid
+		- Modifided sections/kt_banner_flexible.liquid
+		- Modifided sections/kt_bottom_bar.liquid
+		- Modifided sections/kt_mega_mn-vertical.liquid
+		- Modifided sections/kt_recentlyViewedProducts.liquid
+		- Modifided sections/kt_relatedProduct.liquid
+		- Modifided sections/kt_relatedProduct_sidebar.liquid
+		- Modifided sections/kt_relatedProducts_cartPopup.liquid
+		- Modifided sections/kt_slideshow.liquid
+		- Modifided sections/kt_slideshowCategoryBanner.liquid
+		- Modifided sections/kt_slideshow_2.liquid
+		- Modifided sections/list-collections-template-page-1.liquid
+		- Modifided sections/list-collections-template-page-2.liquid
+		- Modifided sections/list-collections-template-page-3.liquid
+		- Modifided sections/list-collections-template-page-4.liquid
+		- Modifided sections/list-collections-template-page-5.liquid
+		- Modifided sections/list-collections-template-page-6.liquid
+		- Modifided sections/login-register-template.liquid
+		- Modifided sections/md-collection-banners-box.liquid
+		- Modifided sections/md-collection-product_section_slide.liquid
+		- Modifided sections/md_banner_products_set.liquid
+		- Modifided sections/md_banner_products_set_2.liquid
+		- Modifided sections/md_banner_products_set_3.liquid
+		- Modifided sections/md_banner_products_set_4.liquid
+		- Modifided sections/md_banner_template_1.liquid
+		- Modifided sections/md_banner_template_2.liquid
+		- Modifided sections/md_banner_template_3.liquid
+		- Modifided sections/md_banner_template_4.liquid
+		- Modifided sections/md_banner_template_5.liquid
+		- Modifided sections/md_banner_template_6.liquid
+		- Modifided sections/md_banner_template_7.liquid
+		- Modifided sections/md_countdown_section_1.liquid
+		- Modifided sections/md_countdown_section_2.liquid
+		- Modifided sections/md_countdown_section_with_banner_1.liquid
+		- Modifided sections/md_countdown_section_with_products_1.liquid
+		- Modifided sections/md_countdown_section_with_products_2.liquid
+		- Modifided sections/md_cta_lookbook_1.liquid
+		- Modifided sections/md_list_item_cattegories_1.liquid
+		- Modifided sections/md_lookbook_1.liquid
+		- Modifided sections/md_lookbook_2.liquid
+		- Modifided sections/md_product_lookbook_services.liquid
+		- Modifided sections/md_product_section_sale_1.liquid
+		- Modifided sections/md_product_section_show.liquid
+		- Modifided sections/md_product_section_show_2.liquid
+		- Modifided sections/md_product_section_show_3.liquid
+		- Modifided sections/md_product_section_show_4.liquid
+		- Modifided sections/md_product_section_show_banner_1.liquid
+		- Modifided sections/md_product_section_show_banner_2.liquid
+		- Modifided sections/md_product_section_slide.liquid
+		- Modifided sections/md_product_section_slide_2.liquid
+		- Modifided sections/md_product_section_slide_banner_1.liquid
+		- Modifided sections/md_product_section_tab_banner.liquid
+		- Modifided sections/md_product_section_tab_load.liquid
+		- Modifided sections/md_product_section_tab_load_2.liquid
+		- Modifided sections/md_product_section_tab_slide.liquid
+		- Modifided sections/md_product_section_tab_slide_2.liquid
+		- Modifided sections/md_product_section_tab_slide_banner.liquid
+		- Modifided sections/md_product_section_tab_slide_banner_2.liquid
+		- Modifided sections/md_product_section_tab_slide_banner_3.liquid
+		- Modifided sections/md_tabs.liquid
+		- Modifided sections/md_testimonials.liquid
+		- Modifided sections/newsletter-popup.liquid
+		- Modifided sections/product-template.liquid
+		- Modifided sections/search-template.liquid
+		- Modifided sections/store-availability.liquid
+		- Modifided snippets/account-popup.liquid
+		- Modifided snippets/header-01.liquid
+		- Modifided snippets/header-02.liquid
+		- Modifided snippets/header-03.liquid
+		- Modifided snippets/header-04.liquid
+		- Modifided snippets/header-05.liquid
+		- Modifided snippets/header-06.liquid
+		- Modifided snippets/header-07.liquid
+		- Modifided snippets/header-08.liquid
+		- Modifided snippets/header-09.liquid
+		- Modifided snippets/header-10.liquid
+		- Modifided snippets/header-11.liquid
+		- Modifided snippets/header-12.liquid
+		- Modifided snippets/header-13.liquid
+		- Modifided snippets/header-14.liquid
+		- Modifided snippets/header-15.liquid
+		- Modifided snippets/header-16.liquid
+		- Modifided snippets/header-17.liquid
+		- Modifided snippets/header-18.liquid
+		- Modifided snippets/header-19.liquid
+		- Modifided snippets/header-20.liquid
+		- Modifided snippets/header-layout.liquid
+		- Modifided snippets/image-grid-item.liquid
+		- Modifided snippets/kt-wishlist-product.liquid
+		- Modifided snippets/kt_account_widget.liquid
+		- Modifided snippets/kt_compare.liquid
+		- Modifided snippets/kt_currency_widget.liquid
+		- Modifided snippets/kt_header-top.liquid
+		- Modifided snippets/kt_logo_header.liquid
+		- Modifided snippets/kt_prd_mix_a_match.liquid
+		- Modifided snippets/kt_product_group.liquid
+		- Modifided snippets/kt_product_media.liquid
+		- Modifided snippets/kt_product_sidebar.liquid
+		- Modifided snippets/kt_product_tabs.liquid
+		- Modifided snippets/kt_slideshow_2_i.liquid
+		- Modifided snippets/kt_stickyAddCart.liquid
+		- Modifided snippets/md-quickviewMModal.liquid
+		- Modifided snippets/md_banner_template_1_3.liquid
+		- Modifided snippets/md_banner_template_1_4.liquid
+		- Modifided snippets/md_banner_template_1_5.liquid
+		- Modifided snippets/md_icon_boxes_items.liquid
+		- Modifided snippets/menu_import.liquid
+		- Modifided snippets/menu_import_sub.liquid
+		- Modifided snippets/menu_import_vt.liquid
+		- Modifided snippets/meta-tags.liquid
+		- Modifided snippets/multi-filters.liquid
+		- Modifided snippets/product-grid-item.liquid
+		- Modifided snippets/product-item-flashs.liquid
+		- Modifided snippets/product-layout1.liquid
+		- Modifided snippets/product-layout2.liquid
+		- Modifided snippets/product-layout3.liquid
+		- Modifided snippets/product-layout4.liquid
+		- Modifided snippets/product-layout5.liquid
+		- Modifided snippets/product-layout6.liquid
+		- Modifided snippets/product-layout7.liquid
+		- Modifided snippets/product-layout8.liquid
+		- Modifided snippets/product-list-item-mini-3.liquid
+		- Modifided snippets/product-list-item-mini-4.liquid
+		- Modifided snippets/product-list-item-mini.liquid
+		- Modifided snippets/product-list-item-mini2.liquid
+		- Modifided snippets/product-list-item.liquid
+		- Modifided snippets/product-single-prices.liquid
+		- Modifided snippets/search-bar.liquid
+		- Modifided snippets/t4-pcc.liquid
+		- Modifided snippets/t4-toolkit.liquid
+		- Modifided snippets/theme_header_js.liquid
+		- Modifided templates/cart.kt-clone-collection.liquid
+		- Modifided templates/cart.listjson.liquid
+		- Modifided templates/cart.t4-import-demo-st.liquid
+		- Modifided templates/cart.t4-import-demo.liquid
+		- Modifided templates/cart.t4-import-tags.liquid
+		- Modifided templates/collection.compare.liquid
+		- Modifided templates/collection.liquid
+		- Modifided templates/collection.productsAjax.liquid
+		- Modifided templates/page.wishlist.liquid
+		- Modifided templates/product.edit-opts.liquid
+		- Modifided templates/product.liquid
+		- Modifided templates/product.list-mini2.liquid
+		- Modifided templates/product.qshop.liquid
+		- Modifided templates/product.quickView.liquid
+20/Mar/2021: Updated to version 1.6.9
+	- Added flexible banner section.
+	- Fixed Some small errors.
+	-------------------------------
+	Updated details:
+		- Added sections/kt_banner_flexible.liquid
+		- Added assets/md_prd_card_grid-rtl.min.css
+		- Added assets/md_prd_card_grid.min.css
+
+		- Modifided assets/custom.min.js
+		- Modifided assets/kiti-var.css.liquid
+		- Modifided assets/kt_quick-shop.min.css
+		- Modifided assets/ktjs_filters.min.js
+		- Modifided assets/ktjs_multi_filters.min.js
+		- Modifided assets/ktjs_product_sg.min.js
+		- Modifided assets/style-speed.css.liquid
+		- Modifided assets/style.min.css
+		- Modifided assets/theme-rtl.min.css
+		- Modifided assets/theme-rtl.scss
+		- Modifided assets/theme.ajax-cart-page.min.js
+		- Modifided assets/theme.ajax-cart.min.js
+		- Modifided assets/theme.min.css
+		- Modifided assets/theme.min.js
+		- Modifided assets/theme_footer_js.js.liquid
+		- Modifided config/settings_schema.json
+		- Modifided layout/theme.liquid
+		- Modifided sections/collection-template.liquid
+		- Modifided sections/fbt-recommen.liquid
+		- Modifided sections/header-09.liquid
+		- Modifided sections/header-10.liquid
+		- Modifided sections/kt_cart_drawer.liquid
+		- Modifided sections/kt_mega_mn-vertical.liquid
+		- Modifided sections/kt_slideshow.liquid
+		- Modifided sections/kt_slideshowCategoryBanner.liquid
+		- Modifided sections/kt_slideshow_2.liquid
+		- Modifided sections/md-collection-banners-box.liquid
+		- Modifided sections/md_banner_template_1.liquid
+		- Modifided sections/md_banner_template_2.liquid
+		- Modifided sections/md_banner_template_3.liquid
+		- Modifided sections/md_banner_template_4.liquid
+		- Modifided sections/md_banner_template_5.liquid
+		- Modifided sections/md_banner_template_6.liquid
+		- Modifided sections/md_call_to_action_2.liquid
+		- Modifided sections/md_categories_banner_1.liquid
+		- Modifided sections/md_countdown_section_with_banner_1.liquid
+		- Modifided sections/md_portfolio.liquid
+		- Modifided snippets/fbt-content.liquid
+		- Modifided snippets/fbt-layout.liquid
+		- Modifided snippets/kt_product_media.liquid
+		- Modifided snippets/kt_variants_options.liquid
+		- Modifided snippets/md-quickviewModal.liquid
+		- Modifided snippets/menu_import.liquid
+		- Modifided snippets/menu_import_sub.liquid
+		- Modifided snippets/multi-filters.liquid
+		- Modifided snippets/product-grid-item.liquid
+		- Modifided snippets/product-layout1.liquid
+		- Modifided snippets/product-layout2.liquid
+		- Modifided snippets/product-layout3.liquid
+		- Modifided snippets/product-layout4.liquid
+		- Modifided snippets/product-layout5.liquid
+		- Modifided snippets/product-layout6.liquid
+		- Modifided snippets/product-layout7.liquid
+		- Modifided snippets/product-layout8.liquid
+		- Modifided snippets/product-list-item.liquid
+		- Modifided templates/cart.page-ajax.liquid
+		- Modifided templates/product.fbt.liquid
+		- Modifided templates/product.imgcard.liquid
+		- Modifided templates/product.imgscard.liquid
+		- Modifided templates/product.quickView.liquid
+
+-------------------------------
+10/Mar/2021: Updated to version 1.6.8
+	- Fixed Some small errors.
+	-------------------------------
+	Updated details:
+		- Added sections/kt_mega_mn-vertical.liquid
+		- Added templates/product.group.liquid
+		- Added templates/cart.sub_menu-vt.liquid
+		- Added templates/product.stickyATC.liquid
+
+		- Modifided assets/custom.min.js
+		- Modifided assets/kiti-var.css.liquid
+		- Modifided assets/ktjs_product_sg.min.js
+		- Modifided assets/style-rtl.min.css
+		- Modifided assets/style-speed.css.liquid
+		- Modifided assets/style.min.css
+		- Modifided assets/theme-rtl.min.css
+		- Modifided assets/theme.min.css
+		- Modifided assets/theme.min.js
+		- Modifided assets/theme_footer_js.js.liquid
+		- Modifided layout/theme.liquid
+		- Modifided locales/en.default.json
+		- Modifided sections/account-template.liquid
+		- Modifided sections/footer_02.liquid
+		- Modifided sections/footer_03.liquid
+		- Modifided sections/header-01.liquid
+		- Modifided sections/header-02.liquid
+		- Modifided sections/header-03.liquid
+		- Modifided sections/header-04.liquid
+		- Modifided sections/header-05.liquid
+		- Modifided sections/header-06.liquid
+		- Modifided sections/header-07.liquid
+		- Modifided sections/header-08.liquid
+		- Modifided sections/header-09.liquid
+		- Modifided sections/header-10.liquid
+		- Modifided sections/header-11.liquid
+		- Modifided sections/header-12.liquid
+		- Modifided sections/header-13.liquid
+		- Modifided sections/header-14.liquid
+		- Modifided sections/header-15.liquid
+		- Modifided sections/header-16.liquid
+		- Modifided sections/header-17.liquid
+		- Modifided sections/header-18.liquid
+		- Modifided sections/header-19.liquid
+		- Modifided sections/header-20.liquid
+		- Modifided sections/header.liquid
+		- Modifided sections/kt_slideshow.liquid
+		- Modifided sections/kt_slideshowCategoryBanner.liquid
+		- Modifided sections/md_banner_template_1.liquid
+		- Modifided sections/md_banner_template_6.liquid
+		- Modifided sections/md_banner_with_text_1.liquid
+		- Modifided sections/md_categories_banner_1.liquid
+		- Modifided sections/md_countdown_section_2.liquid
+		- Modifided sections/md_product_section_slide_banner_1.liquid
+		- Modifided sections/order-template.liquid
+		- Modifided sections/product-template.liquid
+		- Modifided sections/search-template.liquid
+		- Modifided sections/store-availability.liquid
+		- Modifided snippets/fbt-content.liquid
+		- Modifided snippets/header-03.liquid
+		- Modifided snippets/header-04.liquid
+		- Modifided snippets/header-05.liquid
+		- Modifided snippets/header-06.liquid
+		- Modifided snippets/header-07.liquid
+		- Modifided snippets/header-08.liquid
+		- Modifided snippets/header-16.liquid
+		- Modifided snippets/header-20.liquid
+		- Modifided snippets/header-layout.liquid
+		- Modifided snippets/image-grid-item.liquid
+		- Modifided snippets/kt-currency-name.liquid
+		- Modifided snippets/kt_image_fit.liquid
+		- Modifided snippets/kt_menu-title.liquid
+		- Modifided snippets/kt_product_media.liquid
+		- Modifided snippets/kt_product_sidebar.liquid
+		- Modifided snippets/menu_import.liquid
+		- Modifided snippets/menu_import_sub.liquid
+		- Modifided snippets/meta-tags.liquid
+		- Modifided snippets/product-layout1.liquid
+		- Modifided snippets/product-layout2.liquid
+		- Modifided snippets/product-layout3.liquid
+		- Modifided snippets/product-layout4.liquid
+		- Modifided snippets/product-layout5.liquid
+		- Modifided snippets/product-layout6.liquid
+		- Modifided snippets/product-layout7.liquid
+		- Modifided snippets/product-layout8.liquid
+		- Modifided snippets/product-list-item.liquid
+		- Modifided snippets/search-bar.liquid
+		- Modifided snippets/theme_header_js.liquid
+		- Modifided templates/cart.sub_menu.liquid
+		- Modifided templates/collection.liquid
+		- Modifided templates/page.vertical-menu.liquid
+		- Modifided templates/page.wishlist.liquid
+		- Modifided templates/product.imgcard.liquid
+		- Modifided templates/product.imgscard.liquid
+		- Modifided templates/product.quickView.liquid
+
+25/Peb/2021: Updated to version 1.6.7
+	- Added homepage 34
+	- Added new section
+	- Fixed Some small errors.
+	-------------------------------
+	Updated details:
+		- Added assets/Demo_34.json
+		- Added sections/header-20.liquid
+		- Added snippets/header-20.liquid
+		- Added sections/md_list_item_cattegories_4.liquid
+
+		- Modifided assets/Demo_01.json
+		- Modifided assets/Demo_02.json
+		- Modifided assets/ktjs_product_sg.min.js
+		- Modifided assets/style-rtl.min.css
+		- Modifided assets/style-speed.css.liquid
+		- Modifided assets/style.min.css
+		- Modifided assets/theme-rtl.min.css
+		- Modifided assets/theme.min.css
+		- Modifided assets/theme.min.js
+		- Modifided config/settings_schema.json
+		- Modifided layout/theme.liquid
+		- Modifided sections/footer.liquid
+		- Modifided sections/footer_01.liquid
+		- Modifided sections/footer_02.liquid
+		- Modifided sections/footer_03.liquid
+		- Modifided sections/footer_04.liquid
+		- Modifided sections/footer_06.liquid
+		- Modifided sections/kt_instagram_1.liquid
+		- Modifided sections/kt_instagram_3.liquid
+		- Modifided sections/kt_instagram_5.liquid
+		- Modifided sections/kt_slideshow.liquid
+		- Modifided sections/md_banner_template_2.liquid
+		- Modifided sections/md_list_item_cattegories_2.liquid
+		- Modifided sections/md_list_item_cattegories_3.liquid
+		- Modifided sections/md_testimonials.liquid
+		- Modifided snippets/header-layout.liquid
+		- Modifided snippets/kt_logo_header.liquid
+		- Modifided snippets/kt_product_media.liquid
+		- Modifided snippets/md_icon_boxes_items.liquid
+		- Modifided templates/cart.t4-import-demo-st.liquid
+		- Modifided templates/cart.t4-import-demo.liquid
+		- Modifided templates/search.sections_preset.liquid
+
+23/Peb/2021: Updated to version 1.6.6
+	- Added homepage 33
+	- Added new section
+	- Fixed Some small errors.
+	-------------------------------
+	Updated details:
+		- Added assets/Demo_33.json
+		- Added sections/kt_instagram_5.liquid
+		- Added sections/md_banner_template_7.liquid
+		- Added sections/md_cta_lookbook_1.liquid
+		- Added sections/md_list_item_cattegories_3.liquid
+
+		- Modifided assets/custom.min.js
+		- Modifided assets/kiti-var.css.liquid
+		- Modifided assets/kt_quick-shop.min.css
+		- Modifided assets/style-speed.css.liquid
+		- Modifided assets/theme-rtl.min.css
+		- Modifided assets/theme.min.css
+		- Modifided layout/theme.liquid
+		- Modifided layout/theme.prd-additional.liquid
+		- Modifided sections/account-template.liquid
+		- Modifided sections/header-07.liquid
+		- Modifided sections/header-08.liquid
+		- Modifided sections/header-16.liquid
+		- Modifided sections/kt_instagram_4.liquid
+		- Modifided sections/login-register-template.liquid
+		- Modifided sections/md_banner_products_set.liquid
+		- Modifided sections/md_banner_template_6.liquid
+		- Modifided sections/md_blog.liquid
+		- Modifided sections/md_countdown_section_2.liquid
+		- Modifided sections/md_testimonials.liquid
+		- Modifided sections/order-template.liquid
+		- Modifided snippets/account-popup.liquid
+		- Modifided snippets/fbt-content.liquid
+		- Modifided snippets/meta-tags.liquid
+		- Modifided snippets/product-grid-item.liquid
+		- Modifided snippets/product-item-flashs.liquid
+		- Modifided snippets/product-layout1.liquid
+		- Modifided snippets/product-layout3.liquid
+		- Modifided snippets/product-layout4.liquid
+		- Modifided snippets/product-layout5.liquid
+		- Modifided snippets/product-layout6.liquid
+		- Modifided snippets/product-layout8.liquid
+		- Modifided snippets/product-list-item.liquid
+		- Modifided templates/cart.t4-import-demo-st.liquid
+		- Modifided templates/cart.t4-import-demo.liquid
+		- Modifided templates/page.wishlist.liquid
+		- Modifided templates/product.edit-opts.liquid
+		- Modifided templates/product.jsfull.liquid
+		- Modifided templates/product.qshop.liquid
+		- Modifided templates/search.sections_preset.liquid
+
+08/Peb/2021: Updated to version 1.6.5
+	- Added homepage 32
+	- Added new section
+	- Fixed Some small errors.
+	-------------------------------
+	Updated details:
+		- Added assets/kiti-var.css.liquid
+		- Added assets/kt-c_edit-opts.css
+		- Added assets/kt-c_edit-opts.min.css
+		- Added assets/kt_quick-shop.css
+		- Added assets/kt_quick-shop.min.css
+		- Added assets/workerktlz.min.js
+		- Added assets/theme-cp-newletter.js
+		- Added sections/md_featured_product_2.liquid
+		- Added sections/kt_cart_drawer.liquid
+		- Added templates/product.ask.liquid
+		- Added templates/product.edit-opts.liquid
+		- Added templates/product.imgcard.liquid
+		- Added templates/product.imgscard.liquid
+		- Added templates/product.list-mini2.liquid
+		- Added templates/product.notify.liquid
+		- Added templates/product.qshop.liquid
+		- Added snippets/md_banner_template_1_4.liquid
+
+		- Modifided assets/custom.min.js
+		- Modifided assets/jquery-3.4.1.min.js
+		- Modifided assets/jquery.currencies-sp.min.js
+		- Modifided assets/jquery.currencies.min.js
+		- Modifided assets/kiti.scss.liquid
+		- Modifided assets/ktjs_filters.min.js
+		- Modifided assets/ktjs_multi_filters.min.js
+		- Modifided assets/ktjs_product_sg.min.js
+		- Modifided assets/lazysizes.min.js
+		- Modifided assets/molla-icon.css
+		- Modifided assets/style-rtl.min.css
+		- Modifided assets/style-speed.css.liquid
+		- Modifided assets/style.min.css
+		- Modifided assets/system.css.liquid
+		- Modifided assets/theme-rtl.min.css
+		- Modifided assets/theme.ajax-cart-page.min.js
+		- Modifided assets/theme.ajax-cart.min.js
+		- Modifided assets/theme.cart-rtl.min.css
+		- Modifided assets/theme.cart.min.css
+		- Modifided assets/theme.get-shipping.min.js
+		- Modifided assets/theme.min.css
+		- Modifided assets/theme.min.js
+		- Modifided assets/theme_footer_js.js.liquid
+		- Modifided assets/vendor.js
+		- Modifided config/settings_schema.json
+		- Modifided layout/gift_card.liquid
+		- Modifided layout/password.liquid
+		- Modifided layout/theme.liquid
+		- Modifided locales/en.default.json
+		- Modifided sections/404-template.liquid
+		- Modifided sections/account-template.liquid
+		- Modifided sections/cart-template.liquid
+		- Modifided sections/collection-filter.liquid
+		- Modifided sections/collection-template.liquid
+		- Modifided sections/custom_color.liquid
+		- Modifided sections/footer-extension.liquid
+		- Modifided sections/footer.liquid
+		- Modifided sections/footer_01.liquid
+		- Modifided sections/footer_02.liquid
+		- Modifided sections/footer_03.liquid
+		- Modifided sections/footer_04.liquid
+		- Modifided sections/footer_05.liquid
+		- Modifided sections/footer_06.liquid
+		- Modifided sections/footer_07.liquid
+		- Modifided sections/header-01.liquid
+		- Modifided sections/header-02.liquid
+		- Modifided sections/header-03.liquid
+		- Modifided sections/header-04.liquid
+		- Modifided sections/header-05.liquid
+		- Modifided sections/header-06.liquid
+		- Modifided sections/header-07.liquid
+		- Modifided sections/header-08.liquid
+		- Modifided sections/header-09.liquid
+		- Modifided sections/header-10.liquid
+		- Modifided sections/header-11.liquid
+		- Modifided sections/header-12.liquid
+		- Modifided sections/header-13.liquid
+		- Modifided sections/header-14.liquid
+		- Modifided sections/header-15.liquid
+		- Modifided sections/header-16.liquid
+		- Modifided sections/header-17.liquid
+		- Modifided sections/header-18.liquid
+		- Modifided sections/header-19.liquid
+		- Modifided sections/header-mobile.liquid
+		- Modifided sections/header.liquid
+		- Modifided sections/kt_HTML.liquid
+		- Modifided sections/kt_bottom_bar.liquid
+		- Modifided sections/kt_recentlyViewedProducts.liquid
+		- Modifided sections/kt_relatedProduct.liquid
+		- Modifided sections/kt_relatedProduct_sidebar.liquid
+		- Modifided sections/kt_relatedProducts_cartPopup.liquid
+		- Modifided sections/kt_slideshow.liquid
+		- Modifided sections/kt_slideshowCategoryBanner.liquid
+		- Modifided sections/kt_slideshow_2.liquid
+		- Modifided sections/list-collections-template.liquid
+		- Modifided sections/md-collection-banners-box.liquid
+		- Modifided sections/md-collection-product_section_slide.liquid
+		- Modifided sections/md_banner_collections_template_1.liquid
+		- Modifided sections/md_banner_products_set.liquid
+		- Modifided sections/md_banner_products_set_2.liquid
+		- Modifided sections/md_banner_products_set_3.liquid
+		- Modifided sections/md_banner_products_set_4.liquid
+		- Modifided sections/md_banner_template_1.liquid
+		- Modifided sections/md_banner_template_2.liquid
+		- Modifided sections/md_banner_with_text_1.liquid
+		- Modifided sections/md_blog.liquid
+		- Modifided sections/md_brand.liquid
+		- Modifided sections/md_categories_banner_1.liquid
+		- Modifided sections/md_countdown_section_1.liquid
+		- Modifided sections/md_countdown_section_2.liquid
+		- Modifided sections/md_countdown_section_with_banner_1.liquid
+		- Modifided sections/md_countdown_section_with_products_1.liquid
+		- Modifided sections/md_countdown_section_with_products_2.liquid
+		- Modifided sections/md_featured_product.liquid
+		- Modifided sections/md_lookbook_1.liquid
+		- Modifided sections/md_lookbook_2.liquid
+		- Modifided sections/md_product_lookbook_services.liquid
+		- Modifided sections/md_product_section_sale_1.liquid
+		- Modifided sections/md_product_section_show.liquid
+		- Modifided sections/md_product_section_show_2.liquid
+		- Modifided sections/md_product_section_show_3.liquid
+		- Modifided sections/md_product_section_show_4.liquid
+		- Modifided sections/md_product_section_show_banner_1.liquid
+		- Modifided sections/md_product_section_show_banner_2.liquid
+		- Modifided sections/md_product_section_slide.liquid
+		- Modifided sections/md_product_section_slide_2.liquid
+		- Modifided sections/md_product_section_slide_banner_1.liquid
+		- Modifided sections/md_product_section_tab_banner.liquid
+		- Modifided sections/md_product_section_tab_load.liquid
+		- Modifided sections/md_product_section_tab_load_2.liquid
+		- Modifided sections/md_product_section_tab_slide.liquid
+		- Modifided sections/md_product_section_tab_slide_2.liquid
+		- Modifided sections/md_product_section_tab_slide_banner.liquid
+		- Modifided sections/md_product_section_tab_slide_banner_2.liquid
+		- Modifided sections/md_product_section_tab_slide_banner_3.liquid
+		- Modifided sections/md_video_with_text_1.liquid
+		- Modifided sections/md_video_with_text_2.liquid
+		- Modifided sections/newsletter-popup.liquid
+		- Modifided sections/product-template.liquid
+		- Modifided sections/search-template.liquid
+		- Modifided snippets/account-popup.liquid
+		- Modifided snippets/afterpay.liquid
+		- Modifided snippets/fbt-content.liquid
+		- Modifided snippets/fbt-layout.liquid
+		- Modifided snippets/header-01.liquid
+		- Modifided snippets/header-02.liquid
+		- Modifided snippets/header-03.liquid
+		- Modifided snippets/header-04.liquid
+		- Modifided snippets/header-05.liquid
+		- Modifided snippets/header-06.liquid
+		- Modifided snippets/header-07.liquid
+		- Modifided snippets/header-08.liquid
+		- Modifided snippets/header-09.liquid
+		- Modifided snippets/header-10.liquid
+		- Modifided snippets/header-11.liquid
+		- Modifided snippets/header-12.liquid
+		- Modifided snippets/header-13.liquid
+		- Modifided snippets/header-14.liquid
+		- Modifided snippets/header-15.liquid
+		- Modifided snippets/header-16.liquid
+		- Modifided snippets/header-17.liquid
+		- Modifided snippets/header-18.liquid
+		- Modifided snippets/header-19.liquid
+		- Modifided snippets/image-grid-item.liquid
+		- Modifided snippets/kt-wishlist-product.liquid
+		- Modifided snippets/kt_account_widget.liquid
+		- Modifided snippets/kt_breadcrumb.liquid
+		- Modifided snippets/kt_button_has_variant.liquid
+		- Modifided snippets/kt_button_no_variant.liquid
+		- Modifided snippets/kt_cart_drawer.liquid
+		- Modifided snippets/kt_cart_popup.liquid
+		- Modifided snippets/kt_filter_json.liquid
+		- Modifided snippets/kt_mini-cart.liquid
+		- Modifided snippets/kt_notify-available.liquid
+		- Modifided snippets/kt_product-sizeGuide.liquid
+		- Modifided snippets/kt_product_media.liquid
+		- Modifided snippets/kt_product_sidebar.liquid
+		- Modifided snippets/kt_product_tabs.liquid
+		- Modifided snippets/kt_slideshow_2_i.liquid
+		- Modifided snippets/kt_stickyAddCart.liquid
+		- Modifided snippets/kt_variants_options.liquid
+		- Modifided snippets/md_banner_template_1_3.liquid
+		- Modifided snippets/menu_import.liquid
+		- Modifided snippets/menu_import_sub.liquid
+		- Modifided snippets/menu_import_vt.liquid
+		- Modifided snippets/meta-tags.liquid
+		- Modifided snippets/multi-filters.liquid
+		- Modifided snippets/photoswipe.liquid
+		- Modifided snippets/product-grid-item.liquid
+		- Modifided snippets/product-item-flashs.liquid
+		- Modifided snippets/product-item-prices.liquid
+		- Modifided snippets/product-layout1.liquid
+		- Modifided snippets/product-layout2.liquid
+		- Modifided snippets/product-layout3.liquid
+		- Modifided snippets/product-layout4.liquid
+		- Modifided snippets/product-layout5.liquid
+		- Modifided snippets/product-layout6.liquid
+		- Modifided snippets/product-layout7.liquid
+		- Modifided snippets/product-layout8.liquid
+		- Modifided snippets/product-list-item-mini-3.liquid
+		- Modifided snippets/product-list-item-mini-4.liquid
+		- Modifided snippets/product-list-item-mini.liquid
+		- Modifided snippets/product-list-item-mini2.liquid
+		- Modifided snippets/product-list-item.liquid
+		- Modifided snippets/search-bar.liquid
+		- Modifided snippets/t4-toolkit.liquid
+		- Modifided snippets/theme_header_js.liquid
+		- Modifided templates/cart.listjson.liquid
+		- Modifided templates/cart.listjsondrop.liquid
+		- Modifided templates/cart.listjsonpopup.liquid
+		- Modifided templates/cart.page-ajax.liquid
+		- Modifided templates/cart.t4-import-demo-st.liquid
+		- Modifided templates/cart.t4-import-demo.liquid
+		- Modifided templates/collection.alltag.liquid
+		- Modifided templates/collection.compare.liquid
+		- Modifided templates/collection.liquid
+		- Modifided templates/collection.productsAjax.liquid
+		- Modifided templates/index.liquid
+		- Modifided templates/page.liquid
+		- Modifided templates/page.list-collections.liquid
+		- Modifided templates/page.wishlist.liquid
+		- Modifided templates/product.fbt.liquid
+		- Modifided templates/product.liquid
+		- Modifided templates/product.quickView.liquid
+		- Modifided templates/search.ajax.liquid
+		- Modifided templates/search.sections_preset.liquid
+28/Dec/2020: Updated to version 1.6.4
+	- Fixed Some small errors.
+	-------------------------------
+	Updated details:
+		- Added sections/header-01.liquid
+		- Added sections/header-02.liquid
+		- Added sections/header-03.liquid
+		- Added sections/header-04.liquid
+		- Added sections/header-05.liquid
+		- Added sections/header-06.liquid
+		- Added sections/header-07.liquid
+		- Added sections/header-08.liquid
+		- Added sections/header-09.liquid
+		- Added sections/header-10.liquid
+		- Added sections/header-11.liquid
+		- Added sections/header-12.liquid
+		- Added sections/header-13.liquid
+		- Added sections/header-14.liquid
+		- Added sections/header-15.liquid
+		- Added sections/header-16.liquid
+		- Added sections/header-17.liquid
+		- Added sections/header-18.liquid
+		- Added sections/header-19.liquid
+		- Added sections/kt_slideshow_2.liquid
+		- Added snippets/kt_slideshow_2_i.liquid
+		- Added sections/md_banner_with_text_2.liquid
+		- Added sections/md_banner_with_text_3.liquid
+		- Added sections/md_brand_3.liquid
+		- Added sections/md_brand_4.liquid
+		- Added sections/md_contact_i_q.liquid
+		- Added sections/md_contact_infor.liquid
+		- Added sections/md_contact_question.liquid
+		- Added sections/md_count_to.liquid
+		- Added sections/md_our_stores.liquid
+		- Added sections/md_profile_card_grid.liquid
+		- Added sections/md_profile_card_grid_2.liquid
+		- Added sections/md_video_with_text_1.liquid
+		- Added sections/md_video_with_text_2.liquid
+		- Added snippets/footer-layout.liquid
+		- Added snippets/header-layout.liquid
+
+		- Modifided assets/kiti.scss.liquid
+		- Modifided assets/ktjs_filters.min.js
+		- Modifided assets/ktjs_multi_filters.min.js
+		- Modifided assets/ktjs_product_sg.min.js
+		- Modifided assets/style-rtl.min.css
+		- Modifided assets/style-speed.css.liquid
+		- Modifided assets/style.min.css
+		- Modifided assets/theme-rtl.min.css
+		- Modifided assets/theme.min.css
+		- Modifided assets/theme.min.js
+		- Modifided assets/theme_footer_js.js.liquid
+		- Modifided config/settings_schema.json
+		- Modifided layout/theme.liquid
+		- Modifided snippets/kt_button_has_variant.liquid
+		- Modifided snippets/kt_header-top.liquid
+		- Modifided snippets/kt_mini-cart.liquid
+		- Modifided snippets/kt_product_media.liquid
+		- Modifided snippets/kt_product_tabs.liquid
+		- Modifided snippets/menu_import.liquid
+		- Modifided snippets/menu_import_sub.liquid
+		- Modifided snippets/product-list-item-mini2.liquid
+		- Modifided snippets/t4-toolkit.liquid
+		- Modifided snippets/theme_header_js.liquid
+		- Modifided templates/cart.sub_menu.liquid
+		- Modifided templates/cart.t4-import-tags.liquid
+
+-------------------------------
+14/Dec/2020: Updated to version 1.6.3
+	- Added Catalog mode.
+	- Added Footer flexible layout.
+	- Fixed Some small errors.
+	-------------------------------
+	Updated details:
+		- Added locales/zh-TW.json
+		- Added sections/footer.liquid
+
+		- Modifided assets/custom.min.js
+		- Modifided assets/kiti.scss.liquid
+		- Modifided assets/ktjs_filters.min.js
+		- Modifided assets/ktjs_multi_filters.min.js
+		- Modifided assets/ktjs_product_sg.min.js
+		- Modifided assets/style-rtl.min.css
+		- Modifided assets/style-speed.css.liquid
+		- Modifided assets/style.min.css
+		- Modifided assets/theme-rtl.min.css
+		- Modifided assets/theme.ajax-cart-page.min.js
+		- Modifided assets/theme.ajax-cart.min.js
+		- Modifided assets/theme.min.css
+		- Modifided assets/theme.min.js
+		- Modifided assets/theme_footer_js.js.liquid
+		- Modifided config/settings_schema.json
+		- Modifided layout/theme.liquid
+		- Modifided locales/de.json
+		- Modifided locales/en.default.json
+		- Modifided locales/es.json
+		- Modifided locales/ja.json
+		- Modifided locales/nl.json
+		- Modifided sections/header.liquid
+		- Modifided sections/kt_bottom_bar.liquid
+		- Modifided sections/kt_slideshow.liquid
+		- Modifided sections/kt_slideshowCategoryBanner.liquid
+		- Modifided sections/kt_vertical-menu-0.liquid
+		- Modifided sections/kt_vertical-menu-1.liquid
+		- Modifided sections/kt_vertical-menu-2.liquid
+		- Modifided sections/kt_vertical-menu-3.liquid
+		- Modifided sections/kt_vertical-menu-4.liquid
+		- Modifided sections/kt_vertical-menu-5.liquid
+		- Modifided sections/kt_vertical-menu-6.liquid
+		- Modifided sections/kt_vertical-menu-7.liquid
+		- Modifided sections/kt_vertical-menu-8.liquid
+		- Modifided sections/kt_vertical-menu-9.liquid
+		- Modifided sections/list-collections-template.liquid
+		- Modifided sections/md-collection-banners-box.liquid
+		- Modifided sections/md_product_section_slide.liquid
+		- Modifided sections/product-template.liquid
+		- Modifided snippets/fbt-content.liquid
+		- Modifided snippets/header-05.liquid
+		- Modifided snippets/header-17.liquid
+		- Modifided snippets/kt_cart_popup.liquid
+		- Modifided snippets/kt_image_fit.liquid
+		- Modifided snippets/kt_mini-cart.liquid
+		- Modifided snippets/kt_notify-available.liquid
+		- Modifided snippets/kt_variants_options.liquid
+		- Modifided snippets/md_banner_template_1_3.liquid
+		- Modifided snippets/md_banner_template_1_5.liquid
+		- Modifided snippets/product-grid-item.liquid
+		- Modifided snippets/product-item-prices.liquid
+		- Modifided snippets/product-layout1.liquid
+		- Modifided snippets/product-layout2.liquid
+		- Modifided snippets/product-layout3.liquid
+		- Modifided snippets/product-layout4.liquid
+		- Modifided snippets/product-layout5.liquid
+		- Modifided snippets/product-layout6.liquid
+		- Modifided snippets/product-layout7.liquid
+		- Modifided snippets/product-layout8.liquid
+		- Modifided snippets/product-single-prices.liquid
+		- Modifided snippets/search-bar.liquid
+		- Modifided snippets/t4-toolkit.liquid
+		- Modifided templates/cart.workerktlz.liquid
+		- Modifided templates/index.liquid
+		- Modifided templates/list-collections.liquid
+		- Modifided templates/page.list-collections.liquid
+		- Modifided templates/page.wishlist.liquid
+		- Modifided templates/product.quickView.liquid
+
+-------------------------------
+01/Dec/2020: Updated to version 1.6.2
+	- Added Onclick import section demo.
+	- Fixed Some small errors.
+	-------------------------------
+	Updated details:
+
+	- Added locales/ja.json
+
+  	- Modifided assets/jquery.currencies.min.js
+  	- Modifided assets/style-speed.css.liquid
+  	- Modifided assets/theme.min.js
+  	- Modifided config/settings_schema.json
+  	- Modifided layout/theme.liquid
+  	- Modifided sections/collection-des.liquid
+  	- Modifided sections/collection-filter.liquid
+  	- Modifided sections/kt_relatedProduct.liquid
+  	- Modifided sections/kt_slideshow.liquid
+  	- Modifided sections/kt_slideshowCategoryBanner.liquid
+  	- Modifided sections/login-register-template.liquid
+  	- Modifided sections/md-collection-banners-box.liquid
+  	- Modifided snippets/t4-toolkit.liquid
+  	- Modifided templates/cart.t4-import-demo-st.liquid
+  	- Modifided templates/search.sections_preset.liquid
+
+-------------------------------
+24/Nov/2020: Updated to version 1.6.1
+	- Fixed Onclick import demo.
+	- Fixed Some small errors.
+	-------------------------------
+	Updated details:
+		- Added locales/es.json
+		- Added templates/product.collsjs.liquid
+		- Added templates/cart.t4-import-demo-st.liquid
+		- Added templates/cart.t4-import-demo.liquid
+
+		- Modifided assets/custom.min.js
+		- Modifided assets/ktjs_multi_filters.min.js
+		- Modifided assets/ktjs_product_sg.min.js
+		- Modifided assets/style-speed.css.liquid
+		- Modifided assets/theme-rtl.min.css
+		- Modifided assets/theme.font.css.liquid
+		- Modifided assets/theme.min.css
+		- Modifided assets/theme.min.js
+		- Modifided assets/theme_footer_js.js.liquid
+
+		- Modifided config/settings_schema.json
+		- Modifided layout/gift_card.liquid
+		- Modifided layout/theme.liquid
+
+		- Modifided sections/cart-template.liquid
+		- Modifided sections/cookies_popup.liquid
+		- Modifided sections/header.liquid
+		- Modifided sections/kt_banner_all_page.liquid
+		- Modifided sections/list-collections-template-page-1.liquid
+		- Modifided sections/list-collections-template-page-2.liquid
+		- Modifided sections/list-collections-template-page-3.liquid
+		- Modifided sections/list-collections-template-page-4.liquid
+		- Modifided sections/list-collections-template-page-5.liquid
+		- Modifided sections/list-collections-template-page-6.liquid
+		- Modifided sections/list-collections-template.liquid
+		- Modifided snippets/googleRich.liquid
+		- Modifided snippets/kt_cart_drawer.liquid
+		- Modifided snippets/kt_cart_popup.liquid
+		- Modifided snippets/kt_mini-cart.liquid
+		- Modifided snippets/kt_suggest.liquid
+		- Modifided snippets/kt_variants_options.liquid
+		- Modifided snippets/product-grid-item.liquid
+		- Modifided snippets/product-layout1.liquid
+		- Modifided snippets/product-layout2.liquid
+		- Modifided snippets/product-layout3.liquid
+		- Modifided snippets/product-layout4.liquid
+		- Modifided snippets/product-layout5.liquid
+		- Modifided snippets/product-layout6.liquid
+		- Modifided snippets/product-layout7.liquid
+		- Modifided snippets/product-layout8.liquid
+		- Modifided snippets/t4-toolkit.liquid
+		
+		- Modifided templates/cart.listjson.liquid
+		- Modifided templates/cart.listjsondrop.liquid
+		- Modifided templates/cart.listjsonpopup.liquid
+		- Modifided templates/cart.t4-import-tags.liquid
+		- Modifided templates/cart.workerktlz.liquid
+		- Modifided templates/gift_card.liquid
+		- Modifided templates/product.quickView.liquid
+
+
+11/Nov/2020: Updated to version 1.6.0
+	- Added Frequently Bought Together
+	- Added Homepage 27
+	- Fixed Some small errors.
+	-------------------------------
+	Updated details:
+		- Added sections/fbt-recommen.liquid
+		- Added snippets/fbt-content.liquid
+		- Added snippets/fbt-layout.liquid
+		- Added snippets/sc_css.liquid
+		- Added templates/product.fbt.liquid
+
+		- Modifided assets/custom.min.js
+		- Modifided assets/kiti.scss.liquid
+		- Modifided assets/ktjs_filters.min.js
+		- Modifided assets/ktjs_multi_filters.min.js
+		- Modifided assets/ktjs_product_sg.min.js
+		- Modifided assets/style-rtl.min.css
+		- Modifided assets/style-speed.css.liquid
+		- Modifided assets/style.min.css
+		- Modifided assets/theme-rtl.min.css
+		- Modifided assets/theme.ajax-cart-page.min.js
+		- Modifided assets/theme.ajax-cart.min.js
+		- Modifided assets/theme.min.css
+		- Modifided assets/theme.min.js
+		- Modifided assets/theme_footer_js.js.liquid
+		- Modifided config/settings_schema.json
+		- Modifided layout/theme.liquid
+		- Modifided layout/theme.prd-additional.liquid
+		- Modifided locales/en.default.json
+		- Modifided snippets/t4-pcc.liquid
+		- Modifided snippets/t4-toolkit.liquid
+		- Modifided snippets/theme_header_js.liquid
+		- Modifided templates/cart.kt-clone-collection.liquid
+		- Modifided templates/cart.t4-import-tags.liquid
+
+13/Otc/2020: Updated to version 1.5.8.2
+	- Fixed Error on new custom interface.
+	- Fixed Some small errors.
+	-------------------------------
+	Updated details:
+		- Added snippets/t4-toolkit.liquid
+
+		- Modifided assets/custom.min.js
+		- Modifided assets/kiti.scss.liquid
+		- Modifided assets/ktjs_filters.min.js
+		- Modifided assets/ktjs_product_sg.min.js
+		- Modifided assets/style-rtl.min.css
+		- Modifided assets/style-speed.css.liquid
+		- Modifided assets/style.min.css
+		- Modifided assets/theme-rtl.min.css
+		- Modifided assets/theme.min.css
+		- Modifided assets/theme_footer_js.js.liquid
+		- Modifided snippets/t4-pcc.liquid
+		- Modifided snippets/theme_header_js.liquid
+		- Modifided templates/cart.kt-clone-collection.liquid
+		- Modifided templates/cart.t4-import-tags.liquid
+
+
+24/Sep/2020: Updated to version 1.5.8.1
+	- Fixed Some small errors.
+	-------------------------------
+	Updated details:
+		- Modifided assets/custom.min.js
+		- Modifided assets/jquery.currencies-sp.min.js
+		- Modifided assets/ktjs_product_sg.min.js
+		- Modifided assets/style-speed.css.liquid
+		- Modifided assets/theme-rtl.min.css
+		- Modifided assets/theme.min.css
+		- Modifided assets/theme.min.js
+		- Modifided sections/md_product_section_tab_banner.liquid
+		- Modifided sections/md_product_section_tab_banner_2.liquid
+		- Modifided sections/md_product_section_tab_load.liquid
+		- Modifided sections/md_product_section_tab_load_2.liquid
+		- Modifided sections/md_product_section_tab_slide.liquid
+		- Modifided sections/md_product_section_tab_slide_2.liquid
+		- Modifided sections/md_product_section_tab_slide_banner.liquid
+		- Modifided sections/md_product_section_tab_slide_banner_2.liquid
+		- Modifided sections/md_product_section_tab_slide_banner_3.liquid
+		- Modifided templates/page.wishlist.liquid
+	-------------------------------
+
+11/Sep/2020: Updated to version 1.5.8
+	- Added Filter multiple using "OR" codition.
+	- Added Auto + Multiple currencies checkout.
+	- Added Banner in collection page.
+	- Midified Suggest product.
+	- Fixed Password page.
+	- Fixed Some small errors.
+	-------------------------------
+	Updated details:
+		- Added assets/jquery-ui.slider.min.js
+		- Added assets/jquery.currencies-sp.min.js
+		- Added assets/ktjs_multi_filters.min.js
+		- Added sections/collection-des.liquid
+		- Added sections/collection-template.liquid
+		- Added snippets/multi-filters.liquid
+		- Added templates/collection.multi_flts_or.liquid
+		- Added templates/index.currency.liquid
+
+		- Modified assets/custom.min.js
+		- Modified assets/jquery.currencies.min.js
+		- Modified assets/ktjs_filters.min.js
+		- Modified assets/ktjs_product_sg.min.js
+		- Modified assets/settings_preset.json
+		- Modified assets/style-rtl.min.css
+		- Modified assets/style-speed.css.liquid
+		- Modified assets/style.min.css
+		- Modified assets/theme-alert.js.liquid
+		- Modified assets/theme-rtl.min.css
+		- Modified assets/theme.ajax-cart.min.js
+		- Modified assets/theme.get-shipping.min.js
+		- Modified assets/theme.min.css
+		- Modified assets/theme.min.js
+		- Modified assets/theme_footer_js.js.liquid
+		- Modified config/settings_schema.json
+		- Modified layout/password.liquid
+		- Modified layout/theme.liquid
+		- Modified locales/en.default.json
+		- Modified sections/collection-filter.liquid
+		- Modified sections/footer-extension.liquid
+		- Modified sections/header-mobile.liquid
+		- Modified sections/product-template.liquid
+		- Modified snippets/collection-template.liquid
+		- Modified snippets/kt_cart_drawer.liquid
+		- Modified snippets/kt_currency_widget.liquid
+		- Modified snippets/kt_filter_selected.liquid
+		- Modified snippets/kt_filter_sortby.liquid
+		- Modified snippets/kt_gridlist_layout.liquid
+		- Modified snippets/kt_product_delivery.liquid
+		- Modified snippets/kt_product_media.liquid
+		- Modified snippets/kt_product_tabs.liquid
+		- Modified snippets/menu_import.liquid
+		- Modified snippets/menu_import_sub.liquid
+		- Modified snippets/menu_import_vt.liquid
+		- Modified snippets/pagination.liquid
+		- Modified snippets/theme_header_js.liquid
+		- Modified templates/cart.listjson.liquid
+		- Modified templates/cart.listjsonpopup.liquid
+		- Modified templates/cart.workerktlz.liquid
+		- Modified templates/collection.liquid
+		- Modified templates/product.jsfull.liquid
+		- Modified templates/search.ajax.liquid
+		
+
+24/Aug/2020: Updated to version 1.5.7.2
+	- Fixed: Some small errors.
+	-------------------------------
+	Updated details:
+		- Added assets/theme.font.css.liquid
+		- Added sections/about-main-template.liquid
+		- Added templates/page.about-main.liquid
+
+		- Modified assets/custom.min.js
+		- Modified assets/ktjs_product_sg.min.js
+		- Modified assets/settings_preset.json
+		- Modified assets/style-rtl.min.css
+		- Modified assets/style-speed.css.liquid
+		- Modified assets/style.min.css
+		- Modified assets/theme-rtl.min.css
+		- Modified assets/theme.min.css
+		- Modified assets/theme.min.js
+		- Modified assets/theme_footer_js.js.liquid
+		- Modified config/settings_schema.json
+		- Modified layout/theme.liquid
+		- Modified sections/header-mobile.liquid
+		- Modified sections/header.liquid
+		- Modified sections/kt_slideshow.liquid
+		- Modified sections/kt_slideshowCategoryBanner.liquid
+		- Modified sections/list-collections-template.liquid
+		- Modified sections/md-collection-banners-box.liquid
+		- Modified sections/md-collection-product_section_slide.liquid
+		- Modified sections/md_blog.liquid
+		- Modified sections/md_product_section_sale_1.liquid
+		- Modified sections/md_product_section_show.liquid
+		- Modified sections/md_product_section_show_2.liquid
+		- Modified sections/md_product_section_show_3.liquid
+		- Modified sections/md_product_section_show_4.liquid
+		- Modified sections/md_product_section_show_banner_1.liquid
+		- Modified sections/md_product_section_show_banner_2.liquid
+		- Modified sections/md_product_section_slide.liquid
+		- Modified sections/md_product_section_slide_2.liquid
+		- Modified sections/md_product_section_slide_banner_1.liquid
+		- Modified sections/md_product_section_tab_banner.liquid
+		- Modified sections/md_product_section_tab_banner_2.liquid
+		- Modified sections/md_product_section_tab_load.liquid
+		- Modified sections/md_product_section_tab_load_2.liquid
+		- Modified sections/md_product_section_tab_slide.liquid
+		- Modified sections/md_product_section_tab_slide_2.liquid
+		- Modified sections/md_product_section_tab_slide_banner.liquid
+		- Modified sections/md_product_section_tab_slide_banner_2.liquid
+		- Modified sections/md_product_section_tab_slide_banner_3.liquid
+		- Modified snippets/collection-template.liquid
+		- Modified snippets/header-01.liquid
+		- Modified snippets/header-02.liquid
+		- Modified snippets/header-03.liquid
+		- Modified snippets/header-04.liquid
+		- Modified snippets/header-05.liquid
+		- Modified snippets/header-06.liquid
+		- Modified snippets/header-07.liquid
+		- Modified snippets/header-08.liquid
+		- Modified snippets/header-09.liquid
+		- Modified snippets/header-10.liquid
+		- Modified snippets/header-11.liquid
+		- Modified snippets/header-12.liquid
+		- Modified snippets/header-13.liquid
+		- Modified snippets/header-14.liquid
+		- Modified snippets/header-15.liquid
+		- Modified snippets/header-16.liquid
+		- Modified snippets/header-17.liquid
+		- Modified snippets/header-18.liquid
+		- Modified snippets/header-19.liquid
+		- Modified snippets/image-grid-item.liquid
+		- Modified snippets/kt_currency_widget.liquid
+		- Modified snippets/kt_filter_sortby.liquid
+		- Modified snippets/kt_gridlist_layout.liquid
+		- Modified snippets/kt_product_media.liquid
+		- Modified snippets/kt_product_tabs.liquid
+		- Modified snippets/meta-tags.liquid
+		- Modified snippets/search-bar.liquid
+		- Modified snippets/theme_header_js.liquid
+		- Modified templates/collection.compare.liquid
+		- Modified templates/search.prd-additional.liquid
+
+
+17/Aug/2020: Updated to version 1.5.7.1
+	- Fixed: Some small errors.
+	-------------------------------
+	Updated details:
+		- Added assets/bootstrap.bundle.min.js
+		- Added assets/ktjs_filters.min.js
+		- Added assets/ktjs_product_sg.min.js
+		- Added assets/theme.min.css
+		- Added assets/theme-rtl.min.css
+		- Added assets/theme.cart-rtl.min.css
+		- Added assets/theme.cart.min.css
+		- Added sections/footer-extension.liquid
+		- Added templates/collection.alltag.liquid
+
+		- Modified assets/custom.min.js
+		- Modified assets/kiti.scss.liquid
+		- Modified assets/style.min.css
+		- Modified assets/style-rtl.min.css
+		- Modified assets/style-speed.css.liquid
+		- Modified assets/theme.ajax-cart.min.js
+		- Modified assets/theme.min.js
+		- Modified assets/theme_footer_js.js.liquid
+		- Modified assets/vendor.js
+		- Modified layout/theme.liquid
+		- Modified sections/404-template.liquid
+		- Modified sections/collection-filter.liquid
+		- Modified sections/custom_color.liquid
+		- Modified sections/footer_01.liquid
+		- Modified sections/footer_02.liquid
+		- Modified sections/footer_03.liquid
+		- Modified sections/footer_04.liquid
+		- Modified sections/footer_06.liquid
+		- Modified sections/footer_07.liquid
+		- Modified sections/header.liquid
+		- Modified sections/kt_bottom_bar.liquid
+		- Modified sections/kt_slideshow.liquid
+		- Modified sections/kt_top_banner.liquid
+		- Modified sections/list-collections-template-page-1.liquid
+		- Modified sections/list-collections-template-page-2.liquid
+		- Modified sections/list-collections-template-page-3.liquid
+		- Modified sections/list-collections-template-page-4.liquid
+		- Modified sections/list-collections-template-page-5.liquid
+		- Modified sections/list-collections-template-page-6.liquid
+		- Modified sections/list-collections-template.liquid
+		- Modified sections/md_blog.liquid
+		- Modified sections/md_featured_product.liquid
+		- Modified sections/md_list_item_cattegories_1.liquid
+		- Modified sections/md_portfolio.liquid
+		- Modified sections/md_product_section_show_4.liquid
+		- Modified sections/md_socials_and_customers_say.liquid
+		- Modified sections/md_testimonials.liquid
+		- Modified sections/newsletter-popup-2.liquid
+		- Modified sections/newsletter-popup.liquid
+		- Modified sections/product-template.liquid
+		- Modified snippets/collection-grid-item.liquid
+		- Modified snippets/collection-template.liquid
+		- Modified snippets/googleRich.liquid
+		- Modified snippets/header-19.liquid
+		- Modified snippets/image-grid-item.liquid
+		- Modified snippets/kt_button_has_variant.liquid
+		- Modified snippets/kt_cart_drawer.liquid
+		- Modified snippets/kt_cart_popup.liquid
+		- Modified snippets/kt_filter_json.liquid
+		- Modified snippets/kt_gridlist_layout.liquid
+		- Modified snippets/kt_icons_system.liquid
+		- Modified snippets/kt_newsletter_form.liquid
+		- Modified snippets/kt_prd_mix_a_match.liquid
+		- Modified snippets/kt_product_delivery.liquid
+		- Modified snippets/kt_product_group.liquid
+		- Modified snippets/kt_product_media.liquid
+		- Modified snippets/kt_social-sharing.liquid
+		- Modified snippets/kt_socials.liquid
+		- Modified snippets/kt_stickyAddCart.liquid
+		- Modified snippets/kt_variants_options.liquid
+		- Modified snippets/md_icon_boxes_items.liquid
+		- Modified snippets/menu_import.liquid
+		- Modified snippets/menu_import_sub.liquid
+		- Modified snippets/meta-tags.liquid
+		- Modified snippets/product-grid-item.liquid
+		- Modified snippets/product-item-prices.liquid
+		- Modified snippets/product-layout1.liquid
+		- Modified snippets/product-layout2.liquid
+		- Modified snippets/product-layout3.liquid
+		- Modified snippets/product-layout4.liquid
+		- Modified snippets/product-layout5.liquid
+		- Modified snippets/product-layout6.liquid
+		- Modified snippets/product-layout7.liquid
+		- Modified snippets/product-layout8.liquid
+		- Modified snippets/product-single-prices.liquid
+		- Modified snippets/search-bar.liquid
+		- Modified snippets/theme_header_js.liquid
+		- Modified templates/cart.listjson.liquid
+		- Modified templates/cart.workerktlz.liquid
+		- Modified templates/collection.liquid
+		- Modified templates/list-collections.liquid
+		- Modified templates/page.list-collections.liquid
+		- Modified templates/page.prd-additional.liquid
+		- Modified templates/product.liquid
+		- Modified templates/product.quickView.liquid
+		- Modified templates/search.prd-additional.liquid
+
+-------------------------------
+
+01/Aug/2020: Updated to version 1.5.7
+	- Added: Product layout 8.
+	- Added: Product Bundle Mix and Match.
+	- Added: Option Big button Add To Cart.
+	- Fixed: Some small errors.
+	-------------------------------
+	Updated details:
+
+		- Added sections/product-template-mix-a-match.liquid
+		- Added snippets/kt_icons_system.liquid
+		- Added snippets/kt_prd_mix_a_match.liquid
+		- Added snippets/menu_import_vt.liquid
+		- Added snippets/product-layout8.liquid
+		- Added templates/product.mix-a-match.liquid
+
+		- Modifided assets/custom.js
+		- Modifided assets/jquery.currencies.js
+		- Modifided assets/kiti.scss.liquid
+		- Modifided assets/molla-icon.css
+		- Modifided assets/settings_preset.json
+		- Modifided assets/site.webmanifest.json.liquid
+		- Modifided assets/style-rtl.min.css
+		- Modifided assets/style-speed.css.liquid
+		- Modifided assets/style.min.css
+		- Modifided assets/theme-rtl.scss
+		- Modifided assets/theme.ajax-cart.min.js
+		- Modifided assets/theme.get-shipping.js
+		- Modifided assets/theme.min.js
+		- Modifided assets/theme_footer_js.js.liquid
+		- Modifided assets/vendor.min.js
+		- Modifided config/settings_schema.json
+		- Modifided layout/theme.liquid
+		- Modifided layout/theme.prd-additional.liquid
+		- Modifided sections/about-template-2.liquid
+		- Modifided sections/cart-template.liquid
+		- Modifided sections/header.liquid
+		- Modifided sections/kt_ageVerification.liquid
+		- Modifided sections/kt_bottom_bar.liquid
+		- Modifided sections/kt_slideshow.liquid
+		- Modifided sections/kt_slideshowCategoryBanner.liquid
+		- Modifided sections/md-collection-banners-box.liquid
+		- Modifided sections/md_banner_template_2.liquid
+		- Modifided sections/md_blog.liquid
+		- Modifided sections/md_call_to_action.liquid
+		- Modifided sections/md_featured_product.liquid
+		- Modifided sections/md_product_section_show.liquid
+		- Modifided sections/md_product_section_tab_load.liquid
+		- Modifided sections/md_testimonials.liquid
+		- Modifided sections/product-template.liquid
+		- Modifided snippets/bgset.liquid
+		- Modifided snippets/header-03.liquid
+		- Modifided snippets/header-17.liquid
+		- Modifided snippets/icon-cart.liquid
+		- Modifided snippets/kt-currency-name.liquid
+		- Modifided snippets/kt_cart_drawer.liquid
+		- Modifided snippets/kt_cart_popup.liquid
+		- Modifided snippets/kt_currency_widget.liquid
+		- Modifided snippets/kt_filter_sortby.liquid
+		- Modifided snippets/kt_header-announcement.liquid
+		- Modifided snippets/kt_header-top.liquid
+		- Modifided snippets/kt_mini-cart.liquid
+		- Modifided snippets/kt_product_group.liquid
+		- Modifided snippets/kt_stickyAddCart.liquid
+		- Modifided snippets/md_banner_template_1_3.liquid
+		- Modifided snippets/menu_import.liquid
+		- Modifided snippets/meta-tags.liquid
+		- Modifided snippets/product-layout1.liquid
+		- Modifided snippets/product-layout2.liquid
+		- Modifided snippets/product-layout3.liquid
+		- Modifided snippets/product-layout4.liquid
+		- Modifided snippets/product-layout5.liquid
+		- Modifided snippets/product-layout6.liquid
+		- Modifided snippets/product-layout7.liquid
+		- Modifided snippets/product-single-prices.liquid
+		- Modifided snippets/theme_header_js.liquid
+		- Modifided templates/cart.listjson.liquid
+		- Modifided templates/cart.listjsonpopup.liquid
+
+-------------------------------
+
+22/July/2020: Updated to version 1.5.6
+	- Fixed: Some small errors.
+
+-------------------------------
+13/July/2020: Updated to version 1.5.5
+	- Added: Mobile bottom navigation.
+	- Added: Market store.
+	- Added: Food Market store.
+	- Added: Yoga store.
+	- Added: Gift wrapping in cart.
+	- Added: Some new sections.
+	- Fixed: Some small errors.
+	-------------------------------
+	Updated details:
+		- Added assets/system-settings.scss.liquid
+		- Added assets/system.css.liquid
+		- Added sections/kt_bottom_bar.liquid
+		- Added sections/kt_slideshowCategoryBanner.liquid
+		- Added sections/md_product_section_sale_1.liquid
+		- Added sections/md_product_section_show_4.liquid
+		- Added sections/md_product_section_tab_banner_2.liquid
+		- Added sections/md_product_section_tab_slide_banner_3.liquid
+		- Added snippets/header-19.liquid
+		- Added snippets/kt_menu-title.liquid
+		- Added snippets/md_banner_template_1_3.liquid
+		- Added snippets/md_banner_template_1_5.liquid
+		- Added snippets/md_product_section_tab_slide_banner_3_item_banner.liquid
+		- Added snippets/product-list-item-mini-4.liquid
+
+		- Modified assets/custom.min.js
+		- Modified assets/jquery.countdown.min.js
+		- Modified assets/jquery.currency-shipping.min.js
+		- Modified assets/kiti.scss.liquid
+		- Modified assets/settings_preset.json
+		- Modified assets/settings_preset_hero_banner.json
+		- Modified assets/style-rtl.min.css
+		- Modified assets/style-speed.css.liquid
+		- Modified assets/style.min.css
+		- Modified assets/theme.ajax-cart-page.min.js
+		- Modified assets/theme.ajax-cart.min.js
+		- Modified assets/theme.get-shipping.min.js
+		- Modified assets/theme.min.js
+		- Modified assets/vendor.js
+		- Modified layout/theme.liquid
+		- Modified layout/theme.prd-additional.liquid
+		- Modified locales/en.default.json
+		- Modified snippets/account-popup.liquid
+		- Modified snippets/googleRich.liquid
+		- Modified snippets/header-06.liquid
+		- Modified snippets/header-07.liquid
+		- Modified snippets/header-08.liquid
+		- Modified snippets/header-10.liquid
+		- Modified snippets/header-11.liquid
+		- Modified snippets/header-15.liquid
+		- Modified snippets/header-16.liquid
+		- Modified snippets/header-18.liquid
+		- Modified snippets/image-grid-item.liquid
+		- Modified snippets/kt-wishlist-product.liquid
+		- Modified snippets/kt_button_has_variant.liquid
+		- Modified snippets/kt_button_no_variant.liquid
+		- Modified snippets/kt_cart_drawer.liquid
+		- Modified snippets/kt_cart_popup.liquid
+		- Modified snippets/kt_header-top.liquid
+		- Modified snippets/kt_mini-cart.liquid
+		- Modified snippets/meta-tags.liquid
+		- Modified snippets/product-grid-item.liquid
+		- Modified snippets/product-item-flashs.liquid
+		- Modified snippets/product-layout1.liquid
+		- Modified snippets/product-layout2.liquid
+		- Modified snippets/product-layout3.liquid
+		- Modified snippets/product-layout4.liquid
+		- Modified snippets/product-layout5.liquid
+		- Modified snippets/product-layout6.liquid
+		- Modified snippets/product-layout7.liquid
+		- Modified snippets/product-list-item.liquid
+		- Modified snippets/rating_star.liquid
+		- Modified templates/cart.listjson.liquid
+		- Modified templates/cart.listjsondrop.liquid
+		- Modified templates/cart.listjsonpopup.liquid
+		- Modified templates/cart.t4-import-tags.liquid
+		- Modified templates/cart.workerktlz.liquid
+		- Modified templates/collection.compare.liquid
+		- Modified templates/page.prd-additional.liquid
+		- Modified templates/product.quickView.liquid
+		- Modified templates/product.recently-sidebar.liquid
+-------------------------------
+03/Jun/2020: Updated to version 1.5.4
+	- Added: T-Shirt store.
+	- Added: Headphone One product store.
+	- Added: Some new sections.
+	- Fixed: Some small errors.
+	-------------------------------
+	Updated details:
+		- Added assets/settings_preset_hero_banner.json
+		- Added sections/md_featured_product.liquid
+		- Added snippets/md_icon_boxes_items.liquid
+
+		- Modified assets/custom.min.js
+		- Modified assets/kiti.scss.liquid
+		- Modified assets/settings_preset.json
+		- Modified assets/style-rtl.min.css
+		- Modified assets/style.min.css
+		- Modified assets/theme.min.js
+		- Modified sections/order-template.liquid
+		- Modified sections/product-template.liquid
+		- Modified snippets/search-bar.liquid
+		- Modified templates/gift_card.liquid
+		- Modified templates/page.liquid
+		- Modified templates/product.quickView.liquid
+		- Modified snippets/kt_account_widget.liquid
+		- Modified snippets/kt_cart_drawer.liquid
+		- Modified snippets/kt_cart_popup.liquid
+		- Modified snippets/kt_compare.liquid
+		- Modified snippets/kt_currency_widget.liquid
+		- Modified snippets/kt_header-top.liquid
+		- Modified snippets/kt_mini-cart.liquid
+		- Modified snippets/kt_product_group.liquid
+		- Modified snippets/kt_product_sidebar.liquid
+		- Modified snippets/kt_product_tabs.liquid
+
+-------------------------------
+13/May/2020: Updated to version 1.5.3
+	- Added: Ajax cart page.
+	- Fixed: Instagram with new API.
+	- Fixed: Some small errors.
+	- Modified: Speed loading.
+	-------------------------------
+	Updated details:
+		- Added assets/molla-icon.css
+		- Added assets/theme.ajax-cart-page.js
+		- Added assets/theme.ajax-cart-page.min.js
+		- Added assets/theme.ajax-cart.min.js
+		- Added assets/theme.cart-rtl.css
+		- Added assets/theme.cart.css
+		- Added assets/theme.get-shipping.js
+		- Added assets/theme.get-shipping.min.js
+		- Added snippets/menu_import_sub.liquid
+		- Added templates/cart.page-ajax.liquid
+		- Added templates/cart.sub_menu.liquid
+
+		- Replace assets/ { midas.eot → molla.eot }
+		- Replace assets/ { midas.svg → molla.svg }
+		- Replace assets/ { midas.ttf → molla.ttf }
+		- Replace assets/ { midas.woff → molla.woff }
+		- Replace assets/ { midas.woff2 → molla.woff2 }
+		- Replace assets/ { api.jquery.js → theme.ajax-cart.js } (53% similar)
+
+		- Modifided assets/custom.min.js
+		- Modifided assets/kiti.scss.liquid
+		- Modifided assets/settings_preset.json
+		- Modifided assets/style-rtl.min.css
+		- Modifided assets/style-speed.css.liquid
+		- Modifided assets/style.min.css
+		- Modifided assets/theme-rtl.scss
+		- Modifided assets/theme.min.js
+		- Modifided assets/theme.scss
+		- Modifided assets/theme_footer_js.js.liquid
+		- Modifided assets/vendor.js
+		- Modifided config/settings_schema.json
+		- Modifided layout/password.liquid
+		- Modifided layout/theme.liquid
+		- Modifided locales/en.default.json
+		- Modifided sections/cart-template.liquid
+		- Modifided sections/contact-template.liquid
+		- Modifided sections/header.liquid
+		- Modifided sections/kt_instagram_1.liquid
+		- Modifided sections/kt_instagram_2.liquid
+		- Modifided sections/kt_instagram_3.liquid
+		- Modifided sections/kt_instagram_4.liquid
+		- Modifided sections/md_banner_products_set_4.liquid
+		- Modifided sections/newsletter-popup.liquid
+		- Modifided sections/product-template.liquid
+		- Modifided snippets/kt_cart_popup.liquid
+		- Modifided snippets/kt_currency_widget.liquid
+		- Modifided snippets/kt_header-announcement.liquid
+		- Modifided snippets/kt_header-top.liquid
+		- Modifided snippets/kt_newsletter_form.liquid
+		- Modifided snippets/kt_product_media.liquid
+		- Modifided snippets/kt_reviewProduct.liquid
+		- Modifided snippets/kt_stickyAddCart.liquid
+		- Modifided snippets/menu_import.liquid
+		- Modifided snippets/meta-tags.liquid
+		- Modifided snippets/search-bar.liquid
+		- Modifided snippets/theme_header_js.liquid
+		- Modifided templates/cart.listjson.liquid
+		- Modifided templates/cart.listjsondrop.liquid
+		- Modifided templates/cart.listjsonpopup.liquid
+		- Modifided templates/page.wishlist.liquid
+
+-------------------------------
+01/May/2020: Updated to version 1.5.2
+	- Added: Section Banner with text.
+	- Fixed: Some small errors
+	-------------------------------
+	Updated details:
+		- Modified assets/custom.js
+		- Modified assets/settings_preset.json
+		- Modified assets/style-rtl.min.css
+		- Modified assets/style.min.css
+		- Modified assets/theme-alert.js.liquid
+		- Modified assets/theme.min.js
+		- Modified sections/login-register-template.liquid
+		- Modified sections/md_banner_products_set.liquid
+		- Modified sections/md_brand.liquid
+		- Modified sections/md_icon_boxes.liquid
+		- Modified sections/newsletter-popup-2.liquid
+		- Modified sections/product-template.liquid
+		- Modified snippets/account-popup.liquid
+		- Modified snippets/header-05.liquid
+		- Modified snippets/header-07.liquid
+		- Modified snippets/header-08.liquid
+		- Modified snippets/header-16.liquid
+		- Modified snippets/kt_cart_drawer.liquid
+		- Modified snippets/kt_cart_popup.liquid
+		- Modified snippets/kt_currency_widget.liquid
+		- Modified snippets/kt_header-announcement.liquid
+		- Modified snippets/kt_header-top.liquid
+		- Modified snippets/kt_mini-cart.liquid
+		- Modified snippets/kt_newsletter_form.liquid
+		- Modified snippets/kt_product_group.liquid
+		- Modified templates/product.liquid
+
+		- Added templates/search.vertical-menu.liquid
+		- Added sections/md_banner_with_text_1.liquid
+		
+		- Replace { sections → snippets } /kt_askProduct.liquid
+
+-------------------------------
+25/Apr/2020: Updated to version 1.5.1
+	- Added: Dutch theme language.
+	- Added: Product multi media (Image, Video, Model 3D-AR, Youtube video, 360).
+	- Added: Dynamic collection layout
+	- Added: Page list collection
+	- Fixed: Some small errors
+	-------------------------------
+	Updated details:
+		- Added assets/style-speed.css.liquid
+		- Added locales/nl.json
+		- Added assets/theme-alert.js.liquid
+		- Added snippets/icon-oclock.liquid
+		- Added snippets/kt_product_media.liquid
+
+		- Modified assets/api.jquery.min.js
+		- Modified assets/custom.min.js
+		- Modified assets/jquery.currencies.min.js
+		- Modified assets/lazysizes.min.js
+		- Modified assets/password.css.liquid
+		- Modified assets/style-rtl.min.css
+		- Modified assets/style.min.css
+		- Modified assets/swatch-color.css
+		- Modified assets/theme.min.js
+		- Modified assets/theme_footer_js.js.liquid
+		- Modified assets/vendor.js
+		- Modified config/settings_schema.json
+		- Modified layout/theme.liquid
+		- Modified locales/en.default.json
+
+-------------------------------
+06/Apr/2020: Updated to version 1.5.0
+	- Added: Hompage jewelry.
+	- Fixed: Some small errors
+	-------------------------------
+	Updated details:
+		- Added sections/kt_instagram_4.liquid
+		- Added sections/md_product_lookbook_services.liquid
+		- Added snippets/product-list-item-mini-3.liquid
+
+		- Modifided assets/api.jquery.min.js
+		- Modifided assets/custom.min.js
+		- Modifided assets/kiti.scss.liquid
+		- Modifided assets/settings_preset.json
+		- Modifided assets/style-rtl.min.css
+		- Modifided assets/style.min.css
+		- Modifided assets/theme.min.js
+		- Modifided assets/theme_footer_js.js.liquid
+		- Modifided config/settings_schema.json
+
+-------------------------------
+25/Mar/2020: Updated to version 1.4.3
+	- Added: Ask about this product.
+	- Added: Age Verification.
+	-------------------------------
+	Updated details:
+		- Added sections/kt_ageVerification.liquid
+		- Added sections/kt_askProduct.liquid
+		- Added assets/moment-timezone-with-data.min.js
+		- Added assets/jquery.currency-shipping.min.js
+
+		- Modified assets/api.jquery.min.js
+		- Modified assets/custom.min.js
+		- Modified assets/kiti.scss.liquid
+		- Modified assets/style-rtl.min.css
+		- Modified assets/style.min.css
+		- Modified assets/theme.min.js
+		- Modified assets/theme_footer_js.js.liquid
+		- Modified config/settings_schema.json
+		- Modified layout/theme.liquid
+		- Modified locales/en.default.json
+		- Modified snippets/googleRich.liquid
+		- Modified snippets/product-grid-item.liquid
+		- Modified snippets/product-layout1.liquid
+		- Modified snippets/product-layout2.liquid
+		- Modified snippets/product-layout3.liquid
+		- Modified snippets/product-layout4.liquid
+		- Modified snippets/product-layout5.liquid
+		- Modified snippets/product-layout6.liquid
+		- Modified snippets/product-layout7.liquid
+		- Modified snippets/theme_header_js.liquid
+		- Modified templates/product.liquid
+
+-------------------------------
+02/Mar/2020: Updated to version 1.4.2
+	- Added: Pre order label.
+	- Added: German theme language.
+	- Fixed: Icon boxed.
+	- Fixed: Quickview.
+	-------------------------------
+	Updated details:
+		- Added locales/de.json
+
+		- Modified assets/theme.min.js
+		- Modified sections/adminThemeTool.liquid
+		- Modified sections/md_icon_boxes.liquid
+		- Modified snippets/product-item-flashs.liquid
+		- Modified snippets/product-grid-item.liquid
+		- Modified snippets/collection-template.liquid
+		- Modified snippets/image-grid-item.liquid
+		- Modified snippets/kt_logo_header.liquid
+		- Modified snippets/meta-tags.liquid
+		- Modified sections/search-template.liquid
+		- Modified snippets/collection-template.liquid
+		- Modified snippets/kt_breadcrumb.liquid
+		- Modified snippets/search-bar.liquid
+		- Modified templates/product.quickView.liquid
+
+-------------------------------
+24/Feb/2020: Updated to version 1.4.1
+	- Fixed: Currency.
+	- Fixed: Filters.
+	- Update: Extensions create product tags.
+	-------------------------------
+	Updated details:
+		- Added templates/cart.t4-import-tags.liquid
+
+		- Modified assets/custom.js
+		- Modified assets/jquery.currencies.min.js
+		- Modified assets/style-rtl.min.css
+		- Modified assets/style.min.css
+		- Modified assets/theme.min.js
+		- Modified layout/theme.liquid
+		- Modified sections/collection-filter.liquid
+		- Modified sections/kt_relatedProduct.liquid
+		- Modified snippets/kt_cart_popup.liquid
+		- Modified snippets/kt_logo_header.liquid
+
+-------------------------------
+18/Feb/2020: Updated to version 1.4.0
+	- Added: Home Extreme Sport.
+	- Added: Calculate Free Shipping Threshold in cart page.
+	- Added: 2 Banner layout.
+	- Fixed: Currency.
+	- Fixed: Video slide item.
+	- Fixed: Product 360.
+	-------------------------------
+	Updated details:
+		- Added sections/md_banner_template_6.liquid
+		- Added snippets/header-18.liquid
+
+		- Modified assets/api.jquery.min.js
+		- Modified assets/custom.min.js
+		- Modified assets/jquery.currencies.min.js
+		- Modified assets/kiti.scss.liquid
+		- Modified assets/settings_preset.json
+		- Modified assets/style-rtl.min.css
+		- Modified assets/style.min.css
+		- Modified assets/theme.min.js
+		- Modified assets/theme_footer_js.js.liquid
+		- Modified assets/threesixty.min.css
+		- Modified assets/threesixty.min.js
+		- Modified config/settings_schema.json
+		- Modified snippets/kt_product_tabs.liquid
+-------------------------------
+07/Feb/2020: Updated to version 1.3.2
+	- Added: Product configuration.
+	- Fixed: Currency.
+	- Fixed: Wishlist.
+	-------------------------------
+	Updated details:
+		- Modified assets/theme.min.js
+		- Modified assets/customize.min.js
+
+		- Added layout/theme.prd-additional.liquid
+		- Added templates/page.prd-additional.liquid
+
+-------------------------------
+01/Feb/2020: Updated to version 1.3.1
+	- Added: Payment images.
+	- Added: Tooltip of swatch.
+	- Modified: Auto Currency.
+	- Fixed: Subscribe form.
+	-------------------------------
+	Updated details:
+		- Modified assets/jquery.currencies.min.js
+		- Modified assets/ktTools.slideshow.js.liquid
+		- Modified assets/site.webmanifest.json.liquid
+		- Modified assets/style-rtl.min.css
+		- Modified assets/style.min.css
+		- Modified assets/theme.min.js
+		- Modified assets/theme_footer_js.js.liquid
+		- Modified assets/vendor.js
+		- Modified config/settings_schema.json
+		- Modified layout/theme.liquid
+		- Modified sections/about-template.liquid
+		- Modified sections/collection-filter.liquid
+		- Modified sections/footer_01.liquid
+		- Modified sections/footer_02.liquid
+		- Modified sections/footer_03.liquid
+		- Modified sections/footer_04.liquid
+		- Modified sections/footer_06.liquid
+		- Modified sections/footer_07.liquid
+		- Modified sections/kt_relatedProduct.liquid
+		- Modified sections/kt_slideshow.liquid
+		- Modified sections/product-template.liquid
+		- Modified snippets/kt_currency_widget.liquid
+		- Modified snippets/kt_logo_header.liquid
+		- Modified snippets/kt_mini-cart.liquid
+		- Modified snippets/kt_newsletter_form.liquid
+		- Modified snippets/kt_product_images.liquid
+		- Modified snippets/kt_product_tabs.liquid
+		- Modified snippets/kt_variants_options.liquid
+		- Modified snippets/product-layout1.liquid
+		- Modified snippets/product-layout2.liquid
+		- Modified snippets/product-layout3.liquid
+		- Modified snippets/product-layout4.liquid
+		- Modified snippets/product-layout5.liquid
+		- Modified snippets/product-layout6.liquid
+		- Modified snippets/product-layout7.liquid
+		- Modified snippets/styleSpeed.liquid
+		- Modified snippets/theme_header_js.liquid
+		- Modified templates/cart.liquid
+		- Modified templates/cart.workerktlz.liquid
+		- Modified templates/product.quickView.liquid
+		- Modified templates/search.liquid
+
+		- Added assets/jquery-3.4.1.min.js
+		- Added assets/jquery.datetimepicker.full.min.js
+		- Added assets/jquery.datetimepicker.min.css
+		- Added layout/theme.prd-additional.liquid
+		- Added templates/collection.count_with_tag.liquid
+		- Added templates/page.prd-additional.liquid
+		- Added templates/search.prd-additional.liquid
+
+-------------------------------
+13/Jan/2020: Updated to version 1.3.0
+	- Added Homepage 23
+	- Added Cart popup
+	- Support Ryviu, Alireview, Loox...
+	- Fixed Some small errors
+	-------------------------------
+	Updated details:
+	    - Added sections/footer_07.liquid
+	    - Added sections/kt_relatedProducts_cartPopup.liquid
+	    - Added sections/md_brand_2.liquid
+	    - Added sections/md_product_section_show_banner_2.liquid
+	    - Added sections/newsletter-popup-2.liquid
+	    - Added snippets/header-17.liquid
+	    - Added snippets/kt_cart_popup.liquid
+	    - Added snippets/t4-pcc.liquid
+	    - Added templates/cart.listjsonpopup.liquid
+
+	    - Modified assets/api.jquery.min.js
+	    - Modified assets/custom.min.js
+	    - Modified assets/kiti.scss.liquid
+	    - Modified assets/settings_preset.json
+	    - Modified assets/style-rtl.min.css
+	    - Modified assets/style.min.css
+	    - Modified assets/swatch-color.css
+	    - Modified assets/theme.min.js
+	    - Modified assets/theme_footer_js.js.liquid
+	    - Modified assets/vendor.js
+
+	    - Modified config/settings_schema.json
+
+	    - Modified layout/theme.liquid
+	    - Modified locales/en.default.json
+
+	    - Modified sections/adminThemeTool.liquid
+	    - Modified sections/cart-template.liquid
+	    - Modified sections/header.liquid
+	    - Modified sections/kt_relatedProduct.liquid
+	    - Modified sections/kt_relatedProduct_sidebar.liquid
+	    - Modified sections/kt_slideshow.liquid
+	    - Modified sections/kt_top_banner.liquid
+	    - Modified sections/md_banner_products_set_4.liquid
+	    - Modified snippets/image-grid-item.liquid
+	    - Modified snippets/kt_mini-cart.liquid
+	    - Modified snippets/kt_reviewProduct.liquid
+	    - Modified snippets/rating_star.liquid
+	    - Modified snippets/theme_header_js.liquid
+-------------------------------
+02/Jan/2020: Updated to version 1.2.2
+	- Added login/register modal
+	- Move "Update shipping rates" button to theme action list
+	- Fixed Some small errors
+	-------------------------------
+	Updated details:
+	    - Added snippets/account-popup.liquid
+            - Added templates/cart.account-modal.liquid
+            - Added templates/cart.mobile-menu.liquid
+            
+            - Replace assets/ { site.webmanifest.liquid → site.webmanifest.json.liquid }
+
+            - Modified assets/adminThemeTool.scss
+            - Modified assets/custom.js
+            - Modified assets/custom.min.js
+            - Modified assets/jquery.currencies.js
+            - Modified assets/kiti.scss.liquid
+            - Modified assets/style-rtl.css
+            - Modified assets/style-rtl.min.css
+            - Modified assets/style.css
+            - Modified assets/style.min.css
+            - Modified assets/theme-rtl.scss
+            - Modified assets/theme.js
+            - Modified assets/theme.min.js
+            - Modified assets/theme.scss
+            - Modified assets/theme_footer_js.js.liquid
+            - Modified config/settings_schema.json
+            - Modified layout/theme.liquid
+            - Modified locales/en.default.json
+            - Modified sections/adminThemeTool.liquid
+            - Modified sections/cart-template.liquid
+            - Modified sections/collection-filter.liquid
+            - Modified sections/footer_01.liquid
+            - Modified sections/footer_02.liquid
+            - Modified sections/footer_03.liquid
+            - Modified sections/footer_04.liquid
+            - Modified sections/footer_05.liquid
+            - Modified sections/footer_06.liquid
+            - Modified sections/header-mobile.liquid
+            - Modified sections/kt_slideshow.liquid
+            - Modified sections/newsletter-popup.liquid
+            - Modified snippets/kt_cart_drawer.liquid
+            - Modified snippets/kt_currency_widget.liquid
+            - Modified snippets/kt_section_space.liquid
+            - Modified snippets/meta-tags.liquid
+            - Modified snippets/product-item-flashs.liquid
+            - Modified snippets/product-list-item-mini2.liquid
+            - Modified snippets/styleSpeed.liquid
+            - Modified snippets/theme_header_js.liquid
+
+            - Deleted assets/bt_placeholder.svg.liquid
+            - Deleted assets/kt_bg.png
+            - Deleted assets/test-parallax.js
+            - Deleted assets/theme.min.css
+            - Deleted assets/view_icon.eot
+            - Deleted assets/view_icon.svg
+            - Deleted assets/view_icon.ttf
+            - Deleted assets/view_icon.woff
+            - Deleted snippets/kt_inAdmin_section.liquid
+            - Deleted snippets/shortcode-kt_lookbook.liquid
+-----------------------------------
+
+21/Dec/2019: Updated to version 1.2.1
+	- Added RTL layout
+	- Added Multi currency by Shopify
+	- Fixed Newsletter popup
+	-------------------------------
+	Updated details:
+		- Added assets/style-rtl.css
+		- Added assets/style-rtl.min.css
+		- Added assets/theme-rtl.scss
+		
+		- Modified assets/custom.js
+		- Modified assets/custom.min.js
+		- Modified assets/jquery.currencies.js
+		- Modified assets/jquery.currencies.min.js
+		- Modified assets/kiti.scss.liquid
+		- Modified assets/settings_preset.json
+		- Modified assets/style.css
+		- Modified assets/style.min.css
+		- Modified assets/theme.js
+		- Modified assets/theme.min.js
+		- Modified assets/theme.scss
+		- Modified assets/theme_footer_js.js.liquid
+
+		- Modified layout/theme.liquid
+
+		- Modified sections/adminThemeTool.liquid
+		- Modified sections/article-template-fullwidth.liquid
+		- Modified sections/article-template-fullwitdh-sidebar.liquid
+		- Modified sections/contact-template.liquid
+		- Modified sections/footer_03.liquid
+		- Modified sections/header.liquid
+		- Modified sections/kt_recentlyViewedProducts.liquid
+		- Modified sections/kt_slideshow.liquid
+		- Modified sections/kt_slideshowSimple.liquid
+		- Modified sections/kt_slideshowSimpleBanner.liquid
+		- Modified sections/kt_top_banner.liquid
+		- Modified sections/md-collection-banners-box.liquid
+		- Modified sections/md-collection-brand.liquid
+		- Modified sections/md-collection-list_item_cattegories.liquid
+		- Modified sections/md-collection-product_section_slide.liquid
+		- Modified sections/md_accordions.liquid
+		- Modified sections/md_banner_products_set.liquid
+		- Modified sections/md_banner_products_set_2.liquid
+		- Modified sections/md_banner_products_set_3.liquid
+		- Modified sections/md_banner_products_set_4.liquid
+		- Modified sections/md_banner_template_1.liquid
+		- Modified sections/md_banner_template_2.liquid
+		- Modified sections/md_banner_template_3.liquid
+		- Modified sections/md_banner_template_4.liquid
+		- Modified sections/md_banner_template_5.liquid
+		- Modified sections/md_blog.liquid
+		- Modified sections/md_brand.liquid
+		- Modified sections/md_call_to_action.liquid
+		- Modified sections/md_call_to_action_2.liquid
+		- Modified sections/md_countdown_section_with_products_1.liquid
+		- Modified sections/md_countdown_section_with_products_2.liquid
+		- Modified sections/md_icon_boxes.liquid
+		- Modified sections/md_list_item_cattegories_1.liquid
+		- Modified sections/md_list_item_cattegories_2.liquid
+		- Modified sections/md_lookbook_1.liquid
+		- Modified sections/md_portfolio.liquid
+		- Modified sections/md_product_section_show.liquid
+		- Modified sections/md_product_section_show_banner_1.liquid
+		- Modified sections/md_product_section_slide.liquid
+		- Modified sections/md_product_section_slide_2.liquid
+		- Modified sections/md_product_section_slide_banner_1.liquid
+		- Modified sections/md_product_section_tab_slide.liquid
+		- Modified sections/md_product_section_tab_slide_2.liquid
+		- Modified sections/md_product_section_tab_slide_banner.liquid
+		- Modified sections/md_product_section_tab_slide_banner_2.liquid
+		- Modified sections/md_socials_and_customers_say.liquid
+		- Modified sections/md_tabs.liquid
+		- Modified sections/md_testimonials.liquid
+		- Modified sections/newsletter-popup.liquid
+		- Modified sections/order-template.liquid
+		- Modified sections/product-template.liquid
+
+		- Modified snippets/header-01.liquid
+		- Modified snippets/header-05.liquid
+		- Modified snippets/header-06.liquid
+		- Modified snippets/header-07.liquid
+		- Modified snippets/header-12.liquid
+		- Modified snippets/header-13.liquid
+		- Modified snippets/header-14.liquid
+		- Modified snippets/kt_breadcrumb.liquid
+		- Modified snippets/kt_currency_widget.liquid
+		- Modified snippets/kt_gridlist_layout.liquid
+		- Modified snippets/kt_header-top.liquid
+		- Modified snippets/kt_mini-cart.liquid
+		- Modified snippets/kt_reviewProduct.liquid
+		- Modified snippets/kt_section_space.liquid
+		- Modified snippets/meta-tags.liquid
+		- Modified snippets/pagination.liquid
+		- Modified snippets/product-layout1.liquid
+		- Modified snippets/product-layout2.liquid
+		- Modified snippets/product-layout3.liquid
+		- Modified snippets/product-layout5.liquid
+		- Modified snippets/product-layout6.liquid
+		- Modified snippets/product-layout7.liquid
+		- Modified snippets/styleSpeed.liquid
+		- Modified snippets/theme_header_js.liquid
+
+		- Modified templates/cart.listjson.liquid
+		- Modified templates/collection.compare.liquid
+		- Modified templates/product.quickView.liquid
+	-------------------------------
+
+16/Dec/2019: Updated to version 1.2.0
+	- Added Home page 22(Tools)
+	- Fixed Some small issue
+	-------------------------------
+	Updated details:
+		- Modified assets/custom.js
+		- Modified assets/style.min.css
+		- Modified assets/theme.js
+		- Modified assets/theme.scss
+		- Modified locales/en.default.json
+		- Modified sections/about-template.liquid
+		- Modified sections/header.liquid
+		- Modified sections/kt_slideshow.liquid
+		- Modified sections/login-register-template.liquid
+		- Modified sections/product-template.liquid
+		- Modified snippets/collection-template.liquid
+		- Modified snippets/kt_blog_sidebar.liquid
+		- Modified snippets/kt_button_has_variant.liquid
+		- Modified snippets/product-layout1.liquid
+		- Modified snippets/product-layout2.liquid
+		- Modified snippets/product-layout3.liquid
+		- Modified snippets/product-layout7.liquid
+		- Modified snippets/product-list-item.liquid
+	-------------------------------
+
+09/Dec/2019: Updated to version 1.1.0
+	- Added Home page 21(Sport)
+	- Added Header 16
+	- Added 4 new section(instagram, categories, products)
+	- Fixed Suggest products
+	- Fixed Unable to load variants
+	-------------------------------
+	Updated details:
+		- Added assets/product.related.liquid
+		- Added sections/kt_instagram_3.liquid
+		- Added sections/md_banner_products_set_4.liquid
+		- Added sections/md_list_item_cattegories_2.liquid
+		- Added sections/md_product_section_tab_banner.liquid
+		- Added snippets/header-16.liquid
+		- Added snippets/kt_suggest.liquid
+		- Added templates/product.recently-sidebar.liquid
+
+		- Modified assets/custom.js
+		- Modified assets/custom.min.js
+		- Modified assets/kiti.scss.liquid
+		- Modified assets/settings_preset.json
+		- Modified assets/style.css
+		- Modified assets/style.min.css
+		- Modified assets/swatch-color.css
+		- Modified assets/theme.js
+		- Modified assets/theme.min.js
+		- Modified assets/theme.scss
+		- Modified assets/theme_footer_js.js.liquid
+		- Modified config/settings_schema.json
+		- Modified layout/theme.liquid
+		- Modified locales/en.default.json
+		- Modified sections/adminThemeTool.liquid
+		- Modified sections/cart-template.liquid
+		- Modified sections/collection-filter.liquid
+		- Modified sections/header-mobile.liquid
+		- Modified sections/header.liquid
+		- Modified sections/kt_slideshow.liquid
+		- Modified sections/kt_top_banner.liquid
+		- Modified sections/kt_vertical-menu-0.liquid
+		- Modified sections/kt_vertical-menu-1.liquid
+		- Modified sections/kt_vertical-menu-2.liquid
+		- Modified sections/kt_vertical-menu-3.liquid
+		- Modified sections/kt_vertical-menu-4.liquid
+		- Modified sections/kt_vertical-menu-5.liquid
+		- Modified sections/kt_vertical-menu-6.liquid
+		- Modified sections/kt_vertical-menu-7.liquid
+		- Modified sections/kt_vertical-menu-8.liquid
+		- Modified sections/kt_vertical-menu-9.liquid
+		- Modified sections/list-collections-template.liquid
+		- Modified sections/md_banner_products_set_2.liquid
+		- Modified sections/md_banner_template_5.liquid
+		- Modified sections/md_blog.liquid
+		- Modified sections/md_call_to_action.liquid
+		- Modified sections/md_countdown_section_1.liquid
+		- Modified sections/md_countdown_section_2.liquid
+		- Modified sections/md_countdown_section_with_banner_1.liquid
+		- Modified sections/md_countdown_section_with_products_1.liquid
+		- Modified sections/md_countdown_section_with_products_2.liquid
+		- Modified sections/md_list_item_cattegories_1.liquid
+		- Modified sections/md_portfolio.liquid
+		- Modified sections/md_product_section_show.liquid
+		- Modified sections/md_product_section_show_3.liquid
+		- Modified sections/md_product_section_show_banner_1.liquid
+		- Modified sections/md_product_section_slide_banner_1.liquid
+		- Modified sections/md_product_section_tab_load.liquid
+		- Modified sections/md_product_section_tab_load_2.liquid
+		- Modified sections/password-content.liquid
+		- Modified sections/product-template.liquid
+		- Modified snippets/collection-template.liquid
+		- Modified snippets/header-01.liquid
+		- Modified snippets/header-02.liquid
+		- Modified snippets/header-03.liquid
+		- Modified snippets/header-04.liquid
+		- Modified snippets/header-05.liquid
+		- Modified snippets/header-07.liquid
+		- Modified snippets/header-08.liquid
+		- Modified snippets/header-09.liquid
+		- Modified snippets/header-10.liquid
+		- Modified snippets/header-11.liquid
+		- Modified snippets/header-12.liquid
+		- Modified snippets/header-13.liquid
+		- Modified snippets/header-14.liquid
+		- Modified snippets/header-15.liquid
+		- Modified snippets/kt_cart_drawer.liquid
+		- Modified snippets/kt_filter_sortby.liquid
+		- Modified snippets/kt_gridlist_layout.liquid
+		- Modified snippets/kt_header-top.liquid
+		- Modified snippets/kt_mini-cart.liquid
+		- Modified snippets/product-grid-item.liquid
+		- Modified snippets/product-layout1.liquid
+		- Modified snippets/product-layout2.liquid
+		- Modified snippets/product-layout3.liquid
+		- Modified snippets/product-layout4.liquid
+		- Modified snippets/product-layout5.liquid
+		- Modified snippets/product-layout6.liquid
+		- Modified snippets/product-layout7.liquid
+		- Modified snippets/search-bar.liquid
+		- Modified snippets/styleSpeed.liquid
+		- Modified snippets/theme_header_js.liquid
+		- Modified templates/blog.articlesAjax.liquid
+		- Modified templates/cart.workerktlz.liquid
+		- Modified templates/collection.productsAjax.liquid
+		- Modified templates/collection.test.liquid
+		- Modified templates/gift_card.liquid
+		- Modified templates/page.vertical-menu.liquid
+		- Modified templates/product.jsfull.liquid
+		- Modified templates/product.quickView.liquid
+	-------------------------------
+
+27/Nov/2019: Updated to version 1.0.1
+	- Added Unit prices (Available only to merchants in Germany and France.)
+	- Fixed Predictive search
+	- Fixed Unable to load variants
+	- Fixed Header style 5
+	-------------------------------
+	Updated details:
+		- Modified assets/api.jquery.js
+		- Modified assets/api.jquery.min.js
+		- Modified assets/custom.js
+		- Modified assets/custom.min.js
+		- Modified assets/settings_preset.json
+		- Modified assets/style.css
+		- Modified assets/style.min.css
+		- Modified assets/theme.js
+		- Modified assets/theme.min.js
+		- Modified assets/theme.scss
+		- Modified config.yml
+		- Modified config/settings_schema.json
+		- Modified locales/en.default.json
+		- Modified locales/vi.json
+		- Modified sections/adminThemeTool.liquid
+		- Modified sections/kt_slideshow.liquid
+		- Modified sections/md_banner_template_1.liquid
+		- Modified sections/md_product_section_show.liquid
+		- Modified sections/md_product_section_show_banner_1.liquid
+		- Modified sections/md_product_section_tab_load.liquid
+		- Modified sections/md_product_section_tab_load_2.liquid
+		- Modified sections/product-template.liquid
+		- Modified snippets/header-05.liquid
+		- Modified snippets/kt-currency-name.liquid
+		- Modified snippets/kt_currency_widget.liquid
+		- Modified snippets/product-grid-item.liquid
+		- Modified snippets/product-item-prices.liquid
+		- Modified snippets/product-layout1.liquid
+		- Modified snippets/product-layout2.liquid
+		- Modified snippets/product-layout3.liquid
+		- Modified snippets/product-layout4.liquid
+		- Modified snippets/product-layout5.liquid
+		- Modified snippets/product-layout6.liquid
+		- Modified snippets/product-layout7.liquid
+		- Modified templates/cart.listjson.liquid
+		- Modified templates/cart.listjsondrop.liquid
+	-------------------------------
+21/Nov/2019: Released version 1.0.0
+	- You need read instruction in documentation folder
