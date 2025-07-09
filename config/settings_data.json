@@ -9,13 +9,14 @@
  */
 {
   "current": {
+    "purchase_code": "b843305e-cc9f-46b8-ac05-26d757d8af14",
     "apple_touch_icon": "shopify://shop_images/apple-touch-icon.png",
     "favicon": "shopify://shop_images/favicon-16x16.png",
     "favicon_print": "safari-pinned-tab.svg",
     "body_logo_svg_code": "",
     "body_logo_svg": "",
-    "logo": "shopify://shop_images/logo_ba5cdf7f-488b-4498-afb9-0a02c3a7b2ff.png",
-    "logo_max_width": 125,
+    "logo": "shopify://shop_images/Big_Hands_Building_Supply_Supply_Logo_1.png",
+    "logo_max_width": 70,
     "body_logo_mobile_svg": "",
     "logo_mobile": "",
     "import_header": "14",
@@ -405,6 +406,7 @@
             "settings": {
               "button_link": "/",
               "title_i": "Demo",
+              "icon_font": "",
               "label": "",
               "menu_links_width": "1400px",
               "title": "Parent"
@@ -414,7 +416,7 @@
             "type": "linklist",
             "settings": {
               "title_i": "",
-              "menu_links": "demo",
+              "menu_links": "",
               "sub_width": 6,
               "menu_links_per_col": "2",
               "title": "Linklist (child)"
@@ -424,7 +426,7 @@
             "type": "linklist",
             "settings": {
               "title_i": "",
-              "menu_links": "demo-header",
+              "menu_links": "",
               "sub_width": 6,
               "menu_links_per_col": "3",
               "title": "Linklist (child)"
@@ -434,13 +436,15 @@
             "type": "promo",
             "settings": {
               "name_item": "Shop",
+              "button_link": "",
+              "icon_font": "",
               "label": "",
               "menu_links_width": "1000px",
               "sub_width": 9,
-              "menu_links": "shop",
+              "menu_links": "",
               "menu_links_per_col": "3",
               "promo_width": 3,
-              "promo_image": "shopify://shop_images/banner-1.1.jpg",
+              "padding_0": true,
               "promo_link": "#",
               "use_promo_html": false,
               "page_promo_html": "",
@@ -452,13 +456,14 @@
             "settings": {
               "name_item": "Product",
               "button_link": "shopify://collections/all",
+              "icon_font": "",
               "label": "",
               "menu_links_width": "795px",
               "sub_width": 8,
-              "menu_links": "product",
+              "menu_links": "",
               "menu_links_per_col": "2",
               "promo_width": 4,
-              "promo_image": "shopify://shop_images/banner-2.1.jpg",
+              "padding_0": true,
               "promo_link": "#",
               "use_promo_html": false,
               "page_promo_html": "",
@@ -468,15 +473,21 @@
           "1566370958829": {
             "type": "standard",
             "settings": {
+              "title": "",
+              "button_link": "",
+              "icon_font": "",
               "label": "",
-              "menu_links": "pages"
+              "menu_links": ""
             }
           },
           "1566371222294": {
             "type": "standard",
             "settings": {
+              "title": "",
+              "button_link": "",
+              "icon_font": "",
               "label": "",
-              "menu_links": "blog"
+              "menu_links": ""
             }
           },
           "1566378197076": {
@@ -511,7 +522,7 @@
               "compare_show": false,
               "account_show": true,
               "link_inline_show": true,
-              "link_inline": "top-links-1",
+              "link_inline": "",
               "link_dropdown_show": false,
               "link_dropdown": "",
               "account_dropdown_show": false,
@@ -528,6 +539,7 @@
             "settings": {
               "title": "Buy Molla!",
               "button_link": "http://bit.ly/2PkTTWG",
+              "icon_font": "",
               "label": "Sale"
             }
           }
@@ -599,7 +611,7 @@
           "1569201878982": {
             "type": "item_categories_1",
             "settings": {
-              "menu_links": "browse-categories",
+              "menu_links": "",
               "title": "Categories"
             }
           }
@@ -707,6 +719,7 @@
           "section_bg": "",
           "section_bg_op": 0.5,
           "message_richtext": "<p>Now These Bestsellers are back in stock &amp; ready for action!</p>",
+          "link": "",
           "textBtn": "Shop Now <i class=\"fa fa-caret-right\" aria-hidden=\"true\"></i>",
           "load_btn": false,
           "style_btn": "btn-outline-darker",
@@ -735,7 +748,7 @@
               "section_padding": "4.5rem 0",
               "section_bg": "",
               "section_bg_op": 0.5,
-              "image": "shopify://shop_images/page-header-bg.jpg"
+              "link_banner": ""
             }
           },
           "1571727555274": {
@@ -752,7 +765,7 @@
               "section_padding": "4.6rem 0 5rem",
               "section_bg": "",
               "section_bg_op": 0.5,
-              "image": "shopify://shop_images/page-header-bg.jpg"
+              "link_banner": ""
             }
           },
           "1571926336502": {
@@ -773,7 +786,7 @@
               "section_padding": "4.6rem 0 5rem",
               "section_bg": "",
               "section_bg_op": 0.5,
-              "image": "shopify://shop_images/page-header-bg.jpg"
+              "link_banner": ""
             }
           },
           "1572080254452": {
@@ -794,7 +807,7 @@
               "section_padding": "4.6rem 0 5rem",
               "section_bg": "",
               "section_bg_op": 0.5,
-              "image": "shopify://shop_images/page-header-bg.jpg"
+              "link_banner": ""
             }
           },
           "1572235272285": {
@@ -811,7 +824,7 @@
               "section_padding": "4.6rem 0 5rem",
               "section_bg": "",
               "section_bg_op": 0.5,
-              "image": "shopify://shop_images/page-header-bg.jpg"
+              "link_banner": ""
             }
           }
         },
@@ -1628,21 +1641,26 @@
           "section_bg_op": 1,
           "dark_mode": false,
           "logo_footer_svg": "",
-          "logo_footer": "shopify://shop_images/logo_ba5cdf7f-488b-4498-afb9-0a02c3a7b2ff.png",
           "logo_footer_max_width": 110,
           "footer_description": "Praesent dapibus, neque id cursus ucibus, tortor neque egestas augue, eu vulputate magna eros eu erat. Aliquam erat volutpat. Nam dui mi, tincidunt quis, accumsan porttitor, facilisis luctus, metus.",
           "footer_description_title_phone": "Got Question? Call us 24/7",
           "footer_description_payment_method": "Payment Method",
+          "payment_url": "",
           "title_1": "Information",
-          "footer_link_1": "useful-links",
+          "footer_link_1": "",
           "title_2": "Customer Service",
-          "footer_link_2": "customer-service",
+          "footer_link_2": "",
           "title_3": "My Account",
-          "footer_link_3": "my-account",
+          "footer_link_3": "",
           "copyright": "Copyright © 2020 Molla Store. All Rights Reserved.",
           "footer_link_copyright": "footer"
         }
+      },
+      "kt-dear-customers": {
+        "type": "kt-dear-customers",
+        "settings": {}
       }
-    }
+    },
+    "content_for_index": []
   }
 }
