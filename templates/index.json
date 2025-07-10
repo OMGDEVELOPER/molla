@@ -18,7 +18,7 @@
             "image": "shopify://shop_images/banner-image.png",
             "image_mb": "shopify://shop_images/banner-image.png",
             "lazypreload": true,
-            "heading": "End of Season Sale",
+            "heading": "",
             "font_heading": "poppins_n4",
             "subheading": "Built for Builders. <br>\nTrusted by Tradies.<br>\n<p class=\"subheading\">Quality Building Materials. Reliable Local Service.</p>",
             "font_subheading": "karla_n4",
@@ -43,7 +43,7 @@
             "turnoff": false,
             "title": "Item image",
             "width_section": true,
-            "css_block": ".sl-anime.slideshow__subtitle{\n color:#FFF;\n}\n.subheading{\nletter-spacing:normal;\ncolor: #75E3FF;\ntext-align: left;\nfont-size: 22px;\nfont-style: normal;\nfont-weight: 600;\nline-height: 32px; \n}\n.sl-anime.slideshow__description{\n    color: #FFF;\n    font-size: 20px;\n    font-style: normal;\n    font-weight: 500;\n    line-height: 28px;\n    letter-spacing: normal;\ntext-align:left;\nwidth:70%;\n\n}"
+            "css_block": ".sl-anime.slideshow__subtitle{\n color:#FFF;\n}\n.subheading{\nletter-spacing:normal;\ncolor: #75E3FF;\ntext-align: left;\nfont-size: 22px;\nfont-style: normal;\nfont-weight: 600;\nline-height: 32px; \n}\n.sl-anime.slideshow__description{\n    color: #FFF;\n    font-size: 20px;\n    font-style: normal;\n    font-weight: 500;\n    line-height: 28px;\n    letter-spacing: normal;\ntext-align:left;\nwidth:70%;\n}\na.btn{\nborder-radius: 4px;\nbackground: #39B8D8;\nborder:none;\ncolor:#000;\n}"
           }
         },
         "image_KpyRHi": {
@@ -52,9 +52,9 @@
             "image": "shopify://shop_images/banner-image.png",
             "image_mb": "shopify://shop_images/banner-image.png",
             "lazypreload": true,
-            "heading": "End of Season Sale",
+            "heading": "",
             "font_heading": "poppins_n4",
-            "subheading": "Built for Builders. <br>\nTrusted by Tradies.<br>\n<p class=\"subheading\">Quality Building Materials. Reliable Local Service.</p>",
+            "subheading": "Upgrade the Outdoors.<br>\nDefine Your Space.\nTrusted by Tradies.<br>\n<p class=\"subheading\">Decking, fencing, and outdoor living essentials for stunning spaces.</p>",
             "font_subheading": "karla_n4",
             "description": "From timber and concrete to roofing and plumbing everything you need, delivered fast across South West Sydney.",
             "font_description": "karla_n4",
@@ -77,7 +77,7 @@
             "turnoff": false,
             "title": "Item image",
             "width_section": true,
-            "css_block": ".sl-anime.slideshow__subtitle{\n color:#FFF;\n}\n.subheading{\nletter-spacing:normal;\ncolor: #75E3FF;\ntext-align: left;\nfont-size: 22px;\nfont-style: normal;\nfont-weight: 600;\nline-height: 32px; \n}\n.sl-anime.slideshow__description{\n    color: #FFF;\n    font-size: 20px;\n    font-style: normal;\n    font-weight: 500;\n    line-height: 28px;\n    letter-spacing: normal;\ntext-align:left;\nwidth:70%;\n\n}"
+            "css_block": ".sl-anime.slideshow__subtitle{\n color:#FFF;\n}\n.subheading{\nletter-spacing:normal;\ncolor: #75E3FF;\ntext-align: left;\nfont-size: 22px;\nfont-style: normal;\nfont-weight: 600;\nline-height: 32px; \n}\n.sl-anime.slideshow__description{\n    color: #FFF;\n    font-size: 20px;\n    font-style: normal;\n    font-weight: 500;\n    line-height: 28px;\n    letter-spacing: normal;\ntext-align:left;\nwidth:70%;\n}\na.btn{\nborder-radius: 4px;\nbackground: #39B8D8;\nborder:none;\ncolor:#000;\n}"
           }
         }
       },
