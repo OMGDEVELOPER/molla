@@ -15,13 +15,14 @@
         "1566801709137-0": {
           "type": "image",
           "settings": {
-            "image": "shopify:\/\/shop_images\/slide-1_9dfde2e7-0fd4-4d7a-9ef6-77d530b1e1f7.jpg",
+            "image": "shopify://shop_images/banner-image.png",
+            "image_mb": "shopify://shop_images/banner-image.png",
             "lazypreload": true,
             "heading": "End of Season Sale",
             "font_heading": "poppins_n4",
-            "subheading": "Your Fall<br>\nFashion",
+            "subheading": "Built for Builders. <br>\nTrusted by Tradies.<br>\n<p class=\"subheading\">Quality Building Materials. Reliable Local Service.</p>",
             "font_subheading": "playfair_display_n7",
-            "description": "",
+            "description": "From timber and concrete to roofing and plumbing everything you need, delivered fast across South West Sydney.",
             "font_description": "poppins_n4",
             "text_alignment_top": 50,
             "text_alignment_left": 50,
@@ -33,15 +34,16 @@
             "style_btn_rounded_1": "btn-round",
             "btn_shadow_1": false,
             "link_1": "#",
-            "textBtn_1": "DISCOVER NOW <i class=\"fkt-angle-right\"><\/i>",
+            "textBtn_1": "DISCOVER NOW",
             "style_btn_2": "btn-outline-primary-2",
             "style_btn_rounded_2": "",
             "btn_shadow_2": false,
+            "link_2": "",
             "textBtn_2": "",
             "turnoff": false,
             "title": "Item image",
             "width_section": true,
-            "css_block": ""
+            "css_block": ".subheading{\nletter-spacing:normal;\ncolor: #75E3FF;\ntext-align: center;\nfont-size: 22px;\nfont-style: normal;\nfont-weight: 600;\nline-height: 32px; \n}"
           }
         }
       },
@@ -77,6 +79,7 @@
         "h_reponsive_1400": "",
         "autoplay_speed": 7,
         "responsive": "{\n  \"0\": {\n    \"slidesPerView\": 1,\n    \"spaceBetween\": 10\n  },\n  \"320\": {\n    \"slidesPerView\": 1,\n    \"spaceBetween\": 10\n  },\n  \"768\": {\n    \"slidesPerView\": 1,\n    \"spaceBetween\": 10\n  },\n  \"992\": {\n    \"slidesPerView\": 1,\n    \"spaceBetween\": 10\n  },\n  \"1200\": {\n    \"slidesPerView\": 1,\n    \"spaceBetween\": 10\n  }\n}",
+        "content_type": "type-1",
         "css_section": ".section_id .slideshow__title{\n  font-family: Manrope !important;\n  color: #222;\n  font-size: 1.4rem;\n  letter-spacing: -.01em;\n  margin-bottom: .5rem;\n}\n.section_id .slideshow__subtitle{\n  font-family: Manrope !important;\n  color: #222;\n  font-size: 4rem;\n  line-height: 1.2;\n  letter-spacing: -.03em;\n  margin-bottom: 1.2rem;\n}\n.section_id .slideshow__description{\n  font-family: Manrope !important;\n  color: #142b6f;\n  margin-bottom: 2rem;\n  clear: both;\n  font-size: 3.9rem;\n  line-height: 2.4rem;\n  letter-spacing: -3px;\n}\n.section_id .btn {\n  font-size: 1.1rem;\n  min-width: 9rem;\n  padding: .65rem 1rem;\n}\n@media (min-width: 576px){\n  .section_id .btn {\n    font-size: 1.2rem;\n    min-width: 11rem;\n    padding-top: .75rem;\n    padding-bottom: .75rem;\n  }\n}\n@media (min-width: 768px){\n  .section_id .slideshow__subtitle{\n    font-size: 4.2rem;\n    margin-bottom: 7rem;\n  }\n  .section_id .slideshow__description{\n  line-height: 1;\n  font-size: 6.9rem;\n  letter-spacing: -4px;\n  }\n  .section_id .btn {\n    font-size: 1.3rem;\n    min-width: 13rem;\n    padding: .95rem 1.5rem;\n  }\n}\n@media (min-width: 1200px){\n  .section_id .slideshow__subtitle{\n    font-size: 8rem;\n  }\n  .section_id .slideshow__description{\n  font-size: 7.9rem;\n  color: var(--secondary);\n  }\n  .section_id .btn {\n  font-size: 1.4rem;\n  min-width: 15rem;\n  padding: 1.15rem 3rem;\n  letter-spacing: 1px;\n  }\n}"
       }
     },
