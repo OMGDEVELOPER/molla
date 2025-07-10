@@ -110,7 +110,7 @@
         "h_reponsive": "540",
         "h_reponsive_768": "",
         "h_reponsive_992": "",
-        "h_reponsive_1200": "800",
+        "h_reponsive_1200": "960",
         "h_reponsive_1400": "",
         "autoplay_speed": 7,
         "responsive": "{\n  \"0\": {\n    \"slidesPerView\": 1,\n    \"spaceBetween\": 10\n  },\n  \"320\": {\n    \"slidesPerView\": 1,\n    \"spaceBetween\": 10\n  },\n  \"768\": {\n    \"slidesPerView\": 1,\n    \"spaceBetween\": 10\n  },\n  \"992\": {\n    \"slidesPerView\": 1,\n    \"spaceBetween\": 10\n  },\n  \"1200\": {\n    \"slidesPerView\": 1,\n    \"spaceBetween\": 10\n  }\n}",
