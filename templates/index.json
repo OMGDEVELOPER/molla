@@ -79,11 +79,46 @@
             "width_section": true,
             "css_block": ".sl-anime.slideshow__subtitle{\n color:#FFF;\ncolor: #FFF;\nfont-family: Karla;\nfont-size: 64px;\nfont-style: normal;\nfont-weight: 800;\nline-height: 72px; /* 112.5% */\n}\n.subheading{\nletter-spacing:normal;\ncolor: #75E3FF;\ntext-align: left;\nfont-size: 22px;\nfont-style: normal;\nfont-weight: 600;\nline-height: 32px; \n}\n.sl-anime.slideshow__description{\n    color: #FFF;\n    font-size: 20px;\n    font-style: normal;\n    font-weight: 500;\n    line-height: 28px;\n    letter-spacing: normal;\ntext-align:left;\nwidth:70%;\n}\na.btn{\nborder-radius: 4px;\nbackground: #39B8D8;\nborder:none;\ncolor:#000;\n}"
           }
+        },
+        "image_gV78XT": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/2148252768_1_2.png",
+            "image_mb": "shopify://shop_images/2148252768_1_2.png",
+            "lazypreload": true,
+            "heading": "",
+            "font_heading": "poppins_n4",
+            "subheading": "Cool, Clean, and<br>\nBuilt Tough.<br>\n<p class=\"subheading\">Specialty panels and structural products engineered for performance.</p>",
+            "font_subheading": "karla_n4",
+            "description": "Whether you're building a cool room or need reliable structural solutions, we’ve got insulated panels, support frames, and steel supplies that meet strict building codes — and tight timelines.",
+            "font_description": "karla_n4",
+            "text_alignment_top": 50,
+            "text_alignment_left": 50,
+            "text_alignment": "",
+            "text_alignment_top_mb": 50,
+            "text_alignment_left_mb": 50,
+            "text_alignment_mb": "",
+            "style_btn_1": "btn-dark",
+            "style_btn_rounded_1": "btn-round",
+            "btn_shadow_1": false,
+            "link_1": "#",
+            "textBtn_1": "DISCOVER NOW",
+            "style_btn_2": "btn-outline-primary-2",
+            "style_btn_rounded_2": "",
+            "btn_shadow_2": false,
+            "link_2": "",
+            "textBtn_2": "",
+            "turnoff": false,
+            "title": "Item image",
+            "width_section": true,
+            "css_block": ".sl-anime.slideshow__subtitle{\n color:#FFF;\ncolor: #FFF;\nfont-family: Karla;\nfont-size: 64px;\nfont-style: normal;\nfont-weight: 800;\nline-height: 72px; /* 112.5% */\n}\n.subheading{\nletter-spacing:normal;\ncolor: #75E3FF;\ntext-align: left;\nfont-size: 22px;\nfont-style: normal;\nfont-weight: 600;\nline-height: 32px; \n}\n.sl-anime.slideshow__description{\n    color: #FFF;\n    font-size: 20px;\n    font-style: normal;\n    font-weight: 500;\n    line-height: 28px;\n    letter-spacing: normal;\ntext-align:left;\nwidth:70%;\n}\na.btn{\nborder-radius: 4px;\nbackground: #39B8D8;\nborder:none;\ncolor:#000;\n}"
+          }
         }
       },
       "block_order": [
         "image_L8FEaQ",
-        "image_KpyRHi"
+        "image_KpyRHi",
+        "image_gV78XT"
       ],
       "settings": {
         "title": "Slideshow Master 2",
