@@ -45,10 +45,45 @@
             "width_section": true,
             "css_block": ".sl-anime.slideshow__subtitle{\n color:#FFF;\n}\n.subheading{\nletter-spacing:normal;\ncolor: #75E3FF;\ntext-align: center;\nfont-size: 22px;\nfont-style: normal;\nfont-weight: 600;\nline-height: 32px; \n}\n.sl-anime.slideshow__description{\n    color: #FFF;\n    font-size: 20px;\n    font-style: normal;\n    font-weight: 500;\n    line-height: 28px;\n    letter-spacing: normal;\n    width: 70%;\n    text-align: center;\n    margin-left: auto;\n    margin-right: auto;\n}"
           }
+        },
+        "image_KpyRHi": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/banner-image.png",
+            "image_mb": "shopify://shop_images/banner-image.png",
+            "lazypreload": true,
+            "heading": "End of Season Sale",
+            "font_heading": "poppins_n4",
+            "subheading": "Built for Builders. <br>\nTrusted by Tradies.<br>\n<p class=\"subheading\">Quality Building Materials. Reliable Local Service.</p>",
+            "font_subheading": "karla_n4",
+            "description": "From timber and concrete to roofing and plumbing everything you need, delivered fast across South West Sydney.",
+            "font_description": "karla_n4",
+            "text_alignment_top": 50,
+            "text_alignment_left": 50,
+            "text_alignment": "center",
+            "text_alignment_top_mb": 50,
+            "text_alignment_left_mb": 50,
+            "text_alignment_mb": "center",
+            "style_btn_1": "btn-dark",
+            "style_btn_rounded_1": "btn-round",
+            "btn_shadow_1": false,
+            "link_1": "#",
+            "textBtn_1": "DISCOVER NOW",
+            "style_btn_2": "btn-outline-primary-2",
+            "style_btn_rounded_2": "",
+            "btn_shadow_2": false,
+            "link_2": "",
+            "textBtn_2": "",
+            "turnoff": false,
+            "title": "Item image",
+            "width_section": true,
+            "css_block": ".sl-anime.slideshow__subtitle{\n color:#FFF;\n}\n.subheading{\nletter-spacing:normal;\ncolor: #75E3FF;\ntext-align: center;\nfont-size: 22px;\nfont-style: normal;\nfont-weight: 600;\nline-height: 32px; \n}\n.sl-anime.slideshow__description{\n    color: #FFF;\n    font-size: 20px;\n    font-style: normal;\n    font-weight: 500;\n    line-height: 28px;\n    letter-spacing: normal;\n    width: 70%;\n    text-align: center;\n    margin-left: auto;\n    margin-right: auto;\n}"
+          }
         }
       },
       "block_order": [
-        "1566801709137-0"
+        "1566801709137-0",
+        "image_KpyRHi"
       ],
       "settings": {
         "title": "Slideshow Master 2",
