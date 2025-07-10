@@ -43,7 +43,7 @@
             "turnoff": false,
             "title": "Item image",
             "width_section": true,
-            "css_block": ".sl-anime.slideshow__subtitle{\n color:#FFF;\n}\n.subheading{\nletter-spacing:normal;\ncolor: #75E3FF;\ntext-align: center;\nfont-size: 22px;\nfont-style: normal;\nfont-weight: 600;\nline-height: 32px; \n}\n.sl-anime.slideshow__description{\n    color: #FFF;\n    font-size: 20px;\n    font-style: normal;\n    font-weight: 500;\n    line-height: 28px;\n    letter-spacing: normal;\ntext-align:left;\n\n}"
+            "css_block": ".sl-anime.slideshow__subtitle{\n color:#FFF;\n}\n.subheading{\nletter-spacing:normal;\ncolor: #75E3FF;\ntext-align: left;\nfont-size: 22px;\nfont-style: normal;\nfont-weight: 600;\nline-height: 32px; \n}\n.sl-anime.slideshow__description{\n    color: #FFF;\n    font-size: 20px;\n    font-style: normal;\n    font-weight: 500;\n    line-height: 28px;\n    letter-spacing: normal;\ntext-align:left;\nwidth:70%;\n\n}"
           }
         },
         "image_KpyRHi": {
@@ -77,7 +77,7 @@
             "turnoff": false,
             "title": "Item image",
             "width_section": true,
-            "css_block": ".sl-anime.slideshow__subtitle{\n color:#FFF;\n}\n.subheading{\nletter-spacing:normal;\ncolor: #75E3FF;\nfont-size: 22px;\nfont-style: normal;\nfont-weight: 600;\nline-height: 32px; \n}\n.sl-anime.slideshow__description{\n    color: #FFF;\n    font-size: 20px;\n    font-style: normal;\n    font-weight: 500;\n    line-height: 28px;\n    letter-spacing: normal;}"
+            "css_block": ".sl-anime.slideshow__subtitle{\n color:#FFF;\n}\n.subheading{\nletter-spacing:normal;\ncolor: #75E3FF;\ntext-align: left;\nfont-size: 22px;\nfont-style: normal;\nfont-weight: 600;\nline-height: 32px; \n}\n.sl-anime.slideshow__description{\n    color: #FFF;\n    font-size: 20px;\n    font-style: normal;\n    font-weight: 500;\n    line-height: 28px;\n    letter-spacing: normal;\ntext-align:left;\nwidth:70%;\n\n}"
           }
         }
       },
