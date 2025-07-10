@@ -43,7 +43,7 @@
             "turnoff": false,
             "title": "Item image",
             "width_section": true,
-            "css_block": ".subheading{\nletter-spacing:normal;\ncolor: #75E3FF;\ntext-align: center;\nfont-size: 22px;\nfont-style: normal;\nfont-weight: 600;\nline-height: 32px; \n}"
+            "css_block": ".subheading{\nletter-spacing:normal;\ncolor: #75E3FF;\ntext-align: center;\nfont-size: 22px;\nfont-style: normal;\nfont-weight: 600;\nline-height: 32px; \n}\n.sl-anime.slideshow__description{\n    color: #FFF;\n    font-size: 20px;\n    font-style: normal;\n    font-weight: 500;\n    line-height: 28px;\n    letter-spacing: normal;\n    width: 70%;\n    text-align: center;\n    margin-left: auto;\n    margin-right: auto;\n}"
           }
         }
       },
