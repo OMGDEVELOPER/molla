@@ -14,6 +14,41 @@
       "blocks": {
         "1566801709137-0": {
           "type": "image",
+          "disabled": true,
+          "settings": {
+            "image": "shopify://shop_images/21692_1.png",
+            "image_mb": "shopify://shop_images/21692_1.png",
+            "lazypreload": true,
+            "heading": "",
+            "font_heading": "poppins_n4",
+            "subheading": "Built for Builders. <br>\nTrusted by Tradies.<br>\n<p class=\"subheading\">Quality Building Materials. Reliable Local Service.</p>",
+            "font_subheading": "karla_n4",
+            "description": "From timber and concrete to roofing and plumbing everything you need, delivered fast across South West Sydney.",
+            "font_description": "karla_n4",
+            "text_alignment_top": 50,
+            "text_alignment_left": 50,
+            "text_alignment": "",
+            "text_alignment_top_mb": 50,
+            "text_alignment_left_mb": 50,
+            "text_alignment_mb": "",
+            "style_btn_1": "btn-dark",
+            "style_btn_rounded_1": "btn-round",
+            "btn_shadow_1": false,
+            "link_1": "#",
+            "textBtn_1": "DISCOVER NOW",
+            "style_btn_2": "btn-outline-primary-2",
+            "style_btn_rounded_2": "",
+            "btn_shadow_2": false,
+            "link_2": "",
+            "textBtn_2": "",
+            "turnoff": false,
+            "title": "Item image",
+            "width_section": true,
+            "css_block": ".sl-anime.slideshow__subtitle{\n color:#FFF;\ncolor: #FFF;\nfont-family: Karla;\nfont-size: 64px;\nfont-style: normal;\nfont-weight: 800;\nline-height: 72px; /* 112.5% */\n}\n.subheading{\nletter-spacing:normal;\ncolor: #75E3FF;\ntext-align: left;\nfont-size: 22px;\nfont-style: normal;\nfont-weight: 600;\nline-height: 32px; \n}\n.sl-anime.slideshow__description{\n    color: #FFF;\n    font-size: 20px;\n    font-style: normal;\n    font-weight: 500;\n    line-height: 28px;\n    letter-spacing: normal;\ntext-align:left;\nwidth:70%;\n}\na.btn{\nborder-radius: 4px;\nbackground: #39B8D8;\nborder:none;\ncolor:#000;\n}"
+          }
+        },
+        "image_L8FEaQ": {
+          "type": "image",
           "settings": {
             "image": "shopify://shop_images/21692_1.png",
             "image_mb": "shopify://shop_images/21692_1.png",
@@ -83,6 +118,7 @@
       },
       "block_order": [
         "1566801709137-0",
+        "image_L8FEaQ",
         "image_KpyRHi"
       ],
       "settings": {
@@ -110,7 +146,7 @@
         "h_reponsive": "540",
         "h_reponsive_768": "",
         "h_reponsive_992": "",
-        "h_reponsive_1200": "960",
+        "h_reponsive_1200": "930",
         "h_reponsive_1400": "",
         "autoplay_speed": 7,
         "responsive": "{\n  \"0\": {\n    \"slidesPerView\": 1,\n    \"spaceBetween\": 10\n  },\n  \"320\": {\n    \"slidesPerView\": 1,\n    \"spaceBetween\": 10\n  },\n  \"768\": {\n    \"slidesPerView\": 1,\n    \"spaceBetween\": 10\n  },\n  \"992\": {\n    \"slidesPerView\": 1,\n    \"spaceBetween\": 10\n  },\n  \"1200\": {\n    \"slidesPerView\": 1,\n    \"spaceBetween\": 10\n  }\n}",
