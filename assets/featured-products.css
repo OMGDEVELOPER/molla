@@ -55,6 +55,10 @@
     background: #009A1C;
     border-radius: 100%;
 }
+.featured-products .__row .item select{
+      padding: 6px;
+    border-radius: 3px;
+}
 .featured-products .__row .item button{
   margin-top: 0px;
 }
