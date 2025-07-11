@@ -69,6 +69,7 @@ line-height: 32px;
 }
 .shop-by-cat ._box .img_content img{
   height: 100%;
+  width:100%;
 }
 .shop-by-cat ._box .block_content{
   padding: 16px;
