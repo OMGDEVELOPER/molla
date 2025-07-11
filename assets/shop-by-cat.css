@@ -1,5 +1,5 @@
 /* .shop-by-cat */
-.shop-by-cat .icon-heading::before{
+.shop-by-cat .icon__heading::before{
   content: "https://cdn.shopify.com/s/files/1/0859/1186/3592/files/Frame_1.png?v=1752195110";
   height: 400px;
   width: 400px;
