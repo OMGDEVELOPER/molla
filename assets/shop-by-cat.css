@@ -1,7 +1,20 @@
 /* .shop-by-cat */
 .shop-by-cat .icon__heading::before{
-  content: "";
-  height: 400px;
-  width: 400px;
-  background-image:url("https://cdn.shopify.com/s/files/1/0859/1186/3592/files/Frame_1.png?v=1752195110"); 
+    content: "";
+    height: 75px;
+    width: 100%;
+    background-image: url(/cdn/shop/files/Frame_1.png?v=1752195110);
+    position: absolute;
+    background-repeat: no-repeat; 
+}
+.shop-by-cat .icon__heading{
+  display: grid;
+  align-items: center;
+  justify-items: center;
+  background: #000;
+}
+.shop-by-cat .icon__heading p{
+      margin: 0;
+    color: #fff;
+    padding: 10px;
 }
