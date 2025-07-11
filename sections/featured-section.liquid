@@ -1,3 +1,6 @@
+<section>
+  
+</section>
 {% schema %}
 {
   "name": "Featured Banner",
@@ -9,43 +12,3 @@
 }
 {% endschema %}
 
-<div class="featured-banner-wrapper container">
-  <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
-
-    <!-- Left Column: Retailer Promo -->
-    <div class="promo-box bg-[#D6F3F7] p-6 flex flex-col justify-between text-center">
-      <div>
-        <h2 class="text-red-600 font-bold text-xl mb-2">Big Discounts!</h2>
-        <p class="mb-4 text-gray-800">If you become one of our retailers</p>
-        <a href="#" class="inline-block bg-white border border-black py-2 px-4 text-sm font-semibold hover:bg-black hover:text-white transition">Be Our Partner</a>
-      </div>
-      <img src="{{ 'worker-image.jpg' | asset_url }}" alt="Worker" class="mt-6 mx-auto w-32 md:w-auto">
-    </div>
-
-    <!-- Middle Column: Weekend Sale Banner -->
-    <div class="sale-banner relative bg-blue-300 p-6 text-white">
-      <h3 class="text-lg font-medium mb-2">Retail Weekend Sale!</h3>
-      <p class="text-xl font-bold mb-2">GET UP TO <span class="text-red-500">50% OFF</span></p>
-      <p class="mb-4">Turn Your Home Goals Into Concrete Reality!</p>
-      <a href="#" class="inline-block bg-white text-black py-2 px-4 text-sm font-semibold hover:bg-black hover:text-white transition">Shop Now</a>
-      <img src="{{ 'bricks.png' | asset_url }}" alt="Bricks" class="absolute bottom-0 right-0 w-24 md:w-32">
-    </div>
-
-    <!-- Right Column: New Products -->
-    <div class="flex flex-col gap-4">
-      <!-- Roofing -->
-      <div class="bg-[#2E3D59] text-white p-6">
-        <h4 class="text-lg font-bold mb-1">New Roofing Accessories</h4>
-        <p class="text-sm mb-4">Mega Collection</p>
-        <a href="#" class="inline-block bg-white text-black py-2 px-4 text-sm font-semibold hover:bg-black hover:text-white transition">Show Collections</a>
-      </div>
-      <!-- Awning -->
-      <div class="bg-[#FBE062] text-black p-6">
-        <h4 class="text-lg font-bold mb-1">New Awning Models</h4>
-        <p class="text-sm mb-4">Mega Collection</p>
-        <a href="#" class="inline-block bg-white text-black py-2 px-4 text-sm font-semibold hover:bg-black hover:text-white transition">Show Collections</a>
-      </div>
-    </div>
-    
-  </div>
-</div>
