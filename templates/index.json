@@ -468,86 +468,6 @@
         "preview": false
       }
     },
-    "1570069534594": {
-      "type": "md_product_section_tab_load",
-      "blocks": {
-        "1570069552553": {
-          "type": "item",
-          "settings": {
-            "title": "New Arrivals",
-            "stitle": "Our Team Designed These Shapes.",
-            "title_align": "text-center",
-            "t_tranform": "text-uppercase",
-            "fsize_name_tab": 1.4,
-            "margin_btitles": 1.5,
-            "margin_btitle": 3,
-            "products_1": "men",
-            "products_2": "women-1",
-            "products_3": "",
-            "products_4": "",
-            "products_5": "",
-            "products_6": "",
-            "limit_per_row": 4,
-            "limit": 8,
-            "range_row": 2,
-            "load_btn": true,
-            "name_btn": "<span>VIEW MORE</span><i class=\"fkt-long-arrow-right\" aria-hidden=\"true\"></i>",
-            "style_btn": "btn-outline-primary-2",
-            "style_btn_rounded": "",
-            "btn_shadow": false
-          }
-        }
-      },
-      "block_order": [
-        "1570069552553"
-      ],
-      "settings": {
-        "off_mobile": false,
-        "off_desktop": false,
-        "title": "Products Tab",
-        "width_section": "container",
-        "width_content": false,
-        "section_margin_top": "",
-        "section_margin_bottom": "9rem",
-        "section_padding": "",
-        "section_bg": "",
-        "section_bg_op": 1,
-        "use_lazyload": true,
-        "product_grid_layout": "",
-        "use_nospace": false
-      }
-    },
-    "1612538514e9717c37": {
-      "type": "md_featured_product_2",
-      "blocks": {
-        "fb7d08a2-81c3-456a-ae31-bf2ba6d682de": {
-          "type": "1",
-          "settings": {
-            "title_section": "<span style=\"background-color: var(--secondary); padding: 0 0.5rem\">Deal of the Day</span>",
-            "url": "shopify://products/amelia-e-funk",
-            "name_btn": "<span>SHOP NOW</span><i class=\"fkt-angle-right\"></i>",
-            "style_btn": "btn-outline-primary-2",
-            "style_btn_rounded": "",
-            "btn_shadow": false
-          }
-        }
-      },
-      "block_order": [
-        "fb7d08a2-81c3-456a-ae31-bf2ba6d682de"
-      ],
-      "settings": {
-        "off_mobile": false,
-        "off_desktop": false,
-        "title": "Featured 2",
-        "width_section": "w-100",
-        "width_content": true,
-        "section_margin_top": "",
-        "section_margin_bottom": "0|0|0|8rem",
-        "section_padding": "",
-        "section_bg": "#f9fafc",
-        "section_bg_op": 1
-      }
-    },
     "1566443930152": {
       "type": "md_blog",
       "blocks": {
@@ -559,7 +479,7 @@
             "reverse": false,
             "title_align": "text-center",
             "margin_btitle": 3,
-            "blog": "glasses",
+            "blog": "news",
             "limit": 8,
             "use_short_desc": false,
             "limit_per_row": 3,
@@ -707,8 +627,6 @@
     "1610590433794",
     "1566437726874",
     "1612493432487",
-    "1570069534594",
-    "1612538514e9717c37",
     "1566443930152",
     "1612489579883",
     "1612489778594"
