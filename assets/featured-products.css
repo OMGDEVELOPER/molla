@@ -1,4 +1,11 @@
 /* .featured-products */
+.featured-products button {
+  border-radius: 4px;
+background: #127FB5;
+}
+.featured-products button:hover{
+  background: #FFF;
+}
 .featured-products {
   padding: 0 0 96px 0px;
 }
