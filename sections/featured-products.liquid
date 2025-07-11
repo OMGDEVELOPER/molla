@@ -11,7 +11,7 @@
             <img src="{{ product.featured_image | image_url: width: 400 }}" alt="{{ product.title }}" />
             <h2>{{ product.title }}</h2>
             <div class="_description">
-              {{ product.description | strip_html | truncate: 150 }}
+              {{ product.description | strip_html | truncate: 250 }}
             </div>
             <p>{{ product.price | money }}</p>
           </a>
