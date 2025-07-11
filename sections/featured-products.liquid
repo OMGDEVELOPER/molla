@@ -3,8 +3,9 @@
 <section class="featured-products section-width container">
   <h1 class="__heading">FEATURED PRODUCTS</h1>
   <div class="__row">
-    {% for product_handle in section.settings.product_lists %}
-      {% assign product_obj = all_products[product_handle] %}
+    {% for product in section.settings.product_lists %}
+ 
+      {% assign product_obj = product %}
       {% if product_obj %}
         <div class="item">
           <a href="{{ product_obj.url }}">
