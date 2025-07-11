@@ -27,6 +27,7 @@ font-size: 36px;
 font-style: normal;
 font-weight: 700;
 line-height: 62px; /* 172.222% */
+  margin-bottom:50px;
 }
 .shop-by-cat .icon__heading{
   display: grid;
