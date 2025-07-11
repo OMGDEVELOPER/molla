@@ -17,6 +17,7 @@
     background-image: url(/cdn/shop/files/Frame_1.png?v=1752195110);
     position: absolute;
     background-repeat: no-repeat; 
+  left: -15px;
 }
 .shop-by-cat .__heading{
   color: #000;
