@@ -57,6 +57,7 @@ div[data-section-type="banner-section"] .banner-title {
 }
 .item__banner.item__1 a.btn:hover{
    background: #FAFAFA;
+  color: #000;
 }
 .item__banner.item__1 a.btn{
 
