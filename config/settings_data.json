@@ -1617,7 +1617,7 @@
           "popup_newsletter_title": "GET <span class=\"text-primary\">25<light>%</light></span> OFF",
           "popup_newsletter_description": "<p>Subscribe to the Molla eCommerce newsletter to<br/> receive timely updates from your favorite products.</p>",
           "time_popup_delay": "10",
-          "scroll_popup_delay": "800"
+          "scroll_popup_delay": "1000000000"
         }
       },
       "cart-template": {
