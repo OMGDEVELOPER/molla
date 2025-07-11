@@ -6,7 +6,7 @@
 .featured-products .__row {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
-  gap: 30px;
+  gap: 10px;
 }
 .featured-products .__heading {
   color: #000;
