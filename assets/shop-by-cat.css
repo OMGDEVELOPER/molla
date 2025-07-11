@@ -20,6 +20,7 @@
     padding: 10px;
 }
 .shop-by-cat ._box row{
+  min-height: 200px;
   background: #F6F6F6;
     padding: 15px 0px;
 }
