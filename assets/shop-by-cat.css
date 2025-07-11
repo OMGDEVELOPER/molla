@@ -31,11 +31,11 @@ line-height: 62px; /* 172.222% */
     color: #fff;
     padding: 10px;
   color: #FAFAFA;
-font-family: Inter;
 font-size: 18px;
 font-style: normal;
 font-weight: 600;
-line-height: 32px; /* 177.778% */
+line-height: 32px;
+  text-transform: capitalize;
 }
 .shop-by-cat ._box.row{
   min-height: 200px;
