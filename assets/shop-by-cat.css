@@ -32,8 +32,8 @@
   left: -15px;
 }
 @media(max-width:768px) {
- .shop-by-cat .icon__heading::before {
-  left: 0;
+ .shop-by-cat .icon__heading p {
+  text-align: center;
  } 
 }
 .shop-by-cat .__heading {
