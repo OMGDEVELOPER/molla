@@ -55,7 +55,8 @@ div[data-section-type="banner-section"] .banner-title {
     text-transform: uppercase;
     margin-top: 20px;
 }
-.item__banner.item__1 a.btn:hover{
+.item__banner.item__1 a.btn:hover,
+._new-btn:hover{
    background: #FAFAFA;
   color: #000;
 }
