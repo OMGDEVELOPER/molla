@@ -8,5 +8,7 @@
   gap: 20px;
 }
 .featured-banner .item.__item-1{
-      background-image: url(https://cdn.shopify.com/s/files/1/0859/1186/3592/files/Frame_21.png?v=1752227189);
+    background-image: url(/cdn/shop/files/Frame_21.png?v=1752227189);
+    height: 900px;
+    background-repeat: no-repeat;
 }
