@@ -26,6 +26,9 @@
 .shop-by-cat ._box row .img_content{
   padding: 0px;
 }
+.shop-by-cat ._box row .img_content img{
+  height: 100%;
+}
 .shop-by-cat ._box row .block_content{
   
 }
