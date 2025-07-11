@@ -39,3 +39,16 @@ div[data-section-type="banner-section"] .banner-title {
     line-height: normal;
     letter-spacing: normal;
 }
+._new-btn{
+  border-radius: 4px;
+    background: #75E3FF;
+    padding: 12px 20px;
+    align-items: center;
+    color: #074D83;
+    text-align: center;
+    font-family: Karla;
+    font-size: 1.3rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
