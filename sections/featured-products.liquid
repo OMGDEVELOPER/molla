@@ -4,18 +4,18 @@
   <h1 class="__heading">FEATURED PRODUCTS</h1>
   <div class="__row">
     {% for product in section.settings.product_lists %}
- 
       {% assign product_obj = product %}
       {% if product_obj %}
-        <div class="item">
+        <div class="item" data-product-id="{{ product_obj.id }}">
           <a href="{{ product_obj.url }}">
             <img src="{{ product_obj.featured_image | image_url: width: 400 }}" alt="{{ product_obj.title }}" />
             <h2>{{ product_obj.title }}</h2>
             <div class="_description">
               {{ product_obj.description | strip_html | truncate: 200 }}
             </div>
-            <p class="_price">{{ product_obj.price | money }}</p>
           </a>
+
+          <p class="_price" data-price>{{ product_obj.price | money }}</p>
 
           <div class="_status">
             {% if product_obj.available %}
@@ -30,9 +30,13 @@
           {% if product_obj.available %}
             <form method="post" action="/cart/add">
               {% if product_obj.variants.size > 1 %}
-                <select name="id" class="form-select mb-2">
+                <select name="id" class="form-select mb-2 variant-select" data-product="{{ product_obj.id }}">
                   {% for variant in product_obj.variants %}
-                    <option value="{{ variant.id }}" {% unless variant.available %}disabled{% endunless %}>
+                    <option 
+                      value="{{ variant.id }}" 
+                      data-price="{{ variant.price | money }}"
+                      {% unless variant.available %}disabled{% endunless %}
+                    >
                       {{ variant.title }}{% unless variant.available %} - Sold Out{% endunless %}
                     </option>
                   {% endfor %}
@@ -48,6 +52,24 @@
     {% endfor %}
   </div>
 </section>
+
+<script>
+  document.addEventListener('DOMContentLoaded', function () {
+    const selects = document.querySelectorAll('.variant-select');
+
+    selects.forEach(select => {
+      select.addEventListener('change', function () {
+        const selectedOption = this.options[this.selectedIndex];
+        const price = selectedOption.getAttribute('data-price');
+        const productId = this.getAttribute('data-product');
+        const priceEl = document.querySelector(`.item[data-product-id="${productId}"] [data-price]`);
+        if (price && priceEl) {
+          priceEl.textContent = price;
+        }
+      });
+    });
+  });
+</script>
 
 {% schema %}
 {
