@@ -69,3 +69,6 @@ div[data-section-type="banner-section"] .banner-title {
     font-weight: 500;
     padding: 16px 24px;
 }
+.item__banner.item__2 a.btn:hover{
+    background: #127fb5;
+}
