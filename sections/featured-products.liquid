@@ -2,7 +2,7 @@
 
 <section class="featured-products section-width container">
   <h1 class="__heading">FEATURED PRODUCTS</h1>
-  <div class="__row d-flex flex-wrap gap-3">
+  <div class="__row">
     {% for product in section.settings.product_lists %}
       {% assign product_obj = all_products[product] %}
       {% if product %}
