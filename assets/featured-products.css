@@ -8,38 +8,6 @@
   grid-template-columns: repeat(3, 1fr);
   gap: 30px;
 }
-
-@media(max-width:768px) {
-  .featured-products .__row {
-    display: grid;
-    grid-template-columns: repeat(1, 1fr);
-    gap: 30px;
-    padding: 25px;
-  }
-}
-
-.featured-products .item {
-  position: relative;
-}
-
-.featured-products .icon__heading::before {
-  content: "";
-  height: 75px;
-  width: 100%;
-  background-image: url(/cdn/shop/files/Frame_1.png?v=1752195110);
-  position: absolute;
-  background-repeat: no-repeat;
-  left: -15px;
-}
-@media(max-width:768px) {
- .featured-products .icon__heading p {
-  text-align: center;
- } 
-  .featured-products h1.__heading{
-    margin-bottom: 20px;
-    line-height: normal;
-  }
-}
 .featured-products .__heading {
   color: #000;
   text-align: center;
@@ -52,64 +20,15 @@
   margin-bottom: 50px;
 }
 
-.featured-products .icon__heading {
-  display: grid;
-  align-items: center;
-  justify-items: center;
-  background: #000;
-  margin-bottom: 3rem;
-}
-
-.featured-products .icon__heading p {
-  margin: 0;
-  color: #fff;
-  padding: 10px;
-  color: #FAFAFA;
-  font-size: 18px;
-  font-style: normal;
-  font-weight: 600;
-  line-height: 32px;
-  text-transform: uppercase;
-}
-
-.featured-products ._box {
-  min-height: 200px;
-  background: #F6F6F6;
-}
-
 @media(max-width:768px) {
-  .featured-products ._box {
-    display: flex;
-    flex-wrap: wrap;
+  .featured-products .__row {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 30px;
+    padding: 25px;
   }
 }
 
-.featured-products ._box .img_content {
-  padding: 0px;
-}
-
-.featured-products ._box .img_content img {
-  height: 100%;
-  width: 100%;
-}
-
-.featured-products ._box .block_content {
-  padding: 16px;
-}
-
-.featured-products ._box .block_content ul {
-  margin: 0;
-  padding: 0px;
-}
-
-.featured-products ._box .block_content ul li {
-  list-style: none;
-  color: #000;
-  font-family: Karla;
-  font-size: 16px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: 24px;
-  /* 150% */
-  padding: 5px
+.featured-products .item {
+  position: relative;
 }
