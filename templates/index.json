@@ -471,7 +471,14 @@
     "featured_products_73YWRz": {
       "type": "featured-products",
       "name": "Featured Products",
-      "settings": {}
+      "settings": {
+        "product_lists": [
+          "twin-wall-roof-sheets",
+          "wpc-decking",
+          "aluminium-angle",
+          "aluminium-arch-beam"
+        ]
+      }
     },
     "1566443930152": {
       "type": "md_blog",
