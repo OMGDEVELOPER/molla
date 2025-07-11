@@ -431,7 +431,7 @@
             "image_link_1": "",
             "stitle_1": "30% OFF",
             "color_stitle_1": "#ff0404",
-            "titlex_1": "Best Offer Today!<br>\n<button class=\"_new-btn\">\n<a href=\"#\">New Product Collections</a></button>",
+            "titlex_1": "Best Offer Today!<br>\n<a href=\"#\">\n<button class=\"_new-btn\">\nNew Product Collections</button></a>",
             "color_titlex_1": "#333333",
             "name_btn_1": "Shop Now",
             "style_btn_1": "btn-primary",
