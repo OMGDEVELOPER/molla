@@ -7,6 +7,9 @@
   grid-template-columns: repeat(3,1fr);
   gap:30px;
 }
+.shop-by-cat .item{
+  position: relative;
+}
 .shop-by-cat .icon__heading::before{
     content: "";
     height: 75px;
