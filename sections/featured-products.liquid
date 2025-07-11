@@ -5,12 +5,12 @@
   <div class="__row d-flex flex-wrap gap-3">
     {% for product in section.settings.product_lists %}
       {% assign product_obj = all_products[product] %}
-      {% if product_obj %}
+      {% if product %}
         <div class="item">
-          <a href="{{ product_obj.url }}">
-            <img src="{{ product_obj.featured_image | image_url: width: 400 }}" alt="{{ product_obj.title }}" />
-            <h2>{{ product_obj.title }}</h2>
-            <p>{{ product_obj.price | money }}</p>
+          <a href="{{ product.url }}">
+            <img src="{{ product.featured_image | image_url: width: 400 }}" alt="{{ product.title }}" />
+            <h2>{{ product.title }}</h2>
+            <p>{{ product.price | money }}</p>
           </a>
         </div>
       {% endif %}
