@@ -454,7 +454,9 @@
         "1612493432487-0"
       ],
       "custom_css": [
-        ".imgs__banner_template9 .text-content {z-index: 1; top: 50%; right: 50%; left: 0; transform: translate(50%, -50%); -ms-transform: translateY(-50%); padding-right: 10px; padding-left: 10px; text-align: center;}"
+        ".imgs__banner_template9 .text-content {z-index: 1; top: 50%; right: 50%; left: 0; transform: translate(50%, -50%); -ms-transform: translateY(-50%); padding-right: 10px; padding-left: 10px; text-align: center;}",
+        ".banner-subtitle {color: #ff0404; text-align: center; font-family: Karla; font-size: 64px; font-style: normal; font-weight: 800; line-height: 62px; letter-spacing: -1.28px; margin: 0;}",
+        ".banner-title {color: #050505; text-align: center; font-family: Karla; font-size: 3rem; font-style: normal; font-weight: 700; line-height: 62px;}"
       ],
       "settings": {
         "title": "Banner template 2",
