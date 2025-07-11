@@ -453,6 +453,9 @@
       "block_order": [
         "1612493432487-0"
       ],
+      "custom_css": [
+        ".imgs__banner_template9 .text-content {z-index: 1; top: 50%; right: 50%; left: 0; transform: translate(50%, -50%); -ms-transform: translateY(-50%); padding-right: 10px; padding-left: 10px;}"
+      ],
       "settings": {
         "title": "Banner template 2",
         "off_mobile": false,
