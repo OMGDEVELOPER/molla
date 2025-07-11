@@ -441,7 +441,7 @@
             "image_link_2": "",
             "stitle_2": "<p style=\"font-size:1.2rem;color:#FFF;\">Contractor Loyalty Program</p>",
             "color_stitle_2": "#777777",
-            "titlex_2": "Build Big. Earn Bigger.<br>\n<p style=\"font-size:1.2rem;color:#FFF;\">Your loyalty builds more than structures  it builds rewards.</p>",
+            "titlex_2": "<span style=\"color:#FFF;\">Build Big. Earn Bigger.</span><br>\n<p style=\"font-size:1.2rem;color:#FFF;\">Your loyalty builds more than structures  it builds rewards.</p>",
             "color_titlex_2": "#333333",
             "name_btn_2": "Shop Now",
             "style_btn_2": "btn-outline-primary-2",
