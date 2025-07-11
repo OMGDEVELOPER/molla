@@ -12,6 +12,7 @@
   align-items: center;
   justify-items: center;
   background: #000;
+      margin-bottom: 3rem;
 }
 .shop-by-cat .icon__heading p{
       margin: 0;
