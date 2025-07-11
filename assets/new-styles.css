@@ -55,9 +55,17 @@ div[data-section-type="banner-section"] .banner-title {
     text-transform: uppercase;
     margin-top: 20px;
 }
+.item__banner.item__1 a.btn{
+
+  border-radius: 4px;
+  background: #127fb5;
+  color: #fff;
+  padding: 16px 24px;
+}
 .item__banner.item__2 a.btn{
     border-radius: 4px;
     background: #FAFAFA;
     color: #000;
     font-weight: 500;
+    padding: 16px 24px;
 }
