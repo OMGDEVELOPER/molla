@@ -30,5 +30,12 @@
   height: 100%;
 }
 .shop-by-cat ._box row .block_content{
-  
+  padding: 16px;
+}
+.shop-by-cat ._box row .block_content ul{
+  margin: 0;
+  padding: 0px;
+}
+.shop-by-cat ._box row .block_content ul li{
+  list-style: none;
 }
