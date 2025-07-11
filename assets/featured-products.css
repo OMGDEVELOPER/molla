@@ -5,6 +5,8 @@ background: #127FB5;
 }
 .featured-products button:hover{
   background: #FFF;
+  border: none;
+  
 }
 .featured-products {
   padding: 0 0 96px 0px;
