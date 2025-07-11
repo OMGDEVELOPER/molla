@@ -188,6 +188,11 @@
         "css_section": ".section_id .slideshow__title{\n  font-family: Manrope !important;\n  color: #222;\n  font-size: 1.4rem;\n  letter-spacing: -.01em;\n  margin-bottom: .5rem;\n}\n.section_id .slideshow__subtitle{\n  font-family: Manrope !important;\n  color: #222;\n  font-size: 4rem;\n  line-height: 1.2;\n  letter-spacing: -.03em;\n  margin-bottom: 1.2rem;\n}\n.section_id .slideshow__description{\n  font-family: Manrope !important;\n  color: #142b6f;\n  margin-bottom: 2rem;\n  clear: both;\n  font-size: 3.9rem;\n  line-height: 2.4rem;\n  letter-spacing: -3px;\n}\n.section_id .btn {\n  font-size: 1.1rem;\n  min-width: 9rem;\n  padding: .65rem 1rem;\n}\n@media (min-width: 576px){\n  .section_id .btn {\n    font-size: 1.2rem;\n    min-width: 11rem;\n    padding-top: .75rem;\n    padding-bottom: .75rem;\n  }\n}\n@media (min-width: 768px){\n  .section_id .slideshow__subtitle{\n    font-size: 4.2rem;\n  }\n  .section_id .slideshow__description{\n  line-height: 1;\n  font-size: 6.9rem;\n  letter-spacing: -4px;\n  }\n  .section_id .btn {\n    font-size: 1.3rem;\n    min-width: 13rem;\n    padding: .95rem 1.5rem;\n  }\n}\n@media (min-width: 1200px){\n  .section_id .slideshow__subtitle{\n    font-size: 8rem;\n  }\n  .section_id .slideshow__description{\n  font-size: 7.9rem;\n  color: var(--secondary);\n  }\n  .section_id .btn {\n  font-size: 1.4rem;\n  min-width: 15rem;\n  padding: 1.15rem 3rem;\n  letter-spacing: 1px;\n  }\n}\n.imgRatio__text-wrap{\nbackground: #33333391;\n}\n.subheading{\n    margin-top: 1.5rem;\n}\n.sl-anime.slideshow__description{\n    margin-bottom: 4rem;\n}"
       }
     },
+    "shop_by_cat_cPTB3g": {
+      "type": "shop-by-cat",
+      "name": "Shop By Categories",
+      "settings": {}
+    },
     "1610587586114": {
       "type": "md_banner_template_1",
       "blocks": {
@@ -696,6 +701,7 @@
   },
   "order": [
     "1610529558279ffc95",
+    "shop_by_cat_cPTB3g",
     "1610587586114",
     "1610590433794",
     "1566437726874",
