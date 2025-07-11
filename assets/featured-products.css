@@ -32,3 +32,6 @@
 .featured-products .item {
   position: relative;
 }
+.featured-products .item img{
+  min-height: 200px;
+}
