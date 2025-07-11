@@ -17,10 +17,20 @@
             <div class="_status">
               <span class="_stock"></span><span class="_status_text">In Stock</span>
             </div>
-             {% if product.variants.size > 0 %}
-    <form method="post" action="/cart/add">
-      <input type="hidden" name="id" value="{{ product.variants.first.id }}">
-      <button type="submit" class="btn btn-primary mt-2">Add to Cart</button>
+  {% if product_obj.available %}
+    <form method="post" action="/cart/add" class="add-to-cart-form">
+      {% if product_obj.variants.size > 1 %}
+        <select name="id" class="form-select mb-2">
+          {% for variant in product_obj.variants %}
+            <option value="{{ variant.id }}">
+              {{ variant.title }} {% if variant.available == false %} - Sold Out {% endif %}
+            </option>
+          {% endfor %}
+        </select>
+      {% else %}
+        <input type="hidden" name="id" value="{{ product_obj.variants.first.id }}">
+      {% endif %}
+      <button type="submit" class="btn btn-primary">Add to Cart</button>
     </form>
   {% endif %}
           </a>
