@@ -13,7 +13,16 @@
             <div class="_description">
               {{ product.description | strip_html | truncate: 200 }}
             </div>
-            <p>{{ product.price | money }}</p>
+            <p class="_price">{{ product.price | money }}</p>
+            <div class="_status">
+              <span class="_stock"></span><span class="_status_text">In Stock</span>
+            </div>
+             {% if product.variants.size > 0 %}
+    <form method="post" action="/cart/add">
+      <input type="hidden" name="id" value="{{ product.variants.first.id }}">
+      <button type="submit" class="btn btn-primary mt-2">Add to Cart</button>
+    </form>
+  {% endif %}
           </a>
         </div>
       {% endif %}
