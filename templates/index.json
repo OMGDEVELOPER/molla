@@ -482,6 +482,7 @@
     },
     "featured_banner_iHg4iT": {
       "type": "featured-banner",
+      "disabled": true,
       "name": "Featured Banner",
       "settings": {}
     },
