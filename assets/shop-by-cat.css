@@ -29,13 +29,13 @@
 .shop-by-cat ._box.row .img_content img{
   height: 100%;
 }
-.shop-by-cat ._box row .block_content{
+.shop-by-cat ._box.row .block_content{
   padding: 16px;
 }
-.shop-by-cat ._box row .block_content ul{
+.shop-by-cat ._box.row .block_content ul{
   margin: 0;
   padding: 0px;
 }
-.shop-by-cat ._box row .block_content ul li{
+.shop-by-cat ._box.row .block_content ul li{
   list-style: none;
 }
