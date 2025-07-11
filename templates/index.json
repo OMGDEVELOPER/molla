@@ -453,9 +453,7 @@
       "block_order": [
         "1612493432487-0"
       ],
-      "custom_css": [
-        "a.btn {border-radius: 4px; background: #127fb5; color: #fff; padding: 16px 24px;}"
-      ],
+      "custom_css": [],
       "settings": {
         "title": "Banner template 2",
         "off_mobile": false,
