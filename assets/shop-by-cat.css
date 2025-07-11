@@ -45,24 +45,24 @@ font-weight: 600;
 line-height: 32px;
   text-transform: uppercase;
 }
-.shop-by-cat ._box.row{
+.shop-by-cat ._box{
   min-height: 200px;
   background: #F6F6F6;
 }
-.shop-by-cat ._box.row .img_content{
+.shop-by-cat ._box .img_content{
   padding: 0px;
 }
-.shop-by-cat ._box.row .img_content img{
+.shop-by-cat ._box .img_content img{
   height: 100%;
 }
-.shop-by-cat ._box.row .block_content{
+.shop-by-cat ._box .block_content{
   padding: 16px;
 }
-.shop-by-cat ._box.row .block_content ul{
+.shop-by-cat ._box .block_content ul{
   margin: 0;
   padding: 0px;
 }
-.shop-by-cat ._box.row .block_content ul li{
+.shop-by-cat ._box .block_content ul li{
   list-style: none;
   color: #000;
 font-family: Karla;
