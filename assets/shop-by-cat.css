@@ -1,4 +1,7 @@
 /* .shop-by-cat */
+.shop-by-cat {
+  padding: 5rem 0px;
+}
 .shop-by-cat .icon__heading::before{
     content: "";
     height: 75px;
