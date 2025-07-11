@@ -55,6 +55,9 @@
     background: #009A1C;
     border-radius: 100%;
 }
+.featured-products .__row .item button{
+  margin-top: 0px;
+}
 .featured-products .__row .item ._price{
     color: #F00;
     font-family: Karla;
