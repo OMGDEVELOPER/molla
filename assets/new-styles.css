@@ -40,15 +40,18 @@ div[data-section-type="banner-section"] .banner-title {
     letter-spacing: normal;
 }
 ._new-btn{
-  border-radius: 4px;
-    background: #75E3FF;
+    border-radius: 4px;
+    background: #75e3ff;
     padding: 12px 20px;
     align-items: center;
-    color: #074D83;
+    color: #074d83;
     text-align: center;
     font-family: Karla;
     font-size: 1.3rem;
     font-style: normal;
     font-weight: 700;
     line-height: normal;
+    border: none;
+    text-transform: uppercase;
+    margin-top: 20px;
 }
