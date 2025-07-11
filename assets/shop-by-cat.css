@@ -35,6 +35,10 @@
  .shop-by-cat .icon__heading p {
   text-align: center;
  } 
+  .shop-by-cat .__heading{
+    margin-bottom: 20px;
+    line-height: normal;
+  }
 }
 .shop-by-cat .__heading {
   color: #000;
