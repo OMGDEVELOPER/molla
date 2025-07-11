@@ -58,6 +58,12 @@ line-height: 32px;
   min-height: 200px;
   background: #F6F6F6;
 }
+@media(max-width:768px){
+  .shop-by-cat ._box{
+    display: flex;
+    flex-wrap: wrap;
+}
+}
 .shop-by-cat ._box .img_content{
   padding: 0px;
 }
