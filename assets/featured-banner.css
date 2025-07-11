@@ -3,9 +3,9 @@
       background-image: url(https://cdn.shopify.com/s/files/1/0859/1186/3592/files/Frame_23_1.png?v=1752227533);
 }
 .featured-banner .container .row-1{
-  display: grid;
-  grid-template-columns: 50% 50%;
-  gap: 20px;
+    display: grid;
+    grid-template-columns: 35% auto;
+    gap: 20px;
 }
 .featured-banner .item.__item-1{
     background-image: url(/cdn/shop/files/Frame_21.png?v=1752227189);
