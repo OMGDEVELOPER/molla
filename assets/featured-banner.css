@@ -1,4 +1,8 @@
 /* .featured-banner */
+.featured-banner .__item-1 .__text p{
+  margin-top: 24px;
+    margin-bottom: 24px;
+}
 .featured-banner .__item-1 .__text{
       color: #050505;
     text-align: center;
