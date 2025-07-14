@@ -20,7 +20,7 @@
           <div class="_box d-flex">
             <div class="col-12 col-md-6 block_content">
               <ul>
-                {% for product in collection_obj.products limit: 4 %}
+                {% for product in collection_obj.products limit: 3 %}
                   <li>{{ product.title }}</li>
                 {% endfor %}
               </ul>
