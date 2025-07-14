@@ -17,9 +17,8 @@
     height: 900px;
     background-repeat: no-repeat;
 }
-.featured-banner .__group2 .__group2{
-      display: grid
-;
+.featured-banner .__group2 .__group2-row{
+    display: grid;
     grid-template-columns: 50% 50%;
     gap: 20px;
     margin: 20px 0px 20px 0px
