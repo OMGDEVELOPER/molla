@@ -570,7 +570,7 @@
                     </div>
                     <h2 class="entry-title"><a href="{{ article.url }}">{{ article.title }}</a></h2>
                     <div class="entry-content">
-                      <p>{%if article.excerpt != blank%}{{article.excerpt}}{%else%}{{article.content|strip_html|truncate:100}}{%endif%}</p><a href="{{ article.url }}" class="btn btn-link read-more omg1">{{'blogs.general.read_more_button'|t}}</a>
+                      <p>{%if article.excerpt != blank%}{{article.excerpt}}{%else%}{{article.content|strip_html|truncate:100}}{%endif%}</p><a href="{{ article.url }}" class="btn btn-link read-more 573">{{'blogs.general.read_more_button'|t}}</a>
                     </div>
                   </div>
                 </article>
@@ -709,7 +709,7 @@
           {%-if block.settings.use_short_desc-%}
             <p>{%if article.excerpt != blank%}{{article.excerpt}}{%else%}{{article.content|strip_html|truncate:100}}{%endif%}</p>
           {%-endif-%}
-            <a href="{{ article.url }}" class="btn btn-link read-more">{{'blogs.general.read_more_button'|t}}</a>
+            <a href="{{ article.url }}" class="btn btn-link read-more 712">{{'blogs.general.read_more_button'|t}}</a>
           </div>
         </div>
       </article>
