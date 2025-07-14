@@ -11,7 +11,7 @@
 
   <div class="__row">
     {% assign categories = section.settings.categories %}
-    {{ categories }}
+    {{ categories | json }}
     {% for collection in categories %}
       {% assign cat = collections %}
       {% if cat != blank %}
