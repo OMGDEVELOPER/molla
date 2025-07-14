@@ -149,7 +149,7 @@
                     <p>{%if article.excerpt != blank%}{{article.excerpt}}{%else%}{{article.content|strip_html|truncate:100}}{%endif%}</p>
                   {%-endif-%}
                     {% if section.settings.btn_label != blank %}
-                      <a href="{{ article.url }}" class="btn btn-link read-more">READ MORE</a>
+                      <a href="{{ article.url }}" class="btn btn-link read-more">{{ section.settings.btn_label }}</a>
                     {% else %}
                       <a href="{{ article.url }}" class="btn btn-link read-more">{{'blogs.general.read_more_button'|t}}</a>
                     {% endif %}
@@ -209,7 +209,11 @@
                         <a href="{{ article.url }}">{{ article.title }}</a>
                       </h2>
                       <div class="entry-content">
-                        <a href="{{ article.url }}" class="btn btn-link read-more">{{'blogs.general.read_more_button'|t}}</a>
+                        {% if section.settings.btn_label != blank %}
+                      <a href="{{ article.url }}" class="btn btn-link read-more">{{ section.settings.btn_label }}</a>
+                    {% else %}
+                      <a href="{{ article.url }}" class="btn btn-link read-more">{{'blogs.general.read_more_button'|t}}</a>
+                    {% endif %}
                       </div>
                     </div>
                   </article>
@@ -275,7 +279,11 @@
                       </h2>
                       <div class="entry-content">
                         <p>{%if article.excerpt != blank%}{{article.excerpt}}{%else%}{{article.content|strip_html|truncate:100}}{%endif%}</p>
-                        <a href="{{ article.url }}" class="btn btn-link read-more">{{'blogs.general.read_more_button'|t}}</a>
+                         {% if section.settings.btn_label != blank %}
+                      <a href="{{ article.url }}" class="btn btn-link read-more">{{ section.settings.btn_label }}</a>
+                    {% else %}
+                      <a href="{{ article.url }}" class="btn btn-link read-more">{{'blogs.general.read_more_button'|t}}</a>
+                    {% endif %}
                       </div>
                     </div>
                   </article>
@@ -346,7 +354,11 @@
                         </h2>
                         <div class="entry-content">                        
                           <p>{%if article.excerpt != blank%}{{article.excerpt}}{%else%}{{article.content|strip_html|truncate:100}}{%endif%}</p>
-                          <a href="{{ article.url }}" class="btn btn-link read-more">{{'blogs.general.read_more_button'|t}}</a>
+                          {% if section.settings.btn_label != blank %}
+                      <a href="{{ article.url }}" class="btn btn-link read-more">{{ section.settings.btn_label }}</a>
+                    {% else %}
+                      <a href="{{ article.url }}" class="btn btn-link read-more">{{'blogs.general.read_more_button'|t}}</a>
+                    {% endif %}
                         </div>
                       </div>
                     </article>
@@ -416,7 +428,11 @@
                           <a href="{{ article.url }}">{{ article.title }}</a>
                         </h2>
                         <div class="entry-content">
-                          <a href="{{ article.url }}" class="btn btn-link read-more">{{'blogs.general.read_more_button'|t}}</a>
+                          {% if section.settings.btn_label != blank %}
+                      <a href="{{ article.url }}" class="btn btn-link read-more">{{ section.settings.btn_label }}</a>
+                    {% else %}
+                      <a href="{{ article.url }}" class="btn btn-link read-more">{{'blogs.general.read_more_button'|t}}</a>
+                    {% endif %}
                         </div>
                       </div>
                     </article>
