@@ -2,7 +2,7 @@
 .featured-banner .container .__group1{
       background-image: url(https://cdn.shopify.com/s/files/1/0859/1186/3592/files/Frame_23_1.png?v=1752227533);
       /* background-image: url(/cdn/shop/files/Frame_23_1.png?v=1752227533); */
-    height: 440px;
+    height: 430px;
     width: 101%;
     background-size: cover;
     background-position: right;
@@ -21,13 +21,13 @@
     display: grid;
     grid-template-columns: 50% 50%;
     gap: 20px;
-    margin: 20px 0px 20px 0px
+    margin: 40px 0px 40px 0px
 }
 .featured-banner .__group2 .group__item-1{
      background-image: url(https://cdn.shopify.com/s/files/1/0859/1186/3592/files/Frame_24.png?v=1752458868);
     background-size: cover;
     background-position: right;
-    height: 440px;
+    height: 430px;
 }
 .featured-banner .__group2 .group__item-2{
      background-image: url(https://cdn.shopify.com/s/files/1/0859/1186/3592/files/Frame_26.png?v=1752459454);
