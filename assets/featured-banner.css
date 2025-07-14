@@ -1,17 +1,18 @@
 /* .featured-banner */
 .featured-banner .__item-1 .__text{
-    color: #050505;
+      color: #050505;
     text-align: center;
+    font-family: Karla;
     font-size: 24px;
     font-style: normal;
     font-weight: 500;
     line-height: 32px;
 }
-}
+
 .featured-banner .__item-1 .__heading h2{
       color: #D8222F;
     text-align: center;
-
+    font-family: Karla;
     font-size: 48px;
     font-style: normal;
     font-weight: 700;
