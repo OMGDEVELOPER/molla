@@ -13,7 +13,6 @@
     {% assign categories = section.settings.categories %}
     {% for collection in categories %}
       {% assign cat = collections %}
-      {{ cat |json }}
       {% if cat != blank %}
         <div class="item">
           <div class="icon__heading">
