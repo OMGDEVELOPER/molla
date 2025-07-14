@@ -128,5 +128,9 @@ letter-spacing: -0.96px;
      background-image: url(https://cdn.shopify.com/s/files/1/0859/1186/3592/files/Frame_26.png?v=1752459454);
     background-size: cover;
     background-position: right;
-    height: 440px;
+    height: 430px;
+        display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
