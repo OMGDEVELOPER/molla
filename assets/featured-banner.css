@@ -23,7 +23,7 @@
     line-height: 32px;
 }
 
-.featured-banner .__item-1 .__heading h2{
+.featured-banner .__item-1 .__heading .__title{
       color: #D8222F;
     text-align: center;
     font-family: Karla;
