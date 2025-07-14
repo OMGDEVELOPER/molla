@@ -27,8 +27,8 @@
               </ul>
             </div>
             <div class="col-12 col-md-6 img_content">
-              {% if cat.image != blank %}
-                <img src="{{ cat.image | image_url: width: 400 }}" alt="{{ cat.title }}">
+              {% if cat.featured_image != blank %}
+                <img src="{{ cat.featured_image | image_url: width: 400 }}" alt="{{ cat.title }}">
               {% endif %}
             </div>
           </div>
