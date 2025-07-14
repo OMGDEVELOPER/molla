@@ -1,5 +1,23 @@
 /* .featured-banner */
 /* .featured-banner .__item-2 .__row2  */
+.featured-banner .__item-2 .__row2 .__heading .__subtitle span{
+  color: #D8222F;
+font-family: Karla;
+font-size: 48px;
+font-style: normal;
+font-weight: 800;
+line-height: 52px;
+letter-spacing: -0.96px;
+}
+.featured-banner .__item-2 .__row2 .__heading .__subtitle{
+  color: #FFF;
+font-family: Karla;
+font-size: 48px;
+font-style: normal;
+font-weight: 800;
+line-height: 52px; /* 108.333% */
+letter-spacing: -0.96px;
+}
 .featured-banner .__item-2 .__row2 .__heading .__title{
       color: #FAFAFA;
     font-family: Karla;
