@@ -78,6 +78,9 @@ div[data-section-type="banner-section"] .banner-title {
     background: #127fb5;
   color: #FFF;
 }
+.bhs-primary-btn:hover{
+  background: ##127fb5;
+}
 .bhs-primary-btn{
   border-radius: 4px;
   background: #FAFAFA;
