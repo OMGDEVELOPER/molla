@@ -560,11 +560,12 @@
         "1566443943015"
       ],
       "custom_css": [
-        "h3 {color: #000; text-align: center; font-family: Karla; font-size: 36px; font-style: normal; font-weight: 700; line-height: 62px; /* 172.222% */}",
-        ".text-center .entry-meta {justify-content: start;}",
+        "h3 {color: #000; text-align: center; font-family: Karla; font-size: 36px; font-style: normal; font-weight: 700; line-height: 62px;}",
+        ".entry-meta {justify-content: start;}",
         ".text-center {text-align: left !important;}",
-        "p {color: #050505; font-family: Karla; font-size: 14px; font-style: normal; font-weight: 400; line-height: 20px;}",
-        "a.read-more {border-radius: 4px; background: #127fb5; color: #fafafa !important; font-family: Karla; font-size: 16px; font-style: normal; font-weight: 600; line-height: 24px; padding: 12px 24px;}"
+        "p {color: #050505; font-family: Karla; font-size: 14px; font-style: normal; font-weight: 400;}",
+        ".read-more {border-radius: 4px; background: #127fb5; color: #fafafa !important; font-family: Karla; font-size: 16px; font-weight: 600; line-height: 24px; padding: 12px 24px;}",
+        ".section-title{text-align: center !important;}"
       ],
       "settings": {
         "title": "Related post",
