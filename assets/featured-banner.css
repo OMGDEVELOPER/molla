@@ -1,5 +1,8 @@
 /* .featured-banner */
 /* .featured-banner .__item-2 .__row2  */
+.featured-banner .__item-2 .__row2 {
+  padding: 48px;
+}
 .featured-banner .__item-2 .__row2 .__heading ._subheading span{
   color: #D8222F;
 font-family: Karla;
