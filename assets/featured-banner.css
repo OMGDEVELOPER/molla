@@ -1,5 +1,13 @@
 /* .featured-banner */
 /* .featured-banner .__item-2 .__row2  */
+.featured-banner .__item-2 .__row2 .__group1 .__text{
+  color: #FFF;
+font-family: Karla;
+font-size: 24px;
+font-style: normal;
+font-weight: 400;
+line-height: 48px; /* 200% */
+}
 .featured-banner .__item-2 .__row2 .__group1{
   padding: 48px;
 }
