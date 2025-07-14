@@ -709,7 +709,11 @@
           {%-if block.settings.use_short_desc-%}
             <p>{%if article.excerpt != blank%}{{article.excerpt}}{%else%}{{article.content|strip_html|truncate:100}}{%endif%}</p>
           {%-endif-%}
-            <a href="{{ article.url }}" class="btn btn-link read-more 712">{{'blogs.general.read_more_button'|t}}</a>
+            {% if section.settings.btn_label != blank %}
+                      <a href="{{ article.url }}" class="btn btn-link read-more">{{ section.settings.btn_label }}</a>
+                    {% else %}
+                      <a href="{{ article.url }}" class="btn btn-link read-more">{{'blogs.general.read_more_button'|t}}</a>
+                    {% endif %}
           </div>
         </div>
       </article>
