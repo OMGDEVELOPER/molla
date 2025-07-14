@@ -1,5 +1,24 @@
 /* .featured-banner */
 /* .featured-banner .__item-2 .__row2  */
+.featured-banner .__item-2 .__row2 .__group2 .__group2-row .group__item-1 p{
+  color: #FFF;
+    text-align: center;
+    font-family: Karla;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 48px;
+}
+.featured-banner .__item-2 .__row2 .__group2 .__group2-row .group__item-1 h2{
+      color: #FAFAFA;
+    text-align: center;
+    font-family: Karla;
+    font-size: 48px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 56px;
+    letter-spacing: -1.92px;
+}
 .featured-banner .__item-2 .__row2 .__group1 .__text{
   color: #FFF;
 font-family: Karla;
