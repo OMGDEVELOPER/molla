@@ -542,12 +542,12 @@
           "settings": {
             "title_section": "BLOGS",
             "stitle_section": "",
-            "reverse": false,
+            "reverse": true,
             "title_align": "text-center",
             "margin_btitle": 3,
             "blog": "news",
             "limit": 8,
-            "use_short_desc": false,
+            "use_short_desc": true,
             "limit_per_row": 3,
             "load_btn": false,
             "style_btn": "btn-outline-darker",
@@ -562,7 +562,7 @@
       "custom_css": [
         "h3 {color: #000; text-align: center; font-family: Karla; font-size: 36px; font-style: normal; font-weight: 700; line-height: 62px; /* 172.222% */}",
         ".text-center .entry-meta {justify-content: start;}",
-        ".text-center{text-align: left !important;}"
+        ".text-center {text-align: left !important;}"
       ],
       "settings": {
         "title": "Related post",
