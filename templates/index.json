@@ -564,10 +564,11 @@
         ".text-center .entry-meta {justify-content: start;}",
         ".text-center {text-align: left !important;}",
         "p {color: #050505; font-family: Karla; font-size: 14px; font-style: normal; font-weight: 400; line-height: 20px;}",
-        "a.read-more {border-radius: 4px; background: #127fb5; color: #FAFAFA !important; font-family: Karla; font-size: 16px; font-style: normal; font-weight: 600; line-height: 24px; padding: 12px 24px;}"
+        "a.read-more {border-radius: 4px; background: #127fb5; color: #fafafa !important; font-family: Karla; font-size: 16px; font-style: normal; font-weight: 600; line-height: 24px; padding: 12px 24px;}"
       ],
       "settings": {
         "title": "Related post",
+        "btn_label": "READ MORE",
         "off_mobile": false,
         "off_desktop": false,
         "width_section": "w-100",
