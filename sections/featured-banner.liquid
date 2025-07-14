@@ -5,7 +5,7 @@
     <div class="row row-1">
 
       <!-- Left Column -->
-      <div class="item __item-1">
+      <div class="item __item-1" style="background-image: url({{ section.settings.bg_item1 | image_url }});">
         <div class="__heading">
           <h2>{{ section.settings.left_title }}</h2>
         </div>
@@ -29,7 +29,7 @@
           <div class="__item-2__group">
 
             <!-- Group 1 -->
-            <div class="__group1">
+            <div class="__group1" style="background-image: url({{ section.settings.bg_group1 | image_url }});">
               <div class="__heading">
                 <h2 class="__title">{{ section.settings.group1_title }}</h2>
                 <h2 class="_subheading">{{ section.settings.group1_subheading }}</h2>
@@ -50,7 +50,7 @@
             <div class="__group2">
               <div class="__group2-row">
                 <!-- Block 1 -->
-                <div class="group__item group__item-1">
+                <div class="group__item group__item-1" style="background-image: url({{ section.settings.bg_group2_1 | image_url }});">
                   <h2>{{ section.settings.group2_title_1 }}</h2>
                   <p>{{ section.settings.group2_text_1 }}</p>
                   {% if section.settings.group2_link_1 != blank %}
@@ -62,7 +62,7 @@
                   {% endif %}
                 </div>
                 <!-- Block 2 -->
-                <div class="group__item group__item-2">
+                <div class="group__item group__item-2" style="background-image: url({{ section.settings.bg_group2_2 | image_url }});">
                   <h2>{{ section.settings.group2_title_2 }}</h2>
                   <p>{{ section.settings.group2_text_2 }}</p>
                   {% if section.settings.group2_link_2 != blank %}
@@ -94,6 +94,11 @@
       "content": "Left Section (Be Our Partner)"
     },
     {
+      "type": "image_picker",
+      "id": "bg_item1",
+      "label": "Background Image - Left Banner"
+    },
+    {
       "type": "text",
       "id": "left_title",
       "label": "Left Title",
@@ -120,6 +125,11 @@
     {
       "type": "header",
       "content": "Group 1 (Retail Weekend Sale)"
+    },
+    {
+      "type": "image_picker",
+      "id": "bg_group1",
+      "label": "Background Image - Group 1"
     },
     {
       "type": "text",
@@ -156,6 +166,11 @@
       "content": "Group 2 (Two Product Callouts)"
     },
     {
+      "type": "image_picker",
+      "id": "bg_group2_1",
+      "label": "Background Image - Group 2 Item 1"
+    },
+    {
       "type": "text",
       "id": "group2_title_1",
       "label": "Group 2 Title 1",
@@ -177,6 +192,11 @@
       "type": "url",
       "id": "group2_link_1",
       "label": "Group 2 Link 1"
+    },
+    {
+      "type": "image_picker",
+      "id": "bg_group2_2",
+      "label": "Background Image - Group 2 Item 2"
     },
     {
       "type": "text",
