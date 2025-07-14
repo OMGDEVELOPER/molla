@@ -1,6 +1,6 @@
 /* .featured-banner */
 /* .featured-banner .__item-2 .__row2  */
-.featured-banner .__item-2 .__row2 .__group2 .__group2-row .group__item-1 p{
+.featured-banner .__item-2 .__row2 .__group2 .__group2-row .group__item p{
   color: #FFF;
     text-align: center;
     font-family: Karla;
@@ -9,7 +9,7 @@
     font-weight: 500;
     line-height: 48px;
 }
-.featured-banner .__item-2 .__row2 .__group2 .__group2-row .group__item-1 h2{
+.featured-banner .__item-2 .__row2 .__group2 .__group2-row .group__item h2{
       color: #FAFAFA;
     text-align: center;
     font-family: Karla;
