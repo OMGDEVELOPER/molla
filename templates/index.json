@@ -485,6 +485,22 @@
       "name": "Featured Banner",
       "settings": {}
     },
+    "featured_products_t8qqga": {
+      "type": "featured-products",
+      "name": "Featured Products",
+      "settings": {
+        "product_lists": [
+          "aluminium-slat-accessories",
+          "aluminium-slat",
+          "aluminium-post",
+          "aluminium-channel",
+          "aluminium-beam",
+          "aluminium-arch-beam",
+          "decking-accessories-pack",
+          "down-pipe-accessories"
+        ]
+      }
+    },
     "1566443930152": {
       "type": "md_blog",
       "blocks": {
@@ -646,6 +662,7 @@
     "1612493432487",
     "featured_products_73YWRz",
     "featured_banner_iHg4iT",
+    "featured_products_t8qqga",
     "1566443930152",
     "1612489579883",
     "1612489778594"
