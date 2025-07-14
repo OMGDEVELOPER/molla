@@ -75,6 +75,7 @@
 .shop-by-cat ._box {
   min-height: 200px;
   background: #F6F6F6;
+  max-height: 200px;
 }
 
 @media(max-width:768px) {
