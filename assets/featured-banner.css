@@ -1,4 +1,14 @@
 /* .featured-banner */
+/* .featured-banner .__item-2 .__row2  */
+.featured-banner .__item-2 .__row2 .__heading h2{
+      color: #FAFAFA;
+    font-family: Karla;
+    font-size: 64px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 72px;
+    letter-spacing: -2.56px;
+}
 .featured-banner .__item-1 .__text p{
   margin-top: 24px;
     margin-bottom: 24px;
