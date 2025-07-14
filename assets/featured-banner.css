@@ -1,6 +1,6 @@
 /* .featured-banner */
 /* .featured-banner .__item-2 .__row2  */
-.featured-banner .__item-2 .__row2 .__heading .__subtitle span{
+.featured-banner .__item-2 .__row2 .__heading ._subheading span{
   color: #D8222F;
 font-family: Karla;
 font-size: 48px;
@@ -9,7 +9,7 @@ font-weight: 800;
 line-height: 52px;
 letter-spacing: -0.96px;
 }
-.featured-banner .__item-2 .__row2 .__heading .__subtitle{
+.featured-banner .__item-2 .__row2 .__heading ._subheading{
   color: #FFF;
 font-family: Karla;
 font-size: 48px;
