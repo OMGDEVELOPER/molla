@@ -86,7 +86,7 @@ letter-spacing: -0.96px;
     letter-spacing: -0.96px;
 }
 .featured-banner .container .__group1{
-      background-image: url(https://cdn.shopify.com/s/files/1/0859/1186/3592/files/Frame_23_1.png?v=1752227533);
+      /* background-image: url(https://cdn.shopify.com/s/files/1/0859/1186/3592/files/Frame_23_1.png?v=1752227533); */
       /* background-image: url(/cdn/shop/files/Frame_23_1.png?v=1752227533); */
     height: 430px;
     width: 101%;
@@ -99,7 +99,7 @@ letter-spacing: -0.96px;
     gap: 20px;
 }
 .featured-banner .item.__item-1{
-    background-image: url(/cdn/shop/files/Frame_21.png?v=1752227189);
+    /* background-image: url(/cdn/shop/files/Frame_21.png?v=1752227189); */
     height: 900px;
     background-repeat: no-repeat;
       display: flex;
@@ -115,7 +115,7 @@ letter-spacing: -0.96px;
     margin: 40px 0px 40px 0px
 }
 .featured-banner .__group2 .group__item-1{
-     background-image: url(https://cdn.shopify.com/s/files/1/0859/1186/3592/files/Frame_24.png?v=1752458868);
+     /* background-image: url(https://cdn.shopify.com/s/files/1/0859/1186/3592/files/Frame_24.png?v=1752458868); */
     background-size: cover;
     background-position: right;
     height: 430px;
@@ -125,7 +125,7 @@ letter-spacing: -0.96px;
     align-items: center;
 }
 .featured-banner .__group2 .group__item-2{
-     background-image: url(https://cdn.shopify.com/s/files/1/0859/1186/3592/files/Frame_26.png?v=1752459454);
+     /* background-image: url(https://cdn.shopify.com/s/files/1/0859/1186/3592/files/Frame_26.png?v=1752459454); */
     background-size: cover;
     background-position: right;
     height: 430px;
