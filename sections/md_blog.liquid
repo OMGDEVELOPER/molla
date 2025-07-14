@@ -148,7 +148,11 @@
                   {%-if block.settings.use_short_desc-%}
                     <p>{%if article.excerpt != blank%}{{article.excerpt}}{%else%}{{article.content|strip_html|truncate:100}}{%endif%}</p>
                   {%-endif-%}
-                    <a href="{{ article.url }}" class="btn btn-link read-more">{{'blogs.general.read_more_button'|t}}</a>
+                    {% if section.settings.btn_label != blank %}
+                      <a href="{{ article.url }}" class="btn btn-link read-more">READ MORE</a>
+                    {% else %}
+                      <a href="{{ article.url }}" class="btn btn-link read-more">{{'blogs.general.read_more_button'|t}}</a>
+                    {% endif %}
                   </div>
                 </div>
               </article>
@@ -881,6 +885,11 @@
         "label": "Title",
         "default": "Related post",
         "info": "Name section (in editor bar)"
+      },
+      {
+        "type":"text",
+        "id": "btn_label",
+        "label":"Read more button label"
       },
       {
         "type":"checkbox",
