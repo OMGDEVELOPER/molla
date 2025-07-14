@@ -26,6 +26,11 @@
     background-image: url(/cdn/shop/files/Frame_21.png?v=1752227189);
     height: 900px;
     background-repeat: no-repeat;
+      display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    padding-top: 6.5rem;
 }
 .featured-banner .__group2 .__group2-row{
     display: grid;
