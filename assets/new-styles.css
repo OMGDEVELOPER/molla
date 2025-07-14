@@ -81,6 +81,7 @@ div[data-section-type="banner-section"] .banner-title {
 .bhs-primary-btn:hover{
   background: #127fb5;
   color: #FFF;
+  border: none;
 }
 .bhs-primary-btn{
   border-radius: 4px;
