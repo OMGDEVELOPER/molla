@@ -521,29 +521,10 @@
             "style_btn_rounded": "",
             "btn_shadow": false
           }
-        },
-        "1_HAPhkk": {
-          "type": "1",
-          "settings": {
-            "title_section": "Latest From Our Blog",
-            "stitle_section": "Get latest news from us!",
-            "reverse": false,
-            "title_align": "",
-            "margin_btitle": 3,
-            "blog": "news",
-            "limit": 8,
-            "use_short_desc": false,
-            "limit_per_row": 3,
-            "load_btn": false,
-            "style_btn": "btn-outline-darker",
-            "style_btn_rounded": "",
-            "btn_shadow": false
-          }
         }
       },
       "block_order": [
-        "1566443943015",
-        "1_HAPhkk"
+        "1566443943015"
       ],
       "settings": {
         "title": "Related post",
