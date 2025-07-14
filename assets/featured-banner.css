@@ -1,6 +1,6 @@
 /* .featured-banner */
 /* .featured-banner .__item-2 .__row2  */
-.featured-banner .__item-2 .__row2 .__heading h2{
+.featured-banner .__item-2 .__row2 .__heading .__title{
       color: #FAFAFA;
     font-family: Karla;
     font-size: 64px;
@@ -23,7 +23,7 @@
     line-height: 32px;
 }
 
-.featured-banner .__item-1 .__heading .__title{
+.featured-banner .__item-1 .__heading h2{
       color: #D8222F;
     text-align: center;
     font-family: Karla;
