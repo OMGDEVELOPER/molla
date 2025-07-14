@@ -11,11 +11,8 @@
 
   <div class="__row">
     {% assign categories = section.settings.categories %}
-    {{ categories | json }}
-    {% for collection in categories %}
-      {% assign cat = collections %}
-      {% if cat != blank %}
-        {% for collection_obj in cat %}
+    {% for collection_obj in categories %}
+      {% if collection_obj != blank %}
         <div class="item">
           <div class="icon__heading">
             <p class="col-12 col-md-8">{{ collection_obj.title }}</p>
@@ -35,7 +32,6 @@
             </div>
           </div>
         </div>
-        {% endfor %}
       {% endif %}
     {% endfor %}
   </div>
