@@ -14,25 +14,27 @@
     {% for collection in categories %}
       {% assign cat = collections %}
       {% if cat != blank %}
+        {% for collection_obj in cat %}
         <div class="item">
           <div class="icon__heading">
-            <p class="col-12 col-md-8">{{ cat.title }}</p>
+            <p class="col-12 col-md-8">{{ collection_obj.title }}</p>
           </div>
           <div class="_box d-flex">
             <div class="col-12 col-md-6 block_content">
               <ul>
-                {% for product in cat.products limit: 4 %}
+                {% for product in collection_obj.products limit: 4 %}
                   <li>{{ product.title }}</li>
                 {% endfor %}
               </ul>
             </div>
             <div class="col-12 col-md-6 img_content">
-              {% if cat.featured_image != blank %}
-                <img src="{{ cat.featured_image | image_url: width: 400 }}" alt="{{ cat.title }}">
+              {% if collection_obj.featured_image != blank %}
+                <img src="{{ collection_obj.featured_image | image_url: width: 400 }}" alt="{{ collection_obj.title }}">
               {% endif %}
             </div>
           </div>
         </div>
+        {% endfor %}
       {% endif %}
     {% endfor %}
   </div>
