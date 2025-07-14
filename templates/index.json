@@ -564,7 +564,7 @@
         ".text-center .entry-meta {justify-content: start;}",
         ".text-center {text-align: left !important;}",
         "p {color: #050505; font-family: Karla; font-size: 14px; font-style: normal; font-weight: 400; line-height: 20px; /* 142.857% */}",
-        "a.read-more {border-radius: 4px; background: #127fb5; color: #fafafa !important;}"
+        "a.read-more {border-radius: 4px; background: #127fb5; }"
       ],
       "settings": {
         "title": "Related post",
