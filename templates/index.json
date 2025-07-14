@@ -494,7 +494,25 @@
     "featured_banner_iHg4iT": {
       "type": "featured-banner",
       "name": "Featured Banner",
-      "settings": {}
+      "settings": {
+        "left_title": "Big Discounts",
+        "left_text": "If you become one of our retailers",
+        "left_button_label": "BE OUR PARTNER",
+        "left_button_link": "",
+        "group1_title": "Retail Weekend Sale!",
+        "group1_subheading": "GET UP TO <span>50% OFF</span>",
+        "group1_text": "Turn Your Home Goals Into Concrete Reality!",
+        "group1_button_label": "SHOP NOW",
+        "group1_button_link": "shopify://collections",
+        "group2_title_1": "New Roofing Accessories",
+        "group2_text_1": "Mega Collection",
+        "group2_button_1": "SHOW COLLECTIONS",
+        "group2_link_1": "shopify://collections",
+        "group2_title_2": "New Roofing Accessories",
+        "group2_text_2": "Mega Collection",
+        "group2_button_2": "SHOW COLLECTIONS",
+        "group2_link_2": "shopify://collections"
+      }
     },
     "featured_products_t8qqga": {
       "type": "featured-products",
