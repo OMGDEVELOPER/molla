@@ -507,8 +507,8 @@
         "1566443943015": {
           "type": "1",
           "settings": {
-            "title_section": "Latest Blog Posts",
-            "stitle_section": "Read Today’s News.",
+            "title_section": "BLOGS",
+            "stitle_section": "",
             "reverse": false,
             "title_align": "text-center",
             "margin_btitle": 3,
@@ -525,6 +525,9 @@
       },
       "block_order": [
         "1566443943015"
+      ],
+      "custom_css": [
+        "h3{color: #000;text-align: center;font-family: Karla;font-size: 36px;font-style: normal;font-weight: 700;line-height: 62px; /* 172.222% */}"
       ],
       "settings": {
         "title": "Related post",
