@@ -143,6 +143,7 @@
                   <h2 class="entry-title">
                     <a href="{{ article.url }}">{{ article.title }}</a>
                   </h2>
+                  {{ article.excerpt }}
                   <div class="entry-content">
                   {%-if block.settings.use_short_desc-%}
                     <p>{%if article.excerpt != blank%}{{article.excerpt}}{%else%}{{article.content|strip_html|truncate:100}}{%endif%}</p>
