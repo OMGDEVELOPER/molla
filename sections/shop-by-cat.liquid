@@ -1,128 +1,67 @@
-{{ "shop-by-cat.css" | asset_url | stylesheet_tag}}
+{{ "shop-by-cat.css" | asset_url | stylesheet_tag }}
 
 <section class="shop-by-cat category_section section-width container">
-    <h1 class="__heading">SHOP BY CATEGORIES</h1>
-    <div class="__row" >
+  {% if section.settings.title != blank %}
+    <h1 class="__heading">{{ section.settings.title }}</h1>
+  {% endif %}
+
+  {% if section.settings.description != blank %}
+    <div class="__description">{{ section.settings.description }}</div>
+  {% endif %}
+
+  <div class="__row">
+    {% assign categories = section.settings.categories %}
+    {% for collection in categories %}
+      {% assign cat = collections[collection] %}
+      {% if cat != blank %}
         <div class="item">
-            <div class="icon__heading">
-                <p class="col-12 col-md-8">Roofing</p>
+          <div class="icon__heading">
+            <p class="col-12 col-md-8">{{ cat.title }}</p>
+          </div>
+          <div class="_box d-flex">
+            <div class="col-12 col-md-6 block_content">
+              <ul>
+                {% for product in cat.products limit: 4 %}
+                  <li>{{ product.title }}</li>
+                {% endfor %}
+              </ul>
             </div>
-            <div class="_box d-flex">
-                    <div class="col-12 col-md-6 block_content">
-                        <ul>
-                            <li>Insulated EPS Roof</li>
-                            <li>Insulated EPS Roof</li>
-                            <li>Insulated EPS Roof</li>
-                            <li>Insulated EPS Roof</li>
-                        </ul>
-                    </div>
-                     <div class="col-12 col-md-6 img_content">
-                        <img src="https://cdn.shopify.com/s/files/1/0859/1186/3592/files/low-angle-modern-house-roof_1_2.png?v=1752196562" alt="">
-                     </div>
-                </div>
-        </div>
-        <div class="item">
-            <div class="icon__heading">
-                <p class="col-12 col-md-8">Roofing</p>
+            <div class="col-12 col-md-6 img_content">
+              {% if cat.image != blank %}
+                <img src="{{ cat.image | image_url: width: 400 }}" alt="{{ cat.title }}">
+              {% endif %}
             </div>
-            <div class="_box d-flex">
-                    <div class="col-12 col-md-6 block_content">
-                        <ul>
-                            <li>Insulated EPS Roof</li>
-                            <li>Insulated EPS Roof</li>
-                            <li>Insulated EPS Roof</li>
-                            <li>Insulated EPS Roof</li>
-                        </ul>
-                    </div>
-                     <div class="col-12 col-md-6 img_content">
-                        <img src="https://cdn.shopify.com/s/files/1/0859/1186/3592/files/low-angle-modern-house-roof_1_2.png?v=1752196562" alt="">
-                     </div>
-                </div>
+          </div>
         </div>
-        <div class="item">
-            <div class="icon__heading">
-                <p class="col-12 col-md-8">Roofing</p>
-            </div>
-            <div class="_box d-flex">
-                    <div class="col-12 col-md-6 block_content">
-                        <ul>
-                            <li>Insulated EPS Roof</li>
-                            <li>Insulated EPS Roof</li>
-                            <li>Insulated EPS Roof</li>
-                            <li>Insulated EPS Roof</li>
-                        </ul>
-                    </div>
-                     <div class="col-12 col-md-6 img_content">
-                        <img src="https://cdn.shopify.com/s/files/1/0859/1186/3592/files/low-angle-modern-house-roof_1_2.png?v=1752196562" alt="">
-                     </div>
-                </div>
-        </div>
-        <div class="item">
-            <div class="icon__heading">
-                <p class="col-12 col-md-8">Roofing</p>
-            </div>
-            <div class="_box d-flex">
-                    <div class="col-12 col-md-6 block_content">
-                        <ul>
-                            <li>Insulated EPS Roof</li>
-                            <li>Insulated EPS Roof</li>
-                            <li>Insulated EPS Roof</li>
-                            <li>Insulated EPS Roof</li>
-                        </ul>
-                    </div>
-                     <div class="col-12 col-md-6 img_content">
-                        <img src="https://cdn.shopify.com/s/files/1/0859/1186/3592/files/low-angle-modern-house-roof_1_2.png?v=1752196562" alt="">
-                     </div>
-                </div>
-        </div>
-        <div class="item">
-            <div class="icon__heading">
-                <p class="col-12 col-md-8">Roofing</p>
-            </div>
-            <div class="_box d-flex">
-                    <div class="col-12 col-md-6 block_content">
-                        <ul>
-                            <li>Insulated EPS Roof</li>
-                            <li>Insulated EPS Roof</li>
-                            <li>Insulated EPS Roof</li>
-                            <li>Insulated EPS Roof</li>
-                        </ul>
-                    </div>
-                     <div class="col-12 col-md-6 img_content">
-                        <img src="https://cdn.shopify.com/s/files/1/0859/1186/3592/files/low-angle-modern-house-roof_1_2.png?v=1752196562" alt="">
-                     </div>
-                </div>
-        </div>
-        <div class="item">
-            <div class="icon__heading">
-                <p class="col-12 col-md-8">Roofing</p>
-            </div>
-            <div class="_box d-flex">
-                    <div class="col-12 col-md-6 block_content">
-                        <ul>
-                            <li>Insulated EPS Roof</li>
-                            <li>Insulated EPS Roof</li>
-                            <li>Insulated EPS Roof</li>
-                            <li>Insulated EPS Roof</li>
-                        </ul>
-                    </div>
-                     <div class="col-12 col-md-6 img_content">
-                        <img src="https://cdn.shopify.com/s/files/1/0859/1186/3592/files/low-angle-modern-house-roof_1_2.png?v=1752196562" alt="">
-                     </div>
-                </div>
-        </div>
-    </div>
+      {% endif %}
+    {% endfor %}
+  </div>
 </section>
+
 {% schema %}
-  {
-    "name": "Shop By Categories",
-    "settings": [
-      
-    ],
-    "presets": [
-       {
-         "name": "Shop By Categories"
-       } 
-    ]
-  }
+{
+  "name": "Shop By Categories",
+  "settings": [
+    {
+      "type": "text",
+      "id": "title",
+      "label": "Title"
+    },
+    {
+      "type": "richtext",
+      "id": "description",
+      "label": "Description"
+    },
+    {
+      "type": "collection_list",
+      "id": "categories",
+      "label": "Select Categories"
+    }
+  ],
+  "presets": [
+    {
+      "name": "Shop By Categories"
+    }
+  ]
+}
 {% endschema %}
