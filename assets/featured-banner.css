@@ -1,5 +1,5 @@
 /* .featured-banner .__item-2 .__row2  */
-.add-to-cart-btn{
+button.add-to-cart-btn{
       border-radius: 4px;
     background: #127FB5;
     color: #FAFAFA;
@@ -8,6 +8,7 @@
     font-style: normal;
     font-weight: 600;
     line-height: normal;
+      padding: 10px 24px;
 }
 @media (max-width:768px){
   .featured-banner .container .row-1{
