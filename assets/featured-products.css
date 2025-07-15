@@ -51,7 +51,7 @@
 .featured-products .item {
   position: relative;
   padding: 10px;
-      border-bottom:none !important;
+  border:none !important;
 }
 
 /* Image */
