@@ -45,10 +45,10 @@ padding: 48px;
 .featured-banner .__item-2 .__row2 .__heading ._subheading span{
   color: #D8222F;
 font-family: Karla;
-font-size: 48px;
+font-size: clamp(35px, 5vw, 48px);
 font-style: normal;
 font-weight: 800;
-line-height: 52px;
+/* line-height: 52px; */
 letter-spacing: -0.96px;
 }
 .featured-banner .__item-2 .__row2 .__heading ._subheading{
