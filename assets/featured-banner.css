@@ -112,6 +112,7 @@ letter-spacing: -0.96px;
     align-items: center;
     justify-content: flex-start;
     padding-top: 6.5rem;
+  background-size: cover;
 }
 .featured-banner .__group2 .__group2-row{
     display: grid;
