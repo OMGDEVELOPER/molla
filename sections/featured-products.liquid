@@ -1,56 +1,63 @@
 {{ "featured-products.css" | asset_url | stylesheet_tag }}
 
-<section class="featured-products section-width container">
-  <h1 class="__heading">FEATURED PRODUCTS</h1>
+<section class="featured-products container py-5">
+  <h1 class="__heading text-center mb-4" style="font-size: clamp(1.5rem, 4vw, 2.25rem);">FEATURED PRODUCTS</h1>
 
-  <div class="__row">
+  <div class="row g-4">
     {% for product in section.settings.product_lists %}
       {% assign product_obj = product %}
       {% if product_obj %}
-        <div class="item" data-product-id="{{ product_obj.id }}">
-          <a href="{{ product_obj.url }}" class="grid-item">
-            <img 
-              src="{{ product_obj.featured_image | image_url: width: 400 }}" 
-              alt="{{ product_obj.title }}" 
-            />
-            <h2>{{ product_obj.title }}</h2>
-            <div class="_description">
-              {{ product_obj.description | strip_html | truncate: 200 }}
-            </div>
-          </a>
+        <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+          <div class="item card h-100" data-product-id="{{ product_obj.id }}">
+            <a href="{{ product_obj.url }}" class="grid-item text-decoration-none text-dark">
+              <img 
+                src="{{ product_obj.featured_image | image_url: width: 400 }}" 
+                alt="{{ product_obj.title }}" 
+                class="card-img-top img-fluid"
+              />
+              <div class="card-body">
+                <h2 class="card-title h5" style="font-size: clamp(1rem, 2.5vw, 1.25rem);">{{ product_obj.title }}</h2>
+                <div class="card-text _description small text-muted">
+                  {{ product_obj.description | strip_html | truncate: 200 }}
+                </div>
+              </div>
+            </a>
 
-          <p class="_price" data-price>{{ product_obj.price | money }}</p>
+            <div class="card-footer bg-white border-top-0">
+              <p class="_price fw-bold mb-2" data-price>{{ product_obj.price | money }}</p>
 
-          <div class="_status">
-            {% if product_obj.available %}
-              <span class="_stock in-stock"></span>
-              <span class="_status_text">In Stock</span>
-            {% else %}
-              <span class="_stock out-of-stock" style="background: #F00;"></span>
-              <span class="_status_text">Sold Out</span>
-            {% endif %}
-          </div>
+              <div class="_status d-flex align-items-center mb-2">
+                {% if product_obj.available %}
+                  <span class="_stock in-stock bg-success rounded-circle me-2" style="width:10px; height:10px;"></span>
+                  <span class="_status_text text-success small">In Stock</span>
+                {% else %}
+                  <span class="_stock out-of-stock bg-danger rounded-circle me-2" style="width:10px; height:10px;"></span>
+                  <span class="_status_text text-danger small">Sold Out</span>
+                {% endif %}
+              </div>
 
-          {% if product_obj.available %}
-            <form method="post" action="/cart/add" class="grid-item">
-              {% if product_obj.variants.size > 1 %}
-                <select name="id" class="variant-select" data-product="{{ product_obj.id }}">
-                  {% for variant in product_obj.variants %}
-                    <option 
-                      value="{{ variant.id }}" 
-                      data-price="{{ variant.price | money }}"
-                      {% unless variant.available %}disabled{% endunless %}
-                    >
-                      {{ variant.title }}{% unless variant.available %} - Sold Out{% endunless %}
-                    </option>
-                  {% endfor %}
-                </select>
-              {% else %}
-                <input type="hidden" name="id" value="{{ product_obj.variants.first.id }}">
+              {% if product_obj.available %}
+                <form method="post" action="/cart/add">
+                  {% if product_obj.variants.size > 1 %}
+                    <select name="id" class="form-select form-select-sm mb-2 variant-select" data-product="{{ product_obj.id }}">
+                      {% for variant in product_obj.variants %}
+                        <option 
+                          value="{{ variant.id }}" 
+                          data-price="{{ variant.price | money }}"
+                          {% unless variant.available %}disabled{% endunless %}
+                        >
+                          {{ variant.title }}{% unless variant.available %} - Sold Out{% endunless %}
+                        </option>
+                      {% endfor %}
+                    </select>
+                  {% else %}
+                    <input type="hidden" name="id" value="{{ product_obj.variants.first.id }}">
+                  {% endif %}
+                  <button type="submit" class="btn btn-primary btn-sm w-100">Add to Cart</button>
+                </form>
               {% endif %}
-              <button type="submit">Add to Cart</button>
-            </form>
-          {% endif %}
+            </div>
+          </div>
         </div>
       {% endif %}
     {% endfor %}
@@ -60,7 +67,6 @@
 <script>
   document.addEventListener('DOMContentLoaded', function () {
     const selects = document.querySelectorAll('.variant-select');
-
     selects.forEach(select => {
       select.addEventListener('change', function () {
         const selectedOption = this.options[this.selectedIndex];
