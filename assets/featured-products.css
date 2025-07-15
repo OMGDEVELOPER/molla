@@ -31,7 +31,7 @@ background: #127FB5;
 }
 .featured-products .__row .grid-item{
   display: grid;
-  justify-items: center;
+  justify-items: left;
 }
 @media(max-width:1024px) and (min-width:768px){
     .featured-products .__row {
