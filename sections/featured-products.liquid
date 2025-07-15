@@ -2,13 +2,17 @@
 
 <section class="featured-products section-width container">
   <h1 class="__heading">FEATURED PRODUCTS</h1>
+
   <div class="__row">
     {% for product in section.settings.product_lists %}
       {% assign product_obj = product %}
       {% if product_obj %}
         <div class="item" data-product-id="{{ product_obj.id }}">
           <a href="{{ product_obj.url }}" class="grid-item">
-            <img src="{{ product_obj.featured_image | image_url: width: 400 }}" alt="{{ product_obj.title }}" />
+            <img 
+              src="{{ product_obj.featured_image | image_url: width: 400 }}" 
+              alt="{{ product_obj.title }}" 
+            />
             <h2>{{ product_obj.title }}</h2>
             <div class="_description">
               {{ product_obj.description | strip_html | truncate: 200 }}
@@ -22,7 +26,7 @@
               <span class="_stock in-stock"></span>
               <span class="_status_text">In Stock</span>
             {% else %}
-              <span class="_stock out-of-stock"></span>
+              <span class="_stock out-of-stock" style="background: #F00;"></span>
               <span class="_status_text">Sold Out</span>
             {% endif %}
           </div>
@@ -30,7 +34,7 @@
           {% if product_obj.available %}
             <form method="post" action="/cart/add" class="grid-item">
               {% if product_obj.variants.size > 1 %}
-                <select name="id" class="form-select mb-2 variant-select" data-product="{{ product_obj.id }}">
+                <select name="id" class="variant-select" data-product="{{ product_obj.id }}">
                   {% for variant in product_obj.variants %}
                     <option 
                       value="{{ variant.id }}" 
@@ -44,7 +48,7 @@
               {% else %}
                 <input type="hidden" name="id" value="{{ product_obj.variants.first.id }}">
               {% endif %}
-              <button type="submit" class="btn btn-primary mt-2">Add to Cart</button>
+              <button type="submit">Add to Cart</button>
             </form>
           {% endif %}
         </div>
