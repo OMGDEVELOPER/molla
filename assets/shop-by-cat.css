@@ -92,6 +92,7 @@
   }
   .shop-by-cat ._box .img_content img{
     height: 250px !important;
+    max-height: 250px !important;
     object-fit: cover;
     object-position: center;
   }
