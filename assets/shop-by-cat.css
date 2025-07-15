@@ -87,7 +87,7 @@
 }
 
 @media(max-width:768px) {
-  .shop-by-cat ._box {
+  .shop-by-cat ._box.flex-wrap {
     /* display: flex;
     flex-wrap: wrap; */
   }
