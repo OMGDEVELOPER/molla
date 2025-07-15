@@ -15,7 +15,6 @@ background: #127FB5;
 .featured-products .__row {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
-  gap: 40px;
 }
 .featured-products .__heading {
   color: #000;
