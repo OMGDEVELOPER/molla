@@ -29,6 +29,10 @@ background: #127FB5;
   /* 172.222% */
   margin-bottom: 50px;
 }
+.featured-products .__row .grid-item{
+  display: grid;
+  justify-items: center;
+}
 @media(max-width:1024px) and (min-width:768px){
     .featured-products .__row {
        grid-template-columns: repeat(3, 1fr);
