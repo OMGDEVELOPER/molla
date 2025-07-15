@@ -14,7 +14,8 @@ background: #127FB5;
 
 .featured-products .__row {
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
+  /* grid-template-columns: repeat(4, 1fr); */
+  grid-template-columns: auto auto auto auto;
   gap: 30px;
 }
 .featured-products .__heading {
