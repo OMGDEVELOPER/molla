@@ -4,7 +4,7 @@
 }
 @media(max-width:1024px) and (min-width:768px){
   .shop-by-cat .__row {
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(2, 1fr) !important;
   }
 }
 .shop-by-cat .__row {
