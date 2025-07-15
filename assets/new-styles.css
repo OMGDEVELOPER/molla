@@ -102,3 +102,12 @@ div[data-section-type="banner-section"] .banner-title {
   font-weight: 500;
   line-height: 24px; /* 150% */
 }
+.build-big{
+  color: #FAFAFA;
+    text-align: center;
+    font-size: clamp(24px,5vw,34px);
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: -2.56px;
+}
