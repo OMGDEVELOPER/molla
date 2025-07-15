@@ -515,7 +515,6 @@
           },
           "1566378228269": {
             "type": "top_menu",
-            "disabled": true,
             "settings": {
               "call_us_show": true,
               "email_show": false,
