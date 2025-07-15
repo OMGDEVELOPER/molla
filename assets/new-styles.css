@@ -112,6 +112,7 @@ div[data-section-type="banner-section"] .banner-title {
     letter-spacing: -2.56px;
 }
 ._loyalty-text{
+  margin-top: 10px;
   font-size:clamp(1rem,5vw,1.2rem);
   color:#FFF;    
   color: #FFF;
