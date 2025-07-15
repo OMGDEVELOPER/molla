@@ -67,7 +67,7 @@ letter-spacing: -0.96px;
     font-size: clamp(32px, 5vw, 64px);
     font-style: normal;
     font-weight: 600;
-    line-height: 72px;
+    /* line-height: 72px; */
     letter-spacing: -2.56px;
 }
 .featured-banner .__item-1 .__text p{
@@ -81,7 +81,7 @@ letter-spacing: -0.96px;
     font-size: clamp(14px, 5vw, 24px);
     font-style: normal;
     font-weight: 500;
-    line-height: 32px;
+    /* line-height: 32px; */
 }
 
 .featured-banner .__item-1 .__heading h2{
