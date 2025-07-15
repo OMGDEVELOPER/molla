@@ -3,6 +3,10 @@
     font-size: clamp(35px,5vw,64px) !important;
     line-height: normal !important;
   }
+  div[data-section-type="banner-section"] .imgs__banner_template9 .text-content {
+    right: 0%;
+    transform: translate(0%, -50%);
+  }
 }
 div[data-section-type="banner-section"] .imgs__banner_template9 .text-content {
   z-index: 1;
