@@ -33,3 +33,18 @@
     <li class="menu-item"><a href="#">Structural Product</a></li>
   </ul>
 </div>
+document.addEventListener('DOMContentLoaded', function () {
+  const menuItems = document.querySelectorAll('.menu-item');
+
+  menuItems.forEach(item => {
+    item.addEventListener('mouseenter', () => {
+      const submenu = item.querySelector('.submenu');
+      if (submenu) submenu.style.display = 'block';
+    });
+
+    item.addEventListener('mouseleave', () => {
+      const submenu = item.querySelector('.submenu');
+      if (submenu) submenu.style.display = 'none';
+    });
+  });
+});
