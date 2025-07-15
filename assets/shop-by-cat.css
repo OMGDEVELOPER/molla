@@ -90,6 +90,9 @@
   .shop-by-cat ._box.sm-grid {
     display: grid !Important;
   }
+  .shop-by-cat ._box .img_content img{
+    height: 300px;
+  }
 }
 
 .shop-by-cat ._box .img_content {
