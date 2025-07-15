@@ -44,6 +44,8 @@ background: #127FB5;
 .featured-products .item img{
   min-height: 300px;
   max-height: 300px;
+  max-width: 100%;
+  overflow: hidden;
 }
 .featured-products .__row .item ._description{
     color: #000;
