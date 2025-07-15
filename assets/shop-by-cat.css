@@ -87,9 +87,8 @@
 }
 
 @media(max-width:768px) {
-  .shop-by-cat ._box.flex-wrap {
-    /* display: flex;
-    flex-wrap: wrap; */
+  .shop-by-cat ._box.sm-grid {
+    display: grid !Important;
   }
 }
 
