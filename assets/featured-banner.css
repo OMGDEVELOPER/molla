@@ -135,6 +135,11 @@ letter-spacing: -0.96px;
     padding-top: 6.5rem;
   background-size: cover;
 }
+@media (max-width:768px){
+  .featured-banner .item.__item-1{
+    background-position: center; 
+  }
+}
 .featured-banner .__group2 .__group2-row{
     display: grid;
     grid-template-columns:auto auto;
