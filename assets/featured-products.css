@@ -1,14 +1,14 @@
-/* ========== BASE ========== */
+/* ===== Featured Products Section ===== */
 .featured-products {
   overflow-x: hidden;
   padding: 0 0 96px 0px;
 }
 
-/* ========== HEADING ========== */
+/* ===== Heading ===== */
 .featured-products .__heading {
   color: #000;
   text-align: center;
-  font-family: Karla;
+  font-family: Karla, sans-serif;
   font-size: 36px;
   font-style: normal;
   font-weight: 700;
@@ -16,7 +16,7 @@
   margin-bottom: 50px;
 }
 
-/* ========== GRID SYSTEM ========== */
+/* ===== Responsive Grid Fix (if using your old layout) ===== */
 .featured-products .__row {
   display: grid;
   grid-template-columns: auto auto auto auto;
@@ -47,12 +47,13 @@
   }
 }
 
-/* ========== PRODUCT ITEM ========== */
+/* ===== Product Item ===== */
 .featured-products .item {
   position: relative;
   padding: 10px;
 }
 
+/* Image */
 .featured-products .item img {
   min-height: 300px;
   max-height: 300px;
@@ -60,8 +61,8 @@
   overflow: hidden;
 }
 
-/* ========== TITLE (CARD-TITLE) ========== */
-.featured-products .card-title {
+/* ===== Product Title (Card Title) ===== */
+.featured-products h2.card-title {
   color: #000;
   font-family: Karla, sans-serif;
   font-size: clamp(2rem, 2vw, 2rem);
@@ -78,12 +79,12 @@
   transition: color 0.3s ease;
 }
 
-.featured-products .card-title:hover {
+.featured-products h2.card-title:hover {
   color: #127FB5;
 }
 
-/* ========== DESCRIPTION ========== */
-.featured-products .__row .item ._description {
+/* ===== Description ===== */
+.featured-products ._description {
   color: #000;
   font-size: clamp(14px, 2vw, 14px);
   font-style: normal;
@@ -91,10 +92,10 @@
   line-height: 22px;
 }
 
-/* ========== PRICE ========== */
-.featured-products .__row .item ._price {
+/* ===== Price ===== */
+.featured-products ._price {
   color: #F00;
-  font-family: Karla;
+  font-family: Karla, sans-serif;
   font-size: clamp(2rem, 2vw, 2rem);
   font-style: normal;
   font-weight: 700;
@@ -103,15 +104,15 @@
   margin-bottom: 10px;
 }
 
-/* ========== STATUS ========== */
-.featured-products .__row .item ._status {
+/* ===== Stock Status ===== */
+.featured-products ._status {
   display: flex;
   align-items: center;
   gap: 10px;
   margin-bottom: 12px;
 }
 
-.featured-products .__row .item ._stock {
+.featured-products ._stock {
   width: 12px;
   height: 12px;
   display: block;
@@ -119,23 +120,29 @@
   border-radius: 100%;
 }
 
-/* ========== VARIANT SELECT ========== */
-.featured-products .__row .item select {
+/* ===== Variant Select ===== */
+.featured-products select.variant-select,
+.featured-products select.form-select {
   padding: 6px;
   border-radius: 3px;
 }
 
-/* ========== BUTTON STYLES ========== */
+/* ===== Buttons ===== */
 .featured-products button {
   border-radius: 4px;
   background: #127FB5;
+  color: #fff;
+  border: none;
+  padding: 8px 16px;
+  transition: all 0.3s ease;
 }
 
 .featured-products button:hover {
-  background: #FFF;
+  background: #fff;
+  color: #000;
   border: 1px solid #000;
 }
 
-.featured-products .__row .item button {
-  margin-top: 0px;
+.featured-products .item button {
+  margin-top: 0;
 }
