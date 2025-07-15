@@ -93,6 +93,10 @@
   .shop-by-cat ._box .img_content img{
     height: 250px !important;
   }
+  .shop-by-cat .item{
+    min-height: 400px;
+    margin-bottom: 5rem;
+  }
 }
 
 .shop-by-cat ._box .img_content {
