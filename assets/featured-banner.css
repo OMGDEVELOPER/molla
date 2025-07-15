@@ -27,6 +27,8 @@
     line-height: 56px;
     letter-spacing: -1.92px;
 }
+@media (max-width:768px){
+  
 .featured-banner .__item-2 .__row2 .__group1::before{
     content: '';
     position: absolute;
@@ -35,6 +37,7 @@
     height: 100%;
     background: rgba(0, 0, 0, 0.3); /* black overlay at 50% opacity */
     z-index: -1;
+}
 }
 .featured-banner .__item-2 .__row2 .__group1 .__text{
   color: #FFF;
