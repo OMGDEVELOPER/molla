@@ -523,14 +523,14 @@
       "name": "Featured Products",
       "settings": {
         "product_lists": [
-          "aluminium-slat-accessories",
-          "aluminium-slat",
-          "aluminium-post",
-          "aluminium-channel",
-          "aluminium-beam",
+          "twin-wall-roof-sheets",
+          "wpc-decking",
+          "aluminium-angle",
           "aluminium-arch-beam",
-          "decking-accessories-pack",
-          "down-pipe-accessories"
+          "aluminium-beam",
+          "aluminium-channel",
+          "aluminium-post",
+          "aluminium-slat"
         ]
       }
     },
