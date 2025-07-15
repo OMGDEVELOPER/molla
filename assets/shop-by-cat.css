@@ -92,12 +92,9 @@
   }
 }
 @media(max-width:768px) {
-  .shop-by-cat ._box.sm-grid {
-   
-  }
   .shop-by-cat ._box .img_content img{
-    height: 250px !important;
-    max-height: 250px !important;
+    /* height: 250px !important;
+    max-height: 250px !important; */
     object-fit: cover;
     object-position: center;
   }
