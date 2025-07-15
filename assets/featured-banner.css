@@ -134,6 +134,7 @@ letter-spacing: -0.96px;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+  padding: 10px;
 }
 .featured-banner .__group2 .group__item-2{
      /* background-image: url(https://cdn.shopify.com/s/files/1/0859/1186/3592/files/Frame_26.png?v=1752459454); */
