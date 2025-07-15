@@ -4,6 +4,9 @@
   .featured-banner .container .row-1{
     grid-template-columns: auto !important;
   }
+  .featured-banner .__group2 .__group2-row{
+    grid-template-columns:auto !important;
+  }
 }
 .featured-banner .__item-2 .__row2 .__group2 .__group2-row .group__item p{
   color: #FFF;
