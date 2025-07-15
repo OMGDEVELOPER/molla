@@ -1,15 +1,5 @@
 /* .featured-banner .__item-2 .__row2  */
-button.add-to-cart-btn{
-      border-radius: 4px;
-    background: #127FB5;
-    color: #FAFAFA;
-    font-family: Karla;
-    font-size: clamp(11px,5vw,16px);
-    font-style: normal;
-    font-weight: 600;
-    line-height: normal;
-      padding: 10px 24px;
-}
+
 @media (max-width:768px){
   .featured-banner .container .row-1{
     grid-template-columns: auto !important;
