@@ -1,4 +1,7 @@
 /* .featured-products */
+.featured-products{
+  overflow-x: hidden;
+}
 .featured-products button {
   border-radius: 4px;
 background: #127FB5;
