@@ -55,10 +55,7 @@ assign pr_color_light = pr_color_light[2] | remove: '%' | plus: 0
         {%- when '13' -%}
           {%- render 'header-13' -%}
         {%- when '01 style-14' -%}
-        {% comment %}
           {%- render 'header-14' -%}
-        {% endcomment %}
-          {%- render 'main-header' -%}
         {%- when '01 style-15' -%}
           {%- render 'header-15' -%}
         {%- when '16' -%}
@@ -72,7 +69,6 @@ assign pr_color_light = pr_color_light[2] | remove: '%' | plus: 0
         {%- when '20' -%}
           {%- render 'header-20' -%}
       {%- endcase -%}
-   {%- render 'main-header' -%}
     </div>
   </div>
 </header>
