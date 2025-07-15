@@ -7,26 +7,7 @@
     <ul>
       <li>
         <img  width="168" height="48" src="https://cdn.shopify.com/s/files/1/0859/1186/3592/files/search.svg?v=1752560359" alt="search" >
-             <div class="block-search d-none d-md-block">
-              <form class="box-search show-input-line" action="/search" method="get" autocomplete="off">
-                <div class="inner">
-                  <div style="position: relative;">
-                    <div class="control d-flex flex-nowrap align-items-center">
-                      <input type="hidden" name="options[unavailable_products]" value="show">
-                      <input type="hidden" name="type" value="product,page,article,collection">
-                      <input type="text" name="q" value="" class="search" placeholder="Search in..." required="">
-                      <input type="hidden" name="options[prefix]" value="last">
-                      <button type="submit" class="button-search btn" aria-label="Search in...">
-                        <svg class="molla-svg-icon" viewBox="0 0 32 32">
-                          <use xlink:href="#icon-search"></use>
-                        </svg>
-                      </button>
-                    </div>
-                    <div class="li--s-drop"><ul class="li--s list-unstyled kt_scroll row mb-0"></ul></div>
-                  </div>
-                </div>
-              </form>
-            </div>
+        {% render 'search-form' %}
       </li>
     </ul>
   </div>
