@@ -502,7 +502,7 @@
         "left_button_link": "shopify://collections",
         "bg_group1": "shopify://shop_images/Frame_23_1.png",
         "group1_title": "Retail Weekend Sale!",
-        "group1_subheading": "GET UP TO 50% OFF",
+        "group1_subheading": "GET UP TO <span>50% OFF</span>",
         "group1_text": "Turn Your Home Goals Into Concrete Reality!",
         "group1_button_label": "SHOP NOW",
         "group1_button_link": "shopify://collections",
