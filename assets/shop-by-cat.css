@@ -69,7 +69,9 @@
 .shop-by-cat .icon__heading p {
   margin: 0;
   color: #fff;
-  padding: 10px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left:20%;
   color: #FAFAFA;
   font-size: clamp(14px, 2.5vw, 18px);
   font-style: normal;
