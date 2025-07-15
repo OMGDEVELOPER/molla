@@ -126,6 +126,7 @@
 .featured-products select.form-select {
   padding: 6px;
   border-radius: 3px;
+  font-size: clamp(1.2rem,5vw,1rem);
 }
 
 /* ===== Buttons ===== */
