@@ -15,6 +15,7 @@ background: #127FB5;
 .featured-products .__row {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
+  gap: 30px;
 }
 .featured-products .__heading {
   color: #000;
@@ -39,7 +40,6 @@ background: #127FB5;
 
 .featured-products .item {
   position: relative;
-      padding: 22px;
 }
 .featured-products .item img{
   min-height: 300px;
