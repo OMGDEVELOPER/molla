@@ -105,6 +105,8 @@ letter-spacing: -0.96px;
     display: grid;
     grid-template-columns: 35% auto;
     gap: 20px;
+    padding-left: 10px;
+    padding-right: 10px;
 }
 .featured-banner .item.__item-1{
     /* background-image: url(/cdn/shop/files/Frame_21.png?v=1752227189); */
