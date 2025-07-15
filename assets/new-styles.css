@@ -4,8 +4,8 @@
     line-height: normal !important;
   }
   div[data-section-type="banner-section"] .imgs__banner_template9 .text-content {
-    right: 0%;
-    transform: translate(0%, -50%);
+    right: 0% !important;
+    transform: translate(0%, -50%) !important;
   }
 }
 div[data-section-type="banner-section"] .imgs__banner_template9 .text-content {
