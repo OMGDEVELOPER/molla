@@ -7,7 +7,7 @@
       {% assign product_obj = product %}
       {% if product_obj %}
         <div class="item" data-product-id="{{ product_obj.id }}">
-          <a href="{{ product_obj.url }}">
+          <a href="{{ product_obj.url }}" class="grid-item">
             <img src="{{ product_obj.featured_image | image_url: width: 400 }}" alt="{{ product_obj.title }}" />
             <h2>{{ product_obj.title }}</h2>
             <div class="_description">
@@ -28,7 +28,7 @@
           </div>
 
           {% if product_obj.available %}
-            <form method="post" action="/cart/add">
+            <form method="post" action="/cart/add" class="grid-item">
               {% if product_obj.variants.size > 1 %}
                 <select name="id" class="form-select mb-2 variant-select" data-product="{{ product_obj.id }}">
                   {% for variant in product_obj.variants %}
