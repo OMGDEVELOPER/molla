@@ -41,33 +41,41 @@
     <div class="top-header-el__widgets">
       <ul>
         <li>
-          <a href="#">
+          <a href="#" id="search-from-toggle">
             <img  width="168" height="48" src="https://cdn.shopify.com/s/files/1/0859/1186/3592/files/search.svg?v=1752560359" alt="search" >
-            <span class="search-label">Search</span>
+            <span class="label">Search</span>
           </a>
-          <div style="display:none;">
+          <div style="display:none;" id="search-form-container">
           {% render 'search-form' %}
           </div>
         </li>
          <li>
           <a href="#">
             <img  width="168" height="48" src="https://cdn.shopify.com/s/files/1/0859/1186/3592/files/favorite.svg?v=1752582075" alt="search" >
-            <span class="search-label">Wish List</span>
+            <span class="label">Wish List</span>
           </a>
          </li>
          <li>
           <a href="#">
             <img  width="168" height="48" src="https://cdn.shopify.com/s/files/1/0859/1186/3592/files/shopping_cart.svg?v=1752582144" alt="search" >
-            <span class="search-label">Cart</span>
+            <span class="label">Cart</span>
           </a>
          </li>
          <li>
           <a href="#">
             <img  width="168" height="48" src="https://cdn.shopify.com/s/files/1/0859/1186/3592/files/account_circle.svg?v=1752582145" alt="search" >
-            <span class="search-label">Login</span>
+            <span class="label">Login</span>
           </a>
          </li>
       </ul>
     </div>
   </div>
 </div>
+{% javascript %}
+  let searchFormElement = document.getElementById("search-from-toggle");
+  let searchFormContainer = document.getElementById("search-form-container");
+  searchFormElement.addEventListener('click',function(){
+    searchFormContainer.style.display = "unset";
+  })
+  
+{% endjavascript %}
