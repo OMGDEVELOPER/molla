@@ -1,4 +1,22 @@
-<div class="header-bottom d-none d-lg-block">
+{% style %}
+  .nav-menu ul {
+    padding:0px;
+    margin:0px;
+  }
+  .nav-menu ul li{
+    list-style:none;
+  }
+  .nav-menu ul li a{
+    color: #FAFAFA;
+    font-family: Karla;
+    font-size: clamp(12px, 5vw, 16px);
+    font-style: normal;
+    font-weight: 500;
+    line-height: 24px; /* 150% */
+    text-transform: uppercase;
+  }
+{% endstyle %}
+<div class="header-bottom d-none d-lg-block nav-menu">
   <div class="container">
     <div class="main-header header-menu horizon-menu">
       <nav class="main-navigation" data-width="992">
