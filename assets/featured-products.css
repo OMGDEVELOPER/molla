@@ -1,26 +1,10 @@
-/* .featured-products */
-.featured-products{
-  overflow-x: hidden;
-}
-.featured-products button {
-  border-radius: 4px;
-background: #127FB5;
-}
-.featured-products button:hover{
-  background: #FFF;
-  border: 1px solid #000;
-  
-}
+/* ========== BASE ========== */
 .featured-products {
+  overflow-x: hidden;
   padding: 0 0 96px 0px;
 }
 
-.featured-products .__row {
-  display: grid;
-  /* grid-template-columns: repeat(4, 1fr); */
-  grid-template-columns: auto auto auto auto;
-  gap: 30px;
-}
+/* ========== HEADING ========== */
 .featured-products .__heading {
   color: #000;
   text-align: center;
@@ -29,83 +13,129 @@ background: #127FB5;
   font-style: normal;
   font-weight: 700;
   line-height: 62px;
-  /* 172.222% */
   margin-bottom: 50px;
 }
-.featured-products .__row .grid-item{
+
+/* ========== GRID SYSTEM ========== */
+.featured-products .__row {
+  display: grid;
+  grid-template-columns: auto auto auto auto;
+  gap: 30px;
+}
+
+.featured-products .__row .grid-item {
   display: grid;
   justify-items: left;
 }
-@media(max-width:1024px) and (min-width:768px){
-    .featured-products .__row {
-       grid-template-columns: repeat(3, 1fr);
-       gap: 10px;
-    }
-}
-@media(max-width:768px) {
+
+@media (max-width: 1024px) and (min-width: 768px) {
   .featured-products .__row {
-    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+  }
+}
+
+@media (max-width: 768px) {
+  .featured-products .__row {
     grid-template-columns: repeat(1, 1fr);
     gap: 30px;
     padding: 25px;
   }
-  .featured-products .__row .grid-item{
+
+  .featured-products .__row .grid-item {
     justify-items: center;
   }
 }
 
+/* ========== PRODUCT ITEM ========== */
 .featured-products .item {
   position: relative;
   padding: 10px;
 }
-.featured-products .item img{
+
+.featured-products .item img {
   min-height: 300px;
   max-height: 300px;
   max-width: 100%;
   overflow: hidden;
 }
-.featured-products .__row .item ._description{
-    color: #000;
-    font-size: clamp(14px, 2vw,14px);
-    font-style: normal;
-    font-weight: 400;
-    line-height: 22px;
-}
-.featured-products .__row .item ._status{
-    display: flex;
-    align-items: center;
-    gap: 10px;
-  margin-bottom: 12px;
-}
-.featured-products .__row .item ._stock{
-    width: 12px;
-    height: 12px;
-    display: block;
-    background: #009A1C;
-    border-radius: 100%;
-}
-.featured-products .__row .item select{
-      padding: 6px;
-    border-radius: 3px;
-}
-.featured-products .__row .item button{
-  margin-top: 0px;
-}
-.featured-products .__row .item ._price{
-    color: #F00;
-    font-family: Karla;
-    font-size: clamp(2rem, 2vw, 2rem);
-    font-style: normal;
-    font-weight: 700;
-    line-height: 24px;
-  margin-top: 10px;
-  margin-bottom: 10px;
-}
-.featured-products .__row .item h2{
+
+/* ========== TITLE (CARD-TITLE) ========== */
+.featured-products .card-title h2 {
   color: #000;
-  font-family: Karla;
+  font-family: Karla, sans-serif;
   font-size: clamp(2rem, 2vw, 2rem);
   font-style: normal;
   font-weight: 600;
-  line-height: 24px; /* 120% */
+  line-height: 24px;
+  margin: 12px 0;
+  max-height: 3.5em;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  transition: color 0.3s ease;
+}
+
+.featured-products .card-title:hover h2 {
+  color: #127FB5;
+}
+
+/* ========== DESCRIPTION ========== */
+.featured-products .__row .item ._description {
+  color: #000;
+  font-size: clamp(14px, 2vw, 14px);
+  font-style: normal;
+  font-weight: 400;
+  line-height: 22px;
+}
+
+/* ========== PRICE ========== */
+.featured-products .__row .item ._price {
+  color: #F00;
+  font-family: Karla;
+  font-size: clamp(2rem, 2vw, 2rem);
+  font-style: normal;
+  font-weight: 700;
+  line-height: 24px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+/* ========== STATUS ========== */
+.featured-products .__row .item ._status {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 12px;
+}
+
+.featured-products .__row .item ._stock {
+  width: 12px;
+  height: 12px;
+  display: block;
+  background: #009A1C;
+  border-radius: 100%;
+}
+
+/* ========== VARIANT SELECT ========== */
+.featured-products .__row .item select {
+  padding: 6px;
+  border-radius: 3px;
+}
+
+/* ========== BUTTON STYLES ========== */
+.featured-products button {
+  border-radius: 4px;
+  background: #127FB5;
+}
+
+.featured-products button:hover {
+  background: #FFF;
+  border: 1px solid #000;
+}
+
+.featured-products .__row .item button {
+  margin-top: 0px;
 }
