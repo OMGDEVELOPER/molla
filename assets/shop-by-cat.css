@@ -88,8 +88,8 @@
 
 @media(max-width:768px) {
   .shop-by-cat ._box {
-    display: flex;
-    flex-wrap: wrap;
+    /* display: flex;
+    flex-wrap: wrap; */
   }
 }
 
