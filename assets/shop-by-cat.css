@@ -86,9 +86,14 @@
   max-height: 200px;
 }
 
-@media(max-width:768px) {
+@media(max-width:767px) {
   .shop-by-cat ._box.sm-grid {
     display: unset !Important;
+  }
+}
+@media(max-width:768px) {
+  .shop-by-cat ._box.sm-grid {
+   
   }
   .shop-by-cat ._box .img_content img{
     height: 250px !important;
