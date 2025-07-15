@@ -1,6 +1,6 @@
 @media (max-width:768px){
   .sl-anime.slideshow__subtitle{
-    font-size: clamp(45px,5vw,64px) !important;
+    font-size: clamp(35px,5vw,64px) !important;
     line-height: normal;
   }
 }
