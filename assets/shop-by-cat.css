@@ -2,7 +2,11 @@
 .shop-by-cat {
   padding:96px 0px;
 }
-
+@media(max-width:1024px) and (min-width:768px){
+  .shop-by-cat .__row {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
 .shop-by-cat .__row {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
