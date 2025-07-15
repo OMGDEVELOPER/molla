@@ -111,3 +111,11 @@ div[data-section-type="banner-section"] .banner-title {
     line-height: normal;
     letter-spacing: -2.56px;
 }
+._loyalty-text{
+  font-size:clamp(1rem,5vw,1.2rem);
+  color:#FFF;    
+  color: #FFF;
+  text-align: center;
+  font-style: normal;
+  font-weight: 400;
+}
