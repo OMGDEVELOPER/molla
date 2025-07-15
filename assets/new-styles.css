@@ -1,3 +1,9 @@
+@media (max-width:768px){
+  .sl-anime.slideshow__subtitle{
+    font-size: clamp(45px,5vw,64px) !important;
+    line-height: normal;
+  }
+}
 div[data-section-type="banner-section"] .imgs__banner_template9 .text-content {
   z-index: 1;
   top: 50%;
