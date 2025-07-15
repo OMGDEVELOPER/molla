@@ -53,6 +53,7 @@ padding: 48px;
     justify-content: center;
     align-items: flex-start;
   position: relative;
+   z-index: 1;
 }
 .featured-banner .__item-2 .__row2 .__heading ._subheading span{
   color: #D8222F;
