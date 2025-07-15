@@ -61,17 +61,14 @@
           <a href="#">
             <img  width="168" height="48" src="https://cdn.shopify.com/s/files/1/0859/1186/3592/files/shopping_cart.svg?v=1752582144" alt="search" >
             <span class="label">Cart</span>
-            <div class="mini-cart style-01 {{load_class}} {{drop_class}}" {{onclick}}>
-  <a href="{{routes.cart_url}}" class="icon-link text-nowrap">
+            <div class="mini-cart style-01 load " onclick="KT.drawOpen()">
+  <a href="/cart" class="icon-link text-nowrap">
     <div class="icon-count kt-button">
-      {%-render 'icon-cart', pos: 'header'-%}
-      <span class="count cartCount">{{ cart.item_count }}</span>
+<svg class="molla-svg-icon" viewBox="0 0 32 32"><use xlink:href="#icon-cart"></use></svg><span class="count cartCount">1</span>
     </div>
-    <span class="total title cartCost" data-price="{{ cart.total_price }}">{{ cart.total_price | default: 0 | money }}</span>
-    <span>{{'cart.general.title'|t}}</span>
-  </a>
-{%-if settings.type_ajax_cart == 'drop'-%}{{contentDrop}}{%-endif-%}
-</div>
+    <span class="total title cartCost" data-price="9979">$99.79</span>
+    <span>Cart</span>
+  </a></div>
           </a>
          </li>
          <li>
