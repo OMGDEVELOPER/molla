@@ -53,6 +53,7 @@ background: #127FB5;
 
 .featured-products .item {
   position: relative;
+  padding: 10px;
 }
 .featured-products .item img{
   min-height: 300px;
