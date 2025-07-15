@@ -61,7 +61,7 @@
 }
 
 /* ========== TITLE (CARD-TITLE) ========== */
-.featured-products .card-title h2 {
+.featured-products .card-title {
   color: #000;
   font-family: Karla, sans-serif;
   font-size: clamp(2rem, 2vw, 2rem);
@@ -78,7 +78,7 @@
   transition: color 0.3s ease;
 }
 
-.featured-products .card-title:hover h2 {
+.featured-products .card-title:hover {
   color: #127FB5;
 }
 
