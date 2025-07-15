@@ -46,6 +46,9 @@ background: #127FB5;
     gap: 30px;
     padding: 25px;
   }
+  .featured-products .__row .grid-item{
+    justify-items: center;
+  }
 }
 
 .featured-products .item {
