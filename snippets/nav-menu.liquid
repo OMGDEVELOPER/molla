@@ -10,15 +10,15 @@
     justify-content: center;
     align-items: center;
   }
-  .nav-menu ul li:hover a{
-    color:#127fb5;
+  .nav-menu ul li:hover a {
+    color: #127fb5;
   }
-  .nav-menu ul li{
-    list-style:none;
-    position:relative;
+  .nav-menu ul li {
+    list-style: none;
+    position: relative;
   }
-  .nav-menu ul li a{
-    color: #FAFAFA;
+  .nav-menu ul li a {
+    color: #fafafa;
     font-family: Karla;
     font-size: clamp(12px, 5vw, 16px);
     font-style: normal;
@@ -26,40 +26,39 @@
     line-height: 24px; /* 150% */
     text-transform: uppercase;
   }
-  .nav-menu ul li.has-sub{
-    
+  .nav-menu ul li.has-sub {
   }
-  .nav-menu ul li.has-sub{
+  .nav-menu ul li.has-sub {
     display: flex;
     gap: 8px;
   }
   .nav-menu ul li.has-sub::after {
     transition: transform 0.3s ease;
   }
-  .nav-menu ul li.has-sub.active::after{
-    transform:rotate(180deg);
+  .nav-menu ul li.has-sub.active::after {
+    transform: rotate(180deg);
   }
-  .nav-menu ul li.has-sub::after{
-    content:"";
-    width:25px;
-    height:22px;
-    display:block;
-    background-image:url(https://cdn.shopify.com/s/files/1/0859/1186/3592/files/keyboard_arrow_down.svg?v=1752584493);
+  .nav-menu ul li.has-sub::after {
+    content: '';
+    width: 25px;
+    height: 22px;
+    display: block;
+    background-image: url(https://cdn.shopify.com/s/files/1/0859/1186/3592/files/keyboard_arrow_down.svg?v=1752584493);
   }
 {% endstyle %}
 <div class="header-bottom d-lg-block nav-menu">
   <div class="container">
     <div class="main-header header-menu horizon-menu">
       <nav class="main-navigation">
-       <ul class="menu-items-main">
-         <li><a href="#">Home</a></li>
-         <li><a href="#">About Us</a></li>
-         <li class="has-sub" child-menu-id="submenu-3"><a href="#">Our Products</a></li>
-         <li><a href="#">Inspiration</a></li>
-         <li><a href="#">Blog</a></li>
-         <li><a href="#">FAQ’s</a></li>
-         <li><a href="#">Contact Us</a></li>
-       </ul>
+        <ul class="menu-items-main">
+          <li><a href="#">Home</a></li>
+          <li><a href="#">About Us</a></li>
+          <li class="has-sub" child-menu-id="submenu-3"><a href="#">Our Products</a></li>
+          <li><a href="#">Inspiration</a></li>
+          <li><a href="#">Blog</a></li>
+          <li><a href="#">FAQ’s</a></li>
+          <li><a href="#">Contact Us</a></li>
+        </ul>
       </nav>
     </div>
   </div>
@@ -67,29 +66,6 @@
 {% javascript %}
   function LoadMenuJs() {
     let menuItems = document.querySelectorAll('.header-group .menu-items-main li');
-
-    menuItems.forEach(item => {
-      if (item.classList.contains('has-sub') && !item.hasAttribute('data-bound')) {
-        let menuClass = item.getAttribute('child-menu-id');
-        let mainHeader = item.closest('.header-group');
-        let submenuElement = mainHeader?.querySelector('.' + menuClass);
-
-        if (menuClass && submenuElement) {
-          item.addEventListener('click', function () {
-            console.log('clicked (regular)');
-            submenuElement.classList.toggle('active');
-            item.classList.toggle('active');
-          });
-
-          item.setAttribute('data-bound', 'true'); // mark as bound
-        }
-      }
-    });
-  }
-
-  function LoadStickyMenuJs() {
-    let bound = false;
-    let menuItems = document.querySelectorAll('.cloned .header-group .menu-items-main li');
 
     menuItems.forEach((item) => {
       if (item.classList.contains('has-sub') && !item.hasAttribute('data-bound')) {
@@ -99,34 +75,58 @@
 
         if (menuClass && submenuElement) {
           item.addEventListener('click', function () {
-            console.log('clicked (sticky)');
+            console.log('clicked');
+            submenuElement.classList.toggle('active');
+            item.classList.toggle('active');
+          });
+
+          item.setAttribute('data-bound', 'true'); // mark as bound
+        }
+      }
+    });
+  }
+  let stickyAdded = false;
+
+  function LoadStickyMenuJs() {
+    const menuItems = document.querySelectorAll('.cloned .header-group .menu-items-main li');
+
+    if (!menuItems.length) return; // exit early if none found
+
+    let boundAny = false;
+
+    menuItems.forEach((item) => {
+      if (item.classList.contains('has-sub') && !item.hasAttribute('data-bound')) {
+        const menuClass = item.getAttribute('child-menu-id');
+        const mainHeader = item.closest('.header-group');
+        const submenuElement = mainHeader?.querySelector('.' + menuClass);
+
+        if (menuClass && submenuElement) {
+          item.addEventListener('click', function () {
+            console.log('clicked sticky item');
             submenuElement.classList.toggle('active');
             item.classList.toggle('active');
           });
 
           item.setAttribute('data-bound', 'true');
-          bound = true; // flag that we successfully bound at least one item
+          boundAny = true; // flag that we successfully bound one
         }
       }
     });
 
-    return bound;
+    if (boundAny) {
+      stickyAdded = true;
+    }
   }
 
-  // Initial run for the regular header
+  // Initial normal header setup
   LoadMenuJs();
 
-  // Repeated check for sticky header
+  // Sticky check using interval until bound
   const stickyInterval = setInterval(() => {
-    const success = LoadStickyMenuJs();
-    if (success) {
+    LoadStickyMenuJs();
+    if (stickyAdded) {
       clearInterval(stickyInterval);
       console.log('Sticky menu initialized and interval cleared.');
     }
-  }, 500); // you can adjust timing (e.g., 1000ms)
+  }, 500);
 {% endjavascript %}
-
-
-
-
-
