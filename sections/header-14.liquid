@@ -63,8 +63,10 @@
       {%- render 'header-14' -%}
       {% endcomment %}
       {%- render 'main-header', cart:cart -%}
-      {%- render 'nav-menu' -%}
-      
+      <div class="header-group">
+        {%- render 'nav-menu' -%}
+        {%- render 'submenu' -%}
+      </div>
     </div>
   </div>
 </header>
