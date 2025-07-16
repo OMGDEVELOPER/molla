@@ -60,7 +60,7 @@
       </div>
       {%- endif -%}
       {%-case block.type -%}
-      {%-when 'custom-design' -%}
+      {%-when 'custom-design' block: block -%}
         {% render 'custom-footer' %}
       {%-when 'design_1' -%}
       <div class="cta cta-horizontal cta-horizontal-box design_1" data-type-block="design_1">
