@@ -8,6 +8,8 @@
   background: #1C1B1F;
 }
 .submenu .row .item .submenu__heading h3{
+  padding-top: 20px;
+  padding-left: 20px;
   color: #FAFAFA;
   font-family: Karla;
   font-size: clamp(14px, 5vw, 18px);
@@ -16,7 +18,7 @@
 }
 .submenu .row .item .submenu__items{}
 .submenu .row .item .submenu__items{
-  padding: 0px;
+  padding-left: 20px;
   margin: 0px;
 }
 .submenu .row .item .submenu__items li{
