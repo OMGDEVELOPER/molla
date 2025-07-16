@@ -64,29 +64,54 @@
     </div>
   </div>
 </div>
-{% javascript %} 
-  function LoadMenuJs(){
-    let menuItems = document.querySelectorAll('.header-group .menu-items-main li');
-    console.log('Loading Menu JS...');
-    console.log(menuItems)
-    menuItems.forEach(item => {
-      if (item.classList.contains('has-sub')) {
-        let menuClass = item.getAttribute('child-menu-id');
-        let mainHeader = item.closest('.header-group');
-        console.log(mainHeader)
-      }
+{% javascript %}
+  function LoadMenuJs() {
+    let headers = document.querySelectorAll('.header-group');
+    
+    headers.forEach(mainHeader => {
+      // Prevent duplicate bindings
+      if (mainHeader.classList.contains('menu-loaded')) return;
+
+      let menuItems = mainHeader.querySelectorAll('.menu-items-main li');
+
+      menuItems.forEach(item => {
+        if (item.classList.contains('has-sub')) {
+          let menuClass = item.getAttribute('child-menu-id');
+          let submenuElement = mainHeader.querySelector('.' + menuClass);
+
+          if (menuClass && submenuElement) {
+            item.addEventListener('click', function () {
+              submenuElement.classList.toggle('active');
+              item.classList.toggle('active');
+            });
+          }
+        }
+      });
+
+      mainHeader.classList.add('menu-loaded'); // mark as processed
     });
   }
 
-  let hasLoadedMenu = false;
+  // Initial load
   LoadMenuJs();
-  window.addEventListener('scroll', function () {
-    if (!hasLoadedMenu) {
-      LoadMenuJs();
-      hasLoadedMenu = true;
-    }
+
+  // Watch for header clones
+  const observer = new MutationObserver(mutations => {
+    mutations.forEach(mutation => {
+      mutation.addedNodes.forEach(node => {
+        if (node.nodeType === 1 && node.classList.contains('header-group')) {
+          LoadMenuJs(); // Re-apply menu logic to new header
+        }
+      });
+    });
+  });
+
+  observer.observe(document.body, {
+    childList: true,
+    subtree: true
   });
 {% endjavascript %}
+
 
 
 
