@@ -23,6 +23,7 @@
 }
 .submenu .row .item .submenu__items li{
   list-style: none;
+  padding: 6px 0px;
 }
 .submenu .row .item .submenu__items li a{
   color: #FAFAFA;
