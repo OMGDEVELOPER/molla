@@ -6,9 +6,10 @@
   padding: 0px;
 }
 .submenu .row .item.item__1 .item__1__group{
-  display: grid;
+   display: grid;
   gap:40px;
 }
+.submenu .row .item.item__1{
   background: #1C1B1F;
 }
 .submenu .row .item.item__2{
