@@ -50,6 +50,10 @@
 .submenu .row .item .submenu__items.links-with-icon li::after{
    background:none;
 }
+.submenu .row .item .submenu__items.links-with-icon li a{
+  display: flex;
+  gap:10px;
+}
 .submenu .row .item .submenu__items li::after{
     content: "";
     width: 25px;
