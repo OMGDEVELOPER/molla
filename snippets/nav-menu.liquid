@@ -89,8 +89,8 @@
   let ActiveClass = false;
   let ElementClonedDetected = false
   function LoadStickyMenuJs() {
-     if (document.querySelectorAll('.cloned .header-group .menu-items-main li')) {
-       ElementClonedDetected = true;
+     if (document.querySelectorAll('#header-ontop.cloned')) {
+      ElementClonedDetected = true;
       let menuItems = document.querySelectorAll('.cloned .header-group .menu-items-main li');
        menuItems.forEach((item) => {
           if (item.classList.contains('has-sub')) {
