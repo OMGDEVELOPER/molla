@@ -71,20 +71,25 @@
 
     const menuItems = header.querySelectorAll('.menu-items-main li');
 
-    menuItems.forEach(item => {
-      if (item.classList.contains('has-sub')) {
-        const menuClass = item.getAttribute('child-menu-id');
-        const submenuElement = header.querySelector('.' + menuClass);
-        console.log(submenuElement)
+ menuItems.forEach(item => {
+  if (item.classList.contains('has-sub')) {
+    const menuClass = item.getAttribute('child-menu-id');
 
-        if (menuClass && submenuElement) {
-          item.addEventListener('click', function () {
-            submenuElement.classList.toggle('active');
-            item.classList.toggle('active');
-          });
-        }
-      }
-    });
+    // Prefer submenu near the item; fallback to within the same header
+    const submenuElement = item.querySelector('.' + menuClass)
+      || item.closest('.header-group')?.querySelector('.' + menuClass);
+
+    console.log('Target submenu for:', item, submenuElement);
+
+    if (menuClass && submenuElement) {
+      item.addEventListener('click', function () {
+        submenuElement.classList.toggle('active');
+        item.classList.toggle('active');
+      });
+    }
+  }
+});
+
 
     header.classList.add('menu-loaded'); // Mark as processed
   }
