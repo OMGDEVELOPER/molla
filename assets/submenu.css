@@ -23,6 +23,13 @@
   padding-left: 0px;
   margin: 0px;
 }
+.submenu .row .item .submenu__items li::after{
+    content: "";
+    width: 25px;
+    height: 25px;
+    display: block;
+    background-image: url(https://cdn.shopify.com/s/files/1/0859/1186/3592/files/arrow_forward_ios.svg?v=1752658595);
+}
 .submenu .row .item .submenu__items li{
   list-style: none;
   padding-left: 20px;
