@@ -62,7 +62,7 @@
   justify-content: space-between;
   align-items: center;
 }
-.submenu .row .item.item__2 .submenu__items li:hover{
+.submenu .row .item.item__2 .submenu__items li:hover a{
   color:#FFF;
 }
 .submenu .row .item .submenu__items li:hover{
