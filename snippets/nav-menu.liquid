@@ -72,6 +72,7 @@
       if (item.classList.contains('has-sub')) {
         let menuId = item.getAttribute('child-menu-id');
         let submenuElement = document.getElementById(menuId);
+        item.classList.toggle('active');
 
         if (menuId && submenuElement) {
           item.addEventListener('click', function () {
