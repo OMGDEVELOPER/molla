@@ -64,18 +64,15 @@
     </div>
   </div>
 </div>
-{% javascript %}  
-    setTimeout(()=>{
-      let menuItems = document.querySelectorAll('.header-group .menu-items-main li');
+{% javascript %} 
+  function LoadMenuJs(){
+    let menuItems = document.querySelectorAll('.header-group .menu-items-main li');
     console.log(menuItems)
     menuItems.forEach(item => {
       if (item.classList.contains('has-sub')) {
         let menuClass = item.getAttribute('child-menu-id');
         let mainHeader = document.querySelector('.header-group')
         let submenuElement = mainHeader.querySelector('.submenu')
-        console.log(item)
-        // console.log(submenuElement)
-        // console.log(mainHeader)
         if (menuClass && submenuElement) {
           item.addEventListener('click', function () {
             console.log('clicked')
@@ -85,8 +82,8 @@
         }
       }
     });
-    },3000)
-    
+  }
+  LoadMenuJs();
 {% endjavascript %}
 
 
