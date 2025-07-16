@@ -92,7 +92,10 @@
       let menuItems = document.querySelectorAll('.cloned .header-group .menu-items-main li');
        menuItems.forEach((item) => {
          if (item.classList.contains('has-sub')) {
-            console.log(item)
+            let menuClass = item.getAttribute('child-menu-id');
+            let mainHeader = menuItems.closest('.header-group');
+           console.log(menuItems)
+            let submenuElement = mainHeader?.querySelector('.' + menuClass);
          }
        })
      }
