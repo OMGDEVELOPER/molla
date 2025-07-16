@@ -1,5 +1,9 @@
 /*  submenu styles */
-.submenu{}
+submenu{
+  position: absolute;
+  z-index: 1;
+  width: 100%;
+}
 .submenu .row {}
 .submenu .row .item{
   color: #FFF;
