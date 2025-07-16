@@ -70,7 +70,7 @@
     menuItems.forEach(item => {
       if (item.classList.contains('has-sub')) {
         let menuClass = item.getAttribute('child-menu-id');
-        let submenuElement = item.closest('.nav-menu')
+        let submenuElement = item.closest('.'  + menuClass)
         console.log(item)
         console.log(submenuElement)
 
