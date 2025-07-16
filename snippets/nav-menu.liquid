@@ -86,11 +86,11 @@
     });
   }
   let stickyAdded = false;
-  let ActiveClass = false;
+  let ActiveClass = 0;
   let ElementClonedDetected = false
   function LoadStickyMenuJs() {
      if (document.querySelectorAll('#header-ontop.cloned')) {
-      ElementClonedDetected = true;
+      ElementClonedDetected = 1;
       let menuItems = document.querySelectorAll('.cloned .header-group .menu-items-main li');
        menuItems.forEach((item) => {
           if (item.classList.contains('has-sub')) {
@@ -116,7 +116,7 @@
   LoadMenuJs();
 
 const stickyInterval = setInterval(() => {
-  if (ElementClonedDetected == true) {
+  if (ElementClonedDetected == 1) {
     clearInterval(stickyInterval);
     console.log('Sticky menu initialized and interval cleared.');
   }else{
