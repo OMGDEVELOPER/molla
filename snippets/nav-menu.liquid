@@ -109,9 +109,9 @@
 
   observer.observe(document.body, {
     childList: true,      // Detect added or removed elements
-    subtree: true,        // Watch entire DOM tree
-    attributes: true,     // Detect attribute changes
-    characterData: true   // Detect text/content changes
+    // subtree: true,        // Watch entire DOM tree
+    // attributes: true,     // Detect attribute changes
+    // characterData: true   // Detect text/content changes
   });
 
   return observer; // return the observer in case you want to disconnect later
