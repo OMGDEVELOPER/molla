@@ -86,7 +86,6 @@
     });
   }
   let stickyAdded = false;
-  let ActiveClass = false;
   let ElementClonedDetected = 0
   function LoadStickyMenuJs() {
      if (document.querySelectorAll('#header-ontop.cloned')) {
@@ -117,7 +116,7 @@
 
 const stickyInterval = setInterval(() => {
   console.log(ElementClonedDetected)
-  if (ElementClonedDetected == true) {
+  if (ElementClonedDetected == 1) {
     clearInterval(stickyInterval);
     console.log('Sticky menu initialized and interval cleared.');
   }else{
