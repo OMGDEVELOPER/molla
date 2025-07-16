@@ -19,7 +19,7 @@
     "logo_max_width": 180,
     "body_logo_mobile_svg": "",
     "logo_mobile": "",
-    "import_header": "custom",
+    "import_header": "custom-header",
     "use_header_mobile_logo_center": false,
     "use_header_mobile_search_box": false,
     "import_footer": "02",
@@ -492,7 +492,6 @@
           },
           "1566378197076": {
             "type": "top_menu",
-            "disabled": true,
             "settings": {
               "call_us_show": false,
               "email_show": false,
@@ -515,7 +514,6 @@
           },
           "1566378228269": {
             "type": "top_menu",
-            "disabled": true,
             "settings": {
               "call_us_show": true,
               "email_show": false,
@@ -1804,6 +1802,90 @@
           "list_categories_open": false,
           "list_categories_2": "",
           "list_categories_2_open": true
+        }
+      },
+      "custom-header": {
+        "type": "custom-header",
+        "blocks": {
+          "linklist_tQEb4B": {
+            "type": "linklist",
+            "settings": {
+              "title_i": "Top Trending Products",
+              "menu_links": "",
+              "sub_width": 8,
+              "menu_links_per_col": "1",
+              "title": "Linklist (child)"
+            }
+          }
+        },
+        "block_order": [
+          "linklist_tQEb4B"
+        ],
+        "settings": {
+          "use_header_announcement": true,
+          "sticky_header_announcement": true,
+          "width_announcement": "container",
+          "width_content": true,
+          "announcement_reponsive": "{\n  \"0\": {\n    \"slidesPerView\": 1,\n    \"spaceBetween\": 0\n  },\n  \"320\": {\n    \"slidesPerView\": 1,\n    \"spaceBetween\": 0\n  },\n  \"768\": {\n    \"slidesPerView\": 1,\n    \"spaceBetween\": 0\n  },\n  \"992\": {\n    \"slidesPerView\": 1,\n    \"spaceBetween\": 0\n  },\n  \"1200\": {\n    \"slidesPerView\": 1,\n    \"spaceBetween\": 0\n  }\n}",
+          "announcement_margin_top": "2.5rem",
+          "announcement_margin_bottom": "2.5rem",
+          "announcement_padding": "6rem",
+          "announcement_image": "shopify://shop_images/image_2.png",
+          "announcement_onm": true,
+          "announcement_ont": true,
+          "use_header_top": true,
+          "sticky_header_top": true,
+          "width_header_top": "container",
+          "header_top_margin_top": "",
+          "header_top_margin_bottom": "",
+          "header_top_padding": "",
+          "header_top_onm": false,
+          "header_top_ont": false,
+          "sticky_menu": true,
+          "width_header": "container",
+          "header_margin_top": "",
+          "header_margin_bottom": "",
+          "header_padding": "",
+          "use_account": true,
+          "use_compare": true,
+          "use_wishlist": false,
+          "use_cart": true,
+          "padding_size": 2,
+          "main_linklist": ""
+        }
+      },
+      "header-01": {
+        "type": "header-01",
+        "settings": {
+          "use_header_announcement": false,
+          "sticky_header_announcement": false,
+          "width_announcement": "container",
+          "width_content": true,
+          "announcement_reponsive": "{\n  \"0\": {\n    \"slidesPerView\": 1,\n    \"spaceBetween\": 0\n  },\n  \"320\": {\n    \"slidesPerView\": 1,\n    \"spaceBetween\": 0\n  },\n  \"768\": {\n    \"slidesPerView\": 1,\n    \"spaceBetween\": 0\n  },\n  \"992\": {\n    \"slidesPerView\": 1,\n    \"spaceBetween\": 0\n  },\n  \"1200\": {\n    \"slidesPerView\": 1,\n    \"spaceBetween\": 0\n  }\n}",
+          "announcement_margin_top": "",
+          "announcement_margin_bottom": "",
+          "announcement_padding": "",
+          "announcement_onm": false,
+          "announcement_ont": false,
+          "use_header_top": false,
+          "sticky_header_top": false,
+          "width_header_top": "container",
+          "header_top_margin_top": "",
+          "header_top_margin_bottom": "",
+          "header_top_padding": "",
+          "header_top_onm": false,
+          "header_top_ont": false,
+          "sticky_menu": true,
+          "width_header": "container",
+          "header_margin_top": "",
+          "header_margin_bottom": "",
+          "header_padding": "",
+          "use_account": true,
+          "use_compare": true,
+          "use_wishlist": false,
+          "use_cart": true,
+          "padding_size": 2,
+          "main_linklist": ""
         }
       }
     },
