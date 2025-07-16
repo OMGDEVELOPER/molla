@@ -9,7 +9,13 @@
   background: #1C1B1F;
   padding: 20px;
 }
-.submenu .row .item .submenu__heading h3{}
+.submenu .row .item .submenu__heading h3{
+  color: #FAFAFA;
+  font-family: Karla;
+  font-size: clamp(14px, 5vw, 18px);
+  font-style: normal;
+  font-weight: 700;
+}
 .submenu .row .item .submenu__items{}
 .submenu .row .item .submenu__items ul{}
 .submenu .row .item .submenu__items ul li{}
