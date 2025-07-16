@@ -49,6 +49,7 @@
     {%- render 'kt_icons_system' -%}
     <div id="bg-overlay"></div>
     <div class="content_for_page">
+      {%-render 'header-layout'-%}
       {%-section 'header-mobile'-%}
       {%-if template.name != 'cart'-%}
         {%-case settings.type_ajax_cart-%}
