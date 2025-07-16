@@ -68,19 +68,12 @@
   function LoadMenuJs(){
     let menuItems = document.querySelectorAll('.header-group .menu-items-main li');
     console.log('Loading Menu JS...');
+    console.log(menuItems)
     menuItems.forEach(item => {
       if (item.classList.contains('has-sub')) {
         let menuClass = item.getAttribute('child-menu-id');
         let mainHeader = item.closest('.header-group');
-        let submenuElement = mainHeader?.querySelector('.' + menuClass);
         console.log(mainHeader)
-        if (menuClass && submenuElement) {
-          item.addEventListener('click', function () {
-            console.log('clicked');
-            submenuElement.classList.toggle('active');
-            item.classList.toggle('active');
-          });
-        }
       }
     });
   }
