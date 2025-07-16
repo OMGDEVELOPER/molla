@@ -43,6 +43,9 @@
   padding-left: 0px;
   margin: 0px;
 }
+.submenu .row .item.item__2 .submenu__items li::after{
+  .submenu .row .item .submenu__items li::after{
+}
 .submenu .row .item .submenu__items li::after{
     content: "";
     width: 25px;
