@@ -3,6 +3,7 @@
 .submenu .row {}
 .submenu .row .item{
   color: #FFF;
+  padding: 0px;
 }
 .submenu .row .item.item__1{
   background: #1C1B1F;
