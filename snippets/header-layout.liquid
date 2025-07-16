@@ -1,5 +1,7 @@
 {%- liquid
 case settings.import_header
+  when 'custom-header'
+    section  'custom-header'
   when ''
     section 'header'
   when '01'
