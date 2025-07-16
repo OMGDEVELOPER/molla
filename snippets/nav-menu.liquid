@@ -119,10 +119,12 @@
 
   // Sticky check using interval until bound
   const stickyInterval = setInterval(() => {
-    LoadStickyMenuJs();
+    
     if(ElementClonedDetected){
       clearInterval(stickyInterval);
       console.log('Sticky menu initialized and interval cleared.');
+    }else{
+      LoadStickyMenuJs();
     }
   }, 900);
 {% endjavascript %}
