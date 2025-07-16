@@ -658,6 +658,10 @@
     "1612489778594": {
       "type": "md_call_to_action",
       "blocks": {
+        "custom_design_8BiHnc": {
+          "type": "custom-design",
+          "settings": {}
+        },
         "1612489778594-0": {
           "type": "design_7",
           "settings": {
@@ -671,6 +675,7 @@
         }
       },
       "block_order": [
+        "custom_design_8BiHnc",
         "1612489778594-0"
       ],
       "settings": {
