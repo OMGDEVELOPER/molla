@@ -67,15 +67,15 @@
 {% javascript %} 
   function LoadMenuJs(){
     let menuItems = document.querySelectorAll('.header-group .menu-items-main li');
-    console.log(menuItems)
+    console.log('Loading Menu JS...');
     menuItems.forEach(item => {
       if (item.classList.contains('has-sub')) {
         let menuClass = item.getAttribute('child-menu-id');
-        let mainHeader = document.querySelector('.header-group')
-        let submenuElement = mainHeader.querySelector('.submenu')
+        let mainHeader = item.closest('.header-group');
+        let submenuElement = mainHeader?.querySelector('.' + menuClass);
         if (menuClass && submenuElement) {
           item.addEventListener('click', function () {
-            console.log('clicked')
+            console.log('clicked');
             submenuElement.classList.toggle('active');
             item.classList.toggle('active');
           });
@@ -83,8 +83,17 @@
       }
     });
   }
+
+  let hasLoadedMenu = false;
   LoadMenuJs();
+  window.addEventListener('scroll', function () {
+    if (!hasLoadedMenu) {
+      LoadMenuJs();
+      hasLoadedMenu = true;
+    }
+  });
 {% endjavascript %}
+
 
 
 
