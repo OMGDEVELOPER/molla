@@ -27,6 +27,9 @@
     text-transform: uppercase;
   }
   .nav-menu ul li.has-sub{
+    
+  }
+  .nav-menu ul li.has-sub{
     display: flex;
     gap: 8px;
   }
@@ -51,7 +54,10 @@
        <ul>
          <li><a href="#">Home</a></li>
          <li><a href="#">About Us</a></li>
-         <li class="has-sub" child-menu="3"><a href="#">Our Products</a></li>
+         <li class="has-sub" child-menu="3">
+           <a href="#">Our Products</a>
+           {% render 'submenu' %}
+           </li>
          <li><a href="#">Inspiration</a></li>
          <li><a href="#">Blog</a></li>
          <li><a href="#">FAQ’s</a></li>
