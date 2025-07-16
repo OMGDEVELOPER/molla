@@ -116,7 +116,7 @@
   LoadMenuJs();
 
 const stickyInterval = setInterval(() => {
-  if (ElementClonedDetected) {
+  if (ElementClonedDetected == true) {
     clearInterval(stickyInterval);
     console.log('Sticky menu initialized and interval cleared.');
   }else{
