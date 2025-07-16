@@ -65,52 +65,32 @@
   </div>
 </div>
 {% javascript %} 
-  function LoadMenuJs(){
-    let menuItems = document.querySelectorAll('.header-group .menu-items-main li');
+  function bindMenuToHeader(header) {
+    // Avoid binding to the same header again
+    if (header.classList.contains('menu-bound')) return;
+
+    const menuItems = header.querySelectorAll('.menu-items-main li');
 
     menuItems.forEach(item => {
-      if (item.classList.contains('has-sub') && !item.hasAttribute('data-bound')) {
-        let menuClass = item.getAttribute('child-menu-id');
-        let mainHeader = item.closest('.header-group');
-        let submenuElement = mainHeader?.querySelector('.' + menuClass);
+      if (item.classList.contains('has-sub')) {
+        const menuClass = item.getAttribute('child-menu-id');
+        const submenuElement = header.querySelector('.' + menuClass);
 
         if (menuClass && submenuElement) {
           item.addEventListener('click', function () {
-            console.log('clicked');
+            console.log('Clicked menu in:', header);
             submenuElement.classList.toggle('active');
             item.classList.toggle('active');
           });
-
-          item.setAttribute('data-bound', 'true'); // mark as bound
         }
       }
     });
+
+    header.classList.add('menu-bound'); // mark this header as initialized
   }
 
-  function LoadStickyMenuJs(){
-    let menuItems = document.querySelectorAll('#header-ontop .header-group .menu-items-main li');
-
-    menuItems.forEach(item => {
-      if (item.classList.contains('has-sub') && !item.hasAttribute('data-bound')) {
-        let menuClass = item.getAttribute('child-menu-id');
-        let mainHeader = item.closest('.header-group');
-        let submenuElement = mainHeader?.querySelector('.' + menuClass);
-
-        if (menuClass && submenuElement) {
-          item.addEventListener('click', function () {
-            console.log('clicked header on top');
-            submenuElement.classList.toggle('active');
-            item.classList.toggle('active');
-          });
-
-          item.setAttribute('data-bound', 'true'); // mark as bound
-        }
-      }
-    });
-  }
-
-  // Initial run
-  LoadMenuJs();
+  // Bind initially existing headers
+  document.querySelectorAll('.header-group').forEach(bindMenuToHeader);
 
   function watchDomChanges(callback) {
     const observer = new MutationObserver((mutationsList) => {
@@ -119,22 +99,25 @@
 
     observer.observe(document.body, {
       childList: true,
-      subtree: true // make sure nested nodes are watched too
+      subtree: true
     });
 
     return observer;
   }
 
-  // Watch for DOM changes and re-bind
+  // Watch for new header clones and bind
   watchDomChanges((mutations) => {
     mutations.forEach(mutation => {
-      if (mutation.type === 'childList') {
-        LoadStickyMenuJs();
-      }
+      mutation.addedNodes.forEach(node => {
+        if (node.nodeType === 1) {
+          if (node.classList.contains('header-group')) {
+            bindMenuToHeader(node);
+          } else {
+            // Also check for nested headers
+            node.querySelectorAll?.('.header-group').forEach(bindMenuToHeader);
+          }
+        }
+      });
     });
   });
 {% endjavascript %}
-
-
-
-
