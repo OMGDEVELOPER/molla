@@ -71,7 +71,8 @@
     menuItems.forEach(item => {
       if (item.classList.contains('has-sub')) {
         let menuClass = item.getAttribute('child-menu-id');
-        let submenuElement = item.closest('.'  + menuClass)
+        let mainHeader = document.querySelector('#header')
+        let submenuElement = mainHeader.closest('.'  + menuClass)
         console.log(item)
         console.log(submenuElement)
 
