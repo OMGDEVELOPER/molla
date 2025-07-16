@@ -97,15 +97,14 @@
             let menuClass = item.getAttribute('child-menu-id');
             let mainHeader = document.querySelector('.cloned .header-group');
             let submenuElement = mainHeader?.querySelector('.' + menuClass);
+            consol.log('clicked')
             item.addEventListener('click', function () {
-              if(ActiveClass){
+              if(submenuElement.classList.contains('.active')){
                 submenuElement.classList.remove('active');
                 item.classList.remove('active');
-                ActiveClass = false
               }else{
                 submenuElement.classList.add('active');
                 item.classList.add('active');
-                ActiveClass = true
               }
             });
          }
