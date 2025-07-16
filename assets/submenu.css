@@ -1,8 +1,13 @@
 /*  submenu styles */
 .submenu{}
 .submenu .row {}
+.submenu .row .item{
+  padding: 20px;
+  color: #FFF;
+}
 .submenu .row .item.item__1{
   background: #1C1B1F;
+  padding: 20px;
 }
 .submenu .row .item .submenu__heading h3{}
 .submenu .row .item .submenu__items{}
