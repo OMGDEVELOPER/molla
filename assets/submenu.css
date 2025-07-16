@@ -1,12 +1,17 @@
 /*  submenu styles */
 submenu{
-  /* display: none;
+  display: none;
   visibility: hidden;
-  opacity: 0; */
+  opacity: 0;
   /*  */
   position: absolute;
   z-index: 1;
   width: 100%;
+}
+submenu.active{
+  display: block;
+  visibility: visible;
+  opacity: 1;
 }
 .submenu .row {}
 .submenu .row .item{
