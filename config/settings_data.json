@@ -19,7 +19,7 @@
     "logo_max_width": 180,
     "body_logo_mobile_svg": "",
     "logo_mobile": "",
-    "import_header": "14",
+    "import_header": "custom-header",
     "use_header_mobile_logo_center": false,
     "use_header_mobile_search_box": false,
     "import_footer": "02",
