@@ -11,7 +11,7 @@
 .submenu .row .item .submenu__heading h3{
   padding-top: 20px;
   padding-left: 20px;
-  padding-bottom: 20px;
+  padding-bottom: 14px;
   color: #FAFAFA;
   font-family: Karla;
   font-size: clamp(14px, 5vw, 18px);
@@ -28,6 +28,7 @@
   padding-left: 20px;
   padding-top: 6px;
   padding-bottom: 6px;
+  border-bottom: 1px solid #3C4043;
 }
 .submenu .row .item .submenu__items li:hover{
   border-bottom: 1px solid #3C4043;
