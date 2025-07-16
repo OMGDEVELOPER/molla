@@ -70,26 +70,16 @@
 
     menuItems.forEach(item => {
       if (item.classList.contains('has-sub')) {
-        let menuId = item.getAttribute('child-menu-id');
-        let submenuElement = document.getElementById(menuId);
+        let menuClass = item.getAttribute('child-menu-id');
+        let submenuElement = item.closest('.nav-menu')?.querySelector('.' + menuClass);
+        console.log(submenuElement)
 
-        if (menuId && submenuElement) {
+        if (menuClass && submenuElement) {
           item.addEventListener('click', function () {
             console.log('clicked')
             submenuElement.classList.toggle('active');
             item.classList.toggle('active');
           });
-
-          {% comment %}
-          // Uncomment below if you want to use hover instead
-          item.addEventListener('mouseenter', function () {
-            submenuElement.classList.add('active');
-          });
-
-          item.addEventListener('mouseleave', function () {
-            submenuElement.classList.remove('active');
-          });
-          {% endcomment %}
         }
       }
     });
