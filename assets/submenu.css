@@ -46,7 +46,7 @@
   border-bottom: 1px solid #3C4043;
   background: #127FB5;
 }
-.submenu .row .item .submenu__items li a{
+.submenu .row .item.item__1 .submenu__items li a{
   color: #FAFAFA;
   font-family: Karla;
   font-size: clamp(14px,5vw,16px);
