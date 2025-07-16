@@ -99,12 +99,14 @@
             let submenuElement = mainHeader?.querySelector('.' + menuClass);
             item.addEventListener('click', function () {
               console.log('clicked cloned')
-              if(submenuElement.classList.contains('.active')){
+              if(ActiveClass){
                 submenuElement.classList.remove('active');
                 item.classList.remove('active');
+                ActiveClass = false
               }else{
                 submenuElement.classList.add('active');
                 item.classList.add('active');
+                ActiveClass = true
               }
             });
          }
