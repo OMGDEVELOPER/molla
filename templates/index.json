@@ -660,7 +660,11 @@
       "blocks": {
         "custom_design_8BiHnc": {
           "type": "custom-design",
-          "settings": {}
+          "settings": {
+            "title": "Get the latest news and updates",
+            "description": "",
+            "style_btn": "btn-primary"
+          }
         }
       },
       "block_order": [
