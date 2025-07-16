@@ -46,9 +46,7 @@
   padding-left: 0px;
   margin: 0px;
 }
-.submenu .row .item .submenu__items.links-with-icon{
-  padding-bottom: 12px;
-}
+.submenu .row .item .submenu__items.links-with-icon{}
 .submenu .row .item .submenu__items.links-with-icon li::after{
    background:none;
 }
