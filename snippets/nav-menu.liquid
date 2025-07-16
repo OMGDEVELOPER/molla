@@ -115,9 +115,11 @@
   // Initial normal header setup
   LoadMenuJs();
 
-  // Sticky check using interval until bound
-  const stickyInterval = setInterval(() => {
-    console.log(ElementClonedDetected)
-      LoadStickyMenuJs();
-  }, 900);
+const stickyInterval = setInterval(() => {
+  if (ElementClonedDetected) {
+    LoadStickyMenuJs();
+    clearInterval(stickyInterval);
+    console.log('Sticky menu initialized and interval cleared.');
+  }
+}, 900);
 {% endjavascript %}
