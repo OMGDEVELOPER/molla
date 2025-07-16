@@ -30,6 +30,9 @@
     display: flex;
     gap: 8px;
   }
+  .nav-menu ul li.has-sub::after {
+    transition: transform 0.3s ease;
+  }
   .nav-menu ul li.has-sub:hover::after{
     transform:rotate(180deg);
   }
