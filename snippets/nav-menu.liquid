@@ -89,7 +89,7 @@
   let ActiveClass = false;
   let ElementClonedDetected = false
   function LoadStickyMenuJs() {
-     if (document.querySelectorAll('#header-ontop.cloned')) {
+     if (document.querySelector('#header-ontop.cloned')) {
       ElementClonedDetected = true;
       let menuItems = document.querySelectorAll('.cloned .header-group .menu-items-main li');
        menuItems.forEach((item) => {
@@ -116,7 +116,7 @@
   LoadMenuJs();
 
 const stickyInterval = setInterval(() => {
-  if (ElementClonedDetected == 1) {
+  if (ElementClonedDetected == true) {
     clearInterval(stickyInterval);
     console.log('Sticky menu initialized and interval cleared.');
   }else{
