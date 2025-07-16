@@ -97,8 +97,8 @@
             let menuClass = item.getAttribute('child-menu-id');
             let mainHeader = document.querySelector('.cloned .header-group');
             let submenuElement = mainHeader?.querySelector('.' + menuClass);
-            console.log('clicked cloned')
             item.addEventListener('click', function () {
+              console.log('clicked cloned')
               if(submenuElement.classList.contains('.active')){
                 submenuElement.classList.remove('active');
                 item.classList.remove('active');
