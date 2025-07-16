@@ -64,10 +64,9 @@
     </div>
   </div>
 </div>
-<script>
+{% javascript %}  
   document.addEventListener("DOMContentLoaded", function () {
     let menuItems = document.querySelectorAll('.menu-items-main li');
-
     menuItems.forEach(item => {
       if (item.classList.contains('has-sub')) {
         let menuClass = item.getAttribute('child-menu-id');
@@ -84,6 +83,7 @@
       }
     });
   });
-</script>
+{% endjavascript %}
+
 
 
