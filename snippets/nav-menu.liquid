@@ -65,7 +65,8 @@
   </div>
 </div>
 {% javascript %}  
-    let menuItems = document.querySelectorAll('.header-group .menu-items-main li');
+    setTimeout(()=>{
+      let menuItems = document.querySelectorAll('.header-group .menu-items-main li');
     console.log(menuItems)
     menuItems.forEach(item => {
       if (item.classList.contains('has-sub')) {
@@ -84,6 +85,8 @@
         }
       }
     });
+    },3000)
+    
 {% endjavascript %}
 
 
