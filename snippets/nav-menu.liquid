@@ -86,7 +86,7 @@
     });
   }
   let stickyAdded = false;
-  let ElementClonedDetected = 0
+  let ElementClonedDetected = false;
   function LoadStickyMenuJs() {
      if (document.querySelectorAll('#header-ontop.cloned')) {
       ElementClonedDetected = 1;
@@ -116,11 +116,11 @@
 
 const stickyInterval = setInterval(() => {
   console.log(ElementClonedDetected)
-  if (ElementClonedDetected === 1) {
+  if (ElementClonedDetected == false) {
+     LoadStickyMenuJs();
+  }else{
     clearInterval(stickyInterval);
     console.log('Sticky menu initialized and interval cleared.');
-  }else{
-     LoadStickyMenuJs();
   }
 }, 500);
 {% endjavascript %}
