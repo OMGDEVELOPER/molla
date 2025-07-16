@@ -87,31 +87,31 @@
   }
   let stickyAdded = false;
   let ActiveClass = false;
-  let ElementClonedDetected = false
+  let ElementClonedDetected = false;
   function LoadStickyMenuJs() {
-     if (document.querySelectorAll('.cloned .header-group .menu-items-main li')) {
+    if (document.querySelectorAll('.cloned .header-group .menu-items-main li')) {
       ElementClonedDetected = true;
       let menuItems = document.querySelectorAll('.cloned .header-group .menu-items-main li');
-       menuItems.forEach((item) => {
-          if (item.classList.contains('has-sub')) {
-            let menuClass = item.getAttribute('child-menu-id');
-            let mainHeader = document.querySelector('.cloned .header-group');
-            let submenuElement = mainHeader?.querySelector('.' + menuClass);
-           
-            item.addEventListener('click', function () {
-              if(ActiveClass){
-                submenuElement.classList.remove('active');
-                item.classList.remove('active');
-                ActiveClass = false
-              }else{
-                submenuElement.classList.add('active');
-                item.classList.add('active');
-                ActiveClass = true
-              }
-            });
-         }
-       })
-     }
+      menuItems.forEach((item) => {
+        if (item.classList.contains('has-sub')) {
+          let menuClass = item.getAttribute('child-menu-id');
+          let mainHeader = document.querySelector('.cloned .header-group');
+          let submenuElement = mainHeader?.querySelector('.' + menuClass);
+
+          item.addEventListener('click', function () {
+            if (ActiveClass) {
+              submenuElement.classList.remove('active');
+              item.classList.remove('active');
+              ActiveClass = false;
+            } else {
+              submenuElement.classList.add('active');
+              item.classList.add('active');
+              ActiveClass = true;
+            }
+          });
+        }
+      });
+    }
   }
 
   // Initial normal header setup
@@ -120,7 +120,7 @@
   // Sticky check using interval until bound
   const stickyInterval = setInterval(() => {
     LoadStickyMenuJs();
-    if(ElementClonedDetected){
+    if (ElementClonedDetected) {
       clearInterval(stickyInterval);
       console.log('Sticky menu initialized and interval cleared.');
     }
