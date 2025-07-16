@@ -75,7 +75,7 @@
 
         if (menuId && submenuElement) {
           item.addEventListener('click', function () {
-            submenuElement.classList.add('active');
+            submenuElement.classList.toggle('active');
           });
           {% comment %} item.addEventListener('mouseenter', function () {
             submenuElement.classList.add('active');
