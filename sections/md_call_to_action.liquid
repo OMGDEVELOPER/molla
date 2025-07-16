@@ -60,6 +60,8 @@
       </div>
       {%- endif -%}
       {%-case block.type -%}
+      {%-when 'custom-design' -%}
+        {% render 'custom-footer' %}
       {%-when 'design_1' -%}
       <div class="cta cta-horizontal cta-horizontal-box design_1" data-type-block="design_1">
         <div class="row">
@@ -528,6 +530,13 @@
             ],
             "default": ""
           }
+        ]
+      },
+      {
+        "type": "custom-design",
+        "name": "Custom Design",
+        "settings": [
+          
         ]
       },
       {
