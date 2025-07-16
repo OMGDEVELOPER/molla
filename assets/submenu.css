@@ -29,6 +29,7 @@
     height: 25px;
     display: block;
     background-image: url(https://cdn.shopify.com/s/files/1/0859/1186/3592/files/arrow_forward_ios.svg?v=1752658595);
+    background-repeat: no-repeat;
 }
 .submenu .row .item .submenu__items li{
   list-style: none;
@@ -36,6 +37,10 @@
   padding-top: 6px;
   padding-bottom: 6px;
   border-bottom: 1px solid #3C4043;
+  /*  */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 .submenu .row .item .submenu__items li:hover{
   border-bottom: 1px solid #3C4043;
