@@ -51,7 +51,7 @@
   <div class="container">
     <div class="main-header header-menu horizon-menu">
       <nav class="main-navigation">
-       <ul>
+       <ul class="menu-items-main">
          <li><a href="#">Home</a></li>
          <li><a href="#">About Us</a></li>
          <li class="has-sub submenu-3" child-menu="3"><a href="#">Our Products</a></li>
@@ -64,3 +64,20 @@
     </div>
   </div>
 </div>
+<script>
+  document.addEventListener("DOMContentLoaded", function () {
+    let menuItems = document.querySelectorAll('.menu-items-main li');
+
+    menuItems.forEach(item => {
+      if (item.classList.contains('has-sub')) {
+        let menuId = item.getAttribute('child-menu-id');
+        if (menuId) {
+          let submenuElement = document.getElementById(menuId);
+          if (submenuElement) {
+            submenuElement.classList.add('active-sub');
+          }
+        }
+      }
+    });
+  });
+</script>
