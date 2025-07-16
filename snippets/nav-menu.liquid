@@ -116,7 +116,17 @@
 
   return observer; // return the observer in case you want to disconnect later
 }
-  console.log(watchDomChanges)
+watchDomChanges((mutations) => {
+  mutations.forEach(mutation => {
+    if (mutation.type === 'childList') {
+      console.log('DOM node added or removed:', mutation.addedNodes, mutation.removedNodes);
+    }
+    if (mutation.type === 'attributes') {
+      console.log('Attribute changed:', mutation.target);
+    }
+  });
+});
+
 
 {% endjavascript %}
 
