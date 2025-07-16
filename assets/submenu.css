@@ -5,12 +5,11 @@
   color: #FFF;
   padding: 0px;
 }
-.submenu .row .item.item__1 {
-   display: grid;
-  gap:40px;
-}
+
 .submenu .row .item.item__1{
   background: #1C1B1F;
+  display: grid;
+  gap:40px;
 }
 .submenu .row .item.item__2{
   background: #DADADA;
@@ -48,6 +47,9 @@
   margin: 0px;
 }
 
+.submenu .row .item .submenu__items.links-with-icon li::after{
+   background:none;
+}
 .submenu .row .item .submenu__items li::after{
     content: "";
     width: 25px;
