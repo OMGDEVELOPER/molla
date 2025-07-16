@@ -88,34 +88,7 @@
   let stickyAdded = false;
 
   function LoadStickyMenuJs() {
-    const menuItems = document.querySelectorAll('.cloned .header-group .menu-items-main li');
-
-    if (!menuItems.length) return; // exit early if none found
-
-    let boundAny = false;
-
-    menuItems.forEach((item) => {
-      if (item.classList.contains('has-sub') && !item.hasAttribute('data-bound')) {
-        const menuClass = item.getAttribute('child-menu-id');
-        const mainHeader = item.closest('.header-group');
-        const submenuElement = mainHeader?.querySelector('.' + menuClass);
-
-        if (menuClass && submenuElement) {
-          item.addEventListener('click', function () {
-            console.log('clicked sticky item');
-            submenuElement.classList.toggle('active');
-            item.classList.toggle('active');
-          });
-
-          item.setAttribute('data-bound', 'true');
-          boundAny = true; // flag that we successfully bound one
-        }
-      }
-    });
-
-    if (boundAny) {
-      stickyAdded = true;
-    }
+   console.log(stickyAdded)
   }
 
   // Initial normal header setup
@@ -124,9 +97,5 @@
   // Sticky check using interval until bound
   const stickyInterval = setInterval(() => {
     LoadStickyMenuJs();
-    if (stickyAdded) {
-      clearInterval(stickyInterval);
-      console.log('Sticky menu initialized and interval cleared.');
-    }
-  }, 500);
+  }, 3000);
 {% endjavascript %}
