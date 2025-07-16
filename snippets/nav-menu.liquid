@@ -73,6 +73,7 @@
         let menuClass = item.getAttribute('child-menu-id');
         let mainHeader = item.closest('.header-group');
         let submenuElement = mainHeader?.querySelector('.' + menuClass);
+        console.log(submenuElement)
         if (menuClass && submenuElement) {
           item.addEventListener('click', function () {
             console.log('clicked');
