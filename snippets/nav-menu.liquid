@@ -89,7 +89,7 @@
 
   function LoadStickyMenuJs(){
     let menuItems = document.querySelectorAll('#header-ontop .header-group .menu-items-main li');
-
+    console.log(menuItems)
     menuItems.forEach(item => {
       if (item.classList.contains('has-sub') && !item.hasAttribute('data-bound')) {
         let menuClass = item.getAttribute('child-menu-id');
