@@ -74,13 +74,16 @@
         let submenuElement = document.getElementById(menuId);
 
         if (menuId && submenuElement) {
-          item.addEventListener('mouseenter', function () {
+          item.addEventListener('click', function () {
             submenuElement.classList.add('active');
           });
+          {% comment %} item.addEventListener('mouseenter', function () {
+            submenuElement.classList.add('active');
+          }); {% endcomment %}
 
-          item.addEventListener('mouseleave', function () {
+          {% comment %} item.addEventListener('mouseleave', function () {
             submenuElement.classList.remove('active');
-          });
+          }); {% endcomment %}
         }
       }
     });
