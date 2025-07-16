@@ -75,6 +75,7 @@
       if (item.classList.contains('has-sub')) {
         const menuClass = item.getAttribute('child-menu-id');
         const submenuElement = header.querySelector('.' + menuClass);
+        console.log(submenuElement)
 
         if (menuClass && submenuElement) {
           item.addEventListener('click', function () {
