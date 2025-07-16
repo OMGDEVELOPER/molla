@@ -86,7 +86,7 @@
     });
   }
   let stickyAdded = false;
-
+  let ActiveClass = false;
   function LoadStickyMenuJs() {
      if (document.querySelectorAll('.cloned .header-group .menu-items-main li')) {
       let menuItems = document.querySelectorAll('.cloned .header-group .menu-items-main li');
@@ -97,9 +97,15 @@
             let submenuElement = mainHeader?.querySelector('.' + menuClass);
            
             item.addEventListener('click', function () {
-              console.log('clicked cloned');
-              submenuElement.classList.toggle('active');
-              item.classList.toggle('active');
+              if(ActiveClass){
+                submenuElement.classList.remove('active');
+                item.classList.remove('active');
+                ActiveClass = false
+              }else{
+                submenuElement.classList.add('active');
+                item.classList.add('active');
+                ActiveClass = true
+              }
             });
          }
        })
