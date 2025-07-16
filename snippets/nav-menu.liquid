@@ -84,6 +84,40 @@
     });
   }
   LoadMenuJs();
+  function LoadStickyMenuJs(){
+    let menuItems = document.querySelectorAll('#header-ontop .header-group .menu-items-main li');
+    console.log(menuItems)
+    menuItems.forEach(item => {
+      if (item.classList.contains('has-sub')) {
+        let menuClass = item.getAttribute('child-menu-id');
+        let mainHeader = document.querySelector('.header-group')
+        let submenuElement = mainHeader.querySelector('.submenu')
+        if (menuClass && submenuElement) {
+          item.addEventListener('click', function () {
+            console.log('clicked')
+            submenuElement.classList.toggle('active');
+            item.classList.toggle('active');
+          });
+        }
+      }
+    });
+  }
+  function watchDomChanges(callback) {
+  const observer = new MutationObserver((mutationsList, observer) => {
+    callback(mutationsList); // You handle what to do with the mutations
+  });
+
+  observer.observe(document.body, {
+    childList: true,      // Detect added or removed elements
+    subtree: true,        // Watch entire DOM tree
+    attributes: true,     // Detect attribute changes
+    characterData: true   // Detect text/content changes
+  });
+
+  return observer; // return the observer in case you want to disconnect later
+}
+  console.log(watchDomChanges)
+
 {% endjavascript %}
 
 
