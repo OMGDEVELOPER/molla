@@ -661,22 +661,10 @@
         "custom_design_8BiHnc": {
           "type": "custom-design",
           "settings": {}
-        },
-        "1612489778594-0": {
-          "type": "design_7",
-          "settings": {
-            "title": "<span style=\"font-size: 2rem\">Join Our Newsletter</span>",
-            "description": "<span style=\"font-size: 1.6rem\">Subcribe to get information about products and coupons</span>",
-            "style_btn": "btn-white",
-            "style_btn_rounded": "btn-rounded",
-            "btn_shadow": false,
-            "btn_name_cta": "SUBSCRIBE"
-          }
         }
       },
       "block_order": [
-        "custom_design_8BiHnc",
-        "1612489778594-0"
+        "custom_design_8BiHnc"
       ],
       "settings": {
         "title": "Call to Action",
