@@ -71,13 +71,19 @@
     menuItems.forEach(item => {
       if (item.classList.contains('has-sub')) {
         let menuId = item.getAttribute('child-menu-id');
-        if (menuId) {
-          let submenuElement = document.getElementById(menuId);
-          if (submenuElement) {
-            submenuElement.classList.toggle('active-sub');
-          }
+        let submenuElement = document.getElementById(menuId);
+
+        if (menuId && submenuElement) {
+          item.addEventListener('mouseenter', function () {
+            submenuElement.classList.add('active-sub');
+          });
+
+          item.addEventListener('mouseleave', function () {
+            submenuElement.classList.remove('active-sub');
+          });
         }
       }
     });
   });
 </script>
+
