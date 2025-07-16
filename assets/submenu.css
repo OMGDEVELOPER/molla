@@ -65,8 +65,8 @@
 .submenu .row .item .submenu__items li{
   list-style: none;
   padding-left: 20px;
-  padding-top: 6px;
-  padding-bottom: 6px;
+  padding-top: 8px;
+  padding-bottom: 8px;
   border-bottom: 1px solid #3C4043;
   /*  */
   display: flex;
