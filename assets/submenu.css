@@ -106,17 +106,15 @@
   border-bottom: 1px solid #3C4043;
   background: #127FB5;
 }
-.submenu .row .item.item__1 .submenu__items li a{
-  color: #FAFAFA;
+.submenu .row .item .submenu__items li a{
   font-family: Karla;
   font-size: clamp(14px,5vw,16px);
   font-style: normal;
   font-weight: 500;
 }
+.submenu .row .item.item__1 .submenu__items li a{
+  color: #FAFAFA;
+}
 .submenu .row .item.item__2 .submenu__items li a{
   color: #050505;
-  font-family: Karla;
-  font-size: clamp(14px,5vw,16px);
-  font-style: normal;
-  font-weight: 500;
 }
