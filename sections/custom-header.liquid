@@ -49,7 +49,7 @@
 {%- endstyle -%}
 <header {%if settings.use_wrap_container %}class="wrap-container" {%endif%}data-section-id="{{ section.id }}" data-section-type="header-section" data-header-sticky="{{section.settings.sticky_menu}}">
   <div id="header-ontop" class="header-ontop is-sticky"></div>
-  <div id="header" class="header style-14{%if settings.use_header_mobile_search_box%} mobile-search-box{%endif%}">
+  <div id="header" class="custom-header header style-14{%if settings.use_header_mobile_search_box%} mobile-search-box{%endif%}">
     <div class="content_{{section.id}}{%if section.settings.header_image%} bg-image lazyload{%endif%}"{%if section.settings.header_image%} data-bgset="{{section.settings.header_image | img_url: 'master'}}" data-sizes="auto" data-parent-fit="contain"{%endif%} data-respon="{'el':'.content_{{section.id}}','mt':'{{section.settings.header_margin_top}}','mb':'{{section.settings.header_margin_bottom}}','p':'{{section.settings.header_padding}}'}">
       {%- assign announcements = section.blocks | where: "type", "announcement" | first -%}
       {%- assign top_menus = section.blocks | where: "type", "top_menu" | first -%}
