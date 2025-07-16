@@ -17,14 +17,14 @@
   font-weight: 700;
 }
 .submenu .row .item .submenu__items{}
-.submenu .row .item .submenu__items ul{
+.submenu .row .item .submenu__items{
   padding: 0px;
   margin: 0px;
 }
-.submenu .row .item .submenu__items ul li{
+.submenu .row .item .submenu__items li{
   list-style: none;
 }
-.submenu .row .item .submenu__items ul li a{
+.submenu .row .item .submenu__items li a{
   color: #FAFAFA;
   font-family: Karla;
   font-size: clamp(14px,5vw,16px);
