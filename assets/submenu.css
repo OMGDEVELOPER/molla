@@ -8,6 +8,15 @@
 .submenu .row .item.item__1{
   background: #1C1B1F;
 }
+.submenu .row .item.item__2{
+  background: #DADADA;
+}
+.submenu .row .item.item__3{
+  background: #1C1B1F;
+}
+.submenu .row .item.item__4{
+  background: #1C1B1F;
+}
 .submenu .row .item .submenu__heading h3{
   padding-top: 20px;
   padding-left: 20px;
