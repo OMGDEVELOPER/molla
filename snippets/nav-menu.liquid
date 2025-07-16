@@ -64,65 +64,27 @@
     </div>
   </div>
 </div>
-{% javascript %}
-  function LoadMenuJs(header) {
-    // Avoid re-processing the same header
-    if (header.classList.contains('menu-loaded')) return;
-
-    const menuItems = header.querySelectorAll('.menu-items-main li');
-
- menuItems.forEach(item => {
-  if (item.classList.contains('has-sub')) {
-    const menuClass = item.getAttribute('child-menu-id');
-
-    // Prefer submenu near the item; fallback to within the same header
-    const submenuElement = item.querySelector('.' + menuClass)
-      || item.closest('.header-group')?.querySelector('.' + menuClass);
-
-    console.log('Target submenu for:', item, submenuElement);
-
-    if (menuClass && submenuElement) {
-      item.addEventListener('click', function () {
-        submenuElement.classList.toggle('active');
-        item.classList.toggle('active');
-      });
-    }
-  }
-});
-
-
-    header.classList.add('menu-loaded'); // Mark as processed
-  }
-
-  // Run on initial headers
-  document.querySelectorAll('.header-group').forEach(header => LoadMenuJs(header));
-
-  // Observe for any new .header-group in the DOM
-  const observer = new MutationObserver(mutations => {
-    mutations.forEach(mutation => {
-      mutation.addedNodes.forEach(node => {
-        if (node.nodeType === 1) {
-          // Case 1: the node itself is a header-group
-          if (node.classList.contains('header-group')) {
-            LoadMenuJs(node);
-          }
-
-          // Case 2: header-group is nested inside the node
-          const nestedHeaders = node.querySelectorAll('.header-group');
-          nestedHeaders.forEach(nestedHeader => LoadMenuJs(nestedHeader));
+{% javascript %} 
+  function LoadMenuJs(){
+    let menuItems = document.querySelectorAll('.header-group .menu-items-main li');
+    console.log(menuItems)
+    menuItems.forEach(item => {
+      if (item.classList.contains('has-sub')) {
+        let menuClass = item.getAttribute('child-menu-id');
+        let mainHeader = document.querySelector('.header-group')
+        let submenuElement = mainHeader.querySelector('.submenu')
+        if (menuClass && submenuElement) {
+          item.addEventListener('click', function () {
+            console.log('clicked')
+            submenuElement.classList.toggle('active');
+            item.classList.toggle('active');
+          });
         }
-      });
+      }
     });
-  });
-
-  // Start observing the full document
-  observer.observe(document.body, {
-    childList: true,
-    subtree: true
-  });
+  }
+  LoadMenuJs();
 {% endjavascript %}
-
-
 
 
 
