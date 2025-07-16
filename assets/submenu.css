@@ -1,5 +1,9 @@
 /*  submenu styles */
 submenu{
+  display: none;
+  visibility: hidden;
+  opacity: 0;
+  /*  */
   position: absolute;
   z-index: 1;
   width: 100%;
