@@ -95,7 +95,12 @@
             let menuClass = item.getAttribute('child-menu-id');
             let mainHeader = document.querySelector('.cloned .header-group');
             let submenuElement = mainHeader?.querySelector('.' + menuClass);
-            console.log(submenuElement)
+           
+            item.addEventListener('click', function () {
+              console.log('clicked cloned');
+              submenuElement.classList.toggle('active');
+              item.classList.toggle('active');
+            });
          }
        })
      }
