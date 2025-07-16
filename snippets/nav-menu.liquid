@@ -75,6 +75,7 @@
 
         if (menuId && submenuElement) {
           item.addEventListener('click', function () {
+            console.log('clicked')
             submenuElement.classList.toggle('active');
             item.classList.toggle('active');
           });
