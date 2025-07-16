@@ -11,6 +11,7 @@
 .submenu .row .item .submenu__heading h3{
   padding-top: 20px;
   padding-left: 20px;
+  padding-bottom: 20px;
   color: #FAFAFA;
   font-family: Karla;
   font-size: clamp(14px, 5vw, 18px);
