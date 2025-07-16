@@ -78,16 +78,21 @@
             submenuElement.classList.toggle('active');
             item.classList.toggle('active');
           });
-          {% comment %} item.addEventListener('mouseenter', function () {
-            submenuElement.classList.add('active');
-          }); {% endcomment %}
 
-          {% comment %} item.addEventListener('mouseleave', function () {
+          {% comment %}
+          // Uncomment below if you want to use hover instead
+          item.addEventListener('mouseenter', function () {
+            submenuElement.classList.add('active');
+          });
+
+          item.addEventListener('mouseleave', function () {
             submenuElement.classList.remove('active');
-          }); {% endcomment %}
+          });
+          {% endcomment %}
         }
       }
     });
   });
 </script>
+
 
