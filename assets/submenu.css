@@ -26,6 +26,12 @@
   justify-content: space-between;
   padding-right: 20px;
 }
+.submenu .row .item .submenu__heading .see-all-link{
+  color: #127FB5;
+  font-size: clamp(12px, 5vw, 14px);
+  font-style: normal;
+  font-weight: 600;
+}
 .submenu .row .item .submenu__heading h3{
   padding-top: 20px;
   padding-left: 20px;
