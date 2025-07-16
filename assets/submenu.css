@@ -62,6 +62,9 @@
   justify-content: space-between;
   align-items: center;
 }
+.submenu .row .item.item__2 .submenu__items li:hover{
+  color:#FFF;
+}
 .submenu .row .item .submenu__items li:hover{
   border-bottom: 1px solid #3C4043;
   background: #127FB5;
