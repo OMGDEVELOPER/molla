@@ -97,7 +97,6 @@
             let menuClass = item.getAttribute('child-menu-id');
             let mainHeader = document.querySelector('.cloned .header-group');
             let submenuElement = mainHeader?.querySelector('.' + menuClass);
-           
             item.addEventListener('click', function () {
               if(ActiveClass){
                 submenuElement.classList.remove('active');
@@ -119,11 +118,6 @@
 
   // Sticky check using interval until bound
   const stickyInterval = setInterval(() => {
-    
-    if(ElementClonedDetected){
-      clearInterval(stickyInterval);
-      console.log('Sticky menu initialized and interval cleared.');
-    }else{
       LoadStickyMenuJs();
     }
   }, 900);
