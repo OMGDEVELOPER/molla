@@ -71,7 +71,7 @@
       if (item.classList.contains('has-sub')) {
         let menuClass = item.getAttribute('child-menu-id');
         let submenuElement = item.closest('.nav-menu')?.querySelector('.' + menuClass);
-        console.log(submenuElement)
+        console.log(item)
 
         if (menuClass && submenuElement) {
           item.addEventListener('click', function () {
