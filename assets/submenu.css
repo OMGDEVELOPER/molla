@@ -66,9 +66,10 @@
 .submenu .row .item.item__2 .submenu__items li{
   border-bottom: 1px solid #C5C5C5;
 }
-.submenu .row .item.item__2 .submenu__items li:hover li::after{
+.submenu .row .item.item__2 .submenu__items li:hover::after {
   filter: brightness(1);
 }
+
 .submenu .row .item.item__2 .submenu__items li:hover{
     border-bottom: none;
 }
