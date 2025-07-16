@@ -1,10 +1,12 @@
-<div class="row">
-    <div class="cta design_2 col-sm-10 offset-sm-1 col-md-8 offset-md-2 col-lg-6 offset-lg-3 text-center" data-type-block="design_2">
-      <div class="cta-heading">
-        <h3 class="cta-title">{{block.settings.title|html}}</h3>
-        <p class="cta-desc">{{block.settings.description|html}}</p>
+      <div class="cta cta-horizontal cta-horizontal-box design_7" data-type-block="design_7">
+        <div class="row">
+          <div class="col-lg-4 col-xl-5">
+            <h3 class="cta-title">{{block.settings.title|html}}</h3>
+            <p class="cta-desc">{{block.settings.description|html}}</p>
+          </div>
+          <div class="col-lg-8 col-xl-7">
+            {%- capture btn_style -%}{{block.settings.style_btn}} {{block.settings.style_btn_rounded}}{%if block.settings.btn_shadow%} btn-shadow{%endif%}{%- endcapture -%}
+            {% render 'kt_newsletter_form', section: section, class_form: 'newletter', style_btn: btn_style, text_btn: block.settings.btn_name_cta %}
+          </div>
+        </div>
       </div>
-      {%- capture btn_style -%}{{block.settings.style_btn}} {{block.settings.style_btn_rounded}}{%if block.settings.btn_shadow%} btn-shadow{%endif%}{%- endcapture -%}
-      {% render 'kt_newsletter_form', section: section, class_form: 'newletter', style_btn: btn_style, text_btn: block.settings.btn_name_cta %}
-    </div>
-  </div>
