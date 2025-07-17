@@ -134,6 +134,11 @@ submenu{
   color: #050505;
 }
 /* LEVEL 2*/
+submenu .w-300px{
+  width:300px;
+  min-width: 300px;
+  max-width: 300px;
+}
 .level-2 .submenu__heading h3{
    color: #050505;
 }
