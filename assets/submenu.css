@@ -142,3 +142,7 @@ submenu .w-300px{
 .level-2 .submenu__heading h3{
    color: #050505;
 }
+.submenu .row .level-2,
+.submenu .row .level-3{
+  height: 100%;
+}
