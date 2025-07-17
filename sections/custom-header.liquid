@@ -2,157 +2,169 @@
   {%- assign position_sub = canonical_url | split: '?q=sub_menu_' | last | plus: 0 -%}
   {%- render 'menu_import_sub', position_sub: position_sub -%}
 {%- else -%}
-<!-- header.liquid -->
-{%- style -%}
-{%- capture header_css -%}
-.header.style-14 .box-search.show-icon .kt--drop-in {
-  border: 0.1rem solid #ebebeb;
-}
-.header.style-14 .box-search .search {
-  border-radius: 50px;
-}
-.header.style-14 .block-info .infor, .header.style-14 .list-link {
-  text-transform: uppercase;
-}
-.header.style-14 .box-search.show-icon .control .button-search {
-  color: #333;
-}
-.header.style-14 .box-search.show-input .control {
-  background-color: transparent;
-  border: 0.1rem solid #ebebeb;
-  border-radius: 5px;
-  margin-bottom: 1rem;
-}
-.header.style-14 .box-search.show-input .search {
-  font-style: normal;
-}
-.header.style-14 .box-search.show-input-line {
-  border-bottom: thin solid #ccc;
-  border-radius: 0;
-  width: 270px;
-}
-.header.style-14 .box-search.show-input-line .button-search {
-  font-size: 2.2rem;
-}
-.header.style-14 .box-search.show-input-line .search::placeholder {
-  color: #777;
-}
-.header.style-14 .box-search.show-input-line .search::-webkit-input-placeholder {
-  color: #777;
-}
-{%-endcapture-%}
-{{- header_css | strip_newlines | remove: '  ' | remove: '  ' -}}
+  <!-- header.liquid -->
+  {%- style -%}
+    {%- capture header_css -%}
+    .header.style-14 .box-search.show-icon .kt--drop-in {
+      border: 0.1rem solid #ebebeb;
+    }
+    .header.style-14 .box-search .search {
+      border-radius: 50px;
+    }
+    .header.style-14 .block-info .infor, .header.style-14 .list-link {
+      text-transform: uppercase;
+    }
+    .header.style-14 .box-search.show-icon .control .button-search {
+      color: #333;
+    }
+    .header.style-14 .box-search.show-input .control {
+      background-color: transparent;
+      border: 0.1rem solid #ebebeb;
+      border-radius: 5px;
+      margin-bottom: 1rem;
+    }
+    .header.style-14 .box-search.show-input .search {
+      font-style: normal;
+    }
+    .header.style-14 .box-search.show-input-line {
+      border-bottom: thin solid #ccc;
+      border-radius: 0;
+      width: 270px;
+    }
+    .header.style-14 .box-search.show-input-line .button-search {
+      font-size: 2.2rem;
+    }
+    .header.style-14 .box-search.show-input-line .search::placeholder {
+      color: #777;
+    }
+    .header.style-14 .box-search.show-input-line .search::-webkit-input-placeholder {
+      color: #777;
+    }
+    {%-endcapture-%}
+    {{- header_css | strip_newlines | remove: '  ' | remove: '  ' -}}
 
-.content_{{section.id}}{margin-top: {{section.settings.header_margin_top | default: '0' | split: '|' | first }};margin-bottom: {{section.settings.header_margin_bottom | default: '0' | split: '|' | first }};padding: {{section.settings.header_padding | default: '0'| split: '|' | first | replace : '-',' '}};}{{--}}
-.header-top{padding: {{- section.settings.header_top_padding | default: '0' | split: '|' | first | replace : '-',' '-}};margin-top: {{- section.settings.header_top_margin_top | default: '0'| split: '|' | first -}};margin-bottom: {{- section.settings.header_top_margin_bottom | default: '0' | split: '|' | first -}};background-position: center;}{{--}}
-.header-announcement{display: none;padding: {{section.settings.announcement_padding | default: '0' | split: '|' | first | replace : '-',' '}};margin-top: {{section.settings.announcement_margin_top | default: '0'| split: '|' | first }};margin-bottom: {{section.settings.announcement_margin_bottom | default: '0' | split: '|' | first }};background-position: center;}
-{%- endstyle -%}
-{% style %}
-   .nav-menu {
-    background: #050505;
-  }
-  .nav-menu ul {
-    padding: 0px;
-    margin: 0px;
-    display: flex;
-    gap: 25px;
-    justify-content: center;
-    align-items: center;
-  }
-  .nav-menu ul li:hover a {
-    color: #127fb5;
-  }
-  .nav-menu ul li {
-    list-style: none;
-    position: relative;
-  }
-  .nav-menu ul li a {
-    color: #fafafa;
-    font-family: Karla;
-    font-size: clamp(12px, 5vw, 16px);
-    font-style: normal;
-    font-weight: 500;
-    line-height: 24px; /* 150% */
-    text-transform: uppercase;
-  }
-  .nav-menu ul li.has-sub {
-  }
-  .nav-menu ul li.has-sub {
-    display: flex;
-    gap: 8px;
-  }
-  .nav-menu ul li.has-sub::after {
-    transition: transform 0.3s ease;
-  }
-  .nav-menu ul li.has-sub.active::after {
-    transform: rotate(180deg);
-  }
-  .nav-menu ul li.has-sub::after {
-    content: '';
-    width: 25px;
-    height: 22px;
-    display: block;
-    background-image: url(https://cdn.shopify.com/s/files/1/0859/1186/3592/files/keyboard_arrow_down.svg?v=1752584493);
-  }
-{% endstyle %}
-<header {%if settings.use_wrap_container %}class="wrap-container" {%endif%}data-section-id="{{ section.id }}" data-section-type="header-section" data-header-sticky="true">
-  <div id="header-ontop" class="header-ontop is-sticky"></div>
-  <div id="header" class="custom-header header style-14{%if settings.use_header_mobile_search_box%} mobile-search-box{%endif%}">
-    <div class="content_{{section.id}}{%if section.settings.header_image%} bg-image lazyload{%endif%}"{%if section.settings.header_image%} data-bgset="{{section.settings.header_image | img_url: 'master'}}" data-sizes="auto" data-parent-fit="contain"{%endif%} data-respon="{'el':'.content_{{section.id}}','mt':'{{section.settings.header_margin_top}}','mb':'{{section.settings.header_margin_bottom}}','p':'{{section.settings.header_padding}}'}">
-      {%- assign announcements = section.blocks | where: "type", "announcement" | first -%}
-      {%- assign top_menus = section.blocks | where: "type", "top_menu" | first -%}
-      {%- if section.settings.use_header_announcement and announcements -%}
-        {%- render 'kt_header-announcement' -%}
-      {%- endif -%}
-      {%- if section.settings.use_header_top and top_menus -%}
-        {%- render 'kt_header-top' -%}
-      {%- endif -%}
-      {% comment %}
-      {%- render 'header-14' -%}
-      {% endcomment %}
-      {%- render 'main-header', cart:cart -%}
-      <div class="header-group">
-       
-        <div class="header-bottom d-lg-block nav-menu">
-        <div class="container">
-          <div class="main-header header-menu horizon-menu">
-            <nav class="main-navigation">
-              <ul class="menu-items-main">
-                <li><a href="#">Home</a></li>
-                <li><a href="#">About Us</a></li>
-                <li class="has-sub" child-menu-id="submenu-3"><a href="#">Our Products</a></li>
-                <li><a href="#">Inspiration</a></li>
-                <li><a href="#">Blog</a></li>
-                <li><a href="#">FAQ’s</a></li>
-                <li><a href="#">Contact Us</a></li>
-              </ul>
-            </nav>
+    .content_{{section.id}}{margin-top: {{section.settings.header_margin_top | default: '0' | split: '|' | first }};margin-bottom: {{section.settings.header_margin_bottom | default: '0' | split: '|' | first }};padding: {{section.settings.header_padding | default: '0'| split: '|' | first | replace : '-',' '}};}{{--}}
+    .header-top{padding: {{- section.settings.header_top_padding | default: '0' | split: '|' | first | replace : '-',' '-}};margin-top: {{- section.settings.header_top_margin_top | default: '0'| split: '|' | first -}};margin-bottom: {{- section.settings.header_top_margin_bottom | default: '0' | split: '|' | first -}};background-position: center;}{{--}}
+    .header-announcement{display: none;padding: {{section.settings.announcement_padding | default: '0' | split: '|' | first | replace : '-',' '}};margin-top: {{section.settings.announcement_margin_top | default: '0'| split: '|' | first }};margin-bottom: {{section.settings.announcement_margin_bottom | default: '0' | split: '|' | first }};background-position: center;}
+  {%- endstyle -%}
+  {% style %}
+    .nav-menu {
+      background: #050505;
+    }
+    .nav-menu ul {
+      padding: 0px;
+      margin: 0px;
+      display: flex;
+      gap: 25px;
+      justify-content: center;
+      align-items: center;
+    }
+    .nav-menu ul li:hover a {
+      color: #127fb5;
+    }
+    .nav-menu ul li {
+      list-style: none;
+      position: relative;
+    }
+    .nav-menu ul li a {
+      color: #fafafa;
+      font-family: Karla;
+      font-size: clamp(12px, 5vw, 16px);
+      font-style: normal;
+      font-weight: 500;
+      line-height: 24px; /* 150% */
+      text-transform: uppercase;
+    }
+    .nav-menu ul li.has-sub {
+    }
+    .nav-menu ul li.has-sub {
+      display: flex;
+      gap: 8px;
+    }
+    .nav-menu ul li.has-sub::after {
+      transition: transform 0.3s ease;
+    }
+    .nav-menu ul li.has-sub.active::after {
+      transform: rotate(180deg);
+    }
+    .nav-menu ul li.has-sub::after {
+      content: '';
+      width: 25px;
+      height: 22px;
+      display: block;
+      background-image: url(https://cdn.shopify.com/s/files/1/0859/1186/3592/files/keyboard_arrow_down.svg?v=1752584493);
+    }
+  {% endstyle %}
+  <header
+    {% if settings.use_wrap_container %}
+      class="wrap-container"
+    {% endif -%}
+    data-section-id="{{ section.id }}"
+    data-section-type="header-section"
+    data-header-sticky="true"
+  >
+    <div id="header-ontop" class="header-ontop is-sticky"></div>
+    <div
+      id="header"
+      class="custom-header header style-14{%if settings.use_header_mobile_search_box%} mobile-search-box{%endif%}"
+    >
+      <div
+        class="content_{{section.id}}{%if section.settings.header_image%} bg-image lazyload{%endif%}"
+        {% if section.settings.header_image %}
+          data-bgset="{{section.settings.header_image | img_url: 'master'}}" data-sizes="auto" data-parent-fit="contain"
+        {% endif %}
+        data-respon="{'el':'.content_{{section.id}}','mt':'{{section.settings.header_margin_top}}','mb':'{{section.settings.header_margin_bottom}}','p':'{{section.settings.header_padding}}'}"
+      >
+        {%- assign announcements = section.blocks | where: 'type', 'announcement' | first -%}
+        {%- assign top_menus = section.blocks | where: 'type', 'top_menu' | first -%}
+        {%- if section.settings.use_header_announcement and announcements -%}
+          {%- render 'kt_header-announcement' -%}
+        {%- endif -%}
+        {%- if section.settings.use_header_top and top_menus -%}
+          {%- render 'kt_header-top' -%}
+        {%- endif -%}
+        {% comment %}
+          {%- render 'header-14' -%}
+        {% endcomment %}
+        {%- render 'main-header', cart: cart -%}
+        <div class="header-group">
+          <div class="header-bottom d-lg-block nav-menu">
+            <div class="container">
+              <div class="main-header header-menu horizon-menu">
+                <nav class="main-navigation">
+                  <ul class="menu-items-main">
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">About Us</a></li>
+                    <li class="has-sub" child-menu-id="submenu-3"><a href="#">Our Products</a></li>
+                    <li><a href="#">Inspiration</a></li>
+                    <li><a href="#">Blog</a></li>
+                    <li><a href="#">FAQ’s</a></li>
+                    <li><a href="#">Contact Us</a></li>
+                  </ul>
+                </nav>
+              </div>
+            </div>
           </div>
+          {%- render 'submenu' -%}
         </div>
       </div>
-        {%- render 'submenu' -%}
-      </div>
     </div>
-  </div>
-</header>
-  
+  </header>
 {%- endif -%}
 
 {% schema %}
-  {
+{
   "name": "Header + Announcement",
   "settings": [
     {
       "type": "header",
       "content": "Announcement"
-    },
+    }
   ],
-  "blocks": [
-  
-  ]
+  "blocks": []
 }
 {% endschema %}
-  {% javascript %}
+{% javascript %}
   function LoadMenuJs() {
     let menuItems = document.querySelectorAll('.header-group .menu-items-main li');
 
@@ -176,39 +188,39 @@
   }
   let stickyAdded = false;
   let ActiveClass = false;
-  let ElementClonedDetected = false
+  let ElementClonedDetected = false;
   function LoadStickyMenuJs() {
-     if (document.querySelector('#header-ontop.cloned')) {
+    if (document.querySelector('#header-ontop.cloned')) {
       ElementClonedDetected = true;
       let menuItems = document.querySelectorAll('.cloned .header-group .menu-items-main li');
-       menuItems.forEach((item) => {
-          if (item.classList.contains('has-sub')) {
-            let menuClass = item.getAttribute('child-menu-id');
-            let mainHeader = document.querySelector('.cloned .header-group');
-            let submenuElement = mainHeader?.querySelector('.' + menuClass);
-            item.addEventListener('click', function () {
-              console.log('clicked cloned')
-              if(ActiveClass){
-                submenuElement.classList.remove('active');
-                item.classList.remove('active');
-                ActiveClass = false
-              }else{
-                submenuElement.classList.add('active');
-                item.classList.add('active');
-                ActiveClass = true
-              }
-            });
-         }
-       })
-     }
+      menuItems.forEach((item) => {
+        if (item.classList.contains('has-sub')) {
+          let menuClass = item.getAttribute('child-menu-id');
+          let mainHeader = document.querySelector('.cloned .header-group');
+          let submenuElement = mainHeader?.querySelector('.' + menuClass);
+          item.addEventListener('click', function () {
+            console.log('clicked cloned');
+            if (ActiveClass) {
+              submenuElement.classList.remove('active');
+              item.classList.remove('active');
+              ActiveClass = false;
+            } else {
+              submenuElement.classList.add('active');
+              item.classList.add('active');
+              ActiveClass = true;
+            }
+          });
+        }
+      });
+    }
   }
- 
+
   const stickyInterval = setInterval(() => {
     if (ElementClonedDetected == true) {
       clearInterval(stickyInterval);
       console.log('Sticky menu initialized and interval cleared.');
-    }else{
-       LoadStickyMenuJs();
+    } else {
+      LoadStickyMenuJs();
     }
   }, 900);
 
