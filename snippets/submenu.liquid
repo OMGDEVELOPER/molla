@@ -1,36 +1,89 @@
 {% style %}
-  .submenu__items ul {
+  .submenu__items,
+  .submenu-subitems {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+
+  .submenu__items > li {
+    position: relative;
+  }
+
+  /* Hide submenus by default */
+  .submenu-subitems {
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 100%;
+    background: white;
+    padding: 1rem;
+    min-width: 200px;
+    z-index: 100;
+  }
+
+  /* Level 2 appears on hover of level 1 */
+  .submenu__items > li:hover > .submenu-subitems {
+    display: block;
+  }
+
+  /* Level 3 appears on hover of level 2 */
+  .submenu-subitems > li {
+    position: relative;
+  }
+
+  .submenu-subitems > li:hover > .submenu-subitems {
+    display: block;
+    left: 100%;
+    top: 0;
+  }
+
+  .submenu .item {
+    position: relative;
+  }
+
+  /* Dynamic column for 2nd level */
+  .submenu .hover-column {
     display: none;
   }
-  .submenu__items li:hover > ul {
+
+  .submenu__items > li:hover ~ .hover-column {
     display: block;
+  }
+
+  .submenu .submenu__heading h3 {
+    font-size: 1.2rem;
+    margin-bottom: 0.5rem;
+  }
+
+  .submenu .style-2 {
+    background: #fff;
+    padding: 1rem;
     position: absolute;
     left: 100%;
     top: 0;
     z-index: 10;
-    background: white;
-    padding: 1rem;
-    min-width: 200px;
+    min-width: 220px;
+    display: none;
   }
 
-  .submenu-container .style-2 {
-    position: relative;
+  /* Show .style-2 (2nd column) when parent hovered */
+  .submenu__items > li:hover .style-2 {
+    display: block;
   }
 
-  .submenu .submenu__items {
-    list-style: none;
-    padding: 0;
-  }
-
-  .submenu .submenu__items li {
-    position: relative;
+  /* Nested style-2 submenu inside .style-2 */
+  .style-2 .submenu__items > li:hover > .submenu-subitems {
+    display: block;
+    left: 100%;
+    top: 0;
   }
 {% endstyle %}
 
 <submenu>
   <div class="submenu submenu-container container {{ block.id }}" id="{{ block.id }}">
     <div class="row">
-      <!-- Static Column 1 -->
+      <!-- Main column -->
       <div class="col-12 col-md-3 item item__1">
         <div class="item__1__group">
           <div class="submenu__heading">
@@ -41,56 +94,44 @@
 
           <ul class="submenu__items">
             {% for top_link in main_menu.links %}
-              <li class="{% if top_link.links != blank %}has-children{% endif %}">
+              <li>
                 <a href="{{ top_link.url }}">{{ top_link.title }}</a>
+
                 {% if top_link.links != blank %}
-                  <ul class="submenu-subitems">
-                    {% for child_link in top_link.links %}
-                      <li>
-                        <a href="{{ child_link.url }}">{{ child_link.title }}</a>
-                        {% if child_link.links != blank %}
-                          <ul class="submenu-subitems">
-                            {% for subchild_link in child_link.links %}
-                              <li><a href="{{ subchild_link.url }}">{{ subchild_link.title }}</a></li>
-                            {% endfor %}
-                          </ul>
-                        {% endif %}
-                      </li>
-                    {% endfor %}
-                  </ul>
+                  <!-- 2nd level submenu -->
+                  <div class="style-2">
+                    <div class="submenu__heading">
+                      <h3>{{ top_link.title }}</h3>
+                      <a href="{{ top_link.url }}"><span class="see-all-link">See All</span></a>
+                    </div>
+                    <ul class="submenu__items">
+                      {% for child_link in top_link.links %}
+                        <li>
+                          <a href="{{ child_link.url }}">{{ child_link.title }}</a>
+
+                          {% if child_link.links != blank %}
+                            <!-- 3rd level submenu -->
+                            <ul class="submenu-subitems">
+                              {% for subchild_link in child_link.links %}
+                                <li><a href="{{ subchild_link.url }}">{{ subchild_link.title }}</a></li>
+                              {% endfor %}
+                            </ul>
+                          {% endif %}
+                        </li>
+                      {% endfor %}
+                    </ul>
+                  </div>
                 {% endif %}
               </li>
             {% endfor %}
           </ul>
         </div>
 
-        <!-- Optional bottom icons -->
+        <!-- Optional: Icon links -->
         <ul class="submenu__items links-with-icon">
-          <li><a href="#"><span class="__icon"><img src="..." alt="icon" /></span><span class="__label">Special Offers</span></a></li>
-          <li><a href="#"><span class="__icon"><img src="..." alt="icon" /></span><span class="__label">New Products</span></a></li>
+          <li><a href="#"><span class="__icon"><img src="..." /></span><span class="__label">Special Offers</span></a></li>
         </ul>
       </div>
-
-      <!-- Dynamic Columns (Start at 2nd Column) -->
-      {% assign counter = 2 %}
-      {% for top_link in main_menu.links %}
-        {% if top_link.links != blank %}
-          <div class="col-12 col-md-3 item item__{{ counter }} style-2">
-            <div class="submenu__heading">
-              <h3>{{ top_link.title }}</h3>
-              <a href="{{ top_link.url }}"><span class="see-all-link">See All</span></a>
-            </div>
-            <ul class="submenu__items">
-              {% for child_link in top_link.links %}
-                <li>
-                  <a href="{{ child_link.url }}">{{ child_link.title }}</a>
-                </li>
-              {% endfor %}
-            </ul>
-          </div>
-          {% assign counter = counter | plus: 1 %}
-        {% endif %}
-      {% endfor %}
     </div>
   </div>
 </submenu>
