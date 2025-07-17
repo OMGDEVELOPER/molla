@@ -8,6 +8,7 @@
               {%-when 'standard_nav_item'-%}
                 <li><a href="{{ block.settings.standard_item_url }}">{{ block.settings.standard_item_label }}</a></li>
               {% when 'with_submenu_item' %}
+                <li class="has-sub" child-menu-id="submenu-3"><a href="#">Our Products</a></li>
             {% endcase %}
           {% endfor %}
         </ul>
