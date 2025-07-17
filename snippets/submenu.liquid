@@ -6,7 +6,7 @@
               <div class="submenu__heading">
                   <h3>OUR PRODUCTS</h3>
               </div>
-            {%- assign main_menu = linklists['main-menu-handle'] -%}
+            {%- assign main_menu = linklists[block.settings.menu-item-1] -%}
 
 <ul class="submenu__items">
   {% for top_link in main_menu.links %}
