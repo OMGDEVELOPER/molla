@@ -146,5 +146,5 @@ submenu .w-300px{
 .submenu .row .level-2,
 .submenu .row .level-3{
   height: 100%;
-  padding-top: 0px;
+  padding: 0px;
 }
