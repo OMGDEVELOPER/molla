@@ -120,6 +120,13 @@
               "item_url": ""
             }
           },
+          "with_submenu_item_x6H6Cr": {
+            "type": "with_submenu_item",
+            "settings": {
+              "item_label": "OUR DROPDOWN",
+              "item_url": ""
+            }
+          },
           "standard_nav_item_ip9A4G": {
             "type": "standard_nav_item",
             "settings": {
@@ -153,6 +160,7 @@
           "standard_nav_item_pGpRKf",
           "standard_nav_item_h7xaFR",
           "with_submenu_item_fTTKWg",
+          "with_submenu_item_x6H6Cr",
           "standard_nav_item_ip9A4G",
           "standard_nav_item_QWK7JN",
           "standard_nav_item_jEkwwA",
