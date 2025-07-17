@@ -26,6 +26,9 @@ submenu{
   display: grid;
   gap:40px;
 }
+.submenu .row .level-2{
+  background: unset;
+}
 .submenu .row .item.level-2{
   background: #DADADA;
 }
