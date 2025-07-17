@@ -69,7 +69,7 @@
              
             </ul>
         </div>
-      <div class="col-12 col-md-3 item item__2 w-300px">
+      <div class="col-12 col-md-3 item item__2 w-300px level-2">
         <div class="item__1__group">
           {% comment %}{% endcomment %}
 
@@ -84,7 +84,7 @@
                 <a href="{{ top_link.url }}">{{ top_link.title }}</a>
 
                 {% if top_link.links != blank %}
-                  <div class="submenu-items-container style-2 level-2 w-300px">
+                  <div class="submenu-items-container style-2 level-3 w-300px">
                     <div class="submenu__heading">
                       <h3>{{ top_link.title }}</h3>
                       {% comment %}
@@ -98,7 +98,7 @@
                           <a href="{{ child_link.url }}">{{ child_link.title }}</a>
 
                           {% if child_link.links != blank %}
-                            <ul class="submenu-subitems-inner item level-3 w-300px submenu-items-container">
+                            <ul class="submenu-subitems-inner item level-4 w-300px submenu-items-container">
                               <div class="submenu__heading">
                                 <h3>{{ child_link.title }}</h3>
                                 {% comment %}
