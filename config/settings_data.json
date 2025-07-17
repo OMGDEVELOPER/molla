@@ -12,6 +12,7 @@
     "purchase_code": "b843305e-cc9f-46b8-ac05-26d757d8af14",
     "import_header": "custom-header",
     "import_footer": "02",
+    "width_sidebar_layout": "container-fluid wide",
     "newsletter_popup": false,
     "sections": {
       "kt-dear-customers": {
@@ -96,6 +97,10 @@
       },
       "custom-header": {
         "type": "custom-header",
+        "settings": {}
+      },
+      "custom-footer": {
+        "type": "custom-footer",
         "settings": {}
       }
     },
