@@ -47,7 +47,54 @@
 .header-top{padding: {{- section.settings.header_top_padding | default: '0' | split: '|' | first | replace : '-',' '-}};margin-top: {{- section.settings.header_top_margin_top | default: '0'| split: '|' | first -}};margin-bottom: {{- section.settings.header_top_margin_bottom | default: '0' | split: '|' | first -}};background-position: center;}{{--}}
 .header-announcement{display: none;padding: {{section.settings.announcement_padding | default: '0' | split: '|' | first | replace : '-',' '}};margin-top: {{section.settings.announcement_margin_top | default: '0'| split: '|' | first }};margin-bottom: {{section.settings.announcement_margin_bottom | default: '0' | split: '|' | first }};background-position: center;}
 {%- endstyle -%}
-{{ 'nav-menu.css' | asset_url | stylesheet_tag }}
+{% style %}
+   .nav-menu {
+    background: #050505;
+  }
+  .nav-menu ul {
+    padding: 0px;
+    margin: 0px;
+    display: flex;
+    gap: 25px;
+    justify-content: center;
+    align-items: center;
+  }
+  .nav-menu ul li:hover a {
+    color: #127fb5;
+  }
+  .nav-menu ul li {
+    list-style: none;
+    position: relative;
+  }
+  .nav-menu ul li a {
+    color: #fafafa;
+    font-family: Karla;
+    font-size: clamp(12px, 5vw, 16px);
+    font-style: normal;
+    font-weight: 500;
+    line-height: 24px; /* 150% */
+    text-transform: uppercase;
+  }
+  .nav-menu ul li.has-sub {
+  }
+  .nav-menu ul li.has-sub {
+    display: flex;
+    gap: 8px;
+  }
+  .nav-menu ul li.has-sub::after {
+    transition: transform 0.3s ease;
+  }
+  .nav-menu ul li.has-sub.active::after {
+    transform: rotate(180deg);
+  }
+  .nav-menu ul li.has-sub::after {
+    content: '';
+    width: 25px;
+    height: 22px;
+    display: block;
+    background-image: url(https://cdn.shopify.com/s/files/1/0859/1186/3592/files/keyboard_arrow_down.svg?v=1752584493);
+  }
+{% endstyle %}
 <header {%if settings.use_wrap_container %}class="wrap-container" {%endif%}data-section-id="{{ section.id }}" data-section-type="header-section" data-header-sticky="true">
   <div id="header-ontop" class="header-ontop is-sticky"></div>
   <div id="header" class="custom-header header style-14{%if settings.use_header_mobile_search_box%} mobile-search-box{%endif%}">
