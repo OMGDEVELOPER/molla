@@ -57,7 +57,7 @@ submenu{
   font-style: normal;
   font-weight: 700;
 }
-.submenu .row .item.item__1 .submenu__heading h3{
+.submenu .row .item.item__1 .submenu__heading.heading__1 h3{
   color: #FAFAFA;
 }
 .submenu .row .item.style-2 .submenu__heading h3{
