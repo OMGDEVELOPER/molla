@@ -1,5 +1,5 @@
 <!-- newsletter-popup.liquid -->
-<section style="display:none;" id="newsletterModal" class="modal fade" aria-hidden="false" role="dialog" tabindex="-1" data-pause="{{section.settings.time_popup_delay|default: 2}}" data-scroll="{{section.settings.scroll_popup_delay|default: 0}}" data-mobile-display="{{settings.newsletter_popup_hide_mobile}}" data-section-id="newsletterModal" data-section-type="kt-newsletter-modal">
+<section style="display:none; opacity:0;visibility:hidden;" id="newsletterModal" class="modal fade" aria-hidden="false" role="dialog" tabindex="-1" data-pause="{{section.settings.time_popup_delay|default: 2}}" data-scroll="{{section.settings.scroll_popup_delay|default: 0}}" data-mobile-display="{{settings.newsletter_popup_hide_mobile}}" data-section-id="newsletterModal" data-section-type="kt-newsletter-modal">
   <div class="modal-dialog modal-dialog-centered{%if section.settings.use_banner%} modal-lg{%endif%}">
     <div class="modal-content">
       <div class="content-item kt-popup-newsletter w-100 position-relative">
