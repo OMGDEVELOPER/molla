@@ -53,9 +53,9 @@
                   <h3>OUR PRODUCTS</h3>
               </div>
               <ul class="submenu__items">
-                  <li class="has-second-level"><a href="#">Roofing</a></li>
-                  <li class="has-second-level"><a href="#">Wall</a></li>
-                  <li class="has-second-level"><a href="#">Cool Room</a></li>
+                  <li><a href="#">Roofing</a></li>
+                  <li><a href="#">Wall</a></li>
+                  <li><a href="#">Cool Room</a></li>
                   <li><a href="#">Outdoor Living</a></li>
                   <li><a href="#">Decking</a></li>
                   <li><a href="#">Fencing</a></li>
@@ -78,7 +78,7 @@
             <h3 class="uppercase">{{ block.settings.menu-item-1 }}</h3>
           </div>
           {%- assign main_menu = linklists[block.settings.menu-item-1] -%}
-          <ul class="submenu__items">
+          <ul class="submenu__items level-2">
             {% for top_link in main_menu.links %}
               <li class="has-second-level">
                 <a href="{{ top_link.url }}">{{ top_link.title }}</a>
