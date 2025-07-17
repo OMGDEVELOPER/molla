@@ -1,49 +1,54 @@
 <submenu>
-<div class="submenu submenu-container container {{ block.id }}" id="{{ block.id }}">
-    <div class="row">
-        <div class="col-12 col-md-3 item item__1">
-            <div class="item__1__group">
-              <div class="submenu__heading">
-                  <h3>OUR PRODUCTS</h3>
-              </div>
-            {%- assign main_menu = linklists[block.settings.menu-item-1] -%}
+    <div class="submenu submenu-container container {{ block.id }}" id="{{ block.id }}">
+        <div class="row">
+            <div class="col-12 col-md-3 item item__1">
+                <div class="item__1__group">
+                    <div class="submenu__heading">
+                        <h3>OUR PRODUCTS</h3>
+                    </div>
+                    {%- assign main_menu = linklists[block.settings.menu-item-1] -%}
 
-<ul class="submenu__items">
-  {% for top_link in main_menu.links %}
-    <li class="{% if top_link.links != blank %}with-submenu{% endif %}">
-      <a href="{{ top_link.url }}">{{ top_link.title }}</a>
+                    <ul class="submenu__items">
+                        {% for top_link in main_menu.links %}
+                        <li class="{% if top_link.links != blank %}with-submenu{% endif %}">
+                            <a href="{{ top_link.url }}">{{ top_link.title }}</a>
 
-      {% if top_link.links != blank %}
-        <ul>
-          {% for child_link in top_link.links %}
-            <li class="{% if child_link.links != blank %}with-submenu{% endif %}">
-              <a href="{{ child_link.url }}">{{ child_link.title }}</a>
+                            {% if top_link.links != blank %}
+                            <ul>
+                                {% for child_link in top_link.links %}
+                                <li class="{% if child_link.links != blank %}with-submenu{% endif %}">
+                                    <a href="{{ child_link.url }}">{{ child_link.title }}</a>
 
-              {% if child_link.links != blank %}
-                <ul>
-                  {% for subchild_link in child_link.links %}
+                                    {% if child_link.links != blank %}
+                                    <ul>
+                                        {% for subchild_link in child_link.links %}
+                                        <li>
+                                            <a href="{{ subchild_link.url }}">{{ subchild_link.title }}</a>
+                                        </li>
+                                        {% endfor %}
+                                    </ul>
+                                    {% endif %}
+                                </li>
+                                {% endfor %}
+                            </ul>
+                            {% endif %}
+                        </li>
+                        {% endfor %}
+                    </ul>
+                </div>
+                <ul class="submenu__items links-with-icon">
                     <li>
-                      <a href="{{ subchild_link.url }}">{{ subchild_link.title }}</a>
+                        <a href="#"><span class="__icon"><img src="https://cdn.shopify.com/s/files/1/0859/1186/3592/files/sell.svg?v=1752660278"alt="icon" /></span><span class="__label">Special Offers</span></a>
                     </li>
-                  {% endfor %}
+                    <li>
+                        <a href="#"><span class="__icon"><img src="https://cdn.shopify.com/s/files/1/0859/1186/3592/files/sell.svg?v=1752660278"alt="icon" /></span><span class="__label">Special Offers</span></a>
+                    </li>
+                    <li>
+                        <a href="#"><span class="__icon"><img src="https://cdn.shopify.com/s/files/1/0859/1186/3592/files/sell.svg?v=1752660278"alt="icon" /></span><span class="__label">Special Offers</span></a>
+                    </li>
+                    
                 </ul>
-              {% endif %}
-            </li>
-          {% endfor %}
-        </ul>
-      {% endif %}
-    </li>
-  {% endfor %}
-</ul>
-
             </div>
-            <ul class="submenu__items links-with-icon">
-              <li><a href="#"><span class="__icon"><img src="https://cdn.shopify.com/s/files/1/0859/1186/3592/files/sell.svg?v=1752660278" alt="icon"></span><span class="__label">Special Offers</span></a></li>
-              <li><a href="#"><span class="__icon"><img src="https://cdn.shopify.com/s/files/1/0859/1186/3592/files/sell.svg?v=1752660278" alt="icon"></span><span class="__label">Special Offers</span></a></li>
-              <li><a href="#"><span class="__icon"><img src="https://cdn.shopify.com/s/files/1/0859/1186/3592/files/sell.svg?v=1752660278" alt="icon"></span><span class="__label">Special Offers</span></a></li>
-            </ul>
         </div>
-
     </div>
-</div>
 </submenu>
