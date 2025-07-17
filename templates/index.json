@@ -590,71 +590,6 @@
         "use_lazyload": true
       }
     },
-    "1612489579883": {
-      "type": "md_icon_boxes",
-      "blocks": {
-        "1612489579883-0": {
-          "type": "item_icon_side",
-          "settings": {
-            "icon_font": "fkt-truck",
-            "title": "Payment & Delivery",
-            "content": "Free shipping for orders over $50",
-            "url": ""
-          }
-        },
-        "1612489579883-1": {
-          "type": "item_icon_side",
-          "settings": {
-            "icon_font": "fkt-rotate-left",
-            "title": "Return & Refund",
-            "content": "Free 100% money back guarantee",
-            "url": ""
-          }
-        },
-        "1612489579883-2": {
-          "type": "item_icon_side",
-          "settings": {
-            "icon_font": "fkt-info-circle",
-            "title": "Quality Support",
-            "content": "Alway online feedback 24/7",
-            "url": ""
-          }
-        },
-        "1612489579883-3": {
-          "type": "item_icon_side",
-          "settings": {
-            "icon_font": "fkt-envelope",
-            "title": "Join Our Newsletter",
-            "content": "10% off by subscribing to our newsletter",
-            "url": ""
-          }
-        }
-      },
-      "block_order": [
-        "1612489579883-0",
-        "1612489579883-1",
-        "1612489579883-2",
-        "1612489579883-3"
-      ],
-      "settings": {
-        "title": "Icon Boxes",
-        "off_mobile": false,
-        "off_desktop": false,
-        "width_section": "w-100",
-        "width_content": true,
-        "section_margin_top": "",
-        "section_margin_bottom": "",
-        "section_padding": "3rem 0",
-        "section_bg": "#ffffff",
-        "section_bg_op": 1,
-        "color_icon": "#333333",
-        "color_title": "#333333",
-        "color_desc": "#999999",
-        "title_font_weight": "500",
-        "use_slide": false,
-        "responsive": "{\n  \"0\": {\n    \"slidesPerView\": 1,\n    \"spaceBetween\": 20\n  },\n  \"320\": {\n    \"slidesPerView\": 1,\n    \"spaceBetween\": 20\n  },\n  \"476\": {\n    \"slidesPerView\": 2,\n    \"spaceBetween\": 20\n  },\n  \"768\": {\n    \"slidesPerView\": 2,\n    \"spaceBetween\": 20\n  },\n  \"992\": {\n    \"slidesPerView\": 3,\n    \"spaceBetween\": 20\n  },\n  \"1200\": {\n    \"slidesPerView\": 4,\n    \"spaceBetween\": 20\n  }\n}"
-      }
-    },
     "1612489778594": {
       "type": "md_call_to_action",
       "blocks": {
@@ -690,6 +625,75 @@
         "color_bg_input": "#ffffff",
         "preview": false
       }
+    },
+    "1612489579883": {
+      "type": "md_icon_boxes",
+      "blocks": {
+        "1612489579883-0": {
+          "type": "item_icon_side",
+          "settings": {
+            "icon_font": "",
+            "icon": "shopify://shop_images/workspace_premium.svg",
+            "title": "Quality Materials",
+            "content": "We provide durable, trusted, and industry-approved materials for every project.",
+            "url": ""
+          }
+        },
+        "1612489579883-1": {
+          "type": "item_icon_side",
+          "settings": {
+            "icon_font": "fkt-rotate-left",
+            "icon": "shopify://shop_images/support_agent.svg",
+            "title": "24 x 7 Support",
+            "content": "Always available. Get expert help anytime day or night.",
+            "url": ""
+          }
+        },
+        "1612489579883-2": {
+          "type": "item_icon_side",
+          "settings": {
+            "icon_font": "fkt-info-circle",
+            "icon": "shopify://shop_images/editor_choice.svg",
+            "title": "Reward Points",
+            "content": "Earn points on every purchase and redeem them for discounts or exclusive offers.",
+            "url": ""
+          }
+        },
+        "1612489579883-3": {
+          "type": "item_icon_side",
+          "settings": {
+            "icon_font": "fkt-envelope",
+            "icon": "shopify://shop_images/diversity_1.svg",
+            "title": "Community",
+            "content": "Connect, share, and grow with others through our vibrant and supportive network.",
+            "url": ""
+          }
+        }
+      },
+      "block_order": [
+        "1612489579883-0",
+        "1612489579883-1",
+        "1612489579883-2",
+        "1612489579883-3"
+      ],
+      "settings": {
+        "title": "Icon Boxes",
+        "off_mobile": false,
+        "off_desktop": false,
+        "width_section": "w-100",
+        "width_content": true,
+        "section_margin_top": "",
+        "section_margin_bottom": "",
+        "section_padding": "3rem 0",
+        "section_bg": "#ffffff",
+        "section_bg_op": 1,
+        "color_icon": "#333333",
+        "color_title": "#333333",
+        "color_desc": "#999999",
+        "title_font_weight": "500",
+        "use_slide": false,
+        "responsive": "{\n  \"0\": {\n    \"slidesPerView\": 1,\n    \"spaceBetween\": 20\n  },\n  \"320\": {\n    \"slidesPerView\": 1,\n    \"spaceBetween\": 20\n  },\n  \"476\": {\n    \"slidesPerView\": 2,\n    \"spaceBetween\": 20\n  },\n  \"768\": {\n    \"slidesPerView\": 2,\n    \"spaceBetween\": 20\n  },\n  \"992\": {\n    \"slidesPerView\": 3,\n    \"spaceBetween\": 20\n  },\n  \"1200\": {\n    \"slidesPerView\": 4,\n    \"spaceBetween\": 20\n  }\n}"
+      }
     }
   },
   "order": [
@@ -703,7 +707,7 @@
     "featured_banner_iHg4iT",
     "featured_products_t8qqga",
     "1566443930152",
-    "1612489579883",
-    "1612489778594"
+    "1612489778594",
+    "1612489579883"
   ]
 }
