@@ -98,6 +98,17 @@
       },
       "custom-header": {
         "type": "custom-header",
+        "blocks": {
+          "standard_nav_item_pGpRKf": {
+            "type": "standard_nav_item",
+            "settings": {
+              "standard_item_label": "HOME"
+            }
+          }
+        },
+        "block_order": [
+          "standard_nav_item_pGpRKf"
+        ],
         "settings": {}
       },
       "custom-footer": {
