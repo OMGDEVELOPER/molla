@@ -16,17 +16,17 @@
 
                     <ul class="submenu__items">
                         {% for top_link in main_menu.links %}
-                        <li class="{% if top_link.links != blank %}with-submenu{% endif %}" parent-id="{{ block.id }}-1">
+                        <li class="{% if top_link.links != blank %}with-submenu{% endif %}" id="{{ block.id }}-0">
                             <a href="{{ top_link.url }}">{{ top_link.title }}</a>
 
                             {% if top_link.links != blank %}
-                            <ul>
+                            <ul  parent-id="{{ block.id }}-0" id="{{ block.id }}-1">
                                 {% for child_link in top_link.links %}
                                 <li class="{% if child_link.links != blank %}with-submenu-submenu{% endif %}">
                                     <a href="{{ child_link.url }}">{{ child_link.title }}</a>
 
                                     {% if child_link.links != blank %}
-                                    <ul>
+                                    <ul parent-id="{{ block.id }}-1" id="{{ block.id }}-2">>
                                         {% for subchild_link in child_link.links %}
                                         <li>
                                             <a href="{{ subchild_link.url }}">{{ subchild_link.title }}</a>
