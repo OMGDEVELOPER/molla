@@ -1,3 +1,9 @@
+{% style %}
+  .submenu .row .item .with-submenu ul{ display:none; }
+  .submenu .row .item .with-submenu:hover ul{
+    display:block;
+  }
+{% endstyle %}
 <submenu>
     <div class="submenu submenu-container container {{ block.id }}" id="{{ block.id }}">
         <div class="row">
