@@ -26,7 +26,7 @@ submenu{
   display: grid;
   gap:40px;
 }
-.submenu .row .item.item__2{
+.submenu .row .item.level-2{
   background: #DADADA;
 }
 .submenu .row .item.item__3{
