@@ -49,8 +49,8 @@
         "image_KpyRHi": {
           "type": "image",
           "settings": {
-            "image": "shopify://shop_images/2148252768_1_1.png",
-            "image_mb": "shopify://shop_images/2148252768_1_1.png",
+            "image": "shopify://shop_images/2148252768_1_1_-_Copy.png",
+            "image_mb": "shopify://shop_images/2148252768_1_1_-_Copy.png",
             "lazypreload": true,
             "heading": "",
             "font_heading": "poppins_n4",
@@ -83,8 +83,8 @@
         "image_gV78XT": {
           "type": "image",
           "settings": {
-            "image": "shopify://shop_images/2148252768_1_2.png",
-            "image_mb": "shopify://shop_images/2148252768_1_2.png",
+            "image": "shopify://shop_images/2148252768_1_2_-_Copy.png",
+            "image_mb": "shopify://shop_images/2148252768_1_2_-_Copy.png",
             "lazypreload": true,
             "heading": "",
             "font_heading": "poppins_n4",
@@ -117,8 +117,8 @@
         "image_raEAdD": {
           "type": "image",
           "settings": {
-            "image": "shopify://shop_images/2148252768_1_2.png",
-            "image_mb": "shopify://shop_images/2148252768_1_2.png",
+            "image": "shopify://shop_images/2148252768_1_3_-_Copy.png",
+            "image_mb": "shopify://shop_images/2148252768_1_3_-_Copy.png",
             "lazypreload": true,
             "heading": "",
             "font_heading": "poppins_n4",
@@ -166,7 +166,6 @@
         "section_padding": "",
         "section_bg": "",
         "section_bg_op": 1,
-        "image": "shopify://shop_images/banner-image.png",
         "no_overflow": false,
         "fullscreen": false,
         "autoplay": false,
@@ -438,7 +437,6 @@
             "title": "Banner type 2",
             "grid_gutter": 10,
             "banner-effect": "banner-effect5",
-            "image_1": "shopify://shop_images/low-angle-modern-house-roof_1.png",
             "image_link_1": "",
             "stitle_1": "30% OFF",
             "color_stitle_1": "#ff0404",
@@ -448,7 +446,6 @@
             "style_btn_1": "btn-primary-white",
             "style_btn_rounded_1": "btn-rounded",
             "btn_shadow_1": true,
-            "image_2": "shopify://shop_images/low-angle-modern-house-roof_1_1.png",
             "image_link_2": "",
             "stitle_2": "<p class=\"_contractor_text\">Contractor Loyalty Program</p>",
             "color_stitle_2": "#777777",
@@ -495,23 +492,19 @@
       "type": "featured-banner",
       "name": "Featured Banner",
       "settings": {
-        "bg_item1": "shopify://shop_images/Frame_21.png",
         "left_title": "Big Discounts",
         "left_text": "If you become one of our retailers",
         "left_button_label": "BE OUR PARTNER",
         "left_button_link": "shopify://collections",
-        "bg_group1": "shopify://shop_images/Frame_23_1.png",
         "group1_title": "Retail Weekend Sale!",
         "group1_subheading": "GET UP TO 50% OFF",
         "group1_text": "Turn Your Home Goals Into Concrete Reality!",
         "group1_button_label": "SHOP NOW",
         "group1_button_link": "shopify://collections",
-        "bg_group2_1": "shopify://shop_images/Frame_24.png",
         "group2_title_1": "New Roofing Accessories",
         "group2_text_1": "Mega Collection",
         "group2_button_1": "SHOW COLLECTIONS",
         "group2_link_1": "shopify://collections",
-        "bg_group2_2": "shopify://shop_images/Frame_26.png",
         "group2_title_2": "New Roofing Accessories",
         "group2_text_2": "Mega Collection",
         "group2_button_2": "SHOW COLLECTIONS",
@@ -633,7 +626,6 @@
           "type": "item_icon_side",
           "settings": {
             "icon_font": "",
-            "icon": "shopify://shop_images/workspace_premium.svg",
             "title": "Quality Materials",
             "content": "We provide durable, trusted, and industry-approved materials for every project.",
             "url": ""
@@ -643,7 +635,6 @@
           "type": "item_icon_side",
           "settings": {
             "icon_font": "",
-            "icon": "shopify://shop_images/support_agent.svg",
             "title": "24 x 7 Support",
             "content": "Always available. Get expert help anytime day or night.",
             "url": ""
@@ -653,7 +644,6 @@
           "type": "item_icon_side",
           "settings": {
             "icon_font": "",
-            "icon": "shopify://shop_images/editor_choice.svg",
             "title": "Reward Points",
             "content": "Earn points on every purchase and redeem them for discounts or exclusive offers.",
             "url": ""
@@ -663,7 +653,6 @@
           "type": "item_icon_side",
           "settings": {
             "icon_font": "",
-            "icon": "shopify://shop_images/diversity_1.svg",
             "title": "Community",
             "content": "Connect, share, and grow with others through our vibrant and supportive network.",
             "url": ""
