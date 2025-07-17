@@ -6,49 +6,32 @@
     padding: 0;
   }
 
-  .submenu__items > li {
-    /* position: relative; */
+  .submenu__items > li,
+  .submenu-subitems > li {
+    position: relative;
   }
 
-  /* Hide submenus by default */
-  .submenu-subitems {
+  .submenu-subitems,
+  .style-2,
+  .submenu-subitems-inner {
     display: none;
     position: absolute;
     top: 0;
     left: 100%;
     background: white;
     padding: 1rem;
-    min-width: 200px;
-    z-index: 100;
+    min-width: 220px;
+    z-index: 10;
   }
 
-  /* Level 2 appears on hover of level 1 */
-  .submenu__items > li:hover > .submenu-subitems {
+  .submenu__items > li:hover > .style-2,
+  .style-2 .submenu__items > li:hover > .submenu-subitems {
     display: block;
   }
 
-  /* Level 3 appears on hover of level 2 */
-  .submenu-subitems > li {
-    position: relative;
-  }
-
-  .submenu-subitems > li:hover > .submenu-subitems {
-    display: block;
+  .submenu-subitems-inner {
     left: 100%;
     top: 0;
-  }
-
-  .submenu .item {
-    position: relative;
-  }
-
-  /* Dynamic column for 2nd level */
-  .submenu .hover-column {
-    display: none;
-  }
-
-  .submenu__items > li:hover ~ .hover-column {
-    display: block;
   }
 
   .submenu .submenu__heading h3 {
@@ -56,34 +39,23 @@
     margin-bottom: 0.5rem;
   }
 
-  .submenu .style-2 {
-    background: #fff;
-    padding: 1rem;
-    position: absolute;
-    left: 100%;
-    top: 0;
-    z-index: 10;
-    min-width: 220px;
-    display: none;
+  .style-2 .submenu__heading,
+  .submenu-subitems-inner .submenu__heading {
+    margin-bottom: 0.5rem;
+    border-bottom: 1px solid #eee;
+    padding-bottom: 0.5rem;
   }
 
-  /* Show .style-2 (2nd column) when parent hovered */
-  .submenu__items > li:hover .style-2 {
-    display: block;
-  }
-
-  /* Nested style-2 submenu inside .style-2 */
-  .style-2 .submenu__items > li:hover > .submenu-subitems {
-    display: block;
-    left: 100%;
-    top: 0;
+  /* Add transition for smoothness */
+  .style-2,
+  .submenu-subitems,
+  .submenu-subitems-inner {
+    transition: opacity 0.2s ease, visibility 0.2s ease;
   }
 {% endstyle %}
-
 <submenu>
   <div class="submenu submenu-container container {{ block.id }}" id="{{ block.id }}">
     <div class="row">
-      <!-- Main column -->
       <div class="col-12 col-md-3 item item__1">
         <div class="item__1__group">
           <div class="submenu__heading">
@@ -91,29 +63,29 @@
           </div>
 
           {%- assign main_menu = linklists[block.settings.menu-item-1] -%}
-
           <ul class="submenu__items">
             {% for top_link in main_menu.links %}
-              <li>
+              <li class="has-second-level">
                 <a href="{{ top_link.url }}">{{ top_link.title }}</a>
 
                 {% if top_link.links != blank %}
-                  <!-- 2nd level submenu -->
                   <div class="style-2">
                     <div class="submenu__heading">
                       <h3>{{ top_link.title }}</h3>
                       <a href="{{ top_link.url }}"><span class="see-all-link">See All</span></a>
                     </div>
+
                     <ul class="submenu__items">
                       {% for child_link in top_link.links %}
-                        <li>
+                        <li class="has-third-level">
                           <a href="{{ child_link.url }}">{{ child_link.title }}</a>
 
                           {% if child_link.links != blank %}
-                            <!-- 3rd level submenu -->
-                            
-                            <ul class="submenu-subitems">
-                            
+                            <ul class="submenu-subitems-inner">
+                              <div class="submenu__heading">
+                                <h3>{{ child_link.title }}</h3>
+                                <a href="{{ child_link.url }}"><span class="see-all-link">See All</span></a>
+                              </div>
                               {% for subchild_link in child_link.links %}
                                 <li><a href="{{ subchild_link.url }}">{{ subchild_link.title }}</a></li>
                               {% endfor %}
@@ -129,7 +101,6 @@
           </ul>
         </div>
 
-        <!-- Optional: Icon links -->
         <ul class="submenu__items links-with-icon">
           <li><a href="#"><span class="__icon"><img src="..." /></span><span class="__label">Special Offers</span></a></li>
         </ul>
@@ -137,3 +108,38 @@
     </div>
   </div>
 </submenu>
+<script>
+  document.querySelectorAll('.has-second-level').forEach(item => {
+    let timer;
+
+    item.addEventListener('mouseenter', () => {
+      clearTimeout(timer);
+      const submenu = item.querySelector('.style-2');
+      submenu && (submenu.style.display = 'block');
+    });
+
+    item.addEventListener('mouseleave', () => {
+      const submenu = item.querySelector('.style-2');
+      timer = setTimeout(() => {
+        submenu && (submenu.style.display = 'none');
+      }, 300); // delay in ms
+    });
+  });
+
+  document.querySelectorAll('.has-third-level').forEach(item => {
+    let timer;
+
+    item.addEventListener('mouseenter', () => {
+      clearTimeout(timer);
+      const submenu = item.querySelector('.submenu-subitems-inner');
+      submenu && (submenu.style.display = 'block');
+    });
+
+    item.addEventListener('mouseleave', () => {
+      const submenu = item.querySelector('.submenu-subitems-inner');
+      timer = setTimeout(() => {
+        submenu && (submenu.style.display = 'none');
+      }, 300);
+    });
+  });
+</script>
