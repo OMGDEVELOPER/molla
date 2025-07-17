@@ -2,7 +2,7 @@
   <div class="submenu submenu-container container {{ block.id }}" id="{{ block.id }}">
     <div class="row">
 
-      {% assign top_menu = linklists[block.settings.menu] %}
+      {% assign top_menu = linklists[block.settings.menu-item-1] %}
       {% if top_menu != blank %}
 
         <!-- Column 1: Menu Categories -->
