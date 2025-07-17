@@ -47,6 +47,7 @@
 .header-top{padding: {{- section.settings.header_top_padding | default: '0' | split: '|' | first | replace : '-',' '-}};margin-top: {{- section.settings.header_top_margin_top | default: '0'| split: '|' | first -}};margin-bottom: {{- section.settings.header_top_margin_bottom | default: '0' | split: '|' | first -}};background-position: center;}{{--}}
 .header-announcement{display: none;padding: {{section.settings.announcement_padding | default: '0' | split: '|' | first | replace : '-',' '}};margin-top: {{section.settings.announcement_margin_top | default: '0'| split: '|' | first }};margin-bottom: {{section.settings.announcement_margin_bottom | default: '0' | split: '|' | first }};background-position: center;}
 {%- endstyle -%}
+{{ 'nav-menu.css' | asset_url | stylesheet_tag }}
 <header {%if settings.use_wrap_container %}class="wrap-container" {%endif%}data-section-id="{{ section.id }}" data-section-type="header-section" data-header-sticky="true">
   <div id="header-ontop" class="header-ontop is-sticky"></div>
   <div id="header" class="custom-header header style-14{%if settings.use_header_mobile_search_box%} mobile-search-box{%endif%}">
@@ -64,7 +65,24 @@
       {% endcomment %}
       {%- render 'main-header', cart:cart -%}
       <div class="header-group">
-        {%- render 'nav-menu' -%}
+        /* Nav men */
+        <div class="header-bottom d-lg-block nav-menu">
+        <div class="container">
+          <div class="main-header header-menu horizon-menu">
+            <nav class="main-navigation">
+              <ul class="menu-items-main">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About Us</a></li>
+                <li class="has-sub" child-menu-id="submenu-3"><a href="#">Our Products</a></li>
+                <li><a href="#">Inspiration</a></li>
+                <li><a href="#">Blog</a></li>
+                <li><a href="#">FAQ’s</a></li>
+                <li><a href="#">Contact Us</a></li>
+              </ul>
+            </nav>
+          </div>
+        </div>
+      </div>
         {%- render 'submenu' -%}
       </div>
     </div>
