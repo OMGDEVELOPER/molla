@@ -3,13 +3,26 @@
     <div class="main-header header-menu horizon-menu">
       <nav class="main-navigation">
         <ul class="menu-items-main">
-          <li><a href="#">Home</a></li>
-          <li><a href="#">About Us</a></li>
-          <li class="has-sub" child-menu-id="submenu-3"><a href="#">Our Products</a></li>
-          <li><a href="#">Inspiration</a></li>
-          <li><a href="#">Blog</a></li>
-          <li><a href="#">FAQ’s</a></li>
-          <li><a href="#">Contact Us</a></li>
+          {% for block in section.blocks %}
+            {% if block.type == 'standard_nav_item' %}
+              <li>
+                <a href="#">{{ block.settings.standard_item_label }}</a>
+              </li>
+            {% elsif block.type == 'submenu_nav_item' %}
+              <li class="has-sub" child-menu-id="submenu-{{ forloop.index }}">
+                <a href="#">{{ block.settings.submenu_label }}</a>
+                <ul class="submenu">
+                  {% for i in (1..5) %}
+                    {% assign label = block.settings["submenu_item_" | append: i | append: "_label"] %}
+                    {% assign link = block.settings["submenu_item_" | append: i | append: "_link"] %}
+                    {% if label != blank %}
+                      <li><a href="{{ link }}">{{ label }}</a></li>
+                    {% endif %}
+                  {% endfor %}
+                </ul>
+              </li>
+            {% endif %}
+          {% endfor %}
         </ul>
       </nav>
     </div>
