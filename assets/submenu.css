@@ -101,9 +101,6 @@ submenu{
   justify-content: space-between;
   align-items: center;
 }
-.submenu .row .item.style-2 .submenu__items li{
-  border-bottom: 1px solid #C5C5C5;
-}
 .submenu .row .item.style-2 .submenu__items li::after {
   filter: brightness(0);
 }
@@ -149,5 +146,5 @@ submenu .w-300px{
   padding: 0px;
 }
 .submenu .row .level-2 li{
-  border-bottom: 1px solid #C5C5C5;border-bottom: 1px solid #C5C5C5;
+  border-bottom: 1px solid #C5C5C5;
 }
