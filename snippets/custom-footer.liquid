@@ -8,6 +8,13 @@
   .footer__item__1 p{
     text-align:right;
   }
+  .footer__item__2 .input-group{
+    width:80%;
+  }
+  .footer__item__2 .input-group button{
+    border-radius: 4px;
+    background: #127FB5;
+  }
 {% endstyle %}
 <div class="cta cta-horizontal cta-horizontal-box" data-type-block="design_7">
   <div class="row">
@@ -15,7 +22,7 @@
       <h3 class="cta-title">{{block.settings.title|html}}</h3>
       <p class="cta-desc">{{block.settings.description|html}}</p>
     </div>
-    <div class="col-lg-8 col-xl-7">
+    <div class="col-lg-8 col-xl-7 footer__item__2">
       {%- capture btn_style -%}{{block.settings.style_btn}} {{block.settings.style_btn_rounded}}{%if block.settings.btn_shadow%} btn-shadow{%endif%}{%- endcapture -%}
       {% render 'kt_newsletter_form', section: section, class_form: 'newletter', style_btn: btn_style, text_btn: block.settings.btn_name_cta %}
     </div>
