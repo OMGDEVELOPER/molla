@@ -679,7 +679,7 @@
       "custom_css": [
         "img {width: 64px; height: 64px; aspect-ratio: 1/1;}",
         ".icon-box-side .icon-box-title {color: #050505; font-family: Karla; font-size: 24px; font-style: normal; font-weight: 600; line-height: 32px;}",
-        ".icon-box-content p {margin-top:8px; color: #050505; font-family: Karla; font-size: 16px; font-style: normal; font-weight: 400; line-height: 20px; /* 125% */}"
+        ".icon-box-content p {margin-top: 8px; color: #050505; font-family: Karla; font-size: 16px; font-style: normal; font-weight: 400; line-height: 20px; /* 125% */}"
       ],
       "settings": {
         "title": "Icon Boxes",
@@ -689,7 +689,7 @@
         "width_content": true,
         "section_margin_top": "",
         "section_margin_bottom": "",
-        "section_padding": "3rem 0",
+        "section_padding": "8rem 0",
         "section_bg": "#ffffff",
         "section_bg_op": 1,
         "color_icon": "#333333",
