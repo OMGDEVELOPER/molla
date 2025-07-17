@@ -148,3 +148,6 @@ submenu .w-300px{
   height: 100%;
   padding: 0px;
 }
+.submenu .row .level-2 li{
+  border-bottom: 1px solid #3C4043;
+}
