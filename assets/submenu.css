@@ -145,9 +145,6 @@ submenu .w-300px{
   height: 100%;
   padding: 0px;
 }
-submenu .row .has-third-level:hover{
-  color:#FFF !important;
-}
 submenu .row .has-third-level a{
    color: #050505 !important;
 }
