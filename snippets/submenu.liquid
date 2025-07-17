@@ -16,7 +16,7 @@
 
                     <ul class="submenu__items">
                         {% for top_link in main_menu.links %}
-                        <li class="{% if top_link.links != blank %}with-submenu{% endif %}">
+                        <li class="{% if top_link.links != blank %}with-submenu{% endif %}" parent-id="{{ block.id }}-1">
                             <a href="{{ top_link.url }}">{{ top_link.title }}</a>
 
                             {% if top_link.links != blank %}
