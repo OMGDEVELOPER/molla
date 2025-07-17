@@ -1,9 +1,16 @@
 {% style %}
-  .submenu .row .item .with-submenu ul{ }
-  .submenu .row .item .with-submenu:hover ul{
-    display:block;
-  }
+.submenu .with-submenu > ul,
+.submenu .with-submenu-submenu > ul {
+  display: none;
+  transition: opacity 0.3s ease;
+}
+
+.submenu .with-submenu > ul.active,
+.submenu .with-submenu-submenu > ul.active {
+  display: block;
+}
 {% endstyle %}
+
 <submenu>
     <div class="submenu submenu-container container {{ block.id }}" id="{{ block.id }}">
         <div class="row">
@@ -58,3 +65,21 @@
         </div>
     </div>
 </submenu>
+<script>
+  document.addEventListener("DOMContentLoaded", function () {
+    // For submenu levels
+    const withSubmenuItems = document.querySelectorAll(".with-submenu, .with-submenu-submenu");
+
+    withSubmenuItems.forEach((item) => {
+      item.addEventListener("mouseenter", function () {
+        const childUl = item.querySelector("ul");
+        if (childUl) childUl.classList.add("active");
+      });
+
+      item.addEventListener("mouseleave", function () {
+        const childUl = item.querySelector("ul");
+        if (childUl) childUl.classList.remove("active");
+      });
+    });
+  });
+</script>
