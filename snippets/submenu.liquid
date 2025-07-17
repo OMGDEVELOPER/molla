@@ -111,10 +111,7 @@
 
                           {% if child_link.links != blank %}
                             <!-- 3rd level submenu -->
-                                        <div class="submenu__heading">
-                      <h3>{{ child_link.title }}</h3>
-                      <a href="{{ child_link.url }}"><span class="see-all-link">See All</span></a>
-                    </div>
+                            <h3>{{ child_link.title }}</h3>
                             <ul class="submenu-subitems">
                             
                               {% for subchild_link in child_link.links %}
