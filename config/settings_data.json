@@ -106,17 +106,33 @@
               "standard_item_url": ""
             }
           },
+          "standard_nav_item_h7xaFR": {
+            "type": "standard_nav_item",
+            "settings": {
+              "standard_item_label": "ABOUT US",
+              "standard_item_url": ""
+            }
+          },
           "with_submenu_item_fTTKWg": {
             "type": "with_submenu_item",
             "settings": {
-              "with_submenu_item_label": "ABOUT US",
+              "with_submenu_item_label": "OUR PRODUCTS",
               "with_submenu_item_url": ""
+            }
+          },
+          "standard_nav_item_ip9A4G": {
+            "type": "standard_nav_item",
+            "settings": {
+              "standard_item_label": "INSPIRATION",
+              "standard_item_url": ""
             }
           }
         },
         "block_order": [
           "standard_nav_item_pGpRKf",
-          "with_submenu_item_fTTKWg"
+          "standard_nav_item_h7xaFR",
+          "with_submenu_item_fTTKWg",
+          "standard_nav_item_ip9A4G"
         ],
         "settings": {}
       },
