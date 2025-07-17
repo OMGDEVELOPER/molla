@@ -6,8 +6,10 @@
               <div class="submenu__heading">
                   <h3>OUR PRODUCTS</h3>
               </div>
-              {{ block.settings.menu-item-1 }}
               <ul class="submenu__items">
+                {%-for link in linklists[block.settings.menu-item-1].links -%}
+                  <li><a href="{{ routes.root_url | replace: '/', ''}}{{link.url}}">{{link.title}}</a></li>
+                {%-endfor-%}
                   <li><a href="#">Roofing</a></li>
                   <li><a href="#">Wall</a></li>
                   <li><a href="#">Cool Room</a></li>
