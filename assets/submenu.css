@@ -161,3 +161,7 @@ submenu .row .has-third-level{
 .submenu-items-container{
   display: none;
 }
+.level-2{
+    height: -webkit-fill-available;
+    min-height: 100%;
+}
