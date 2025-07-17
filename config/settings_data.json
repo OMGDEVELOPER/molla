@@ -102,29 +102,50 @@
           "standard_nav_item_pGpRKf": {
             "type": "standard_nav_item",
             "settings": {
-              "standard_item_label": "HOME",
-              "standard_item_url": ""
+              "item_label": "HOME",
+              "item_url": ""
             }
           },
           "standard_nav_item_h7xaFR": {
             "type": "standard_nav_item",
             "settings": {
-              "standard_item_label": "ABOUT US",
-              "standard_item_url": ""
+              "item_label": "ABOUT US",
+              "item_url": ""
             }
           },
           "with_submenu_item_fTTKWg": {
             "type": "with_submenu_item",
             "settings": {
-              "with_submenu_item_label": "OUR PRODUCTS",
-              "with_submenu_item_url": ""
+              "item_label": "OUR PRODUCTS",
+              "item_url": ""
             }
           },
           "standard_nav_item_ip9A4G": {
             "type": "standard_nav_item",
             "settings": {
-              "standard_item_label": "INSPIRATION",
-              "standard_item_url": ""
+              "item_label": "INSPIRATION",
+              "item_url": ""
+            }
+          },
+          "standard_nav_item_QWK7JN": {
+            "type": "standard_nav_item",
+            "settings": {
+              "item_label": "BLOG",
+              "item_url": ""
+            }
+          },
+          "standard_nav_item_jEkwwA": {
+            "type": "standard_nav_item",
+            "settings": {
+              "item_label": "FAQ's",
+              "item_url": ""
+            }
+          },
+          "standard_nav_item_hUjtQc": {
+            "type": "standard_nav_item",
+            "settings": {
+              "item_label": "CONTACT US",
+              "item_url": ""
             }
           }
         },
@@ -132,7 +153,10 @@
           "standard_nav_item_pGpRKf",
           "standard_nav_item_h7xaFR",
           "with_submenu_item_fTTKWg",
-          "standard_nav_item_ip9A4G"
+          "standard_nav_item_ip9A4G",
+          "standard_nav_item_QWK7JN",
+          "standard_nav_item_jEkwwA",
+          "standard_nav_item_hUjtQc"
         ],
         "settings": {}
       },
