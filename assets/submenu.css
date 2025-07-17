@@ -26,7 +26,6 @@ submenu{
   display: grid;
   gap:40px;
 }
-
 .submenu .row .level-2{
   background: #DADADA;
 }
@@ -133,4 +132,8 @@ submenu{
 }
 .submenu .row .item.style-2 .submenu__items li a{
   color: #050505;
+}
+/* LEVEL 2*/
+.level-2 .submenu__heading h3{
+   color: #050505;
 }
