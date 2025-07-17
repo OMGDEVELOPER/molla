@@ -80,7 +80,7 @@
           {%- assign main_menu = linklists[block.settings.menu-item-1] -%}
           <ul class="submenu__items level-2">
             {% for top_link in main_menu.links %}
-              <li class="has-second-level">
+              <li class="has-second-level style-2-li">
                 <a href="{{ top_link.url }}">{{ top_link.title }}</a>
 
                 {% if top_link.links != blank %}
