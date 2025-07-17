@@ -77,13 +77,13 @@
                       {% endcomment %}
                     </div>
 
-                    <ul class="submenu__items item">
+                    <ul class="submenu__items item level-2">
                       {% for child_link in top_link.links %}
                         <li class="has-third-level">
                           <a href="{{ child_link.url }}">{{ child_link.title }}</a>
 
                           {% if child_link.links != blank %}
-                            <ul class="submenu-subitems-inner item">
+                            <ul class="submenu-subitems-inner item level-3">
                               <div class="submenu__heading">
                                 <h3>{{ child_link.title }}</h3>
                                 {% comment %}
