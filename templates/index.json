@@ -618,6 +618,7 @@
           "type": "item_icon_side",
           "settings": {
             "icon_font": "",
+            "icon": "shopify://shop_images/workspace_premium.svg",
             "title": "Quality Materials",
             "content": "We provide durable, trusted, and industry-approved materials for every project.",
             "url": ""
@@ -627,6 +628,7 @@
           "type": "item_icon_side",
           "settings": {
             "icon_font": "",
+            "icon": "shopify://shop_images/support_agent.svg",
             "title": "24 x 7 Support",
             "content": "Always available. Get expert help anytime day or night.",
             "url": ""
@@ -636,6 +638,7 @@
           "type": "item_icon_side",
           "settings": {
             "icon_font": "",
+            "icon": "shopify://shop_images/editor_choice.svg",
             "title": "Reward Points",
             "content": "Earn points on every purchase and redeem them for discounts or exclusive offers.",
             "url": ""
@@ -645,6 +648,7 @@
           "type": "item_icon_side",
           "settings": {
             "icon_font": "",
+            "icon": "shopify://shop_images/diversity_1.svg",
             "title": "Community",
             "content": "Connect, share, and grow with others through our vibrant and supportive network.",
             "url": ""
