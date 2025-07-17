@@ -102,12 +102,21 @@
           "standard_nav_item_pGpRKf": {
             "type": "standard_nav_item",
             "settings": {
-              "standard_item_label": "HOME"
+              "standard_item_label": "HOME",
+              "standard_item_url": ""
+            }
+          },
+          "with_submenu_item_fTTKWg": {
+            "type": "with_submenu_item",
+            "settings": {
+              "with_submenu_item_label": "ABOUT US",
+              "with_submenu_item_url": ""
             }
           }
         },
         "block_order": [
-          "standard_nav_item_pGpRKf"
+          "standard_nav_item_pGpRKf",
+          "with_submenu_item_fTTKWg"
         ],
         "settings": {}
       },
