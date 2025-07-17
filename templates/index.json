@@ -676,6 +676,9 @@
         "1612489579883-2",
         "1612489579883-3"
       ],
+      "custom_css": [
+        "img{width: 64px;height: 64px;aspect-ratio: 1/1;}"
+      ],
       "settings": {
         "title": "Icon Boxes",
         "off_mobile": false,
