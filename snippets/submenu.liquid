@@ -7,9 +7,33 @@
                   <h3>OUR PRODUCTS</h3>
               </div>
               <ul class="submenu__items">
-                {%-for link in linklists[block.settings.menu-item-1].links -%}
-                  <li><a href="{{ routes.root_url | replace: '/', ''}}{{link.url}}">{{link.title}}</a></li>
-                {%-endfor-%}
+                {% for link in linklists[block.settings.menu-item-1].links %}
+                  <li>
+                    <a href="{{ link.url }}">{{ link.title }}</a>
+              
+                    {% if link.links != blank %}
+                      <ul>
+                        {% for child_link in link.links %}
+                          <li>
+                            <a href="{{ child_link.url }}">{{ child_link.title }}</a>
+              
+                            {% if child_link.links != blank %}
+                              <ul>
+                                {% for grandchild_link in child_link.links %}
+                                  <li>
+                                    <a href="{{ grandchild_link.url }}">{{ grandchild_link.title }}</a>
+                                    {# you can keep nesting deeper if needed, but Shopify menus are usually 3 levels max #}
+                                  </li>
+                                {% endfor %}
+                              </ul>
+                            {% endif %}
+              
+                          </li>
+                        {% endfor %}
+                      </ul>
+                    {% endif %}
+                  </li>
+                {% endfor %}
               </ul>
             </div>
             <ul class="submenu__items links-with-icon">
