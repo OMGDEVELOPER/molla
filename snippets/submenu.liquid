@@ -69,7 +69,7 @@
                 <a href="{{ top_link.url }}">{{ top_link.title }}</a>
 
                 {% if top_link.links != blank %}
-                  <div class="style-2">
+                  <div class="style-2 ">
                     <div class="submenu__heading">
                       <h3>{{ top_link.title }}</h3>
                       {% comment %}
@@ -77,13 +77,13 @@
                       {% endcomment %}
                     </div>
 
-                    <ul class="submenu__items">
+                    <ul class="submenu__items item">
                       {% for child_link in top_link.links %}
                         <li class="has-third-level">
                           <a href="{{ child_link.url }}">{{ child_link.title }}</a>
 
                           {% if child_link.links != blank %}
-                            <ul class="submenu-subitems-inner">
+                            <ul class="submenu-subitems-inner item">
                               <div class="submenu__heading">
                                 <h3>{{ child_link.title }}</h3>
                                 {% comment %}
