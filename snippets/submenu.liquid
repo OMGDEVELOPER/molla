@@ -14,7 +14,7 @@
   .submenu-subitems,
   .style-2,
   .submenu-subitems-inner {
-    display: none;
+    /* display: none; */
     position: absolute;
     top: 0;
     left: 100%;
@@ -26,7 +26,7 @@
 
   .submenu__items > li:hover > .style-2,
   .style-2 .submenu__items > li:hover > .submenu-subitems {
-    display: block;
+    /* display: block; */
   }
 
   .submenu-subitems-inner {
@@ -57,7 +57,7 @@
                 <a href="{{ top_link.url }}">{{ top_link.title }}</a>
 
                 {% if top_link.links != blank %}
-                  <div class="style-2 level-2 w-300px">
+                  <div class="submenu-items-container style-2 level-2 w-300px">
                     <div class="submenu__heading">
                       <h3>{{ top_link.title }}</h3>
                       {% comment %}
@@ -71,7 +71,7 @@
                           <a href="{{ child_link.url }}">{{ child_link.title }}</a>
 
                           {% if child_link.links != blank %}
-                            <ul class="submenu-subitems-inner item level-3 w-300px">
+                            <ul class="submenu-subitems-inner item level-3 w-300px submenu-items-container">
                               <div class="submenu__heading">
                                 <h3>{{ child_link.title }}</h3>
                                 {% comment %}
