@@ -642,7 +642,7 @@
         "1612489579883-1": {
           "type": "item_icon_side",
           "settings": {
-            "icon_font": "fkt-rotate-left",
+            "icon_font": "",
             "icon": "shopify://shop_images/support_agent.svg",
             "title": "24 x 7 Support",
             "content": "Always available. Get expert help anytime day or night.",
@@ -652,7 +652,7 @@
         "1612489579883-2": {
           "type": "item_icon_side",
           "settings": {
-            "icon_font": "fkt-info-circle",
+            "icon_font": "",
             "icon": "shopify://shop_images/editor_choice.svg",
             "title": "Reward Points",
             "content": "Earn points on every purchase and redeem them for discounts or exclusive offers.",
@@ -662,7 +662,7 @@
         "1612489579883-3": {
           "type": "item_icon_side",
           "settings": {
-            "icon_font": "fkt-envelope",
+            "icon_font": "",
             "icon": "shopify://shop_images/diversity_1.svg",
             "title": "Community",
             "content": "Connect, share, and grow with others through our vibrant and supportive network.",
