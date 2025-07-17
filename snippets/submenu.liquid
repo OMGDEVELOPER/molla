@@ -26,7 +26,7 @@
                                     <a href="{{ child_link.url }}">{{ child_link.title }}</a>
 
                                     {% if child_link.links != blank %}
-                                    <ul parent-id="{{ block.id }}-1" id="{{ block.id }}-2">>
+                                    <ul parent-id="{{ block.id }}-1" id="{{ block.id }}-2">
                                         {% for subchild_link in child_link.links %}
                                         <li>
                                             <a href="{{ subchild_link.url }}">{{ subchild_link.title }}</a>
