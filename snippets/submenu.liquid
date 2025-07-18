@@ -208,7 +208,7 @@ document.addEventListener('DOMContentLoaded', () => {
   submenuChildrens.forEach((item)=>{
     item.addEventListener('click',function(e){
       e.preventDefault();
-      clearSubmenuActive()
+      clearSubmenuActive(e.target)
       let submenu = e.target.querySelector('.submenu-items-container');
       if (submenu) {
         submenu.style.display = 'block';
@@ -216,12 +216,14 @@ document.addEventListener('DOMContentLoaded', () => {
     })
   })
 
-  function clearSubmenuActive(){
-      submenuChildrens.forEach((item)=>{
-       let submenu = item.querySelector('.submenu-items-container');
-       submenu.style.display = 'none';
-      })
-  }
+  function clearSubmenuActive(exceptItem) {
+  submenuChildrens.forEach((item) => {
+    if (item !== exceptItem) {
+      let submenu = item.querySelector('.submenu-items-container');
+      if (submenu) submenu.style.display = 'none';
+    }
+  });
+}
 });
 
 
