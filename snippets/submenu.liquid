@@ -198,7 +198,12 @@ document.addEventListener('DOMContentLoaded', () => {
 
   // Optional: Hide all by default
   allSubmenus.forEach(sub => sub.style.display = 'none');
-  
+  let submenuChildrens = document.querySelectorAll('.submenu-children');
+  submenuChildrens.forEach((item)=>{
+    item.addEventListener('click',function(){
+      console.log(item.closest('ul'))
+    })
+  })
 });
 
 
