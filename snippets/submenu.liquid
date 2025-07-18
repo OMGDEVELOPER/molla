@@ -69,7 +69,6 @@
          
        {% endcomment %}
        <div id="render-submenus"></div>
-      
     </div>
   </div>
 </submenu>
@@ -118,8 +117,14 @@
     `;
     return html;
   }
-  document.getElementById('render-submenus').innerHTML = renderSubmenu();
-  console.log(renderSubmenu())
+  // document.getElementById('render-submenus').innerHTML = renderSubmenu();
+  let menuItems = document.querySelectorAll('.submenu__items li');
+  menuItems.forEach((item)=>{
+    item.addEventListener('click',function(){
+      console.log(item)
+    })
+  })
+
 {% endjavascript %}
 <script>
   document.querySelectorAll('.has-second-level').forEach(item => {
