@@ -125,7 +125,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
     menu.items.forEach(top => {
       html += `
-        <li class="has-second-level style-2-li submenu-children">
+        <li class="has-second-level style-2-li submenu-with-children">
           <a href="${top.url}">${top.title}</a>
       `;
 
@@ -137,7 +137,11 @@ document.addEventListener('DOMContentLoaded', () => {
         `;
 
         top.children.forEach(child => {
-          html += `<li class="has-third-level submenu-children"><a href="${child.url}">${child.title}</a>`;
+         let additionalClass = "submenu-with-children"
+         if (child.children && child.children.length > 0) {
+           
+         }
+          html += `<li class="has-third-level ${additionalClass}"><a href="${child.url}">${child.title}</a>`;
 
           if (child.children && child.children.length > 0) {
             html += `
@@ -196,7 +200,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
   // Optional: Hide all by default
   allSubmenus.forEach(sub => sub.style.display = 'none');
-  let submenuChildrens = document.querySelectorAll('.submenu-children');
+  let submenuChildrens = document.querySelectorAll('.submenu-with-children');
   submenuChildrens.forEach((item)=>{
     item.addEventListener('click',function(e){
       e.preventDefault();
