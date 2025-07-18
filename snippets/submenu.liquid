@@ -124,6 +124,7 @@
     let html ='';
     html += `
       <div class="col-12 col-md-3 item item__2 w-300px level-2">
+        <div class="item__1__group">
          <div class="submenu__heading heading__1">
             <h3 class="uppercase">ROOFING</h3>
           </div>
@@ -158,12 +159,12 @@
               </li>
             {% comment %} {% endfor %} {% endcomment %}
           </ul>
-
+        </div>
       </div>
     `;
     return html;
   }
-  
+  document.getElementById('render-submenus').innerHTML = renderSubmenu();
   console.log(renderSubmenu())
 {% endjavascript %}
 <script>
