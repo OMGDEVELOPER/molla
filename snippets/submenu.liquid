@@ -82,7 +82,8 @@
   {% if block.settings.menu-item-2 != blank %}
     {% assign menu_handles = menu_handles | push: block.settings.menu-item-2 %}
   {% endif %}
-  console.log(menu_handles)
+  const menuHandles = {{ menu_handles | jsonify }};
+  console.log("Menu Handles:", menuHandles);
   {% for menu_handle in menu_handles %}
     window.menuData["{{ menu_handle }}"] = {
       title: "{{ menu_handle }}",
