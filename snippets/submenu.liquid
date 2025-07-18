@@ -137,9 +137,9 @@ document.addEventListener('DOMContentLoaded', () => {
         `;
 
         top.children.forEach(child => {
-         let additionalClass = "submenu-with-children"
+         let additionalClass = ""
          if (child.children && child.children.length > 0) {
-           
+           additionalClass = "submenu-with-children"
          }
           html += `<li class="has-third-level ${additionalClass}"><a href="${child.url}">${child.title}</a>`;
 
