@@ -200,7 +200,8 @@ document.addEventListener('DOMContentLoaded', () => {
   allSubmenus.forEach(sub => sub.style.display = 'none');
   let submenuChildrens = document.querySelectorAll('.submenu-children');
   submenuChildrens.forEach((item)=>{
-    item.addEventListener('click',function(){
+    item.addEventListener('click',function(e){
+      e.preventDefualt();
       console.log(item.closest('ul'))
     })
   })
