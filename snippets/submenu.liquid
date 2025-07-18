@@ -124,8 +124,12 @@ document.addEventListener('DOMContentLoaded', () => {
     `;
 
     menu.items.forEach(top => {
+     let additionalClass1 = ""
+     if (child.children && child.children.length > 0) {
+       additionalClass1 = "submenu-with-children"
+     }
       html += `
-        <li class="has-second-level style-2-li submenu-with-children">
+        <li class="has-second-level style-2-li ${additionalClass1}">
           <a href="${top.url}">${top.title}</a>
       `;
 
