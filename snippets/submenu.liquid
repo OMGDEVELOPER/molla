@@ -78,6 +78,7 @@
   {% assign menu_handles = "" | split: "" %}
   {% if block.settings.menu-item-1 != blank %}
     {% assign menu_handles = menu_handles | push: block.settings.menu-item-1 %}
+    {{ menu_handles }}
   {% endif %}
   {% if block.settings.menu-item-2 != blank %}
     {% assign menu_handles = menu_handles | push: block.settings.menu-item-2 %}
