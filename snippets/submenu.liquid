@@ -161,8 +161,8 @@ document.addEventListener('DOMContentLoaded', () => {
   let menuItems = document.querySelectorAll('#render-submenus .submenu-item__item li');
   menuItems.forEach((item)=>{
     item.addEventListener('click',function(){
-    resetSubmenu()
-     const submenu = item.querySelector('.submenu-items-container');
+    // resetSubmenu()
+     let submenu = item.querySelector('.submenu-items-container');
       submenu.style.display ="block";
     })
   })
