@@ -170,40 +170,5 @@ document.addEventListener('DOMContentLoaded', () => {
   })
 
 {% endjavascript %}
-<script>
-  document.querySelectorAll('.has-second-level').forEach(item => {
-    let timer;
-
-    item.addEventListener('mouseenter', () => {
-      clearTimeout(timer);
-      const submenu = item.querySelector('.style-2');
-      submenu && (submenu.style.display = 'block');
-    });
-
-    item.addEventListener('mouseleave', () => {
-      const submenu = item.querySelector('.style-2');
-      timer = setTimeout(() => {
-        submenu && (submenu.style.display = 'none');
-      }, 300); // delay in ms
-    });
-  });
-
-  document.querySelectorAll('.has-third-level').forEach(item => {
-    let timer;
-
-    item.addEventListener('mouseenter', () => {
-      clearTimeout(timer);
-      const submenu = item.querySelector('.submenu-subitems-inner');
-      submenu && (submenu.style.display = 'block');
-    });
-
-    item.addEventListener('mouseleave', () => {
-      const submenu = item.querySelector('.submenu-subitems-inner');
-      timer = setTimeout(() => {
-        submenu && (submenu.style.display = 'none');
-      }, 300);
-    });
-  });
-</script>
 
 
