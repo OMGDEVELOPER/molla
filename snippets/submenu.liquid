@@ -149,7 +149,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
           if (child.children && child.children.length > 0) {
             html += `
-              <ul class="submenu-subitems-inner item level-4 w-300px submenu-items-container submenu-item__item ${additionalClass}">
+              <ul class="submenu-subitems-inner item level-4 w-300px submenu-items-container submenu-item__item">
                 <div class="submenu__heading"><h3>${child.title}</h3></div>
             `;
             child.children.forEach(sub => {
@@ -208,6 +208,7 @@ document.addEventListener('DOMContentLoaded', () => {
   submenuChildrens.forEach((item)=>{
     item.addEventListener('click',function(e){
       e.preventDefault();
+      console.log(this.e.target)
       clearSubmenuActive();
       let submenu = item.querySelector('.submenu-items-container');
       if (submenu) {
