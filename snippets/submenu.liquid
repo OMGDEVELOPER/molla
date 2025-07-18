@@ -118,7 +118,8 @@
 
 {% javascript %}
 document.addEventListener('DOMContentLoaded', () => {
-  const menu = window.menuData;
+  const menus = window.menuData;
+  console.log(menus)
 
   function renderSubmenu(menu) {
     let html = `
@@ -170,7 +171,7 @@ document.addEventListener('DOMContentLoaded', () => {
     return html;
   }
 
-  document.getElementById('render-submenus').innerHTML = renderSubmenu(menu);
+  // document.getElementById('render-submenus').innerHTML = renderSubmenu(menu);
   let menuItems = document.querySelectorAll('#render-submenus li');
   menuItems.forEach((item)=>{
     item.addEventListener('click',function(){
