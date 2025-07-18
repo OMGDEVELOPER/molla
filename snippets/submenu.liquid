@@ -161,7 +161,7 @@ document.addEventListener('DOMContentLoaded', () => {
   let menuItems = document.querySelectorAll('#render-submenus li');
   menuItems.forEach((item)=>{
     item.addEventListener('click',function(){
-     const submenu = item.closest('.submenu-items-container');
+     const submenu = item.document.querySelector('.submenu-items-container');
       console.log(submenu)
     })
   })
