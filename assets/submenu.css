@@ -17,7 +17,7 @@ submenu{
 }
 .submenu .row {}
 .submenu .row .item{
-  color: #FFF;
+  /* color: #FFF; */
   padding: 0px;
 }
 
