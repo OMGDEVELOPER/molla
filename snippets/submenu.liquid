@@ -74,10 +74,11 @@
 </submenu>
 <script>
   window.menuData = {};
-  const menuHandles = [
-    "{{ block.settings.menu-item-1 }}",
-    "{{ block.settings.menu-item-2 }}"
-  ]
+
+  {% assign menu_handles = [
+    {{ block.settings.menu-item-1 }},
+    {{ block.settings.menu-item-2 }}
+  ] %}
 
   {% for menu_handle in menu_handles %}
     window.menuData["{{ menu_handle }}"] = {
