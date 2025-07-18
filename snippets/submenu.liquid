@@ -202,7 +202,7 @@ document.addEventListener('DOMContentLoaded', () => {
   submenuChildrens.forEach((item)=>{
     item.addEventListener('click',function(e){
       e.preventDefault();
-      console.log(item.closest('ul'))
+      console.log(item.closest('.submenu-item__item'))
     })
   })
 });
