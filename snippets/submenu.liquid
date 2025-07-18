@@ -43,7 +43,6 @@
   .uppercase{
     text-transform:uppercase;
   }
-
 {% endstyle %}
 <submenu>
   <div class="submenu submenu-container container {{ block.id }}" id="{{ block.id }}">
@@ -125,7 +124,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
     menu.items.forEach(top => {
       html += `
-        <li class="has-second-level style-2-li">
+        <li class="has-second-level style-2-li submenu-children">
           <a href="${top.url}">${top.title}</a>
       `;
 
@@ -133,15 +132,15 @@ document.addEventListener('DOMContentLoaded', () => {
         html += `
           <div class="submenu-items-container submenu-item__item style-2 level-3 w-300px">
             <div class="submenu__heading"><h3>${top.title}</h3></div>
-            <ul class="submenu__items item  submenu-children">
+            <ul class="submenu__items item">
         `;
 
         top.children.forEach(child => {
-          html += `<li class="has-third-level "><a href="${child.url}">${child.title}</a>`;
+          html += `<li class="has-third-level submenu-children"><a href="${child.url}">${child.title}</a>`;
 
           if (child.children && child.children.length > 0) {
             html += `
-              <ul class="submenu-subitems-inner item level-4 w-300px submenu-items-container submenu-item__item  submenu-children">
+              <ul class="submenu-subitems-inner item level-4 w-300px submenu-items-container submenu-item__item">
                 <div class="submenu__heading"><h3>${child.title}</h3></div>
             `;
             child.children.forEach(sub => {
