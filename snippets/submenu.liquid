@@ -74,12 +74,7 @@
 </submenu>
 <script>
   window.menuData = {};
-
-  {% assign menu_handles = [
-    {{ block.settings.menu-item-1 }},
-    {{ block.settings.menu-item-2 }}
-  ] %}
-
+  {% assign menu_handles = {{ block.settings.menu-item-1 }},{{ block.settings.menu-item-2 }} | split: "," %}
   {% for menu_handle in menu_handles %}
     window.menuData["{{ menu_handle }}"] = {
       title: "{{ menu_handle }}",
