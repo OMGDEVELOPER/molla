@@ -75,7 +75,6 @@
 <script>
   window.menuData = {};
   {% assign menu_handles = block.settings.menu-item-1 | append: "," | append: block.settings.menu-item-2 | split: "," %}
-
   {% for menu_handle in menu_handles %}
     window.menuData["{{ menu_handle }}"] = {
       title: "{{ menu_handle }}",
@@ -112,11 +111,12 @@
 {% javascript %}
 document.addEventListener('DOMContentLoaded', () => {
   const menus = window.menuData;
-  console.log(menus)
-
+  menus.forEach((menu)=>{
+    console.log(menu)
+  })
   function renderSubmenu(menu) {
     let html = `
-      <div class="col-12 col-md-3 item item__2 w-300px level-2">
+      <div class="col-12 col-md-3 item item__2 w-300px level-2" menu-name="${menu}">
         <div class="item__1__group">
           <div class="submenu__heading heading__1">
             <h3 class="uppercase">${menu.title}</h3>
@@ -164,7 +164,7 @@ document.addEventListener('DOMContentLoaded', () => {
     return html;
   }
 
-  // document.getElementById('render-submenus').innerHTML = renderSubmenu(menu);
+  document.getElementById('render-submenus').innerHTML = renderSubmenu(menu);
   let menuItems = document.querySelectorAll('#render-submenus li');
   menuItems.forEach((item)=>{
     item.addEventListener('click',function(){
