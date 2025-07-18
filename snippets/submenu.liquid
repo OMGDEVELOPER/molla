@@ -104,57 +104,62 @@
 </script>
 
 {% javascript %}
-  function renderSubmenu(block='',label='',menu=''){
-    let html ='';
-    html += `
+document.addEventListener('DOMContentLoaded', () => {
+  const menu = window.menuData;
+
+  function renderSubmenu(menu) {
+    let html = `
       <div class="col-12 col-md-3 item item__2 w-300px level-2">
         <div class="item__1__group">
-         <div class="submenu__heading heading__1">
-            <h3 class="uppercase">ROOFING</h3>
+          <div class="submenu__heading heading__1">
+            <h3 class="uppercase">${menu.title}</h3>
           </div>
           <ul class="submenu__items level-2">
-            {% comment %} {% for top_link in main_menu.links %} {% endcomment %}
-              <li class="has-second-level style-2-li">
-                <a href="{{ top_link.url }}">{{ top_link.title }}</a>
-                {% comment %} {% if top_link.links != blank %} {% endcomment %}
-                  <div class="submenu-items-container style-2 level-3 w-300px">
-                    <div class="submenu__heading">
-                      <h3>{{ top_link.title }}</h3>
-                    </div>
-                    <ul class="submenu__items item">
-                      {% comment %} {% for child_link in top_link.links %} {% endcomment %}
-                        <li class="has-third-level">
-                          <a href="{{ child_link.url }}" style="color:#000;">{{ child_link.title }}</a>
-
-                          {% comment %} {% if child_link.links != blank %} {% endcomment %}
-                            <ul class="submenu-subitems-inner item level-4 w-300px submenu-items-container">
-                              <div class="submenu__heading">
-                                <h3>{{ child_link.title }}</h3>
-                              </div>
-                              {% comment %} {% for subchild_link in child_link.links %}{% endcomment %}
-                                <li class="has-third-level menu-item-last-child"><a href="{{ subchild_link.url }}">{{ subchild_link.title }}</a></li>
-                              {% comment %} {% endfor %} {% endcomment %}
-                            </ul>
-                          {% comment %} {% endif %} {% endcomment %}
-                          </li>
-                      {% comment %} {% endfor %} {% endcomment %}
-                    </ul>
-                  {% comment %} {% endif %} {% endcomment %}
-              </li>
-            {% comment %} {% endfor %} {% endcomment %}
-          </ul>
-        </div>
-      </div>
     `;
+
+    menu.items.forEach(top => {
+      html += `
+        <li class="has-second-level style-2-li">
+          <a href="${top.url}">${top.title}</a>
+      `;
+
+      if (top.children && top.children.length > 0) {
+        html += `
+          <div class="submenu-items-container style-2 level-3 w-300px">
+            <div class="submenu__heading"><h3>${top.title}</h3></div>
+            <ul class="submenu__items item">
+        `;
+
+        top.children.forEach(child => {
+          html += `<li class="has-third-level"><a href="${child.url}">${child.title}</a>`;
+
+          if (child.children && child.children.length > 0) {
+            html += `
+              <ul class="submenu-subitems-inner item level-4 w-300px submenu-items-container">
+                <div class="submenu__heading"><h3>${child.title}</h3></div>
+            `;
+            child.children.forEach(sub => {
+              html += `<li class="menu-item-last-child"><a href="${sub.url}">${sub.title}</a></li>`;
+            });
+            html += `</ul>`;
+          }
+
+          html += `</li>`;
+        });
+
+        html += `</ul></div>`;
+      }
+
+      html += `</li>`;
+    });
+
+    html += `</ul></div></div>`;
     return html;
   }
-  // document.getElementById('render-submenus').innerHTML = renderSubmenu();
-  let menuItems = document.querySelectorAll('.submenu__items li');
-  menuItems.forEach((item)=>{
-    item.addEventListener('click',function(){
-    
-    })
-  })
+
+  document.getElementById('render-submenus').innerHTML = renderSubmenu(menu);
+});
+
 
 {% endjavascript %}
 <script>
