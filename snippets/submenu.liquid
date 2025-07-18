@@ -162,7 +162,7 @@ document.addEventListener('DOMContentLoaded', () => {
   menuItems.forEach((item)=>{
     item.addEventListener('click',function(){
      const submenu = item.querySelector('.submenu-items-container');
-      console.log(submenu)
+      submenu.style.display ="block";
     })
   })
 });
