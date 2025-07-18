@@ -54,7 +54,7 @@
               </div>
               <ul class="submenu__items">
                    <li target-id="{{ block.settings.item-1-label }}-{{ block.id }}" submenu-items="{{ block.settings.menu-item-1 }}"><a href="#">{{ block.settings.item-1-label }}</a></li>
-                  <li target-id="{{ block.settings.item-2-label }}-{{ block.id }}" submenu-items="{{ block.settings.menu-item-2 }}"><a href="#">{{ block.settings.item-2-label }}</a></li>
+                  <li target-id="{{ block.settings.item-2-label }}-{{ block.id }}"><a href="#">{{ block.settings.item-2-label }}</a></li>
             
               </ul>
             </div>
@@ -72,25 +72,17 @@
     </div>
   </div>
 </submenu>
-<div id="render-submenus"></div>
-
 <script>
-  window.megaMenus = [];
-
-  {% assign menu_items = '' | split: ',' %}
-  {% if block.settings.menu-item-1 != blank %}
-    {% assign menu_items = menu_items | push: block.settings.menu-item-1 %}
-  {% endif %}
-  {% if block.settings.menu-item-2 != blank %}
-    {% assign menu_items = menu_items | push: block.settings.menu-item-2 %}
-  {% endif %}
-
-  {% for menu_name in menu_items %}
-    window.megaMenus.push({
-      title: "{{ menu_name }}",
-      items: [
-        {% assign menu_obj = linklists[menu_name] %}
-        {% for top_link in menu_obj.links %}
+  let menuListObj = [
+    {{ block.settings.menu-item-1 }},
+    {{ block.settings.menu-item-1 }}
+  ];
+  console.log(menuListObj)
+  window.menuData = {
+    "title": "{{ block.settings.menu-item-1 }}",
+    "items": [
+      {% assign main_menu = linklists[block.settings.menu-item-1] %}
+      {% for top_link in main_menu.links %}
         {
           "title": "{{ top_link.title | escape }}",
           "url": "{{ top_link.url }}",
@@ -111,17 +103,14 @@
             {% endfor %}
           ]
         }{% unless forloop.last %},{% endunless %}
-        {% endfor %}
-      ]
-    });
-  {% endfor %}
+      {% endfor %}
+    ]
+  };
 </script>
 
 {% javascript %}
 document.addEventListener('DOMContentLoaded', () => {
-  function renderAllMenus(menus) {
-    return menus.map(menu => renderSubmenu(menu)).join('');
-  }
+  const menu = window.menuData;
 
   function renderSubmenu(menu) {
     let html = `
@@ -173,35 +162,50 @@ document.addEventListener('DOMContentLoaded', () => {
     return html;
   }
 
-  const container = document.getElementById('render-submenus');
-  container.innerHTML = renderAllMenus(window.megaMenus);
-
-  setupHoverEvents();
+  document.getElementById('render-submenus').innerHTML = renderSubmenu(menu);
+  let menuItems = document.querySelectorAll('#render-submenus li');
+  menuItems.forEach((item)=>{
+    item.addEventListener('click',function(){
+    // resetSubmenu()
+     const submenu = item.querySelector('.submenu-items-container');
+      submenu.style.display ="block";
+    })
+  })
+  function resetSubmenu(){
+    menuItems.forEach((item)=>{
+     item.style.display ="none";
+    })
+  }
 });
 
-function setupHoverEvents() {
+{% endjavascript %}
+<script>
   document.querySelectorAll('.has-second-level').forEach(item => {
     let timer;
+
     item.addEventListener('mouseenter', () => {
       clearTimeout(timer);
       const submenu = item.querySelector('.style-2');
       submenu && (submenu.style.display = 'block');
     });
+
     item.addEventListener('mouseleave', () => {
       const submenu = item.querySelector('.style-2');
       timer = setTimeout(() => {
         submenu && (submenu.style.display = 'none');
-      }, 300);
+      }, 300); // delay in ms
     });
   });
 
   document.querySelectorAll('.has-third-level').forEach(item => {
     let timer;
+
     item.addEventListener('mouseenter', () => {
       clearTimeout(timer);
       const submenu = item.querySelector('.submenu-subitems-inner');
       submenu && (submenu.style.display = 'block');
     });
+
     item.addEventListener('mouseleave', () => {
       const submenu = item.querySelector('.submenu-subitems-inner');
       timer = setTimeout(() => {
@@ -209,8 +213,6 @@ function setupHoverEvents() {
       }, 300);
     });
   });
-}
-{% endjavascript %}
-
+</script>
 
 
