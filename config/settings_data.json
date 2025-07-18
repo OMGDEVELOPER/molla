@@ -118,8 +118,10 @@
             "settings": {
               "item_label": "OUR PRODUCTS",
               "item_url": "",
-              "column-1-label": "ROOFING",
-              "menu-item-1": "roofing"
+              "item-1-label": "ROOFIING",
+              "menu-item-1": "roofing",
+              "item-2-label": "WALL",
+              "menu-item-2": "roofing"
             }
           },
           "standard_nav_item_ip9A4G": {
