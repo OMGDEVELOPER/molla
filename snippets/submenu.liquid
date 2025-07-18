@@ -125,7 +125,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
       if (top.children && top.children.length > 0) {
         html += `
-          <div class="submenu-items-container style-2 level-3 w-300px">
+          <div class="submenu-items-container submenu-item__item style-2 level-3 w-300px">
             <div class="submenu__heading"><h3>${top.title}</h3></div>
             <ul class="submenu__items item">
         `;
@@ -135,7 +135,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
           if (child.children && child.children.length > 0) {
             html += `
-              <ul class="submenu-subitems-inner item level-4 w-300px submenu-items-container">
+              <ul class="submenu-subitems-inner item level-4 w-300px submenu-items-container submenu-item__item">
                 <div class="submenu__heading"><h3>${child.title}</h3></div>
             `;
             child.children.forEach(sub => {
@@ -158,7 +158,7 @@ document.addEventListener('DOMContentLoaded', () => {
   }
 
   document.getElementById('render-submenus').innerHTML = renderSubmenu(menu);
-  let menuItems = document.querySelectorAll('#render-submenus li');
+  let menuItems = document.querySelectorAll('#render-submenus .submenu-item__item li');
   menuItems.forEach((item)=>{
     item.addEventListener('click',function(){
     resetSubmenu()
