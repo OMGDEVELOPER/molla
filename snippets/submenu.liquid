@@ -159,7 +159,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
   
 });
-  function loadHtml(){
+  async function loadHtml(){
     await document.getElementById('render-submenus').innerHTML = renderSubmenu(menu);
     // document.getElementById('render-submenus').innerHTML = renderSubmenu();
     let menuItems = document.querySelectorAll('.submenu__items > li');
@@ -171,7 +171,7 @@ document.addEventListener('DOMContentLoaded', () => {
       })
     })
   }
-loadHtml();
+await loadHtml();
 {% endjavascript %}
 <script>
   document.querySelectorAll('.has-second-level').forEach(item => {
