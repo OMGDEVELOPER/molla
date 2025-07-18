@@ -159,7 +159,10 @@ document.addEventListener('DOMContentLoaded', () => {
 
   document.getElementById('render-submenus').innerHTML = renderSubmenu(menu);
 });
-  // document.getElementById('render-submenus').innerHTML = renderSubmenu();
+ 
+{% endjavascript %}
+<script>
+   // document.getElementById('render-submenus').innerHTML = renderSubmenu();
   let menuItems = document.querySelectorAll('.submenu__items > li');
   console.log(menuItems)
   menuItems.forEach((item)=>{
@@ -169,6 +172,6 @@ document.addEventListener('DOMContentLoaded', () => {
     })
   })
 
-{% endjavascript %}
+</script>
 
 
