@@ -111,12 +111,10 @@
 {% javascript %}
 document.addEventListener('DOMContentLoaded', () => {
   const menus = window.menuData;
-  menus.forEach((menu)=>{
-    console.log(menu)
-  })
+
   function renderSubmenu(menu) {
     let html = `
-      <div class="col-12 col-md-3 item item__2 w-300px level-2" menu-name="${menu}">
+      <div class="col-12 col-md-3 item item__2 w-300px level-2" menu-name="${menu.title}">
         <div class="item__1__group">
           <div class="submenu__heading heading__1">
             <h3 class="uppercase">${menu.title}</h3>
@@ -164,19 +162,29 @@ document.addEventListener('DOMContentLoaded', () => {
     return html;
   }
 
-  document.getElementById('render-submenus').innerHTML = renderSubmenu(menu);
+  // ✅ Loop through each menu in window.menuData
+  let renderedHTML = '';
+  Object.values(menus).forEach(menu => {
+    renderedHTML += renderSubmenu(menu);
+  });
+
+  document.getElementById('render-submenus').innerHTML = renderedHTML;
+
+  // ✅ Attach click events
   let menuItems = document.querySelectorAll('#render-submenus li');
-  menuItems.forEach((item)=>{
-    item.addEventListener('click',function(){
-    // resetSubmenu()
-     const submenu = item.querySelector('.submenu-items-container');
-      submenu.style.display ="block";
-    })
-  })
-  function resetSubmenu(){
-    menuItems.forEach((item)=>{
-     item.style.display ="none";
-    })
+  menuItems.forEach((item) => {
+    item.addEventListener('click', function () {
+      resetSubmenu();
+      const submenu = item.querySelector('.submenu-items-container');
+      if (submenu) submenu.style.display = "block";
+    });
+  });
+
+  function resetSubmenu() {
+    let allSubmenus = document.querySelectorAll('.submenu-items-container');
+    allSubmenus.forEach((sub) => {
+      sub.style.display = "none";
+    });
   }
 });
 
