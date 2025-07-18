@@ -43,10 +43,9 @@
   .uppercase{
     text-transform:uppercase;
   }
-.submenu-children:hover + .submenu-items-container {
-  display: block !important;
-}
-
+  .submenu-children:hover .submenu-items-container{
+    display:block !important;
+  }
 {% endstyle %}
 <submenu>
   <div class="submenu submenu-container container {{ block.id }}" id="{{ block.id }}">
