@@ -205,35 +205,25 @@ document.addEventListener('DOMContentLoaded', () => {
   // Optional: Hide all by default
   allSubmenus.forEach(sub => sub.style.display = 'none');
   let submenuChildrens = document.querySelectorAll('.submenu-with-children');
-
-  
-  // Hide all submenus initially
-  allSubmenus.forEach(sub => sub.style.display = 'none');
-  
-  submenuChildrens.forEach((item) => {
-    item.addEventListener('click', function(e) {
+  submenuChildrens.forEach((item)=>{
+    item.addEventListener('click',function(e){
       e.preventDefault();
-  
-      // Find submenu inside the clicked item
-      let currentSubmenu = item.querySelector('.submenu-items-container');
-  
-      // Hide all other submenus
-      hideOtherSubmenus(currentSubmenu);
-  
-      // Show the submenu of the clicked item
-      if (currentSubmenu) {
-        currentSubmenu.style.display = 'block';
+      // clearSubmenuActive(item)
+      let submenu = e.target.querySelector('.submenu-items-container');
+      if (submenu) {
+        submenu.style.display = 'block';
       }
-    });
+    })
+  })
+
+  function clearSubmenuActive(exceptItem) {
+  submenuChildrens.forEach((item) => {
+    if (item !== exceptItem) {
+      let submenu = item.querySelector('.submenu-items-container');
+      if (submenu) submenu.style.display = 'none';
+    }
   });
-  
-  function hideOtherSubmenus(exceptThis) {
-    allSubmenus.forEach((submenu) => {
-      if (submenu !== exceptThis) {
-        submenu.style.display = 'none';
-      }
-    });
-  }
+}
 });
 
 
