@@ -45,24 +45,30 @@
   }
 {% endstyle %}
 <submenu>
-  <div class="submenu container {{ block.id }}" id="{{ block.id }}">
+  <div class="submenu submenu-container container {{ block.id }}" id="{{ block.id }}">
     <div class="row">
-      <div class="col-12 col-md-3 item">
-        <div class="submenu__heading"><h3>OUR PRODUCTS</h3></div>
-        <ul class="submenu__items menu-list">
-          {% if block.settings.item-1-label != blank %}
-            <li target-id="{{ block.settings.item-1-label | handle }}-{{ block.id }}" submenu-items="{{ block.settings.menu-item-1 }}">
-              <a href="#">{{ block.settings.item-1-label }}</a>
-            </li>
-          {% endif %}
-          {% if block.settings.item-2-label != blank %}
-            <li target-id="{{ block.settings.item-2-label | handle }}-{{ block.id }}" submenu-items="{{ block.settings.menu-item-2 }}">
-              <a href="#">{{ block.settings.item-2-label }}</a>
-            </li>
-          {% endif %}
-        </ul>
-      </div>
-      <div id="render-submenus" class="col-12 col-md-9"></div>
+                <div class="col-12 col-md-3 item item__1">
+            <div class="item__1__group">
+              <div class="submenu__heading">
+                  <h3>OUR PRODUCTS</h3>
+              </div>
+              <ul class="submenu__items">
+                   <li target-id="{{ block.settings.item-1-label }}-{{ block.id }}" submenu-items="{{ block.settings.menu-item-1 }}"><a href="#">{{ block.settings.item-1-label }}</a></li>
+                  <li target-id="{{ block.settings.item-2-label }}-{{ block.id }}"><a href="#">{{ block.settings.item-2-label }}</a></li>
+            
+              </ul>
+            </div>
+            <ul class="submenu__items links-with-icon">
+              <li><a href="#"><span class="__icon"><img src="https://cdn.shopify.com/s/files/1/0859/1186/3592/files/sell.svg?v=1752660278" alt="icon"></span><span class="__label">Special Offers</span></a></li>
+              <li><a href="#"><span class="__icon"><img src="https://cdn.shopify.com/s/files/1/0859/1186/3592/files/sell.svg?v=1752660278" alt="icon"></span><span class="__label">Special Offers</span></a></li>
+              <li><a href="#"><span class="__icon"><img src="https://cdn.shopify.com/s/files/1/0859/1186/3592/files/sell.svg?v=1752660278" alt="icon"></span><span class="__label">Special Offers</span></a></li>
+             
+            </ul>
+        </div>
+       {% comment %}
+         
+       {% endcomment %}
+       <div id="render-submenus"></div>
     </div>
   </div>
 </submenu>
@@ -105,63 +111,94 @@
 {% javascript %}
 document.addEventListener('DOMContentLoaded', () => {
   const menus = window.menuData;
-  const submenuContainer = document.getElementById('render-submenus');
-  const menuTriggers = document.querySelectorAll('.submenu__items li[target-id]');
 
-  function renderSubmenu(menu, id) {
-    let html = `<div class="submenu-panel" id="${id}" style="display:none;">
-      <div class="submenu__heading"><h3>${menu.title}</h3></div>
-      <ul class="submenu__items">`;
+  function renderSubmenu(menu) {
+    let html = `
+      <div class="col-12 col-md-3 item item__2 w-300px level-2" menu-name="${menu.title}">
+        <div class="item__1__group">
+          <div class="submenu__heading heading__1">
+            <h3 class="uppercase">${menu.title}</h3>
+          </div>
+          <ul class="submenu__items level-2">
+    `;
 
     menu.items.forEach(top => {
-      html += `<li>
-        <a href="${top.url}">${top.title}</a>`;
+      html += `
+        <li class="has-second-level style-2-li">
+          <a href="${top.url}">${top.title}</a>
+      `;
+
       if (top.children && top.children.length > 0) {
-        html += `<ul class="submenu__items child">`;
+        html += `
+          <div class="submenu-items-container submenu-item__item style-2 level-3 w-300px">
+            <div class="submenu__heading"><h3>${top.title}</h3></div>
+            <ul class="submenu__items item">
+        `;
+
         top.children.forEach(child => {
-          html += `<li><a href="${child.url}">${child.title}</a>`;
+          html += `<li class="has-third-level"><a href="${child.url}">${child.title}</a>`;
+
           if (child.children && child.children.length > 0) {
-            html += `<ul class="submenu__items subchild">`;
+            html += `
+              <ul class="submenu-subitems-inner item level-4 w-300px submenu-items-container submenu-item__item">
+                <div class="submenu__heading"><h3>${child.title}</h3></div>
+            `;
             child.children.forEach(sub => {
-              html += `<li><a href="${sub.url}">${sub.title}</a></li>`;
+              html += `<li class="menu-item-last-child"><a href="${sub.url}">${sub.title}</a></li>`;
             });
             html += `</ul>`;
           }
+
           html += `</li>`;
         });
-        html += `</ul>`;
+
+        html += `</ul></div>`;
       }
+
       html += `</li>`;
     });
 
-    html += `</ul></div>`;
+    html += `</ul></div></div>`;
     return html;
   }
 
-  // Render all submenu panels initially hidden
-  Object.entries(menus).forEach(([handle, menu]) => {
-    const id = menu.title.replace(/\s+/g, '-').toLowerCase() + '-{{ block.id }}';
-    submenuContainer.innerHTML += renderSubmenu(menu, id);
+  let renderedHTML = '';
+  Object.values(menus).forEach(menu => {
+    renderedHTML += renderSubmenu(menu);
   });
 
-  function hideAllPanels() {
-    document.querySelectorAll('.submenu-panel').forEach(panel => {
-      panel.style.display = 'none';
-    });
-  }
+  const renderContainer = document.getElementById('render-submenus');
+  renderContainer.innerHTML = renderedHTML;
 
-  // Click event for menu items
-  menuTriggers.forEach(item => {
-    item.addEventListener('click', () => {
-      const targetId = item.getAttribute('target-id');
-      hideAllPanels();
-      const targetPanel = document.getElementById(targetId);
-      if (targetPanel) targetPanel.style.display = 'block';
+  // ✅ Show submenu on trigger li click
+  const triggerItems = document.querySelectorAll(`[submenu-items]`);
+  const allSubmenus = document.querySelectorAll('.item__2[menu-name]');
+
+  triggerItems.forEach(trigger => {
+    trigger.addEventListener('click', (e) => {
+      e.preventDefault();
+
+      const menuKey = trigger.getAttribute('submenu-items');
+
+      // Hide all
+      allSubmenus.forEach(sub => {
+        sub.style.display = 'none';
+      });
+
+      // Show only the matched one
+      const target = document.querySelector(`.item__2[menu-name="${menuKey}"]`);
+      if (target) {
+        target.style.display = 'block';
+      }
     });
   });
+
+  // Optional: Hide all by default
+  allSubmenus.forEach(sub => sub.style.display = 'none');
 });
-{% endjavascript %}
 
+
+{% endjavascript %}
 <script>
   document.querySelectorAll('.has-second-level').forEach(item => {
     let timer;
