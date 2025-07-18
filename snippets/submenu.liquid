@@ -45,30 +45,24 @@
   }
 {% endstyle %}
 <submenu>
-  <div class="submenu submenu-container container {{ block.id }}" id="{{ block.id }}">
+  <div class="submenu container {{ block.id }}" id="{{ block.id }}">
     <div class="row">
-                <div class="col-12 col-md-3 item item__1">
-            <div class="item__1__group">
-              <div class="submenu__heading">
-                  <h3>OUR PRODUCTS</h3>
-              </div>
-              <ul class="submenu__items">
-                   <li target-id="{{ block.settings.item-1-label }}-{{ block.id }}" submenu-items="{{ block.settings.menu-item-1 }}"><a href="#">{{ block.settings.item-1-label }}</a></li>
-                  <li target-id="{{ block.settings.item-2-label }}-{{ block.id }}"><a href="#">{{ block.settings.item-2-label }}</a></li>
-            
-              </ul>
-            </div>
-            <ul class="submenu__items links-with-icon">
-              <li><a href="#"><span class="__icon"><img src="https://cdn.shopify.com/s/files/1/0859/1186/3592/files/sell.svg?v=1752660278" alt="icon"></span><span class="__label">Special Offers</span></a></li>
-              <li><a href="#"><span class="__icon"><img src="https://cdn.shopify.com/s/files/1/0859/1186/3592/files/sell.svg?v=1752660278" alt="icon"></span><span class="__label">Special Offers</span></a></li>
-              <li><a href="#"><span class="__icon"><img src="https://cdn.shopify.com/s/files/1/0859/1186/3592/files/sell.svg?v=1752660278" alt="icon"></span><span class="__label">Special Offers</span></a></li>
-             
-            </ul>
-        </div>
-       {% comment %}
-         
-       {% endcomment %}
-       <div id="render-submenus"></div>
+      <div class="col-12 col-md-3 item">
+        <div class="submenu__heading"><h3>OUR PRODUCTS</h3></div>
+        <ul class="submenu__items menu-list">
+          {% if block.settings.item-1-label != blank %}
+            <li target-id="{{ block.settings.item-1-label | handle }}-{{ block.id }}" submenu-items="{{ block.settings.menu-item-1 }}">
+              <a href="#">{{ block.settings.item-1-label }}</a>
+            </li>
+          {% endif %}
+          {% if block.settings.item-2-label != blank %}
+            <li target-id="{{ block.settings.item-2-label | handle }}-{{ block.id }}" submenu-items="{{ block.settings.menu-item-2 }}">
+              <a href="#">{{ block.settings.item-2-label }}</a>
+            </li>
+          {% endif %}
+        </ul>
+      </div>
+      <div id="render-submenus" class="col-12 col-md-9"></div>
     </div>
   </div>
 </submenu>
