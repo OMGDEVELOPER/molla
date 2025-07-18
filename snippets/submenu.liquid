@@ -124,7 +124,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
     menu.items.forEach(top => {
       html += `
-        <li class="has-second-level style-2-li">
+        <li class="has-second-level style-2-li submenu-children">
           <a href="${top.url}">${top.title}</a>
       `;
 
@@ -136,7 +136,7 @@ document.addEventListener('DOMContentLoaded', () => {
         `;
 
         top.children.forEach(child => {
-          html += `<li class="has-third-level"><a href="${child.url}">${child.title}</a>`;
+          html += `<li class="has-third-level submenu-children"><a href="${child.url}">${child.title}</a>`;
 
           if (child.children && child.children.length > 0) {
             html += `
