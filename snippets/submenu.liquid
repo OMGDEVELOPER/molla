@@ -161,10 +161,16 @@ document.addEventListener('DOMContentLoaded', () => {
   let menuItems = document.querySelectorAll('#render-submenus li');
   menuItems.forEach((item)=>{
     item.addEventListener('click',function(){
+    resetSubmenu()
      const submenu = item.querySelector('.submenu-items-container');
       submenu.style.display ="block";
     })
   })
+  function resetSubmenu(){
+    menuItems.forEach((item)=>{
+     item.style.display ="none";
+    })
+  }
 });
 
 {% endjavascript %}
