@@ -65,57 +65,11 @@
              
             </ul>
         </div>
-      <div class="col-12 col-md-3 item item__2 w-300px level-2" id="roofing-{{ block.id }}">
-        <div class="item__1__group">
-          {% comment %}{% endcomment %}
-
-          {% comment %}{% endcomment %}
-          <div class="submenu__heading heading__1">
-            <h3 class="uppercase">{{ block.settings.menu-item-1 }}</h3>
-          </div>
-          {%- assign main_menu = linklists[block.settings.menu-item-1] -%}
-          <ul class="submenu__items level-2">
-            {% for top_link in main_menu.links %}
-              <li class="has-second-level style-2-li">
-                <a href="{{ top_link.url }}">{{ top_link.title }}</a>
-
-                {% if top_link.links != blank %}
-                  <div class="submenu-items-container style-2 level-3 w-300px">
-                    <div class="submenu__heading">
-                      <h3>{{ top_link.title }}</h3>
-                      {% comment %}
-                      <a href="{{ top_link.url }}"><span class="see-all-link">See All</span></a>
-                      {% endcomment %}
-                    </div>
-
-                    <ul class="submenu__items item">
-                      {% for child_link in top_link.links %}
-                        <li class="has-third-level">
-                          <a href="{{ child_link.url }}" style="color:#000;">{{ child_link.title }}</a>
-
-                          {% if child_link.links != blank %}
-                            <ul class="submenu-subitems-inner item level-4 w-300px submenu-items-container">
-                              <div class="submenu__heading">
-                                <h3>{{ child_link.title }}</h3>
-                                {% comment %}
-                                <a href="{{ child_link.url }}"><span class="see-all-link">See All</span></a>
-                                {% endcomment %}
-                              </div>
-                              {% for subchild_link in child_link.links %}
-                                <li class="has-third-level menu-item-last-child"><a href="{{ subchild_link.url }}">{{ subchild_link.title }}</a></li>
-                              {% endfor %}
-                            </ul>
-                          {% endif %}
-                        </li>
-                      {% endfor %}
-                    </ul>
-                  </div>
-                {% endif %}
-              </li>
-            {% endfor %}
-          </ul>
-        </div>
-      </div>
+       {% comment %}
+         
+       {% endcomment %}
+       <div id="render-submenus"></div>
+      
     </div>
   </div>
 </submenu>
