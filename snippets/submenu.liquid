@@ -107,7 +107,7 @@
 document.addEventListener('DOMContentLoaded', () => {
   const menu = window.menuData;
 
- function renderSubmenu(menu) {
+ async function renderSubmenu(menu) {
     let html = `
       <div class="col-12 col-md-3 item item__2 w-300px level-2">
         <div class="item__1__group">
@@ -159,9 +159,10 @@ document.addEventListener('DOMContentLoaded', () => {
 
   
 });
-    
+
+{% endjavascript %}
+<script>
       document.getElementById('render-submenus').innerHTML = renderSubmenu(menu);
-    
     // document.getElementById('render-submenus').innerHTML = renderSubmenu();
     let menuItems = document.querySelectorAll('.submenu__items > li');
     console.log(menuItems)
@@ -171,8 +172,7 @@ document.addEventListener('DOMContentLoaded', () => {
         console.log(item)
       })
     })
-{% endjavascript %}
-<script>
+  
   document.querySelectorAll('.has-second-level').forEach(item => {
     let timer;
 
