@@ -90,7 +90,7 @@
                     <ul class="submenu__items item">
                       {% for child_link in top_link.links %}
                         <li class="has-third-level">
-                          <a href="{{ child_link.url }}">{{ child_link.title }}</a>
+                          <a href="{{ child_link.url }}" style="color:#000;">{{ child_link.title }}</a>
 
                           {% if child_link.links != blank %}
                             <ul class="submenu-subitems-inner item level-4 w-300px submenu-items-container">
