@@ -198,6 +198,21 @@ document.addEventListener('DOMContentLoaded', () => {
 
   // Optional: Hide all by default
   allSubmenus.forEach(sub => sub.style.display = 'none');
+  document.querySelectorAll('.submenu-children').forEach(item => {
+  item.addEventListener('mouseenter', () => {
+    const submenu = item.nextElementSibling;
+    if (submenu && submenu.classList.contains('submenu-items-container')) {
+      submenu.style.display = 'block';
+    }
+  });
+  item.addEventListener('mouseleave', () => {
+    const submenu = item.nextElementSibling;
+    if (submenu && submenu.classList.contains('submenu-items-container')) {
+      submenu.style.display = 'none';
+    }
+  });
+});
+
 });
 
 
