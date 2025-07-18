@@ -208,9 +208,8 @@ document.addEventListener('DOMContentLoaded', () => {
   submenuChildrens.forEach((item)=>{
     item.addEventListener('click',function(e){
       e.preventDefault();
-      console.log(e.target)
-      clearSubmenuActive()
-      let submenu = item.querySelector('.submenu-items-container');
+      // clearSubmenuActive()
+      let submenu = e.target.querySelector('.submenu-items-container');
       if (submenu) {
         submenu.style.display = 'block';
       }
