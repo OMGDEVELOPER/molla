@@ -151,3 +151,6 @@ submenu .w-300px{
     border-bottom: 1px solid #DADADA;
     background: #127FB5;
 }
+.submenu .row .item .submenu__items.submenu-inner li.active-list a{
+  color:#FFF;
+}
