@@ -229,13 +229,8 @@ document.addEventListener('DOMContentLoaded', () => {
      element.addEventListener('click',function(event){
        let menuOrder = event.target.getAttribute('submenu-order')
        if(menuOrder == '3'){
+         console.log('level 3')
          document.querySelector(".lvl-4").style.display = 'none';
-       }
-       if(menuOrder == '2'){
-         
-       }
-       if(menuOrder == '1'){
-  
        }
      })
     })
