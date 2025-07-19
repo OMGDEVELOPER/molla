@@ -112,7 +112,7 @@ submenu{
     border-bottom: none;
 }
 .submenu .row .item.style-2 .submenu__items li:hover a{
-  color:#FFF;
+  /* color:#FFF; */
 }
 /* .submenu .row .item .submenu__items li:hover{
   border-bottom: 1px solid #3C4043;
