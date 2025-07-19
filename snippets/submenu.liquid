@@ -207,7 +207,8 @@ document.addEventListener('DOMContentLoaded', () => {
         e.preventDefault();
         // clearSubmenuActive(item)
         let submenu = e.target.querySelector('.submenu-items-container');
-        ReloadSubmenu()
+        console.log(submenu)
+        // ReloadSubmenu()
         if (submenu) {
           submenu.style.display = 'block';
         }
@@ -229,7 +230,6 @@ document.addEventListener('DOMContentLoaded', () => {
      element.addEventListener('click',function(event){
        let menuOrder = event.target.getAttribute('submenu-order')
        if(menuOrder == '3'){
-         console.log('level 3')
          document.querySelector(".lvl-4").style.display = 'none';
        }
      })
