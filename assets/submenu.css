@@ -148,7 +148,7 @@ submenu .w-300px{
   font-weight: 500;
   }
 .submenu .row .item .submenu__items.submenu-inner li:hover,
-.submenu .row .lvl-1:hover{
+.submenu .row .lvl-1 li:hover{
     border-bottom: 1px solid #DADADA;
     background: #127FB5;
 }
