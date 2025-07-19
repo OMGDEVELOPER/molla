@@ -222,8 +222,8 @@ document.addEventListener('DOMContentLoaded', () => {
     submenuChildrens.forEach((item)=>{
        item.classList.remove('activeMenuItem')
     })
-    // currentMenuActive = '1'
-    // ReloadSubmenu(currentMenuActive);
+    currentMenuActive = '1'
+    ReloadSubmenu(currentMenuActive);
   }
   function clearSubmenuActive(exceptItem) {
   submenuChildrens.forEach((item) => {
@@ -238,14 +238,9 @@ document.addEventListener('DOMContentLoaded', () => {
        hideSubmenuContainer(document.querySelectorAll(".lvl-3"))
        hideSubmenuContainer(document.querySelectorAll(".lvl-4"))
      }
-     else if(activeMenu == '3'){
+     if(activeMenu == '3'){
        hideSubmenuContainer(document.querySelectorAll(".lvl-4"))
      }
-    else if(activeMenu == '1'){
-       hideSubmenuContainer(document.querySelectorAll(".lvl-2"))
-       hideSubmenuContainer(document.querySelectorAll(".lvl-3"))
-       hideSubmenuContainer(document.querySelectorAll(".lvl-4"))
-    }
     }
   function hideSubmenuContainer(Elements){
     Elements.forEach(el => {
