@@ -60,15 +60,6 @@ submenu{
 .submenu .row .item.item__1 .submenu__heading.heading__1 h3{
   color: #FAFAFA;
 }
-.submenu .row .item.style-2 .submenu__heading h3{
-  color: #050505;
-}
-.submenu .row .item.item__3 .submenu__heading h3{
-  color: #050505;
-}
-.submenu .row .item.item__4 .submenu__heading h3{
-  color: #050505;
-}
 .submenu .row .item .submenu__items{}
 .submenu .row .item .submenu__items{
   padding-left: 0px;
