@@ -176,7 +176,6 @@ document.addEventListener('DOMContentLoaded', () => {
   const renderContainer = document.getElementById('render-submenus');
   renderContainer.innerHTML = renderedHTML;
 
-  // ✅ Show submenu on trigger li click
   const triggerItems = document.querySelectorAll(`.submenu-items-name`);
   const allSubmenus = document.querySelectorAll('.item__2[menu-name]');
   triggerItems.forEach(trigger => {
@@ -197,7 +196,6 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   });
   let currentMenuActive = '';
-  // Optional: Hide all by default
   function loadSubmenuItems(){
     allSubmenus.forEach(sub => sub.style.display = 'none');
     let submenuChildrens = document.querySelectorAll('.submenu-with-children');
@@ -208,7 +206,6 @@ document.addEventListener('DOMContentLoaded', () => {
           removeActiveClass();
            e.target.classList.add('activeMenuItem')
         }
-        // clearSubmenuActive(item)
         currentMenuActive = e.target.getAttribute('submenu-order');
         let submenu = e.target.querySelector('.submenu-items-container');
         ReloadSubmenu(currentMenuActive);
@@ -225,6 +222,8 @@ document.addEventListener('DOMContentLoaded', () => {
     submenuChildrens.forEach((item)=>{
        item.classList.remove('activeMenuItem')
     })
+    currentMenuActive = '1'
+    ReloadSubmenu(currentMenuActive);
   }
   function clearSubmenuActive(exceptItem) {
   submenuChildrens.forEach((item) => {
@@ -242,6 +241,11 @@ document.addEventListener('DOMContentLoaded', () => {
      if(activeMenu == '3'){
        hideSubmenuContainer(document.querySelectorAll(".lvl-4"))
      }
+    else{
+       hideSubmenuContainer(document.querySelectorAll(".lvl-2"))
+       hideSubmenuContainer(document.querySelectorAll(".lvl-3"))
+       hideSubmenuContainer(document.querySelectorAll(".lvl-4"))
+    }
     }
   function hideSubmenuContainer(Elements){
     Elements.forEach(el => {
