@@ -147,13 +147,11 @@ submenu .w-300px{
 }
 
 
-submenu .row .has-second-level a,
 submenu .row .has-third-level a,
 submenu .row .has-third-level.menu-item-last-child a{
    color: #050505 !important;
 }
-submenu .row .has-third-level,
-submenu .row .has-second-level,
+submenu .row .has-third-level
 {
   border-bottom: 1px solid #C5C5C5 !important;
 }
