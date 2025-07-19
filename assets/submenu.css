@@ -150,5 +150,5 @@ submenu .w-300px{
 .submenu .row .item .submenu__items.submenu-inner li:hover{
     border-bottom: 1px solid #DADADA;
     background: #127FB5;
-    color:#FFF;
+    color:#FFF !important;
 }
