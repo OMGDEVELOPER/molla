@@ -52,8 +52,8 @@
                   <h3>OUR PRODUCTS</h3>
               </div>
               <ul class="submenu__items">
-                   <li target-id="{{ block.settings.item-1-label }}" submenu-items="{{ block.settings.menu-item-1 }}"><a href="#">{{ block.settings.item-1-label }}</a></li>
-                  <li target-id="{{ block.settings.item-2-label }}"><a href="#">{{ block.settings.item-2-label }}</a></li>
+                   <li class="submenu-items-name" target-id="{{ block.settings.item-1-label }}" submenu-items="{{ block.settings.menu-item-1 }}"><a href="#">{{ block.settings.item-1-label }}</a></li>
+                  <li class="submenu-items-name" target-id="{{ block.settings.item-2-label }}"><a href="#">{{ block.settings.item-2-label }}</a></li>
             
               </ul>
             </div>
@@ -178,7 +178,7 @@ document.addEventListener('DOMContentLoaded', () => {
   renderContainer.innerHTML = renderedHTML;
 
   // ✅ Show submenu on trigger li click
-  const triggerItems = document.querySelectorAll(`[submenu-items]`);
+  const triggerItems = document.querySelectorAll(`.submenu-items-name`);
   const allSubmenus = document.querySelectorAll('.item__2[menu-name]');
 
   triggerItems.forEach(trigger => {
@@ -223,6 +223,5 @@ document.addEventListener('DOMContentLoaded', () => {
   });
 }
 });
-
 
 {% endjavascript %}
