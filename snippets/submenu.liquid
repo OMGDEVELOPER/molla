@@ -53,7 +53,7 @@
               </div>
               <ul class="submenu__items">
                    <li class="submenu-items-name" target-id="{{ block.settings.item-1-label }}" submenu-items="{{ block.settings.menu-item-1 }}"><a href="#">{{ block.settings.item-1-label }}</a></li>
-                  <li class="submenu-items-name" target-id="{{ block.settings.item-2-label }}"><a href="#">{{ block.settings.item-2-label }}</a></li>
+                  <li class="submenu-items-name" target-id="{{ block.settings.item-2-label }}" submenu-items="{{ block.settings.menu-item-2 }}"><a href="#">{{ block.settings.item-2-label }}</a></li>
             
               </ul>
             </div>
@@ -180,7 +180,6 @@ document.addEventListener('DOMContentLoaded', () => {
   // ✅ Show submenu on trigger li click
   const triggerItems = document.querySelectorAll(`.submenu-items-name`);
   const allSubmenus = document.querySelectorAll('.item__2[menu-name]');
-  console.log(triggerItems)
   triggerItems.forEach(trigger => {
     trigger.addEventListener('click', (e) => {
       e.preventDefault();
@@ -188,7 +187,6 @@ document.addEventListener('DOMContentLoaded', () => {
 
       // Hide all
       allSubmenus.forEach(sub => {
-        console.log(sub)
         sub.style.display = 'none';
       });
 
