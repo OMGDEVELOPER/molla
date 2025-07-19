@@ -180,6 +180,7 @@ document.addEventListener('DOMContentLoaded', () => {
   // ✅ Show submenu on trigger li click
   const triggerItems = document.querySelectorAll(`.submenu-items-name`);
   const allSubmenus = document.querySelectorAll('.item__2[menu-name]');
+  console.log(triggerItems)
   triggerItems.forEach(trigger => {
     trigger.addEventListener('click', (e) => {
       e.preventDefault();
