@@ -182,6 +182,7 @@ document.addEventListener('DOMContentLoaded', () => {
   const allSubmenus = document.querySelectorAll('.item__2[menu-name]');
 
   triggerItems.forEach(trigger => {
+    console.log(triggerItems)
     trigger.addEventListener('click', (e) => {
       e.preventDefault();
 
