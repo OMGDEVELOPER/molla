@@ -230,6 +230,9 @@ document.addEventListener('DOMContentLoaded', () => {
        hideSubmenuContainer(document.querySelectorAll(".lvl-3"))
        hideSubmenuContainer(document.querySelectorAll(".lvl-4"))
      }
+     if(activeMenu == '3'){
+       hideSubmenuContainer(document.querySelectorAll(".lvl-4"))
+     }
     }
   function hideSubmenuContainer(Elements){
     Elements.forEach(el => {
