@@ -145,9 +145,6 @@ submenu .w-300px{
   height: 100%;
   padding: 0px;
 }
-.submenu .row .item.style-2 .submenu__items li:hover::after {
-  filter: brightness(1);
-}
 
 
 submenu .row .has-second-level a,
