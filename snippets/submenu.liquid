@@ -51,9 +51,9 @@
               <div class="submenu__heading">
                   <h3>OUR PRODUCTS</h3>
               </div>
-              <ul class="submenu__items lvl-1" submenu-order="1">
-                   <li class="submenu-items-name " target-id="{{ block.settings.item-1-label }}" submenu-items="{{ block.settings.menu-item-1 }}"><a href="#">{{ block.settings.item-1-label }}</a></li>
-                  <li class="submenu-items-name" target-id="{{ block.settings.item-2-label }}" submenu-items="{{ block.settings.menu-item-2 }}"><a href="#">{{ block.settings.item-2-label }}</a></li>
+              <ul class="submenu__items lvl-1" >
+                   <li class="submenu-items-name " submenu-order="1" target-id="{{ block.settings.item-1-label }}" submenu-items="{{ block.settings.menu-item-1 }}"><a href="#">{{ block.settings.item-1-label }}</a></li>
+                  <li class="submenu-items-name" submenu-order="1" target-id="{{ block.settings.item-2-label }}" submenu-items="{{ block.settings.menu-item-2 }}"><a href="#">{{ block.settings.item-2-label }}</a></li>
             
               </ul>
             </div>
@@ -127,7 +127,7 @@ document.addEventListener('DOMContentLoaded', () => {
        additionalClass1 = "submenu-with-children"
      }
       html += `
-        <li class="${additionalClass1}">
+        <li class="${additionalClass1}" submenu-order="2">
           <a href="${top.url}">${top.title}</a>
       `;
 
@@ -143,7 +143,7 @@ document.addEventListener('DOMContentLoaded', () => {
          if (child.children && child.children.length > 0) {
            additionalClass = "submenu-with-children"
          }
-          html += `<li class="has-third-level ${additionalClass}"><a href="${child.url}">${child.title}</a>`;
+          html += `<li submenu-order="3" class="has-third-level ${additionalClass}"><a href="${child.url}">${child.title}</a>`;
 
           if (child.children && child.children.length > 0) {
             html += `
@@ -151,7 +151,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 <div class="submenu__heading"><h3>${child.title}</h3></div>
             `;
             child.children.forEach(sub => {
-              html += `<li class="menu-item-last-child"><a href="${sub.url}">${sub.title}</a></li>`;
+              html += `<li submenu-order="4" class="menu-item-last-child"><a href="${sub.url}">${sub.title}</a></li>`;
             });
             html += `</ul>`;
           }
