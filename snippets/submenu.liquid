@@ -244,7 +244,7 @@ document.addEventListener('DOMContentLoaded', () => {
     let LiELements = document.querySelectorAll('.submenu .row .item .submenu__items.submenu-inner li');
     LiELements.forEach((element)=>{
       element.addEventListener('mouseover',function(e){
-        e.target.classList.toggle('active-list')
+        e.target.querySelector('a').style.color = "#FFF";
       })
     })
   }
