@@ -129,13 +129,13 @@ document.addEventListener('DOMContentLoaded', () => {
        additionalClass1 = "submenu-with-children"
      }
       html += `
-        <li class="has-second-level style-2-li ${additionalClass1}">
+        <li class=" ${additionalClass1}">
           <a href="${top.url}">${top.title}</a>
       `;
 
       if (top.children && top.children.length > 0) {
         html += `
-          <div class="submenu-items-container submenu-item__item style-2 level-3 w-300px">
+          <div class="submenu-items-container w-300px">
             <div class="submenu__heading"><h3>${top.title}</h3></div>
             <ul class="submenu__items item">
         `;
@@ -145,11 +145,11 @@ document.addEventListener('DOMContentLoaded', () => {
          if (child.children && child.children.length > 0) {
            additionalClass = "submenu-with-children"
          }
-          html += `<li class="has-third-level ${additionalClass}"><a href="${child.url}">${child.title}</a>`;
+          html += `<li class="h${additionalClass}"><a href="${child.url}">${child.title}</a>`;
 
           if (child.children && child.children.length > 0) {
             html += `
-              <ul class="submenu-subitems-inner item level-4 w-300px submenu-items-container submenu-item__item">
+              <ul class="submenu-subitems-inner level-4 w-300px submenu-items-container">
                 <div class="submenu__heading"><h3>${child.title}</h3></div>
             `;
             child.children.forEach(sub => {
