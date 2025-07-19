@@ -197,7 +197,7 @@ document.addEventListener('DOMContentLoaded', () => {
       }
     });
   });
-
+  let currentMenuActive = '';
   // Optional: Hide all by default
   function loadSubmenuItems(){
     allSubmenus.forEach(sub => sub.style.display = 'none');
@@ -206,8 +206,9 @@ document.addEventListener('DOMContentLoaded', () => {
       item.addEventListener('click',function(e){
         e.preventDefault();
         // clearSubmenuActive(item)
+        currentMenuActive = e.target;
         let submenu = e.target.querySelector('.submenu-items-container');
-        console.log(submenu)
+        console.log(currentMenuActive)
         // ReloadSubmenu()
         if (submenu) {
           submenu.style.display = 'block';
