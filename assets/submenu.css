@@ -140,7 +140,7 @@ submenu .w-300px{
 .submenu-inner li{
   border-bottom: 1px solid #C5C5C5 !important;
 }
-.submenu-inner li a{
+.submenu .row .item .submenu__items.submenu-inner li a{
   color: #050505;
   font-family: Karla;
   font-size: clamp(12px, 5vw, 16px);
