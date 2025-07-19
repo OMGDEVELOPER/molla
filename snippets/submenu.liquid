@@ -223,7 +223,9 @@ document.addEventListener('DOMContentLoaded', () => {
 
   let SubmenuLiEls = document.querySelectorAll('.submenu li');
   SubmenuLiEls.forEach((element) => {
-    console.log(event.target)
+   element.addEventListener('click',function(event){
+      console.log(event.target)
+   })
   })
 });
 
