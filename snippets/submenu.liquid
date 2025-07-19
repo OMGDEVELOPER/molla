@@ -184,7 +184,7 @@ document.addEventListener('DOMContentLoaded', () => {
   triggerItems.forEach(trigger => {
     trigger.addEventListener('click', (e) => {
       e.preventDefault();
-
+      console.log(trigger)
       const menuKey = trigger.getAttribute('submenu-items');
 
       // Hide all
