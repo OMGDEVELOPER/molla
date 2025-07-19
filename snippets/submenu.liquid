@@ -199,19 +199,21 @@ document.addEventListener('DOMContentLoaded', () => {
   });
 
   // Optional: Hide all by default
-  allSubmenus.forEach(sub => sub.style.display = 'none');
-  let submenuChildrens = document.querySelectorAll('.submenu-with-children');
-  submenuChildrens.forEach((item)=>{
-    item.addEventListener('click',function(e){
-      e.preventDefault();
-      // clearSubmenuActive(item)
-      let submenu = e.target.querySelector('.submenu-items-container');
-      if (submenu) {
-        submenu.style.display = 'block';
-      }
+  function loadSubmenuItems(){
+    allSubmenus.forEach(sub => sub.style.display = 'none');
+    let submenuChildrens = document.querySelectorAll('.submenu-with-children');
+    submenuChildrens.forEach((item)=>{
+      item.addEventListener('click',function(e){
+        e.preventDefault();
+        // clearSubmenuActive(item)
+        let submenu = e.target.querySelector('.submenu-items-container');
+        if (submenu) {
+          submenu.style.display = 'block';
+        }
+      })
     })
-  })
-
+  }
+  loadSubmenuItems()
   function clearSubmenuActive(exceptItem) {
   submenuChildrens.forEach((item) => {
     if (item !== exceptItem) {
@@ -226,16 +228,14 @@ document.addEventListener('DOMContentLoaded', () => {
    element.addEventListener('click',function(event){
      let menuOrder = event.target.getAttribute('submenu-order')
      if(menuOrder == '3'){
-       document.querySelectorAll("[submenu-order='4']").style.display = 'none';
+       document.querySelectorAll(".lvl-4").style.display = 'none';
+       loadSubmenuItems()
      }
      if(menuOrder == '2'){
-       document.querySelectorAll("[submenu-order='3']").style.display = 'none';
-       document.querySelectorAll("[submenu-order='4']").style.display = 'none';
+       
      }
      if(menuOrder == '1'){
-       // document.querySelectorAll("[submenu-order='2']").style.display = 'none';
-       // document.querySelectorAll("[submenu-order='3']").style.display = 'none';
-       // document.querySelectorAll("[submenu-order='4']").style.display = 'none';
+
      }
    })
   })
