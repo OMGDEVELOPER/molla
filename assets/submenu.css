@@ -161,6 +161,6 @@ submenu .w-300px{
 .lvl-4 li:hover > a{
      color:#FFF !important;
 }
-.lvl-3 .submenu-with-children:hover > a{
+.lvl-3 li:hover > a{
    color:#FFF !important;
 }
