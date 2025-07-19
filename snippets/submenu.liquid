@@ -207,6 +207,7 @@ document.addEventListener('DOMContentLoaded', () => {
         e.preventDefault();
         // clearSubmenuActive(item)
         let submenu = e.target.querySelector('.submenu-items-container');
+        ReloadSubmenu()
         if (submenu) {
           submenu.style.display = 'block';
         }
@@ -222,23 +223,23 @@ document.addEventListener('DOMContentLoaded', () => {
     }
   });
   }
-
-  let SubmenuLiEls = document.querySelectorAll('.submenu li');
-  SubmenuLiEls.forEach((element) => {
-   element.addEventListener('click',function(event){
-     let menuOrder = event.target.getAttribute('submenu-order')
-     if(menuOrder == '3'){
-       document.querySelector(".lvl-4").style.display = 'none';
-       // loadSubmenuItems()
-     }
-     if(menuOrder == '2'){
-       
-     }
-     if(menuOrder == '1'){
-
-     }
-   })
-  })
+  function ReloadSubmenu(){
+    let SubmenuLiEls = document.querySelectorAll('.submenu li');
+    SubmenuLiEls.forEach((element) => {
+     element.addEventListener('click',function(event){
+       let menuOrder = event.target.getAttribute('submenu-order')
+       if(menuOrder == '3'){
+         document.querySelector(".lvl-4").style.display = 'none';
+       }
+       if(menuOrder == '2'){
+         
+       }
+       if(menuOrder == '1'){
+  
+       }
+     })
+    })
+    }
 });
 
 {% endjavascript %}
