@@ -238,10 +238,10 @@ document.addEventListener('DOMContentLoaded', () => {
        hideSubmenuContainer(document.querySelectorAll(".lvl-3"))
        hideSubmenuContainer(document.querySelectorAll(".lvl-4"))
      }
-     if(activeMenu == '3'){
+     else if(activeMenu == '3'){
        hideSubmenuContainer(document.querySelectorAll(".lvl-4"))
      }
-    else{
+    else if(activeMenu == '1'){
        hideSubmenuContainer(document.querySelectorAll(".lvl-2"))
        hideSubmenuContainer(document.querySelectorAll(".lvl-3"))
        hideSubmenuContainer(document.querySelectorAll(".lvl-4"))
