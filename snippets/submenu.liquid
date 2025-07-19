@@ -221,7 +221,7 @@ document.addEventListener('DOMContentLoaded', () => {
   function removeActiveClass(){
     let submenuChildrens = document.querySelectorAll('.submenu-with-children');
     submenuChildrens.forEach((item)=>{
-       item.classList.add('activeMenuItem')
+       item.classList.remove('activeMenuItem')
     })
   }
   function clearSubmenuActive(exceptItem) {
