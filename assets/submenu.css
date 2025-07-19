@@ -147,11 +147,11 @@ submenu .w-300px{
   font-style: normal;
   font-weight: 500;
   }
-.submenu .row .item .submenu__items.submenu-inner li:hover,.submenu .row .lvl-1 > li:hover{
+.submenu .row .item .submenu__items.submenu-inner li:hover,
+.submenu .row .lvl-1:hover{
     border-bottom: 1px solid #DADADA;
     background: #127FB5;
 }
-
 .submenu .row .item .submenu__items.submenu-inner li.active-list > a{
   color:#FFF;
 }
