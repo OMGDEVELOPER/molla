@@ -82,7 +82,7 @@ submenu{
   display: flex;
   gap:10px;
 }
-.submenu .row .item .submenu__items li::after{
+.submenu .row .item .submenu__items li.submenu-with-children::after{
     content: "";
     width: 25px;
     height: 25px;
