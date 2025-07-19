@@ -219,7 +219,7 @@ document.addEventListener('DOMContentLoaded', () => {
   }
   loadSubmenuItems();
   function removeActiveClass(){
-    let submenuChildrens = document.querySelectorAll('.lvl-1 > .submenu-with-children');
+    let submenuChildrens = document.querySelectorAll('.submenu-items-name');
     submenuChildrens.forEach((item)=>{
        item.classList.remove('activeMenuItem')
     })
