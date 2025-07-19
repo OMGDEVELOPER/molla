@@ -145,15 +145,8 @@ submenu .w-300px{
   height: 100%;
   padding: 0px;
 }
-submenu .row .has-third-level.menu-item-last-child:hover a{
-  color:#FFF !important;
-}
-submenu .row .has-second-level:hover a{
-  color:#FFF !important;
-}
-submenu .row .has-third-level:hover a{
-  color:#FFF !important;
-}
+
+
 submenu .row .has-second-level a,
 submenu .row .has-third-level a,
 submenu .row .has-third-level.menu-item-last-child a{
