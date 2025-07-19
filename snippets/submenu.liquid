@@ -51,8 +51,8 @@
               <div class="submenu__heading">
                   <h3>OUR PRODUCTS</h3>
               </div>
-              <ul class="submenu__items">
-                   <li class="submenu-items-name" target-id="{{ block.settings.item-1-label }}" submenu-items="{{ block.settings.menu-item-1 }}"><a href="#">{{ block.settings.item-1-label }}</a></li>
+              <ul class="submenu__items lvl-1">
+                   <li class="submenu-items-name " target-id="{{ block.settings.item-1-label }}" submenu-items="{{ block.settings.menu-item-1 }}"><a href="#">{{ block.settings.item-1-label }}</a></li>
                   <li class="submenu-items-name" target-id="{{ block.settings.item-2-label }}" submenu-items="{{ block.settings.menu-item-2 }}"><a href="#">{{ block.settings.item-2-label }}</a></li>
             
               </ul>
@@ -113,7 +113,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
   function renderSubmenu(menu) {
     let html = `
-      <div class="col-12 col-md-3 item item__2 w-300px level-2" menu-name="${menu.title}">
+      <div class="col-12 col-md-3 item item__2 w-300px level-2 lvl-2" menu-name="${menu.title}">
         <div class="item__1__group">
           <div class="submenu__heading heading__1">
             <h3 class="uppercase">${menu.title}</h3>
@@ -133,7 +133,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
       if (top.children && top.children.length > 0) {
         html += `
-          <div class="submenu-items-container style-2 w-300px">
+          <div class="submenu-items-container style-2 w-300px lvl-3">
             <div class="submenu__heading"><h3>${top.title}</h3></div>
             <ul class="submenu__items item">
         `;
@@ -147,7 +147,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
           if (child.children && child.children.length > 0) {
             html += `
-              <ul class="style-2 w-300px submenu-items-container">
+              <ul class="style-2 w-300px submenu-items-container lvl-4">
                 <div class="submenu__heading"><h3>${child.title}</h3></div>
             `;
             child.children.forEach(sub => {
