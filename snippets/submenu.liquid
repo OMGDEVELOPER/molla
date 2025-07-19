@@ -239,6 +239,15 @@ document.addEventListener('DOMContentLoaded', () => {
           el.style.display = "none";
       });
   }
+  AddhoverEffects()
+  function AddhoverEffects(){
+    let LiELements = document.querySelectorAll('.submenu .row .item .submenu__items.submenu-inner li');
+    LiELements.forEach((element)=>{
+      element.addEventListener('mouseover',function(e){
+        console.log(e.target)
+      })
+    })
+  }
 });
 
 {% endjavascript %}
