@@ -225,7 +225,9 @@ document.addEventListener('DOMContentLoaded', () => {
   SubmenuLiEls.forEach((element) => {
    element.addEventListener('click',function(event){
      let menuOrder = event.target.getAttribute('submenu-order')
-      console.log(menuOrder)
+     if(menuOrder == '3'){
+       document.querySelectorAll("[submenu-order='4']").style.display = 'none';
+     }
    })
   })
 });
