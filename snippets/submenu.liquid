@@ -204,7 +204,7 @@ document.addEventListener('DOMContentLoaded', () => {
         e.preventDefault();
         if(e.target.classList.contains('submenu-items-name')){
           removeActiveClass();
-          e.target.classList.add('activeMenuItem')
+           e.target.classList.add('activeMenuItem')
         }
         currentMenuActive = e.target.getAttribute('submenu-order');
         let submenu = e.target.querySelector('.submenu-items-container');
@@ -242,10 +242,7 @@ document.addEventListener('DOMContentLoaded', () => {
        hideSubmenuContainer(document.querySelectorAll(".lvl-4"))
      }
     else if(activeMenu == '1'){
-       hideSubmenuContainer(document.querySelectorAll(".lvl-2"))
-       hideSubmenuContainer(document.querySelectorAll(".lvl-3"))
-       hideSubmenuContainer(document.querySelectorAll(".lvl-4"))
-      
+      console.log('asd')
     }else{
       console.log('active undefined')
     }
