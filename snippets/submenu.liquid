@@ -204,7 +204,7 @@ document.addEventListener('DOMContentLoaded', () => {
         e.preventDefault();
         if(e.target.classList.contains('submenu-items-name')){
           removeActiveClass();
-           e.target.classList.add('activeMenuItem')
+          e.target.classList.add('activeMenuItem')
         }
         currentMenuActive = e.target.getAttribute('submenu-order');
         let submenu = e.target.querySelector('.submenu-items-container');
@@ -222,6 +222,8 @@ document.addEventListener('DOMContentLoaded', () => {
     submenuChildrens.forEach((item)=>{
        item.classList.remove('activeMenuItem')
     })
+    // currentMenuActive = '1'
+    // ReloadSubmenu(currentMenuActive);
   }
   function clearSubmenuActive(exceptItem) {
   submenuChildrens.forEach((item) => {
@@ -240,7 +242,10 @@ document.addEventListener('DOMContentLoaded', () => {
        hideSubmenuContainer(document.querySelectorAll(".lvl-4"))
      }
     else if(activeMenu == '1'){
-      console.log('asd')
+       hideSubmenuContainer(document.querySelectorAll(".lvl-2"))
+       hideSubmenuContainer(document.querySelectorAll(".lvl-3"))
+       hideSubmenuContainer(document.querySelectorAll(".lvl-4"))
+      
     }else{
       console.log('active undefined')
     }
