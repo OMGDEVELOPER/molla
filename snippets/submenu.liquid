@@ -201,7 +201,7 @@ document.addEventListener('DOMContentLoaded', () => {
     let submenuChildrens = document.querySelectorAll('.submenu-with-children');
     submenuChildrens.forEach((item)=>{
       item.addEventListener('click',function(e){
-        // e.preventDefault();
+        e.preventDefault();
         if(e.target.classList.contains('submenu-items-name')){
           removeActiveClass();
           e.target.classList.add('activeMenuItem')
@@ -209,7 +209,7 @@ document.addEventListener('DOMContentLoaded', () => {
         currentMenuActive = e.target.getAttribute('submenu-order');
         let submenu = e.target.querySelector('.submenu-items-container');
         ReloadSubmenu(currentMenuActive);
-        console.log('submenu is'+ submenu)
+        console.log(submenu)
         if (submenu) {
           submenu.style.display = 'block';
         }
