@@ -209,7 +209,7 @@ document.addEventListener('DOMContentLoaded', () => {
         currentMenuActive = e.target.getAttribute('submenu-order');
         let submenu = e.target.querySelector('.submenu-items-container');
         ReloadSubmenu(currentMenuActive);
-        console.log(submenu)
+        console.log('submenu is'+ submenu)
         if (submenu) {
           submenu.style.display = 'block';
         }
