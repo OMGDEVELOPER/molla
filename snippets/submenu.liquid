@@ -201,15 +201,15 @@ document.addEventListener('DOMContentLoaded', () => {
     let submenuChildrens = document.querySelectorAll('.submenu-with-children');
     submenuChildrens.forEach((item)=>{
       item.addEventListener('click',function(e){
-        e.preventDefault();
+        // e.preventDefault();
         if(e.target.classList.contains('submenu-items-name')){
           removeActiveClass();
-           e.target.classList.add('activeMenuItem')
+          e.target.classList.add('activeMenuItem')
         }
         currentMenuActive = e.target.getAttribute('submenu-order');
         let submenu = e.target.querySelector('.submenu-items-container');
         ReloadSubmenu(currentMenuActive);
-        console.log(submenu)
+        console.log('submenu is'+ submenu)
         if (submenu) {
           submenu.style.display = 'block';
         }
@@ -242,7 +242,10 @@ document.addEventListener('DOMContentLoaded', () => {
        hideSubmenuContainer(document.querySelectorAll(".lvl-4"))
      }
     else if(activeMenu == '1'){
-      console.log('asd')
+       // hideSubmenuContainer(document.querySelectorAll(".lvl-2"))
+       // hideSubmenuContainer(document.querySelectorAll(".lvl-3"))
+       // hideSubmenuContainer(document.querySelectorAll(".lvl-4"))
+      
     }else{
       console.log('active undefined')
     }
