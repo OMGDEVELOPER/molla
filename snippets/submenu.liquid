@@ -224,7 +224,8 @@ document.addEventListener('DOMContentLoaded', () => {
   let SubmenuLiEls = document.querySelectorAll('.submenu li');
   SubmenuLiEls.forEach((element) => {
    element.addEventListener('click',function(event){
-      console.log(event.target)
+     let menuOrder = event.target.getAttribute('menu-order')
+      console.log(menuOrder)
    })
   })
 });
