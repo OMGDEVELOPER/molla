@@ -240,14 +240,20 @@ document.addEventListener('DOMContentLoaded', () => {
       });
   }
   AddhoverEffects()
-  function AddhoverEffects(){
-    let LiELements = document.querySelectorAll('.submenu .row .item .submenu__items.submenu-inner li');
-    LiELements.forEach((element)=>{
-      element.addEventListener('mouseover',function(e){
-        e.target.querySelector('a').style.color = "#FFF";
-      })
-    })
-  }
+function AddhoverEffects() {
+  let liElements = document.querySelectorAll('.submenu .row .item .submenu__items.submenu-inner li');
+
+  liElements.forEach((element) => {
+    element.addEventListener('mouseover', function (e) {
+      // Remove 'active-list' from all items
+      liElements.forEach(el => el.classList.remove('active-list'));
+
+      // Add 'active-list' to the currently hovered item
+      e.currentTarget.classList.add('active-list');
+    });
+  });
+}
+
 });
 
 {% endjavascript %}
