@@ -202,8 +202,10 @@ document.addEventListener('DOMContentLoaded', () => {
     allSubmenus.forEach(sub => sub.style.display = 'none');
     let submenuChildrens = document.querySelectorAll('.submenu-with-children');
     submenuChildrens.forEach((item)=>{
+      
       item.addEventListener('click',function(e){
         e.preventDefault();
+        item.classList.remove('activeMenuItem')
         e.target.classList.add('activeMenuItem')
         // clearSubmenuActive(item)
         currentMenuActive = e.target.getAttribute('submenu-order');
