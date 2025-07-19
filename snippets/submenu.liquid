@@ -227,15 +227,15 @@ document.addEventListener('DOMContentLoaded', () => {
   }
   function ReloadSubmenu(activeMenu){
      if(activeMenu == '2'){
-        document.querySelectorAll(".lvl-3").forEach(el => {
-          el.style.display = "none";
-        });
-        
-        document.querySelectorAll(".lvl-4").forEach(el => {
-          el.style.display = "none";
-        });
+       hideSubmenuContainer(document.querySelectorAll(".lvl-3"))
+       hideSubmenuContainer(document.querySelectorAll(".lvl-4"))
      }
     }
+  function hideSubmenuContainer(Elements){
+    Elements.forEach(el => {
+          el.style.display = "none";
+      });
+  }
 });
 
 {% endjavascript %}
