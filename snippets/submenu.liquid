@@ -202,9 +202,9 @@ document.addEventListener('DOMContentLoaded', () => {
     allSubmenus.forEach(sub => sub.style.display = 'none');
     let submenuChildrens = document.querySelectorAll('.submenu-with-children');
     submenuChildrens.forEach((item)=>{
-      item.classList.remove('activeMenuItem')
       item.addEventListener('click',function(e){
         e.preventDefault();
+        removeActiveClass();
         e.target.classList.add('activeMenuItem')
         // clearSubmenuActive(item)
         currentMenuActive = e.target.getAttribute('submenu-order');
@@ -217,7 +217,13 @@ document.addEventListener('DOMContentLoaded', () => {
       })
     })
   }
-  loadSubmenuItems()
+  loadSubmenuItems();
+  function removeActiveClass(){
+    let submenuChildrens = document.querySelectorAll('.submenu-with-children');
+    submenuChildrens.forEach((item)=>{
+       item.classList.add('activeMenuItem')
+    })
+  }
   function clearSubmenuActive(exceptItem) {
   submenuChildrens.forEach((item) => {
     if (item !== exceptItem) {
