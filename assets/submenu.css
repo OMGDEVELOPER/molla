@@ -154,6 +154,6 @@ submenu .w-300px{
 .submenu .row .item .submenu__items.submenu-inner li.active-list > a{
   color:#FFF;
 }
-.submenu-with-children:hover > a{
-   color:#FFF;
+.submenu-with-children:hover a{
+   color:#FFF !important;
 }
