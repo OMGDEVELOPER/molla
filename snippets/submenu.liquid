@@ -201,7 +201,7 @@ document.addEventListener('DOMContentLoaded', () => {
     let submenuChildrens = document.querySelectorAll('.submenu-with-children');
     submenuChildrens.forEach((item)=>{
       item.addEventListener('click',function(e){
-        e.preventDefault();
+        // e.preventDefault();
         if(e.target.classList.contains('submenu-items-name')){
           removeActiveClass();
           e.target.classList.add('activeMenuItem')
