@@ -138,5 +138,5 @@ submenu .w-300px{
     min-height: 100%;
 }
 .submenu-inner li{
-  border-bottom: 1px solid #C5C5C5;
+  border-bottom: 1px solid #C5C5C5 !important;
 }
