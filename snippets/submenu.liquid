@@ -204,7 +204,7 @@ document.addEventListener('DOMContentLoaded', () => {
     submenuChildrens.forEach((item)=>{
       item.addEventListener('click',function(e){
         e.preventDefault();
-        e.target.classList.toggle('activeMenuItem')
+        e.target.classList.add('activeMenuItem')
         // clearSubmenuActive(item)
         currentMenuActive = e.target.getAttribute('submenu-order');
         let submenu = e.target.querySelector('.submenu-items-container');
