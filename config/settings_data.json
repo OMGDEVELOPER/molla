@@ -113,17 +113,6 @@
               "item_url": ""
             }
           },
-          "with_submenu_item_fTTKWg": {
-            "type": "with_submenu_item",
-            "settings": {
-              "item_label": "OUR PRODUCTS",
-              "item_url": "",
-              "item-1-label": "ROOFIING",
-              "menu-item-1": "roofing",
-              "item-2-label": "WALL",
-              "menu-item-2": "wall"
-            }
-          },
           "standard_nav_item_ip9A4G": {
             "type": "standard_nav_item",
             "settings": {
@@ -138,29 +127,44 @@
               "item_url": ""
             }
           },
-          "standard_nav_item_jEkwwA": {
-            "type": "standard_nav_item",
-            "settings": {
-              "item_label": "FAQ's",
-              "item_url": ""
-            }
-          },
           "standard_nav_item_hUjtQc": {
             "type": "standard_nav_item",
             "settings": {
               "item_label": "CONTACT US",
               "item_url": ""
             }
+          },
+          "with_submenu_item_fTTKWg": {
+            "type": "with_submenu_item",
+            "settings": {
+              "item_label": "ACCESSORIES",
+              "item_url": "",
+              "item-1-label": "ROOFIING",
+              "menu-item-1": "roofing",
+              "item-2-label": "WALL",
+              "menu-item-2": "wall"
+            }
+          },
+          "with_submenu_item_wHj6xG": {
+            "type": "with_submenu_item",
+            "settings": {
+              "item_label": "STRUCTURAL PRODUCTS",
+              "item_url": "",
+              "item-1-label": "STRUCTURAL ACCESSORIES",
+              "menu-item-1": "roofing",
+              "item-2-label": "",
+              "menu-item-2": ""
+            }
           }
         },
         "block_order": [
           "standard_nav_item_pGpRKf",
           "standard_nav_item_h7xaFR",
-          "with_submenu_item_fTTKWg",
           "standard_nav_item_ip9A4G",
           "standard_nav_item_QWK7JN",
-          "standard_nav_item_jEkwwA",
-          "standard_nav_item_hUjtQc"
+          "standard_nav_item_hUjtQc",
+          "with_submenu_item_fTTKWg",
+          "with_submenu_item_wHj6xG"
         ],
         "settings": {}
       },
