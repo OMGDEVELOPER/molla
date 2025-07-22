@@ -71,7 +71,7 @@
   </div>
 </submenu>
 <script>
-  window.blockId = {"{{ block.id }}"}
+  window.blockId = "{{ block.id }}";
   window.menuData = {};
   {% assign menu_handles = block.settings.menu-item-1 | append: "," | append: block.settings.menu-item-2 | split: "," %}
   {% for menu_handle in menu_handles %}
