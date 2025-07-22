@@ -61,15 +61,16 @@
                     {% assign url = block.settings[url_key] %}
                     {% assign menu = block.settings[menu_key] %}
                   {% if label != blank %}
-                      <li class="submenu-items-name {% if menu != blank %}submenu-with-children{% endif %}"
-                        submenu-order="1"
-                        target-id="{{ label }}"
-                        submenu-items="{{ menu }}"
-                        block-id="{{ block.id }}">
-                         <a href="{% if menu != blank %}#{% else %}{{ url }}{% endif %}">{{ label }}</a>
-                      </li>
                   {% endif %}
+                  
+                  
                 {% endfor %}
+                   <li class="submenu-items-name {% if block.settings.menu-item-1 != blank %}submenu-with-children{% endif %}" submenu-order="1" target-id="{{ block.settings.item-1-label }}" submenu-items="{{ block.settings.menu-item-1 }}" block-id="{{ block.id }}">
+                     <a href="{% if block.settings.menu-item-1 != blank %}#{% else %}{{ block.settings.item-1-url }}{% endif %}">{{ block.settings.item-1-label }}</a>
+                   </li>
+                  <li class="submenu-items-name {% if block.settings.menu-item-2 != blank %}submenu-with-children{% endif %}" submenu-order="1" target-id="{{ block.settings.item-2-label }}" submenu-items="{{ block.settings.menu-item-2 }}" block-id="{{ block.id }}">
+                    <a href="#">{{ block.settings.item-2-label }}</a>
+                  </li>
             
               </ul>
             </div>
