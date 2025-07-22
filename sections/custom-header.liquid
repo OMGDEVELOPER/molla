@@ -239,10 +239,12 @@
           item.addEventListener('click', function (e) {
             reloadMenuItemsMain()
             if(e.target.classList.contains = "active"){
-              console.log(item)
+             item.classList.add('active');
+            }else{
+              item.classList.remove('active');
             }
           submenuElement.classList.toggle('active');
-          item.classList.toggle('active');
+          
           });
 
           item.setAttribute('data-bound', 'true');
