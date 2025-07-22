@@ -237,7 +237,7 @@
 
         if (menuClass && submenuElement) {
           item.addEventListener('click', function () {
-            reloadMenuItemsMain(items)
+            reloadMenuItemsMain()
             submenuElement.classList.toggle('active');
             item.classList.toggle('active');
           });
@@ -247,7 +247,8 @@
       }
     });
   }
-  function reloadMenuItemsMain(items){
+  function reloadMenuItemsMain(){
+    let items = document.querySelectorAll('.header-group .menu-items-main li');
     items.forEach((item)=>{
       item.classlist.remove('active')
     })
