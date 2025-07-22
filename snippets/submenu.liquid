@@ -191,6 +191,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
       // Show only the matched one
       const target = document.querySelector(`.item__2[menu-name="${menuKey}-${blockId}"]`);
+      console.log(target)
       if (target) {
         target.style.display = 'block';
       }
