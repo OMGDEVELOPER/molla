@@ -140,6 +140,7 @@
               "item_label": "ACCESSORIES",
               "item_url": "",
               "item-1-label": "ROOF BRACKET",
+              "item-1-url": "shopify://collections",
               "menu-item-1": "",
               "item-2-label": "WALL",
               "menu-item-2": "wall"
@@ -151,6 +152,7 @@
               "item_label": "STRUCTURAL PRODUCTS",
               "item_url": "",
               "item-1-label": "STRUCTURAL ACCESSORIES",
+              "item-1-url": "",
               "menu-item-1": "roofing",
               "item-2-label": "ALUMINUM ANGLE",
               "menu-item-2": "wall"
