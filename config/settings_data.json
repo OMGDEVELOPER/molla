@@ -237,6 +237,58 @@
               "item-15-url": "",
               "menu-item-15": ""
             }
+          },
+          "with_submenu_item_J6kzLe": {
+            "type": "with_submenu_item",
+            "settings": {
+              "item_label": "FENCING",
+              "item_url": "",
+              "item-1-label": "Aluminium Slat Accessories",
+              "item-1-url": "shopify://collections",
+              "menu-item-1": "",
+              "item-2-label": "Aluminium Slat",
+              "item-2-url": "shopify://collections",
+              "menu-item-2": "",
+              "item-3-label": "Colorbond Fence",
+              "item-3-url": "shopify://collections",
+              "menu-item-3": "",
+              "item-4-label": "",
+              "item-4-url": "",
+              "menu-item-4": "",
+              "item-5-label": "",
+              "item-5-url": "",
+              "menu-item-5": "",
+              "item-6-label": "",
+              "item-6-url": "",
+              "menu-item-6": "",
+              "item-7-label": "",
+              "item-7-url": "",
+              "menu-item-7": "",
+              "item-8-label": "",
+              "item-8-url": "",
+              "menu-item-8": "",
+              "item-9-label": "",
+              "item-9-url": "",
+              "menu-item-9": "",
+              "item-10-label": "",
+              "item-10-url": "",
+              "menu-item-10": "",
+              "item-11-label": "",
+              "item-11-url": "",
+              "menu-item-11": "",
+              "item-12-label": "",
+              "item-12-url": "",
+              "menu-item-12": "",
+              "item-13-label": "",
+              "item-13-url": "",
+              "menu-item-13": "",
+              "item-14-label": "",
+              "item-14-url": "",
+              "menu-item-14": "",
+              "item-15-label": "",
+              "item-15-url": "",
+              "menu-item-15": ""
+            }
           }
         },
         "block_order": [
@@ -246,7 +298,8 @@
           "standard_nav_item_QWK7JN",
           "standard_nav_item_hUjtQc",
           "with_submenu_item_fTTKWg",
-          "with_submenu_item_wHj6xG"
+          "with_submenu_item_wHj6xG",
+          "with_submenu_item_J6kzLe"
         ],
         "settings": {}
       },
