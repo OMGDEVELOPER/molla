@@ -237,7 +237,7 @@
 
         if (menuClass && submenuElement) {
           item.addEventListener('click', function (e) {
-            // reloadMenuItemsMain()
+            reloadMenuItemsMain()
           
           item.classList.add('active');
           submenuElement.classList.toggle('active');
@@ -250,7 +250,7 @@
     });
   }
   function reloadMenuItemsMain(){
-    let items = document.querySelectorAll('.has-sub.active');
+    let items = document.querySelectorAll('.has-sub');
     items.forEach((item)=>{
       item.classList.remove('active')
     })
