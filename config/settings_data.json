@@ -101,6 +101,7 @@
         "blocks": {
           "standard_nav_item_pGpRKf": {
             "type": "standard_nav_item",
+            "disabled": true,
             "settings": {
               "item_label": "HOME",
               "item_url": ""
@@ -108,6 +109,7 @@
           },
           "standard_nav_item_h7xaFR": {
             "type": "standard_nav_item",
+            "disabled": true,
             "settings": {
               "item_label": "ABOUT US",
               "item_url": ""
@@ -115,6 +117,7 @@
           },
           "standard_nav_item_ip9A4G": {
             "type": "standard_nav_item",
+            "disabled": true,
             "settings": {
               "item_label": "INSPIRATION",
               "item_url": ""
@@ -122,6 +125,7 @@
           },
           "standard_nav_item_QWK7JN": {
             "type": "standard_nav_item",
+            "disabled": true,
             "settings": {
               "item_label": "BLOG",
               "item_url": ""
@@ -129,6 +133,7 @@
           },
           "standard_nav_item_hUjtQc": {
             "type": "standard_nav_item",
+            "disabled": true,
             "settings": {
               "item_label": "CONTACT US",
               "item_url": ""
