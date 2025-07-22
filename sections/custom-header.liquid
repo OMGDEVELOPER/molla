@@ -250,9 +250,13 @@
     });
   }
   function reloadMenuItemsMain(submenuElement){
-    console.log(submenuElement)
+    
+    let Submenuitems = document.querySelectorAll('.submenu');
     let items = document.querySelectorAll('.has-sub');
     items.forEach((item)=>{
+      item.classList.remove('active')
+    })
+    Submenuitems.forEach((item)=>{
       item.classList.remove('active')
     })
   }
