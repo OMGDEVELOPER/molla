@@ -66,7 +66,7 @@
        {% comment %}
          
        {% endcomment %}
-       <div id="render-submenus"></div>
+       <div id="render-submenus-{{ block.id }}"></div>
     </div>
   </div>
 </submenu>
@@ -173,8 +173,9 @@ document.addEventListener('DOMContentLoaded', () => {
   Object.values(menus).forEach(menu => {
     renderedHTML += renderSubmenu(menu);
   });
-
-  const renderContainer = document.getElementById('render-submenus');
+  {% assign blockId =  block.id %}
+  console.log(blockId)
+  const renderContainer = document.getElementById('render-submenus-{{ blockId }}');
   renderContainer.innerHTML = renderedHTML;
 
   const triggerItems = document.querySelectorAll(`.submenu-items-name`);
