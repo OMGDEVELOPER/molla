@@ -114,7 +114,7 @@ document.addEventListener('DOMContentLoaded', () => {
   const allMenus = window.menuData;
 
   Object.entries(allMenus).forEach(([blockId, menus]) => {
-    console.log(menus)
+    // console.log(menus)
     function renderSubmenu(menu) {
       let html = `
         <div class="col-12 col-md-3 item item__2 w-300px level-2 lvl-2" menu-name="${menu.title}-${blockId}" submenu-order="2">
