@@ -11,9 +11,7 @@
               {%-when 'standard_nav_item'-%}
                 <li><a href="{{ block.settings.item_url }}">{{ block.settings.item_label }}</a></li>
               {% when 'with_submenu_item' %}
-                <li class="has-sub " child-menu-id="{{ block.id }}"><a href="{{ block.settings.item_url }}">{{ block.settings.item_label }}</a>
-                {% render 'submenu', block: block, section:section %}
-                </li>
+                <li class="has-sub " child-menu-id="{{ block.id }}"><a href="{{ block.settings.item_url }}">{{ block.settings.item_label }}</a></li>
             {% endcase %}
           {% endfor %}
         </ul>
@@ -24,6 +22,6 @@
 {% for block in section.blocks %}
   {%-case block.type-%}
     {% when 'with_submenu_item' %}
-
+      {% render 'submenu', block: block, section:section %}
   {% endcase %}
 {% endfor %}
