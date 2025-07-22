@@ -111,71 +111,71 @@
 
 {% javascript %}
 document.addEventListener('DOMContentLoaded', () => {
-  const allMenus = window.menuData;
-  console.log(allMenus)
+  const menus = window.menuData;
+  function renderSubmenu(menu) {
+    let html = `
+      <div class="col-12 col-md-3 item item__2 w-300px level-2 lvl-2" menu-name="${menu.title}" submenu-order="2">
+        <div class="item__1__group">
+          <div class="submenu__heading heading__1">
+            <h3 class="uppercase">${menu.title}</h3>
+          </div>
+          <ul class="submenu__items level-2 submenu-inner">
+    `;
 
-  Object.entries(allMenus).forEach(([blockId, menus]) => {
-    function renderSubmenu(menu) {
-      let html = `
-        <div class="col-12 col-md-3 item item__2 w-300px level-2 lvl-2" menu-name="${menu.title}" submenu-order="2">
-          <div class="item__1__group">
-            <div class="submenu__heading heading__1">
-              <h3 class="uppercase">${menu.title}</h3>
-            </div>
-            <ul class="submenu__items level-2 submenu-inner">
+    menu.items.forEach(top => {
+     let additionalClass1 = ""
+     if (top.children && top.children.length > 0) {
+       additionalClass1 = "submenu-with-children"
+     }
+      html += `
+        <li class="${additionalClass1}" submenu-order="2">
+          <a href="${top.url}">${top.title}</a>
       `;
 
-      menu.items.forEach(top => {
-        let additionalClass1 = top.children?.length ? "submenu-with-children" : "";
+      if (top.children && top.children.length > 0) {
         html += `
-          <li class="${additionalClass1}" submenu-order="2">
-            <a href="${top.url}">${top.title}</a>
+          <div class="submenu-items-container style-2 w-300px lvl-3 submenu-order="3"">
+            <div class="submenu__heading"><h3>${top.title}</h3></div>
+            <ul class="submenu__items item">
         `;
 
-        if (top.children?.length) {
-          html += `
-            <div class="submenu-items-container style-2 w-300px lvl-3 submenu-order="3"">
-              <div class="submenu__heading"><h3>${top.title}</h3></div>
-              <ul class="submenu__items item">
-          `;
+        top.children.forEach(child => {
+         let additionalClass = ""
+         if (child.children && child.children.length > 0) {
+           additionalClass = "submenu-with-children"
+         }
+          html += `<li submenu-order="3" class="has-third-level ${additionalClass}"><a href="${child.url}">${child.title}</a>`;
 
-          top.children.forEach(child => {
-            let additionalClass = child.children?.length ? "submenu-with-children" : "";
-            html += `<li submenu-order="3" class="has-third-level ${additionalClass}"><a href="${child.url}">${child.title}</a>`;
+          if (child.children && child.children.length > 0) {
+            html += `
+              <ul class="style-2 w-300px submenu-items-container lvl-4" submenu-order="4">
+                <div class="submenu__heading"><h3>${child.title}</h3></div>
+            `;
+            child.children.forEach(sub => {
+              html += `<li submenu-order="4" class="menu-item-last-child"><a href="${sub.url}">${sub.title}</a></li>`;
+            });
+            html += `</ul>`;
+          }
 
-            if (child.children?.length) {
-              html += `
-                <ul class="style-2 w-300px submenu-items-container lvl-4" submenu-order="4">
-                  <div class="submenu__heading"><h3>${child.title}</h3></div>
-              `;
-              child.children.forEach(sub => {
-                html += `<li submenu-order="4" class="menu-item-last-child"><a href="${sub.url}">${sub.title}</a></li>`;
-              });
-              html += `</ul>`;
-            }
+          html += `</li>`;
+        });
 
-            html += `</li>`;
-          });
+        html += `</ul></div>`;
+      }
 
-          html += `</ul></div>`;
-        }
-
-        html += `</li>`;
-      });
-
-      html += `</ul></div></div>`;
-      return html;
-    }
-
-    let renderedHTML = '';
-    Object.values(menus).forEach(menu => {
-      renderedHTML += renderSubmenu(menu);
+      html += `</li>`;
     });
 
-    const container = document.getElementById(`render-submenus-${blockId}`);
-      if (container) container.innerHTML = renderedHTML;
-    });
+    html += `</ul></div></div>`;
+    return html;
+  }
 
+  let renderedHTML = '';
+  Object.values(menus).forEach(menu => {
+    renderedHTML += renderSubmenu(menu);
+  });
+  const renderContainer = document.getElementById('render-submenus-{{ window.blockId }}');
+  renderContainer.innerHTML = renderedHTML;
 
   const triggerItems = document.querySelectorAll(`.submenu-items-name`);
   const allSubmenus = document.querySelectorAll('.item__2[menu-name]');
