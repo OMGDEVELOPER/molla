@@ -64,7 +64,7 @@
                       <li class="submenu-items-name {% if menu != blank %}submenu-with-children{% endif %}"
                         submenu-order="1"
                         target-id="{{ label }}"
-                        submenu-items="{{ menu }}"
+                        submenu-items="{{ menu }}-{{ block.id }}"
                         block-id="{{ block.id }}">
                          <a href="{% if menu != blank %}#{% else %}{{ url }}{% endif %}">{{ label }}</a>
                       </li>
