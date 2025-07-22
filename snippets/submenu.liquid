@@ -190,7 +190,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
       // Show only the matched one
       const target = document.querySelector(`.item__2[menu-name="${menuKey}-${block_id}"]`);
-      console.log(target)
+      // console.log(target)
       if (target) {
         target.style.display = 'block';
       }
@@ -210,7 +210,7 @@ document.addEventListener('DOMContentLoaded', () => {
         currentMenuActive = e.target.getAttribute('submenu-order');
         let submenu = e.target.querySelector('.submenu-items-container');
         ReloadSubmenu(currentMenuActive);
-        console.log(submenu)
+        // console.log(submenu)
         if (submenu) {
           submenu.style.display = 'block';
         }
