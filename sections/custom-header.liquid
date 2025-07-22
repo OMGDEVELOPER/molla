@@ -237,12 +237,13 @@
 
         if (menuClass && submenuElement) {
           item.addEventListener('click', function (e) {
-            reloadMenuItemsMain()
+            // reloadMenuItemsMain()
             if(e.target.classList.contains = "active"){
              item.classList.remove('active');
             }else{
-              item.classList.add('active');
+              
             }
+          item.classList.add('active');
           submenuElement.classList.toggle('active');
           
           });
