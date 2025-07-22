@@ -95,7 +95,7 @@
   window.menuData = window.menuData || {};
   window.menuData["{{ block.id }}"] = {};
   
-   {% assign menu_handles = block.settings.menu-item-1 | append: "," | append: block.settings.menu-item-2 | block.settings.menu-item-5 | append: "," | split: "," %}
+   {% assign menu_handles = block.settings.menu-item-1 | append: "," | append: block.settings.menu-item-2 | append: "," | append: block.settings.menu-item-5 | split: "," %}
   {% for menu_handle in menu_handles %}
     window.menuData["{{ block.id }}"]["{{ menu_handle }}"] = {
       title: "{{ menu_handle }}",
