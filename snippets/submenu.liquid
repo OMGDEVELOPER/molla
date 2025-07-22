@@ -190,7 +190,7 @@ document.addEventListener('DOMContentLoaded', () => {
       });
 
       // Show only the matched one
-      const target = document.querySelector(`.item__2[menu-name="${menuKey}"]`);
+      const target = document.querySelector(`.item__2[menu-name="${menuKey}-${blockId}"]`);
       if (target) {
         target.style.display = 'block';
       }
