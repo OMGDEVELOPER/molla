@@ -91,7 +91,24 @@
   window.menuData = window.menuData || {};
   window.menuData["{{ block.id }}"] = {};
   
-   {% assign menu_handles = block.settings.menu-item-1 | append: "," | append: block.settings.menu-item-2 | split: "," %}
+  {% assign menu_handles_string = "" %}
+
+  {% assign range = (1..15) %}
+  {% for i in range %}
+    {% assign key = "menu-item-" | append: i %}
+    {% assign handle = block.settings[key] %}
+  
+    {% if handle != blank %}
+      {% if menu_handles_string == "" %}
+        {% assign menu_handles_string = handle %}
+      {% else %}
+        {% assign menu_handles_string = menu_handles_string | append: "," | append: handle %}
+      {% endif %}
+    {% endif %}
+  {% endfor %}
+  
+  {% assign menu_handles = menu_handles_string | split: "," %}
+
   {% for menu_handle in menu_handles %}
     window.menuData["{{ block.id }}"]["{{ menu_handle }}"] = {
       title: "{{ menu_handle }}",
