@@ -171,11 +171,9 @@ document.addEventListener('DOMContentLoaded', () => {
     Object.values(menus).forEach(menu => {
       renderedHTML += renderSubmenu(menu);
     });
-    console.log(blockId)
     const container = document.getElementById(`render-submenus-${blockId}`);
       if (container) container.innerHTML = renderedHTML;
     });
-
 
   const triggerItems = document.querySelectorAll(`.submenu-items-name`);
   const allSubmenus = document.querySelectorAll('.item__2[menu-name]');
