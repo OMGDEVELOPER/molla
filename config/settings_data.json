@@ -140,13 +140,14 @@
               "item_label": "ACCESSORIES",
               "item_url": "",
               "item-1-label": "ROOFIING",
-              "menu-item-1": "roofing",
+              "menu-item-1": "roof-gutter",
               "item-2-label": "WALL",
               "menu-item-2": "wall"
             }
           },
           "with_submenu_item_wHj6xG": {
             "type": "with_submenu_item",
+            "disabled": true,
             "settings": {
               "item_label": "STRUCTURAL PRODUCTS",
               "item_url": "",
