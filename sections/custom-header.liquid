@@ -237,15 +237,20 @@
 
         if (menuClass && submenuElement) {
           item.addEventListener('click', function () {
-            console.log('clicked');
+            reloadMenuItemsMain(items)
             submenuElement.classList.toggle('active');
             item.classList.toggle('active');
           });
 
-          item.setAttribute('data-bound', 'true'); // mark as bound
+          item.setAttribute('data-bound', 'true');
         }
       }
     });
+  }
+  function reloadMenuItemsMain(items){
+    items.forEach((item)=>{
+      item.classlist.remove('active')
+    })
   }
   let stickyAdded = false;
   let ActiveClass = false;
