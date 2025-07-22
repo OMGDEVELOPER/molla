@@ -183,7 +183,6 @@ document.addEventListener('DOMContentLoaded', () => {
   const allSubmenus = document.querySelectorAll('.item__2[menu-name]');
   triggerItems.forEach(trigger => {
     trigger.addEventListener('click', (e) => {
-      e.preventDefault();
       const menuKey = trigger.getAttribute('submenu-items');
       const block_id = trigger.getAttribute('block-id');
 
