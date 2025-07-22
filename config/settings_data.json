@@ -153,7 +153,7 @@
               "menu-item-4": "",
               "item-5-label": "Screw",
               "item-5-url": "shopify://collections/screw",
-              "menu-item-5": "",
+              "menu-item-5": "roof-gutter",
               "item-6-label": "",
               "item-6-url": "",
               "menu-item-6": "",
@@ -188,7 +188,6 @@
           },
           "with_submenu_item_wHj6xG": {
             "type": "with_submenu_item",
-            "disabled": true,
             "settings": {
               "item_label": "STRUCTURAL PRODUCTS",
               "item_url": "",
