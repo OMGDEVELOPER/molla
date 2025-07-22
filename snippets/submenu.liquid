@@ -51,8 +51,8 @@
                   <h3 class="heading__1">OUR PRODUCTS</h3>
               </div>
               <ul class="submenu__items lvl-1" >
-                   <li class="submenu-items-name {% if block.settings.menu-item-1 != blank %}submenu-with-children{% endif %}" submenu-order="1" target-id="{{ block.settings.item-1-label }}" submenu-items="{{ block.settings.menu-item-1 }}"><a href="#">{{ block.settings.item-1-label }}</a></li>
-                  <li class="submenu-items-name {% if block.settings.menu-item-2 != blank %}submenu-with-children{% endif %}" submenu-order="1" target-id="{{ block.settings.item-2-label }}" submenu-items="{{ block.settings.menu-item-2 }}"><a href="#">{{ block.settings.item-2-label }}</a></li>
+                   <li class="submenu-items-name {% if block.settings.menu-item-1 != blank %}submenu-with-children{% endif %}" submenu-order="1" target-id="{{ block.settings.item-1-label }}" submenu-items="{{ block.settings.menu-item-1 }}" block-id="{{ block.id }}"><a href="#">{{ block.settings.item-1-label }}</a></li>
+                  <li class="submenu-items-name {% if block.settings.menu-item-2 != blank %}submenu-with-children{% endif %}" submenu-order="1" target-id="{{ block.settings.item-2-label }}" submenu-items="{{ block.settings.menu-item-2 }}" block-id="{{ block.id }}"><a href="#">{{ block.settings.item-2-label }}</a></li>
             
               </ul>
             </div>
@@ -181,6 +181,7 @@ document.addEventListener('DOMContentLoaded', () => {
     trigger.addEventListener('click', (e) => {
       e.preventDefault();
       const menuKey = trigger.getAttribute('submenu-items');
+      const block_id = trigger.getAttribute('block-id');
 
       // Hide all
       allSubmenus.forEach(sub => {
@@ -188,7 +189,7 @@ document.addEventListener('DOMContentLoaded', () => {
       });
 
       // Show only the matched one
-      const target = document.querySelector(`.item__2[menu-name="${menuKey}-${blockId}"]`);
+      const target = document.querySelector(`.item__2[menu-name="${menuKey}-${block_id}"]`);
       console.log(target)
       if (target) {
         target.style.display = 'block';
