@@ -71,6 +71,7 @@
   </div>
 </submenu>
 <script>
+  {% assign window.blockId =  block.id %}
   window.menuData = {};
   {% assign menu_handles = block.settings.menu-item-1 | append: "," | append: block.settings.menu-item-2 | split: "," %}
   {% for menu_handle in menu_handles %}
@@ -173,8 +174,8 @@ document.addEventListener('DOMContentLoaded', () => {
   Object.values(menus).forEach(menu => {
     renderedHTML += renderSubmenu(menu);
   });
-  {% assign blockId =  block.id %}
-  console.log(blockId)
+ 
+  console.log(window.blockId)
   const renderContainer = document.getElementById('render-submenus-{{ blockId }}');
   renderContainer.innerHTML = renderedHTML;
 
