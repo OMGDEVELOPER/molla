@@ -236,10 +236,13 @@
         let submenuElement = mainHeader?.querySelector('.' + menuClass);
 
         if (menuClass && submenuElement) {
-          item.addEventListener('click', function () {
+          item.addEventListener('click', function (e) {
             reloadMenuItemsMain()
-            submenuElement.classList.toggle('active');
-            item.classList.toggle('active');
+            if(e.target.classList.contains = "active"){
+              console.log('has active')
+            }
+          submenuElement.classList.toggle('active');
+          item.classList.toggle('active');
           });
 
           item.setAttribute('data-bound', 'true');
