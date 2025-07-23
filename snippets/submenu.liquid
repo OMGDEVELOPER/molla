@@ -91,6 +91,14 @@
        {% comment %}
          
        {% endcomment %}
+       <div class="extra-columns col-12 col-md-2 item">
+         <ul>
+           <li><a href="#">Extra Column</a>
+           <li><a href="#">Extra Column</a>
+           <li><a href="#">Extra Column</a>
+           </li>
+         </ul>
+       </div>
        <div id="render-submenus-{{ block.id }}"></div>
     </div>
   </div>
@@ -206,7 +214,6 @@ document.addEventListener('DOMContentLoaded', () => {
       html += `</ul></div></div>`;
       return html;
     }
-    console.log('asd')
     let renderedHTML = '';
     Object.values(menus).forEach(menu => {
       renderedHTML += renderSubmenu(menu);
