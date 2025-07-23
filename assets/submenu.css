@@ -65,7 +65,11 @@ submenu{
   padding-left: 0px;
   margin: 0px;
 }
-.submenu .row .item .submenu__items.links-with-icon{}
+.submenu .row .item .submenu__items.links-with-icon{
+      display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+}
 .submenu .row .item .submenu__items.links-with-icon li::after{
    background:none;
 }
