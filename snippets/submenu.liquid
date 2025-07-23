@@ -45,7 +45,7 @@
 <submenu>
   <div class="submenu submenu-container container {{ block.id }}" id="{{ block.id }}">
     <div class="row">
-                <div class=" col item item__1">
+                <div class="col-12 col-md-2 item item__1">
             <div class="item__1__group">
               <div class="submenu__heading">
                   <h3 class="heading__1">{{ block.settings.item_label }}</h3>
@@ -91,7 +91,7 @@
        {% comment %}
          
        {% endcomment %}
-       <div class="extra-columns  col item">
+       <div class="extra-columns col-12 col-md-2 item">
          <ul>
            <li><a href="#">Extra Column</a></li>
            <li><a href="#">Extra Column</a></li>
@@ -166,7 +166,7 @@ document.addEventListener('DOMContentLoaded', () => {
     
     function renderSubmenu(menu) {
       let html = `
-        <div class="col item item__2 w-300px level-2 lvl-2" menu-name="${menu.title}-${blockId}" submenu-order="2">
+        <div class="col-12 col-md-2 item item__2 w-300px level-2 lvl-2" menu-name="${menu.title}-${blockId}" submenu-order="2">
           <div class="item__1__group">
             <div class="submenu__heading heading__1">
               <h3 class="uppercase">${menu.title}</h3>
