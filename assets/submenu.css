@@ -116,9 +116,9 @@ submenu{
 }
 /* LEVEL 2*/
 submenu .w-300px{
-  width:200px;
-  min-width: 200px;
-  max-width: 200px;
+  width:auto;
+  /* min-width: 200px;
+  max-width: 200px; */
   height: 100%;
 }
 .level-2 .submenu__heading h3{
