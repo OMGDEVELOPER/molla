@@ -116,7 +116,7 @@ submenu{
 }
 /* LEVEL 2*/
 submenu .w-300px{
-  width:auto;
+  width:max-content;
   /* min-width: 200px;
   max-width: 200px; */
   height: 100%;
