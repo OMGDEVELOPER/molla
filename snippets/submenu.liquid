@@ -56,8 +56,7 @@
                     {% assign label_key = "item-" | append: i | append: "-label" %}
                     {% assign url_key = "item-" | append: i | append: "-url" %}
                     {% assign menu_key = "menu-item-" | append: i %}
-                    {% assign additional_label = "item-" | append: i | append: "additional-label" %}
-    
+                    {% assign additional_label = "item-" | append: i | append: "-additional-label" %}
                   
                     {% assign label = block.settings[label_key] %}
                     {% assign url = block.settings[url_key] %}
