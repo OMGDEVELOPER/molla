@@ -56,15 +56,19 @@
                     {% assign label_key = "item-" | append: i | append: "-label" %}
                     {% assign url_key = "item-" | append: i | append: "-url" %}
                     {% assign menu_key = "menu-item-" | append: i %}
+                    {% assign additional_label = "item-" | append: i | append: "additional-label" %}
+    
                   
                     {% assign label = block.settings[label_key] %}
                     {% assign url = block.settings[url_key] %}
                     {% assign menu = block.settings[menu_key] %}
+                    {% assign additional_label = block.settings[additional_label] %}
                   {% if label != blank %}
                     <li class="submenu-items-name {% if menu != blank %}submenu-with-children{% endif %}"
                      submenu-order="1"
                      target-id="{{ label }}"
                      submenu-items="{{ menu }}"
+                      additional-label="{{ additional_label }}"
                      block-id="{{ block.id }}">
                      <a href="{% if menu != blank %}#{% else %}{{url }}{% endif %}">
                       {{ label }}
