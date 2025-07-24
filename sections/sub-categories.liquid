@@ -15,7 +15,6 @@
       <!-- Subcategories Grid -->
       <div class="subcategories__grid">
         {%- for sub_category in sub_categories -%}
-          {%- if sub_category != blank -%}
             <div class="subcategory-item">
               <a href="{{ sub_category.url }}" class="subcategory-item__link">
                 <div class="subcategory-item__image">
@@ -35,7 +34,6 @@
                 </div>
               </a>
             </div>
-          {%- endif -%}
         {%- endfor -%}
       </div>
     </div>
