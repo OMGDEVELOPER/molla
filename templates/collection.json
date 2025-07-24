@@ -74,15 +74,9 @@
         "use_flts": true,
         "filters_type": "sidebar"
       }
-    },
-    "sub_categories_LtE4J9": {
-      "type": "sub-categories",
-      "name": "Sub Categories",
-      "settings": {}
     }
   },
   "order": [
-    "sub_categories_LtE4J9",
     "main"
   ]
 }
