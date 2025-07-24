@@ -170,11 +170,11 @@ submenu .w-300px{
 .lvl-4 li:hover > a{
      color:#FFF !important;
 }
-.lvl-3{
+.submenu-items-container.lvl-3{
   background: #EDEDED;
 }
 .lvl-3 > ul{
-  background:white ;
+  background: #EDEDED;
 }
 .lvl-3 li:hover > a{
    color:#FFF !important;
