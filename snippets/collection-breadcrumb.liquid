@@ -1,0 +1,18 @@
+{%- if collection -%}
+  {%- assign parent_collection_handle = collection.metafields.custom.parent_category -%}
+  {%- if parent_collection_handle -%}
+    {%- assign parent_collection = collections[parent_collection_handle] -%}
+    {%- if parent_collection -%}
+      {%- assign position = position | plus: 1 -%}
+      {%- render 'collection-breadcrumb',
+        collections: collections,
+        collection: parent_collection,
+        position: position
+      -%}
+    {%- endif -%}
+  {%- endif -%}
+  {%- assign position = position | plus: 1 -%}
+  <li>
+    <a href="{{ collection.url }}" aria-current="page">{{ collection.title }}</a>
+  </li>
+{%- endif -%}
