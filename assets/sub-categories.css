@@ -1,0 +1,183 @@
+/* CSS Variables for Subcategories Component */
+.subcategories {
+    /* Colors */
+    --subcategories-primary-color: #2c5aa0;
+    --subcategories-secondary-color: #4a90e2;
+    --subcategories-accent-color: #f39c12;
+    --subcategories-text-color: #333333;
+    --subcategories-text-light: #666666;
+    --subcategories-background-color: #ffffff;
+    --subcategories-border-color: #e1e8ed;
+    --subcategories-hover-color: #f8f9fa;
+    --subcategories-shadow-color: rgba(0, 0, 0, 0.1);
+
+    /* Typography */
+    --subcategories-font-family: 'Poppins', sans-serif;
+    --subcategories-item-title-font-size: 1.25rem;
+    --subcategories-item-title-font-weight: 600;
+
+    /* Spacing */
+    --subcategories-section-padding: 4rem 0;
+    --subcategories-container-max-width: 1200px;
+    --subcategories-container-padding: 0 1rem;
+    --subcategories-grid-gap: 2rem;
+    --subcategories-item-padding: 1.5rem;
+    --subcategories-item-border-radius: 12px;
+
+    /* Transitions */
+    --subcategories-transition-duration: 0.3s;
+    --subcategories-transition-timing: ease-in-out;
+
+    /* Shadows */
+    --subcategories-box-shadow: 0 4px 6px var(--subcategories-shadow-color);
+    --subcategories-hover-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+}
+
+/* Subcategories Section */
+.subcategories {
+    padding: var(--subcategories-section-padding);
+    background-color: var(--subcategories-background-color);
+}
+
+.subcategories__container {
+    max-width: var(--subcategories-container-max-width);
+    margin: 0 auto;
+    padding: var(--subcategories-container-padding);
+}
+
+/* Grid Layout */
+.subcategories__grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: var(--subcategories-grid-gap);
+}
+
+/* Ensure at least 5 columns on larger screens */
+@media (min-width: 1200px) {
+    .subcategories__grid {
+        grid-template-columns: repeat(5, 1fr);
+    }
+}
+
+/* Subcategory Item Styles */
+.subcategory-item {
+    background-color: var(--subcategories-background-color);
+    border-radius: var(--subcategories-item-border-radius);
+    overflow: hidden;
+    box-shadow: var(--subcategories-box-shadow);
+    transition: all var(--subcategories-transition-duration) var(--subcategories-transition-timing);
+}
+
+.subcategory-item:hover {
+    transform: translateY(-4px);
+    box-shadow: var(--subcategories-hover-shadow);
+}
+
+/* Link Styles */
+.subcategory-item__link {
+    display: block;
+    text-decoration: none;
+    color: inherit;
+    height: 100%;
+    transition: all var(--subcategories-transition-duration) var(--subcategories-transition-timing);
+}
+
+.subcategory-item__link:hover {
+    text-decoration: none;
+    color: inherit;
+}
+
+/* Image Styles */
+.subcategory-item__image {
+    position: relative;
+    width: 100%;
+    height: 200px;
+    overflow: hidden;
+}
+
+.subcategory-item__image-element {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform var(--subcategories-transition-duration) var(--subcategories-transition-timing);
+}
+
+.subcategory-item:hover .subcategory-item__image-element {
+    transform: scale(1.05);
+}
+
+/* Content Styles */
+.subcategory-item__content {
+    padding: var(--subcategories-item-padding);
+    background-color: var(--subcategories-background-color);
+}
+
+.subcategory-item__title {
+    font-size: var(--subcategories-item-title-font-size);
+    font-weight: var(--subcategories-item-title-font-weight);
+    color: var(--subcategories-primary-color);
+    margin: 0;
+    transition: color var(--subcategories-transition-duration) var(--subcategories-transition-timing);
+}
+
+.subcategory-item:hover .subcategory-item__title {
+    color: var(--subcategories-secondary-color);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .subcategories {
+        --subcategories-section-padding: 2rem 0;
+        --subcategories-grid-gap: 1.5rem;
+        --subcategories-item-padding: 1rem;
+    }
+
+    .subcategories__grid {
+        grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+        gap: 1.5rem;
+    }
+
+    .subcategory-item__image {
+        height: 160px;
+    }
+}
+
+@media (max-width: 480px) {
+    .subcategories {
+        --subcategories-section-padding: 1.5rem 0;
+        --subcategories-container-padding: 0 0.75rem;
+    }
+
+    .subcategories__grid {
+        grid-template-columns: 1fr;
+        gap: 1rem;
+    }
+
+    .subcategory-item__image {
+        height: 140px;
+    }
+}
+
+/* Accessibility Improvements */
+.subcategory-item__link:focus {
+    outline: 3px solid var(--subcategories-accent-color);
+    outline-offset: 2px;
+}
+
+.subcategory-item__link:focus-visible {
+    outline: 3px solid var(--subcategories-accent-color);
+    outline-offset: 2px;
+}
+
+/* High contrast mode support */
+@media (prefers-contrast: high) {
+    .subcategories {
+        --subcategories-border-color: #000000;
+        --subcategories-text-color: #000000;
+        --subcategories-text-light: #333333;
+    }
+
+    .subcategory-item {
+        border: 2px solid var(--subcategories-border-color);
+    }
+}
