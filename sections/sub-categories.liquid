@@ -1,6 +1,55 @@
+{% comment %}
+  Subcategories Section
+  Displays subcategories from collection meta field "sub_category"
+  Usage: Add this section to collection pages
+{% endcomment %}
+
+{%- liquid
+  assign sub_categories = collection.metafields.custom.sub_category.value
+  assign section_id = 'subcategories-' | append: section.id
+-%}
+
+{%- if sub_categories and sub_categories.size > 0 -%}
+  <div class="subcategories" id="{{ section_id }}">
+    <div class="subcategories__container">
+      <!-- Subcategories Grid -->
+      <div class="subcategories__grid">
+        {%- for sub_category in sub_categories -%}
+          {%- if sub_category != blank -%}
+            <div class="subcategory-item">
+              <a href="{{ sub_category.url }}" class="subcategory-item__link">
+                <div class="subcategory-item__image">
+                  {%- if sub_category.image -%}
+                    <img
+                      src="{{ sub_category.image | image_url: width: 400, height: 200, crop: 'center' }}"
+                      alt="{{ sub_category.title | escape }}"
+                      class="subcategory-item__image-element"
+                      loading="lazy"
+                      width="400"
+                      height="200"
+                    >
+                 {%- endif -%}
+                </div>
+                <div class="subcategory-item__content">
+                  <h3 class="subcategory-item__title">{{ sub_category.title }}</h3>
+                </div>
+              </a>
+            </div>
+          {%- endif -%}
+        {%- endfor -%}
+      </div>
+    </div>
+  </div>
+{%- endif -%}
 {% schema %}
-  {
-    "name": "Section name",
-    "settings": []
-  }
+{
+  "name": "Sub Categories",
+  "tag": "section",
+  "class": "section",
+    "presets": [
+    {
+      "name": "Sub Categories"
+    }
+  ]
+}
 {% endschema %}
