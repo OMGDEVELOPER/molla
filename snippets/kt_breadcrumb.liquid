@@ -39,14 +39,13 @@
               collection: breadcrumb_collection,
             -%}
           {%- endif -%}
+        {%- endif -%}
+        {%- if current_tags -%}
+          <li>{{ collection.title | link_to: collection.url }}</li>
         {%- else -%}
-          {%- if current_tags -%}
-              <li>{{ collection.title | link_to: collection.url }}</li>
-            {%- else -%}
-              <li>
-                <span>{{ collection.title | strip_html | truncatewords: 4 }}</span>
-              </li>
-            {%- endif -%}
+          <li>
+            <span>{{ collection.title | strip_html | truncatewords: 4 }}</span>
+          </li>
         {%- endif -%}
       {%-elsif template == 'article'-%}
       <li>{{ blog.title | link_to: blog.url }}</li>        
