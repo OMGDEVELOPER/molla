@@ -108,7 +108,7 @@ submenu{
 }
 .submenu .row .item .submenu__items li a{
   font-family: Karla;
-  font-size: clamp(14px,5vw,15px);
+  font-size: clamp(14px,5vw,16px);
   font-style: normal;
   font-weight: 500;
 }
