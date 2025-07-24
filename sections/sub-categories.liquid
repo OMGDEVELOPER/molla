@@ -3,7 +3,7 @@
   Displays subcategories from collection meta field "sub_category"
   Usage: Add this section to collection pages
 {% endcomment %}
-
+{{ 'sub-categories.css' | asset_url | stylesheet_tag }}
 {%- liquid
   assign sub_categories = collection.metafields.custom.sub_category.value
   assign section_id = 'subcategories-' | append: section.id
