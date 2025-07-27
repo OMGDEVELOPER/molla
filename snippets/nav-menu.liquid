@@ -30,7 +30,6 @@
           }
         {% endcapture %}
       {% endif %}
-      {{ submenu_data }}
-      {% render 'submenu', block: block, section: section %}
+      {% render 'submenu', block: block,submenu_data:submenu_data %}
   {% endif %}
 {% endfor %}
