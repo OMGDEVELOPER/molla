@@ -91,17 +91,18 @@
        {% comment %}
          
        {% endcomment %}
-       {% if submenu_data != blank %}
-         <h1>Parent Menu Active</h1>
+       {% if submenu_items != blank %}
+        
         <div class="extra-columns col-12 col-md-3 item item__1">
         <div class="item__1__group">
           <div class="submenu__heading">
               <h3 class="heading__1">{{ block.settings.item_label }}</h3>
           </div>
            <ul class="submenu__items lvl-1">
+            {% for item in submenu_items %}
+              <li class="submenu-items-name"><a href="#">{{ item }}</a></li>
+            {% endfor %}
             <li class="submenu-items-name"><a href="#">Polycarbonate</a></li>
-            <li class="submenu-items-name"><a href="#">Colorbond Roofing</a></li>
-            <li class="submenu-items-name"><a href="#">Insulated Roof</a></li>
            </ul>
         </div>
         </div>
