@@ -12,6 +12,8 @@
                 <li><a href="{{ block.settings.item_url }}">{{ block.settings.item_label }}</a></li>
               {% when 'with_submenu_item' %}
                 <li class="has-sub " child-menu-id="{{ block.id }}"><a href="{{ block.settings.item_url }}">{{ block.settings.item_label }}</a></li>
+              {% when 'parent_menu' %}
+                <li class="has-sub " child-menu-id="{{ block.id }}"><a href="{{ block.settings.item_url }}">{{ block.settings.item_label }}</a></li>
             {% endcase %}
           {% endfor %}
         </ul>
