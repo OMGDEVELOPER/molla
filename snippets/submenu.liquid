@@ -97,11 +97,11 @@
           <div class="submenu__heading">
               <h3 class="heading__1">{{ block.settings.item_label }}</h3>
           </div>
-           <ul class="submenu__items lvl-1"  parent-menu-id="{{ item.parent_menu_id }}">
+           <ul class="submenu__items lvl-1">
             {% for item in submenu_items %}
-              <li class="submenu-items-name"><a href="#">{{ item.parent_menu_label }}</a></li>
+              <li class="submenu-items-name"  parent-menu-id=""><a href="#">{{ item }}</a></li>
             {% endfor %}
-            
+            <li class="submenu-items-name"><a href="#">Polycarbonate</a></li>
            </ul>
         </div>
         </div>
