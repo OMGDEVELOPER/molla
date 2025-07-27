@@ -20,8 +20,9 @@
   </div>
 </div>
 {% for block in section.blocks %}
-  {{ block.type }}
+
   {% if block.type == 'with_submenu_item' or block.type == 'parent_menu' %}
+      <h1>  {{ block.type }}</h1>
       {% render 'submenu', block: block, section: section %}
   {% endif %}
 {% endfor %}
