@@ -21,6 +21,16 @@
 </div>
 {% for block in section.blocks %}
   {% if block.type == 'with_submenu_item' or block.type == 'parent_menu' %}
+      {% if block.type == 'parent_menu' %}
+        {% capture submenu_data %}
+          {
+            "parent_menu_id": "{{ block.settings.parent_menu_id }}",
+            "parent_menu_label": "{{ block.settings.parent_menu_label }}",
+            "submenu": "{{ block.settings.submenu }}"
+          }
+        {% endcapture %}
+      {% endif %}
+      {{ submenu_data }}
       {% render 'submenu', block: block, section: section %}
   {% endif %}
 {% endfor %}
