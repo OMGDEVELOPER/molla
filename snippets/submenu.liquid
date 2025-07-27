@@ -91,7 +91,7 @@
        {% comment %}
          
        {% endcomment %}
-      
+       {% if block.type == 'parent_menu' %}
         <div class="extra-columns col-12 col-md-3 item item__1">
         <div class="item__1__group">
           <div class="submenu__heading">
@@ -104,7 +104,7 @@
            </ul>
         </div>
         </div>
-       
+        {% endif %}
        <div class="extra-columns col-12 col-md-2 item" style="display:none;">
         
             {% assign menu_index = (1..15) %}
