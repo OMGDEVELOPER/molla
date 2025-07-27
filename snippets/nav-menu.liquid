@@ -20,9 +20,7 @@
   </div>
 </div>
 {% for block in section.blocks %}
-  {% case block.type %}
-    {% when 'with_submenu_item' %}
-    {% when 'parent_menu' %}
+  {% if block.type == 'with_submenu_item' or block.type == 'parent_menu' %}
       {% render 'submenu', block: block, section: section %}
-  {% endcase %}
+  {% endif %}
 {% endfor %}
