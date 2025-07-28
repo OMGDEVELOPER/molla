@@ -9,6 +9,7 @@ document.addEventListener('DOMContentLoaded', function () {
   extraColumns.forEach((element) => {
     const parentId = element.getAttribute('parent-menu-id');
     const targetId = element.getAttribute('target-id');
+    console.log(targetId)
     const html = element.outerHTML;
 
     if (parentId) {
