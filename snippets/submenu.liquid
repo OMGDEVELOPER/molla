@@ -228,7 +228,7 @@ document.addEventListener('DOMContentLoaded', () => {
       allSubmenus.forEach(sub => {
         sub.style.display = 'none';
       });
-      if(menu_id){
+      if(menu_id && document.querySelector(`.extra-columns[menu-id="${menu_id}"]`)){
         let submenuItem = document.querySelector(`.extra-columns[menu-id="${menu_id}"]`);
         submenuItem.style.display = "block"
       }
