@@ -228,9 +228,10 @@ document.addEventListener('DOMContentLoaded', () => {
       allSubmenus.forEach(sub => {
         sub.style.display = 'none';
       });
-
-      console.log(menu_id)
-
+      if(menu_id){
+        let submenuItem document.querySelector(`.extra-columns[menu-id=${menu_id}]`);
+        submenuItem.style.display = "block"
+      }
       // Show only the matched one
       const target = document.querySelector(`.item__2[menu-name="${menuKey}-${block_id}"]`);
       // console.log(target)
