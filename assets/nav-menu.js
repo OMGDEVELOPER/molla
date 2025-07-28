@@ -38,6 +38,7 @@ document.addEventListener('DOMContentLoaded', function () {
     triggerExtraItems.forEach((element)=>{
       element.addEventListener('click',function(e){
         if(e.target.classList.contains('submenu-items-name')){
+          resetSubActiveClass();
           e.target.classList.add('activeMenuItem')
         }
        let targetId =  e.target.getAttribute('target-id')
@@ -45,4 +46,9 @@ document.addEventListener('DOMContentLoaded', function () {
        document.querySelector(`.lvl-2[menu-name="${targetId}-${blockId}"]`).style.display = "block"
       })
     })
+  function resetSubActiveClass() {
+    triggerExtraItems.forEach((element)=>{
+      element.classList.remove('activeMenuItem')
+    })
+  }
 });
