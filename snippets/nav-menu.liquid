@@ -28,7 +28,9 @@
             submenu-order="1"
             target-id="{{ block.settings.submenu }}"
             submenu-items="{{ block.settings.submenu }}"
-            block-id="{{ block.id }}">
+            block-id="{{ block.id }}"
+            style="display:none;"
+              >
               <a href="#">{{ block.settings.parent_menu_label }}</a>
             </li>
       {% endif %}
