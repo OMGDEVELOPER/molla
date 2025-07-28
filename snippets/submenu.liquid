@@ -235,6 +235,7 @@ document.addEventListener('DOMContentLoaded', () => {
         const menuTitle = trigger.getAttribute('target-id');
         submenuItem.setAttribute('menu-title',menuTitle)
         submenuItem.querySelector('.submenu__heading h3').innerHTML = menuTitle;
+        resetSubmenuExtra()
         submenuItem.style.display = "block"
       }
       // Show only the matched one
@@ -245,6 +246,12 @@ document.addEventListener('DOMContentLoaded', () => {
       }
     });
   });
+  function resetSubmenuExtra(){
+    let extraCols = document.querySelectorAll('.extra-columns')
+    extraCols.forEach((el)=>{
+      el.style.display = "none"
+    })
+  }
   let currentMenuActive = '';
   function loadSubmenuItems(){
     allSubmenus.forEach(sub => sub.style.display = 'none');
