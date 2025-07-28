@@ -87,7 +87,6 @@ submenu{
     display: block;
     background-image: url(https://cdn.shopify.com/s/files/1/0859/1186/3592/files/arrow_forward_ios.svg?v=1752658595);
     background-repeat: no-repeat;
-
 }
 .submenu .row .item .submenu__items li{
   list-style: none;
@@ -195,4 +194,13 @@ submenu .w-300px{
 }
 .extra-columns-container li a{
   color: #fafafa;
+}
+.extra-columns-container li::after{
+      content: "";
+    width: 25px;
+    height: 25px;
+    display: block;
+    background-image: url(https://cdn.shopify.com/s/files/1/0859/1186/3592/files/arrow_forward_ios.svg?v=1752658595);
+    background-repeat: no-repeat;
+}
 }
