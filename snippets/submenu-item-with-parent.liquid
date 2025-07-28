@@ -9,7 +9,7 @@
           {% assign main_menu = linklists[block.settings.submenu] %}
           {% for top_link in main_menu.links %}
             {
-              title: "{{ top_link.title | escape }}",
+              title: "{{ top_link.title | handle | escape }}",
               url: "{{ top_link.url }}",
               children: [
                 {% for child_link in top_link.links %}
