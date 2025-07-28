@@ -31,10 +31,11 @@
             target-id="{{ block.settings.submenu }}"
             submenu-items="{{ block.settings.submenu }}"
             block-id="{{ block.id }}"
-            style=""
+            menu-subitem-id=""
               >
               <a href="#">{{ block.settings.parent_menu_label }}</a>
             </li>
+         {% render 'submenu-item-with-parent', block:block %}
       </div>
   {% endif %}
 {% endfor %}
