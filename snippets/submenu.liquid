@@ -236,6 +236,8 @@ document.addEventListener('DOMContentLoaded', () => {
         submenuItem.setAttribute('menu-title',menuTitle)
         submenuItem.querySelector('.submenu__heading h3').innerHTML = menuTitle;
         resetSubmenuExtra()
+         let extraColumnsOutputDiv = document.getElementById('extra-columns-display-container'); 
+        extraColumnsOutputDiv.style.display = "block";
         submenuItem.style.display = "block"
       }
       // Show only the matched one
