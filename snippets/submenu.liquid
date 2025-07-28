@@ -234,6 +234,7 @@ document.addEventListener('DOMContentLoaded', () => {
         let submenuItem = document.querySelector(`.extra-columns[menu-id="${menu_id}"]`);
         const menuTitle = trigger.getAttribute('target-id');
         submenuItem.setAttribute('menu-title',menuTitle)
+        submenuItem.querySelector('.submenu__heading h3').innerHTML = menuTitle;
         submenuItem.style.display = "block"
       }
       // Show only the matched one
