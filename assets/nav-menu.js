@@ -36,6 +36,8 @@ document.addEventListener('DOMContentLoaded', function () {
   extraColumnsOutput.innerHTML = output;
   const triggerExtraItems = document.querySelectorAll(`.extra-columns > li`);
     triggerExtraItems.forEach((element)=>{
+      element.style.display = "none";
+      
       element.addEventListener('click',function(e){
        let targetId =  e.target.getAttribute('target-id')
        let blockId = e.target.getAttribute('block-id')
