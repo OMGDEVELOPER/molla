@@ -92,8 +92,15 @@
          
        {% endcomment %}
      
-       <div class="extra-columns-container col-12 col-md-2 item" id="extra-columns-display">
-      
+      <div class="extra-columns-container col-12 col-md-2 item">
+        <div class="extra-columns col-12 col-md-3 item item__1" >
+          <div class="item__1__group">
+            <div class="submenu__heading"><h3 class="heading__1">{{ block.settings.item_label }}</h3>
+          </div>
+            <ul class="lvl-1"  id="extra-columns-display">
+            </ul>
+           </div>
+         </div>
        </div>
        <div id="render-submenus-{{ block.id }}"></div>
     </div>
