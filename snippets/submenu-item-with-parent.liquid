@@ -1,39 +1,37 @@
-{{ block.settings.submenu }}
 <script>
   window.menuData = window.menuData || {};
-  window.menuData["{{ block.id }}"] = {};
-
-
-{% assign menu_handles = block.settings.submenu %}
-  {% for menu_handle in menu_handles %}
-    window.menuData["{{ block.id }}"]["{{ menu_handle }}"] = {
-      title: "{{ menu_handle }}",
-      items: [
-        {% assign main_menu = linklists[menu_handle] %}
-        {% for top_link in main_menu.links %}
-          {
-            title: "{{ top_link.title | escape }}",
-            url: "{{ top_link.url }}",
-            children: [
-              {% for child_link in top_link.links %}
-                {
-                  title: "{{ child_link.title | escape }}",
-                  url: "{{ child_link.url }}",
-                  children: [
-                    {% for subchild_link in child_link.links %}
-                      {
-                        title: "{{ subchild_link.title | escape }}",
-                        url: "{{ subchild_link.url }}"
-                      }{% unless forloop.last %},{% endunless %}
-                    {% endfor %}
-                  ]
-                }{% unless forloop.last %},{% endunless %}
-              {% endfor %}
-            ]
-          }{% unless forloop.last %},{% endunless %}
-        {% endfor %}
-      ]
-    };
+  {% for block in section.blocks %}
+    {% if block.type == 'parent_menu' %}
+      window.menuData["{{ block.id }}"] = window.menuData["{{ block.id }}"] || {};
+      window.menuData["{{ block.id }}"]["{{ block.settings.submenu }}"] = {
+        title: "{{ block.settings.parent_menu_label | escape }}",
+        items: [
+          {% assign main_menu = linklists[block.settings.submenu] %}
+          {% for top_link in main_menu.links %}
+            {
+              title: "{{ top_link.title | escape }}",
+              url: "{{ top_link.url }}",
+              children: [
+                {% for child_link in top_link.links %}
+                  {
+                    title: "{{ child_link.title | escape }}",
+                    url: "{{ child_link.url }}",
+                    children: [
+                      {% for subchild_link in child_link.links %}
+                        {
+                          title: "{{ subchild_link.title | escape }}",
+                          url: "{{ subchild_link.url }}"
+                        }{% unless forloop.last %},{% endunless %}
+                      {% endfor %}
+                    ]
+                  }{% unless forloop.last %},{% endunless %}
+                {% endfor %}
+              ]
+            }{% unless forloop.last %},{% endunless %}
+          {% endfor %}
+        ]
+      };
+    {% endif %}
   {% endfor %}
-console.log( window.menuData)
+  console.log(window.menuData)
 </script>
