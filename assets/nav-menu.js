@@ -1,32 +1,37 @@
-document.addEventListener('DOMContentLoaded', function() {
-  let extraColumns = document.querySelectorAll('.sub-item-with-parent');
-  let extraColumnsOutput = document.getElementById('extra-columns-display');
-  let groupedOutput = {};
+document.addEventListener('DOMContentLoaded', function () {
+  const extraColumns = document.querySelectorAll('.sub-item-with-parent');
+  const extraColumnsOutput = document.getElementById('extra-columns-display-container'); // Outer container to inject into
 
-  // Group items by their parent-menu-id
+  const groupedOutput = {};
+
+  // Group items by parent-menu-id
   extraColumns.forEach((element) => {
     const parentId = element.getAttribute('parent-menu-id');
     if (parentId) {
       if (!groupedOutput[parentId]) {
         groupedOutput[parentId] = [];
       }
-      groupedOutput[parentId].push(element.outerHTML); // Store the HTML string
+      groupedOutput[parentId].push(element.outerHTML);
     }
   });
 
-  // Build final output HTML string
+  // Build and inject full HTML structure for each group
   let output = "";
+
   for (let parentId in groupedOutput) {
-    output += `<div class="grouped-submenu" data-parent-id="${parentId}">`;
-    output += `<h3>Parent ID: ${parentId}</h3>`;
-    output += `<ul class="submenu-group">`;
-    groupedOutput[parentId].forEach(itemHtml => {
-      output += itemHtml;
-    });
-    output += `</ul>`;
-    output += `</div>`;
+    output += `
+      <div class="extra-columns">
+        <div class="item__1__group">
+          <div class="submenu__heading">
+            <h3 class="heading__1">Group: ${parentId}</h3>
+          </div>
+          <ul class="lvl-1">
+            ${groupedOutput[parentId].join('')}
+          </ul>
+        </div>
+      </div>
+    `;
   }
 
-  // Inject the HTML
   extraColumnsOutput.innerHTML = output;
 });
