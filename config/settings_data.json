@@ -201,7 +201,7 @@
             "settings": {
               "parent_menu_id": 8,
               "parent_menu_label": "Polycarbonate",
-              "submenu": "roofing"
+              "submenu": "fencing"
             }
           },
           "parent_menu_rRerrb": {
@@ -209,7 +209,7 @@
             "settings": {
               "parent_menu_id": 7,
               "parent_menu_label": "Polycarbonate",
-              "submenu": "roofing"
+              "submenu": "accessories"
             }
           }
         },
