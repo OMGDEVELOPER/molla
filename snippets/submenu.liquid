@@ -236,9 +236,10 @@ document.addEventListener('DOMContentLoaded', () => {
         submenuItem.setAttribute('menu-title',menuTitle)
         submenuItem.querySelector('.submenu__heading h3').innerHTML = menuTitle;
         resetSubmenuExtra()
-         let extraColumnsOutputDiv = document.getElementById('extra-columns-display-container'); 
-        extraColumnsOutputDiv.style.display = "block";
+        LoadExtraColContainer()
         submenuItem.style.display = "block"
+      }else{
+        CloseExtraColContainer()
       }
       // Show only the matched one
       const target = document.querySelector(`.item__2[menu-name="${menuKey}-${block_id}"]`);
@@ -248,6 +249,14 @@ document.addEventListener('DOMContentLoaded', () => {
       }
     });
   });
+  function LoadExtraColContainer(){
+     let extraColumnsOutputDiv = document.getElementById('extra-columns-display-container'); 
+     extraColumnsOutputDiv.style.display = "block";
+  }
+  function CloseExtraColContainer(){
+     let extraColumnsOutputDiv = document.getElementById('extra-columns-display-container'); 
+     extraColumnsOutputDiv.style.display = "none";
+  }
   function resetSubmenuExtra(){
     let extraCols = document.querySelectorAll('div.extra-columns')
     extraCols.forEach((el)=>{
