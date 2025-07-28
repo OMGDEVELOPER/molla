@@ -22,14 +22,6 @@
 {% for block in section.blocks %}
   {% if block.type == 'with_submenu_item' or block.type == 'parent_menu' %}
       {% if block.type == 'parent_menu' %}
-        {% capture submenu_items %}
-          {
-            "parent_menu_id": "{{ block.settings.parent_menu_id }}",
-            "parent_menu_label": "{{ block.settings.parent_menu_label }}",
-            "submenu": "{{ block.settings.submenu }}"
-          }
-        {% endcapture %}
-        {% if submenu_items != blank %}
           <div class="extra-columns col-12 col-md-3 item item__1">
             <div class="item__1__group">
               <div class="submenu__heading">
@@ -37,13 +29,11 @@
               </div>
                <ul class="lvl-1">
                 {% for item in submenu_items %}
-                  <li class="submenu-items-name"  parent-menu-id=""><a href="#">{{ item['parent_menu_id' }}</a></li>
+                  <li class="submenu-items-name"  parent-menu-id="{{ block.settings.parent_menu_id }}"><a href="#">{{ block.settings.parent_menu_label }}</a></li>
                 {% endfor %}
-                <li class="submenu-items-name"><a href="#">Polycarbonate</a></li>
                </ul>
             </div>
           </div>
-        {% endif %}
       {% endif %}
       {% render 'submenu', block: block,submenu_items:submenu_items %}
   {% endif %}
