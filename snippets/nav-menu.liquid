@@ -21,6 +21,7 @@
 </div>
 {% for block in section.blocks %}
   {% if block.type == 'with_submenu_item' or block.type == 'parent_menu' %}
+      <div id="parent_menu_container">
       {% if block.type == 'parent_menu' %}
           <div class="extra-columns col-12 col-md-3 item item__1" id="extra-columns">
             <div class="item__1__group">
@@ -33,6 +34,7 @@
             </div>
           </div>
       {% endif %}
+      </div>
       {% render 'submenu', block: block,submenu_items:submenu_items %}
   {% endif %}
 {% endfor %}

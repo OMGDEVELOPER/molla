@@ -1,4 +1,4 @@
 document.addEventListener('DOMContentLoaded',function(){
-  let extraColumns = document.getElementById('extra-columns').innerHTML;
+  let extraColumns = document.getElementById('parent_menu_container').innerHTML;
 console.log(extraColumns)
 })
