@@ -20,7 +20,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
   for (let parentId in groupedOutput) {
     output += `
-      <div class="extra-columns" menu-id="8" style="display:none;">
+      <div class="extra-columns" menu-id="${parentId}" style="display:none;">
         <div class="item__1__group">
           <div class="submenu__heading">
             <h3 class="heading__1">Group: ${parentId}</h3>
