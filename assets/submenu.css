@@ -193,3 +193,6 @@ submenu .w-300px{
     justify-content: space-between;
     align-items: center;
 }
+.extra-columns-container li a{
+  color: #fafafa;
+}
