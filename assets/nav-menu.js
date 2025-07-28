@@ -1,6 +1,6 @@
 document.addEventListener('DOMContentLoaded', function () {
   const extraColumns = document.querySelectorAll('.sub-item-with-parent');
-  const extraColumnsOutput = document.getElementById('extra-columns-display-container'); // Outer container to inject into
+  const extraColumnsOutput = document.getElementById('extra-columns-display-container'); 
 
   const groupedOutput = {};
 
