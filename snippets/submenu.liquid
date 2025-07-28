@@ -224,16 +224,11 @@ document.addEventListener('DOMContentLoaded', () => {
       const menuKey = trigger.getAttribute('submenu-items');
       const block_id = trigger.getAttribute('block-id');
       const menu_id = trigger.getAttribute('menu-id');
-      console.log(menu_id)
 
       // Hide all
       allSubmenus.forEach(sub => {
         sub.style.display = 'none';
       });
-      if(menu_id && document.querySelector(`.extra-columns[menu-id="${menu_id}"]`)){
-        let submenuItem = document.querySelector(`.extra-columns[menu-id="${menu_id}"]`);
-        submenuItem.style.display = "block"
-      }
       // Show only the matched one
       const target = document.querySelector(`.item__2[menu-name="${menuKey}-${block_id}"]`);
       // console.log(target)
