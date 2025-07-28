@@ -101,7 +101,7 @@ document.addEventListener('DOMContentLoaded', () => {
       renderedHTML += renderSubmenu(menu);
     });
 
-    const container = document.getElementById(`render-submenus-${blockId}`);
+    const container = document.getElementById(`render-submenus-parent`);
     if (container) container.innerHTML = renderedHTML;
 
     // Optional debug:
