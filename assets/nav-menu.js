@@ -25,7 +25,7 @@ document.addEventListener('DOMContentLoaded', function () {
           <div class="submenu__heading">
             <h3 class="heading__1">Group: ${parentId}</h3>
           </div>
-          <ul class="lvl-1">
+          <ul class="lvl-1 extra-columns">
             ${groupedOutput[parentId].join('')}
           </ul>
         </div>
@@ -34,4 +34,10 @@ document.addEventListener('DOMContentLoaded', function () {
   }
 
   extraColumnsOutput.innerHTML = output;
+  const triggerExtraItems = document.querySelectorAll(`.extra-columns > li`);
+    triggerExtraItems.forEach((element)=>{
+      element.addEventListener('click',function(){
+        console.log('clicked')
+      })
+    })
 });
