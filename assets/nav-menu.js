@@ -48,6 +48,7 @@ document.addEventListener('DOMContentLoaded', function () {
       })
     })
   function resetSubActiveClass() {
+    console.log(SubmenuParentItem)
     SubmenuParentItem.forEach((element)=>{
       element.classList.remove('activeMenuItem')
       element.style.display = "none"
