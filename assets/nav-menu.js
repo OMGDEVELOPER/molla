@@ -25,6 +25,7 @@ document.addEventListener('DOMContentLoaded', function () {
   let output = "";
 
   for (let groupId in groupedOutput) {
+    console.log(groupId)
     output += `
       <div class="extra-columns" menu-id="${groupId}" style="display:none;">
         <div class="item__1__group">
