@@ -231,7 +231,11 @@ document.addEventListener('DOMContentLoaded', () => {
       });
       if(menu_id && document.querySelector(`.extra-columns[menu-id="${menu_id}"]`)){
         let submenuItem = document.querySelector(`.extra-columns[menu-id="${menu_id}"]`);
-        submenuItem.style.display = "block"
+        if(submenuItem.classList.contains('active')){
+          submenuItem.classList.remove('active')
+        }else{
+          submenuItem.classList.add('active')
+        }
       }
       // Show only the matched one
       const target = document.querySelector(`.item__2[menu-name="${menuKey}-${block_id}"]`);
