@@ -35,6 +35,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
   extraColumnsOutput.innerHTML = output;
   const triggerExtraItems = document.querySelectorAll(`.extra-columns > li`);
+  const SubmenuParentItem = document.querySelectorAll(`#render-submenus-parent > li`);
     triggerExtraItems.forEach((element)=>{
       element.addEventListener('click',function(e){
         if(e.target.classList.contains('submenu-items-name')){
@@ -47,8 +48,9 @@ document.addEventListener('DOMContentLoaded', function () {
       })
     })
   function resetSubActiveClass() {
-    triggerExtraItems.forEach((element)=>{
-      element.classList.remove('activeMenuItem')
+    SubmenuParentItem.forEach((element)=>{
+      // element.classList.remove('activeMenuItem')
+      element.style.display = "none"
     })
   }
 });
