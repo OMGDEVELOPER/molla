@@ -35,17 +35,11 @@ document.addEventListener('DOMContentLoaded', function () {
 
   extraColumnsOutput.innerHTML = output;
   const triggerExtraItems = document.querySelectorAll(`.extra-columns > li`);
-  triggerExtraItems.forEach((element)=>{
-    element.addEventListener('click',function(e){
-     // resetSubItems()
-     let targetId =  e.target.getAttribute('target-id')
-     let blockId = e.target.getAttribute('block-id')
-     document.querySelector(`.lvl-2[menu-name="${targetId}-${blockId}"]`).style.display = "block"
-    })
-  
-  function resetSubItems(){
-      triggerExtraItems.forEach((element)=>{
-        element.style.display = "none"
+    triggerExtraItems.forEach((element)=>{
+      element.addEventListener('click',function(e){
+       let targetId =  e.target.getAttribute('target-id')
+       let blockId = e.target.getAttribute('block-id')
+       document.querySelector(`.lvl-2[menu-name="${targetId}-${blockId}"]`).style.display = "block"
       })
-  }
+    })
 });
