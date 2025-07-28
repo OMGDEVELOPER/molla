@@ -4,6 +4,7 @@
     {% if block.type == 'parent_menu' %}
       window.menuData["{{ block.id }}"] = window.menuData["{{ block.id }}"] || {};
       window.menuData["{{ block.id }}"]["{{ block.settings.submenu }}"] = {
+        id: "{{ block.settings. block.settings.parent_menu_id | escape }}",
         title: "{{ block.settings.parent_menu_label | escape }}",
         items: [
           {% assign main_menu = linklists[block.settings.submenu] %}
