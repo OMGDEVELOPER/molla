@@ -38,7 +38,7 @@ document.addEventListener('DOMContentLoaded', function () {
     triggerExtraItems.forEach((element)=>{
       element.addEventListener('click',function(e){
         if(e.target.classList.contains('submenu-items-name')){
-          removeActiveClass();
+          // removeActiveClass();
           e.target.classList.add('activeMenuItem')
         }
        let targetId =  e.target.getAttribute('target-id')
