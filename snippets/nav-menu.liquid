@@ -33,7 +33,7 @@
                     {% assign url = block.settings[url_key] %}
                     {% assign menu = block.settings[menu_key] %}
                     {% assign additional_label = block.settings[additional_label] %}
-                  {% if label != blank %}
+                  
                     <li class="submenu-items-name {% if menu != blank %}submenu-with-children{% endif %}"
                      parent-menu-id="{{ block.settings.parent_menu_id }}"
                       submenu-order="1"
@@ -46,7 +46,7 @@
                     </a>
                      
                     </li>
-                  {% endif %}
+                
                 {% endfor %}
       {% endif %}
      
