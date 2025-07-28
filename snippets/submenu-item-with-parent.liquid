@@ -100,17 +100,11 @@ document.addEventListener('DOMContentLoaded', () => {
 
     let renderedHTML = '';
     Object.values(menus).forEach((menu) => {
-      console.log('asd')
-      console.log(menu)
       renderedHTML += renderSubmenu(menu);
     });
 
     const container = document.getElementById(`render-submenus-parent`);
     if (container) container.innerHTML += renderedHTML;
-
-    // Optional debug:
-    
-    
   });
 });
   
