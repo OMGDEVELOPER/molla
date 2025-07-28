@@ -3,6 +3,7 @@ document.addEventListener('DOMContentLoaded', function () {
   const extraColumnsOutput = document.getElementById('extra-columns-display-container');
 
   const groupedOutput = {};
+  const groupHeadings = {}; // new: map groupId → headingLabel
 
   // Group items by parent-menu-id and target-id
   extraColumns.forEach((element) => {
@@ -13,11 +14,13 @@ document.addEventListener('DOMContentLoaded', function () {
     if (parentId) {
       if (!groupedOutput[parentId]) groupedOutput[parentId] = [];
       groupedOutput[parentId].push(html);
+      if (!groupHeadings[parentId]) groupHeadings[parentId] = targetId; // save first targetId
     }
 
     if (targetId) {
       if (!groupedOutput[targetId]) groupedOutput[targetId] = [];
       groupedOutput[targetId].push(html);
+      if (!groupHeadings[targetId]) groupHeadings[targetId] = targetId;
     }
   });
 
@@ -25,12 +28,12 @@ document.addEventListener('DOMContentLoaded', function () {
   let output = "";
 
   for (let groupId in groupedOutput) {
-    console.log(groupId)
+    const heading = groupHeadings[groupId] || groupId;
     output += `
       <div class="extra-columns" menu-id="${groupId}" style="display:none;">
         <div class="item__1__group">
           <div class="submenu__heading">
-            <h3 class="heading__1">Group: ${groupId}</h3>
+            <h3 class="heading__1">Group: ${heading}</h3>
           </div>
           <ul class="lvl-1 extra-columns">
             ${groupedOutput[groupId].join('')}
@@ -51,7 +54,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
   triggerExtraItems.forEach((element) => {
     element.addEventListener('click', function (e) {
-      const target = e.currentTarget; // safer than e.target
+      const target = e.currentTarget;
       const targetId = target.getAttribute('target-id');
       const blockId = target.getAttribute('block-id');
 
