@@ -109,7 +109,10 @@ document.addEventListener('DOMContentLoaded', () => {
     if (container) container.innerHTML += renderedHTML;
 
     // Optional debug:
-    console.log(`Rendered submenu for blockId: ${blockId}`);
+    const triggerExtraItems = document.querySelectorAll(`.submenu-items-name`);
+    console.log(triggerExtraItems)
+    
   });
 });
+  
 {% endjavascript %}
