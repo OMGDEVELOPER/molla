@@ -21,9 +21,8 @@
 </div>
 {% for block in section.blocks %}
   {% if block.type == 'with_submenu_item' %}
-      {% render 'submenu', block: block %}
-  {% elsif block.type == 'parent_menu' %}
-     <div class="" style="display:none">
+      <div class="" style="display:none">
+      {% if block.type == 'parent_menu' %}
             <li 
             class="submenu-items-name sub-item-with-parent"  
             parent-menu-id="{{ block.settings.parent_menu_id }}"
@@ -35,7 +34,11 @@
               >
               <a href="#">{{ block.settings.parent_menu_label }}</a>
             </li>
+      {% endif %}
       </div>
+      {% render 'submenu', block: block %}
+  {% elsif block.type == 'parent_menu' %}
+    
   {% endif %}
 {% endfor %}
 
