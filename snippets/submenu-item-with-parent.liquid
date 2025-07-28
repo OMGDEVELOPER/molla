@@ -1,0 +1,22 @@
+<script>
+  window.menuData = window.menuData || {};
+  window.menuData["{{ block.id }}"] = {};
+
+  {% assign menu_handles_string = "" %}
+  {% assign range = (1..15) %}
+  {% for i in range %}
+    {% assign key = "menu-item-" | append: i %}
+    {% assign handle = block.settings[key] %}
+  
+    {% if handle != blank %}
+      {% if menu_handles_string == "" %}
+        {% assign menu_handles_string = handle %}
+      {% else %}
+        {% assign menu_handles_string = menu_handles_string | append: "," | append: handle %}
+      {% endif %}
+    {% endif %}
+  {% endfor %}
+
+console.log(window.menuData)
+
+</script>
