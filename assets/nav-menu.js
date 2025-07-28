@@ -35,7 +35,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
   extraColumnsOutput.innerHTML = output;
   const triggerExtraItems = document.querySelectorAll(`.extra-columns > li`);
-  const SubmenuParentItem = document.querySelectorAll(`#render-submenus-parent > li`);
+  const SubmenuParentItem = document.querySelectorAll(`#render-submenus-parent > div.level-2`);
     triggerExtraItems.forEach((element)=>{
       element.addEventListener('click',function(e){
         if(e.target.classList.contains('submenu-items-name')){
