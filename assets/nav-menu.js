@@ -37,10 +37,6 @@ document.addEventListener('DOMContentLoaded', function () {
   const triggerExtraItems = document.querySelectorAll(`.extra-columns > li`);
     triggerExtraItems.forEach((element)=>{
       element.addEventListener('click',function(e){
-        if(e.target.classList.contains('submenu-items-name')){
-          removeActiveClass();
-          e.target.classList.add('activeMenuItem')
-        }
        let targetId =  e.target.getAttribute('target-id')
        let blockId = e.target.getAttribute('block-id')
        document.querySelector(`.lvl-2[menu-name="${targetId}-${blockId}"]`).style.display = "block"
