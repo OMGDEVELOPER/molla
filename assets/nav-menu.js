@@ -40,7 +40,7 @@ document.addEventListener('DOMContentLoaded', function () {
       element.addEventListener('click',function(e){
         if(e.target.classList.contains('submenu-items-name')){
           resetSubActiveClass();
-          e.target.classList.add('activeMenuItem')
+          // e.target.classList.add('activeMenuItem')
         }
        let targetId =  e.target.getAttribute('target-id')
        let blockId = e.target.getAttribute('block-id')
