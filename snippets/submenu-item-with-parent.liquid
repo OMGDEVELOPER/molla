@@ -5,11 +5,12 @@
       window.menuData["{{ block.id }}"]["{{ block.settings.submenu }}"] = {
         id: "{{ block.settings. block.settings.parent_menu_id | escape }}",
         title: "{{ block.settings.parent_menu_label | escape }}",
+        handle: "{{ block.settings.submenu | handleize }}",
         items: [
           {% assign main_menu = linklists[block.settings.submenu] %}
           {% for top_link in main_menu.links %}
             {
-              title: "{{ top_link.title | handle | escape }}",
+              title: "{{ top_link.title | escape }}",
               url: "{{ top_link.url }}",
               children: [
                 {% for child_link in top_link.links %}
@@ -44,7 +45,7 @@ document.addEventListener('DOMContentLoaded', () => {
     function renderSubmenu(menu) {
  
       let html = `
-      <div class="col-12 col-md-3 item item__2 w-300px level-2 lvl-2" menu-name="${menu.title}-${blockId}" submenu-order="2" parent-id="${menu.id}">
+      <div class="col-12 col-md-3 item item__2 w-300px level-2 lvl-2" menu-name="${menu.handle}-${blockId}" submenu-order="2" parent-id="${menu.id}">
         <div class="item__1__group">
           <div class="submenu__heading heading__1">
             <h3 class="uppercase">${menu.title}</h3>
