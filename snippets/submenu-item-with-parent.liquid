@@ -34,69 +34,76 @@
     {% endif %}
   {% endfor %}
 </script>
+
 {% javascript %}
-  document.addEventListener('DOMContentLoaded', () => {
-    const allSubMenus = window.menuData;
-    Object.entries(allMenus).forEach(([blockId, menus]) => {
-      function renderSubmenu(menu) {
-        let html = `
-        <div class="col-12 col-md-3 item item__2 w-300px level-2 lvl-2" menu-name="${menu.title}-${blockId}" submenu-order="2">
-          <div class="item__1__group">
-            <div class="submenu__heading heading__1">
-              <h3 class="uppercase">${menu.title}</h3>
-            </div>
-            <ul class="submenu__items level-2 submenu-inner">
+document.addEventListener('DOMContentLoaded', () => {
+  const allMenus = window.menuData;
+
+  Object.entries(allMenus).forEach(([blockId, menus]) => {
+    function renderSubmenu(menu) {
+      let html = `
+      <div class="col-12 col-md-3 item item__2 w-300px level-2 lvl-2" menu-name="${menu.title}-${blockId}" submenu-order="2">
+        <div class="item__1__group">
+          <div class="submenu__heading heading__1">
+            <h3 class="uppercase">${menu.title}</h3>
+          </div>
+          <ul class="submenu__items level-2 submenu-inner">
       `;
 
-        menu.items.forEach((top) => {
-          let additionalClass1 = top.children?.length ? 'submenu-with-children' : '';
-          html += `
-          <li class="${additionalClass1}" submenu-order="2">
-            <a href="${top.url}">${top.title}</a>
+      menu.items.forEach((top) => {
+        let hasChildren = Array.isArray(top.children) && top.children.length;
+        html += `
+        <li class="${hasChildren ? 'submenu-with-children' : ''}" submenu-order="2">
+          <a href="${top.url}">${top.title}</a>
         `;
 
-          if (top.children?.length) {
-            html += `
-            <div class="submenu-items-container style-2 w-300px lvl-3" submenu-order="3">
-              <div class="submenu__heading"><h3>${top.title}</h3></div>
-              <ul class="submenu__items item">
+        if (hasChildren) {
+          html += `
+          <div class="submenu-items-container style-2 w-300px lvl-3" submenu-order="3">
+            <div class="submenu__heading"><h3>${top.title}</h3></div>
+            <ul class="submenu__items item">
           `;
 
-            top.children.forEach((child) => {
-              let additionalClass = child.children?.length ? 'submenu-with-children' : '';
-              html += `<li submenu-order="3" class="has-third-level ${additionalClass}"><a href="${child.url}">${child.title}</a>`;
+          top.children.forEach((child) => {
+            let hasSubChildren = Array.isArray(child.children) && child.children.length;
+            html += `<li submenu-order="3" class="has-third-level ${hasSubChildren ? 'submenu-with-children' : ''}">
+              <a href="${child.url}">${child.title}</a>
+            `;
 
-              if (child.children?.length) {
-                html += `
-                <ul class="style-2 w-300px submenu-items-container lvl-4" submenu-order="4">
-                  <div class="submenu__heading"><h3>${child.title}</h3></div>
+            if (hasSubChildren) {
+              html += `
+              <ul class="style-2 w-300px submenu-items-container lvl-4" submenu-order="4">
+                <div class="submenu__heading"><h3>${child.title}</h3></div>
               `;
-                child.children.forEach((sub) => {
-                  html += `<li submenu-order="4" class="menu-item-last-child"><a href="${sub.url}">${sub.title}</a></li>`;
-                });
-                html += `</ul>`;
-              }
+              child.children.forEach((sub) => {
+                html += `<li submenu-order="4" class="menu-item-last-child"><a href="${sub.url}">${sub.title}</a></li>`;
+              });
+              html += `</ul>`;
+            }
 
-              html += `</li>`;
-            });
+            html += `</li>`;
+          });
 
-            html += `</ul></div>`;
-          }
+          html += `</ul></div>`;
+        }
 
-          html += `</li>`;
-        });
-
-        html += `</ul></div></div>`;
-        return html;
-      }
-      let renderedHTML = '';
-      Object.values(menus).forEach((menu) => {
-        renderedHTML += renderSubmenu(menu);
+        html += `</li>`;
       });
-      const container = document.getElementById(`render-submenus-${blockId}`);
-        if (container) container.innerHTML = renderedHTML;
-      });
+
+      html += `</ul></div></div>`;
+      return html;
+    }
+
+    let renderedHTML = '';
+    Object.values(menus).forEach((menu) => {
+      renderedHTML += renderSubmenu(menu);
     });
-      console.log(renderedHTML)
+
+    const container = document.getElementById(`render-submenus-${blockId}`);
+    if (container) container.innerHTML = renderedHTML;
+
+    // Optional debug:
+    console.log(`Rendered submenu for blockId: ${blockId}`);
   });
+});
 {% endjavascript %}
