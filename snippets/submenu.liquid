@@ -224,6 +224,7 @@ document.addEventListener('DOMContentLoaded', () => {
       const menuKey = trigger.getAttribute('submenu-items');
       const block_id = trigger.getAttribute('block-id');
       const menu_id = trigger.getAttribute('menu-id');
+     
 
       // Hide all
       allSubmenus.forEach(sub => {
@@ -231,7 +232,8 @@ document.addEventListener('DOMContentLoaded', () => {
       });
       if(menu_id && document.querySelector(`.extra-columns[menu-id="${menu_id}"]`)){
         let submenuItem = document.querySelector(`.extra-columns[menu-id="${menu_id}"]`);
-        submenuItem.setAttribute('menu-title',menuKey)
+        const menuTitle = trigger.getAttribute('target-id');
+        submenuItem.setAttribute('menu-title',menuTitle)
         submenuItem.style.display = "block"
       }
       // Show only the matched one
