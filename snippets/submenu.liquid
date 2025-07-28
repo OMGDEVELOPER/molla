@@ -222,11 +222,14 @@ document.addEventListener('DOMContentLoaded', () => {
     trigger.addEventListener('click', (e) => {
       const menuKey = trigger.getAttribute('submenu-items');
       const block_id = trigger.getAttribute('block-id');
+      const menu_id = trigger.getAttribute('menu-id');
 
       // Hide all
       allSubmenus.forEach(sub => {
         sub.style.display = 'none';
       });
+
+      console.log(menu_id)
 
       // Show only the matched one
       const target = document.querySelector(`.item__2[menu-name="${menuKey}-${block_id}"]`);
