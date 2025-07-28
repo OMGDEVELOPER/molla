@@ -93,6 +93,10 @@
       Object.values(menus).forEach((menu) => {
         renderedHTML += renderSubmenu(menu);
       });
+      const container = document.getElementById(`render-submenus-${blockId}`);
+        if (container) container.innerHTML = renderedHTML;
+      });
+      console.log(renderedHTML)
     });
   });
 {% endjavascript %}
