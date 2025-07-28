@@ -231,6 +231,7 @@ document.addEventListener('DOMContentLoaded', () => {
       });
       if(menu_id && document.querySelector(`.extra-columns[menu-id="${menu_id}"]`)){
         let submenuItem = document.querySelector(`.extra-columns[menu-id="${menu_id}"]`);
+        submenuItem.setAttribute('menu-title',menuKey)
         submenuItem.style.display = "block"
       }
       // Show only the matched one
