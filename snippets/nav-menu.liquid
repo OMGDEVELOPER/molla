@@ -23,7 +23,7 @@
   {% if block.type == 'with_submenu_item' %}
       {% render 'submenu', block: block %}
   {% elsif block.type == 'parent_menu' %}
-     <div class="" >
+     <div class="" style="display:none;" >
             <li 
             class="submenu-items-name sub-item-with-parent submenu-with-children"  
             parent-menu-id="{{ block.settings.parent_menu_id }}"
