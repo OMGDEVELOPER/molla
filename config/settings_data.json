@@ -207,9 +207,9 @@
           "parent_menu_ANp8xV": {
             "type": "parent_menu",
             "settings": {
-              "parent_menu_id": 9,
-              "parent_menu_label": "Test",
-              "submenu": "coolroom"
+              "parent_menu_id": 8,
+              "parent_menu_label": "Insulated Roof",
+              "submenu": "insulated-roof"
             }
           }
         },
