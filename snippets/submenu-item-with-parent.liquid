@@ -110,7 +110,11 @@ document.addEventListener('DOMContentLoaded', () => {
 
     // Optional debug:
     const triggerExtraItems = document.querySelectorAll(`.submenu-items-name`);
-    console.log(triggerExtraItems)
+    triggerExtraItems.forEach((element)=>{
+      element.addEventListener('click',function(){
+        console.log('clicked')
+      })
+    })
     
   });
 });
