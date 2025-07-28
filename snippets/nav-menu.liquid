@@ -22,15 +22,13 @@
 {% for block in section.blocks %}
   {% if block.type == 'with_submenu_item' or block.type == 'parent_menu' %}
       {% if block.type == 'parent_menu' %}
-          <div class="extra-columns col-12 col-md-3 item item__1">
+          <div class="extra-columns col-12 col-md-3 item item__1" id="extra-columns">
             <div class="item__1__group">
               <div class="submenu__heading">
                   <h3 class="heading__1">{{ block.settings.item_label }}</h3>
               </div>
                <ul class="lvl-1">
-               
                   <li class="submenu-items-name"  parent-menu-id="{{ block.settings.parent_menu_id }}"><a href="#">{{ block.settings.parent_menu_label }}</a></li>
-              
                </ul>
             </div>
           </div>
@@ -38,3 +36,21 @@
       {% render 'submenu', block: block,submenu_items:submenu_items %}
   {% endif %}
 {% endfor %}
+
+{% comment %}
+<script>
+  let subItem = `
+  <div class="extra-columns col-12 col-md-3 item item__1">
+    <div class="item__1__group">
+    <div class="submenu__heading"><h3 class="heading__1">{{ block.settings.item_label }}</h3></div>
+       <ul class="lvl-1">
+        <li class="submenu-items-name"  parent-menu-id="{{ block.settings.parent_menu_id }}"><a href="#">{{ block.settings.parent_menu_label }}</a></li>
+       </ul>
+    </div>
+  </div>
+  `;
+</script>
+{% endcomment %}
+<script>
+  let extraColumns = getElementById('extra-columns');
+</script>
