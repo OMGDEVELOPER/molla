@@ -180,7 +180,7 @@ submenu .w-300px{
    color:#FFF !important;
 }
 /*  */
-#render-submenus-parent li{
+.extra-columns-container li{
     list-style: none;
     padding-left: 20px;
     padding-top: 8px;
