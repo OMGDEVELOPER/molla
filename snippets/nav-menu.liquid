@@ -26,9 +26,8 @@
             class="submenu-items-name sub-item-with-parent"  
             parent-menu-id="{{ block.settings.parent_menu_id }}"
             submenu-order="1"
-            target-id="{{ label }}"
-            submenu-items="{{ menu }}"
-            menu-id="{{ i }}"
+            target-id="{{ block.settings.parent_menu_id }}"
+            submenu-items="{{ block.settings.parent_menu_id }}"
             block-id="{{ block.id }}">
               <a href="#">{{ block.settings.parent_menu_label }}</a>
             </li>
