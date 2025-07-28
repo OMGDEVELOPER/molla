@@ -37,7 +37,7 @@ document.addEventListener('DOMContentLoaded', function () {
   const triggerExtraItems = document.querySelectorAll(`.extra-columns > li`);
   triggerExtraItems.forEach((element)=>{
     element.addEventListener('click',function(e){
-     resetSubItems()
+     // resetSubItems()
      let targetId =  e.target.getAttribute('target-id')
      let blockId = e.target.getAttribute('block-id')
      document.querySelector(`.lvl-2[menu-name="${targetId}-${blockId}"]`).style.display = "block"
