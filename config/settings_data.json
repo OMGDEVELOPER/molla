@@ -193,7 +193,8 @@
             "settings": {
               "parent_menu_id": 8,
               "parent_menu_label": "Colorbond Roofing",
-              "submenu": "insulated-roof"
+              "parent_menu_item_url": "shopify://collections/colorbond-roofing",
+              "submenu": ""
             }
           },
           "parent_menu_pXWqQN": {
@@ -201,6 +202,7 @@
             "settings": {
               "parent_menu_id": 8,
               "parent_menu_label": "Polycarbonate",
+              "parent_menu_item_url": "",
               "submenu": "polycarbonate"
             }
           },
@@ -209,6 +211,7 @@
             "settings": {
               "parent_menu_id": 8,
               "parent_menu_label": "Insulated Roof",
+              "parent_menu_item_url": "",
               "submenu": "insulated-roof"
             }
           }
