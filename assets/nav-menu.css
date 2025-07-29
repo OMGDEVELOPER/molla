@@ -1,7 +1,7 @@
 .header-announcement-section{
     background: #FF3B3B;
     display: flex;
-    padding: 5px;
+    padding: 8px;
     justify-content: center;
     align-items: center;
     gap: 10px;
@@ -14,4 +14,5 @@
     font-style: normal;
     font-weight: 800;
     line-height: 24px;
+    text-align: center;
 }
