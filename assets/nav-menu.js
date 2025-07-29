@@ -19,8 +19,7 @@ document.addEventListener('DOMContentLoaded', function () {
   let output = "";
 
   for (let parentId in groupedOutput) {
-    console.log('asd')
-    document.querySelector('.submenu__items li').classList.add('submenu-with-children')
+    document.querySelector(`.submenu__items li[menu-id="${parentId}]`).classList.add('submenu-with-children')
     output += `
       <div class="extra-columns" menu-id="${parentId}" style="display:none;">
         <div class="item__1__group">
