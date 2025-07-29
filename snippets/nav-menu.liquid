@@ -39,7 +39,7 @@
             block-id="{{ block.id }}"
             menu-subitem-id=""
               >
-              <a href="#">{{ block.settings.parent_menu_label }}</a>
+              <a href="{{ block.settings.parent_menu_item_url}}">{{ block.settings.parent_menu_label }}</a>
             </li>
          {% render 'submenu-item-with-parent', block:block %}
       </div>
