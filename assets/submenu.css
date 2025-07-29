@@ -195,7 +195,7 @@ submenu .w-300px{
 .extra-columns-container li a{
   color: #fafafa;
 }
-.extra-columns-container li.submenu-with-children::after{
+.extra-columns-container li::after{
       content: "";
     width: 25px;
     height: 25px;
