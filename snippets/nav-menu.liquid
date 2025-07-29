@@ -31,7 +31,7 @@
   {% elsif block.type == 'parent_menu' %}
      <div class="" style="display:none;" >
             <li 
-            class="submenu-items-name sub-item-with-parent submenu-with-children"  
+            class="submenu-items-name sub-item-with-parent {% if block.settings.submenu != blank %}submenu-with-children{% endif %}"  
             parent-menu-id="{{ block.settings.parent_menu_id }}"
             submenu-order="1"
             target-id="{{ block.settings.submenu }}"
