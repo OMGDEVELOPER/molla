@@ -25,6 +25,9 @@
 #extra-columns-display-container{
   background: #dadada;
 }
+#extra-columns-display-container > li:hover{
+  color:#fff;
+}
 #extra-columns-display-container > li{ 
   background: #dadada;
   border:1px solid #eee;
