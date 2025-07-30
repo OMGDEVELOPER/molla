@@ -230,7 +230,9 @@ document.addEventListener('DOMContentLoaded', () => {
       allSubmenus.forEach(sub => {
         sub.style.display = 'none';
       });
+      const with5th_lvl = false;
       if(menu_id && document.querySelector(`.extra-columns[menu-id="${menu_id}"]`)){
+        with5th_lvl = true;
         document.querySelector('.row > .item__1').classList.add('hide-main')
         let submenuItem = document.querySelector(`.extra-columns[menu-id="${menu_id}"]`);
         const menuTitle = trigger.getAttribute('target-id');
