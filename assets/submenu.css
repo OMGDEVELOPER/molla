@@ -193,7 +193,7 @@ submenu .w-300px{
     align-items: center;
 }
 .extra-columns-container li a{
-  color: #fafafa;
+  color: #000;
 }
 .extra-columns-container li.submenu-with-children::after{
       content: "";
