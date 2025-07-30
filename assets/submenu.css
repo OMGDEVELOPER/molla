@@ -123,8 +123,8 @@ submenu{
 }
 /* LEVEL 2*/
 submenu .w-300px{
-  width:300px;
-  min-width: 300px;
+  /* width:300px;
+  min-width: 300px; */
   max-width: 300px;
   height: 100%;
 }
