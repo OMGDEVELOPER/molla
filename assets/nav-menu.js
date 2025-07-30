@@ -45,7 +45,9 @@ document.addEventListener('DOMContentLoaded', function () {
         }
        let targetId =  e.target.getAttribute('target-id')
        let blockId = e.target.getAttribute('block-id')
+      if(targetId){
        document.querySelector(`.lvl-2[menu-name="${targetId}-${blockId}"]`).style.display = "block"
+      }
       })
     })
   function resetSubActiveClass() {
