@@ -22,7 +22,7 @@
 #extra-columns-display-container{
   background: #dadada;
 }
-.lvl-1 > li{ background: #1c1b1f;}
+#extra-columns-display-container > li{ background: #dadada;}
 .lvl-2 > li{ background: #dadada; }
 .lvl-3 > li{ background: #ffffff;}
 .lvl-4 > li{ background: white; }
