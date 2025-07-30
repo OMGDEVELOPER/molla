@@ -19,6 +19,9 @@
 .hide-main{
   /* display: none !important; */
 }
+#extra-columns-display-container{
+  background: #dadada;
+}
 .lvl-1 > li{ background: #1c1b1f;}
 .lvl-2 > li{ background: #dadada; }
 .lvl-3 > li{ background: #ffffff;}
