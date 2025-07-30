@@ -17,7 +17,7 @@
     text-align: center;
 }
 .hide-main{
-  display: none !important;
+  /* display: none !important; */
 }
 .lvl-1 > li{ background: #1c1b1f;}
 .lvl-2 > li{ background: #dadada; }
