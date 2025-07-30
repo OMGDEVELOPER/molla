@@ -231,7 +231,7 @@ document.addEventListener('DOMContentLoaded', () => {
         sub.style.display = 'none';
       });
       if(menu_id && document.querySelector(`.extra-columns[menu-id="${menu_id}"]`)){
-        console.log(document.querySelector('.row > .item__1'))
+        document.querySelector('.row > .item__1').style.display = "none"
         let submenuItem = document.querySelector(`.extra-columns[menu-id="${menu_id}"]`);
         const menuTitle = trigger.getAttribute('target-id');
         submenuItem.setAttribute('menu-title',menuTitle)
