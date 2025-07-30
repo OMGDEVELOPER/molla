@@ -17,7 +17,7 @@
     text-align: center;
 }
 .hide-main{
-  display: none;
+  display: none !important;
 }
 @media (max-width:768px){
   .nav-menu,.main-header{
