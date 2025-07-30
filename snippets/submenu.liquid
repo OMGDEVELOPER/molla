@@ -231,6 +231,7 @@ document.addEventListener('DOMContentLoaded', () => {
         sub.style.display = 'none';
       });
       const with5th_lvl = false;
+      let currentItemlvl = 0;
       if(menu_id && document.querySelector(`.extra-columns[menu-id="${menu_id}"]`)){
         with5th_lvl = true;
         document.querySelector('.row > .item__1').classList.add('hide-main')
@@ -284,6 +285,7 @@ document.addEventListener('DOMContentLoaded', () => {
         if (submenu) {
           submenu.style.display = 'block';
         }
+        console.log(currentMenuActive)
       })
     })
   }
