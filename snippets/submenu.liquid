@@ -230,7 +230,7 @@ document.addEventListener('DOMContentLoaded', () => {
       allSubmenus.forEach(sub => {
         sub.style.display = 'none';
       });
-      const with5th_lvl = false;
+      let with5th_lvl = false;
       let currentItemlvl = 0;
       if(menu_id && document.querySelector(`.extra-columns[menu-id="${menu_id}"]`)){
         with5th_lvl = true;
