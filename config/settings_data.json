@@ -211,7 +211,7 @@
             "settings": {
               "parent_menu_id": 8,
               "parent_menu_label": "Insulated Roof",
-              "parent_menu_item_url": "",
+              "parent_menu_item_url": "shopify://collections/insulated-roof",
               "submenu": "insulated-roof"
             }
           }
