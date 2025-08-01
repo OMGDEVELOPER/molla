@@ -531,7 +531,7 @@
             "reverse": true,
             "title_align": "text-center",
             "margin_btitle": 3,
-            "blog": "news",
+            "blog": "posts",
             "limit": 8,
             "use_short_desc": true,
             "limit_per_row": 3,
