@@ -178,7 +178,7 @@
             "type": "standard_nav_item",
             "settings": {
               "item_label": "CONTACT US",
-              "item_url": ""
+              "item_url": "shopify://pages/contact"
             }
           },
           "parent_menu_jcK6fc": {
