@@ -99,13 +99,6 @@
       "custom-header": {
         "type": "custom-header",
         "blocks": {
-          "standard_nav_item_pGpRKf": {
-            "type": "standard_nav_item",
-            "settings": {
-              "item_label": "HOME",
-              "item_url": ""
-            }
-          },
           "standard_nav_item_h7xaFR": {
             "type": "standard_nav_item",
             "settings": {
@@ -217,7 +210,6 @@
           }
         },
         "block_order": [
-          "standard_nav_item_pGpRKf",
           "standard_nav_item_h7xaFR",
           "standard_nav_item_ip9A4G",
           "standard_nav_item_QWK7JN",
