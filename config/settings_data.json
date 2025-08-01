@@ -110,7 +110,7 @@
             "type": "standard_nav_item",
             "settings": {
               "item_label": "ABOUT US",
-              "item_url": ""
+              "item_url": "shopify://pages/about-us"
             }
           },
           "standard_nav_item_ip9A4G": {
