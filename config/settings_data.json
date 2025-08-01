@@ -258,6 +258,33 @@
       },
       "kt_top_banner": {
         "type": "kt_top_banner",
+        "blocks": {
+          "page_banner_4Cx6y7": {
+            "type": "page_banner",
+            "settings": {
+              "off_section": false,
+              "off_mobile": false,
+              "off_desktop": false,
+              "html": "<div class=\"page-header text-center\"><h1 class=\"page-title\">About Us<span>Page</span>\n</h1></div>",
+              "by_handle_1": "about-us",
+              "by_handle_2": "",
+              "by_handle_3": "",
+              "by_handle_11": "",
+              "width_section": "w-100",
+              "width_content": true,
+              "section_margin_top": "",
+              "section_margin_bottom": "",
+              "section_padding": "6rem",
+              "section_bg": "",
+              "section_bg_op": 1,
+              "image": "shopify://shop_images/page-header-bg.webp",
+              "link_banner": ""
+            }
+          }
+        },
+        "block_order": [
+          "page_banner_4Cx6y7"
+        ],
         "settings": {
           "title": "(Banner) Page top"
         }
