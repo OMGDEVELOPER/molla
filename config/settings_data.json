@@ -237,7 +237,7 @@
         "type": "kt_banner_all_page",
         "settings": {
           "title": "Banner all page",
-          "off_section": true,
+          "off_section": false,
           "off_mobile": false,
           "off_desktop": false,
           "width_section": "container",
