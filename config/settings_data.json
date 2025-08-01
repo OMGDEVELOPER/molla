@@ -265,8 +265,8 @@
               "off_section": false,
               "off_mobile": false,
               "off_desktop": false,
-              "html": "<div class=\"page-header text-center\"><h1 class=\"page-title\">About Us<span>Page</span>\n</h1></div>",
-              "by_handle_1": "about-us",
+              "html": "<div class=\"page-header text-center\"><h1 class=\"page-title\">{{page.title}}<span>Page</span>\n</h1></div>",
+              "by_handle_1": "",
               "by_handle_2": "",
               "by_handle_3": "",
               "by_handle_11": "",
@@ -317,6 +317,10 @@
       },
       "contact-template": {
         "type": "contact-template",
+        "settings": {}
+      },
+      "contact-template-2": {
+        "type": "contact-template-2",
         "settings": {}
       }
     },
