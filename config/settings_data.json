@@ -232,6 +232,61 @@
       "custom-footer": {
         "type": "custom-footer",
         "settings": {}
+      },
+      "kt_banner_all_page": {
+        "type": "kt_banner_all_page",
+        "settings": {
+          "title": "Banner all page",
+          "off_section": true,
+          "off_mobile": false,
+          "off_desktop": false,
+          "width_section": "container",
+          "width_content": true,
+          "section_margin_top": "",
+          "section_margin_bottom": "",
+          "section_padding": "2.5rem 0",
+          "section_bg": "#008060",
+          "section_bg_op": 1,
+          "message_richtext": "<p>Now These Bestsellers are back in stock & ready for action!</p>",
+          "link": "",
+          "textBtn": "Shop Now <i class=\"fkt-angle-right\" aria-hidden=\"true\"></i>",
+          "load_btn": false,
+          "style_btn": "btn-outline-darker",
+          "style_btn_rounded": "",
+          "btn_shadow": false
+        }
+      },
+      "kt_top_banner": {
+        "type": "kt_top_banner",
+        "settings": {
+          "title": "(Banner) Page top"
+        }
+      },
+      "about-template-2": {
+        "type": "about-template-2",
+        "blocks": {
+          "item_who_we_are_yHhFTk": {
+            "type": "item_who_we_are",
+            "settings": {
+              "off_block": false,
+              "off_mobile": false,
+              "off_desktop": false,
+              "width_section": "container",
+              "width_content": true,
+              "section_margin_top": "",
+              "section_margin_bottom": "",
+              "section_padding": "",
+              "section_bg": "",
+              "section_bg_op": 1,
+              "title": "",
+              "html_content": "<h1>We are conveniently located at 60-68 Hampstead Road, Auburn, opposite Harvey Norman.</h1><br>\n<p>Bighands Building Supplies stock a range of building supply products. Our products include polycarbonate and Colourbond roofing sheets, structural and rainwater products, and other building accessories. In addition, we also stock DIY carports and awnings. We are a 100% Australian owned and operated wholesale supplier and we take great pride and care in making sure our manufacturers produce building materials to the highest standards. Browse our website to find information about our product range. Or, if you still can’t find what you’re looking for, or would like a quote, send us an email at info@bighandsbuildingsupplies.com.au.</p>"
+            }
+          }
+        },
+        "block_order": [
+          "item_who_we_are_yHhFTk"
+        ],
+        "settings": {}
       }
     },
     "content_for_index": []
