@@ -15,7 +15,7 @@
     "use_wrap_container": false,
     "width_sidebar_layout": "container",
     "newsletter_popup": false,
-    "blog_layout": "02",
+    "blog_layout": "05",
     "sections": {
       "kt-dear-customers": {
         "type": "kt-dear-customers",
