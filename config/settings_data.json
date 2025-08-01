@@ -247,13 +247,14 @@
           "section_padding": "2.5rem 0",
           "section_bg": "#008060",
           "section_bg_op": 1,
+          "image": "shopify://shop_images/SOLID_PC.jpg",
           "message_richtext": "<p>Now These Bestsellers are back in stock & ready for action!</p>",
           "link": "",
           "textBtn": "Shop Now <i class=\"fkt-angle-right\" aria-hidden=\"true\"></i>",
-          "load_btn": false,
+          "load_btn": true,
           "style_btn": "btn-outline-darker",
           "style_btn_rounded": "",
-          "btn_shadow": false
+          "btn_shadow": true
         }
       },
       "kt_top_banner": {
@@ -286,6 +287,10 @@
         "block_order": [
           "item_who_we_are_yHhFTk"
         ],
+        "settings": {}
+      },
+      "contact-template": {
+        "type": "contact-template",
         "settings": {}
       }
     },
