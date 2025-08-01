@@ -118,7 +118,7 @@
             "type": "standard_nav_item",
             "settings": {
               "item_label": "BLOG",
-              "item_url": ""
+              "item_url": "https://bighandsbuildingsupplydev.myshopify.com/blogs/posts"
             }
           },
           "with_submenu_item_JeeeDA": {
