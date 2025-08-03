@@ -28,22 +28,36 @@
 <section class="fixed-panel">
   <div class="container">
     <ul>
+      {% if settings.store_locator_link %}
       <li>
         <img src="https://cdn.shopify.com/s/files/1/0936/3328/2419/files/home_pin.svg?v=1753759120">
         <a href="{{ settings.store_locator_link }}">Store Location</a>
       </li>
+      {% endif %}
+      {% if settings.get_a_quote_link %}
       <li>
         <img src="https://cdn.shopify.com/s/files/1/0936/3328/2419/files/home_pin.svg?v=1753759120">
-        <a href="{{ settings.store_locator_link }}">Store Location</a>
+        <a href="{{ settings.get_a_quote_link }}">Get a Quote</a>
       </li>
+    {% endif %}
+    {% if settings.contact_us_link %}
       <li>
         <img src="https://cdn.shopify.com/s/files/1/0936/3328/2419/files/home_pin.svg?v=1753759120">
-        <a href="{{ settings.store_locator_link }}">Store Location</a>
+        <a href="{{ settings.contact_us_link }}">Contact Us</a>
       </li>
+    {% endif %}
+    {% if settings.phone_number %}
       <li>
         <img src="https://cdn.shopify.com/s/files/1/0936/3328/2419/files/home_pin.svg?v=1753759120">
-        <a href="{{ settings.store_locator_link }}">Store Location</a>
+        <a href="{{ settings.phone_number }}">{{ settings.phone_number }}</a>
       </li>
+    {% endif %}
+    {% if settings.install_guide_link %}
+      <li>
+        <img src="https://cdn.shopify.com/s/files/1/0936/3328/2419/files/home_pin.svg?v=1753759120">
+        <a href="{{ settings.install_guide_link }}">Install Guide</a>
+      </li>
+    {% endif %}
     </ul>
   </div>
 </section>
