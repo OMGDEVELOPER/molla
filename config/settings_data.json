@@ -293,7 +293,7 @@
               "off_desktop": false,
               "width_section": "container",
               "width_content": true,
-              "section_margin_top": "",
+              "section_margin_top": "2.5rem",
               "section_margin_bottom": "",
               "section_padding": "",
               "section_bg": "",
