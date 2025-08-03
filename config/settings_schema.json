@@ -4300,5 +4300,36 @@
         "info": "Will be scaled down to 150 x 150px"
       }
     ]
+  },
+  {
+     "name": "Fixed Panel",
+    "settings": [
+        {
+          "type": "url",
+          "id": "store_locator_link",
+          "label": "Store Locator Link"
+        },
+        {
+          "type": "url",
+          "id": "get_a_quote_link",
+          "label": "Get a Quote Link"
+        },
+        {
+          "type": "url",
+          "id": "contact_us_link",
+          "label": "Contact Us Link"
+        },
+        {
+          "type": "text",
+          "id": "phone_number",
+          "label": "Phone"
+        },
+        {
+          "type": "url",
+          "id": "install_guide_link",
+          "label": "Install Guide Link"
+        },
+        
+    ]
   }
 ]
