@@ -48,7 +48,7 @@
                 {% if block.settings.image %}
                 <img 
                     src="{{ block.settings.image | img_url: 'master' }}" 
-                    alt="{{ block.settings.alt_text | escape }}">
+                    alt="{{ block.settings.title | escape }}">
                 {% endif %}
             </li>
         {% endfor %}
