@@ -4,6 +4,21 @@
   "tag": "section",
   "class": "splide-thumbnail-section container",
   "settings": [],
+  "blocks": [
+    {
+      "type": "slide",
+      "name": "Slide",
+      "settings": [
+        {
+        "type": "metaobject_list",
+        "metaobject_type": "inspiration_gallery",
+        "id": "met",
+        "label": "Inspiration Slides"
+      }
+       
+      ]
+    }
+  ],
   "presets": [
     {
       "name": "Splide Thumbnail Slider",
@@ -13,46 +28,27 @@
 }
 {% endschema %}
 
-<!-- Splide CSS -->
+<!-- Splide CSS CDN -->
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css">
 
 <style>
-  .splide-thumbnail-section {
-    max-width: 800px;
-    margin: auto;
-  }
 
   #thumbnail-slider .splide__slide {
     cursor: pointer;
   }
-
-  .splide__slide img {
-    width: 100%;
-    height: auto;
-    object-fit: cover;
-  }
-
-  .slide-title {
-    text-align: center;
-    margin-top: 0.5rem;
-    font-size: 14px;
-  }
 </style>
 
-{%- assign gallery_items = shop.metaobjects.inspiration_gallery.values -%}
-
-{% if gallery_items.size > 0 %}
+<div class="splide-thumbnail-wrapper">
   <!-- Main Slider -->
   <div id="main-slider" class="splide">
     <div class="splide__track">
       <ul class="splide__list">
-        {% for item in gallery_items %}
+        {% for block in section.blocks %}
           <li class="splide__slide">
-            {% if item.image %}
+            {% if block.settings.image %}
               <img 
-                src="{{ item.image | image_url: width: 800 }}" 
-                alt="{{ item.title | escape }}">
-              <div class="slide-title">{{ item.title }}</div>
+                src="{{ block.settings.image | img_url: 'master' }}" 
+                alt="{{ block.settings.alt_text | escape }}">
             {% endif %}
           </li>
         {% endfor %}
@@ -64,41 +60,40 @@
   <div id="thumbnail-slider" class="splide">
     <div class="splide__track">
       <ul class="splide__list">
-        {% for item in gallery_items %}
+        {% for block in section.blocks %}
           <li class="splide__slide">
-            {% if item.image %}
+            {% if block.settings.image %}
               <img 
-                src="{{ item.image | image_url: width: 100 }}" 
-                alt="{{ item.title | escape }}">
+                src="{{ block.settings.image | img_url: '100x100' }}" 
+                alt="{{ block.settings.alt_text | escape }}">
             {% endif %}
           </li>
         {% endfor %}
       </ul>
     </div>
   </div>
-{% else %}
-  <p>No inspiration gallery items found.</p>
-{% endif %}
+</div>
 
-<!-- Splide JS -->
+<!-- Splide JS CDN -->
 <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/js/splide.min.js"></script>
 
 <script>
   document.addEventListener('DOMContentLoaded', function () {
     var main = new Splide('#main-slider', {
-      type       : 'slide',
-      perPage    : 2,
-      gap        : '1rem',
-      pagination : false,
-      arrows     : false,
-      cover      : true,
-      heightRatio: 0.5,
-      breakpoints: {
+    type       : 'slide',
+    perPage    : 2,
+    gap        : '1rem',
+    pagination : false,
+    arrows     : false,
+    cover      : true,
+    heightRatio: 0.5,
+    breakpoints: {
         768: {
-          perPage: 1
+        perPage: 1
         }
-      }
+    }
     });
+
 
     var thumbnails = new Splide('#thumbnail-slider', {
       rewind          : true,
