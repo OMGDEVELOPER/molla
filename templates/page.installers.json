@@ -54,7 +54,7 @@
             "turnoff": false,
             "title": "Item image",
             "width_section": true,
-            "css_block": ".block_id {}"
+            "css_block": ""
           }
         }
       },
