@@ -26,29 +26,14 @@
         "slide_WGxpPD": {
           "type": "slide",
           "settings": {
-            "image": "shopify://shop_images/image2-1.jpg",
-            "alt_text": "Slide image"
-          }
-        },
-        "slide_kA9WUa": {
-          "type": "slide",
-          "settings": {
-            "image": "shopify://shop_images/image2.jpg",
-            "alt_text": "Slide image"
-          }
-        },
-        "slide_ikRFnC": {
-          "type": "slide",
-          "settings": {
-            "image": "shopify://shop_images/image2.jpg",
-            "alt_text": "Slide image"
+            "met": [
+              "1-f-564-bd-14-a-844-4-f-12-8-b-9-a-59827-e-33-ce-2-d"
+            ]
           }
         }
       },
       "block_order": [
-        "slide_WGxpPD",
-        "slide_kA9WUa",
-        "slide_ikRFnC"
+        "slide_WGxpPD"
       ],
       "name": "Splide Thumbnail Slider",
       "settings": {}
