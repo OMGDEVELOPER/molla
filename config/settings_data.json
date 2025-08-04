@@ -123,7 +123,7 @@
           "standard_nav_item_XhUAtK": {
             "type": "standard_nav_item",
             "settings": {
-              "item_label": "Installer",
+              "item_label": "Installers",
               "item_url": "shopify://pages/installers"
             }
           },
