@@ -19,9 +19,27 @@
         "section_padding": "",
         "section_bg": ""
       }
+    },
+    "gallery_wBq9f9": {
+      "type": "gallery",
+      "blocks": {
+        "slide_WGxpPD": {
+          "type": "slide",
+          "settings": {
+            "image": "shopify://shop_images/image2-1.jpg",
+            "alt_text": "Slide image"
+          }
+        }
+      },
+      "block_order": [
+        "slide_WGxpPD"
+      ],
+      "name": "Splide Thumbnail Slider",
+      "settings": {}
     }
   },
   "order": [
-    "content"
+    "content",
+    "gallery_wBq9f9"
   ]
 }
