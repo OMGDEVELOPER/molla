@@ -43,14 +43,14 @@
   <div id="main-slider" class="splide">
     <div class="splide__track">
       <ul class="splide__list">
-        {% for block in section.blocks %}
-          <li class="splide__slide">
-            {% if block.settings.image %}
-              <img 
-                src="{{ block.settings.image | img_url: 'master' }}" 
-                alt="{{ block.settings.alt_text | escape }}">
-            {% endif %}
-          </li>
+       {% for block in section.blocks %}
+            <li class="splide__slide">
+                {% if block.settings.image %}
+                <img 
+                    src="{{ block.settings.image | img_url: 'master' }}" 
+                    alt="{{ block.settings.alt_text | escape }}">
+                {% endif %}
+            </li>
         {% endfor %}
       </ul>
     </div>
