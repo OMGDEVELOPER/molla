@@ -117,7 +117,7 @@
             "type": "standard_nav_item",
             "settings": {
               "item_label": "INSPIRATION",
-              "item_url": ""
+              "item_url": "shopify://pages/inspiration"
             }
           },
           "standard_nav_item_QWK7JN": {
