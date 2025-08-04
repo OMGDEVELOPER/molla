@@ -32,17 +32,28 @@
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css">
 
 <style>
-
-  #thumbnail-slider .splide__slide {
+  #thumbnail-slider .splide__slide,
+  #main-slider .splide__slide {
     cursor: pointer;
   }
-  #thumbnail-slider img,#main-slider img{
-    border-radius:25px;    
-}
-  .splide__slide img {
+
+  #main-slider .splide__slide img {
+    border-radius: 25px;
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    display: block;
+  }
+
+  #thumbnail-slider .splide__slide img {
     border-radius: 12px;
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    display: block;
   }
 </style>
+
 
 <div class="splide-thumbnail-wrapper">
   <!-- Main Slider -->
@@ -53,7 +64,7 @@
             {% for item in block.settings.met %}
                 <li class="splide__slide">
                 {% if item.image %}
-                    <img src="{{ item.image | image_url: width: 800 }}" alt="{{ item.title | escape }}" style="border-radius:25px; ">
+                    <img src="{{ item.image | image_url: width: 800 }}" alt="{{ item.title | escape }}" ">
                 {% endif %}
                 </li>
             {% endfor %}
