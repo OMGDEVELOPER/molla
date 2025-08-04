@@ -11,6 +11,7 @@
   "sections": {
     "content": {
       "type": "main-page",
+      "disabled": true,
       "settings": {
         "width_section": "container",
         "width_content": false,
@@ -19,9 +20,83 @@
         "section_padding": "",
         "section_bg": ""
       }
+    },
+    "kt_slideshow_zLCFNY": {
+      "type": "kt_slideshow",
+      "blocks": {
+        "image_agPjC9": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/21692_1_1.png",
+            "lazypreload": false,
+            "heading": "",
+            "font_heading": "poppins_n7",
+            "subheading": "",
+            "font_subheading": "poppins_n7",
+            "description": "",
+            "font_description": "poppins_n4",
+            "text_alignment_top": 16,
+            "text_alignment_left": 16,
+            "text_alignment": "center",
+            "text_alignment_top_mb": 16,
+            "text_alignment_left_mb": 16,
+            "text_alignment_mb": "center",
+            "style_btn_1": "btn-primary",
+            "style_btn_rounded_1": "",
+            "btn_shadow_1": false,
+            "link_1": "",
+            "textBtn_1": "",
+            "style_btn_2": "btn-outline-primary-2",
+            "style_btn_rounded_2": "",
+            "btn_shadow_2": false,
+            "link_2": "",
+            "textBtn_2": "",
+            "turnoff": false,
+            "title": "Item image",
+            "width_section": true,
+            "css_block": ".block_id {}"
+          }
+        }
+      },
+      "block_order": [
+        "image_agPjC9"
+      ],
+      "name": "Master",
+      "settings": {
+        "title": "Slideshow Master",
+        "off_mobile": false,
+        "off_desktop": false,
+        "width_section": "w-100",
+        "width_content": false,
+        "section_margin_top": "",
+        "section_margin_bottom": "",
+        "section_padding": "",
+        "section_bg": "",
+        "section_bg_op": 1,
+        "no_overflow": false,
+        "fullscreen": false,
+        "autoplay": true,
+        "use_navigation": true,
+        "nav_style": "-default",
+        "nav_mode": "default",
+        "nav_position": "nav-default",
+        "use_dots": false,
+        "dots_mode": "default",
+        "use_scrollbar": false,
+        "h_reponsive": "",
+        "h_reponsive_768": "",
+        "h_reponsive_992": "",
+        "h_reponsive_1200": "",
+        "h_reponsive_1400": "",
+        "autoplay_speed": 7,
+        "responsive": "{\n  \"0\": {\n    \"slidesPerView\": 1,\n    \"spaceBetween\": 10\n  },\n  \"320\": {\n    \"slidesPerView\": 1,\n    \"spaceBetween\": 10\n  },\n  \"768\": {\n    \"slidesPerView\": 1,\n    \"spaceBetween\": 10\n  },\n  \"992\": {\n    \"slidesPerView\": 1,\n    \"spaceBetween\": 10\n  },\n  \"1200\": {\n    \"slidesPerView\": 1,\n    \"spaceBetween\": 10\n  }\n}",
+        "content_type": "type-1",
+        "css_section": ""
+      }
     }
   },
   "order": [
-    "content"
+    "content",
+    "kt_slideshow_zLCFNY"
   ]
 }
