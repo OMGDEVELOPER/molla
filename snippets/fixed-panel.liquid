@@ -51,13 +51,13 @@ opacity:1;}
     {% if settings.contact_us_link %}
       <li>
         <img src="https://cdn.shopify.com/s/files/1/0936/3328/2419/files/mail_2.svg?v=1754263723">
-        <a href="tel:{{ settings.contact_us_link }}">Contact Us</a>
+        <a href="{{ settings.contact_us_link }}">Contact Us</a>
       </li>
     {% endif %}
     {% if settings.phone_number %}
       <li>
         <img src="https://cdn.shopify.com/s/files/1/0936/3328/2419/files/call_1.svg?v=1754263723">
-        <a href="{{ settings.phone_number }}">{{ settings.phone_number }}</a>
+        <a href="tel:{{ settings.phone_number }}">{{ settings.phone_number }}</a>
       </li>
     {% endif %}
     {% if settings.install_guide_link %}
