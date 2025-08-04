@@ -1,0 +1,124 @@
+{% schema %}
+{
+  "name": "Splide Thumbnail Slider",
+  "tag": "section",
+  "class": "splide-thumbnail-section",
+  "settings": [],
+  "blocks": [
+    {
+      "type": "slide",
+      "name": "Slide",
+      "settings": [
+        {
+          "type": "image_picker",
+          "id": "image",
+          "label": "Slide Image"
+        },
+        {
+          "type": "text",
+          "id": "alt_text",
+          "label": "Alt Text",
+          "default": "Slide image"
+        }
+      ]
+    }
+  ],
+  "max_blocks": 10,
+  "presets": [
+    {
+      "name": "Splide Thumbnail Slider",
+      "category": "Media"
+    }
+  ]
+}
+{% endschema %}
+
+<!-- Splide CSS CDN -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css">
+
+<style>
+  .splide-thumbnail-section {
+    max-width: 800px;
+    margin: auto;
+  }
+
+  #thumbnail-slider .splide__slide {
+    cursor: pointer;
+  }
+</style>
+
+<div class="splide-thumbnail-wrapper">
+  <!-- Main Slider -->
+  <div id="main-slider" class="splide">
+    <div class="splide__track">
+      <ul class="splide__list">
+        {% for block in section.blocks %}
+          <li class="splide__slide">
+            {% if block.settings.image %}
+              <img 
+                src="{{ block.settings.image | img_url: 'master' }}" 
+                alt="{{ block.settings.alt_text | escape }}">
+            {% endif %}
+          </li>
+        {% endfor %}
+      </ul>
+    </div>
+  </div>
+
+  <!-- Thumbnail Slider -->
+  <div id="thumbnail-slider" class="splide">
+    <div class="splide__track">
+      <ul class="splide__list">
+        {% for block in section.blocks %}
+          <li class="splide__slide">
+            {% if block.settings.image %}
+              <img 
+                src="{{ block.settings.image | img_url: '100x100' }}" 
+                alt="{{ block.settings.alt_text | escape }}">
+            {% endif %}
+          </li>
+        {% endfor %}
+      </ul>
+    </div>
+  </div>
+</div>
+
+<!-- Splide JS CDN -->
+<script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/js/splide.min.js"></script>
+
+<script>
+  document.addEventListener('DOMContentLoaded', function () {
+    var main = new Splide('#main-slider', {
+      type       : 'fade',
+      heightRatio: 0.5,
+      pagination : false,
+      arrows     : false,
+      cover      : true,
+    });
+
+    var thumbnails = new Splide('#thumbnail-slider', {
+      rewind          : true,
+      fixedWidth      : 104,
+      fixedHeight     : 58,
+      isNavigation    : true,
+      gap             : 10,
+      focus           : 'center',
+      pagination      : false,
+      cover           : true,
+      dragMinThreshold: {
+        mouse: 4,
+        touch: 10,
+      },
+      breakpoints : {
+        640: {
+          fixedWidth  : 66,
+          fixedHeight : 38,
+        },
+      },
+    });
+
+    main.sync(thumbnails);
+    main.mount();
+    thumbnails.mount();
+  });
+</script>
