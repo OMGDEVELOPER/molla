@@ -195,7 +195,10 @@
         "description": "",
         "categories": [
           "frontpage",
-          "roofing"
+          "roofing",
+          "insulated-eps-roof",
+          "twin-wall",
+          "wall"
         ]
       }
     },
