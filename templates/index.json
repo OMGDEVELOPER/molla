@@ -550,7 +550,7 @@
             "load_btn": false,
             "style_btn": "btn-outline-darker",
             "style_btn_rounded": "",
-            "btn_shadow": false
+            "btn_shadow": true
           }
         }
       },
