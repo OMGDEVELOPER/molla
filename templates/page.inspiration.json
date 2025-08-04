@@ -29,10 +29,18 @@
             "image": "shopify://shop_images/image2-1.jpg",
             "alt_text": "Slide image"
           }
+        },
+        "slide_kA9WUa": {
+          "type": "slide",
+          "settings": {
+            "image": "shopify://shop_images/image2.jpg",
+            "alt_text": "Slide image"
+          }
         }
       },
       "block_order": [
-        "slide_WGxpPD"
+        "slide_WGxpPD",
+        "slide_kA9WUa"
       ],
       "name": "Splide Thumbnail Slider",
       "settings": {}
