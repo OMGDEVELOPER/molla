@@ -226,7 +226,9 @@
           "parent_menu_pXWqQN",
           "parent_menu_ANp8xV"
         ],
-        "settings": {}
+        "settings": {
+          "announcement_text": "Get up to 20% OFF on your first order – Limited Time Only!"
+        }
       },
       "custom-footer": {
         "type": "custom-footer",
