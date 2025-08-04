@@ -520,7 +520,16 @@
       "type": "featured-products",
       "name": "Featured Products",
       "settings": {
-        "product_lists": []
+        "product_lists": [
+          "aluminium-angle-1",
+          "aluminium-angle",
+          "aluminium-arch-beam",
+          "aluminium-beam",
+          "aluminium-channel",
+          "aluminium-post",
+          "aluminium-slat-accessories",
+          "aluminium-slat"
+        ]
       }
     },
     "1566443930152": {
