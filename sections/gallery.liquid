@@ -50,7 +50,7 @@
             {% for item in block.settings.met %}
                 <li class="splide__slide">
                 {% if item.image %}
-                    <img src="{{ item.image | image_url: width: 800 }}" alt="{{ item.title | escape }}">
+                    <img src="{{ item.image | image_url: width: 800 }}" alt="{{ item.title | escape }}" style="border-radius:25px; ">
                 {% endif %}
                 </li>
             {% endfor %}
