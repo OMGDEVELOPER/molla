@@ -54,7 +54,7 @@
             "turnoff": false,
             "title": "Item image",
             "width_section": true,
-            "css_block": ".sl-anime.slideshow__title h1{\ncolor: #FFF;\nfont-family: Karla;\nfont-size: 42px;\nfont-style: normal;\nfont-weight: 800;\nline-height: 72px; /* 171.429% */\n}\n.sl-anime.slideshow__subtitle{\ncolor: #FFF;\nfont-family: Karla;\nfont-size: 20px;\nfont-style: normal;\nfont-weight: 500;\nline-height: 28px; /* 140% */\n}"
+            "css_block": ".sl-anime.slideshow__title h1{\ncolor: #FFF;\nfont-family: Karla;\nfont-size: 38px;\nfont-style: normal;\nfont-weight: 800;\nline-height: 72px; /* 171.429% */\n}\n.sl-anime.slideshow__subtitle{\ncolor: #FFF;\nfont-family: Karla;\nfont-size: 18px;\nfont-style: normal;\nfont-weight: 500;\nline-height: 28px;/* 140% */\n}"
           }
         }
       },
