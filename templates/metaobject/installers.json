@@ -8,6 +8,18 @@
  * ------------------------------------------------------------
  */
 {
-  "sections": {},
-  "order": []
+  "sections": {
+    "installers_section_qPbp7g": {
+      "type": "installers-section",
+      "name": "Installers",
+      "settings": {
+        "installers_list": [
+          "elite-roof-systems"
+        ]
+      }
+    }
+  },
+  "order": [
+    "installers_section_qPbp7g"
+  ]
 }
