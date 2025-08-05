@@ -116,6 +116,7 @@
     }
     {% endstyle %}
 <div class="grid grid-cols-3">
+    {% for item in section.settings.installers_list %}
     <div class="item">
         <div class="title">Elite Roof Systems</div>
         <div class="tags">Commercial</div>
@@ -147,4 +148,5 @@
             <a href="#"><button class="view-details">View Details</button></a>
         </div>
     </div>
+    {% endfor %}
 </div>
