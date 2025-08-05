@@ -93,10 +93,20 @@
         "content_type": "type-1",
         "css_section": ""
       }
+    },
+    "installers_section_UNznXR": {
+      "type": "installers-section",
+      "name": "Installers",
+      "settings": {
+        "installers_list": [
+          "elite-roof-systems"
+        ]
+      }
     }
   },
   "order": [
     "content",
-    "kt_slideshow_zLCFNY"
+    "kt_slideshow_zLCFNY",
+    "installers_section_UNznXR"
   ]
 }
