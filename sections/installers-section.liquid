@@ -24,11 +24,17 @@
     padding:6rem 0;
   }
   .installers-section .grid{
-    display:grid;
-    grid-template-columns:repeat(3,1fr);
-    gap:2rem;
-  }
-{% endstyle %}
+      display:grid;
+      grid-template-columns:repeat(3,1fr);
+      gap:2rem;
+    }
+    .installers-section .grid ul{
+        padding:0px;
+    }
+    .installers-section .grid ul li{
+        list-style:none;
+    }
+    {% endstyle %}
 <div class="grid grid-cols-3">
     <div class="item">
         <div class="title"></div>
