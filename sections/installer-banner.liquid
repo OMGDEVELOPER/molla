@@ -59,6 +59,9 @@
       {% if section.blocks.size > 0 %}
       <div class="row align-items-center">
         <div class="col-12 col-lg-{{block.settings.banner_align | default: '6'}} {{block.settings.text_align}} py-lg-5 mb-3 mb-lg-0">
+          <div class="back">
+            <img src="https://cdn.shopify.com/s/files/1/0936/3328/2419/files/arrow_back.svg?v=1754478220" alt="back to home"><span>Back to list</span>
+          </div>
           <div class="section-title w-100">
           {%- if block.settings.reverse and block.settings.stitle_section != blank -%}
             <div class="sub-title">
