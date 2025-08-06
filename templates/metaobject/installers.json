@@ -19,7 +19,7 @@
             "image_link": "",
             "text_align": "",
             "title_section": "{{ metaobject.title.value }}",
-            "stitle_section": "Subtitle",
+            "stitle_section": "{{ metaobject.tags | metafield_text }}",
             "reverse": false,
             "content_text": "<p>{{ metaobject.short_description | metafield_tag }}</p>",
             "color_title": "#222222",
