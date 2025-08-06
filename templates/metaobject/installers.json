@@ -56,8 +56,8 @@
       "name": "About Section",
       "settings": {
         "main_content": "{{ metaobject.content | metafield_tag }}",
-        "specialization_title": "Specialization",
-        "core_services_title": "Core Services",
+        "specialization_title": "{{ metaobject.specialization | metafield_text }}",
+        "core_services_title": "",
         "contact_title": "Contact Us",
         "contact_address": "{{ metaobject.address.value }}",
         "contact_email": "i{{ metaobject.email.value }}",
