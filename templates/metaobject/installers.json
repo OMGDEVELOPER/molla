@@ -48,7 +48,7 @@
         "section_bg": "",
         "section_bg_op": 1,
         "image": "{{ metaobject.featured_image.value }}",
-        "css": ""
+        "css": ".title,.content-text{\ncolor:#FFF !important;\n}"
       }
     }
   },
