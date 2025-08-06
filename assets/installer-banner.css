@@ -36,3 +36,4 @@
     font-weight: 500;
     line-height: 28px;
 }
+.installer-banner a.btn.btn-outline-darker { display:none; }
