@@ -40,7 +40,7 @@
         "off_mobile": false,
         "off_desktop": false,
         "title": "Banner with text 1",
-        "width_section": "container",
+        "width_section": "w-100",
         "width_content": false,
         "section_margin_top": "",
         "section_margin_bottom": "",
