@@ -27,7 +27,11 @@
         <div class="sepcialization">
             <h2>Specialization</h2>
             <ul>
-                <li>{{  section.settings.specialization_title }}</li>
+                {%- assign sepcializations = section.settings.specialization_title | replace: ' and ', ', ' -%}
+                {%- assign items = sepcializations | split: ', ' -%}
+                {%- for item in items -%}
+                    <li>{{  item }}</li>
+                {%- endfor -%}
             </ul>
         </div>
     </div>
