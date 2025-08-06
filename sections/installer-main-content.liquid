@@ -22,36 +22,25 @@
 <section class="about-section container">
   <div class="about-grid">
     <div class="main-content">
-      <h2>{{ section.settings.about_title }}</h2>
-      <p>{{ section.settings.about_text }}</p>
-
-      <h3>{{ section.settings.why_title }}</h3>
-      <p>{{ section.settings.why_text }}</p>
-
-      <h3>{{ section.settings.specialization_title }}</h3>
-      <ul>
-        {% for block in section.blocks %}
-          {% if block.type == 'specialization' %}
-            <li>{{ block.settings.text }}</li>
-          {% endif %}
-        {% endfor %}
-      </ul>
-
-      <h3>{{ section.settings.core_services_title }}</h3>
-      <ul>
-        {% for block in section.blocks %}
-          {% if block.type == 'core_service' %}
-            <li>{{ block.settings.text }}</li>
-          {% endif %}
-        {% endfor %}
-      </ul>
+      
     </div>
 
     <div class="sidebar">
       <h3>{{ section.settings.contact_title }}</h3>
-      <p><strong>Address:</strong><br>{{ section.settings.contact_address }}</p>
-      <p><strong>Email:</strong><br><a href="mailto:{{ section.settings.contact_email }}">{{ section.settings.contact_email }}</a></p>
-      <p><strong>Phone:</strong><br><a href="tel:{{ section.settings.contact_phone }}">{{ section.settings.contact_phone }}</a></p>
+ <ul>
+                <li>
+                     <img src="https://cdn.shopify.com/s/files/1/0936/3328/2419/files/location_on.png?v=1754363429">
+                     <span>{{ item.address }}</span>
+                </li>
+                <li>
+                     <img src="https://cdn.shopify.com/s/files/1/0936/3328/2419/files/mail.png?v=1754363429">
+                     <span><a href="mailto:{{ item.email }}">{{ item.email }}</a></span>
+                </li>
+                <li>
+                     <img src="https://cdn.shopify.com/s/files/1/0936/3328/2419/files/call.png?v=1754363436">
+                     <span><a href="tel:{{ item.phone }}">{{ item.phone }}</a></span>
+                </li>
+            </ul>>
       <a href="{{ section.settings.button_link }}" class="quote-btn">{{ section.settings.button_text }}</a>
     </div>
   </div>
