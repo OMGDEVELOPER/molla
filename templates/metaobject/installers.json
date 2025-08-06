@@ -44,7 +44,7 @@
         "width_content": false,
         "section_margin_top": "",
         "section_margin_bottom": "",
-        "section_padding": "",
+        "section_padding": "2rem 4rem 2rem 4rem",
         "section_bg": "",
         "section_bg_op": 1,
         "image": "{{ metaobject.featured_image.value }}",
