@@ -69,8 +69,8 @@
             <h3 class="title" sty>{{block.settings.title_section}}</h3>
           {%- endif -%}
           {%- if block.settings.reverse == false and block.settings.stitle_section != blank -%}
-            {%- assign titles = block.settings.stitle_section -%}
-            {{ block.settings.stitle_section }}
+            {%- assign titles = block.settings.stitle_section.value -%}
+            {{ titles }}
             {%- for title in titles -%}
             {{ title }}{%- unless forloop.last -%}, {% endunless %}
             {%- endfor -%}
