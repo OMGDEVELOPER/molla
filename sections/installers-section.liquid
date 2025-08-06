@@ -129,7 +129,11 @@
     {% for item in section.settings.installers_list %}
     <div class="item">
         <div class="title">{{ item.title }}</div>
-        <div class="tags">{{ item.tags }}</div>
+        <div class="tags">
+          {% for tag in item.tags %}
+            <span>{{ tag }}</span>
+          {% endfor %}
+        </div>
         <div class="details">
             <ul>
                 <li>
