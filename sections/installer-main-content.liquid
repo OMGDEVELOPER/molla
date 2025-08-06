@@ -1,0 +1,150 @@
+<!-- sections/about-section.liquid -->
+<section class="about-section container">
+  <div class="about-grid">
+    <div class="main-content">
+      <h2>{{ section.settings.about_title }}</h2>
+      <p>{{ section.settings.about_text }}</p>
+
+      <h3>{{ section.settings.why_title }}</h3>
+      <p>{{ section.settings.why_text }}</p>
+
+      <h3>{{ section.settings.specialization_title }}</h3>
+      <ul>
+        {% for block in section.blocks %}
+          {% if block.type == 'specialization' %}
+            <li>{{ block.settings.text }}</li>
+          {% endif %}
+        {% endfor %}
+      </ul>
+
+      <h3>{{ section.settings.core_services_title }}</h3>
+      <ul>
+        {% for block in section.blocks %}
+          {% if block.type == 'core_service' %}
+            <li>{{ block.settings.text }}</li>
+          {% endif %}
+        {% endfor %}
+      </ul>
+    </div>
+
+    <div class="sidebar">
+      <h3>{{ section.settings.contact_title }}</h3>
+      <p><strong>Address:</strong><br>{{ section.settings.contact_address }}</p>
+      <p><strong>Email:</strong><br><a href="mailto:{{ section.settings.contact_email }}">{{ section.settings.contact_email }}</a></p>
+      <p><strong>Phone:</strong><br><a href="tel:{{ section.settings.contact_phone }}">{{ section.settings.contact_phone }}</a></p>
+      <a href="{{ section.settings.button_link }}" class="quote-btn">{{ section.settings.button_text }}</a>
+    </div>
+  </div>
+</section>
+
+{% schema %}
+{
+  "name": "About Section",
+  "tag": "section",
+  "class": "about-section-wrapper",
+  "settings": [
+    {
+      "type": "text",
+      "id": "about_title",
+      "label": "About Title",
+      "default": "About Us"
+    },
+    {
+      "type": "textarea",
+      "id": "about_text",
+      "label": "About Description",
+      "default": "Elite Roof Systems is a trusted installer specializing in high-quality roofing and walling solutions..."
+    },
+    {
+      "type": "text",
+      "id": "why_title",
+      "label": "Why Choose Us Title",
+      "default": "Why Choose Us"
+    },
+    {
+      "type": "textarea",
+      "id": "why_text",
+      "label": "Why Choose Us Description",
+      "default": "Elite Roof Systems combines technical expertise with a customer-first approach..."
+    },
+    {
+      "type": "text",
+      "id": "specialization_title",
+      "label": "Specialization Title",
+      "default": "Specialization"
+    },
+    {
+      "type": "text",
+      "id": "core_services_title",
+      "label": "Core Services Title",
+      "default": "Core Services"
+    },
+    {
+      "type": "text",
+      "id": "contact_title",
+      "label": "Contact Us Title",
+      "default": "Contact Us"
+    },
+    {
+      "type": "textarea",
+      "id": "contact_address",
+      "label": "Contact Address",
+      "default": "60–68 Hampstead Road, Auburn, NSW 2144"
+    },
+    {
+      "type": "text",
+      "id": "contact_email",
+      "label": "Contact Email",
+      "default": "info@bighandsbuildingsupplies.com.au"
+    },
+    {
+      "type": "text",
+      "id": "contact_phone",
+      "label": "Contact Phone",
+      "default": "1300 242 799"
+    },
+    {
+      "type": "url",
+      "id": "button_link",
+      "label": "Button Link",
+    },
+    {
+      "type": "text",
+      "id": "button_text",
+      "label": "Button Text",
+      "default": "Request a Quote"
+    }
+  ],
+  "blocks": [
+    {
+      "type": "specialization",
+      "name": "Specialization Item",
+      "settings": [
+        {
+          "type": "text",
+          "id": "text",
+          "label": "Text"
+        }
+      ]
+    },
+    {
+      "type": "core_service",
+      "name": "Core Service Item",
+      "settings": [
+        {
+          "type": "text",
+          "id": "text",
+          "label": "Text"
+        }
+      ]
+    }
+  ],
+  "max_blocks": 20,
+  "presets": [
+    {
+      "name": "About Section",
+      "category": "Custom"
+    }
+  ]
+}
+{% endschema %}
