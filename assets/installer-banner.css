@@ -19,3 +19,7 @@
     font-weight: 800;
     line-height: 72px;
 }
+.installer-banner .tag-button{
+    border-radius: 2px;
+    background: #EDF1F4;
+}
