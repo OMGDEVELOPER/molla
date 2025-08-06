@@ -67,7 +67,13 @@
             <h3 class="title" sty>{{block.settings.title_section}}</h3>
           {%- endif -%}
           {%- if block.settings.reverse == false and block.settings.stitle_section != blank -%}
-            <div class="sub-title">{{block.settings.stitle_section}}</div>
+            <div class="sub-title">
+                {%- assign raw_text = block.settings.stitle_section | replace: ' and ', ', ' -%}
+    {%- assign items = raw_text | split: ', ' -%}
+    {%- for item in items -%}
+      <button class="tag-button">{{ item }}</button>
+    {%- endfor -%}
+            </div>
           {%- endif -%}
           </div>
           {%- if block.settings.content_text != blank -%}
