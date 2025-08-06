@@ -53,9 +53,9 @@
 {%- unless cart.attributes.theme_mobile == 'true' and section.settings.off_mobile or cart.attributes.theme_mobile == 'false' and section.settings.off_desktop -%}
 {%-render 'sc_css'-%}
 {{ "installer-banner.css" | asset_url | stylesheet_tag }}
-<div data-section-id="{{ section.id }}" id="Banner-{{ section.id }}" data-section-type="banner-section" class="{{width_section_}}{%if section.settings.off_mobile%} d-none d-lg-block{%endif%}{%if section.settings.off_desktop%} d-lg-none{%endif%}">
+<div data-section-id="{{ section.id }}" id="Banner-{{ section.id }}" data-section-type="banner-section" class="installer-banner {{width_section_}}{%if section.settings.off_mobile%} d-none d-lg-block{%endif%}{%if section.settings.off_desktop%} d-lg-none{%endif%}">
   <div class="content_{{section.id}}{%if section.settings.image%} bg-image lazyload{%endif%}"{%if section.settings.image%} data-bgset="{{section.settings.image | img_url: 'master'}}" data-sizes="auto" data-parent-fit="contain"{%endif%} data-respon="{'el':'.content_{{section.id}}','mt':'{{section.settings.section_margin_top}}','mb':'{{section.settings.section_margin_bottom}}','p':'{{section.settings.section_padding}}'}">      
-    <div class="section-width {{width_content_}} container installer-banner">
+    <div class="section-width {{width_content_}} container ">
       {% assign block = section.blocks[0] %}
       {% if section.blocks.size > 0 %}
       <div class="row align-items-center">
