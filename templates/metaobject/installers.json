@@ -63,8 +63,8 @@
         "core_services_title": "Core Services",
         "contact_title": "Contact Us",
         "contact_address": "60–68 Hampstead Road, Auburn, NSW 2144",
-        "contact_email": "info@bighandsbuildingsupplies.com.au",
-        "contact_phone": "1300 242 799",
+        "contact_email": "i{{ metaobject.email.value }}",
+        "contact_phone": "{{ metaobject.phone.value }}",
         "button_link": "",
         "button_text": "Request a Quote"
       }
