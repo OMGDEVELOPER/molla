@@ -50,9 +50,28 @@
         "image": "{{ metaobject.featured_image.value }}",
         "css": ".title,.content-text{\ncolor:#FFF !important;\n}"
       }
+    },
+    "installer_main_content_Mj49VM": {
+      "type": "installer-main-content",
+      "name": "About Section",
+      "settings": {
+        "about_title": "About Us",
+        "about_text": "Elite Roof Systems is a trusted installer specializing in high-quality roofing and walling solutions...",
+        "why_title": "Why Choose Us",
+        "why_text": "Elite Roof Systems combines technical expertise with a customer-first approach...",
+        "specialization_title": "Specialization",
+        "core_services_title": "Core Services",
+        "contact_title": "Contact Us",
+        "contact_address": "60–68 Hampstead Road, Auburn, NSW 2144",
+        "contact_email": "info@bighandsbuildingsupplies.com.au",
+        "contact_phone": "1300 242 799",
+        "button_link": "",
+        "button_text": "Request a Quote"
+      }
     }
   },
   "order": [
-    "installer_banner_z3FTGa"
+    "installer_banner_z3FTGa",
+    "installer_main_content_Mj49VM"
   ]
 }

@@ -1,4 +1,20 @@
-<!-- sections/about-section.liquid -->
+{%  style %}
+  .about-grid {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  gap: 40px;
+}
+
+.about-section .quote-btn {
+  display: inline-block;
+  padding: 10px 15px;
+  background-color: #007cba;
+  color: white;
+  text-decoration: none;
+  border-radius: 4px;
+}
+
+{% endstyle %}
 <section class="about-section container">
   <div class="about-grid">
     <div class="main-content">
