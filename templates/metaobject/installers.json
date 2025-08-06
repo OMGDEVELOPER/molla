@@ -25,7 +25,7 @@
             "color_title": "#222222",
             "color_sub_title": "#222222",
             "color_desc": "#666666",
-            "name_btn": "DISCOVER NOW",
+            "name_btn": "",
             "style_btn": "btn-outline-darker",
             "style_btn_rounded": "",
             "btn_shadow": false
