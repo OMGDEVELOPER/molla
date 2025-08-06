@@ -130,10 +130,8 @@
     <div class="item">
         <div class="title">{{ item.title }}</div>
         <div class="tags">
-      {% for tag in item.tags.value %}
+       {% for tag in item.tags.value %}
         <span class="tag">{{ tag }}</span>
-      {% endfor %} {% for tag in item.tags %}
-        <span class="tag">{{ tag.title }}</span>
       {% endfor %}
         </div>
         <div class="details">
