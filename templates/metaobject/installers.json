@@ -9,10 +9,10 @@
  */
 {
   "sections": {
-    "md_banner_with_text_1_mg6NpB": {
-      "type": "md_banner_with_text_1",
+    "installer_banner_z3FTGa": {
+      "type": "installer-banner",
       "blocks": {
-        "1_AcDNfe": {
+        "1_hWiNAA": {
           "type": "1",
           "settings": {
             "banner_align": "",
@@ -33,9 +33,9 @@
         }
       },
       "block_order": [
-        "1_AcDNfe"
+        "1_hWiNAA"
       ],
-      "name": "Banner with text 1",
+      "name": "Installer Banner",
       "settings": {
         "off_mobile": false,
         "off_desktop": false,
@@ -52,6 +52,6 @@
     }
   },
   "order": [
-    "md_banner_with_text_1_mg6NpB"
+    "installer_banner_z3FTGa"
   ]
 }
