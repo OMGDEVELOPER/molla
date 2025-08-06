@@ -21,7 +21,15 @@
 <section class="about-section container">
   <div class="about-grid">
     <div class="main-content">
-      {{ section.settings.main_content }}
+        <div class="content">
+            {{ section.settings.main_content }}
+        </div>
+        <div class="sepcialization">
+            <h2>Specialization</h2>
+            <ul>
+                <li>{{  section.settings.specialization_title }}</li>
+            </ul>
+        </div>
     </div>
     <div class="sidebar">
       <h3>{{ section.settings.contact_title }}</h3>
