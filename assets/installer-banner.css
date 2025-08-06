@@ -1,4 +1,13 @@
 .back{
     display:flex;
     align-items:center;
+    gap: 10px;
+}
+.back span{
+    color: #FFF;
+    font-family: Karla;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 32px; /* 177.778% */
 }
