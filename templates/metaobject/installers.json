@@ -55,7 +55,7 @@
       "type": "installer-main-content",
       "name": "About Section",
       "settings": {
-        "main_content": "{{ metaobject.content | metafield_tag }}",
+        "main_content": "<p>{{ metaobject.content | metafield_tag }}</p>",
         "specialization_title": "{{ metaobject.specialization | metafield_text }}",
         "core_services_title": "",
         "contact_title": "Contact Us",
@@ -63,7 +63,8 @@
         "contact_email": "i{{ metaobject.email.value }}",
         "contact_phone": "{{ metaobject.phone.value }}",
         "button_link": "",
-        "button_text": "Request a Quote"
+        "button_text": "Request a Quote",
+        "google_map": "{{ metaobject.google_map.value }}"
       }
     }
   },
