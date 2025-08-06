@@ -151,10 +151,11 @@
             </ul>
         </div>
         <div class="specialization">
-            <div class="title">specialization</div>
+            <div class="title">Specialization</div>
             <ul>
-                <li>Wall Cladding</li>
-                <li>Concrete</li>
+                {% for specialization in item.specialization.value %}
+                    <li class="tag">{{ specialization }}</li>
+                {% endfor %}
             </ul>
         </div>
         <div class="cta">
