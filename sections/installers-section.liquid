@@ -131,7 +131,7 @@
         <div class="title">{{ item.title }}</div>
         <div class="tags">
             {% for tag in item.tags.value %}
-                <span class="tag">{{ tag }}</span>
+                <span class="tag">{{ tag }}</span>{% unless forloop.last %}, {% endunless %}
             {% endfor %}
         </div>
         <div class="details">
