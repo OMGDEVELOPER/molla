@@ -49,7 +49,11 @@
     endif
   endif
 -%}
-
+{% style %}
+  .{{ section.id }} .title{
+    color:#FFF;
+  }
+{% endstyle %}
 {%- unless cart.attributes.theme_mobile == 'true' and section.settings.off_mobile or cart.attributes.theme_mobile == 'false' and section.settings.off_desktop -%}
 {%-render 'sc_css'-%}
 <div data-section-id="{{ section.id }}" id="Banner-{{ section.id }}" data-section-type="banner-section" class="{{width_section_}}{%if section.settings.off_mobile%} d-none d-lg-block{%endif%}{%if section.settings.off_desktop%} d-lg-none{%endif%}">
