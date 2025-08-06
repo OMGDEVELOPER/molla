@@ -1,46 +1,49 @@
-{%  style %}
-.about-section{
-    padding: 48px 0px;
-}
+{% style %}
+  .about-section{
+      padding: 48px 0px;
+  }
 
-.about-grid {
-    display: grid;
-    grid-template-columns: 2fr 1fr;
-    gap: 40px;
-}
+  .about-grid {
+      display: grid;
+      grid-template-columns: 2fr 1fr;
+      gap: 40px;
+  }
 
-.about-section .quote-btn {
-    display: inline-block;
-    padding: 10px 15px;
-    background-color: #007cba;
-    color: white;
-    text-decoration: none;
-    border-radius: 4px;
-}
-
+  .about-section .quote-btn {
+      display: inline-block;
+      padding: 10px 15px;
+      background-color: #007cba;
+      color: white;
+      text-decoration: none;
+      border-radius: 4px;
+  }
 {% endstyle %}
 <section class="about-section container">
   <div class="about-grid">
     <div class="main-content">
-      {{ section.settings.main_content  }}
+      {{ section.settings.main_content }}
     </div>
-
     <div class="sidebar">
       <h3>{{ section.settings.contact_title }}</h3>
- <ul>
-                <li>
-                     <img src="https://cdn.shopify.com/s/files/1/0936/3328/2419/files/location_on.png?v=1754363429">
-                     <span>{{ section.settings.contact_address }}</span>
-                </li>
-                <li>
-                     <img src="https://cdn.shopify.com/s/files/1/0936/3328/2419/files/mail.png?v=1754363429">
-                     <span><a href="mailto:{{ section.settings.contact_email }}">{{ section.settings.contact_email }}</a></span>
-                </li>
-                <li>
-                     <img src="https://cdn.shopify.com/s/files/1/0936/3328/2419/files/call.png?v=1754363436">
-                     <span><a href="tel:{{ section.settings.contact_phone }}">{{ section.settings.contact_phone }}</a></span>
-                </li>
-            </ul>>
+      <ul>
+        <li>
+          <img src="https://cdn.shopify.com/s/files/1/0936/3328/2419/files/location_on.png?v=1754363429">
+          <span>{{ section.settings.contact_address }}</span>
+        </li>
+        <li>
+          <img src="https://cdn.shopify.com/s/files/1/0936/3328/2419/files/mail.png?v=1754363429">
+          <span
+            ><a href="mailto:{{ section.settings.contact_email }}">{{ section.settings.contact_email }}</a></span
+          >
+        </li>
+        <li>
+          <img src="https://cdn.shopify.com/s/files/1/0936/3328/2419/files/call.png?v=1754363436">
+          <span
+            ><a href="tel:{{ section.settings.contact_phone }}">{{ section.settings.contact_phone }}</a></span
+          >
+        </li>
+      </ul>
+      >
       <a href="{{ section.settings.button_link }}" class="quote-btn">{{ section.settings.button_text }}</a>
     </div>
   </div>
@@ -96,7 +99,7 @@
     {
       "type": "url",
       "id": "button_link",
-      "label": "Button Link",
+      "label": "Button Link"
     },
     {
       "type": "text",
