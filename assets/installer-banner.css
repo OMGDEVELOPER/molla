@@ -36,4 +36,8 @@
     font-weight: 500;
     line-height: 28px;
 }
-/* .installer-banner a.btn.btn-outline-darker { display:none; } */
+.installer-banner a.btn.btn-outline-darker { display:none; }
+.installer-banner .bg-image{
+        background-repeat: no-repeat;
+    background-size: cover;
+}
