@@ -129,7 +129,7 @@
     {% for item in section.settings.installers_list %}
     <div class="item">
         <div class="title">{{ item.title }}</div>
-        <div class="tags">{{ item.description }}</div>
+        <div class="tags">{{ item.tags.first }}</div>
         <div class="details">
             <ul>
                 <li>
