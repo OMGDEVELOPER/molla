@@ -28,3 +28,12 @@
     display: flex;
     gap: 16px;
 }
+.installer-banner .content-text p{
+    color: #FFF;
+    font-family: Karla;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+
+}
