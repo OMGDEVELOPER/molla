@@ -61,7 +61,9 @@
         <div class="col-12 col-lg-{{block.settings.banner_align | default: '6'}} {{block.settings.text_align}} py-lg-5 mb-3 mb-lg-0">
           <div class="section-title w-100">
           {%- if block.settings.reverse and block.settings.stitle_section != blank -%}
-            <div class="sub-title">{{block.settings.stitle_section}}</div>
+            {%- assign titles = block.settings.stitle_section.value -%}
+                {%- for title in titles -%}{{ title }}{%- unless forloop.last -%}, {% endunless %}
+            {%- endfor -%}
           {%- endif -%}
           {%- if block.settings.title_section != blank -%}
             <h3 class="title" sty>{{block.settings.title_section}}</h3>
