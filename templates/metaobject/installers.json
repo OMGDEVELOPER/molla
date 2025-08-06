@@ -9,17 +9,49 @@
  */
 {
   "sections": {
-    "installers_section_qPbp7g": {
-      "type": "installers-section",
-      "name": "Installers",
+    "md_banner_with_text_1_mg6NpB": {
+      "type": "md_banner_with_text_1",
+      "blocks": {
+        "1_AcDNfe": {
+          "type": "1",
+          "settings": {
+            "banner_align": "",
+            "image_link": "",
+            "text_align": "",
+            "title_section": "Title",
+            "stitle_section": "Subtitle",
+            "reverse": false,
+            "content_text": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
+            "color_title": "#222222",
+            "color_sub_title": "#222222",
+            "color_desc": "#666666",
+            "name_btn": "DISCOVER NOW",
+            "style_btn": "btn-outline-darker",
+            "style_btn_rounded": "",
+            "btn_shadow": false
+          }
+        }
+      },
+      "block_order": [
+        "1_AcDNfe"
+      ],
+      "name": "Banner with text 1",
       "settings": {
-        "installers_list": [
-          "elite-roof-systems"
-        ]
+        "off_mobile": false,
+        "off_desktop": false,
+        "title": "Banner with text 1",
+        "width_section": "container",
+        "width_content": false,
+        "section_margin_top": "",
+        "section_margin_bottom": "",
+        "section_padding": "",
+        "section_bg": "",
+        "section_bg_op": 1,
+        "css": ""
       }
     }
   },
   "order": [
-    "installers_section_qPbp7g"
+    "md_banner_with_text_1_mg6NpB"
   ]
 }
