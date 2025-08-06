@@ -62,7 +62,7 @@
         "specialization_title": "Specialization",
         "core_services_title": "Core Services",
         "contact_title": "Contact Us",
-        "contact_address": "60–68 Hampstead Road, Auburn, NSW 2144",
+        "contact_address": "{{ metaobject.address.value }}",
         "contact_email": "i{{ metaobject.email.value }}",
         "contact_phone": "{{ metaobject.phone.value }}",
         "button_link": "",
