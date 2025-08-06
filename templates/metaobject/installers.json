@@ -16,7 +16,6 @@
           "type": "1",
           "settings": {
             "banner_align": "",
-            "image_banner": "{{ metaobject.featured_image.value }}",
             "image_link": "",
             "text_align": "",
             "title_section": "Title",
@@ -48,6 +47,7 @@
         "section_padding": "",
         "section_bg": "",
         "section_bg_op": 1,
+        "image": "{{ metaobject.featured_image.value }}",
         "css": ""
       }
     }
