@@ -53,6 +53,18 @@
     },
     "installer_main_content_Mj49VM": {
       "type": "installer-main-content",
+      "blocks": {
+        "gallery_qFtbFA": {
+          "type": "gallery",
+          "source": "{{ metaobject }}",
+          "settings": {
+            "gallery_item": "{{ metaobject.featured_image.value }}"
+          }
+        }
+      },
+      "block_order": [
+        "gallery_qFtbFA"
+      ],
       "name": "About Section",
       "settings": {
         "main_content": "<p>{{ metaobject.content | metafield_tag }}</p>",
