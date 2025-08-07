@@ -2,13 +2,10 @@
   <h1>Our Works</h1>
 <h2>Metafields Dump</h2>
 <ul>
-  {% for metafield in metaobject.metafields %}
-    <li>
-      Namespace: <strong>{{ metafield.namespace }}</strong><br>
-      Key: <strong>{{ metafield.key }}</strong><br>
-      Value: <strong>{{ metafield.value }}</strong>
-    </li>
-  {% endfor %}
+    <p><strong>Testing Metaobject:</strong></p>
+<p>Title: {{ metaobject.title }}</p>
+<p>Handle: {{ metaobject.handle }}</p>
+<p>ID: {{ metaobject.id }}</p>
+
 </ul>
-}
 </div>
