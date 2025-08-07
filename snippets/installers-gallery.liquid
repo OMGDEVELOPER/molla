@@ -13,3 +13,7 @@
       <img class="item" src="{{ image | image_url: width: 800 }}" alt="{{ image.alt }}" />
   {% endfor %}
 </div>
+<script>
+    let items = document.querySelectorAll('.grid-item-3 .item');
+    console.log(items)
+</script>
