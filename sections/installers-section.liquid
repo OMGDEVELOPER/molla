@@ -135,7 +135,10 @@
     .installer-filters form{
         display:grid;
         grid-template-columns:30% 30% 30% auto;
-        gap:15px;
+        /* gap:15px; */
+    }
+    .installer-filters .select-group{
+        padding-right:15px;
     }
     .installer-filters .select-group button{
         border-radius: 4px;
@@ -150,6 +153,7 @@
     }
     .installer-filters .select-group ul li{
         list-style:none;
+        padding:8px 0px;
     }
 {% endstyle %}
 <section class="installer-filters">
