@@ -1,6 +1,4 @@
 <div class="grid grid-item-3">
   <h1>Our Works</h1>
-  {% for gallery_item in installers.gallery.value %}
-    <img src="{{ gallery_item.fields.image | image_url: '800x' }}" alt="">
-  {% endfor %}
+    {{ metaobjects | json }}
 </div>
