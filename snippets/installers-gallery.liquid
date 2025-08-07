@@ -1,15 +1,48 @@
 {% style %}
-  .our-works .grid-item-3{
-    display:grid;
-    grid-template-columns:repeat(3,1fr);
-    gap:15px;
+  .our-works .grid-masonry {
+    margin: 0 auto;
+  }
+
+  .our-works .item {
+    margin-bottom: 15px;
+    width: 100%;
+    display: block;
+  }
+
+  .our-works .grid-sizer {
+    width: 33.333%;
+  }
+
+  .our-works .item img {
+    width: 100%;
+    display: block;
   }
 {% endstyle %}
-<h1>Our Works</h1>
-<div class="grid grid-item-3">
-  {% assign galleries = metaobject.gallery.value %}
-  {% for media in galleries %}
-    {% assign image = media | image %}
-      <img class="item" src="{{ image | image_url: width: 800 }}" alt="{{ image.alt }}" />
-  {% endfor %}
+
+<div class="our-works">
+  <h1>Our Works</h1>
+
+  <div class="grid-masonry" data-masonry='{"itemSelector": ".item", "columnWidth": ".grid-sizer", "percentPosition": true}'>
+    <div class="grid-sizer"></div>
+
+    {% assign galleries = metaobject.gallery.value %}
+    {% for media in galleries %}
+      {% assign image = media | image %}
+      <div class="item">
+        <img src="{{ image | image_url: width: 800 }}" alt="{{ image.alt | escape }}" />
+      </div>
+    {% endfor %}
+  </div>
 </div>
+<script>
+  document.addEventListener('DOMContentLoaded', function () {
+    var grid = document.querySelector('.grid-masonry');
+    if (grid) {
+      new Masonry(grid, {
+        itemSelector: '.item',
+        columnWidth: '.grid-sizer',
+        percentPosition: true
+      });
+    }
+  });
+</script>
