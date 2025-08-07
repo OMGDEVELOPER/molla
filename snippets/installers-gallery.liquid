@@ -1,74 +1,93 @@
 {% style %}
-  .our-works .grid-item-3 {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 15px;
+  .our-works {
+    position: relative;
   }
 
-  .our-works .item {
-    width: calc(100% / 3 - 10px); /* 3 columns with some spacing */
-    box-sizing: border-box;
+  .masonry-grid {
+    position: relative;
+    width: 100%;
+  }
+
+  .masonry-item {
+    position: absolute;
+    transition: all 0.3s ease;
+  }
+
+  .masonry-img {
     display: block;
+    height: auto;
+    width: auto; /* Keep original image size */
+    max-width: 100%; /* Prevent overflow */
   }
 {% endstyle %}
 
 <div class="our-works">
   <h1>Our Works</h1>
-  <div class="grid grid-item-3">
+  <div class="masonry-grid">
     {% assign galleries = metaobject.gallery.value %}
     {% for media in galleries %}
       {% assign image = media | image %}
-      <img class="item" src="{{ image | image_url: width: 800 }}" alt="{{ image.alt | escape }}" />
+      <div class="masonry-item">
+        <img class="masonry-img" src="{{ image | image_url: width: 800 }}" alt="{{ image.alt | escape }}" />
+      </div>
     {% endfor %}
   </div>
 </div>
-
 <script>
   document.addEventListener("DOMContentLoaded", function () {
-    const grid = document.querySelector(".grid-item-3");
-    const items = Array.from(grid.querySelectorAll(".item"));
-
+    const grid = document.querySelector(".masonry-grid");
+    const items = Array.from(grid.querySelectorAll(".masonry-item"));
     const columnCount = 3;
-    const columns = Array.from({ length: columnCount }, () => []);
+    const gutter = 15;
+
+    let columnHeights = Array(columnCount).fill(0);
+    let columnWidth = grid.clientWidth / columnCount;
+
+    function layoutItems() {
+      columnHeights = Array(columnCount).fill(0);
+
+      items.forEach((item) => {
+        const img = item.querySelector('img');
+        const naturalWidth = img.naturalWidth;
+        const naturalHeight = img.naturalHeight;
+        const scale = Math.min(columnWidth / naturalWidth, 1); // only shrink if needed
+
+        const width = naturalWidth * scale;
+        const height = naturalHeight * scale;
+
+        img.style.width = `${width}px`;
+        img.style.height = `${height}px`;
+
+        // Find shortest column
+        let col = columnHeights.indexOf(Math.min(...columnHeights));
+        const x = col * columnWidth;
+        const y = columnHeights[col];
+
+        item.style.transform = `translate(${x}px, ${y}px)`;
+
+        columnHeights[col] += height + gutter;
+      });
+
+      // Set grid height
+      grid.style.height = `${Math.max(...columnHeights)}px`;
+    }
 
     // Wait for all images to load
-    const images = items;
     let loaded = 0;
-
-    images.forEach((img) => {
+    const total = items.length;
+    items.forEach((item) => {
+      const img = item.querySelector('img');
       if (img.complete) {
         loaded++;
-        if (loaded === images.length) layoutImages();
+        if (loaded === total) layoutItems();
       } else {
         img.onload = () => {
           loaded++;
-          if (loaded === images.length) layoutImages();
+          if (loaded === total) layoutItems();
         };
       }
     });
 
-    function layoutImages() {
-      // Assign items to columns
-      items.forEach((item, index) => {
-        const colIndex = index % columnCount;
-        columns[colIndex].push(item);
-        item.style.marginTop = ""; // reset
-      });
-
-      // Adjust margins based on height differences
-      for (let col of columns) {
-        for (let i = 1; i < col.length; i++) {
-          const prev = col[i - 1];
-          const curr = col[i];
-
-          const prevBottom = prev.offsetTop + prev.offsetHeight;
-          const gap = curr.offsetTop - prevBottom;
-
-          if (gap > 0) {
-            curr.style.marginTop = `-${gap}px`;
-          }
-        }
-      }
-    }
+    window.addEventListener('resize', layoutItems);
   });
 </script>
