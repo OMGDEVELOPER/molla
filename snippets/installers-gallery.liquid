@@ -1,3 +1,10 @@
+{% style %}
+  .our-works .grid-item-3{
+    display:grid;
+    grid-template-columns:repeat(3,1fr);
+    gap:15px;
+  }
+{% endstyle %}
 <h1>Our Works</h1>
 <div class="grid grid-item-3">
   {% assign galleries = metaobject.gallery.value %}
