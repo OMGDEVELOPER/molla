@@ -103,11 +103,48 @@
           "coolbuild-solutions"
         ]
       }
+    },
+    "md_call_to_action_gBtL4F": {
+      "type": "md_call_to_action",
+      "blocks": {
+        "custom_design_YUUtH7": {
+          "type": "custom-design",
+          "settings": {
+            "title": "Get the latest news and updates",
+            "description": "",
+            "style_btn": "btn-primary"
+          }
+        }
+      },
+      "block_order": [
+        "custom_design_YUUtH7"
+      ],
+      "settings": {
+        "title": "Call to Action",
+        "off_mobile": false,
+        "off_desktop": false,
+        "width_section": "w-100",
+        "width_content": true,
+        "section_margin_top": "",
+        "section_margin_bottom": "",
+        "section_padding": "",
+        "section_bg": "#050505",
+        "section_bg_op": 1,
+        "use_round": false,
+        "color_title": "#ffffff",
+        "color_desc": "#fdda05",
+        "color_text_input": "#333333",
+        "color_border_input": "#ffffff",
+        "color_placeholder": "#999999",
+        "color_bg_input": "#ffffff",
+        "preview": false
+      }
     }
   },
   "order": [
     "content",
     "kt_slideshow_zLCFNY",
-    "installers_section_UNznXR"
+    "installers_section_UNznXR",
+    "md_call_to_action_gBtL4F"
   ]
 }
