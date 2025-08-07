@@ -4,12 +4,12 @@
   "tag": "section",
   "class": "installers-section",
   "settings": [
-        {
-        "type": "metaobject_list",
-        "metaobject_type": "installers",
-        "id": "installers_list",
-        "label": "Select Installers"
-        }
+    {
+      "type": "metaobject_list",
+      "metaobject_type": "installers",
+      "id": "installers_list",
+      "label": "Select Installers"
+    }
   ],
   "presets": [
     {
@@ -33,7 +33,7 @@
     }
     .installers-section .grid ul li{
         list-style:none;
-        
+
         display: flex;
         align-items: center;
         gap: 10px;
@@ -59,7 +59,7 @@
         font-size: 24px;
         font-style: normal;
         font-weight: 600;
-        line-height: 24px;  
+        line-height: 24px;
     }
     .installers-section .grid .item .tags{
         color: #3C4043;
@@ -124,8 +124,8 @@
     .installers-section .grid .item .details a:hover{
         cursor:pointer;
     }
-    {% endstyle %}
-    <section class="installer-filters">
+{% endstyle %}
+<section class="installer-filters container">
   <form>
     <div class="select-group">
       <select name="state">
@@ -135,42 +135,47 @@
   </form>
 </section>
 <div class="grid grid-cols-3 container">
-    {% for item in section.settings.installers_list %}
+  {% for item in section.settings.installers_list %}
     <div class="item">
-        <div class="title">{{ item.title }}</div>
-        <div class="tags">
-            {% for tag in item.tags.value %}
-                <span class="tag">{{ tag }}</span>{% unless forloop.last %}, {% endunless %}
-            {% endfor %}
-        </div>
-        <div class="details">
-            <ul>
-                <li>
-                     <img src="https://cdn.shopify.com/s/files/1/0936/3328/2419/files/location_on.png?v=1754363429">
-                     <span>{{ item.address }}</span>
-                </li>
-                <li>
-                     <img src="https://cdn.shopify.com/s/files/1/0936/3328/2419/files/mail.png?v=1754363429">
-                     <span><a href="mailto:{{ item.email }}">{{ item.email }}</a></span>
-                </li>
-                <li>
-                     <img src="https://cdn.shopify.com/s/files/1/0936/3328/2419/files/call.png?v=1754363436">
-                     <span><a href="tel:{{ item.phone }}">{{ item.phone }}</a></span>
-                </li>
-            </ul>
-        </div>
-        <div class="specialization">
-            <div class="title">Specialization</div>
-            <ul>
-                {% for specialization in item.specialization.value %}
-                    <li class="">{{ specialization }}</li>
-                {% endfor %}
-            </ul>
-        </div>
-        <div class="cta">
-            <a href="{{ item.request_quote_link.value }}"><button class="request-a-quote">Request a Quote</button></a>
-            <a href="/pages/installers/{{ item.title | handleize  }}"><button class="view-details">View Details</button></a>
-        </div>
+      <div class="title">{{ item.title }}</div>
+      <div class="tags">
+        {% for tag in item.tags.value %}
+          <span class="tag">{{ tag }}</span>
+          {%- unless forloop.last %}, {% endunless %}
+        {% endfor %}
+      </div>
+      <div class="details">
+        <ul>
+          <li>
+            <img src="https://cdn.shopify.com/s/files/1/0936/3328/2419/files/location_on.png?v=1754363429">
+            <span>{{ item.address }}</span>
+          </li>
+          <li>
+            <img src="https://cdn.shopify.com/s/files/1/0936/3328/2419/files/mail.png?v=1754363429">
+            <span
+              ><a href="mailto:{{ item.email }}">{{ item.email }}</a></span
+            >
+          </li>
+          <li>
+            <img src="https://cdn.shopify.com/s/files/1/0936/3328/2419/files/call.png?v=1754363436">
+            <span
+              ><a href="tel:{{ item.phone }}">{{ item.phone }}</a></span
+            >
+          </li>
+        </ul>
+      </div>
+      <div class="specialization">
+        <div class="title">Specialization</div>
+        <ul>
+          {% for specialization in item.specialization.value %}
+            <li class="">{{ specialization }}</li>
+          {% endfor %}
+        </ul>
+      </div>
+      <div class="cta">
+        <a href="{{ item.request_quote_link.value }}"><button class="request-a-quote">Request a Quote</button></a>
+        <a href="/pages/installers/{{ item.title | handleize  }}"><button class="view-details">View Details</button></a>
+      </div>
     </div>
-    {% endfor %}
+  {% endfor %}
 </div>
