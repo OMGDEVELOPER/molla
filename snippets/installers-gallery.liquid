@@ -1,6 +1,7 @@
 {% style %}
   .our-works {
     position: relative;
+    padding: 1rem;
   }
 
   .masonry-grid {
@@ -16,10 +17,10 @@
   .masonry-img {
     display: block;
     height: auto;
-    width: auto; /* Keep original image size */
-    max-width: 100%; /* Prevent overflow */
+    width: auto;
+    max-width: 100%;
+    padding: 5px;
   }
-  .masonry-img{ padding:5px; }
 {% endstyle %}
 
 <div class="our-works">
@@ -34,61 +35,66 @@
     {% endfor %}
   </div>
 </div>
+
 <script>
   document.addEventListener("DOMContentLoaded", function () {
     const grid = document.querySelector(".masonry-grid");
     const items = Array.from(grid.querySelectorAll(".masonry-item"));
-    const columnCount = 3;
     const gutter = 15;
 
-    let columnHeights = Array(columnCount).fill(0);
-    let columnWidth = grid.clientWidth / columnCount;
+    function getColumnCount() {
+      const width = window.innerWidth;
+      if (width < 640) return 1;
+      if (width < 1024) return 2;
+      return 3;
+    }
 
     function layoutItems() {
-      columnHeights = Array(columnCount).fill(0);
+      const columnCount = getColumnCount();
+      let columnHeights = Array(columnCount).fill(0);
+      const columnWidth = grid.clientWidth / columnCount;
 
-      items.forEach((item) => {
-        const img = item.querySelector('img');
+      items.forEach(item => {
+        const img = item.querySelector("img");
         const naturalWidth = img.naturalWidth;
         const naturalHeight = img.naturalHeight;
-        const scale = Math.min(columnWidth / naturalWidth, 1); // only shrink if needed
 
+        const scale = Math.min(columnWidth / naturalWidth, 1); // Shrink only
         const width = naturalWidth * scale;
         const height = naturalHeight * scale;
 
         img.style.width = `${width}px`;
         img.style.height = `${height}px`;
 
-        // Find shortest column
         let col = columnHeights.indexOf(Math.min(...columnHeights));
         const x = col * columnWidth;
         const y = columnHeights[col];
 
         item.style.transform = `translate(${x}px, ${y}px)`;
-
         columnHeights[col] += height + gutter;
       });
 
-      // Set grid height
       grid.style.height = `${Math.max(...columnHeights)}px`;
     }
 
-    // Wait for all images to load
-    let loaded = 0;
-    const total = items.length;
-    items.forEach((item) => {
-      const img = item.querySelector('img');
-      if (img.complete) {
-        loaded++;
-        if (loaded === total) layoutItems();
-      } else {
-        img.onload = () => {
+    function waitForImages(callback) {
+      let loaded = 0;
+      const total = items.length;
+      items.forEach(item => {
+        const img = item.querySelector("img");
+        if (img.complete) {
           loaded++;
-          if (loaded === total) layoutItems();
-        };
-      }
-    });
+          if (loaded === total) callback();
+        } else {
+          img.onload = () => {
+            loaded++;
+            if (loaded === total) callback();
+          };
+        }
+      });
+    }
 
-    window.addEventListener('resize', layoutItems);
+    waitForImages(layoutItems);
+    window.addEventListener("resize", layoutItems);
   });
 </script>
