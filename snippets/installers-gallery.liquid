@@ -1,6 +1,6 @@
 <div class="grid grid-item-3">
     <h1>Our Works</h1>
-    {% for item in metaobject.metafields.custom.gallery.value %}
+    {% for item in metaobjects['installers'].metafields.gallery.value %}
     <img src="{{ item.fields.image | image_url: '800x' }}" alt="">
     {% endfor %}
 </div>
