@@ -14,6 +14,51 @@
   {% endfor %}
 </div>
 <script>
-    let items = document.querySelectorAll('.grid-item-3 .item');
-    console.log(items)
+  document.addEventListener("DOMContentLoaded", function () {
+    const grid = document.querySelector(".grid-item-3");
+    const items = Array.from(grid.querySelectorAll(".grid-item-3 .item"));
+
+    const columnCount = 3;
+    const columns = Array.from({ length: columnCount }, () => []);
+
+    // Wait for all images to load
+    const images = items;
+    let loaded = 0;
+
+    images.forEach((img) => {
+      if (img.complete) {
+        loaded++;
+        if (loaded === images.length) layoutImages();
+      } else {
+        img.onload = () => {
+          loaded++;
+          if (loaded === images.length) layoutImages();
+        };
+      }
+    });
+
+    function layoutImages() {
+      // Assign items to columns
+      items.forEach((item, index) => {
+        const colIndex = index % columnCount;
+        columns[colIndex].push(item);
+        item.style.marginTop = ""; // reset
+      });
+
+      // Adjust margins based on height differences
+      for (let col of columns) {
+        for (let i = 1; i < col.length; i++) {
+          const prev = col[i - 1];
+          const curr = col[i];
+
+          const prevBottom = prev.offsetTop + prev.offsetHeight;
+          const gap = curr.offsetTop - prevBottom;
+
+          if (gap > 0) {
+            curr.style.marginTop = `-${gap}px`;
+          }
+        }
+      }
+    }
+  });
 </script>
