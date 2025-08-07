@@ -1,11 +1,8 @@
+<h1>Our Works</h1>
 <div class="grid grid-item-3">
-  <h1>Our Works</h1>
   {% assign galleries = metaobject.gallery.value %}
-
   {% for media in galleries %}
     {% assign image = media | image %}
-    <div>
       <img class="item" src="{{ image | image_url: width: 800 }}" alt="{{ image.alt }}" />
-    </div>
   {% endfor %}
 </div>
