@@ -1,8 +1,14 @@
 <div class="grid grid-item-3">
   <h1>Our Works</h1>
-   <h1>{{ metaobject.type }} Metaobject</h1>
-<p>Handle: {{ metaobject.handle }}</p>
-<p>ID: {{ metaobject.id }}</p>
-<p>Title: {{ metaobject.title }}</p> {# Only works if the metaobject has a "title" field #}
- {{ metaobject.metafields }}
+<h2>Metafields Dump</h2>
+<ul>
+  {% for metafield in metaobject.metafields %}
+    <li>
+      Namespace: <strong>{{ metafield.namespace }}</strong><br>
+      Key: <strong>{{ metafield.key }}</strong><br>
+      Value: <strong>{{ metafield.value }}</strong>
+    </li>
+  {% endfor %}
+</ul>
+}
 </div>
