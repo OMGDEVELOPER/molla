@@ -10,7 +10,7 @@
   {% assign galleries = metaobject.gallery.value %}
   {% for media in galleries %}
     {% assign image = media | image %}
-      <img class="item" src="{{ image | image_url: width: 800 }}" alt="{{ image.alt }}" />
+    <div class="item"><img class="" src="{{ image | image_url: width: 800 }}" alt="{{ image.alt }}" /></div>
   {% endfor %}
 </div>
 <script>
