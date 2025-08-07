@@ -1,76 +1,65 @@
 
-<style type="scss">
-*{
-  box-sizing:border-box;
+{% style %}
+* {
+  box-sizing: border-box;
 }
 
-// ******************************
-// End of Basic styling
-// ******************************
-
-
-.flexbox{
-  display: -webkit-flex;
+.flexbox {
   display: flex;
-  -webkit-flex-direction: column;
   flex-direction: column;
-  -webkit-flex-wrap: wrap;
-	flex-wrap: wrap;
-	height: 100vw;
-  
-  &:hover{
-    img {
-      opacity:0.28;
-    }
-  }
-
-  // Each flex item
-  .item{
-    position:relative;
-    width: 33.33%;  // 3 column
-    img{
-      width: 100%;
-      display: block;
-      transition:all .8s;
-    }
-    .title{
-      position:absolute;
-      top:48%;
-      left:0;
-      width:100%;
-      padding:0 3%;
-      font-size:30px;
-      text-shadow:0 0 8px rgba(0,0,0,0.42);
-    }
-    &:hover{
-      img{
-        opacity:1;
-      }
-    }
-  }
+  flex-wrap: wrap;
+  height: 100vw;
 }
 
-// Mediaqueries
-@media ( max-width : 860px ){
-  // set to 2 column
-  .flexbox{
-    height:220vw;
-    .item{
-      width:50%;
-    }
+.flexbox:hover img {
+  opacity: 0.28;
+}
+
+.flexbox .item {
+  position: relative;
+  width: 33.33%; /* 3 columns */
+}
+
+.flexbox .item img {
+  width: 100%;
+  display: block;
+  transition: all 0.8s;
+}
+
+.flexbox .item .title {
+  position: absolute;
+  top: 48%;
+  left: 0;
+  width: 100%;
+  padding: 0 3%;
+  font-size: 30px;
+  text-shadow: 0 0 8px rgba(0, 0, 0, 0.42);
+}
+
+.flexbox .item:hover img {
+  opacity: 1;
+}
+
+/* Media queries */
+@media (max-width: 860px) {
+  .flexbox {
+    height: 220vw;
+  }
+  .flexbox .item {
+    width: 50%;
   }
 }
-@media ( max-width : 667px ){
-  // set to 1 column
-  .flexbox{
-    height:auto;
-    .item{
-      width:100%;
-    }
+
+@media (max-width: 667px) {
+  .flexbox {
+    height: auto;
+  }
+  .flexbox .item {
+    width: 100%;
   }
 }
-</style>
-<div class="flexbox">
+
+{% endstyle %}<div class="flexbox">
   <div class="item">
     <img src="https://unsplash.it/600/400?random" />
     <p class="title">1st item</p>
