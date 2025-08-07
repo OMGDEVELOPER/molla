@@ -1,5 +1,5 @@
 {% style %}
-.our-works .grid-item-3 {
+  .our-works .grid-item-3 {
     display: flex;
     flex-wrap: wrap;
     gap: 15px;
@@ -11,14 +11,18 @@
     display: block;
   }
 {% endstyle %}
-<h1>Our Works</h1>
-<div class="grid grid-item-3">
-  {% assign galleries = metaobject.gallery.value %}
-  {% for media in galleries %}
-    {% assign image = media | image %}
-    <div class="item"><img class="" src="{{ image | image_url: width: 800 }}" alt="{{ image.alt }}" /></div>
-  {% endfor %}
+
+<div class="our-works">
+  <h1>Our Works</h1>
+  <div class="grid grid-item-3">
+    {% assign galleries = metaobject.gallery.value %}
+    {% for media in galleries %}
+      {% assign image = media | image %}
+      <img class="item" src="{{ image | image_url: width: 800 }}" alt="{{ image.alt | escape }}" />
+    {% endfor %}
+  </div>
 </div>
+
 <script>
   document.addEventListener("DOMContentLoaded", function () {
     const grid = document.querySelector(".grid-item-3");
