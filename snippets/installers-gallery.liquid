@@ -2,10 +2,15 @@
   <h1>Our Works</h1>
 <h2>Metafields Dump</h2>
 <ul>
-    <p><strong>Testing Metaobject:</strong></p>
+<h2>Debug Output</h2>
 <p>Title: {{ metaobject.title }}</p>
 <p>Handle: {{ metaobject.handle }}</p>
 <p>ID: {{ metaobject.id }}</p>
+
+<pre>
+{{ metaobject.metafields | json }}
+</pre>
+
 
 </ul>
 </div>
