@@ -2,7 +2,7 @@
 {
   "name": "Installers",
   "tag": "section",
-  "class": "installers-section container",
+  "class": "installers-section",
   "settings": [
         {
         "type": "metaobject_list",
@@ -134,7 +134,7 @@
     </div>
   </form>
 </section>
-<div class="grid grid-cols-3">
+<div class="grid grid-cols-3 container">
     {% for item in section.settings.installers_list %}
     <div class="item">
         <div class="title">{{ item.title }}</div>
