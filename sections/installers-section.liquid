@@ -238,3 +238,43 @@
     </div>
   {% endfor %}
 </div>
+<script>
+  document.addEventListener('DOMContentLoaded', function () {
+    const selectGroups = document.querySelectorAll('.select-group');
+
+    selectGroups.forEach(group => {
+      const button = group.querySelector('button');
+      const options = group.querySelector('.state-options');
+
+      // Toggle dropdown on button click
+      button.addEventListener('click', function (e) {
+        e.preventDefault();
+
+        // Close other open dropdowns
+        document.querySelectorAll('.state-options').forEach(opt => {
+          if (opt !== options) opt.style.display = 'none';
+        });
+
+        // Toggle current dropdown
+        options.style.display = options.style.display === 'block' ? 'none' : 'block';
+      });
+
+      // Handle option click
+      options.querySelectorAll('li').forEach(option => {
+        option.addEventListener('click', function () {
+          button.innerHTML = `${this.textContent}<img src="https://cdn.shopify.com/s/files/1/0936/3328/2419/files/keyboard_arrow_down_1.svg?v=1754556117">`;
+          options.style.display = 'none';
+        });
+      });
+    });
+
+    // Close dropdown when clicking outside
+    document.addEventListener('click', function (e) {
+      if (!e.target.closest('.select-group')) {
+        document.querySelectorAll('.state-options').forEach(opt => {
+          opt.style.display = 'none';
+        });
+      }
+    });
+  });
+</script>
