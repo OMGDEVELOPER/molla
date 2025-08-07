@@ -1,6 +1,13 @@
 <div class="grid grid-item-3">
     <h1>Our Works</h1>
-    {% for item in metaobjects['installers'] %}
-    {{ item.fields }}
-    {% endfor %}
+{% assign gallery_images = metaobject.metafields.custom.gallery.value %}
+
+{% if gallery_images != blank %}
+  {% for image in gallery_images %}
+    <img src="{{ image | image_url: '800x' }}" alt="">
+  {% endfor %}
+{% else %}
+  <p>No gallery images found.</p>
+{% endif %}
+
 </div>
