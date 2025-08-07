@@ -125,6 +125,15 @@
         cursor:pointer;
     }
     {% endstyle %}
+    <section class="installer-filters">
+  <form>
+    <div class="select-group">
+      <select name="state">
+        <option value="NSW">NSW</option>
+      </select>
+    </div>
+  </form>
+</section>
 <div class="grid grid-cols-3">
     {% for item in section.settings.installers_list %}
     <div class="item">
