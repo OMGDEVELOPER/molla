@@ -166,18 +166,7 @@
     {%- render 'googleRich' -%}
     {% comment %} {% endcomment %}
     <script src="{{ 'nav-menu.js' | asset_url }}" defer="defer"></script>
-    <script src="https://unpkg.com/masonry-layout@4/dist/masonry.pkgd.min.js"></script>
-<script>
-  document.addEventListener('DOMContentLoaded', function () {
-    var grid = document.querySelector('.grid-masonry');
-    if (grid) {
-      new Masonry(grid, {
-        itemSelector: '.item',
-        columnWidth: '.grid-sizer',
-        percentPosition: true
-      });
-    }
-  });
-</script>
+   
+
   </body>
 </html>
