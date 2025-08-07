@@ -67,10 +67,47 @@
         "our_works": "{{ metaobject.our_works_description | metafield_tag }}",
         "google_map": "{{ metaobject.google_map.value }}"
       }
+    },
+    "md_call_to_action_U7wjQw": {
+      "type": "md_call_to_action",
+      "blocks": {
+        "custom_design_EXXycw": {
+          "type": "custom-design",
+          "settings": {
+            "title": "Get the latest news and updates",
+            "description": "",
+            "style_btn": "btn-primary"
+          }
+        }
+      },
+      "block_order": [
+        "custom_design_EXXycw"
+      ],
+      "settings": {
+        "title": "Call to Action",
+        "off_mobile": false,
+        "off_desktop": false,
+        "width_section": "w-100",
+        "width_content": true,
+        "section_margin_top": "",
+        "section_margin_bottom": "",
+        "section_padding": "",
+        "section_bg": "#050505",
+        "section_bg_op": 1,
+        "use_round": false,
+        "color_title": "#ffffff",
+        "color_desc": "#fdda05",
+        "color_text_input": "#333333",
+        "color_border_input": "#ffffff",
+        "color_placeholder": "#999999",
+        "color_bg_input": "#ffffff",
+        "preview": false
+      }
     }
   },
   "order": [
     "installer_banner_z3FTGa",
-    "installer_main_content_Mj49VM"
+    "installer_main_content_Mj49VM",
+    "md_call_to_action_U7wjQw"
   ]
 }
