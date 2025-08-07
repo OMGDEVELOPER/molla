@@ -1,7 +1,7 @@
 <div class="grid grid-item-3">
     <h1>Our Works</h1>
-{% assign gallery_images = metaobject.metafields.custom.gallery.value %}
-
+{% assign gallery_images = metaobject.metafields.custom.gallery %}
+{{ gallery_images }}
 {% if gallery_images != blank %}
   {% for image in gallery_images %}
     <img src="{{ image | image_url: '800x' }}" alt="">
