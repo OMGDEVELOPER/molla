@@ -1,9 +1,5 @@
 {% style %}
-  .our-works .grid-item-3{
-    display:grid;
-    grid-template-columns:repeat(3,1fr);
-    gap:15px;
-  }
+
 {% endstyle %}
 <h1>Our Works</h1>
 <div class="grid grid-item-3">
@@ -16,7 +12,7 @@
 <script>
   document.addEventListener("DOMContentLoaded", function () {
     const grid = document.querySelector(".grid-item-3");
-    const items = Array.from(grid.querySelectorAll(".grid-item-3 .item"));
+    const items = Array.from(grid.querySelectorAll(".item"));
 
     const columnCount = 3;
     const columns = Array.from({ length: columnCount }, () => []);
