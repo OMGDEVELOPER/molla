@@ -1,4 +1,6 @@
 <div class="grid grid-item-3">
     <h1>Our Works</h1>
-    <img class="item" src="https://cdn.shopify.com/s/files/1/0936/3328/2419/files/3_b70a4513-9426-496c-b072-6471cdfc3946.png?v=1754311530" alt="">
+    {% for gallery_item in metaobject.metafields.custom.gallery.value %}
+    <img src="{{ gallery_item.fields.image | img_url: 'large' }}">
+    {% endfor %}
 </div>
