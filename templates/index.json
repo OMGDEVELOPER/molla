@@ -594,11 +594,11 @@
         "ai_gen_block_7516eab_FyfUgQ": {
           "type": "ai_gen_block_7516eab",
           "settings": {
-            "custom_html": "<!-- Elfsight Google Reviews | Untitled Google Reviews -->\n<script src=\"https://static.elfsight.com/platform/platform.js\" async></script>\n<div class=\"elfsight-app-1b11a40a-e3f1-42ab-a20a-0ca17ade154f\" data-elfsight-app-lazy></div>",
+            "custom_html": "<h1>Customer Reviews</h1>",
             "padding": 20,
             "border_radius": 0,
             "content_border_radius": 4,
-            "background_color": "#ffffff",
+            "background_color": "#fafafa",
             "text_color": "#333333",
             "heading_color": "#222222",
             "link_color": "#0066cc",
@@ -615,7 +615,6 @@
       "block_order": [
         "ai_gen_block_7516eab_FyfUgQ"
       ],
-      "disabled": true,
       "settings": {}
     },
     "1754634351f0fd4c0c": {
@@ -624,14 +623,14 @@
         "appio_google_reviews_list_xyVD3n": {
           "type": "shopify://apps/appio-google-reviews/blocks/list/25437a0d-2feb-4f5f-b07d-e313afa21656",
           "settings": {
-            "title_type": "h2",
+            "title_type": "h1",
             "show_business_summary": true,
             "show_business_summary_rating": true,
             "show_business_summary_total_review": true,
             "show_business_summary_summary_rating": true,
             "business_summary_background": "rgba(0,0,0,0)",
             "business_summary_color": "#3A454F",
-            "card_background_color": "#f8f8f8",
+            "card_background_color": "#fafafa",
             "card_text_color": "rgb(116, 113, 113)",
             "star_color": "#FBBC05",
             "max_line_review_content": 4,
