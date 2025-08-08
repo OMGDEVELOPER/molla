@@ -1,6 +1,15 @@
 #shopify-block-ATjRpelQ1QlU3ZytHU__appio_google_reviews_list_xyVD3n{
   background: #FAFAFA;
 }
+#shopify-block-ATjRpelQ1QlU3ZytHU__appio_google_reviews_list_xyVD3n .agrs__widget-title{
+  color: var(--Primary-Font, #2A343E);
+  text-align: center;
+  font-family: Assistant;
+  font-size: 40px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 48px; /* 120% */
+}
 @media (max-width:768px){
   .sl-anime.slideshow__subtitle{
     font-size: clamp(35px,5vw,64px) !important;
