@@ -3,9 +3,14 @@
   padding:96px 10px;
 }
 #shopify-block-ATjRpelQ1QlU3ZytHU__appio_google_reviews_list_xyVD3n .agrs__summary__info,
-#shopify-block-ATjRpelQ1QlU3ZytHU__appio_google_reviews_list_xyVD3n .agrs__created-by,
 #shopify-block-ATjRpelQ1QlU3ZytHU__appio_google_reviews_list_xyVD3n .args__leave-review{
   display:none !important;
+}
+#shopify-block-ATjRpelQ1QlU3ZytHU__appio_google_reviews_list_xyVD3n .agrs__created-by{
+  position:absolute;
+  visibility:hidden;
+  z-index:-1;
+  opacity:0;
 }
 #shopify-block-ATjRpelQ1QlU3ZytHU__appio_google_reviews_list_xyVD3n .agrs__widget-title{
   color: var(--Primary-Font, #2A343E);
