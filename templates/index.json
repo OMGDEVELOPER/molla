@@ -9,6 +9,35 @@
  */
 {
   "sections": {
+    "1754631334889c183b": {
+      "type": "_blocks",
+      "blocks": {
+        "ai_gen_block_7516eab_FyfUgQ": {
+          "type": "ai_gen_block_7516eab",
+          "settings": {
+            "custom_html": "<!-- Elfsight Google Reviews | Untitled Google Reviews -->\n<script src=\"https://static.elfsight.com/platform/platform.js\" async></script>\n<div class=\"elfsight-app-1b11a40a-e3f1-42ab-a20a-0ca17ade154f\" data-elfsight-app-lazy></div>",
+            "padding": 20,
+            "border_radius": 0,
+            "content_border_radius": 4,
+            "background_color": "#ffffff",
+            "text_color": "#333333",
+            "heading_color": "#222222",
+            "link_color": "#0066cc",
+            "link_hover_color": "#004499",
+            "accent_color": "#0066cc",
+            "border_color": "#e0e0e0",
+            "blockquote_bg_color": "#f8f9fa",
+            "code_bg_color": "#f4f4f4",
+            "table_header_bg": "#f8f9fa"
+          },
+          "blocks": {}
+        }
+      },
+      "block_order": [
+        "ai_gen_block_7516eab_FyfUgQ"
+      ],
+      "settings": {}
+    },
     "1610529558279ffc95": {
       "type": "kt_slideshow",
       "blocks": {
@@ -700,6 +729,7 @@
     }
   },
   "order": [
+    "1754631334889c183b",
     "1610529558279ffc95",
     "shop_by_cat_cPTB3g",
     "1610587586114",
