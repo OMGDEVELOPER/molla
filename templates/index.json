@@ -15,7 +15,7 @@
         "ai_gen_block_7516eab_FyfUgQ": {
           "type": "ai_gen_block_7516eab",
           "settings": {
-            "custom_html": "<!-- Elfsight Google Reviews | Untitled Google Reviews -->\n<script src=\"https://static.elfsight.com/platform/platform.js\" async></script>\n<div class=\"elfsight-app-1b11a40a-e3f1-42ab-a20a-0ca17ade154f\" data-elfsight-app-lazy></div>",
+            "custom_html": "<!-- Elfsight Google Reviews | Untitled Google Reviews -->\n<script src=\"https://static.elfsight.com/platform/platform.js\" async=\"\"></script>\n<div class=\"elfsight-app-1b11a40a-e3f1-42ab-a20a-0ca17ade154f\" data-elfsight-app-lazy=\"\"></div>",
             "padding": 20,
             "border_radius": 0,
             "content_border_radius": 4,
@@ -729,7 +729,6 @@
     }
   },
   "order": [
-    "1754631334889c183b",
     "1610529558279ffc95",
     "shop_by_cat_cPTB3g",
     "1610587586114",
@@ -740,6 +739,7 @@
     "featured_banner_iHg4iT",
     "featured_products_t8qqga",
     "1566443930152",
+    "1754631334889c183b",
     "1612489778594",
     "1612489579883"
   ]
