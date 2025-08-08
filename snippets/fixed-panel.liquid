@@ -1,43 +1,50 @@
 <style>
-  .fixed-panel-container .container{
+.fixed-panel-container .container{
   padding:0px;
-  }
-  .fixed-panel-container{
-    position: fixed;
-    z-index: 9;
-    left: 0;
-  }
-  .fixed-panel-container ul{
-    padding:0px;
-  }
-  .fixed-panel-container ul li{
-    list-style:none;
-    padding: 12px 16px;
-    background: #127FB5;
-    box-shadow: 0 8px 24px 0 rgba(0, 0, 0, 0.10);
-  }
-   .fixed-panel-container ul li:hover{
-     background:rgb(17, 110, 156);
-  }
-  .fixed-panel-container ul li a{
-    color: #FAFAFA;
-    font-family: Karla;
-    font-size: 14px;
-    font-style: normal;
-    font-weight: 500;
-    line-height: 24px; /* 171.429% */
-  }
-  .fixed-panel{
+}
+.fixed-panel-container{
+  position: fixed;
+  z-index: 9;
+  left: 0;
+}
+.fixed-panel-container ul{
+  padding:0px;
+}
+.fixed-panel-container ul li{
+  list-style:none;
+  padding: 12px 16px;
+  background: #127FB5;
+  box-shadow: 0 8px 24px 0 rgba(0, 0, 0, 0.10);
+}
+  .fixed-panel-container ul li:hover{
+    background:rgb(17, 110, 156);
+}
+.fixed-panel-container ul li a{
+  color: #FAFAFA;
+  font-family: Karla;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 24px; /* 171.429% */
+}
+.fixed-panel{
   opacity:0.7;
 }
 .fixed-panel.scrolled{
-opacity:1;
+  opacity:1;
 }
 .fixed-panel:hover{
-opacity:1;}
+  opacity:1;
+}
 @media (max-width:768px){
   .fixed-panel-container{
     bottom:0;
+  }
+  .fixed-panel-container ul{
+    display:flex;
+  }
+  .fixed-panel-container ul li a{
+    display:none;
   }
 }
 </style>
@@ -45,46 +52,45 @@ opacity:1;}
   <div class="container">
     <ul>
       {% if settings.store_locator_link %}
-      <li>
-        <img src="https://cdn.shopify.com/s/files/1/0936/3328/2419/files/home_pin.svg?v=1753759120">
-        <a href="{{ settings.store_locator_link }}">Store Location</a>
-      </li>
+        <li>
+          <img src="https://cdn.shopify.com/s/files/1/0936/3328/2419/files/home_pin.svg?v=1753759120">
+          <a href="{{ settings.store_locator_link }}">Store Location</a>
+        </li>
       {% endif %}
       {% if settings.get_a_quote_link %}
-      <li>
-        <img src="https://cdn.shopify.com/s/files/1/0936/3328/2419/files/request_quote.svg?v=1754263723">
-        <a href="{{ settings.get_a_quote_link }}">Get a Quote</a>
-      </li>
-    {% endif %}
-    {% if settings.contact_us_link %}
-      <li>
-        <img src="https://cdn.shopify.com/s/files/1/0936/3328/2419/files/mail_2.svg?v=1754263723">
-        <a href="{{ settings.contact_us_link }}">Contact Us</a>
-      </li>
-    {% endif %}
-    {% if settings.phone_number %}
-      <li>
-        <img src="https://cdn.shopify.com/s/files/1/0936/3328/2419/files/call_1.svg?v=1754263723">
-        <a href="tel:{{ settings.phone_number }}">{{ settings.phone_number }}</a>
-      </li>
-    {% endif %}
-    {% if settings.install_guide_link %}
-      <li>
-        <img src="https://cdn.shopify.com/s/files/1/0936/3328/2419/files/construction.svg?v=1754263723">
-        <a href="{{ settings.install_guide_link }}">Install Guide</a>
-      </li>
-    {% endif %}
+        <li>
+          <img src="https://cdn.shopify.com/s/files/1/0936/3328/2419/files/request_quote.svg?v=1754263723">
+          <a href="{{ settings.get_a_quote_link }}">Get a Quote</a>
+        </li>
+      {% endif %}
+      {% if settings.contact_us_link %}
+        <li>
+          <img src="https://cdn.shopify.com/s/files/1/0936/3328/2419/files/mail_2.svg?v=1754263723">
+          <a href="{{ settings.contact_us_link }}">Contact Us</a>
+        </li>
+      {% endif %}
+      {% if settings.phone_number %}
+        <li>
+          <img src="https://cdn.shopify.com/s/files/1/0936/3328/2419/files/call_1.svg?v=1754263723">
+          <a href="tel:{{ settings.phone_number }}">{{ settings.phone_number }}</a>
+        </li>
+      {% endif %}
+      {% if settings.install_guide_link %}
+        <li>
+          <img src="https://cdn.shopify.com/s/files/1/0936/3328/2419/files/construction.svg?v=1754263723">
+          <a href="{{ settings.install_guide_link }}">Install Guide</a>
+        </li>
+      {% endif %}
     </ul>
   </div>
 </section>
 {% javascript %}
   window.addEventListener('scroll', function () {
-  const targetElement = document.querySelector('.fixed-panel'); // Replace with your selector
-  if (window.scrollY >= 100) {
-    targetElement.classList.add('scrolled');
-  } else {
-    targetElement.classList.remove('scrolled');
-  }
-});
-
+    const targetElement = document.querySelector('.fixed-panel'); // Replace with your selector
+    if (window.scrollY >= 100) {
+      targetElement.classList.add('scrolled');
+    } else {
+      targetElement.classList.remove('scrolled');
+    }
+  });
 {% endjavascript %}
