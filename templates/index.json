@@ -615,6 +615,42 @@
       "block_order": [
         "ai_gen_block_7516eab_FyfUgQ"
       ],
+      "disabled": true,
+      "settings": {}
+    },
+    "1754634351f0fd4c0c": {
+      "type": "apps",
+      "blocks": {
+        "appio_google_reviews_list_xyVD3n": {
+          "type": "shopify://apps/appio-google-reviews/blocks/list/25437a0d-2feb-4f5f-b07d-e313afa21656",
+          "settings": {
+            "title_type": "h2",
+            "show_business_summary": true,
+            "show_business_summary_rating": true,
+            "show_business_summary_total_review": true,
+            "show_business_summary_summary_rating": true,
+            "business_summary_background": "rgba(0,0,0,0)",
+            "business_summary_color": "#3A454F",
+            "card_background_color": "#f8f8f8",
+            "card_text_color": "rgb(116, 113, 113)",
+            "star_color": "#FBBC05",
+            "max_line_review_content": 4,
+            "review_per_page_mobile": "100",
+            "show_reviewer_avatar": true,
+            "show_reviewer_name_detail": true,
+            "show_review_date": true,
+            "show_verified_badge": true,
+            "show_review_photos": true,
+            "show_liked_review": true,
+            "show_leave_review_button": true,
+            "button_color": "#FFFFFF",
+            "button_background": "#4285F4"
+          }
+        }
+      },
+      "block_order": [
+        "appio_google_reviews_list_xyVD3n"
+      ],
       "settings": {}
     },
     "1612489778594": {
@@ -726,42 +762,6 @@
         "use_slide": false,
         "responsive": "{\n  \"0\": {\n    \"slidesPerView\": 1,\n    \"spaceBetween\": 20\n  },\n  \"320\": {\n    \"slidesPerView\": 1,\n    \"spaceBetween\": 20\n  },\n  \"476\": {\n    \"slidesPerView\": 2,\n    \"spaceBetween\": 20\n  },\n  \"768\": {\n    \"slidesPerView\": 2,\n    \"spaceBetween\": 20\n  },\n  \"992\": {\n    \"slidesPerView\": 3,\n    \"spaceBetween\": 20\n  },\n  \"1200\": {\n    \"slidesPerView\": 4,\n    \"spaceBetween\": 20\n  }\n}"
       }
-    },
-    "17546342298abd396a": {
-      "type": "apps",
-      "blocks": {
-        "appio_google_reviews_carousel2_bNNxBn": {
-          "type": "shopify://apps/appio-google-reviews/blocks/carousel2/25437a0d-2feb-4f5f-b07d-e313afa21656",
-          "settings": {
-            "title_type": "h2",
-            "show_callout_layout": true,
-            "card_background_color": "#f8f8f8",
-            "card_text_color": "rgb(116, 113, 113)",
-            "star_color": "#FBBC05",
-            "max_line_review_content": 4,
-            "auto_scroll": true,
-            "slide_delay": 3,
-            "show_navigation_bar": true,
-            "show_reviewer_avatar": true,
-            "show_reviewer_name_detail": true,
-            "show_review_date": true,
-            "show_verified_badge": true,
-            "show_review_photos": true,
-            "show_liked_review": true,
-            "show_business_summary_rating": true,
-            "show_business_summary_total_review": true,
-            "show_business_summary_summary_rating": true,
-            "business_summary_color": "#3A454F",
-            "show_leave_review_button": true,
-            "button_color": "#FFFFFF",
-            "button_background": "#4285F4"
-          }
-        }
-      },
-      "block_order": [
-        "appio_google_reviews_carousel2_bNNxBn"
-      ],
-      "settings": {}
     }
   },
   "order": [
@@ -776,8 +776,8 @@
     "featured_products_t8qqga",
     "1566443930152",
     "1754631334889c183b",
+    "1754634351f0fd4c0c",
     "1612489778594",
-    "1612489579883",
-    "17546342298abd396a"
+    "1612489579883"
   ]
 }
