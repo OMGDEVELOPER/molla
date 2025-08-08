@@ -615,6 +615,7 @@
       "block_order": [
         "ai_gen_block_7516eab_FyfUgQ"
       ],
+      "disabled": true,
       "settings": {}
     },
     "1754634351f0fd4c0c": {
@@ -629,10 +630,10 @@
             "show_business_summary_total_review": true,
             "show_business_summary_summary_rating": true,
             "business_summary_background": "rgba(0,0,0,0)",
-            "business_summary_color": "#3A454F",
+            "business_summary_color": "#3a454f",
             "card_background_color": "#fafafa",
-            "card_text_color": "rgb(116, 113, 113)",
-            "star_color": "#FBBC05",
+            "card_text_color": "#747171",
+            "star_color": "#fbbc05",
             "max_line_review_content": 4,
             "review_per_page_mobile": "100",
             "show_reviewer_avatar": true,
@@ -642,8 +643,8 @@
             "show_review_photos": true,
             "show_liked_review": true,
             "show_leave_review_button": true,
-            "button_color": "#FFFFFF",
-            "button_background": "#4285F4"
+            "button_color": "#ffffff",
+            "button_background": "#4285f4"
           }
         }
       },
