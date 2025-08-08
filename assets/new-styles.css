@@ -2,10 +2,13 @@
   background: #FAFAFA;
   padding:96px 10px;
 }
+#shopify-block-ATjRpelQ1QlU3ZytHU__appio_google_reviews_list_xyVD3n .agrs__summary__info,
+#shopify-block-ATjRpelQ1QlU3ZytHU__appio_google_reviews_list_xyVD3n .args__leave-review{
+  display:none;
+}
 #shopify-block-ATjRpelQ1QlU3ZytHU__appio_google_reviews_list_xyVD3n .agrs__widget-title{
   color: var(--Primary-Font, #2A343E);
   text-align: center;
-  font-family: Assistant;
   font-size: 40px;
   font-style: normal;
   font-weight: 600;
