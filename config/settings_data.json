@@ -333,6 +333,13 @@
         "settings": {}
       }
     },
-    "content_for_index": []
+    "content_for_index": [],
+    "blocks": {
+      "2611479755219051411": {
+        "type": "shopify://apps/appio-google-reviews/blocks/integration/25437a0d-2feb-4f5f-b07d-e313afa21656",
+        "disabled": false,
+        "settings": {}
+      }
+    }
   }
 }
