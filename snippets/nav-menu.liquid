@@ -45,6 +45,8 @@
             </li>
          {% render 'submenu-item-with-parent', block:block %}
       </div>
+   {% elsif block.type == 'special_offers' %}
+      {{ block.settings.special_item_label }}
   {% endif %}
 {% endfor %}
 
