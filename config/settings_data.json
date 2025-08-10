@@ -221,6 +221,13 @@
               "parent_menu_item_url": "shopify://collections/insulated-roof",
               "submenu": "insulated-roof"
             }
+          },
+          "special_offers_VWcrYE": {
+            "type": "special_offers",
+            "settings": {
+              "special_item_label": "Special Offers",
+              "special_item_url": "shopify://collections"
+            }
           }
         },
         "block_order": [
@@ -232,7 +239,8 @@
           "standard_nav_item_hUjtQc",
           "parent_menu_jcK6fc",
           "parent_menu_pXWqQN",
-          "parent_menu_ANp8xV"
+          "parent_menu_ANp8xV",
+          "special_offers_VWcrYE"
         ],
         "settings": {
           "announcement_text": "Get up to 20% OFF on your first order – Limited Time Only!"
