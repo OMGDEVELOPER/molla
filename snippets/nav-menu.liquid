@@ -46,7 +46,7 @@
          {% render 'submenu-item-with-parent', block:block %}
       </div>
    {% elsif block.type == 'special_offers' %}
-    <div class="special-offers-container">
+    <div class="special-offers-container" style="display:none;">
         <ul class="submenu__items links-with-icon">
             <li>
               <a href="{{ block.settings.special_item_url }}"><span class="__icon">
