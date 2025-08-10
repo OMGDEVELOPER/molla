@@ -46,7 +46,7 @@
          {% render 'submenu-item-with-parent', block:block %}
       </div>
    {% elsif block.type == 'special_offers' %}
-      <ul>
+      <ul class="submenu__items links-with-icon">
          <li>
             <a href="{{ block.settings.special_item_url }}"><span class="__icon">
               <img src="https://cdn.shopify.com/s/files/1/0859/1186/3592/files/sell.svg?v=1752660278" alt="icon" /><span class="__label">{{ block.settings.special_item_label }}</span>
