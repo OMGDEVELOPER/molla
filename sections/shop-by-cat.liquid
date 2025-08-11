@@ -67,13 +67,15 @@
 <script>
 document.addEventListener('DOMContentLoaded', () => {
   let icon__headings = document.querySelectorAll('.icon__heading');
+  let defaultIcon = '/cdn/shop/files/Frame_1.png?v=1752195110'; // default fallback
   
   icon__headings.forEach(function(element) {
     let src = element.getAttribute('icon-src');
-    if (src) {
-      // Create a unique CSS rule for each element
-      element.style.setProperty('--icon-before-url', `url(${src})`);
-    }
+    
+    let iconUrl = src && src.trim() !== '' ? src : defaultIcon;
+    
+    element.style.setProperty('--icon-before-url', `url(${iconUrl})`);
   });
 });
 </script>
+
