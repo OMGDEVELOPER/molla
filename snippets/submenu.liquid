@@ -279,11 +279,8 @@ document.addEventListener('DOMContentLoaded', () => {
         }
 
         let newMenu = e.target.getAttribute('submenu-order');
-
-       
-
         currentMenuActive = newMenu;
-
+        console.log(currentMenuActive)
         if (window.innerWidth <= 768) {
           if (currentMenuActive == 1) {
             document.querySelector('.item__1').style.display = "none";
