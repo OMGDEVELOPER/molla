@@ -1,4 +1,5 @@
 @media (max-width:768px){
+    .top-header-el.container{display:none;}
     .main-header .menu-items-main{
         display: grid;
         justify-content: start;
