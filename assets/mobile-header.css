@@ -3,4 +3,7 @@
         display: grid;
         justify-content: start;
     }
+    .main-header .header-announcement-section{
+        display:none;
+    }
 }
