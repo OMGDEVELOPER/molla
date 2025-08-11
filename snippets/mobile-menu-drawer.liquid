@@ -124,5 +124,7 @@ list-style: none;
 </section>
 {% javascript %}
   let main_nav_items = document.querySelectorAll('.mobile-main-header .menu-items-main li');
-  console.log(main_nav_items)
+  main_nav_items.forEach((element)=>{
+    console.log(element)
+  })
 {% endjavascript %}
