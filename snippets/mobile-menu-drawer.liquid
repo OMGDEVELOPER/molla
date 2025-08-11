@@ -125,6 +125,11 @@ list-style: none;
 {% javascript %}
   let main_nav_items = document.querySelectorAll('.mobile-main-header .menu-items-main li');
   main_nav_items.forEach((element)=>{
-    console.log(element)
+    element.addEventListener('click',function(){
+        if(element.classList.contains('has-sub ')){
+            let submenuAttribute = element.getAttribute('child-menu-id');
+            document.querySelector(`.${submenuAttribute}`).classList.add('active')
+        }
+    })
   })
 {% endjavascript %}
