@@ -311,6 +311,7 @@ document.addEventListener('DOMContentLoaded', () => {
         // Hide current submenu
         console.log(menuHistory)
         menuHistory[menuHistory.length - 1].style.display = 'none';
+        menuHistory[menuHistory.length - 1].classList.add('hidden')
         console.log(menuHistory[menuHistory.length - 1])
 
         // Remove it from history
