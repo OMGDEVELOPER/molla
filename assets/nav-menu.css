@@ -19,6 +19,9 @@
 .hide-main{
   /* display: none !important; */
 }
+.extra-columns li::after{
+  filter: brightness(0);
+}
 #extra-columns-display-container .heading__1{
   color:#000;
 }
