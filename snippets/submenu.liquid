@@ -229,7 +229,7 @@ document.addEventListener('DOMContentLoaded', () => {
       let currentItemlvl = 0;
       if(menu_id && document.querySelector(`.extra-columns[menu-id="${menu_id}"]`)){
         with5th_lvl = true;
-        console.log(this.target);
+        console.log(e.target);
         
         document.querySelector('.row > .item__1').classList.add('hide-main')
         let submenuItem = document.querySelector(`.extra-columns[menu-id="${menu_id}"]`);
