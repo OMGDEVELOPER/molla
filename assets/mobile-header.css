@@ -8,4 +8,7 @@
     header .header-announcement-section{
         display:none;
     }
+    header .nav-menu ul li.has-sub{
+        justify-content: space-between;
+    }
 }
