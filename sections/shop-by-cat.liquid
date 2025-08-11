@@ -65,6 +65,9 @@
 }
 {% endschema %}
 <script>
-  let icon__heading = document.querySelectorAll('.icon__heading');
-  console.log(icon__heading)
+  let icon__headings = document.querySelectorAll('.icon__heading');
+ icon__headings.forEach(function(element){
+  let src = element.getAttribute('icon-src');
+  console.log(src)
+})
 </script>
