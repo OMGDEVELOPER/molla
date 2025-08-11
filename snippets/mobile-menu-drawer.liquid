@@ -49,5 +49,31 @@
       <img src="https://cdn.shopify.com/s/files/1/0936/3328/2419/files/hamburger-menu-mobile-svgrepo-com.svg?v=1754875384">
     </div>
   </div>
-  {%- render 'nav-menu', section: section -%}
+  {{ 'submenu.css' | asset_url | stylesheet_tag }}
+{{ 'nav-menu.css' | asset_url | stylesheet_tag }}
+<div class="header-bottom d-lg-block nav-menu">
+  <div class="container">
+    <div class="main-header header-menu horizon-menu">
+      <nav class="main-navigation">
+        <ul class="menu-items-main">
+          {% for block in section.blocks %}
+            {%-case block.type-%}
+              {%-when 'standard_nav_item'-%}
+                <li><a href="{{ block.settings.item_url }}">{{ block.settings.item_label }}</a></li>
+              {% when 'with_submenu_item' %}
+                <li class="has-sub " child-menu-id="{{ block.id }}"><a href="{{ block.settings.item_url }}">{{ block.settings.item_label }}</a></li>
+            {% endcase %}
+          {% endfor %}
+        </ul>
+      </nav>
+    </div>
+  </div>
+</div>
+{% if section.settings.announcement_text %}
+<div class="header-announcement-section">
+  <div class="container">
+    <p>{{section.settings.announcement_text }}</p>
+  </div>
+</div>
+{% endif %}
 </div>
