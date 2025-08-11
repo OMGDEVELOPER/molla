@@ -307,7 +307,9 @@ document.addEventListener('DOMContentLoaded', () => {
       console.log('bvk btn clicked')
       if (menuHistory.length > 1) {
         // Hide current submenu
-        menuHistory[menuHistory.length - 1].style.display = 'none';
+        console.log(menuHistory)
+        let result = menuHistory[menuHistory.length - 1].style.display = 'none';
+        console.log(result)
 
         // Remove it from history
         menuHistory.pop();
