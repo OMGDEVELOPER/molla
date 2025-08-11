@@ -136,8 +136,9 @@
         {%- render 'main-header', cart: cart -%}
         <div class="header-group">
           {% comment %} Nav Menu items {% endcomment %}
-           <div class="go-back-menu">Go back</div>
+           
           {% render 'mobile-menu-drawer' section: section %}
+          <div class="go-back-menu">Go back</div>
           {%- render 'nav-menu', section: section -%}
           {% comment %}{%- render 'submenu' -%}{% endcomment %}    
         </div>
