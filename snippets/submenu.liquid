@@ -278,8 +278,7 @@ document.addEventListener('DOMContentLoaded', () => {
           e.target.classList.add('activeMenuItem');
         }
 
-        let newMenu = e.target.getAttribute('submenu-order');
-        currentMenuActive = newMenu;
+        currentMenuActive = e.target.getAttribute('submenu-order');
         console.log(currentMenuActive)
         if (window.innerWidth <= 768) {
           if (currentMenuActive == 1) {
