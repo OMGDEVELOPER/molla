@@ -122,3 +122,7 @@ list-style: none;
   {% endif %}
 {% endfor %}
 </section>
+{% javascript %}
+  let main_nav_items = document.querySelectorAll('.mobile-main-header .menu-items-main li');
+  console.log(main_nav_items)
+{% endjavascript %}
