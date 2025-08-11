@@ -35,8 +35,9 @@
 .lvl-2 > li{ background: #dadada; }
 .lvl-3 > li{ background: #ffffff;}
 .lvl-4 > li{ background: white; }
+
 @media (max-width:768px){
   .nav-menu,.main-header{
-    display: none;
+    /* display: none; */
   }
 }
