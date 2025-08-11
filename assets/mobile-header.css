@@ -19,4 +19,11 @@
     header .mb-hidden{
         display:none;
     }
+    header .submenu .row{
+        display:grid;
+    }
+    header .submenu .row .w-300px{
+        max-width:100%;
+        width:100%;
+    }
 }
