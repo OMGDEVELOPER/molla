@@ -276,9 +276,8 @@ document.addEventListener('DOMContentLoaded', () => {
         currentMenuActive = e.target.getAttribute('submenu-order');
         let submenu = e.target.querySelector('.submenu-items-container');
         if(currentMenuActive == 1){
-          document.querySelectorAll('li[submenu-order="1"]').forEach(element => {
-            element.style.display = "none"
-          });
+          document.querySelector('.item__1').style.display = "none"
+   
         }
         ReloadSubmenu(currentMenuActive);
         // console.log(submenu)
