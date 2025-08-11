@@ -29,4 +29,5 @@
     header .submenu .row .style-2{
         left:0;
     }
+    header .submenu .row .hidden{ display:none; }
 }
