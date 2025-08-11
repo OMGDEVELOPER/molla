@@ -38,8 +38,8 @@
 
 @media (max-width:768px){
   .nav-menu,.main-header{
-    display: none;
-    padding:0px;
+    /* display: none;
+    padding:0px; */
   }
   .top-header-el{
     /* display:none !important; */
