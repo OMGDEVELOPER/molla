@@ -3,6 +3,7 @@ article figure img{
     width: 100%;
     object-fit: cover;
 }
+.swiper-button-next:before, .swiper-button-prev:before{opacity:0;}
 #shopify-block-ATjRpelQ1QlU3ZytHU__appio_google_reviews_list_xyVD3n{
   background: #FAFAFA;
   padding:96px 10px;
