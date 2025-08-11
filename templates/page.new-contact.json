@@ -27,7 +27,7 @@
           "type": "item",
           "settings": {
             "title_1": "Contact Information",
-            "html_desciption_1": "<p class=\"mb-3\">Vestibulum volutpat, lacus a ultrices sagittis, mi neque euismod dui, eu pulvinar nunc sapien ornare nisl. Phasellus pede arcu, dapibus eu, fermentum et, dapibus sed, urna.</p>",
+            "html_desciption_1": "",
             "title_1_1": "The Office",
             "address_1_1": "60-68 Hampstead Road, Auburn, NSW 2144",
             "phone_1_1": "1300 242 799",
