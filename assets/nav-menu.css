@@ -42,6 +42,6 @@
     padding:0px;
   }
   .top-header-el{
-    display:none !important;
+    /* display:none !important; */
   }
 }
