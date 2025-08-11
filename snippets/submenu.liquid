@@ -276,12 +276,15 @@ document.addEventListener('DOMContentLoaded', () => {
         currentMenuActive = e.target.getAttribute('submenu-order');
         let submenu = e.target.querySelector('.submenu-items-container');
         console.log(currentMenuActive);
-        
-        if(currentMenuActive == 1 && window.innerWidth <= 768){
-          document.querySelector('.item__1').style.display = "none"
+        if( window.innerWidth <= 768 ){
+          if(currentMenuActive == 1){
+            document.querySelector('.item__1').style.display = "none"
+          }else if(currentMenuActive == 2){
+            document.querySelector('.item__1').style.display = "none"
+          }
         }
         ReloadSubmenu(currentMenuActive);
-        // console.log(submenu)
+        console.log(submenu)
         if (submenu) {
           submenu.style.display = 'block';
         }
