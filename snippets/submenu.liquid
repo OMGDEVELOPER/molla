@@ -277,7 +277,7 @@ document.addEventListener('DOMContentLoaded', () => {
         let submenu = e.target.querySelector('.submenu-items-container');
         console.log(currentMenuActive);
         
-        if(currentMenuActive == 1){
+        if(currentMenuActive == 1 && window.innerWidth <= 768){
           document.querySelector('.item__1').style.display = "none"
         }
         ReloadSubmenu(currentMenuActive);
