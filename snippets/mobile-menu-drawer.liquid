@@ -128,7 +128,7 @@ list-style: none;
     element.addEventListener('click',function(){
         if(element.classList.contains('has-sub ')){
             let submenuAttribute = element.getAttribute('child-menu-id');
-            document.querySelector(`.${submenuAttribute}`).classList.add('active')
+            document.querySelector(`.mb-header .${submenuAttribute}`).classList.add('active')
         }
     })
   })
