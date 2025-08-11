@@ -1,4 +1,5 @@
 @media (max-width:768px){
+    header .main-header{padding:0px;}
     header .top-header-el.container{display:none;}
     .main-header .menu-items-main{
         display: grid;
