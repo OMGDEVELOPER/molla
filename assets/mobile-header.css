@@ -16,4 +16,7 @@
         height: 100vh;
         padding: 10px;
     }
+    header .mb-hidden{
+        display:none;
+    }
 }
