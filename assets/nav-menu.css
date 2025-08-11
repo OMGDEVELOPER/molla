@@ -38,6 +38,6 @@
 
 @media (max-width:768px){
   .nav-menu,.main-header{
-    display: none;
+    /* display: none; */
   }
 }
