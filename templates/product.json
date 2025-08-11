@@ -100,7 +100,7 @@
         "width_content": false,
         "section_margin_top": "60px",
         "section_margin_bottom": "60px",
-        "section_padding": "",
+        "section_padding": "1rem",
         "section_bg": "",
         "section_bg_op": 1,
         "title_section": "You May Also Like",
