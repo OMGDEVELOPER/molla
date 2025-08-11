@@ -70,7 +70,8 @@ list-style: none;
       <img src="https://cdn.shopify.com/s/files/1/0936/3328/2419/files/hamburger-menu-mobile-svgrepo-com.svg?v=1754875384">
     </div>
   </div>
-
+  {{ 'submenu.css' | asset_url | stylesheet_tag }}
+{{ 'nav-menu.css' | asset_url | stylesheet_tag }}
 <div class="header-bottom d-lg-block mobile-nav-menu">
   <div class="container">
     <div class="mobile-main-header header-menu horizon-menu">
@@ -90,5 +91,4 @@ list-style: none;
   </div>
 </div>
 </div>
-
 </section>
