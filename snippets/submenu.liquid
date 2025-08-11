@@ -206,13 +206,12 @@ document.addEventListener('DOMContentLoaded', () => {
     }
     let renderedHTML = '';
     Object.values(menus).forEach(menu => {
-      console.log(menu)
       renderedHTML += renderSubmenu(menu);
     });
     const container = document.getElementById(`render-submenus-${blockId}`);
       if (container) container.innerHTML = renderedHTML;
     });
-
+  if(window.innerWidth => 768){
   const triggerItems = document.querySelectorAll(`.submenu-items-name`);
   const allSubmenus = document.querySelectorAll('.item__2[menu-name]');
   triggerItems.forEach(trigger => {
@@ -344,7 +343,7 @@ function AddhoverEffects() {
     });
   });
 }
-
+  }
 });
 
 {% endjavascript %}
