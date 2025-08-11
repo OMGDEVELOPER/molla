@@ -286,6 +286,10 @@ document.addEventListener('DOMContentLoaded', () => {
           } else if (currentMenuActive == 2) {
             document.querySelector('.item__1').style.display = "none";
           }
+        }else{
+          if (currentMenuActive == 3) {
+            document.querySelector('.item__1').style.display = "none";
+          }
         }
 
         ReloadSubmenu(currentMenuActive);
