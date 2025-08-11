@@ -309,12 +309,14 @@ document.addEventListener('DOMContentLoaded', () => {
       
       if (menuHistory.length > 1) {
         // Hide current submenu
-        console.log(menuHistory)
+        // console.log(menuHistory)
         menuHistory[menuHistory.length - 1].style.display = 'none !important';
-        console.log(menuHistory[menuHistory.length - 1])
+        // console.log(menuHistory[menuHistory.length - 1])
 
         // Remove it from history
         menuHistory.pop();
+        console.log(menuHistory);
+        
 
         // Show previous submenu
         let previousSubmenu = menuHistory[menuHistory.length - 1];
