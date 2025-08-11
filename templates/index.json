@@ -194,11 +194,12 @@
         "title": "SHOP BY CATEGORIES",
         "description": "",
         "categories": [
-          "frontpage",
           "roofing",
           "insulated-eps-roof",
           "twin-wall",
-          "wall"
+          "wall",
+          "gutter",
+          "solid-pc"
         ]
       }
     },
