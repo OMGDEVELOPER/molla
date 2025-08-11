@@ -33,7 +33,7 @@ document.addEventListener('DOMContentLoaded', function () {
       </div>
     `;
   }
-
+  let currentMenuActive = 0;
   extraColumnsOutput.innerHTML = output;
   const triggerExtraItems = document.querySelectorAll(`.extra-columns > li`);
   const SubmenuParentItem = document.querySelectorAll(`#render-submenus-parent > div.level-2`);
@@ -45,6 +45,7 @@ document.addEventListener('DOMContentLoaded', function () {
         }
        let targetId =  e.target.getAttribute('target-id')
        let blockId = e.target.getAttribute('block-id')
+       currentMenuActive = e.target.getAttribute('submenu-order');
        console.log(currentMenuActive)
       if(targetId){
        document.querySelector(`.lvl-2[menu-name="${targetId}-${blockId}"]`).style.display = "block"
