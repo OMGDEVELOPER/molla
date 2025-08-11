@@ -126,6 +126,7 @@ list-style: none;
   let main_nav_items = document.querySelectorAll('.mobile-main-header .menu-items-main li');
   main_nav_items.forEach((element)=>{
     element.addEventListener('click',function(){
+        console.log('click')
         if(element.classList.contains('has-sub ')){
             let submenuAttribute = element.getAttribute('child-menu-id');
             document.querySelector(`.mb-header .${submenuAttribute}`).classList.add('active')
