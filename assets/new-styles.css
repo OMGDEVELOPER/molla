@@ -1,3 +1,7 @@
+.sg_Services_outer_st_main_inr{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
 article figure img{
     height: 243px;
     width: 100%;
