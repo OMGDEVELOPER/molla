@@ -4,6 +4,7 @@
     .main-header .menu-items-main{
         display: grid;
         justify-content: start;
+        grid-template-columns:1fr;
     }
     header .header-announcement-section{
         display:none;
