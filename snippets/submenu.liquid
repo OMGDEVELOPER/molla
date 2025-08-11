@@ -229,7 +229,8 @@ document.addEventListener('DOMContentLoaded', () => {
       let currentItemlvl = 0;
       if(menu_id && document.querySelector(`.extra-columns[menu-id="${menu_id}"]`)){
         with5th_lvl = true;
-        allSubmenus.forEach(sub => sub.style.display = 'none');
+        document.querySelectorAll('.submenu__items.lvl-1 li').forEach(sub => sub.style.display = 'none');
+     
         e.target.classList.add('activeMenuItem');
         document.querySelector('.row > .item__1').classList.add('hide-main')
         let submenuItem = document.querySelector(`.extra-columns[menu-id="${menu_id}"]`);
