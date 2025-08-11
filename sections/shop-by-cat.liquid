@@ -65,12 +65,15 @@
 }
 {% endschema %}
 <script>
+document.addEventListener('DOMContentLoaded', () => {
   let icon__headings = document.querySelectorAll('.icon__heading');
- icon__headings.forEach(function(element){
-  if(element.getAttribute('icon-src')){
+  
+  icon__headings.forEach(function(element) {
     let src = element.getAttribute('icon-src');
-    console.log(element.classList)
-  }
- 
-})
+    if (src) {
+      // Create a unique CSS rule for each element
+      element.style.setProperty('--icon-before-url', `url(${src})`);
+    }
+  });
+});
 </script>

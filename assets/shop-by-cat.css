@@ -32,7 +32,7 @@
   content: "";
   height: 75px;
   width: 100%;
-  background-image: url(/cdn/shop/files/Frame_1.png?v=1752195110);
+  background-image: var(--icon-before-url);
   position: absolute;
   background-repeat: no-repeat;
   left: -15px;
