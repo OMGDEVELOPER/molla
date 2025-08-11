@@ -12,7 +12,7 @@
               {%-when 'standard_nav_item'-%}
                 <li><a href="{{ block.settings.item_url }}">{{ block.settings.item_label }}</a></li>
               {% when 'with_submenu_item' %}
-                <li class="has-sub " child-menu-id="{{ block.id }}"><a href="{% if block.settings.item_url != blank %}{{ block.settings.item_url }}{% else %}javascriptvoid(){% endif %}">{{ block.settings.item_label }}</a></li>
+                <li class="has-sub " child-menu-id="{{ block.id }}"><a href="{% if block.settings.item_url != blank %}{{ block.settings.item_url }}{% else %}javascript(void){% endif %}">{{ block.settings.item_label }}</a></li>
             {% endcase %}
           {% endfor %}
         </ul>
