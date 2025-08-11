@@ -127,7 +127,7 @@ list-style: none;
   main_nav_items.forEach((element)=>{
     element.addEventListener('click',function(){
         
-        if(element.classList.contains('has-sub ')){
+        if(element.getAttribute('child-menu-id')){
             console.log('click with class')
             let submenuAttribute = element.getAttribute('child-menu-id');
             document.querySelector(`.mb-header .${submenuAttribute}`).classList.add('active')
