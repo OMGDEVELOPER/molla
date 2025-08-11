@@ -102,6 +102,7 @@
     }
 
   {% endstyle %}
+  {{ 'mobile-header.css' | asset_url | stylesheet_tag }}
   <header
     {% if settings.use_wrap_container %}
       class="wrap-container"
