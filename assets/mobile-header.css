@@ -12,4 +12,8 @@
     header .nav-menu ul li.has-sub{
         justify-content: space-between;
     }
+    header .header-bottom.d-lg-block.nav-menu{
+        height: 100vh;
+        padding: 10px;
+    }
 }
