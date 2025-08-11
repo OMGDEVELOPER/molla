@@ -1,3 +1,8 @@
+article figure img{
+    height: 243px;
+    width: 100%;
+    object-fit: cover;
+}
 #shopify-block-ATjRpelQ1QlU3ZytHU__appio_google_reviews_list_xyVD3n{
   background: #FAFAFA;
   padding:96px 10px;
