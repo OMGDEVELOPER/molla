@@ -70,8 +70,7 @@ list-style: none;
       <img src="https://cdn.shopify.com/s/files/1/0936/3328/2419/files/hamburger-menu-mobile-svgrepo-com.svg?v=1754875384">
     </div>
   </div>
-  {{ 'submenu.css' | asset_url | stylesheet_tag }}
-{{ 'nav-menu.css' | asset_url | stylesheet_tag }}
+
 <div class="header-bottom d-lg-block mobile-nav-menu">
   <div class="container">
     <div class="mobile-main-header header-menu horizon-menu">
@@ -91,34 +90,5 @@ list-style: none;
   </div>
 </div>
 </div>
-{% for block in section.blocks %}
-  {% if block.type == 'with_submenu_item' %}
-      {% render 'submenu', block: block %}
-  {% elsif block.type == 'parent_menu' %}
-     <div class="" style="display:none;" >
-            <li 
-            class="submenu-items-name sub-item-with-parent {% if block.settings.submenu != blank %}submenu-with-children{% endif %}"  
-            parent-menu-id="{{ block.settings.parent_menu_id }}"
-            submenu-order="1"
-            target-id="{{ block.settings.submenu }}"
-            submenu-items="{{ block.settings.submenu }}"
-            block-id="{{ block.id }}"
-            menu-subitem-id=""
-              >
-              <a href="{{ block.settings.parent_menu_item_url}}">{{ block.settings.parent_menu_label }}</a>
-            </li>
-         {% render 'submenu-item-with-parent', block:block %}
-      </div>
-   {% elsif block.type == 'special_offers' %}
-    <div class="special-offers-container" style="display:none;">
-        <ul class="submenu__items links-with-icon">
-            <li>
-              <a href="{{ block.settings.special_item_url }}"><span class="__icon">
-                  <img src="https://cdn.shopify.com/s/files/1/0859/1186/3592/files/sell.svg?v=1752660278" alt="icon" /><span class="__label">{{ block.settings.special_item_label }}</span>
-              </a>
-            </li>
-        </ul>
-    </div>
-  {% endif %}
-{% endfor %}
+
 </section>
