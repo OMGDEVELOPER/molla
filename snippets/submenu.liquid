@@ -308,11 +308,11 @@ document.addEventListener('DOMContentLoaded', () => {
       if (menuHistory.length > 0) {
         menuHistory[menuHistory.length-1].style.display = 'none'
         menuHistory.pop();
-        console.log(menuHistory.length-1);
-
         // Show previous submenu
         // let previousSubmenu = menuHistory[menuHistory.length - 1];
         // previousSubmenu.style.display = 'block';
+      }else{
+        document.querySelector('.item__1').style.display = "block";
       }
     });
   
