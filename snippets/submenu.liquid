@@ -269,13 +269,13 @@ document.addEventListener('DOMContentLoaded', () => {
     submenuChildrens.forEach((item)=>{
       item.addEventListener('click',function(e){
         // e.preventDefault();
-        console.log('lvl 2')
         if(e.target.classList.contains('submenu-items-name')){
           removeActiveClass();
           e.target.classList.add('activeMenuItem')
         }
         currentMenuActive = e.target.getAttribute('submenu-order');
         let submenu = e.target.querySelector('.submenu-items-container');
+        console.log(submenu)
         ReloadSubmenu(currentMenuActive);
         // console.log(submenu)
         if (submenu) {
