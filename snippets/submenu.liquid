@@ -281,6 +281,11 @@ document.addEventListener('DOMContentLoaded', () => {
           submenu.style.display = 'block';
         }
         console.log(currentMenuActive)
+        if(currentMenuActive == '3'){
+          document.querySelector('.item__1 ').style.display = 'none'
+        }else{
+          document.querySelector('.item__1 ').style.display = 'block'
+        }
       })
     })
   }
