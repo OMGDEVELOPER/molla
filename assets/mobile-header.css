@@ -1,5 +1,5 @@
 @media (max-width:768px){
-    .menu-items-main{
+    .main-header .menu-items-main{
         display: grid;
         justify-content: start;
     }
