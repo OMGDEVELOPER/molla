@@ -206,6 +206,7 @@ document.addEventListener('DOMContentLoaded', () => {
     }
     let renderedHTML = '';
     Object.values(menus).forEach(menu => {
+      console.log(menu)
       renderedHTML += renderSubmenu(menu);
     });
     const container = document.getElementById(`render-submenus-${blockId}`);
@@ -284,7 +285,7 @@ document.addEventListener('DOMContentLoaded', () => {
           }
         }
         ReloadSubmenu(currentMenuActive);
-        console.log(submenu)
+        // console.log(submenu)
         if (submenu) {
           submenu.style.display = 'block';
         }
