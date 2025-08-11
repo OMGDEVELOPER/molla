@@ -296,7 +296,7 @@ document.addEventListener('DOMContentLoaded', () => {
           submenu.style.display = 'block';
           menuHistory.push(submenu);
         }
-        // console.log(menuHistory);
+        console.log(menuHistory);
         
       });
     });
@@ -305,8 +305,8 @@ document.addEventListener('DOMContentLoaded', () => {
     // Back button logic
     document.querySelector('.back-btn').addEventListener('click', () => {
       if (menuHistory.length > 1) {
-       console.log(menuHistory);
-       
+        // Hide current submenu
+        console.log(menuHistory)
         menuHistory[menuHistory.length - 1].style.display = 'none';
         console.log(menuHistory[menuHistory.length - 1])
 
