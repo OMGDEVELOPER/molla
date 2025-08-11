@@ -277,10 +277,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
         let newMenu = e.target.getAttribute('submenu-order');
 
-        // Save the current menu before switching
-        if (currentMenuActive && currentMenuActive !== newMenu) {
-          menuHistory.push(currentMenuActive);
-        }
+       
 
         currentMenuActive = newMenu;
 
@@ -297,8 +294,9 @@ document.addEventListener('DOMContentLoaded', () => {
         let submenu = e.target.querySelector('.submenu-items-container');
         if (submenu) {
           submenu.style.display = 'block';
+          menuHistory.push(submenu);
         }
-        console.log(submenu);
+        console.log(menuHistory);
         
       });
     });
