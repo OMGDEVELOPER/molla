@@ -2,7 +2,7 @@
     display: grid;
     grid-template-columns: repeat(3, 1fr);
 }
-.et_pb_code_inner .site_des_inr ul li:marker{
+.et_pb_code_inner .site_des_inr ul li::marker{
  opacity:0;
 }
 article figure img{
