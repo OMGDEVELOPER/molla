@@ -47,6 +47,11 @@ document.addEventListener('DOMContentLoaded', function () {
        let blockId = e.target.getAttribute('block-id')
        currentMenuActive = e.target.getAttribute('submenu-order');
        console.log(currentMenuActive)
+        if(currentMenuActive == 3){
+          document.querySelector('.item__1 ').style.display = 'none'
+        }else{
+          document.querySelector('.item__1 ').style.display = 'block'
+        }
       if(targetId){
        document.querySelector(`.lvl-2[menu-name="${targetId}-${blockId}"]`).style.display = "block"
       }
