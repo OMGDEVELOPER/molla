@@ -140,11 +140,12 @@
         </div>
       </div>
     </div>
+    {% render 'mobile-menu-drawer' %}
   </header>
   <div class="fixed-panel-container">
   {% render 'fixed-panel', section: section %} 
   </div>
-  {% render 'mobile-menu-drawer' %}
+  
 {%- endif -%}
 
 {% schema %}
