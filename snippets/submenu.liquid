@@ -263,34 +263,43 @@ document.addEventListener('DOMContentLoaded', () => {
     })
   }
   let currentMenuActive = '';
-  function loadSubmenuItems(){
+  let menuHistory = [];
+  function loadSubmenuItems() {
     allSubmenus.forEach(sub => sub.style.display = 'none');
+    
     let submenuChildrens = document.querySelectorAll('.submenu-with-children');
-    submenuChildrens.forEach((item)=>{
-      item.addEventListener('click',function(e){
-        // e.preventDefault();
-        if(e.target.classList.contains('submenu-items-name')){
+    submenuChildrens.forEach((item) => {
+      item.addEventListener('click', function(e) {
+        if (e.target.classList.contains('submenu-items-name')) {
           removeActiveClass();
-          e.target.classList.add('activeMenuItem')
+          e.target.classList.add('activeMenuItem');
         }
-        currentMenuActive = e.target.getAttribute('submenu-order');
-        let submenu = e.target.querySelector('.submenu-items-container');
-        console.log(currentMenuActive);
-        if( window.innerWidth <= 768 ){
-          if(currentMenuActive == 1){
-            document.querySelector('.item__1').style.display = "none"
-          }else if(currentMenuActive == 2){
-            document.querySelector('.item__1').style.display = "none"
+
+        let newMenu = e.target.getAttribute('submenu-order');
+
+        // Save the current menu before switching
+        if (currentMenuActive && currentMenuActive !== newMenu) {
+          menuHistory.push(currentMenuActive);
+        }
+
+        currentMenuActive = newMenu;
+
+        if (window.innerWidth <= 768) {
+          if (currentMenuActive == 1) {
+            document.querySelector('.item__1').style.display = "none";
+          } else if (currentMenuActive == 2) {
+            document.querySelector('.item__1').style.display = "none";
           }
         }
+
         ReloadSubmenu(currentMenuActive);
-        // console.log(submenu)
+
+        let submenu = e.target.querySelector('.submenu-items-container');
         if (submenu) {
           submenu.style.display = 'block';
         }
-       
-      })
-    })
+      });
+    });
   }
   loadSubmenuItems();
   function removeActiveClass(){
