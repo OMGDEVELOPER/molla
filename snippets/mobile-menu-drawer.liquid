@@ -72,7 +72,7 @@ header .hidden{
   toggleMenuIcons.forEach(el=>{
     el.addEventListener('click',function(e){
       console.log('asd');
-      
+      toggleMenuIcons.forEach(element => element.classList.add('hidden') );
       e.target.classList.toggle('hidden')
     })
   })
