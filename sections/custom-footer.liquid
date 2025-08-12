@@ -71,7 +71,9 @@
             {% assign menu_handle = block.settings.link %}
             {% if linklists[menu_handle] and linklists[menu_handle].links.size > 0 %}
               {% for link in linklists[menu_handle].links %}
-                <li><a href="{{ link.url }}">{{ link.title }}</a></li>
+                <li>
+                  <a href="{{ link.url }}">{{ link.title }}</a>
+                </li>
               {% endfor %}
             {% else %}
               <li><em>No menu assigned</em></li>
@@ -79,24 +81,36 @@
           </ul>
         </div>
       {% endfor %}
-    </div>
 
-  {% comment %}  {% endcomment %}
-   <div class="col-12 col-md-3 item item__4 ">
+      {% comment %}  {% endcomment %}
+      <div class="col-12 col-md-3 item item__4 ">
         <div class="submenu__heading">
-            <h3>Resources</h3>
+          <h3>Resources</h3>
         </div>
-          <ul class="submenu__items links-with-icon">
-          <li><a href="#"><img src="https://cdn.shopify.com/s/files/1/0936/3328/2419/files/location_on.svg?v=1752721207" alt="icon"><span class="__label">60-68 Hampstead Road, Auburn, NSW 2144</span></a></li>
-          <li><a href="#"><img src="https://cdn.shopify.com/s/files/1/0936/3328/2419/files/mail.svg?v=1752721207" alt="icon"><span class="__label">info@bighandsbuildingsupplies.com.au</span></a></li>
-        
-          <li><a href="#"><img src="https://cdn.shopify.com/s/files/1/0936/3328/2419/files/call.svg?v=1752721207" alt="icon"><span class="__label">1300 242 799</span></a></li>
-          
-        </ul>
-    </div>
-    </div>
+        <ul class="submenu__items links-with-icon">
+          <li>
+            <a href="#"
+              ><img src="https://cdn.shopify.com/s/files/1/0936/3328/2419/files/location_on.svg?v=1752721207" alt="icon"
+              ><span class="__label">60-68 Hampstead Road, Auburn, NSW 2144</span></a
+            >
+          </li>
+          <li>
+            <a href="#"
+              ><img src="https://cdn.shopify.com/s/files/1/0936/3328/2419/files/mail.svg?v=1752721207" alt="icon"
+              ><span class="__label">info@bighandsbuildingsupplies.com.au</span></a
+            >
+          </li>
 
-   
+          <li>
+            <a href="#"
+              ><img src="https://cdn.shopify.com/s/files/1/0936/3328/2419/files/call.svg?v=1752721207" alt="icon"
+              ><span class="__label">1300 242 799</span></a
+            >
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
 </section>
 
 {% schema %}
@@ -128,10 +142,7 @@
   "presets": [
     {
       "name": "Custom Footer",
-      "blocks": [
-        { "type": "column" },
-        { "type": "column" }
-      ]
+      "blocks": [{ "type": "column" }, { "type": "column" }]
     }
   ]
 }
