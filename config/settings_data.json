@@ -253,7 +253,7 @@
             "type": "column",
             "settings": {
               "label": "Quick Link",
-              "link": "wall"
+              "link": "quick-links"
             }
           },
           "column_mJPWiN": {
