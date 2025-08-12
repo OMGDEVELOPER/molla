@@ -533,62 +533,6 @@
         ]
       }
     },
-    "1566443930152": {
-      "type": "md_blog",
-      "blocks": {
-        "1566443943015": {
-          "type": "1",
-          "settings": {
-            "title_section": "BLOGS",
-            "stitle_section": "",
-            "reverse": false,
-            "title_align": "text-center",
-            "margin_btitle": 3,
-            "blog": "posts",
-            "limit": 3,
-            "use_short_desc": true,
-            "limit_per_row": 3,
-            "load_btn": false,
-            "style_btn": "btn-outline-darker",
-            "style_btn_rounded": "",
-            "btn_shadow": true
-          }
-        }
-      },
-      "block_order": [
-        "1566443943015"
-      ],
-      "custom_css": [
-        "h3 {color: #000; text-align: center; font-family: Karla; font-size: 36px; font-style: normal; font-weight: 700; line-height: 62px;}",
-        ".entry-meta {justify-content: start;}",
-        ".text-center {text-align: left !important;}",
-        "p {color: #050505; font-family: Karla; font-size: 14px; font-style: normal; font-weight: 400;}",
-        ".read-more {border-radius: 4px; background: #127fb5; color: #fafafa !important; font-family: Karla; font-size: 16px; font-weight: 600; line-height: 24px; padding: 12px 24px;}",
-        ".section-title {text-align: center !important;}"
-      ],
-      "settings": {
-        "title": "Related post",
-        "btn_label": "READ MORE",
-        "off_mobile": false,
-        "off_desktop": false,
-        "width_section": "w-100",
-        "width_content": true,
-        "section_margin_top": "",
-        "section_margin_bottom": "",
-        "section_padding": "7rem 0 5rem",
-        "section_bg": "#ffffff",
-        "section_bg_op": 1,
-        "fweight_title": "600",
-        "fsize_stitle": 1.8,
-        "color_title": "#333333",
-        "margin_btitle": 0.8,
-        "fweight_description": "300",
-        "fsize_description": 1.4,
-        "color_desc": "#999999",
-        "margin_bdescription": 0.8,
-        "use_lazyload": true
-      }
-    },
     "custom_blog_section_drLJ4n": {
       "type": "custom-blog-section",
       "name": "Custom Blog Section",
@@ -783,7 +727,6 @@
     "featured_products_73YWRz",
     "featured_banner_iHg4iT",
     "featured_products_t8qqga",
-    "1566443930152",
     "custom_blog_section_drLJ4n",
     "1754631334889c183b",
     "1754634351f0fd4c0c",
