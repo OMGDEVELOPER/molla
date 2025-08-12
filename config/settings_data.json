@@ -248,7 +248,30 @@
       },
       "custom-footer": {
         "type": "custom-footer",
-        "settings": {}
+        "blocks": {
+          "column_GhWfgK": {
+            "type": "column",
+            "settings": {
+              "label": "Quick Link",
+              "link": "wall"
+            }
+          },
+          "column_mJPWiN": {
+            "type": "column",
+            "settings": {
+              "label": "Quick Link",
+              "link": "wall"
+            }
+          }
+        },
+        "block_order": [
+          "column_GhWfgK",
+          "column_mJPWiN"
+        ],
+        "settings": {
+          "logo": "shopify://shop_images/header_logo_1_1.png",
+          "intro_text": "We are conveniently located in Auburn, just opposite the Harvey Norman flagship store."
+        }
       },
       "kt_banner_all_page": {
         "type": "kt_banner_all_page",
