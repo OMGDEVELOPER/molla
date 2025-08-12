@@ -132,67 +132,23 @@
       "id": "intro_text",
       "label": "Intro Text",
       "default": "We are conveniently located in Auburn, just opposite the Harvey Norman flagship store."
-    },
-    {
-      "type": "text",
-      "id": "quick_links_heading",
-      "label": "Quick Links Heading",
-      "default": "Quick Links"
-    },
-    {
-      "type": "text",
-      "id": "products_heading",
-      "label": "Products Heading",
-      "default": "Products"
-    },
-    {
-      "type": "text",
-      "id": "resources_heading",
-      "label": "Resources Heading",
-      "default": "Resources"
-    },
-    {
-      "type": "checkbox",
-      "id": "show_resources",
-      "label": "Show Resources Column",
-      "default": true
     }
+    
   ],
   "blocks": [
     {
-      "type": "quick_link",
-      "name": "Quick Link",
+      "type": "column",
+      "name": "Column",
       "settings": [
         { "type": "text", "id": "text", "label": "Link Text" },
-        { "type": "url", "id": "link", "label": "Link URL" }
-      ]
-    },
-    {
-      "type": "product_link",
-      "name": "Product Link",
-      "settings": [
-        { "type": "text", "id": "text", "label": "Link Text" },
-        { "type": "url", "id": "link", "label": "Link URL" }
-      ]
-    },
-    {
-      "type": "resource",
-      "name": "Resource Item",
-      "settings": [
-        { "type": "image_picker", "id": "icon", "label": "Icon" },
-        { "type": "text", "id": "label", "label": "Label" },
-        { "type": "url", "id": "link", "label": "Link URL" }
+        { "type": "link_list", "id": "link", "label": "Link URL" }
       ]
     }
   ],
   "presets": [
     {
       "name": "Custom Footer",
-      "blocks": [
-        { "type": "quick_link" },
-        { "type": "product_link" },
-        { "type": "resource" }
-      ]
+     
     }
   ]
 }
