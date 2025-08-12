@@ -31,7 +31,7 @@
     }
     header .submenu .row .hidden{ display:none; }
     .go-back-menu{
-        display:block !Important;
+        display:block ;
     }
 }
  .go-back-menu{
