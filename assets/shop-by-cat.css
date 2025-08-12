@@ -2,6 +2,9 @@
 .shop-by-cat {
   padding:96px 0px;
 }
+.shop-by-cat p[href]:hover{
+  cursor:pointer;
+}
 @media(max-width:1024px) and (min-width:768px){
   .shop-by-cat .__row {
     grid-template-columns: repeat(2, 1fr) !important;
