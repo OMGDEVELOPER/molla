@@ -39,11 +39,15 @@
   .custom-footer .row .item ul li a {
     color: #050505;
     font-family: Karla;
-    font-size: clamp(16px, 5vw, 12px);
+    font-size: clamp(14px, 5vw, 16px);
     font-style: normal;
     font-weight: 400;
   }
-
+  @media (max-width:768px){
+    .custom-footer .row .item ul li a {
+      font-size: 12px;
+    }
+  }
 </style>
 
 <section class="custom-footer-section">
