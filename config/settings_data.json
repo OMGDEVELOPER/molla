@@ -262,15 +262,43 @@
               "label": "Quick Link",
               "link": "wall"
             }
+          },
+          "resource_item_4zwwGN": {
+            "type": "resource_item",
+            "settings": {
+              "icon": "shopify://shop_images/location_on.svg",
+              "label": "60-68 Hampstead Road, Auburn, NSW 2144",
+              "url": "#"
+            }
+          },
+          "resource_item_jHAQab": {
+            "type": "resource_item",
+            "settings": {
+              "icon": "shopify://shop_images/mail.svg",
+              "label": "info@bighandsbuildingsupplies.com.au",
+              "url": "mailto:info@bighandsbuildingsupplies.com.au"
+            }
+          },
+          "resource_item_CixfWY": {
+            "type": "resource_item",
+            "settings": {
+              "icon": "shopify://shop_images/call.svg",
+              "label": "1300 242 799",
+              "url": "tel:1300 242 799"
+            }
           }
         },
         "block_order": [
           "column_GhWfgK",
-          "column_mJPWiN"
+          "column_mJPWiN",
+          "resource_item_4zwwGN",
+          "resource_item_jHAQab",
+          "resource_item_CixfWY"
         ],
         "settings": {
           "logo": "shopify://shop_images/header_logo_1_1.png",
-          "intro_text": "We are conveniently located in Auburn, just opposite the Harvey Norman flagship store."
+          "intro_text": "We are conveniently located in Auburn, just opposite the Harvey Norman flagship store.",
+          "resources_heading": "Resources"
         }
       },
       "kt_banner_all_page": {
