@@ -34,10 +34,10 @@
 </section>
 {% javascript %}
   let links = document.querySelectorAll('p');
-  links.forEach(link => {
-    console.log('Found link:', link.getAttribute('href'));
-    
-    window.location.href = link.getAttribute('href');
+  links.forEach(link => { 
+    link.addEventListener('click',function(){
+      window.location.href = link.getAttribute('href');
+    })
   });
 {% endjavascript %}
 
