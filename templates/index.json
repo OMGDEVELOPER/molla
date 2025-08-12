@@ -558,6 +558,7 @@
       "block_order": [
         "1566443943015"
       ],
+      "disabled": true,
       "custom_css": [
         "h3 {color: #000; text-align: center; font-family: Karla; font-size: 36px; font-style: normal; font-weight: 700; line-height: 62px;}",
         ".entry-meta {justify-content: start;}",
@@ -587,6 +588,14 @@
         "color_desc": "#999999",
         "margin_bdescription": 0.8,
         "use_lazyload": true
+      }
+    },
+    "custom_blog_section_drLJ4n": {
+      "type": "custom-blog-section",
+      "name": "Custom Blog Section",
+      "settings": {
+        "heading": "BLOGS",
+        "blog": "posts"
       }
     },
     "1754631334889c183b": {
@@ -776,6 +785,7 @@
     "featured_banner_iHg4iT",
     "featured_products_t8qqga",
     "1566443930152",
+    "custom_blog_section_drLJ4n",
     "1754631334889c183b",
     "1754634351f0fd4c0c",
     "1612489778594",
