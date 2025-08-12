@@ -32,6 +32,15 @@
     {% endfor %}
   </div>
 </section>
+{% javascript %}
+  let links = document.querySelectorAll('a[href]');
+  links.forEach(link => {
+    console.log('Found link:', link.getAttribute('href'));
+    // Uncomment to navigate:
+    // window.location.href = link.getAttribute('href');
+  });
+{% endjavascript %}
+
 
 {% schema %}
 {
