@@ -33,11 +33,11 @@
   </div>
 </section>
 {% javascript %}
-  let links = document.querySelectorAll('a[href]');
+  let links = document.querySelectorAll('p');
   links.forEach(link => {
     console.log('Found link:', link.getAttribute('href'));
-    // Uncomment to navigate:
-    // window.location.href = link.getAttribute('href');
+    
+    window.location.href = link.getAttribute('href');
   });
 {% endjavascript %}
 
