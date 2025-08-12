@@ -53,8 +53,8 @@ header .hidden{
     </a>
   </div>
   <div class="hamburger-menu">
-    <img src="https://cdn.shopify.com/s/files/1/0936/3328/2419/files/hamburger-menu-mobile-svgrepo-com.svg?v=1754875384" class="toggle-menu">
-    <img src="https://cdn.shopify.com/s/files/1/0936/3328/2419/files/close.png?v=1754965235" class="hidden toggle-menu">
+    <img src="https://cdn.shopify.com/s/files/1/0936/3328/2419/files/hamburger-menu-mobile-svgrepo-com.svg?v=1754875384" class="toggle-menu open-menu">
+    <img src="https://cdn.shopify.com/s/files/1/0936/3328/2419/files/close.png?v=1754965235" class="hidden toggle-menu close-menu">
   </div>
 </div>
 </section>
@@ -69,15 +69,17 @@ header .hidden{
     })
   })
   let toggleMenuIcons = document.querySelectorAll('.toggle-menu');
+  let menuStatus = false;
   toggleMenuIcons.forEach(el=>{
     el.addEventListener('click',function(e){
-      console.log('asd');
-      toggleMenuIcons.forEach(element =>{
-        if(!element.classList.contains('hidden')){
-           element.classList.add('hidden')
-        }
-      } );
-      // e.target.classList.toggle('hidden')
+      menuStatus = !menuStatus
+      if(menuStatus){
+        document.querySelector('close-menu').classList.remove('hidden')
+        document.querySelector('open-menu').classList.add('hidden')
+      }else{
+        document.querySelector('close-menu').classList.add('hidden')
+        document.querySelector('open-menu').classList.remove('hidden')
+      }
     })
   })
 {% endjavascript %}
