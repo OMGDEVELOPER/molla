@@ -19,7 +19,7 @@
           </div>
           <div class="_box d-flex sm-grid">
             <div class="col-12 col-md-6 col-sm-12 block_content">
-              {{ collection_obj.metafields.custom.excerpt | metafield_tag | truncate:10 }}
+              {{ collection_obj.metafields.custom.excerpt | metafield_tag }}
             </div>
             <div class="col-12 col-md-6 col-sm-12 img_content">
               {% if collection_obj.featured_image != blank %}
