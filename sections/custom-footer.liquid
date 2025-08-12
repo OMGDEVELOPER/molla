@@ -62,51 +62,45 @@
         </div>
       </div>
 
+      <!-- Dynamic Menu Columns -->
       {% for block in section.blocks %}
-        <div class="col-12 col-md-3 item">
-          <div class="submenu__heading">
-            <h3>{{ block.settings.label }}</h3>
+        {% if block.type == 'column' %}
+          <div class="col-12 col-md-3 item">
+            <div class="submenu__heading">
+              <h3>{{ block.settings.label }}</h3>
+            </div>
+            <ul class="submenu__items">
+              {% assign menu_handle = block.settings.link %}
+              {% if linklists[menu_handle] and linklists[menu_handle].links.size > 0 %}
+                {% for link in linklists[menu_handle].links %}
+                  <li><a href="{{ link.url }}">{{ link.title }}</a></li>
+                {% endfor %}
+              {% else %}
+                <li><em>No menu assigned</em></li>
+              {% endif %}
+            </ul>
           </div>
-          <ul class="submenu__items">
-            {% assign menu_handle = block.settings.link %}
-            {% if linklists[menu_handle] and linklists[menu_handle].links.size > 0 %}
-              {% for link in linklists[menu_handle].links %}
-                <li>
-                  <a href="{{ link.url }}">{{ link.title }}</a>
-                </li>
-              {% endfor %}
-            {% else %}
-              <li><em>No menu assigned</em></li>
-            {% endif %}
-          </ul>
-        </div>
+        {% endif %}
       {% endfor %}
 
-      {% comment %}  {% endcomment %}
-      <div class="col-12 col-md-3 item item__4 ">
+      <!-- Resources Column -->
+      <div class="col-12 col-md-3 item item__4">
         <div class="submenu__heading">
-          <h3>Resources</h3>
+          <h3>{{ section.settings.resources_heading }}</h3>
         </div>
         <ul class="submenu__items links-with-icon">
-          <li>
-            <a href="#"
-              ><img src="https://cdn.shopify.com/s/files/1/0936/3328/2419/files/location_on.svg?v=1752721207" alt="icon"
-              ><span class="__label">60-68 Hampstead Road, Auburn, NSW 2144</span></a
-            >
-          </li>
-          <li>
-            <a href="#"
-              ><img src="https://cdn.shopify.com/s/files/1/0936/3328/2419/files/mail.svg?v=1752721207" alt="icon"
-              ><span class="__label">info@bighandsbuildingsupplies.com.au</span></a
-            >
-          </li>
-
-          <li>
-            <a href="#"
-              ><img src="https://cdn.shopify.com/s/files/1/0936/3328/2419/files/call.svg?v=1752721207" alt="icon"
-              ><span class="__label">1300 242 799</span></a
-            >
-          </li>
+          {% for block in section.blocks %}
+            {% if block.type == 'resource_item' %}
+              <li>
+                <a href="{{ block.settings.url }}">
+                  {% if block.settings.icon != blank %}
+                    <img src="{{ block.settings.icon | img_url: '32x32' }}" alt="icon">
+                  {% endif %}
+                  <span class="__label">{{ block.settings.label }}</span>
+                </a>
+              </li>
+            {% endif %}
+          {% endfor %}
         </ul>
       </div>
     </div>
@@ -127,23 +121,44 @@
       "id": "intro_text",
       "label": "Intro Text",
       "default": "We are conveniently located in Auburn, just opposite the Harvey Norman flagship store."
+    },
+    {
+      "type": "text",
+      "id": "resources_heading",
+      "label": "Resources Heading",
+      "default": "Resources"
     }
   ],
   "blocks": [
     {
       "type": "column",
-      "name": "Column",
+      "name": "Menu Column",
       "limit": 2,
       "settings": [
         { "type": "text", "id": "label", "label": "Heading" },
         { "type": "link_list", "id": "link", "label": "Menu" }
+      ]
+    },
+    {
+      "type": "resource_item",
+      "name": "Resource Item",
+      "settings": [
+        { "type": "image_picker", "id": "icon", "label": "Icon" },
+        { "type": "text", "id": "label", "label": "Label" },
+        { "type": "url", "id": "url", "label": "URL" }
       ]
     }
   ],
   "presets": [
     {
       "name": "Custom Footer",
-      "blocks": [{ "type": "column" }, { "type": "column" }]
+      "blocks": [
+        { "type": "column" },
+        { "type": "column" },
+        { "type": "resource_item" },
+        { "type": "resource_item" },
+        { "type": "resource_item" }
+      ]
     }
   ]
 }
