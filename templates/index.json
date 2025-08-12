@@ -558,7 +558,6 @@
       "block_order": [
         "1566443943015"
       ],
-      "disabled": true,
       "custom_css": [
         "h3 {color: #000; text-align: center; font-family: Karla; font-size: 36px; font-style: normal; font-weight: 700; line-height: 62px;}",
         ".entry-meta {justify-content: start;}",
