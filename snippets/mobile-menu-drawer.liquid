@@ -53,8 +53,8 @@ header .hidden{
     </a>
   </div>
   <div class="hamburger-menu">
-    <img src="https://cdn.shopify.com/s/files/1/0936/3328/2419/files/hamburger-menu-mobile-svgrepo-com.svg?v=1754875384">
-    <img src="https://cdn.shopify.com/s/files/1/0936/3328/2419/files/close.png?v=1754965235" class="hidden">
+    <img src="https://cdn.shopify.com/s/files/1/0936/3328/2419/files/hamburger-menu-mobile-svgrepo-com.svg?v=1754875384" class="toggle-menu">
+    <img src="https://cdn.shopify.com/s/files/1/0936/3328/2419/files/close.png?v=1754965235" class="hidden toggle-menu">
   </div>
 </div>
 </section>
@@ -66,6 +66,14 @@ header .hidden{
             let submenuAttribute = element.getAttribute('child-menu-id');
             document.querySelector(`.mb-header .${submenuAttribute}`).classList.add('active')
         }
+    })
+  })
+  let toggleMenuIcons = document.querySelectorAll('.toggle-menu');
+  toggleMenuIcons.forEach(el=>{
+    el.addEventListener('click',function(e){
+      console.log('asd');
+      
+      e.target.classList.toggle('hidden')
     })
   })
 {% endjavascript %}
