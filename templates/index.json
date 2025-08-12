@@ -541,7 +541,7 @@
           "settings": {
             "title_section": "BLOGS",
             "stitle_section": "",
-            "reverse": true,
+            "reverse": false,
             "title_align": "text-center",
             "margin_btitle": 3,
             "blog": "posts",
