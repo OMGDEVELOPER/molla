@@ -15,7 +15,7 @@
       {% if collection_obj != blank %}
         <div class="item">
           <div class="icon__heading" icon-src="{{ collection_obj.metafields.custom.icon | image_url: width:ollection_obj.metafields.custom.icon.width }}">
-            <p class="col-12">{{ collection_obj.title }}</p>
+            <a href="{{ collection_obj.url }}" ><p class="col-12">{{ collection_obj.title }}</p></a>
           </div>
           <div class="_box d-flex sm-grid">
             <div class="col-12 col-md-6 col-sm-12 block_content">
