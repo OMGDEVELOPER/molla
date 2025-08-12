@@ -1,3 +1,7 @@
+.swiper-button-prev:after,
+.swiper-rtl .swiper-button-next:after{
+  background-image:url('https://cdn.shopify.com/s/files/1/0936/3328/2419/files/arrow_forward.svg?v=1754985174')
+}
 .btn.btn-dark.btn-round:hover{
     background: #FFF;
     color:#000 !important;
