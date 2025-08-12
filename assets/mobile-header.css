@@ -33,6 +33,9 @@
     .go-back-menu{
         display:block ;
     }
+    .nav-menu{
+        display:none;
+    }
 }
  .go-back-menu{
     display:none;
