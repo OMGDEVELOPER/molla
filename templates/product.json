@@ -64,6 +64,7 @@
     },
     "kt_recently-viewed-products": {
       "type": "kt_recently-viewed-products",
+      "disabled": true,
       "settings": {
         "title": "Recently viewed Products",
         "off_section": false,
