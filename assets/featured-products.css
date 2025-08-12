@@ -3,6 +3,10 @@
   overflow-x: hidden;
   padding: 0 0 96px 0px;
 }
+.featured-products select{
+  display:none;
+  opacity:0;
+}
 .featured-products .item.card{
     display: flex;
     justify-content: space-between;
