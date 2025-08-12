@@ -36,4 +36,8 @@
     .nav-menu{
         /* display:none; */
     }
+    swiper-button-prev:after,
+.swiper-rtl .swiper-button-next:after{
+    display:none;
+}
 }
