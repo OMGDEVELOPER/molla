@@ -1,3 +1,7 @@
+{% comment %}
+  custom-footer.liquid
+{% endcomment %}
+
 <style>
   .custom-footer-section{
     padding:90px 0px;
@@ -41,62 +45,155 @@
     font-weight: 400;
   }
 </style>
+
 <section class="custom-footer-section">
 <div class="custom-footer section-width container">
     <div class="row">
+        <!-- Column 1 -->
         <div class="col-12 col-md-3 item item__1">
             <div class="item__1__group">
-              <div class="submenu__heading"></div>
               <div class="footer-logo">
-                <img src="https://cdn.shopify.com/s/files/1/0936/3328/2419/files/header_logo_1_1.png?v=1752720717" alt="logo">
+                {% if section.settings.logo != blank %}
+                  <img src="{{ section.settings.logo | img_url: '200x' }}" alt="logo">
+                {% endif %}
               </div>
               <div class="_text">
-                <p>We are conveniently located in Auburn, just opposite the Harvey Norman flagship store.</p>
+                <p>{{ section.settings.intro_text }}</p>
               </div>
             </div>
         </div>
-        <div class="col-12 col-md-3 item item__2 ">
+
+        <!-- Column 2 -->
+        <div class="col-12 col-md-3 item item__2">
             <div class="submenu__heading">
-                <h3>Quick Links</h3>
+                <h3>{{ section.settings.quick_links_heading }}</h3>
             </div>
             <ul class="submenu__items">
-                <li><a href="#">Home</a></li>
-                <li><a href="#">About Us</a></li>
-                <li><a href="#">Inspiration</a></li>
-                <li><a href="#">Blog</a></li>
-                <li><a href="#">Contact Us</a></li>
-                <li><a href="#">FAQ’s</a></li>
+              {% for block in section.blocks %}
+                {% if block.type == 'quick_link' %}
+                  <li><a href="{{ block.settings.link }}">{{ block.settings.text }}</a></li>
+                {% endif %}
+              {% endfor %}
             </ul>
         </div>
-        <div class="col-12 col-md-3 item item__3 ">
+
+        <!-- Column 3 -->
+        <div class="col-12 col-md-3 item item__3">
             <div class="submenu__heading">
-                <h3>Products</h3>
+                <h3>{{ section.settings.products_heading }}</h3>
             </div>
             <ul class="submenu__items">
-                <li><a href="#">Roofing</a></li>
-                <li><a href="#">Wall</a></li>
-                <li><a href="#">Cool Room</a></li>
-                <li><a href="#">Outdoor Living</a></li>
-                <li><a href="#">Decking</a></li>
-                <li><a href="#">Decking</a></li>
-                <li><a href="#">Fencing</a></li>
-                <li><a href="#">Structural Product</a></li>
-             
+              {% for block in section.blocks %}
+                {% if block.type == 'product_link' %}
+                  <li><a href="{{ block.settings.link }}">{{ block.settings.text }}</a></li>
+                {% endif %}
+              {% endfor %}
             </ul>
         </div>
-        <div class="col-12 col-md-3 item item__4 style-2" style="display:none;">
+
+        <!-- Column 4 -->
+        {% if section.settings.show_resources %}
+        <div class="col-12 col-md-3 item item__4 style-2">
             <div class="submenu__heading">
-                <h3>Resources</h3>
+                <h3>{{ section.settings.resources_heading }}</h3>
             </div>
-              <ul class="submenu__items links-with-icon">
-              <li><a href="#"><img src="https://cdn.shopify.com/s/files/1/0936/3328/2419/files/location_on.svg?v=1752721207" alt="icon"><span class="__label">60-68 Hampstead Road, Auburn, NSW 2144</span></a></li>
-              <li><a href="#"><img src="https://cdn.shopify.com/s/files/1/0936/3328/2419/files/mail.svg?v=1752721207" alt="icon"><span class="__label">info@bighandsbuildingsupplies.com.au</span></a></li>
-            
-              <li><a href="#"><img src="https://cdn.shopify.com/s/files/1/0936/3328/2419/files/call.svg?v=1752721207" alt="icon"><span class="__label">1300 242 799</span></a></li>
-             
+            <ul class="submenu__items links-with-icon">
+              {% for block in section.blocks %}
+                {% if block.type == 'resource' %}
+                  <li>
+                    <a href="{{ block.settings.link }}">
+                      {% if block.settings.icon != blank %}
+                        <img src="{{ block.settings.icon | img_url: '32x32' }}" alt="icon">
+                      {% endif %}
+                      <span class="__label">{{ block.settings.label }}</span>
+                    </a>
+                  </li>
+                {% endif %}
+              {% endfor %}
             </ul>
         </div>
+        {% endif %}
 
     </div>
 </div>
 </section>
+
+{% schema %}
+{
+  "name": "Custom Footer",
+  "settings": [
+    {
+      "type": "image_picker",
+      "id": "logo",
+      "label": "Footer Logo"
+    },
+    {
+      "type": "textarea",
+      "id": "intro_text",
+      "label": "Intro Text",
+      "default": "We are conveniently located in Auburn, just opposite the Harvey Norman flagship store."
+    },
+    {
+      "type": "text",
+      "id": "quick_links_heading",
+      "label": "Quick Links Heading",
+      "default": "Quick Links"
+    },
+    {
+      "type": "text",
+      "id": "products_heading",
+      "label": "Products Heading",
+      "default": "Products"
+    },
+    {
+      "type": "text",
+      "id": "resources_heading",
+      "label": "Resources Heading",
+      "default": "Resources"
+    },
+    {
+      "type": "checkbox",
+      "id": "show_resources",
+      "label": "Show Resources Column",
+      "default": true
+    }
+  ],
+  "blocks": [
+    {
+      "type": "quick_link",
+      "name": "Quick Link",
+      "settings": [
+        { "type": "text", "id": "text", "label": "Link Text" },
+        { "type": "url", "id": "link", "label": "Link URL" }
+      ]
+    },
+    {
+      "type": "product_link",
+      "name": "Product Link",
+      "settings": [
+        { "type": "text", "id": "text", "label": "Link Text" },
+        { "type": "url", "id": "link", "label": "Link URL" }
+      ]
+    },
+    {
+      "type": "resource",
+      "name": "Resource Item",
+      "settings": [
+        { "type": "image_picker", "id": "icon", "label": "Icon" },
+        { "type": "text", "id": "label", "label": "Label" },
+        { "type": "url", "id": "link", "label": "Link URL" }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "Custom Footer",
+      "blocks": [
+        { "type": "quick_link" },
+        { "type": "product_link" },
+        { "type": "resource" }
+      ]
+    }
+  ]
+}
+{% endschema %}
