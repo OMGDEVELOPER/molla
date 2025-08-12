@@ -1,3 +1,8 @@
+.btn.btn-dark.btn-round:hover{
+    background: #FFF;
+    color:#000 !important;
+    border:1px solid #eee;
+}
 .sg_Services_outer_st_main_inr{
     display: grid;
     grid-template-columns: repeat(3, 1fr);
