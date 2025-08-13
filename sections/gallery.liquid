@@ -47,7 +47,6 @@
   border-radius: 4px;
   object-fit: cover;
 }
-
 </style>
 
 
@@ -110,8 +109,9 @@
 
 var thumbnails = new Splide('#thumbnail-slider', {
   rewind       : true,
-  perPage      : 4,      // show exactly 4 items
-  gap          : '1rem', // spacing between thumbnails
+  perPage      : 4, 
+  fixedHeight  : 200,
+  gap          : '1rem', 
   isNavigation : true,
   pagination   : false,
   focus        : 'center',
