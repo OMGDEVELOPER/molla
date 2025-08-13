@@ -14,8 +14,7 @@
         "metaobject_type": "inspiration_gallery",
         "id": "met",
         "label": "Inspiration Slides"
-      }
-       
+        }
       ]
     }
   ],
@@ -28,18 +27,20 @@
 }
 {% endschema %}
 
-<!-- Splide CSS CDN -->
+<!-- Splide CSS -->
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css">
+<!-- GLightbox CSS -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/glightbox/dist/css/glightbox.min.css">
 
 <style>
-  #thumbnail-slider .splide__slide,
-  #main-slider .splide__slide {
-    cursor: pointer;
-    border-radius: 8px;
-  }
-#thumbnail-slider{
-    margin-top:3rem;
-    margin-bottom:3rem;
+#thumbnail-slider .splide__slide,
+#main-slider .splide__slide {
+  cursor: pointer;
+  border-radius: 8px;
+}
+#thumbnail-slider {
+  margin-top: 3rem;
+  margin-bottom: 3rem;
 }
 #thumbnail-slider .splide__slide img {
   width: 100%;
@@ -49,20 +50,21 @@
 }
 </style>
 
-
 <div class="splide-thumbnail-wrapper">
   <!-- Main Slider -->
   <div id="main-slider" class="splide">
     <div class="splide__track">
       <ul class="splide__list">
         {% for block in section.blocks %}
-            {% for item in block.settings.met %}
-                <li class="splide__slide">
-                {% if item.image %}
-                    <img src="{{ item.image | image_url: width: 800 }}" alt="{{ item.title | escape }}" ">
-                {% endif %}
-                </li>
-            {% endfor %}
+          {% for item in block.settings.met %}
+            <li class="splide__slide">
+              {% if item.image %}
+                <a href="{{ item.image | image_url: width: 1600 }}" class="glightbox" data-gallery="slider-gallery">
+                  <img src="{{ item.image | image_url: width: 800 }}" alt="{{ item.title | escape }}">
+                </a>
+              {% endif %}
+            </li>
+          {% endfor %}
         {% endfor %}
       </ul>
     </div>
@@ -73,25 +75,27 @@
     <div class="splide__track">
       <ul class="splide__list">
         {% for block in section.blocks %}
-            {% for item in block.settings.met %}
-                <li class="splide__slide">
-                {% if item.image %}
-                    <img src="{{ item.image | image_url: width: 800 }}" alt="{{ item.title | escape }}">
-                {% endif %}
-                </li>
-            {% endfor %}
+          {% for item in block.settings.met %}
+            <li class="splide__slide">
+              {% if item.image %}
+                <img src="{{ item.image | image_url: width: 400 }}" alt="{{ item.title | escape }}">
+              {% endif %}
+            </li>
+          {% endfor %}
         {% endfor %}
       </ul>
     </div>
   </div>
 </div>
 
-<!-- Splide JS CDN -->
+<!-- Splide JS -->
 <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/js/splide.min.js"></script>
+<!-- GLightbox JS -->
+<script src="https://cdn.jsdelivr.net/npm/glightbox/dist/js/glightbox.min.js"></script>
 
 <script>
-  document.addEventListener('DOMContentLoaded', function () {
-    var main = new Splide('#main-slider', {
+document.addEventListener('DOMContentLoaded', function () {
+  var main = new Splide('#main-slider', {
     type       : 'slide',
     perPage    : 2,
     gap        : '1rem',
@@ -100,37 +104,42 @@
     cover      : true,
     heightRatio: 0.5,
     breakpoints: {
-        768: {
+      768: {
         perPage: 1
-        }
+      }
     }
-    });
-
-
-var thumbnails = new Splide('#thumbnail-slider', {
-  rewind       : true,
-  perPage      : 4, 
-  fixedHeight  : 200,
-  gap          : '1rem', 
-  isNavigation : true,
-  pagination   : false,
-  focus        : 'center',
-  cover        : true,
-  breakpoints : {
-    768: {
-      perPage: 3,
-      fixedHeight  : 150,
-    },
-    480: {
-      perPage: 2, 
-      fixedHeight  : 100,
-    },
-  },
-});
-
-
-    main.sync(thumbnails);
-    main.mount();
-    thumbnails.mount();
   });
+
+  var thumbnails = new Splide('#thumbnail-slider', {
+    rewind       : true,
+    perPage      : 4,
+    fixedHeight  : 200,
+    gap          : '1rem',
+    isNavigation : true,
+    pagination   : false,
+    focus        : 'center',
+    cover        : true,
+    breakpoints : {
+      768: {
+        perPage: 3,
+        fixedHeight: 150,
+      },
+      480: {
+        perPage: 2,
+        fixedHeight: 100,
+      },
+    },
+  });
+
+  main.sync(thumbnails);
+  main.mount();
+  thumbnails.mount();
+
+  // Init GLightbox
+  GLightbox({
+    selector: '.glightbox',
+    touchNavigation: true,
+    loop: true,
+  });
+});
 </script>
