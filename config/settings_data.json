@@ -15,7 +15,10 @@
     "use_wrap_container": false,
     "width_sidebar_layout": "container",
     "newsletter_popup": false,
-    "show_sticky_add": true,
+    "show_sticky_add": false,
+    "sticky_position": "top",
+    "sticky_style": "darken",
+    "show_sticky_img": false,
     "blog_layout": "02",
     "article_layout": "03",
     "store_locator_link": "",
@@ -64,6 +67,18 @@
       },
       "header-mobile": {
         "type": "header-mobile",
+        "blocks": {
+          "item_categories_1_bggJHd": {
+            "type": "item_categories_1",
+            "settings": {
+              "menu_links": "roofing",
+              "title": "Item tab"
+            }
+          }
+        },
+        "block_order": [
+          "item_categories_1_bggJHd"
+        ],
         "settings": {
           "use_lazy": false,
           "use_search": true
