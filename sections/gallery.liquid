@@ -101,25 +101,24 @@
     });
 
 
-    var thumbnails = new Splide('#thumbnail-slider', {
-      rewind          : true,
-      perPage      : 4, 
-      isNavigation    : true,
-      gap             : 10,
-      focus           : 'center',
-      pagination      : false,
-      cover           : true,
-      dragMinThreshold: {
-        mouse: 4,
-        touch: 10,
-      },
-      breakpoints : {
-        640: {
-          fixedWidth  : 66,
-          fixedHeight : 38,
-        },
-      },
-    });
+var thumbnails = new Splide('#thumbnail-slider', {
+  rewind       : true,
+  perPage      : 4,      // show exactly 4 items
+  gap          : '1rem', // spacing between thumbnails
+  isNavigation : true,
+  pagination   : false,
+  focus        : 'center',
+  cover        : true,
+  breakpoints : {
+    768: {
+      perPage: 3, // tablets
+    },
+    480: {
+      perPage: 2, // mobile
+    },
+  },
+});
+
 
     main.sync(thumbnails);
     main.mount();
