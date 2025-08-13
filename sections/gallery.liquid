@@ -118,10 +118,12 @@ var thumbnails = new Splide('#thumbnail-slider', {
   cover        : true,
   breakpoints : {
     768: {
-      perPage: 3, // tablets
+      perPage: 3,
+      fixedHeight  : 150,
     },
     480: {
-      perPage: 2, // mobile
+      perPage: 2, 
+      fixedHeight  : 150,
     },
   },
 });
