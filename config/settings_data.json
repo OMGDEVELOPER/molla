@@ -15,6 +15,7 @@
     "use_wrap_container": false,
     "width_sidebar_layout": "container",
     "newsletter_popup": false,
+    "show_sticky_add": true,
     "blog_layout": "02",
     "article_layout": "03",
     "store_locator_link": "",
