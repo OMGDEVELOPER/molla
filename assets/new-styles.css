@@ -212,4 +212,8 @@ div[data-section-type="banner-section"] .banner-title {
     font-size: 25px !important;
     line-height:normal;
   }
+  .subheading{
+    font-size: 14px;
+    line-height: normal;
+  }
 }
