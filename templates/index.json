@@ -591,11 +591,11 @@
             "review_per_page_mobile": "100",
             "show_reviewer_avatar": true,
             "show_reviewer_name_detail": true,
-            "show_review_date": true,
+            "show_review_date": false,
             "show_verified_badge": true,
             "show_review_photos": false,
             "show_liked_review": true,
-            "show_leave_review_button": true,
+            "show_leave_review_button": false,
             "button_color": "#ffffff",
             "button_background": "#4285f4"
           }
@@ -715,6 +715,10 @@
         "use_slide": false,
         "responsive": "{\n  \"0\": {\n    \"slidesPerView\": 1,\n    \"spaceBetween\": 20\n  },\n  \"320\": {\n    \"slidesPerView\": 1,\n    \"spaceBetween\": 20\n  },\n  \"476\": {\n    \"slidesPerView\": 2,\n    \"spaceBetween\": 20\n  },\n  \"768\": {\n    \"slidesPerView\": 2,\n    \"spaceBetween\": 20\n  },\n  \"992\": {\n    \"slidesPerView\": 3,\n    \"spaceBetween\": 20\n  },\n  \"1200\": {\n    \"slidesPerView\": 4,\n    \"spaceBetween\": 20\n  }\n}"
       }
+    },
+    "1755150652299a9385": {
+      "type": "apps",
+      "settings": {}
     }
   },
   "order": [
@@ -731,6 +735,7 @@
     "1754631334889c183b",
     "1754634351f0fd4c0c",
     "1612489778594",
-    "1612489579883"
+    "1612489579883",
+    "1755150652299a9385"
   ]
 }
