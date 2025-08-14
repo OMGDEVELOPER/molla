@@ -9,27 +9,35 @@ setTimeout(() => {
 
         let avg = totalReviews > 0 ? (totalScore / totalReviews) : 0;
 
-        // Build HTML string for stars
-        let starsHtml = '<div class="average-star-rating">';
-        
+        // Build star HTML (supports half star)
         let fullStars = Math.floor(avg);
         let halfStar = avg % 1 >= 0.5 ? 1 : 0;
         let emptyStars = 5 - fullStars - halfStar;
 
+        let starsHtml = '';
         for (let i = 0; i < fullStars; i++) {
-            starsHtml += `<span style="color:#fbbc05">★</span>`;
+            starsHtml += `<span style="color:#fbbc05;font-size:24px;">&#9733;</span>`; // ★
         }
         if (halfStar) {
-            starsHtml += `<span style="color:#fbbc05">☆</span>`; // placeholder half
+            starsHtml += `<span style="color:#fbbc05;font-size:24px;">&#189;</span>`; // placeholder half
         }
         for (let i = 0; i < emptyStars; i++) {
-            starsHtml += `<span style="color:#ccc">★</span>`;
+            starsHtml += `<span style="color:#ccc;font-size:24px;">&#9733;</span>`; // empty star
         }
 
-        starsHtml += ` <span>${avg.toFixed(2)} / 5</span>`;
-        starsHtml += '</div>';
+        // Final HTML for the block
+        const reviewHtml = `
+            <div style="text-align:center;padding:20px;background:#fafafa;border-radius:6px;">
+                <div style="font-size:18px;font-weight:600;margin-bottom:8px;color:#333;">
+                    Customer Reviews
+                </div>
+                <div>${starsHtml}</div>
+                <div style="margin-top:8px;font-size:16px;color:#333;">
+                    ${avg.toFixed(1)} out of 5.0 Stars
+                </div>
+            </div>
+        `;
 
-        // Replace the content of .agrs__summary
-        document.querySelector(".agrs__summary").innerHTML = starsHtml;
+        document.querySelector(".agrs__summary").innerHTML = reviewHtml;
     }
 }, 1000);
