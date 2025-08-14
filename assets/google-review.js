@@ -41,7 +41,7 @@ setTimeout(() => {
         // Step 5: Append to page
         console.log(avgStarsContainer);
         
-        document.querySelector(".agrs__summary").appendChild(avgStarsContainer);
+        document.querySelector(".agrs__summary").innerHTML = avgStarsContainer;
     }
 console.log('google review');
 }, 3000);
