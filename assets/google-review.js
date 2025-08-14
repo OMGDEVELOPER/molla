@@ -37,4 +37,4 @@ setTimeout(() => {
 
         document.querySelector(".agrs__summary").innerHTML = reviewHtml;
     }
-}, 10);
+}, 100);
