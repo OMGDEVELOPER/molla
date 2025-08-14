@@ -217,7 +217,8 @@ div[data-section-type="banner-section"] .banner-title {
     line-height: normal !important;
   }
   .shop-by-cat .__heading,
-  .featured-products .__heading{
+  .featured-products .__heading,
+  .custom-blog-section h2{
     font-size:35px !important;
     line-height:normal !important;
   }
