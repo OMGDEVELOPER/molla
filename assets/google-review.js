@@ -54,6 +54,8 @@ setTimeout(() => {
 }
 loadGoogleReviewChanges();
 window.addEventListener("scroll", () => {
+    console.log('scrolled');
+    
     if (!googleChanges) {
         loadGoogleReviewChanges();
     }
