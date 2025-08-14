@@ -1,5 +1,5 @@
 html *{
-  font-family: "Karla", sans-serif;
+  font-family: "Karla", sans-serif !important;
   font-optical-sizing: auto;
   font-style: normal;
 }
