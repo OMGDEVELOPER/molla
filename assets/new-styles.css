@@ -178,7 +178,7 @@ div[data-section-type="banner-section"] .banner-title {
 .build-big{
     color: #FAFAFA;
     text-align: center;
-    font-size: clamp(18px,5vw,47px);
+    font-size: clamp(24px,5vw,47px);
     font-weight: 700;
     line-height: 50px;
     letter-spacing: -2.56px;
