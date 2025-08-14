@@ -187,6 +187,10 @@ div[data-section-type="banner-section"] .banner-title {
 @media (max-width:768px){
   .build-big{
     letter-spacing: normal !important;
+    line-height:normal;
+  }
+  ._loyalty-text{
+    line-height:normal;
   }
 }
 ._loyalty-text{
