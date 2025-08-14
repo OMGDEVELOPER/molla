@@ -261,6 +261,6 @@ div[data-section-type="banner-section"] .banner-title {
   padding-top:16px;
 }
 .agrs__card{
-    display: grid;
-    grid-template-columns: auto 80%;
+    display: grid !important;
+    grid-template-columns: auto 80% !important;
 }
