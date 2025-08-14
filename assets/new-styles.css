@@ -82,9 +82,9 @@ article figure img{
 div[data-section-type="banner-section"] .imgs__banner_template9 .text-content {
   z-index: 1;
   top: 50%;
-  right: 50%;
-  left: 0;
-  transform: translate(50%, -50%);
+  right: 10%;
+  left: 10%;
+  /* transform: translate(50%, -50%); */
   -ms-transform: translateY(-50%);
   padding-right: 10px;
   padding-left: 10px;
