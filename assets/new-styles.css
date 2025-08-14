@@ -278,3 +278,7 @@ div[data-section-type="banner-section"] .banner-title {
       display: flex;
     justify-content: center;
 }
+.block-minicart.icon-fixed{
+  opacity:1 !important;
+  visibility:visible !important;
+}
