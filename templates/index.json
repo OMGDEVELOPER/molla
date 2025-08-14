@@ -586,7 +586,7 @@
             "business_summary_color": "#3a454f",
             "card_background_color": "#fafafa",
             "card_text_color": "#747171",
-            "star_color": "#fbbc05",
+            "star_color": "#e7711b",
             "max_line_review_content": 2,
             "review_per_page_mobile": "100",
             "show_reviewer_avatar": true,
