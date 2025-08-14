@@ -11,7 +11,6 @@ setTimeout(() => {
 
         let avg = totalReviews > 0 ? (totalScore / totalReviews) : 0;
 
-        // Build star HTML (supports half star)
         let fullStars = Math.floor(avg);
         let halfStar = avg % 1 >= 0.5 ? 1 : 0;
         let emptyStars = 5 - fullStars - halfStar;
@@ -27,7 +26,6 @@ setTimeout(() => {
             starsHtml += `<span style="color:#ccc;font-size:42px;">&#9733;</span>`; // empty star
         }
 
-        // Final HTML for the block
         const reviewHtml = `
             <div class="average-star-rating-container">
                 <div class="stars">${starsHtml}</div>
@@ -44,14 +42,9 @@ setTimeout(() => {
     const reviewText = card.querySelector(".agrs__card__text");
 
     if (starsWrapper && reviewText) {
-        // Create a new wrapper div
         const groupDiv = document.createElement("div");
         groupDiv.className = "agrs__card-review-group";
-
-        // Insert before starsWrapper in DOM
         starsWrapper.parentNode.insertBefore(groupDiv, starsWrapper);
-
-        // Move the starsWrapper and reviewText into the new group div
         groupDiv.appendChild(starsWrapper);
         groupDiv.appendChild(reviewText);
     }
