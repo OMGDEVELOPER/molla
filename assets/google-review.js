@@ -9,28 +9,27 @@ setTimeout(() => {
 
         let avg = totalReviews > 0 ? (totalScore / totalReviews) : 0;
 
-        const avgStarsContainer = document.createElement("div");
-        avgStarsContainer.className = "average-star-rating";
+        // Build HTML string for stars
+        let starsHtml = '<div class="average-star-rating">';
         
         let fullStars = Math.floor(avg);
         let halfStar = avg % 1 >= 0.5 ? 1 : 0;
         let emptyStars = 5 - fullStars - halfStar;
 
         for (let i = 0; i < fullStars; i++) {
-            avgStarsContainer.innerHTML += `<span style="color:#fbbc05">★</span>`;
+            starsHtml += `<span style="color:#fbbc05">★</span>`;
         }
         if (halfStar) {
-            avgStarsContainer.innerHTML += `<span style="color:#fbbc05">☆</span>`; // placeholder half
+            starsHtml += `<span style="color:#fbbc05">☆</span>`; // placeholder half
         }
         for (let i = 0; i < emptyStars; i++) {
-            avgStarsContainer.innerHTML += `<span style="color:#ccc">★</span>`;
+            starsHtml += `<span style="color:#ccc">★</span>`;
         }
 
-        const avgText = document.createElement("span");
-        avgText.textContent = ` ${avg.toFixed(2)} / 5`;
-        avgStarsContainer.appendChild(avgText);
+        starsHtml += ` <span>${avg.toFixed(2)} / 5</span>`;
+        starsHtml += '</div>';
 
-        // Append instead of replacing
-        document.querySelector(".agrs__summary").appendChild(avgStarsContainer);
+        // Replace the content of .agrs__summary
+        document.querySelector(".agrs__summary").innerHTML = starsHtml;
     }
-}, 2000);
+}, 1000);
