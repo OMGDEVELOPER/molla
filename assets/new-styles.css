@@ -1,7 +1,6 @@
-.karla{
+html *{
   font-family: "Karla", sans-serif;
   font-optical-sizing: auto;
-  font-weight: 500;
   font-style: normal;
 }
 .swiper-container-has-nav .swiper-button-next, .swiper-container-has-nav .swiper-button-prev{
