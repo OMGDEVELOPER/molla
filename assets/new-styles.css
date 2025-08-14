@@ -225,6 +225,9 @@ div[data-section-type="banner-section"] .banner-title {
   .featured-banner{
     margin-bottom:80px;
   }
+  .agrs__card{
+    grid-template-columns: 1fr !important;
+}
 }
 .content_template--24874075292019__1612493432487,
 .featured-banner{
