@@ -28,9 +28,6 @@ setTimeout(() => {
         // Final HTML for the block
         const reviewHtml = `
             <div style="text-align:center;padding:20px;background:#fafafa;border-radius:6px;">
-                <div style="font-size:18px;font-weight:600;margin-bottom:8px;color:#333;">
-                    Customer Reviews
-                </div>
                 <div>${starsHtml}</div>
                 <div style="margin-top:8px;font-size:16px;color:#333;">
                     ${avg.toFixed(1)} out of 5.0 Stars
@@ -40,4 +37,4 @@ setTimeout(() => {
 
         document.querySelector(".agrs__summary").innerHTML = reviewHtml;
     }
-}, 1000);
+}, 100);
