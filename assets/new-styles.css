@@ -213,7 +213,7 @@ div[data-section-type="banner-section"] .banner-title {
     line-height:normal;
   }
   .subheading{
-    font-size: 14px;
-    line-height: normal;
+    font-size: 14px !important;
+    line-height: normal !important;
   }
 }
