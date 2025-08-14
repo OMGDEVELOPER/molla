@@ -221,4 +221,7 @@ div[data-section-type="banner-section"] .banner-title {
     font-size:35px !important;
     line-height:normal !important;
   }
+  .featured-banner{
+    margin-bottom:80px;
+  }
 }
