@@ -40,6 +40,8 @@ document.addEventListener("DOMContentLoaded", function() {
         avgStarsContainer.appendChild(avgText);
 
         // Step 5: Append to page
+        console.log(avgStarsContainer);
+        
         document.querySelector(".agrs__summary__info").appendChild(avgStarsContainer);
     }
 });
