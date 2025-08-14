@@ -271,7 +271,7 @@ div[data-section-type="banner-section"] .banner-title {
     display: grid;
     gap: 16px;
 }
-.average-star-rating-container{
+.average-star-rating-container .stars{
       display: flex;
     justify-content: center;
 }
