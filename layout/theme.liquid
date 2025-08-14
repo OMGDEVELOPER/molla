@@ -40,16 +40,23 @@
     {{- card_grid_css | asset_url | stylesheet_tag -}}
     <link id="custom-css" href="{{'kiti-var.css' | asset_url}}" rel="stylesheet" type="text/css" media="all">
     {% comment %} font custom {% endcomment %}
-    <link rel="preconnect" href="https://fonts.googleapis.com">
+    {% comment %} <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,200..800;1,200..800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,200..800;1,200..800&display=swap" rel="stylesheet"> {% endcomment %}
     {{ content_for_header }}
     {%-render 'theme_header_js'-%}
     {% render 'judgeme_core' %}
     
 </head>
       <style>
-       
+        @font-face {
+          font-family: 'Karla';
+          font-style: normal;
+          font-weight: 400;
+          font-display: swap;
+          src: url("https://bighandsbuildingsupplydev.myshopify.com/cdn/fonts/karla/karla_n4.40497e07df527e6a50e58fb17ef1950c72f3e32c.woff2?h1=YmlnaGFuZHNidWlsZGluZ3N1cHBseWRldi5hY2NvdW50Lm15c2hvcGlmeS5jb20&hmac=eee975e07e703d627860dcc9f38eb3bbeb9d5ff46bc3aab0ed098580b57f8175") format("woff2"),
+               url("https://bighandsbuildingsupplydev.myshopify.com/cdn/fonts/karla/karla_n4.e9f6f9de321061073c6bfe03c28976ba8ce6ee18.woff?h1=YmlnaGFuZHNidWlsZGluZ3N1cHBseWRldi5hY2NvdW50Lm15c2hvcGlmeS5jb20&hmac=6e1fd3817a3019228c00599470c9b146f2f7e24ffdaf4070bfadb2822288f827") format("woff");
+        }
       </style>
   <body class="template-{{ request.page_type | default: page_title | handle }} {{ page_title | handle }}{%if settings.img_type == 'stretch'%} is-cover{%elsif settings.img_type == 'nonstretch'%} is-contain{%else%} is-default{%endif%}" grid-info="{{settings.pr_grid_talg}}" grid-name-opt="{{settings.qs_use_name_opt}}" grid-ol-first-opt="{{settings.qs_show_first_opt}}" grid-flash="{{settings.label_style}}">
     {%- if request.design_mode -%}{%- section 'kt-dear-customers'-%}{%-endif-%}
