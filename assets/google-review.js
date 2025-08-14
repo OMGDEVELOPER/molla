@@ -1,5 +1,7 @@
 
 document.addEventListener("DOMContentLoaded", function() {
+    console.log('google-reveiw');
+    
     // Step 1: Select all rating quantities
     const qtyEls = document.querySelectorAll(".agrs__rating-line-qty");
 
