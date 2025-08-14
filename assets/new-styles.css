@@ -255,5 +255,8 @@ div[data-section-type="banner-section"] .banner-title {
 }
 .agrs__grid .agrs__summary, .agrs__plain_grid1 .agrs__summary, .agrs__list .agrs__summary, .agrs__brick .agrs__summary{
   border-bottom: 1px solid var(--Gray-Shade-1, #D9D9D9);
-  padding-top:48px;
+  padding-bottom:48px;
+}
+.agrs__body{
+  padding-top:16px;
 }
