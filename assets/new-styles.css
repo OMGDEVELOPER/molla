@@ -267,3 +267,7 @@ div[data-section-type="banner-section"] .banner-title {
 .agrs__card__text{
   width:90% !important;
 }
+.agrs__card-review-group{
+    display: grid;
+    gap: 16px;
+}
