@@ -27,7 +27,7 @@ setTimeout(() => {
 
         // Final HTML for the block
         const reviewHtml = `
-            <div class="average-star-rating-container">
+            <div style="">
                 <div>${starsHtml}</div>
                 <div class="average-star-rating">
                     ${avg.toFixed(1)} out of 5.0 Stars
@@ -38,3 +38,22 @@ setTimeout(() => {
         document.querySelector(".agrs__summary").innerHTML = reviewHtml;
     }
 }, 100);
+
+document.querySelectorAll(".agrs__card").forEach(card => {
+    const starsWrapper = card.querySelector(".agrs__card__stars-wrapper");
+    const reviewText = card.querySelector(".agrs__card__text");
+
+    if (starsWrapper && reviewText) {
+        // Create a new wrapper div
+        const groupDiv = document.createElement("div");
+        groupDiv.className = "agrs__card-review-group";
+
+        // Insert before starsWrapper in DOM
+        starsWrapper.parentNode.insertBefore(groupDiv, starsWrapper);
+
+        // Move the starsWrapper and reviewText into the new group div
+        groupDiv.appendChild(starsWrapper);
+        groupDiv.appendChild(reviewText);
+    }
+});
+
