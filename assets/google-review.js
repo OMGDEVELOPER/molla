@@ -1,5 +1,4 @@
 setTimeout(() => {
-    document.addEventListener("DOMContentLoaded", function() {
     // Step 1: Select all rating quantities
     const qtyEls = document.querySelectorAll(".agrs__rating-line-qty");
 
@@ -44,7 +43,7 @@ setTimeout(() => {
         
         document.querySelector(".agrs__summary__info").appendChild(avgStarsContainer);
     }
-});
+console.log('google review');
 }, 3000);
 
 
