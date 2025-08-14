@@ -234,5 +234,5 @@ div[data-section-type="banner-section"] .banner-title {
   gap:10px;
 }
 .agrs__grid .agrs__summary, .agrs__plain_grid1 .agrs__summary, .agrs__list .agrs__summary, .agrs__brick .agrs__summary{
-  align-items:center !important;
+  justify-content:center !important;
 }
