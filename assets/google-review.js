@@ -37,9 +37,7 @@ setTimeout(() => {
 
         document.querySelector(".agrs__summary").innerHTML = reviewHtml;
     }
-}, 100);
-
-document.querySelectorAll(".agrs__card").forEach(card => {
+    document.querySelectorAll(".agrs__card").forEach(card => {
     const starsWrapper = card.querySelector(".agrs__card__stars-wrapper");
     const reviewText = card.querySelector(".agrs__card__text");
 
@@ -56,4 +54,7 @@ document.querySelectorAll(".agrs__card").forEach(card => {
         groupDiv.appendChild(reviewText);
     }
 });
+}, 100);
+
+
 
