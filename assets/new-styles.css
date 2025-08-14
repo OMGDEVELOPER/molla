@@ -116,7 +116,7 @@ div[data-section-type="banner-section"] .banner-title {
   color: #75E3FF;
   text-align: center;
   font-family: Karla;
-  font-size: clamp(14px, 5vw, 32px);
+  font-size: clamp(14px, 5vw, 30px);
   font-style: normal;
   font-weight: 700;
   line-height: normal;
