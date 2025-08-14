@@ -264,3 +264,6 @@ div[data-section-type="banner-section"] .banner-title {
     display: grid !important;
     grid-template-columns: auto 80% !important;
 }
+.agrs__card__text{
+  width:90% !important;
+}
