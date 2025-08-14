@@ -247,3 +247,9 @@ div[data-section-type="banner-section"] .banner-title {
     color: #333;
     margin: 0;
   }
+.average-star-rating-container{
+  text-align:center;
+  padding:10px;
+  background:#fafafa;
+  border-radius:6px;
+}
