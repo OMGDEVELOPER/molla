@@ -471,8 +471,8 @@
         "width_section": "w-100",
         "width_content": true,
         "section_margin_top": "",
-        "section_margin_bottom": "",
-        "section_padding": "0",
+        "section_margin_bottom": "9rem",
+        "section_padding": "0 0 9rem",
         "section_bg": "#ffffff",
         "section_bg_op": 1,
         "preview": false
