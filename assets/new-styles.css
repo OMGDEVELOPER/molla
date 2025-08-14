@@ -219,6 +219,6 @@ div[data-section-type="banner-section"] .banner-title {
   .shop-by-cat .__heading,
   .featured-products .__heading{
     font-size:35px !important;
-    line-height:normal;
+    line-height:normal !important;
   }
 }
