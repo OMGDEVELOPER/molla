@@ -178,11 +178,10 @@ div[data-section-type="banner-section"] .banner-title {
 .build-big{
     color: #FAFAFA;
     text-align: center;
-    font-size: clamp(24px,5vw,34px);
-    font-style: normal;
+    font-size: clamp(18px,5vw,47px);
     font-weight: 700;
-    line-height: normal;
-    letter-spacing:normal;
+    line-height: 50px;
+    letter-spacing: -2.56px;
     text-transform:initial;
 }
 @media (max-width:768px){
