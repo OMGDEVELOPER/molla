@@ -230,3 +230,6 @@ div[data-section-type="banner-section"] .banner-title {
 .featured-banner{
   margin-bottom:96px !important;
 }
+.icon-box-side{
+  gap:10px;
+}
