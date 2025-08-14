@@ -279,6 +279,6 @@ div[data-section-type="banner-section"] .banner-title {
     justify-content: center;
 }
 .block-minicart.icon-fixed{
-  opacity:1 !important;
-  visibility:visible !important;
+  /* opacity:1 !important;
+  visibility:visible !important; */
 }
