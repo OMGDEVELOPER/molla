@@ -120,6 +120,7 @@ div[data-section-type="banner-section"] .banner-title {
   font-style: normal;
   font-weight: 700;
   line-height: normal;
+  letter-spacing:normal;
 }
 ._new-btn{
     border-radius: 4px;
