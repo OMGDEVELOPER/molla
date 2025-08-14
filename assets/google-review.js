@@ -16,13 +16,13 @@ setTimeout(() => {
 
         let starsHtml = '';
         for (let i = 0; i < fullStars; i++) {
-            starsHtml += `<span style="color:#fbbc05;font-size:24px;">&#9733;</span>`; // ★
+            starsHtml += `<span style="color:#fbbc05;font-size:42px;">&#9733;</span>`; // ★
         }
         if (halfStar) {
-            starsHtml += `<span style="color:#fbbc05;font-size:24px;">&#189;</span>`; // placeholder half
+            starsHtml += `<span style="color:#fbbc05;font-size:42px;">&#189;</span>`; // placeholder half
         }
         for (let i = 0; i < emptyStars; i++) {
-            starsHtml += `<span style="color:#ccc;font-size:24px;">&#9733;</span>`; // empty star
+            starsHtml += `<span style="color:#ccc;font-size:42px;">&#9733;</span>`; // empty star
         }
 
         // Final HTML for the block
