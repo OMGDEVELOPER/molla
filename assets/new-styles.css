@@ -191,10 +191,11 @@ div[data-section-type="banner-section"] .banner-title {
 }
 ._loyalty-text{
   margin-top: 10px;
-  font-size:clamp(1rem,5vw,1.2rem);
-  color:#FFF;    
+  font-size:clamp(14px,5vw,29px);
   color: #FFF;
   text-align: center;
-  font-style: normal;
-  font-weight: 400;
+  font-weight: 300;
+  line-height: 35px;
+  text-transform: initial;
+  margin-top: 15px;
 }
