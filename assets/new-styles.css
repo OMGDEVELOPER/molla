@@ -175,13 +175,14 @@ div[data-section-type="banner-section"] .banner-title {
   line-height: 24px; /* 150% */
 }
 .build-big{
-  color: #FAFAFA;
+    color: #FAFAFA;
     text-align: center;
     font-size: clamp(24px,5vw,34px);
     font-style: normal;
     font-weight: 700;
     line-height: normal;
-    letter-spacing: -2.56px;
+    letter-spacing:normal;
+    text-transform:initial;
 }
 @media (max-width:768px){
   .build-big{
