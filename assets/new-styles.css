@@ -235,4 +235,5 @@ div[data-section-type="banner-section"] .banner-title {
 }
 .agrs__grid .agrs__summary, .agrs__plain_grid1 .agrs__summary, .agrs__list .agrs__summary, .agrs__brick .agrs__summary{
   justify-content:center !important;
-}
+  gap: 0;
+  }
