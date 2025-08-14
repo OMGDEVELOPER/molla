@@ -58,16 +58,17 @@
 
                   <div class="col-12 col-md-12">
                     <label for="here_about_us" class="sr-only">How Did You Hear About Us?*</label>
-                    <select class="form-control" name="contact[here_about_us]">
+                    <select class="form-control" name="contact[here_about_us]" id="here_about_us">
                       <option value="">How Did You Hear About Us?*</option>
                       <option value="Google">Google</option>
                       <option value="Social Media (Facebook, Instagram, Etc.)">Social Media (Facebook, Instagram, Etc.)</option>
-                      <option value="Word Of Mouth/Referral">Word Of Mouth/Referral</option><option value="Other">Other</option>
+                      <option value="Word Of Mouth/Referral">Word Of Mouth/Referral</option>
+                      <option value="Other">Other</option>
                     </select>
                   </div>
 
                   <div class="col-12 col-md-12">
-                    <input type="text" class="form-control" id="here_about_us" name="contact[here_about_us]" placeholder="Other">
+                    <input type="text" class="form-control" id="here_about_us_other_field" name="contact[here_about_us]" placeholder="Other">
                   </div>
                 </div>
                 <label for="cmessage" class="sr-only">Subject</label>
@@ -93,6 +94,14 @@
     </div>
   </div>
 </div>
+<script>
+  let selectOptions = document.getElementById('here_about_us');
+  selectOptions.addEventListener('change', function(e) {
+    if (e.target.value === 'Other') {
+      console.log('Other option selected');
+    }
+  });
+</script>
 
 <style>
   /* Button */
