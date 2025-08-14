@@ -99,7 +99,7 @@ div[data-section-type="banner-section"] .banner-subtitle {
   font-style: normal;
   font-weight: 800;
   /* line-height: 62px; */
-  letter-spacing: -1.28px;
+  /* letter-spacing: -1.28px; */
   margin: 0;
 }
 div[data-section-type="banner-section"] .banner-title {
