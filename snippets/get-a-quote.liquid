@@ -68,7 +68,7 @@
                   </div>
 
                   <div class="col-12 col-md-12">
-                    <input type="text" class="form-control" id="here_about_us_other_field" name="contact[here_about_us]" placeholder="Other">
+                    <input type="text" class="form-control hidden" id="here_about_us_other_field" name="contact[here_about_us]" placeholder="Other">
                   </div>
                 </div>
                 <label for="cmessage" class="sr-only">Subject</label>
@@ -96,9 +96,12 @@
 </div>
 <script>
   let selectOptions = document.getElementById('here_about_us');
+  let oTherOption = document.getElementById('here_about_us_other_field');
   selectOptions.addEventListener('change', function(e) {
     if (e.target.value === 'Other') {
-      console.log('Other option selected');
+      oTherOption.classList.remove('hidden');
+    }else{
+       oTherOption.classList.add('hidden');
     }
   });
 </script>
