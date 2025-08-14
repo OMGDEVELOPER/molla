@@ -29,7 +29,7 @@ setTimeout(() => {
         const reviewHtml = `
             <div style="text-align:center;padding:20px;background:#fafafa;border-radius:6px;">
                 <div>${starsHtml}</div>
-                <div style="margin-top:8px;font-size:16px;color:#333;">
+                <div class="average-star-rating">
                     ${avg.toFixed(1)} out of 5.0 Stars
                 </div>
             </div>
