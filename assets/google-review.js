@@ -27,7 +27,7 @@ setTimeout(() => {
 
         // Final HTML for the block
         const reviewHtml = `
-            <div style="text-align:center;padding:10px;background:#fafafa;border-radius:6px;">
+            <div class="average-star-rating-container">
                 <div>${starsHtml}</div>
                 <div class="average-star-rating">
                     ${avg.toFixed(1)} out of 5.0 Stars
