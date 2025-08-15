@@ -504,7 +504,9 @@
         item.addEventListener('click', function () {
           // e.preventDefault();
           const navMenu = this.closest('.nav-menu');
-          console.log(navMenu);
+          if(navMenu){
+            navMenu.classList.add('hidden')
+          }
           
           
           // Remove active classes from all menus
