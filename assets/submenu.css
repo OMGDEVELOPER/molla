@@ -142,7 +142,7 @@ submenu .w-300px{
   display: none;
 }
 .level-2{
-    height: -webkit-fill-available !important;
+    height: -webkit-fill-available;
     min-height: 100%;
 }
 .submenu-inner li{
