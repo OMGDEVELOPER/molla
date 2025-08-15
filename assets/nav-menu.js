@@ -39,6 +39,8 @@ document.addEventListener('DOMContentLoaded', function () {
   const SubmenuParentItem = document.querySelectorAll(`#render-submenus-parent > div.level-2`);
     triggerExtraItems.forEach((element)=>{
       element.addEventListener('click',function(e){
+         const subMenuContainer = this.closest('.item');
+          console.log(subMenuContainer);
         if(e.target.classList.contains('submenu-items-name')){
           resetSubActiveClass();
           // e.target.classList.add('activeMenuItem')
