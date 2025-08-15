@@ -76,22 +76,22 @@ header .hidden{
   toggleMenuIcons.forEach(el=>{
     el.addEventListener('click',function(e){
       menuStatus = !menuStatus
-      if(menuStatus){
-        document.querySelector('.close-menu').classList.remove('hidden')
-        document.querySelector('.open-menu').classList.add('hidden')
-        document.querySelector('.nav-menu').classList.remove('hidden')
-        document.querySelector('.go-back-menu').classList.remove('hidden')
-        // document.querySelector('.item__1').style.display = "none"
-      }else{
-        document.querySelector('.w-300px ').style.display = "none"
-        document.querySelector('.has-sub').classList.remove('active')
-        document.querySelector('.close-menu').classList.add('hidden')
-        document.querySelector('.item__1').style.display = "none"
-        document.querySelector('.open-menu').classList.remove('hidden')
-        document.querySelector('.nav-menu').classList.add('hidden')
-        // document.querySelector('.go-back-menu').classList.add('hidden')
-        document.querySelector('.go-back-menu').classList.add('hidden')
-      }
+      // if(menuStatus){
+      //   document.querySelector('.close-menu').classList.remove('hidden')
+      //   document.querySelector('.open-menu').classList.add('hidden')
+      //   document.querySelector('.nav-menu').classList.remove('hidden')
+      //   document.querySelector('.go-back-menu').classList.remove('hidden')
+      //   document.querySelector('.item__1').style.display = "none"
+      // }else{
+      //   document.querySelector('.w-300px ').style.display = "none"
+      //   document.querySelector('.has-sub').classList.remove('active')
+      //   document.querySelector('.close-menu').classList.add('hidden')
+      //   document.querySelector('.item__1').style.display = "none"
+      //   document.querySelector('.open-menu').classList.remove('hidden')
+      //   document.querySelector('.nav-menu').classList.add('hidden')
+      //   // document.querySelector('.go-back-menu').classList.add('hidden')
+      //   document.querySelector('.go-back-menu').classList.add('hidden')
+      // }
     })
   })
 {% endjavascript %}
