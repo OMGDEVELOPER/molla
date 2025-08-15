@@ -41,5 +41,5 @@
     }
 }
 header .unhide{
-    display:block;
+    display:block !important;
 }
