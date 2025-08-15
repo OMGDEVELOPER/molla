@@ -353,7 +353,8 @@ document.addEventListener('DOMContentLoaded', () => {
   submenuChildrens.forEach((item) => {
     if (item !== exceptItem) {
       let submenu = item.querySelector('.submenu-items-container');
-      if (submenu) submenu.style.display = 'none';
+      // if (submenu) submenu.style.display = 'none';
+      if (submenu) submenu.classList.add('hidden');
     }
   });
   }
