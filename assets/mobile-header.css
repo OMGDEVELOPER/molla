@@ -35,6 +35,8 @@
     }
     .nav-menu{
         /* display:none; */
+        overflow-y:scroll;
+        height:100vh;
     }
     .swiper-container-has-nav .swiper-button-next, .swiper-container-has-nav .swiper-button-prev{
         display:none !important;
@@ -48,7 +50,7 @@
     }
     submenu{
         overflow:scroll;
-        height:300px;;
+        height:100vh;;
     }
 }
 header .unhide{
