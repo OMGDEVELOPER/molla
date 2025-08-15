@@ -315,14 +315,13 @@ document.addEventListener('DOMContentLoaded', () => {
 
         let submenu = e.target.querySelector('.submenu-items-container');
         if (submenu) {
-          // submenu.style.display = 'block';
+          submenu.style.display = 'block';
           console.log(submenu);
           
           submenu.classList.add('unhide')
           submenu.classList.remove('hidden')
           menuHistory.push(submenu);
         }
-        console.log(menuHistory);
         
       });
     });
