@@ -43,6 +43,9 @@
   overflow:scroll;
   height:300px;
 }
+.submenu .row .item .submenu__items.links-with-icon{
+    justify-content: flex-start;
+}
 }
 header .unhide{
     display:block !important;
