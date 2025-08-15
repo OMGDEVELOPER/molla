@@ -211,7 +211,11 @@ submenu .w-300px{
   display: none;
 }
 header{
+header{
   position: fixed;
-    z-index: 9;
-    width: 100%;
+  z-index: 9;
+  width: 100%;
+}
+header ul{
+  overflow:scroll;
 }
