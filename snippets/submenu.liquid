@@ -250,7 +250,8 @@ document.addEventListener('DOMContentLoaded', () => {
         submenuItem.querySelector('.submenu__heading h3').innerHTML = menuTitle;
         resetSubmenuExtra()
         LoadExtraColContainer()
-        submenuItem.style.display = "block"
+        // submenuItem.style.display = "block"
+        submenuItem.classList.remove('hidden')
       }else{
         CloseExtraColContainer()
       }
