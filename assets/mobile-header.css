@@ -43,7 +43,8 @@
     }
     header ul{
   overflow:scroll;
-  height:300px;
+  min-height:300px;
+  max-height:600px;
 }
     .submenu .row .item .submenu__items.links-with-icon{
         justify-content: flex-start !important;
