@@ -27,7 +27,7 @@
         width:100%;
     }
     header .submenu .row .style-2{
-        /* left:0; */
+        left:0;
     }
     header .submenu .row .hidden{ display:none !important; }
     .go-back-menu{
