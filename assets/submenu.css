@@ -216,6 +216,6 @@ header{
   width: 100%;
 }
 header ul{
-  /* overflow:scroll;
-  height:50%; */
+  overflow:scroll;
+  height:300px;
 }
