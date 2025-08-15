@@ -29,7 +29,7 @@
     header .submenu .row .style-2{
         /* left:0; */
     }
-    header .submenu .row .hidden{ display:none; }
+    header .submenu .row .hidden{ display:none !important; }
     .go-back-menu{
         display:block ;
     }
