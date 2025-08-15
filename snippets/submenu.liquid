@@ -313,8 +313,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
         let submenu = e.target.querySelector('.submenu-items-container');
         if (submenu) {
-          submenu.classList.remove('hidden');
-          // submenu.style.display = 'block';
+          submenu.style.display = 'block';
           menuHistory.push(submenu);
         }
         console.log(menuHistory);
