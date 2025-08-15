@@ -250,8 +250,7 @@ document.addEventListener('DOMContentLoaded', () => {
         submenuItem.querySelector('.submenu__heading h3').innerHTML = menuTitle;
         resetSubmenuExtra()
         LoadExtraColContainer()
-        // submenuItem.style.display = "block"
-        submenuItem.classList.remove('hidden')
+        submenuItem.style.display = "block"
       }else{
         CloseExtraColContainer()
       }
@@ -280,8 +279,7 @@ document.addEventListener('DOMContentLoaded', () => {
   let currentMenuActive = '';
   let menuHistory = [];
   function loadSubmenuItems() {
-    // allSubmenus.forEach(sub => sub.style.display = 'none');
-    allSubmenus.forEach(sub => sub.classList.add('hidden'));
+    allSubmenus.forEach(sub => sub.style.display = 'none');
     
     let submenuChildrens = document.querySelectorAll('.submenu-with-children');
     submenuChildrens.forEach((item) => {
@@ -315,7 +313,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
         let submenu = e.target.querySelector('.submenu-items-container');
         if (submenu) {
-          // submenu.style.display = 'block';
+          submenu.style.display = 'block';
           submenu.classList.add('unhide')
           menuHistory.push(submenu);
         }
@@ -354,8 +352,7 @@ document.addEventListener('DOMContentLoaded', () => {
   submenuChildrens.forEach((item) => {
     if (item !== exceptItem) {
       let submenu = item.querySelector('.submenu-items-container');
-      // if (submenu) submenu.style.display = 'none';
-      if (submenu) submenu.classList.add('hidden');
+      if (submenu) submenu.style.display = 'none';
     }
   });
   }
