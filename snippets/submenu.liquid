@@ -219,7 +219,7 @@ document.addEventListener('DOMContentLoaded', () => {
   const triggerItems = document.querySelectorAll(`.submenu-items-name`);
   const allSubmenus = document.querySelectorAll('.item__2[menu-name]');
   triggerItems.forEach(trigger => {
-    trigger.addEventListener('click', function() {
+    trigger.addEventListener('click', function(e) {
       const menuKey = trigger.getAttribute('submenu-items');
       const block_id = trigger.getAttribute('block-id');
       const menu_id = trigger.getAttribute('menu-id');
@@ -242,7 +242,7 @@ document.addEventListener('DOMContentLoaded', () => {
         with5th_lvl = true;
         document.querySelectorAll('.submenu__items.lvl-1 .submenu-items-name').forEach(i => i.classList.remove('activeMenuItem'));
      
-        this.target.classList.add('activeMenuItem');
+        e.target.classList.add('activeMenuItem');
         document.querySelector('.row > .item__1').classList.add('hide-main')
         let submenuItem = document.querySelector(`.extra-columns[menu-id="${menu_id}"]`);
         const menuTitle = trigger.getAttribute('target-id');
