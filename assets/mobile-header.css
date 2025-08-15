@@ -26,9 +26,9 @@
         max-width:100%;
         width:100%;
     }
-    header .submenu .row .style-2{
+    /* header .submenu .row .style-2{
         left:0;
-    }
+    } */
     header .submenu .row .hidden{ display:none; }
     .go-back-menu{
         display:block ;
