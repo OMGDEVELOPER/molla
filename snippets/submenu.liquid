@@ -317,6 +317,7 @@ document.addEventListener('DOMContentLoaded', () => {
         if (submenu) {
           // submenu.style.display = 'block';
           submenu.classList.add('unhide')
+          submenu.classList.remove('hidden')
           menuHistory.push(submenu);
         }
         console.log(menuHistory);
