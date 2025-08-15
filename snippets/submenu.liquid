@@ -224,7 +224,10 @@ document.addEventListener('DOMContentLoaded', () => {
       const block_id = trigger.getAttribute('block-id');
       const menu_id = trigger.getAttribute('menu-id');
       const subMenuContainer = this.closest('.item');
-      console.log(subMenuContainer);
+      // console.log(subMenuContainer);
+      if(subMenuContainer){
+        subMenuContainer.classList.add('hidden')
+      }
       
 
       // Hide all
