@@ -39,6 +39,10 @@
     .swiper-container-has-nav .swiper-button-next, .swiper-container-has-nav .swiper-button-prev{
         display:none !important;
     }
+    header ul{
+  overflow:scroll;
+  height:300px;
+}
 }
 header .unhide{
     display:block !important;

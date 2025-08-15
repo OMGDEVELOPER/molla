@@ -215,7 +215,3 @@ header{
   z-index: 9;
   width: 100%;
 }
-header ul{
-  overflow:scroll;
-  height:300px;
-}
