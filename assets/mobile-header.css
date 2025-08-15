@@ -40,3 +40,6 @@
         display:none !important;
     }
 }
+header .unhide{
+    display:block;
+}
