@@ -1,81 +1,96 @@
 <style>
-    .mb-header{
-    display:none; }
- @media (max-width:768px){
-        .mb-header{
-    display:block; }
- .main-mobile-header{
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-      padding:10px 5px;
-  }
-  .hamburger-menu img{
-  width:25px;
-  height:25px;
-  }
-  .drawer{
-    position: absolute;
-    z-index: 999;
-    background: #FFF;
-    width: 100%;
-    top: 0;
-    bottom: 0;
+.mb-header {
+	display: none;
 }
+
+@media (max-width:768px) {
+	.mb-header {
+		display: block;
+	}
+
+	.main-mobile-header {
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+		padding: 10px 5px;
+	}
+
+	.hamburger-menu img {
+		width: 25px;
+		height: 25px;
+	}
+
+	.drawer {
+		position: absolute;
+		z-index: 999;
+		background: #FFF;
+		width: 100%;
+		top: 0;
+		bottom: 0;
+	}
 }
-.mobile-main-header .menu-items-main{
-    padding:0px;
+
+.mobile-main-header .menu-items-main {
+	padding: 0px;
 }
-.mobile-main-header .menu-items-main li{
-list-style: none;
-    padding-left: 20px;
-    padding-top: 8px;
-    padding-bottom: 8px;
-    border-bottom: 1px solid #3C4043;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+
+.mobile-main-header .menu-items-main li {
+	list-style: none;
+	padding-left: 20px;
+	padding-top: 8px;
+	padding-bottom: 8px;
+	border-bottom: 1px solid #3C4043;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
 }
-header .hidden{
-  {% comment %} display:none; {% endcomment %}
+
+header .hidden {
+{% comment %} display:none; {% endcomment %}
 }
 </style>
 <section class="mb-header">
-<div class="main-mobile-header">
-  <div class="mobile-logo">
-    <a href="/">
+  <div class="main-mobile-header">
+    <div class="mobile-logo">
+      <a href="/">
+        <img
+          width="168"
+          height="48"
+          src="//bighandsbuildingsupply.myshopify.com/cdn/shop/files/Main_Logo_180x@2x.png?v=1752558905"
+          alt="Bighands Building Supply"
+        >
+      </a>
+    </div>
+    <div class="hamburger-menu">
       <img
-        width="168"
-        height="48"
-        src="//bighandsbuildingsupply.myshopify.com/cdn/shop/files/Main_Logo_180x@2x.png?v=1752558905"
-        alt="Bighands Building Supply"
+        src="https://cdn.shopify.com/s/files/1/0936/3328/2419/files/hamburger-menu-mobile-svgrepo-com.svg?v=1754875384"
+        class="toggle-menu open-menu"
       >
-    </a>
+      <img
+        src="https://cdn.shopify.com/s/files/1/0936/3328/2419/files/close.png?v=1754965235"
+        class="hidden toggle-menu close-menu"
+      >
+    </div>
   </div>
-  <div class="hamburger-menu">
-    <img src="https://cdn.shopify.com/s/files/1/0936/3328/2419/files/hamburger-menu-mobile-svgrepo-com.svg?v=1754875384" class="toggle-menu open-menu">
-    <img src="https://cdn.shopify.com/s/files/1/0936/3328/2419/files/close.png?v=1754965235" class="hidden toggle-menu close-menu">
-  </div>
-</div>
 </section>
 {% javascript %}
   let main_nav_items = document.querySelectorAll('.mobile-main-header .menu-items-main li');
-  main_nav_items.forEach((element)=>{
-    element.addEventListener('click',function(){
-        if(element.getAttribute('child-menu-id') != ''){
-            let submenuAttribute = element.getAttribute('child-menu-id');
-            document.querySelector(`.mb-header .${submenuAttribute}`).classList.add('active')
-        }
-    })
-  })
+  main_nav_items.forEach((element) => {
+    element.addEventListener('click', function () {
+      if (element.getAttribute('child-menu-id') != '') {
+        let submenuAttribute = element.getAttribute('child-menu-id');
+        document.querySelector(`.mb-header .${submenuAttribute}`).classList.add('active');
+      }
+    });
+  });
   let toggleMenuIcons = document.querySelectorAll('.toggle-menu');
   let menuStatus = false;
-  if(window.innerWidth <= 768){
-    document.querySelector('.nav-menu').classList.add('hidden')
+  if (window.innerWidth <= 768) {
+    document.querySelector('.nav-menu').classList.add('hidden');
   }
-  toggleMenuIcons.forEach(el=>{
-    el.addEventListener('click',function(e){
-      menuStatus = !menuStatus
+  toggleMenuIcons.forEach((el) => {
+    el.addEventListener('click', function (e) {
+      menuStatus = !menuStatus;
       // if(menuStatus){
       //   document.querySelector('.close-menu').classList.remove('hidden')
       //   document.querySelector('.open-menu').classList.add('hidden')
@@ -92,6 +107,6 @@ header .hidden{
       //   // document.querySelector('.go-back-menu').classList.add('hidden')
       //   document.querySelector('.go-back-menu').classList.add('hidden')
       // }
-    })
-  })
+    });
+  });
 {% endjavascript %}
