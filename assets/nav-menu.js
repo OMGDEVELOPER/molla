@@ -48,9 +48,11 @@ document.addEventListener('DOMContentLoaded', function () {
        currentMenuActive = e.target.getAttribute('submenu-order');
        console.log(currentMenuActive)
         if(currentMenuActive == 3){
-          document.querySelector('.item__1 ').style.display = 'none'
+          // document.querySelector('.item__1 ').style.display = 'none'
+          document.querySelector('.item__1 ').classList.add('hidden')
         }else{
-          document.querySelector('.item__1 ').style.display = 'block'
+          // document.querySelector('.item__1 ').style.display = 'block'
+          document.querySelector('.item__1 ').classList.remove('hidden')
         }
       if(targetId){
        document.querySelector(`.lvl-2[menu-name="${targetId}-${blockId}"]`).style.display = "block"
