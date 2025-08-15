@@ -327,13 +327,15 @@ document.addEventListener('DOMContentLoaded', () => {
     document.querySelector('.back-btn').addEventListener('click', () => {
       console.log("back clicked");
       if (menuHistory.length > 0) {
-        menuHistory[menuHistory.length-1].style.display = 'none'
+        // menuHistory[menuHistory.length-1].style.display = 'none'
+        menuHistory[menuHistory.length-1].classList.add('hidden')
         menuHistory.pop();
         // Show previous submenu
         // let previousSubmenu = menuHistory[menuHistory.length - 1];
         // previousSubmenu.style.display = 'block';
       }else{
-        document.querySelector('.item__1').style.display = "block";
+        // document.querySelector('.item__1').style.display = "block";
+        document.querySelector('.item__1').classList.remove('hidden');
         document.querySelectorAll('.item__2').forEach(el=>{
           el.style.display = "none";
         })
