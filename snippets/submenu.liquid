@@ -237,6 +237,8 @@ document.addEventListener('DOMContentLoaded', () => {
       let with5th_lvl = false;
       let currentItemlvl = 0;
       if(menu_id && document.querySelector(`.extra-columns[menu-id="${menu_id}"]`)){
+        console.log('asd');
+        
         with5th_lvl = true;
         document.querySelectorAll('.submenu__items.lvl-1 .submenu-items-name').forEach(i => i.classList.remove('activeMenuItem'));
      
