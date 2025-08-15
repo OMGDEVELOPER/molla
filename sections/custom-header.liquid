@@ -503,7 +503,7 @@
       if (menuClass && submenuElement) {
         item.addEventListener('click', function (e) {
           // e.preventDefault();
-          console.log(e.target);
+          console.log(e.target.parent);
           
           // Remove active classes from all menus
           reloadMenuItemsMain(mainHeader);
