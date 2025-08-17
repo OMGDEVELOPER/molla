@@ -85,6 +85,9 @@
 		z-index: 9;
 		width: 100%;
 	}
+    .submenu .row .item .submenu__items{
+        padding-bottom:20rem !important;
+    }
 }
 
 header .unhide {
