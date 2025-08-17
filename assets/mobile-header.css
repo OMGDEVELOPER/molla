@@ -49,6 +49,20 @@
     .submenu .row .item .submenu__items.links-with-icon{
         justify-content: flex-start !important;
     }
+.submenu .row .item .submenu__items {
+    padding-bottom: 20rem;
+    overflow: auto; /* use auto instead of scroll for better behavior */
+    height: 100vh;
+
+    /* Hide scrollbar for Webkit browsers (Chrome, Safari, Edge) */
+    scrollbar-width: none; /* Firefox */
+    -ms-overflow-style: none;  /* IE and Edge */
+}
+
+.submenu .row .item .submenu__items::-webkit-scrollbar {
+    display: none; /* Chrome, Safari, Edge */
+}
+
     submenu{
         overflow:scroll;
         height:100vh;;
