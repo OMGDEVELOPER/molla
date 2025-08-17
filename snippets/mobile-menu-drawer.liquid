@@ -99,10 +99,13 @@ display:none;
         document.querySelector('.go-back-menu').classList.remove('hidden')
         // document.querySelector('.item__1').style.display = "none"
         document.querySelector('.item__1 ').classList.remove('hidden')
-        let submenuEl = document.querySelector('.submenu')
-       if(!submenuEl.classList.contains('active')){
-           submenuEl.classList.add('active')
+        let submenuEl = document.querySelector('.submenu');
+        console.log(submenuEl);
+        
+        if (submenuEl && !submenuEl.classList.contains('active')) {
+            submenuEl.classList.add('active');
         }
+
       }else{
         document.querySelectorAll('.lvl-2').forEach(el => el.style.display = "none")
         document.querySelectorAll('.lvl-3').forEach(el => el.style.display = "none")
