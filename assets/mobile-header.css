@@ -88,6 +88,9 @@
     .submenu .row .item .submenu__items{
         padding-bottom:20rem !important;
     }
+    .fixed-panel{
+        display:none;
+    }
 }
 
 header .unhide {
