@@ -211,7 +211,7 @@ submenu .w-300px{
   display: none;
 }
 header{
-  position: fixed;
+  /* position: fixed;
   z-index: 9;
-  width: 100%;
+  width: 100%; */
 }
