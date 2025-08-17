@@ -99,8 +99,8 @@ display:none;
         document.querySelector('.go-back-menu').classList.remove('hidden')
         // document.querySelector('.item__1').style.display = "none"
       }else{
-        let lvl3 = document.querySelector('.lvl-3');
-        console.log(lvl3);
+        document.querySelectorAll('.lvl-3').forEach(el => el.style.display = "none")
+        
         
         document.querySelector('.close-menu').classList.add('hidden')
         document.querySelector('.open-menu').classList.remove('hidden')
