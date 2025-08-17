@@ -56,6 +56,11 @@
         overflow:scroll;
         height:100vh;;
     }
+    header{
+  position: fixed;
+  z-index: 9;
+  width: 100%;
+}
 }
 header .unhide{
     display:block !important;
