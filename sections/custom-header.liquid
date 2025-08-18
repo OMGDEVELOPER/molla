@@ -513,6 +513,7 @@
       let submenuElement = mainHeader?.querySelector('.' + menuClass);
       if (menuClass && submenuElement) {
         item.addEventListener('click', function (e) {
+          console.log('has sub clicked');
           const navMenu = this.closest('.nav-menu');
           if(window.innerWidth < 768){
             if(navMenu){
