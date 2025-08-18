@@ -644,4 +644,37 @@ function reloadMenuItemsMain(context) {
   closeMenu.addEventListener('click',function(){
     // document.querySelector('.item__1').style.display = "none"
   })
+      // Back button logic
+    let menuContainer = 0;
+    document.querySelector('.back-btn').addEventListener('click', () => {
+      console.log("back clicked");
+      
+      if (menuHistory.length > 0) {
+        menuContainer = 0;
+        menuHistory[menuHistory.length-1].style.display = 'none'
+        menuHistory.pop();
+      }else{
+        document.querySelector('.submenu').classList.add('active')
+        document.querySelector('.item__1').classList.remove('hidden')
+        document.querySelector('.item__1').style.display = "block";
+        document.querySelectorAll('.item__2').forEach(el=>{
+          el.style.display = "none";
+        })
+      }
+     
+      
+      if(menuHistory.length == 0){
+        console.log(menuHistory );
+        document.querySelector('.submenu').classList.add('active')
+        document.querySelectorAll('.has-sub').forEach(el => el.classList.remove('active'))
+        menuContainer++;
+        console.log(menuContainer);
+        
+        if(menuContainer == 3){
+          // document.querySelector('.item__1').style.display = "none";
+          document.querySelector('.nav-menu').classList.remove('hidden')
+        }
+      }
+    });
+  
 {% endjavascript %}
