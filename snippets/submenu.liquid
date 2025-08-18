@@ -215,7 +215,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const container = document.getElementById(`render-submenus-${blockId}`);
       if (container) container.innerHTML = renderedHTML;
     });
-  
+  let menuHistory = [];
   const triggerItems = document.querySelectorAll(`.submenu-items-name`);
   const allSubmenus = document.querySelectorAll('.item__2[menu-name]');
   triggerItems.forEach(trigger => {
@@ -277,7 +277,6 @@ document.addEventListener('DOMContentLoaded', () => {
     })
   }
   let currentMenuActive = '';
-  let menuHistory = [];
   function loadSubmenuItems() {
     allSubmenus.forEach(sub => sub.style.display = 'none');
     
