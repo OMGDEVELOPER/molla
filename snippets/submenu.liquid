@@ -322,6 +322,7 @@ document.addEventListener('DOMContentLoaded', () => {
   }
 
     // Back button logic
+    let menuContainer = 0;
     document.querySelector('.back-btn').addEventListener('click', () => {
       console.log("back clicked");
       
@@ -339,10 +340,13 @@ document.addEventListener('DOMContentLoaded', () => {
      
       
       if(menuHistory.length == 0){
-        menuHistory.push(1)
         console.log(menuHistory );
         document.querySelector('.submenu').classList.add('active')
         document.querySelectorAll('.has-sub').forEach(el => el.classList.remove('active'))
+        menuContainer++;
+        console.log(menuContainer);
+        
+        // if(menuContainer ==)
         // document.querySelector('.nav-menu').classList.remove('hidden')
       }
     });
