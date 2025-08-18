@@ -285,7 +285,6 @@ document.addEventListener('DOMContentLoaded', () => {
     submenuChildrens.forEach((item) => {
       item.addEventListener('click', function(e) {
          const subMenuContainer = this.closest('.item');
-         console.log(subMenuContainer);
          
          if(subMenuContainer && !subMenuContainer.classList.contains('hidden')){
           // subMenuContainer.classList.add('hidden')
