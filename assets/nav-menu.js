@@ -43,7 +43,8 @@ document.addEventListener('DOMContentLoaded', function () {
           resetSubActiveClass();
           // e.target.classList.add('activeMenuItem')
         }
-        console.log(e.target);
+        let parentItem = e.target.closest('.item__1__group')
+        console.log(parentItem);
         
        let targetId =  e.target.getAttribute('target-id')
        let blockId = e.target.getAttribute('block-id')
