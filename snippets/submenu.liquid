@@ -252,6 +252,7 @@ document.addEventListener('DOMContentLoaded', () => {
         LoadExtraColContainer()
         submenuItem.style.display = "block"
       }else{
+        document.querySelector('.row > .item__1').classList.remove('hide-main')
         CloseExtraColContainer()
       }
       // Show only the matched one
