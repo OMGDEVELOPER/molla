@@ -339,7 +339,7 @@ document.addEventListener('DOMContentLoaded', () => {
      
       
       if(menuHistory.length == 0){
-        menuHistory.push(menuHistory.length++)
+        menuHistory.push(1)
         console.log(menuHistory );
         document.querySelector('.submenu').classList.add('active')
         document.querySelectorAll('.has-sub').forEach(el => el.classList.remove('active'))
