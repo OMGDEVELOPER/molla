@@ -43,6 +43,8 @@ document.addEventListener('DOMContentLoaded', function () {
           resetSubActiveClass();
           // e.target.classList.add('activeMenuItem')
         }
+        console.log(e.target);
+        
        let targetId =  e.target.getAttribute('target-id')
        let blockId = e.target.getAttribute('block-id')
        currentMenuActive = e.target.getAttribute('submenu-order');
