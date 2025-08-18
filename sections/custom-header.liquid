@@ -532,13 +532,7 @@
           isActive = !isActive;
           console.log(isActive);
           
-          if(isActive){
-            item.classList.add('active');
-            submenuElement.classList.add('active');
-          }else{
-            item.classList.remove('active');
-            submenuElement.classList.remove('active');
-          }
+        
           let submenuEl = document.querySelector('.submenu');
           // console.log(submenuEl);
           if (submenuEl && !submenuEl.classList.contains('active')) {
@@ -547,6 +541,13 @@
           // Activate clicked item and its submenu
           if (window.innerWidth <= 768) {
             document.querySelector('.header-bottom').classList.add('hidden');
+          }
+            if(isActive){
+            item.classList.add('active');
+            submenuElement.classList.add('active');
+          }else{
+            item.classList.remove('active');
+            submenuElement.classList.remove('active');
           }
           
         });
