@@ -44,7 +44,7 @@ document.addEventListener('DOMContentLoaded', function () {
           // e.target.classList.add('activeMenuItem')
         }
         let parentItem = e.target.closest('.item__1__group')
-        console.log(parentItem);
+        parentItem.classList.add('hidden')
         
        let targetId =  e.target.getAttribute('target-id')
        let blockId = e.target.getAttribute('block-id')
