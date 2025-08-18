@@ -34,6 +34,7 @@ document.addEventListener('DOMContentLoaded', function () {
     `;
   }
   let currentMenuActive = 0;
+  
   extraColumnsOutput.innerHTML = output;
   const triggerExtraItems = document.querySelectorAll(`.extra-columns > li`);
   const SubmenuParentItem = document.querySelectorAll(`#render-submenus-parent > div.level-2`);
