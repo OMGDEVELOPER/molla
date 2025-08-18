@@ -238,6 +238,7 @@ document.addEventListener('DOMContentLoaded', () => {
       });
       
       let currentItemlvl = 0;
+      with5th_lvl = false;
       if(menu_id && document.querySelector(`.extra-columns[menu-id="${menu_id}"]`)){
 
         with5th_lvl = true;
@@ -297,7 +298,6 @@ document.addEventListener('DOMContentLoaded', () => {
           e.target.classList.add('activeMenuItem');
         }
         currentMenuActive = e.target.getAttribute('submenu-order');
-        console.log(with5th_lvl)
         if (window.innerWidth <= 768) {
           if (currentMenuActive == 1) {
             // document.querySelector('.item__1').style.display = "none";
