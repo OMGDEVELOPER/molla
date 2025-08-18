@@ -508,6 +508,11 @@
             navMenu.classList.add('hidden')
           }
           
+          let submenuEl = document.querySelector('.submenu');
+          console.log(submenuEl);
+          if (submenuEl && !submenuEl.classList.contains('active')) {
+              submenuEl.classList.add('active');
+          }
           
           // Remove active classes from all menus
           reloadMenuItemsMain(mainHeader);
