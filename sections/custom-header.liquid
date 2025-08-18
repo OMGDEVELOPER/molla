@@ -504,59 +504,51 @@
 
 {% javascript %}
   function LoadMenuJs() {
-  const menuItems = document.querySelectorAll('.header-group .menu-items-main li');
-
+  let menuItems = document.querySelectorAll('.header-group .menu-items-main li');
+  let isActive = false;
   menuItems.forEach((item) => {
-    // Skip if not a submenu or already bound
-    if (!item.classList.contains('has-sub') || item.hasAttribute('data-bound')) return;
+    if (item.classList.contains('has-sub') && !item.hasAttribute('data-bound')) {
+      let menuClass = item.getAttribute('child-menu-id');
+      let mainHeader = item.closest('.header-group');
+      let submenuElement = mainHeader?.querySelector('.' + menuClass);
+      if (menuClass && submenuElement) {
+        item.addEventListener('click', function (e) {
+         
+          const navMenu = this.closest('.nav-menu');
+          if(window.innerWidth < 768){
+            if(navMenu){
+              console.log('added hidden to');
+              console.log(navMenu);
+              navMenu.classList.add('hidden')
+            }
+          }
+          // Remove active classes from all menus
+          reloadMenuItemsMain(mainHeader);
+          isActive = !isActive;
+          console.log(isActive);
+          let submenuEl = document.querySelector('.submenu');
+         
+          if (submenuEl && !submenuEl.classList.contains('active')) {
+              submenuEl.classList.add('active');
+          }
+          // Activate clicked item and its submenu
+          if (window.innerWidth <= 768) {
+            document.querySelector('.header-bottom').classList.add('hidden');
+          }
+          if(isActive){
+            item.classList.add('active');
+            submenuElement.classList.add('active');
+          }else{
+            item.classList.remove('active');
+            submenuElement.classList.remove('active');
+          }
+        });
 
-    const menuClass = item.getAttribute('child-menu-id');
-    const mainHeader = item.closest('.header-group');
-    const submenuElement = mainHeader?.querySelector('.' + menuClass);
-
-    if (!menuClass || !submenuElement) return;
-
-    item.addEventListener('click', function (e) {
-      e.preventDefault(); // prevents accidental link navigation
-
-      const navMenu = this.closest('.nav-menu');
-      const submenuWrapper = document.querySelector('.submenu');
-      const headerBottom = document.querySelector('.header-bottom');
-
-      // Hide parent nav on mobile
-      if (window.innerWidth < 768 && navMenu) {
-        navMenu.classList.add('hidden');
+        item.setAttribute('data-bound', 'true');
       }
-
-      // Reset menu states
-      reloadMenuItemsMain(mainHeader);
-
-      // Ensure submenu wrapper is visible
-      if (submenuWrapper && !submenuWrapper.classList.contains('active')) {
-        submenuWrapper.classList.add('active');
-      }
-
-      // Hide bottom header on mobile
-      if (window.innerWidth <= 768 && headerBottom) {
-        headerBottom.classList.add('hidden');
-      }
-
-      // Toggle active state only for this item + submenu
-      const isActive = !item.classList.contains('active');
-      if (isActive) {
-        item.classList.add('active');
-        submenuElement.classList.add('active');
-      } else {
-        item.classList.remove('active');
-        submenuElement.classList.remove('active');
-      }
-    });
-
-    // Mark as processed
-    item.setAttribute('data-bound', 'true');
+    }
   });
 }
-
 
 function reloadMenuItemsMain(context) {
   let submenuItems = context.querySelectorAll('.submenu');
