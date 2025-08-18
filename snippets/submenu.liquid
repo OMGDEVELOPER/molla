@@ -215,6 +215,7 @@ document.addEventListener('DOMContentLoaded', () => {
   let menuHistory = [];
   const triggerItems = document.querySelectorAll(`.submenu-items-name`);
   const allSubmenus = document.querySelectorAll('.item__2[menu-name]');
+  let with5th_lvl = false;
   triggerItems.forEach(trigger => {
     trigger.addEventListener('click', function(e) {
       const menuKey = trigger.getAttribute('submenu-items');
@@ -235,7 +236,7 @@ document.addEventListener('DOMContentLoaded', () => {
       allSubmenus.forEach(sub => {
         sub.style.display = 'none';
       });
-      let with5th_lvl = false;
+      
       let currentItemlvl = 0;
       if(menu_id && document.querySelector(`.extra-columns[menu-id="${menu_id}"]`)){
 
