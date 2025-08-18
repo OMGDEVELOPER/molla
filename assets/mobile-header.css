@@ -49,6 +49,9 @@
 
 	.go-back-menu {
 		display: block;
+        background: none;
+        border: none;
+        color: #127fb5;
 	}
 
 	.nav-menu {
