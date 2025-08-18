@@ -228,11 +228,11 @@ document.addEventListener('DOMContentLoaded', () => {
     
 
       if(subMenuContainer){
-        subMenuContainer.classList.add('hidden')
+        // subMenuContainer.classList.add('hidden')
       }
+      subMenuContainer.classList.remove('hidden')
+      subMenuContainer.classList.remove('hide-main')
       if(subMenuContainer.classList.contains('hidden')){
-        subMenuContainer.classList.remove('hidden')
-        subMenuContainer.classList.remove('hide-main')
       }
       
 
