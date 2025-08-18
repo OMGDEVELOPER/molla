@@ -328,9 +328,6 @@ document.addEventListener('DOMContentLoaded', () => {
       if (menuHistory.length > 0) {
         menuHistory[menuHistory.length-1].style.display = 'none'
         menuHistory.pop();
-        // Show previous submenu
-        // let previousSubmenu = menuHistory[menuHistory.length - 1];
-        // previousSubmenu.style.display = 'block';
       }else{
         document.querySelector('.submenu').classList.add('active')
         document.querySelector('.item__1').classList.remove('hidden')
@@ -339,6 +336,8 @@ document.addEventListener('DOMContentLoaded', () => {
           el.style.display = "none";
         })
       }
+      console.log(menuHistory.length );
+      
       if(menuHistory.length == 0){
         document.querySelector('.submenu').classList.add('active')
         document.querySelectorAll('.has-sub').forEach(el => el.classList.remove('active'))
