@@ -344,7 +344,7 @@ document.querySelector('.back-btn').addEventListener('click', () => {
       });
     }
   } else {
-    console.log("⚠ No more history to go back to!");
+    document.querySelector('.nav-menu').classList.remove('hidden');
   }
 
   console.log(menuHistory);
