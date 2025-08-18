@@ -332,10 +332,11 @@ document.addEventListener('DOMContentLoaded', () => {
         // let previousSubmenu = menuHistory[menuHistory.length - 1];
         // previousSubmenu.style.display = 'block';
       }else{
+        document.querySelector('.submenu').classList.add('active')
         document.querySelector('.item__1').style.display = "block";
-        // document.querySelectorAll('.item__2').forEach(el=>{
-        //   el.style.display = "none";
-        // })
+        document.querySelectorAll('.item__2').forEach(el=>{
+          el.style.display = "none";
+        })
       }
       console.log(menuHistory);
     });
