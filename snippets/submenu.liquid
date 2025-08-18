@@ -345,6 +345,7 @@ document.querySelector('.back-btn').addEventListener('click', () => {
     }
   } else {
     document.querySelector('.nav-menu').classList.remove('hidden');
+    document.querySelectorAll('.has-sub').forEach(el => el.classList.remove('active'))
   }
 
   console.log(menuHistory);
