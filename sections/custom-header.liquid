@@ -517,10 +517,7 @@
           // e.preventDefault();
           const navMenu = this.closest('.nav-menu');
 
-          let submenuElement = document.querySelector('.submenu');
-          if(submenuElement.classList.contains('active')){
-            submenuElement.classList.remove('active')
-          }
+         
 
           if(window.innerWidth < 768){
             if(navMenu){
@@ -533,6 +530,8 @@
           // Remove active classes from all menus
           reloadMenuItemsMain(mainHeader);
           isActive = !isActive;
+          console.log(item);
+          
           if(isActive){
             item.classList.add('active');
             submenuElement.classList.add('active');
