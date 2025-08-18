@@ -333,6 +333,7 @@ document.addEventListener('DOMContentLoaded', () => {
         // previousSubmenu.style.display = 'block';
       }else{
         document.querySelector('.submenu').classList.add('active')
+        document.querySelector('.item__1').classList.remove('hidden')
         document.querySelector('.item__1').style.display = "block";
         document.querySelectorAll('.item__2').forEach(el=>{
           el.style.display = "none";
