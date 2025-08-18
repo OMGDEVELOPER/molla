@@ -527,8 +527,11 @@
           isActive = !isActive;
           console.log(isActive);
           let submenuEl = document.querySelector('.submenu');
+         console.log(submenuEl);
          
           if (submenuEl && !submenuEl.classList.contains('active')) {
+            console.log('contains active');
+            
               submenuEl.classList.add('active');
           }
           // Activate clicked item and its submenu
@@ -543,7 +546,6 @@
             submenuElement.classList.remove('active');
           }
         });
-
         item.setAttribute('data-bound', 'true');
       }
     }
