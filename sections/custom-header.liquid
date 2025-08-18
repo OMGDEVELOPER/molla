@@ -503,9 +503,9 @@
 {% endschema %}
 
 {% javascript %}
+  let isActive = false;
   function LoadMenuJs() {
   let menuItems = document.querySelectorAll('.header-group .menu-items-main li');
-  let isActive = false;
   menuItems.forEach((item) => {
     if (item.classList.contains('has-sub') && !item.hasAttribute('data-bound')) {
       let menuClass = item.getAttribute('child-menu-id');
