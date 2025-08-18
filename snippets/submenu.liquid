@@ -321,26 +321,35 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   }
 
-    // Back button logic
-    document.querySelector('.back-btn').addEventListener('click', () => {
-      console.log("back clicked");
-      
-      if (menuHistory.length > 0) {
-        menuHistory[menuHistory.length-1].style.display = 'none'
-        menuHistory.pop();
-        // Show previous submenu
-        // let previousSubmenu = menuHistory[menuHistory.length - 1];
-        // previousSubmenu.style.display = 'block';
-      }else{
-        document.querySelector('.submenu').classList.add('active')
-        document.querySelector('.item__1').classList.remove('hidden')
-        document.querySelector('.item__1').style.display = "block";
-        document.querySelectorAll('.item__2').forEach(el=>{
-          el.style.display = "none";
-        })
-      }
-      console.log(menuHistory);
-    });
+  // Back button logic
+document.querySelector('.back-btn').addEventListener('click', () => {
+  console.log("back clicked");
+
+  if (menuHistory.length > 0) {
+    // Hide current submenu
+    let current = menuHistory.pop(); 
+    current.style.display = 'none';
+
+    // Show previous submenu if it exists
+    if (menuHistory.length > 0) {
+      let previousSubmenu = menuHistory[menuHistory.length - 1];
+      previousSubmenu.style.display = 'block';
+    } else {
+      // If no previous submenu left, go back to root
+      document.querySelector('.submenu').classList.add('active');
+      document.querySelector('.item__1').classList.remove('hidden');
+      document.querySelector('.item__1').style.display = "block";
+      document.querySelectorAll('.item__2').forEach(el => {
+        el.style.display = "none";
+      });
+    }
+  } else {
+    console.log("⚠ No more history to go back to!");
+  }
+
+  console.log(menuHistory);
+});
+
   
 
   loadSubmenuItems();
