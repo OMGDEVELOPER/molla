@@ -118,4 +118,8 @@ display:none;
       }
     });
   });
+  let closeMenu = document.querySelector('.close-menu');
+  closeMenu.addEventListener('click',function(){
+    document.querySelector('.item__1').style.display = "none"
+  })
 {% endjavascript %}
