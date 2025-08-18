@@ -504,6 +504,7 @@
 
 {% javascript %}
   let isActive = false;
+  let menuHistory = [];
   function LoadMenuJs() {
   let menuItems = document.querySelectorAll('.header-group .menu-items-main li');
   menuItems.forEach((item) => {
