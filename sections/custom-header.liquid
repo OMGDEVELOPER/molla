@@ -507,6 +507,7 @@
   let menuItems = document.querySelectorAll('.header-group .menu-items-main li');
   let isActive = false;
   menuItems.forEach((item) => {
+    console.log('has sub clicked');
     if (item.classList.contains('has-sub') && !item.hasAttribute('data-bound')) {
       let menuClass = item.getAttribute('child-menu-id');
       let mainHeader = item.closest('.header-group');
@@ -558,13 +559,12 @@ function reloadMenuItemsMain(context) {
   let stickyAdded = false;
   let ActiveClass = false;
   let ElementClonedDetected = false;
+  // for sticky header
   function LoadStickyMenuJs() {
     if (document.querySelector('#header-ontop.cloned')) {
       ElementClonedDetected = true;
       let menuItems = document.querySelectorAll('.cloned .header-group .menu-items-main li');
       menuItems.forEach((item) => {
-        console.log('has sub clicked');
-        
         if (item.classList.contains('has-sub')) {
           let menuClass = item.getAttribute('child-menu-id');
           let mainHeader = document.querySelector('.cloned .header-group');
