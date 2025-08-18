@@ -336,9 +336,10 @@ document.addEventListener('DOMContentLoaded', () => {
           el.style.display = "none";
         })
       }
-      console.log(menuHistory.length );
+     
       
       if(menuHistory.length == 0){
+         console.log(menuHistory.length );
         document.querySelector('.submenu').classList.add('active')
         document.querySelectorAll('.has-sub').forEach(el => el.classList.remove('active'))
       }
