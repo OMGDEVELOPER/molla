@@ -519,9 +519,9 @@
 
           let submenuElement = document.querySelector('.submenu');
           if(submenuElement.classList.contains('active')){
-            submenuElement.classList.toggle('active')
+            submenuElement.classList.remove('active')
           }
-          
+
           if(window.innerWidth < 768){
             if(navMenu){
               navMenu.classList.add('hidden')
