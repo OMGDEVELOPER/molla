@@ -51,9 +51,7 @@ document.addEventListener('DOMContentLoaded', function () {
         if(parentItem.classList.contains('hidden')){
           parentItem.classList.remove('hidden')
         }else{
-          if(window.innerWidth < 768){
-            parentItem.classList.add('hidden')
-          }
+          parentItem.classList.add('hidden')
         }
         
        let targetId =  e.target.getAttribute('target-id')
