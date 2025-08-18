@@ -225,7 +225,7 @@ document.addEventListener('DOMContentLoaded', () => {
       const menu_id = trigger.getAttribute('menu-id');
       const subMenuContainer = this.closest('.item');
       console.log(subMenuContainer);
-      if(subMenuContainer.classList.contains('hidden') || subMenuContainer.classList.contains('hide-main')){
+      if(subMenuContainer.classList.contains('hidden')){
         subMenuContainer.classList.remove('hidden')
         subMenuContainer.classList.remove('hide-main')
       }
