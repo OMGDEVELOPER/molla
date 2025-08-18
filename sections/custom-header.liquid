@@ -513,7 +513,7 @@
           if (submenuEl && !submenuEl.classList.contains('active')) {
               submenuEl.classList.add('active');
           }
-          
+
           // Remove active classes from all menus
           reloadMenuItemsMain(mainHeader);
           isActive = !isActive;
@@ -521,12 +521,13 @@
             item.classList.add('active');
             submenuElement.classList.add('active');
           }else{
+            console.log(item);
+            
             item.classList.remove('active');
             submenuElement.classList.remove('active');
           }
           // Activate clicked item and its submenu
           if (window.innerWidth <= 768) {
-            // console.log('asd')
             document.querySelector('.header-bottom').classList.add('hidden');
           }
           
