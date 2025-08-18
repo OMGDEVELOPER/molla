@@ -47,12 +47,14 @@ document.addEventListener('DOMContentLoaded', function () {
         }
         let parentItem = e.target.closest('.item__1__group');
         console.log('parent item triggered');
-        
-        if(parentItem.classList.contains('hidden')){
-          parentItem.classList.remove('hidden')
-        }else{
-          parentItem.classList.add('hidden')
+        if(window.innerWidth < 768){
+          if(parentItem.classList.contains('hidden')){
+            parentItem.classList.remove('hidden')
+          }else{
+            parentItem.classList.add('hidden')
+          }
         }
+        
         
        let targetId =  e.target.getAttribute('target-id')
        let blockId = e.target.getAttribute('block-id')
