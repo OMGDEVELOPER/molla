@@ -60,7 +60,7 @@ document.addEventListener('DOMContentLoaded', function () {
        let blockId = e.target.getAttribute('block-id')
        currentMenuActive = e.target.getAttribute('submenu-order');
        console.log(currentMenuActive)
-        if(currentMenuActive == 3){
+        if(currentMenuActive == 3 || currentMenuActive == 2){
           document.querySelector('.item__1 ').style.display = 'none'
           // document.querySelector('.item__1 ').classList.add('hidden')
         }else{
