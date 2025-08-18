@@ -625,6 +625,9 @@ function reloadMenuItemsMain(context) {
         document.querySelectorAll('.item__1 ').forEach(el => el.classList.remove('hidden'))
       }else{
         console.log('close');
+        isActive = false;
+        console.log(isActive);
+        
         // window.location.reload()
         document.querySelectorAll('.lvl-2').forEach(el => el.style.display = "none")
         document.querySelectorAll('.lvl-3').forEach(el => el.style.display = "none")
