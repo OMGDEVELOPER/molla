@@ -243,7 +243,7 @@ document.addEventListener('DOMContentLoaded', () => {
         document.querySelectorAll('.submenu__items.lvl-1 .submenu-items-name').forEach(i => i.classList.remove('activeMenuItem'));
      
         e.target.classList.add('activeMenuItem');
-        // document.querySelector('.row > .item__1').classList.add('hide-main')
+        document.querySelector('.row > .item__1').classList.add('hide-main')
         let submenuItem = document.querySelector(`.extra-columns[menu-id="${menu_id}"]`);
         const menuTitle = trigger.getAttribute('target-id');
         submenuItem.setAttribute('menu-title',menuTitle)
@@ -252,7 +252,7 @@ document.addEventListener('DOMContentLoaded', () => {
         LoadExtraColContainer()
         submenuItem.style.display = "block"
       }else{
-        // document.querySelector('.row > .item__1').classList.remove('hide-main')
+        document.querySelector('.row > .item__1').classList.remove('hide-main')
         CloseExtraColContainer()
       }
       // Show only the matched one
