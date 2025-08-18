@@ -296,9 +296,7 @@ document.addEventListener('DOMContentLoaded', () => {
           removeActiveClass();
           e.target.classList.add('activeMenuItem');
         }
-
         currentMenuActive = e.target.getAttribute('submenu-order');
-        console.log('roofing menu')
         console.log(with5th_lvl)
         if (window.innerWidth <= 768) {
           if (currentMenuActive == 1) {
@@ -307,7 +305,7 @@ document.addEventListener('DOMContentLoaded', () => {
             // document.querySelector('.item__1').style.display = "none";
           }
         }else{
-          if (currentMenuActive == 3) {
+          if (currentMenuActive == 3 && with5th_lvl) {
             if(window.innerWidth > 768){
               document.querySelector('.item__1').style.display = "none";
               console.log('hide .item__1');
