@@ -516,7 +516,12 @@
         item.addEventListener('click', function (e) {
           // e.preventDefault();
           const navMenu = this.closest('.nav-menu');
-          console.log(e.target);
+
+          let submenuElement = document.querySelector('.submenu');
+          if(submenuElement.classList.contains('active')){
+            submenuElement.classList.toggle('active')
+          }
+          
           if(window.innerWidth < 768){
             if(navMenu){
               navMenu.classList.add('hidden')
