@@ -508,11 +508,7 @@
             navMenu.classList.add('hidden')
           }
           
-          let submenuEl = document.querySelector('.submenu');
-          console.log(submenuEl);
-          if (submenuEl && !submenuEl.classList.contains('active')) {
-              submenuEl.classList.add('active');
-          }
+          
 
           // Remove active classes from all menus
           reloadMenuItemsMain(mainHeader);
@@ -522,9 +518,13 @@
             submenuElement.classList.add('active');
           }else{
             console.log(item);
-            
             item.classList.remove('active');
             submenuElement.classList.remove('active');
+          }
+          let submenuEl = document.querySelector('.submenu');
+          console.log(submenuEl);
+          if (submenuEl && !submenuEl.classList.contains('active')) {
+              submenuEl.classList.add('active');
           }
           // Activate clicked item and its submenu
           if (window.innerWidth <= 768) {
