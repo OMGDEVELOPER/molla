@@ -49,10 +49,13 @@
 
 	.go-back-menu {
 		display: block;
+
+	}
+    go-back-menu button{
         background: none;
         border: none;
         color: #127fb5;
-	}
+    }
 
 	.nav-menu {
 		/* display:none; */
