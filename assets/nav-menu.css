@@ -17,7 +17,7 @@
     text-align: center;
 }
 .hide-main{
-  /* display: none !important; */
+  display: none !important;
 }
 .extra-columns li::after{
   filter: brightness(0);
