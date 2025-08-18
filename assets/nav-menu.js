@@ -37,6 +37,7 @@ document.addEventListener('DOMContentLoaded', function () {
   
   extraColumnsOutput.innerHTML = output;
   const triggerExtraItems = document.querySelectorAll(`.extra-columns > li`);
+  const extraColumnsContainer = document.querySelector(`.extra-columns-container`);
   const SubmenuParentItem = document.querySelectorAll(`#render-submenus-parent > div.level-2`);
     triggerExtraItems.forEach((element)=>{
       element.addEventListener('click',function(e){
@@ -44,7 +45,8 @@ document.addEventListener('DOMContentLoaded', function () {
           resetSubActiveClass();
           // e.target.classList.add('activeMenuItem')
         }
-        let parentItem = e.target.closest('.item__1__group')
+        let parentItem = e.target.closest('.item__1__group');
+        
         if(parentItem.classList.contains('hidden')){
           parentItem.classList.remove('hidden')
         }else{
