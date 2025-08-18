@@ -507,7 +507,6 @@
   let menuItems = document.querySelectorAll('.header-group .menu-items-main li');
   let isActive = false;
   menuItems.forEach((item) => {
-    console.log('has sub clicked');
     if (item.classList.contains('has-sub') && !item.hasAttribute('data-bound')) {
       let menuClass = item.getAttribute('child-menu-id');
       let mainHeader = item.closest('.header-group');
