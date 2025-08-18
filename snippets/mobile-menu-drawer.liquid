@@ -97,6 +97,7 @@ display:none;
         document.querySelector('.nav-menu').classList.remove('hidden')
         document.querySelector('.go-back-menu').classList.remove('hidden')
         document.querySelector('.item__1 ').classList.remove('hide-main')
+        document.querySelectorAll('.item__1 ').forEach(el => el.classList.remove('hidden'))
       }else{
         console.log('close');
         // window.location.reload()
