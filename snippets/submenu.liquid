@@ -339,7 +339,10 @@ document.addEventListener('DOMContentLoaded', () => {
           el.style.display = "none";
         })
       }
-      console.log(menuHistory);
+      if(menuHistory.length == 0){
+        document.querySelector('.submenu').classList.add('active')
+        document.querySelectorAll('.has-sub').forEach(el => el.classList.remove('active'))
+      }
     });
   
 
