@@ -530,7 +530,7 @@
           // Remove active classes from all menus
           reloadMenuItemsMain(mainHeader);
           isActive = !isActive;
-          console.log(item);
+         
           
           if(isActive){
             item.classList.add('active');
@@ -539,6 +539,7 @@
             item.classList.remove('active');
             submenuElement.classList.remove('active');
           }
+           console.log(submenuElement);
           let submenuEl = document.querySelector('.submenu');
           // console.log(submenuEl);
           if (submenuEl && !submenuEl.classList.contains('active')) {
