@@ -1,3 +1,9 @@
+.blog-content table,
+.blog-content table tr,
+.blog-content table tr td
+{
+  border:1px solid #eee;
+}
 html *{
   font-family: "Karla", sans-serif !important;
   font-optical-sizing: auto;
