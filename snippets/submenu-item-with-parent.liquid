@@ -106,6 +106,8 @@ document.addEventListener('DOMContentLoaded', () => {
     const container = document.getElementById(`render-submenus-parent`);
     if (container) container.innerHTML += renderedHTML;
   });
+   let submenuChildrens = document.querySelectorAll('.submenu-with-children');
+    console.log(submenuChildrens);
 });
   
 {% endjavascript %}
