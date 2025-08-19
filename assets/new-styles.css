@@ -3,7 +3,7 @@
 .blog-content table tr td
 {
   border:1px solid #eee;
-  padding:3px;
+  padding:10px;
 }
 html *{
   font-family: "Karla", sans-serif !important;
