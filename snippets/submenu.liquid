@@ -457,13 +457,14 @@ function reloadMenuItemsMain(context) {
         document.querySelector('.close-menu').classList.remove('hidden')
         document.querySelector('.open-menu').classList.add('hidden')
         document.querySelector('.nav-menu').classList.remove('hidden')
-        // document.querySelector('.go-back-menu').classList.remove('hidden')
+       
         document.querySelector('.item__1 ').classList.remove('hide-main')
         document.querySelectorAll('.item__1 ').forEach(el => el.classList.remove('hidden'))
       }else{
         console.log('close');
         isActive = false;
         console.log(isActive);
+        document.querySelector('.go-back-menu').classList.add('hidden')
         
         // window.location.reload()
         document.querySelectorAll('.lvl-2').forEach(el => el.style.display = "none")
