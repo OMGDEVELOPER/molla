@@ -296,9 +296,6 @@ document.addEventListener('DOMContentLoaded', () => {
       submenuChildrens.forEach((item) => {
         item.addEventListener('click', function(e) {
           const subMenuContainer = this.closest('.item');
-          console.log(subMenuContainer);
-          
-          
           //  if(subMenuContainer && !subMenuContainer.classList.contains('hidden')){
           //   // subMenuContainer.classList.add('hidden')
           //  }
@@ -331,7 +328,10 @@ document.addEventListener('DOMContentLoaded', () => {
           if (submenu) {
             submenu.style.display = 'block';
             menuHistory.push(submenu);
+          }else{
+            menuHistory.push(subMenuContainer);
           }
+          
           console.log('submenu-with children');
           console.log(menuHistory);
           
