@@ -289,6 +289,8 @@ document.addEventListener('DOMContentLoaded', () => {
     allSubmenus.forEach(sub => sub.style.display = 'none');
     
     let submenuChildrens = document.querySelectorAll('.submenu-with-children');
+    console.log(submenuChildrens);
+    
     submenuChildrens.forEach((item) => {
       item.addEventListener('click', function(e) {
          const subMenuContainer = this.closest('.item');
