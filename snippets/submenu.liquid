@@ -487,6 +487,10 @@ function reloadMenuItemsMain(context) {
       
       if (menuHistory.length > 0) {
         menuContainer = 0;
+        let historyItem = menuHistory[menuHistory.length-1];
+        if(historyItem.classList.contains('hide-main')){
+          historyItem.classList.remove('hide-main')
+        }
         menuHistory[menuHistory.length-1].style.display = 'none'
         menuHistory.pop();
       }else{
