@@ -1,3 +1,6 @@
+.product.product-card.product-inner.smallCard{
+  z-index:-1;
+}
 .blog-content table,
 .blog-content table th,
 .blog-content table tr,
