@@ -1,3 +1,6 @@
+.product.product-card.product-inner.smallCard:hover{
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+}
 .product.product-card.product-inner.smallCard{
   z-index:-1;
 }
