@@ -6,7 +6,7 @@
   border:1px solid #eee;
   padding:10px;
 }
-.blog-content ul li::marker{
+.blog-content ul li::before{
   opacity:0;
   display:none;
 }
