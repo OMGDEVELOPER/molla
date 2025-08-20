@@ -6,13 +6,18 @@
   border:1px solid #eee;
   padding:10px;
 }
-.blog-content p,
-.blog-content h5,
+.blog-content p
 {
     font-family: inherit !important;
     font-style: normal !important;
     font-size: 14px;
     line-height:normal !important;
+}
+.blog-content h5{
+    font-family: inherit !important;
+    font-style: normal !important;
+    font-size: 17px;
+    line-height:normal !important; 
 }
 html *{
   font-family: "Karla", sans-serif !important;
