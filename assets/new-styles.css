@@ -6,6 +6,10 @@
   border:1px solid #eee;
   padding:10px;
 }
+.blog-content ul li:marker{
+  opacity:0;
+  display:none;
+}
 .blog-content p
 {
     font-family: inherit !important;
