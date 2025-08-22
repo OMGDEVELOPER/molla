@@ -83,7 +83,7 @@
 	submenu {
 		overflow: scroll;
 		height: 100vh;
-		;
+		position:relative !important;
 	}
 
 	header {
@@ -101,9 +101,6 @@
     .submenu .row .level-3{
         height: 80vh;
     }
-	.submenu{
-		position:relative;
-	}
 
 }
 
