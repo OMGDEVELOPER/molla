@@ -153,6 +153,15 @@
 
 {% javascript %}
 document.addEventListener('DOMContentLoaded', () => {
+  // mobile
+  window.addEventListener("resize", function () {
+    if (window.innerWidth <= 768) {
+      document.querySelector('.nav-menu').classList.add('hidden')
+    } else {
+      document.querySelector('.nav-menu').classList.remove('hidden')
+    }
+  });
+
   const allMenus = window.menuData;
   Object.entries(allMenus).forEach(([blockId, menus]) => {
     function renderSubmenu(menu) {
