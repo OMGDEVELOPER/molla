@@ -1,3 +1,14 @@
+.collection-products .product-thumb{
+  height: 200px;
+  max-height: 200px;
+}
+.collection-products .product-thumb a{
+  height:100%;
+}
+.collection-products .product-thumb a img{
+  height:100%;
+  object-fit:cover;
+}
 .product.product-card.product-inner.smallCard:hover{
   box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
 }
