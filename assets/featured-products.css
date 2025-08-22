@@ -53,6 +53,10 @@
   .featured-products .__row .grid-item {
     justify-items: center;
   }
+  .featured-products .item button{
+    width:100%;
+    padding:15px;
+  }
 }
 
 /* ===== Product Item ===== */
