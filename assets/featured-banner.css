@@ -75,15 +75,19 @@ font-weight: 800;
 
 letter-spacing: -0.96px;
 }
+
 .featured-banner .__item-2 .__row2 .__heading .__title{
       color: #FAFAFA;
     font-family: Karla;
-
     font-size: clamp(35px, 5vw, 64px);
     font-style: normal;
     font-weight: 600;
-   
     letter-spacing: -2.56px;
+}
+@media (max-width:768px){
+  .featured-banner .__item-2 .__row2 .__heading .__title{
+    letter-spacing:unset !important;
+  }
 }
 .featured-banner .__item-1 .__text p{
   margin-top: 24px;
