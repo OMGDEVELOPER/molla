@@ -101,6 +101,9 @@
     object-fit: cover;
     object-position: center;
   }
+  .shop-by-cat ._box .block_content{
+    padding:0px;
+  }
 }
 
 .shop-by-cat ._box .img_content {
