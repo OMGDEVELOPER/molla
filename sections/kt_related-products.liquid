@@ -59,11 +59,8 @@
     assign cssAlign_rev = 'left'
   endif
 -%}
- {%- capture products_map -%}
-   {%- assign collection = collections[section.settings.product_related_collection] -%}
-   {{ section.settings.product_related_collection }}
-  {% endcapture %}
-
+{% comment %} I need to pull related product data here {% endcomment %}
+{%render 'new-related-products' %}
 {%- unless section.settings.off_section -%}
   {%- assign width_section = section.settings.width_section -%}
   {%- assign width_content = section.settings.width_content -%}
