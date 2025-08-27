@@ -59,8 +59,8 @@
     assign cssAlign_rev = 'left'
   endif
 -%}
-  {%- for prd in recommendations.products -%}
-    <h1>{{ prd.url }}</h1>
+  {%- for product in recommendations.products -%}
+    <h1>{{ product.url }}</h1>
   {% endfor %}
 
 {%- unless section.settings.off_section -%}
