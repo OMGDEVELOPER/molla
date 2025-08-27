@@ -18,7 +18,7 @@
     "use_wishlist": "nitro",
     "newsletter_popup": false,
     "use_second_img": false,
-    "product_grid_layout": "04",
+    "product_grid_layout": "02 p-style-20",
     "label_style": "01",
     "use_new_label": false,
     "countdown_grid_style": "05",
