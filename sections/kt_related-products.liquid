@@ -59,7 +59,7 @@
     assign cssAlign_rev = 'left'
   endif
 -%}
-{{template }}
+{{template.suffix }}
 {%if template.suffix == 'related'%}
 {% comment %} I need to pull related product data here {% endcomment %}
 {% render 'new-related-products',
