@@ -17,6 +17,7 @@
     "width_sidebar_layout": "container",
     "use_wishlist": "nitro",
     "newsletter_popup": false,
+    "product_grid_layout": "02 p-style-20",
     "use_new_label": false,
     "countdown_grid_style": "05",
     "show_sticky_add": false,
