@@ -100,7 +100,7 @@
         "width_section": "w-100",
         "width_content": true,
         "section_margin_top": "60px",
-        "section_margin_bottom": "60px",
+        "section_margin_bottom": "10rem",
         "section_padding": "1rem",
         "section_bg": "",
         "section_bg_op": 1,
