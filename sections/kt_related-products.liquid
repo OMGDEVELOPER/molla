@@ -59,8 +59,10 @@
     assign cssAlign_rev = 'left'
   endif
 -%}
+ {%- capture products_map -%}
    {%- assign collection = collections[section.settings.product_related_collection] -%}
-   {{ collection }}
+   {{ section.settings.product_related_collection }}
+  {% endcapture %}
 
 {%- unless section.settings.off_section -%}
   {%- assign width_section = section.settings.width_section -%}
