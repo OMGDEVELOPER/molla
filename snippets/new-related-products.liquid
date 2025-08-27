@@ -1,368 +1,61 @@
 {{ "featured-products.css" | asset_url | stylesheet_tag }}
-<section class="featured-products container py-5">
-  <h1 class="__heading text-center mb-4">FEATURED PRODUCTS</h1>
-
-  <div class="row g-4">
-    
-      
-      
-        <div class="col-12 col-sm-6 col-md-4 col-lg-3">
-          <div class="item card h-100" data-product-id="15130262241651">
-            <a href="/products/twin-wall-roof-sheets" class="grid-item text-decoration-none text-dark">
-              <img src="//bighandsbuildingsupplydev.myshopify.com/cdn/shop/files/TwinwallBGrey.png?v=1752803347&amp;width=400" alt="10mm Thickness Twin-wall Roof Sheets" class="card-img-top img-fluid">
-              <div class="card-body">
-                <h2 class="card-title">10mm Thickness Twin-wall Roof Sheets</h2>
-                <div class="card-text _description small text-muted">
-                  Twin-wall sheets are double-layered building materials made from polycarbonate or polypropylene, ...
-                </div>
+<div class="row g-4">
+  {% if recommendations.performed and recommendations.products_count > 0 %}
+    {% for product_obj in recommendations.products limit: 8 %}
+      <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+        <div class="item card h-100" data-product-id="{{ product_obj.id }}">
+          <a href="{{ product_obj.url }}" class="grid-item text-decoration-none text-dark">
+            <img 
+              src="{{ product_obj.featured_image | image_url: width: 400 }}" 
+              alt="{{ product_obj.title }}" 
+              class="card-img-top img-fluid"
+            />
+            <div class="card-body">
+              <h2 class="card-title h6">{{ product_obj.title }}</h2>
+              <div class="card-text _description small text-muted">
+                {{ product_obj.description | strip_html | truncate: 100 }}
               </div>
-            </a>
-
-            <div class="card-footer bg-white border-top-0">
-              <p class="_price fw-bold mb-2" data-price="">$63.76</p>
-
-              <div class="_status d-flex align-items-center mb-2">
-                
-                  <span class="_stock in-stock bg-success rounded-circle me-2" style="width:10px; height:10px;"></span>
-                  <span class="_status_text text-success small">In Stock</span>
-                
-              </div>
-
-              
-                <form method="post" action="/cart/add">
-                  
-                    <select name="id" class="form-select form-select-sm mb-2 variant-select" data-product="15130262241651">
-                      
-                        <option value="52749333889395" data-price="$99.79" disabled="">
-                          1050mm / 3.6m / Blu Grey - Sold Out
-                        </option>
-                      
-                        <option value="52749333922163" data-price="$99.79">
-                          1050mm / 3.6m / Clear
-                        </option>
-                      
-                        <option value="52749333954931" data-price="$99.79" disabled="">
-                          1050mm / 3.6m / Bronze - Sold Out
-                        </option>
-                      
-                        <option value="52749333987699" data-price="$99.79">
-                          1050mm / 3.6m / Opal
-                        </option>
-                      
-                        <option value="52749334020467" data-price="$116.42">
-                          1050mm / 4.2m / Blu Grey
-                        </option>
-                      
-                        <option value="52749334053235" data-price="$116.42">
-                          1050mm / 4.2m / Clear
-                        </option>
-                      
-                        <option value="52749334086003" data-price="$116.42" disabled="">
-                          1050mm / 4.2m / Bronze - Sold Out
-                        </option>
-                      
-                        <option value="52749334118771" data-price="$116.42">
-                          1050mm / 4.2m / Opal
-                        </option>
-                      
-                        <option value="52749334151539" data-price="$138.60">
-                          1050mm / 5m / Blu Grey
-                        </option>
-                      
-                        <option value="52749334184307" data-price="$138.60">
-                          1050mm / 5m / Clear
-                        </option>
-                      
-                        <option value="52749334217075" data-price="$138.60">
-                          1050mm / 5m / Bronze
-                        </option>
-                      
-                        <option value="52749334249843" data-price="$138.60">
-                          1050mm / 5m / Opal
-                        </option>
-                      
-                        <option value="52749334282611" data-price="$166.32">
-                          1050mm / 6m / Blu Grey
-                        </option>
-                      
-                        <option value="52749334315379" data-price="$166.32">
-                          1050mm / 6m / Clear
-                        </option>
-                      
-                        <option value="52749334348147" data-price="$166.32" disabled="">
-                          1050mm / 6m / Bronze - Sold Out
-                        </option>
-                      
-                        <option value="52749334380915" data-price="$166.32">
-                          1050mm / 6m / Opal
-                        </option>
-                      
-                        <option value="52749334413683" data-price="$185.96">
-                          1050mm / 7m / Opal
-                        </option>
-                      
-                        <option value="52749334446451" data-price="$63.76">
-                          700mm / 3.6m / Clear
-                        </option>
-                      
-                        <option value="52749334479219" data-price="$114.05">
-                          1200mm / 3.6m / Clear
-                        </option>
-                      
-                        <option value="52749334511987" data-price="$114.05">
-                          1200mm / 3.6m / Opal
-                        </option>
-                      
-                        <option value="52749334544755" data-price="$190.08">
-                          1200mm / 6m / Clear
-                        </option>
-                      
-                        <option value="52749334577523" data-price="$190.08">
-                          1200mm / 6m / Opal
-                        </option>
-                      
-                    </select>
-                  
-                  <button type="submit" class="btn btn-primary btn-sm text-uppercase add-to-cart-btn">Add to Cart</button>
-                </form>
-              
             </div>
+          </a>
+
+          <div class="card-footer bg-white border-top-0">
+            <p class="_price fw-bold mb-2" data-price>{{ product_obj.price | money }}</p>
+
+            <div class="_status d-flex align-items-center mb-2">
+              {% if product_obj.available %}
+                <span class="_stock in-stock bg-success rounded-circle me-2" style="width:10px; height:10px;"></span>
+                <span class="_status_text text-success small">In Stock</span>
+              {% else %}
+                <span class="_stock out-of-stock bg-danger rounded-circle me-2" style="width:10px; height:10px;"></span>
+                <span class="_status_text text-danger small">Sold Out</span>
+              {% endif %}
+            </div>
+
+            {% if product_obj.available %}
+              <form method="post" action="/cart/add">
+                {% if product_obj.variants.size > 1 %}
+                  <select name="id" class="form-select form-select-sm mb-2 variant-select" data-product="{{ product_obj.id }}">
+                    {% for variant in product_obj.variants %}
+                      <option 
+                        value="{{ variant.id }}" 
+                        data-price="{{ variant.price | money }}"
+                        {% unless variant.available %}disabled{% endunless %}
+                      >
+                        {{ variant.title }}{% unless variant.available %} - Sold Out{% endunless %}
+                      </option>
+                    {% endfor %}
+                  </select>
+                {% else %}
+                  <input type="hidden" name="id" value="{{ product_obj.variants.first.id }}">
+                {% endif %}
+                <button type="submit" class="btn btn-primary btn-sm text-uppercase add-to-cart-btn">Add to Cart</button>
+              </form>
+            {% endif %}
           </div>
         </div>
-      
-    
-      
-      
-        <div class="col-12 col-sm-6 col-md-4 col-lg-3">
-          <div class="item card h-100" data-product-id="15130256343411">
-            <a href="/products/wpc-decking" class="grid-item text-decoration-none text-dark">
-              <img src="//bighandsbuildingsupplydev.myshopify.com/cdn/shop/files/3DWPC-Shale_Grey.png?v=1752803166&amp;width=400" alt="3D Wood&amp; Plastic Composite Decking" class="card-img-top img-fluid">
-              <div class="card-body">
-                <h2 class="card-title">3D Wood&amp; Plastic Composite Decking</h2>
-                <div class="card-text _description small text-muted">
-                  5.4m per length
-
-                </div>
-              </div>
-            </a>
-
-            <div class="card-footer bg-white border-top-0">
-              <p class="_price fw-bold mb-2" data-price="">$88.00</p>
-
-              <div class="_status d-flex align-items-center mb-2">
-                
-                  <span class="_stock in-stock bg-success rounded-circle me-2" style="width:10px; height:10px;"></span>
-                  <span class="_status_text text-success small">In Stock</span>
-                
-              </div>
-
-              
-                <form method="post" action="/cart/add">
-                  
-                    <select name="id" class="form-select form-select-sm mb-2 variant-select" data-product="15130256343411">
-                      
-                        <option value="52749314589043" data-price="$88.00">
-                          Wood Profile / Shallow Coffee
-                        </option>
-                      
-                        <option value="52749314621811" data-price="$88.00">
-                          Wood Profile / American Teak
-                        </option>
-                      
-                        <option value="52749314654579" data-price="$88.00">
-                          Wood Profile / Sand Grey
-                        </option>
-                      
-                        <option value="52749314687347" data-price="$88.00">
-                          Wood Profile / Shale Grey
-                        </option>
-                      
-                    </select>
-                  
-                  <button type="submit" class="btn btn-primary btn-sm text-uppercase add-to-cart-btn">Add to Cart</button>
-                </form>
-              
-            </div>
-          </div>
-        </div>
-      
-    
-      
-      
-        <div class="col-12 col-sm-6 col-md-4 col-lg-3">
-          <div class="item card h-100" data-product-id="15130253951347">
-            <a href="/products/aluminium-angle" class="grid-item text-decoration-none text-dark">
-              <img src="//bighandsbuildingsupplydev.myshopify.com/cdn/shop/files/Angle.png?v=1752803094&amp;width=400" alt="Aluminium Angle" class="card-img-top img-fluid">
-              <div class="card-body">
-                <h2 class="card-title">Aluminium Angle</h2>
-                <div class="card-text _description small text-muted">
-                  100*100 Comes in 3mm Thickness
-50*50 Comes in 1.2mm Thickness
-25*25 Comes in 1.2mm Thickness
-50*7...
-                </div>
-              </div>
-            </a>
-
-            <div class="card-footer bg-white border-top-0">
-              <p class="_price fw-bold mb-2" data-price="">$20.35</p>
-
-              <div class="_status d-flex align-items-center mb-2">
-                
-                  <span class="_stock in-stock bg-success rounded-circle me-2" style="width:10px; height:10px;"></span>
-                  <span class="_status_text text-success small">In Stock</span>
-                
-              </div>
-
-              
-                <form method="post" action="/cart/add">
-                  
-                    <select name="id" class="form-select form-select-sm mb-2 variant-select" data-product="15130253951347">
-                      
-                        <option value="52749308461427" data-price="$119.90">
-                          100/100 / White / 6.5m
-                        </option>
-                      
-                        <option value="52749308494195" data-price="$20.35">
-                          25/25 / Black / 6m
-                        </option>
-                      
-                        <option value="52749308526963" data-price="$20.35">
-                          25/25 / White / 6m
-                        </option>
-                      
-                        <option value="52749308559731" data-price="$20.35">
-                          25/25 / Grey / 6m
-                        </option>
-                      
-                        <option value="52749308592499" data-price="$20.35">
-                          25/25 / Cream / 6m
-                        </option>
-                      
-                        <option value="52749308625267" data-price="$20.35">
-                          25/25 / Monument / 6m
-                        </option>
-                      
-                        <option value="52749308658035" data-price="$28.60">
-                          50/50 / Black / 6m
-                        </option>
-                      
-                        <option value="52749308690803" data-price="$28.60">
-                          50/50 / White / 6m
-                        </option>
-                      
-                        <option value="52749308723571" data-price="$28.60">
-                          50/50 / Grey / 6m
-                        </option>
-                      
-                        <option value="52749308756339" data-price="$28.60">
-                          50/50 / Cream / 6m
-                        </option>
-                      
-                        <option value="52749308789107" data-price="$28.60">
-                          50/50 / Monument / 6m
-                        </option>
-                      
-                        <option value="52749308821875" data-price="$38.50">
-                          75/50 / White / 6m
-                        </option>
-                      
-                    </select>
-                  
-                  <button type="submit" class="btn btn-primary btn-sm text-uppercase add-to-cart-btn">Add to Cart</button>
-                </form>
-              
-            </div>
-          </div>
-        </div>
-      
-    
-      
-      
-        <div class="col-12 col-sm-6 col-md-4 col-lg-3">
-          <div class="item card h-100" data-product-id="15130246283635">
-            <a href="/products/aluminium-arch-beam" class="grid-item text-decoration-none text-dark">
-              <img src="//bighandsbuildingsupplydev.myshopify.com/cdn/shop/files/Arch_Beam_draw.png?v=1752802858&amp;width=400" alt="Aluminium Arch Beam 50mm*100mm" class="card-img-top img-fluid">
-              <div class="card-body">
-                <h2 class="card-title">Aluminium Arch Beam 50mm*100mm</h2>
-                <div class="card-text _description small text-muted">
-                  50mm * 100mm
-                </div>
-              </div>
-            </a>
-
-            <div class="card-footer bg-white border-top-0">
-              <p class="_price fw-bold mb-2" data-price="">$265.96</p>
-
-              <div class="_status d-flex align-items-center mb-2">
-                
-                  <span class="_stock in-stock bg-success rounded-circle me-2" style="width:10px; height:10px;"></span>
-                  <span class="_status_text text-success small">In Stock</span>
-                
-              </div>
-
-              
-                <form method="post" action="/cart/add">
-                  
-                    <select name="id" class="form-select form-select-sm mb-2 variant-select" data-product="15130246283635">
-                      
-                        <option value="52749285949811" data-price="$265.96">
-                          5.4m*1.2m / Black
-                        </option>
-                      
-                        <option value="52749285982579" data-price="$265.96" disabled="">
-                          5.4m*1.2m / Surfmist - Sold Out
-                        </option>
-                      
-                        <option value="52749286015347" data-price="$265.96" disabled="">
-                          5.4m*1.2m / Cream - Sold Out
-                        </option>
-                      
-                        <option value="52749286048115" data-price="$265.96">
-                          5.4m*1.2m / Grey
-                        </option>
-                      
-                        <option value="52749286080883" data-price="$391.57">
-                          7.2m*1.2m / Black
-                        </option>
-                      
-                        <option value="52749286113651" data-price="$391.57">
-                          7.2m*1.2m / Surfmist
-                        </option>
-                      
-                        <option value="52749286146419" data-price="$391.57">
-                          7.2m*1.2m / Cream
-                        </option>
-                      
-                        <option value="52749286179187" data-price="$391.57">
-                          7.2m*1.2m / Grey
-                        </option>
-                      
-                        <option value="52749286211955" data-price="$391.57">
-                          7.2m*700mm / Black
-                        </option>
-                      
-                        <option value="52749286244723" data-price="$391.57">
-                          7.2m*700mm / Surfmist
-                        </option>
-                      
-                        <option value="52749286277491" data-price="$391.57">
-                          7.2m*700mm / Cream
-                        </option>
-                      
-                        <option value="52749286310259" data-price="$391.57">
-                          7.2m*700mm / Grey
-                        </option>
-                      
-                    </select>
-                  
-                  <button type="submit" class="btn btn-primary btn-sm text-uppercase add-to-cart-btn">Add to Cart</button>
-                </form>
-              
-            </div>
-          </div>
-        </div>
-      
-    
-  </div>
-</section>
+      </div>
+    {% endfor %}
+  {% else %}
+    <p class="text-muted">No related products found.</p>
+  {% endif %}
+</div>
