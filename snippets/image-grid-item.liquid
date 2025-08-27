@@ -70,7 +70,7 @@ endcapture
       {%- capture image_fit -%}
         {%- render 'kt_image_fit', width: aspect_ratioW, height: aspect_ratioH, image_item: variant.image -%}
       {%- endcapture -%}
-      <div class="second-thumb">
+      <div class="second-thumb omg">
         {%- assign img_url = variant.image | img_url: '1x1' | replace: '_1x1.', '_{width}x.' -%}
         <img width="{{variant.image.width}}" height="{{variant.image.height}}" class="lazyload mll-lz {{image_fit}}" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="{{ img_url }}" data-widths="{{img_size}}" data-aspectratio="{{ variant.image.aspect_ratio }}" data-sizes="auto" alt="{{ variant.image.alt | escape }}" style="padding-bottom:{{variant.imag.height | times: 1.00 | divided_by: variant.imag.width | times: 100.00000000}}%">
       </div>
