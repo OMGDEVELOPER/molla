@@ -57,6 +57,11 @@
                     <option value="Other">Other</option>
                   </select>
                 </div>
+                {% comment %} other {% endcomment %}
+                <div class="col-12 col-md-12">
+                  <input type="text" class="form-control hidden" id="service_type_other_field" name="contact[here_about_us]" placeholder="How Did You Hear About Us ">
+                </div>
+
                 <!-- Message -->
                 <div class="col-12">
                   <label for="cmessage" class="sr-only">Message</label>
@@ -85,15 +90,15 @@
 </div>
 
 <script>
-  {% comment %} let selectOptions = document.getElementById('here_about_us'); {% endcomment %}
-  {% comment %} let oTherOption = document.getElementById('here_about_us_other_field');
+  let selectOptions = document.getElementById('service_type');
+  let oTherOption = document.getElementById('service_type_other_field');
   selectOptions.addEventListener('change', function(e) {
     if (e.target.value === 'Other') {
       oTherOption.classList.remove('hidden');
     }else{
        oTherOption.classList.add('hidden');
     }
-  }); {% endcomment %}
+  });
 </script>
 
 <style>
