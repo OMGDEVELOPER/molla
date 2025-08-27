@@ -129,7 +129,7 @@
           <div class="swiper-slide grid-item p-style-{{grid_ly}}">
             {% comment %} {%- render "product-grid-item", product: prd, grid_layout: grid_ly, st_card: st_card -%} {% endcomment %}
              {% render 'new-related-products',
-  product: product,
+  product: prd,
 %}
           </div>
           {%- if i > product_limit -%}{%-break-%}{%- endif -%}
