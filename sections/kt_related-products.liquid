@@ -147,7 +147,39 @@
     {%- assign responsive_ = section.settings.responsive | strip_newlines | json | remove: '\t' | remove: '\' | remove: ' ' | replace: '"{"','{"' | replace: '}}"','}}' -%}
     {%- assign items_ = responsive_ | split: '"slidesPerView":' | last | split: ',' | first | plus: 0 -%}
     {%-render 'sc_css'-%}
-  
+    <div data-section-id="{{ section.id }}" id="Swiper-{{ section.id }}" data-section-type="swiper-section" class="{{width_section_}}{%if section.settings.off_mobile%} d-none d-lg-block{%endif%}{%if section.settings.off_desktop%} d-lg-none{%endif%}">
+      <div class="content_{{section.id}}{%if section.settings.image%} bg-image lazyload{%endif%} swiper-fixed-fshadow"{%if section.settings.image%} data-bgset="{{section.settings.image | img_url: 'master'}}" data-sizes="auto" data-parent-fit="contain"{%endif%} data-respon="{'el':'.content_{{section.id}}','mt':'{{section.settings.section_margin_top}}','mb':'{{section.settings.section_margin_bottom}}','p':'{{section.settings.section_padding}}'}">        
+        <div class="section-width {{width_content_}}">
+          {%- if section.settings.title_section != blank -%}
+          <div class="section-title {{section.settings.title_align}} w-100"{%if section.settings.title == blank or section.settings.stitle == blank%} style="margin-bottom:{{section.settings.margin_btitle}}rem"{%endif%}>
+            {%- if section.settings.reverse -%}
+            <p class="sub-title">{{section.settings.stitle_section}}</p>
+            {%- endif -%}
+            <h3 class="title">{{section.settings.title_section}}</h3>
+            {%- unless section.settings.reverse -%}
+            <p class="sub-title">{{section.settings.stitle_section}}</p>
+            {%- endunless -%}
+          </div>
+          {%- endif -%}
+          <div class="swiper-container-fuild position-relative {{section.settings.nav_position}} nav-style{{section.settings.nav_style}} nav-mode-{{section.settings.nav_mode}}">
+            <div class="products-card-grid swiper-container loadvariant"  data-autoplay="{{section.settings.autoplay}}" data-slides-per-view="{{items_}}" data-dots="{{section.settings.use_dots}}" data-nav="{%- if section.settings.nav_style != '' -%}true{%-else-%}false{%-endif-%}" data-prev-el=".sw-btn-prev-{{section.id}}" data-next-el=".sw-btn-next-{{section.id}}" data-pagination=".swiper-pagination-{{section.id}}">
+              <div class="swiper-wrapper">{{products_map}}</div>
+              {%- if section.settings.use_dots -%}
+              <div class="swiper-pagination swiper-pagination-{{section.settings.dots_mode}} swiper-pagination-{{section.settings.dots_position}} swiper-pagination-{{section.id}}"></div>
+              {%- endif -%}
+            </div>
+            {%- if section.settings.use_navigation -%}
+            <div class="swiper-buttons position-absolute"{% if section.settings.nav_position == 'nav-top-right' or section.settings.nav_position == 'nav-top-left' %} style="margin-top: -{{section.settings.margin_btitle|plus: 1.6}}rem" {%endif%}>
+              <div class="content-buttons position-relative">
+                <div class="swiper-button-prev sw-btn-prev-{{section.id}} fkt-2x fkt-va"></div>
+                <div class="swiper-button-next sw-btn-next-{{section.id}} fkt-2x fkt-va"></div>
+              </div>
+            </div>
+            {%- endif -%}
+          </div>
+        </div>
+      </div>
+    </div>
     <!--lz_sc-->
   {%- endif -%}
 {%- endunless %}
