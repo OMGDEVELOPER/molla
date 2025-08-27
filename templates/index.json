@@ -33,7 +33,7 @@
             "style_btn_1": "btn-dark",
             "style_btn_rounded_1": "btn-round",
             "btn_shadow_1": false,
-            "link_1": "#",
+            "link_1": "shopify://collections",
             "textBtn_1": "SHOP NOW",
             "style_btn_2": "btn-outline-primary-2",
             "style_btn_rounded_2": "btn-rounded",
