@@ -162,32 +162,7 @@
           </div>
           {%- endif -%}
           <div class="swiper-container-fuild position-relative {{section.settings.nav_position}} nav-style{{section.settings.nav_style}} nav-mode-{{section.settings.nav_mode}}">
-            <div class="products-card-grid swiper-container loadvariant" data-breakpoints='{"0": {
-    "slidesPerView": 1,
-    "spaceBetween": 0
-  },
-  "375": {
-    "slidesPerView": 2,
-    "spaceBetween": 10
-  },
-  "768": {
-    "slidesPerView": 3,
-    "spaceBetween": 20
-  },
-  "992": {
-    "slidesPerView": 3,
-    "spaceBetween": 20
-  },
-  "1200": {
-    "slidesPerView": 3,
-    "spaceBetween": 20
-  },
-  "1500": {
-    "slidesPerView": 3,
-    "spaceBetween": 20
-  }
-}
-' data-autoplay="{{section.settings.autoplay}}" data-slides-per-view="{{items_}}" data-dots="{{section.settings.use_dots}}" data-nav="{%- if section.settings.nav_style != '' -%}true{%-else-%}false{%-endif-%}" data-prev-el=".sw-btn-prev-{{section.id}}" data-next-el=".sw-btn-next-{{section.id}}" data-pagination=".swiper-pagination-{{section.id}}">
+            <div class="products-card-grid swiper-container loadvariant" data-breakpoints='{{responsive_}}' data-autoplay="{{section.settings.autoplay}}" data-slides-per-view="{{items_}}" data-dots="{{section.settings.use_dots}}" data-nav="{%- if section.settings.nav_style != '' -%}true{%-else-%}false{%-endif-%}" data-prev-el=".sw-btn-prev-{{section.id}}" data-next-el=".sw-btn-next-{{section.id}}" data-pagination=".swiper-pagination-{{section.id}}">
               <div class="swiper-wrapper">{{products_map}}</div>
               {%- if section.settings.use_dots -%}
               <div class="swiper-pagination swiper-pagination-{{section.settings.dots_mode}} swiper-pagination-{{section.settings.dots_position}} swiper-pagination-{{section.id}}"></div>
