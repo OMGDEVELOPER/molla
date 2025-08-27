@@ -3,228 +3,84 @@
   <div class="quote-popup-content">
     <span id="close-quote-popup" class="close-popup">&times;</span>
     <div class="container" data-block="item_contact_form">
-      <div class="content_1566463547064" data-respon="{'el':'.content_1566463547064','mt':'','mb':'','p':''}">
-        <div class="section-width w-100">
-          <div class="row justify-content-center text-center">
-            <div class="col-md-12 col-lg-12">
-              <h2 class="title mb-1">Get In Touch</h2>
+      <div class="section-width w-100">
+        <div class="row justify-content-center text-center">
+          <div class="col-md-12 col-lg-12">
+            <h2 class="title mb-1">Get a Quote From Elite Roof Systems</h2>
 
-              <p class="lead text-primary">
-                We collaborate with ambitious brands and people; <br>
-                we’d love to build something great together.
-              </p>
-              <form
-                method="post"
-                action="/contact#contact_form"
-                id="contact_form"
-                accept-charset="UTF-8"
-                class="contact-form"
-              >
-                <input type="hidden" name="form_type" value="contact"><input type="hidden" name="utf8" value="✓">
-                <div class="row">
-                  <div class="col-12 col-md-6">
-                    <label for="cname" class="sr-only">Name </label>
-                    <input
-                      type="text"
-                      class="form-control"
-                      id="cname"
-                      name="contact[name]"
-                      value=""
-                      placeholder="Name *"
-                      required=""
-                    >
-                  </div>
+            <p class="lead text-primary">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+            </p>
 
-                  <div class="col-12 col-md-6">
-                    <label for="cemail" class="sr-only">Email </label>
-                    <input
-                      type="email"
-                      class="form-control"
-                      id="cemail"
-                      name="contact[email]"
-                      placeholder="Email *"
-                      required=""
-                    >
-                  </div>
+            <form
+              method="post"
+              action="/contact#contact_form"
+              id="contact_form"
+              accept-charset="UTF-8"
+              enctype="multipart/form-data"
+              class="contact-form"
+            >
+              <input type="hidden" name="form_type" value="contact">
+              <input type="hidden" name="utf8" value="✓">
 
-                  <div class="col-12 col-md-6">
-                    <label for="cphone" class="sr-only">Phone</label>
-                    <input type="tel" class="form-control" id="cphone" name="contact[phone]" placeholder="Phone">
-                  </div>
-                  <div class="col-12 col-md-6">
-                    <label for="suburb" class="sr-only">Suburb</label>
-                    <input type="text" class="form-control" id="suburb" name="contact[suburb]" placeholder="Suburb">
-                  </div>
-
-                  <div class="col-12 col-md-12">
-                    <label for="here_about_us" class="sr-only">How Did You Hear About Us?*</label>
-                    <select class="form-control" name="contact[here_about_us]" id="here_about_us">
-                      <option value="">How Did You Hear About Us?*</option>
-                      <option value="Google">Google</option>
-                      <option value="Social Media (Facebook, Instagram, Etc.)">Social Media (Facebook, Instagram, Etc.)</option>
-                      <option value="Word Of Mouth/Referral">Word Of Mouth/Referral</option>
-                      <option value="Other">Other</option>
-                    </select>
-                  </div>
-
-                  <div class="col-12 col-md-12">
-                    <input type="text" class="form-control hidden" id="here_about_us_other_field" name="contact[here_about_us]" placeholder="How Did You Hear About Us ">
-                  </div>
+              <div class="row">
+                <!-- Name -->
+                <div class="col-12">
+                  <label for="cname" class="sr-only">Name</label>
+                  <input type="text" class="form-control" id="cname" name="contact[name]" placeholder="Enter your name" required>
                 </div>
-                <label for="cmessage" class="sr-only">Message</label>
-                <textarea
-                  class="form-control"
-                  cols="30"
-                  rows="4"
-                  id="cmessage"
-                  name="contact[body]"
-                  required=""
-                  placeholder="Message *"
-                ></textarea>
 
-                <button type="submit" class="btn btn-outline-primary-2 btn-minwidth-sm">
-                  <span>SUBMIT</span>
-                  <i class="fkt-long-arrow-right"></i>
-                </button>
-              </form>
-            </div>
+                <!-- Phone + Email -->
+                <div class="col-12 col-md-6">
+                  <label for="cphone" class="sr-only">Phone Number</label>
+                  <input type="tel" class="form-control" id="cphone" name="contact[phone]" placeholder="Phone Number" required>
+                </div>
+                <div class="col-12 col-md-6">
+                  <label for="cemail" class="sr-only">Email Address</label>
+                  <input type="email" class="form-control" id="cemail" name="contact[email]" placeholder="Email Address" required>
+                </div>
+
+                <!-- Suburb -->
+                <div class="col-12">
+                  <label for="suburb" class="sr-only">Suburb</label>
+                  <input type="text" class="form-control" id="suburb" name="contact[suburb]" placeholder="Enter your suburb" required>
+                </div>
+
+                <!-- Service Type -->
+                <div class="col-12">
+                  <label for="service_type" class="sr-only">Service Type</label>
+                  <select class="form-control" name="contact[service_type]" id="service_type" required>
+                    <option value="">Select Service Type</option>
+                    <option value="Roof Installation">Roof Installation</option>
+                    <option value="Roof Repair">Roof Repair</option>
+                    <option value="Roof Maintenance">Roof Maintenance</option>
+                    <option value="Other">Other</option>
+                  </select>
+                </div>
+
+                <!-- Message -->
+                <div class="col-12">
+                  <label for="cmessage" class="sr-only">Message</label>
+                  <textarea class="form-control" id="cmessage" name="contact[body]" rows="4" placeholder="Tell us more about your project" required></textarea>
+                </div>
+
+                <!-- Upload Files -->
+                <div class="col-12">
+                  <label for="cfile" class="sr-only">Upload your files</label>
+                  <input type="file" class="form-control" id="cfile" name="contact[file]">
+                </div>
+              </div>
+
+              <!-- Buttons -->
+              <div class="mt-3 d-flex justify-content-between">
+                <button type="submit" class="btn btn-primary">Request Quote</button>
+                <button type="reset" class="btn btn-outline-secondary">Clear</button>
+              </div>
+            </form>
+
           </div>
         </div>
       </div>
     </div>
   </div>
 </div>
-<script>
-  let selectOptions = document.getElementById('here_about_us');
-  let oTherOption = document.getElementById('here_about_us_other_field');
-  selectOptions.addEventListener('change', function(e) {
-    if (e.target.value === 'Other') {
-      oTherOption.classList.remove('hidden');
-    }else{
-       oTherOption.classList.add('hidden');
-    }
-  });
-</script>
-
-<style>
-  #quote-popup button:hover{
-    background: #FFF;
-    color: #000;
-    border: 1px solid #127FB5;
-  }
-  #quote-popup button{
-    border-radius: 4px;
-    background: #127FB5;
-    color: #FFF;
-    border: none;
-  }
-  #quote-popup .lead.text-primary{
-    color: #000 !important;
-    font-size: 14px;
-    font-style: normal !important;
-    font-weight: 400;
-  }
-  #quote-popup .title{
-    color: #000;
-    text-align: center;
-    font-size: 36px;
-    font-weight: 700;
-    line-height: 62px;
-  }
-  #here_about_us_other_field.hidden{
-  display:none;
-}
-  /* Button */
-  .get-quote-btn {
-    background-color: #000;
-    color: #fff;
-    padding: 10px 18px;
-    border: none;
-    cursor: pointer;
-    border-radius: 4px;
-  }
-  .get-quote-btn:hover {
-    background-color: #333;
-  }
-
-  /* Popup */
-  .quote-popup {
-    display: none;
-    position: fixed;
-    z-index: 9999;
-    left: 0; top: 0;
-    width: 100%; height: 100%;
-    background-color: rgba(0,0,0,0.6);
-  }
-
-  /* Popup Content */
-  .quote-popup-content {
-    background: #fff;
-    margin: 10% auto;
-    padding: 20px;
-    width: 90%;
-    max-width: 500px;
-    position: relative;
-    border-radius: 8px;
-  }
-
-  /* Close Button */
-  .close-popup {
-    position: absolute;
-    top: 10px; right: 15px;
-    font-size: 28px;
-    cursor: pointer;
-  }
-
-  /* Form Styles */
-  .quote-form label {
-    display: block;
-    margin-top: 12px;
-    font-weight: 600;
-  }
-  .quote-form input,
-  .quote-form textarea {
-    width: 100%;
-    padding: 10px;
-    margin-top: 6px;
-    border: 1px solid #ddd;
-    border-radius: 4px;
-  }
-  .submit-quote-btn {
-    background: #000;
-    color: #fff;
-    padding: 10px 18px;
-    margin-top: 15px;
-    border: none;
-    cursor: pointer;
-    border-radius: 4px;
-  }
-  .submit-quote-btn:hover {
-    background: #333;
-  }
-</style>
-
-<script>
-  document.addEventListener('DOMContentLoaded', function () {
-    const quoteBtn = document.getElementById('get-quote-btn');
-    const quotePopup = document.getElementById('quote-popup');
-    const closePopup = document.getElementById('close-quote-popup');
-
-    // Open popup
-    quoteBtn.addEventListener('click', function () {
-      quotePopup.style.display = 'block';
-    });
-
-    // Close popup
-    closePopup.addEventListener('click', function () {
-      quotePopup.style.display = 'none';
-    });
-
-    // Close on outside click
-    window.addEventListener('click', function (event) {
-      if (event.target == quotePopup) {
-        quotePopup.style.display = 'none';
-      }
-    });
-  });
-</script>
