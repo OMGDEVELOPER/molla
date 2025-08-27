@@ -64,6 +64,7 @@
 {%- capture card -%}
 {%- case grid_layout -%}
   {%- when '' or '01' -%}
+    {% render 'new-related-products',product:product %}
     <div class="product-thumb images">
       {%- render 'product-item-flashs', product: product, st_card: st_card, on_new: on_new, on_sale: on_sale, sold_out: sold_out, preOrder: preOrder -%}
       {%- capture ar_i-%}--ar_i:{{product.featured_image.height | times: 1.00 | divided_by: product.featured_image.width | times: 100.00000000}}%;{%-endcapture-%}
