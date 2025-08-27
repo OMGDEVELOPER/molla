@@ -59,14 +59,12 @@
     assign cssAlign_rev = 'left'
   endif
 -%}
+{%- if template.suffix == 'related' -%}
 {% comment %} I need to pull related product data here {% endcomment %}
 {% render 'new-related-products',
   product: product,
-  recommendations: recommendations,
-  settings: section.settings,
-  grid_ly: grid_ly,
-  st_card: st_card
 %}
+{% endif %}
 
 {%- unless section.settings.off_section -%}
   {%- assign width_section = section.settings.width_section -%}
