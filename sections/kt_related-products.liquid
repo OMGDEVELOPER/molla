@@ -86,7 +86,6 @@
       {% if recommendations.products_count > 0 %}
         {%- for prd in recommendations.products -%}
           <div class="swiper-slide grid-item p-style-{{grid_ly}}">
-            <h1>{{ grid_ly }}</h1>
             {%- render "product-grid-item", product: prd, grid_layout: grid_ly, st_card: st_card -%}
           </div>
         {%-endfor-%}
@@ -124,6 +123,7 @@
           {%- assign i = i | plus: 1 -%}
           {%- if i == 1 -%}{%- assign related = true -%}{%- endif -%}
           <div class="swiper-slide grid-item p-style-{{grid_ly}}">
+               <h1>{{ grid_ly }}</h1>
             {%- render "product-grid-item", product: prd, grid_layout: grid_ly, st_card: st_card -%}
           </div>
           {%- if i > product_limit -%}{%-break-%}{%- endif -%}
