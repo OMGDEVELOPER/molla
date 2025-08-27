@@ -85,15 +85,15 @@
 </div>
 
 <script>
-  let selectOptions = document.getElementById('here_about_us');
-  let oTherOption = document.getElementById('here_about_us_other_field');
+  {% comment %} let selectOptions = document.getElementById('here_about_us'); {% endcomment %}
+  {% comment %} let oTherOption = document.getElementById('here_about_us_other_field');
   selectOptions.addEventListener('change', function(e) {
     if (e.target.value === 'Other') {
       oTherOption.classList.remove('hidden');
     }else{
        oTherOption.classList.add('hidden');
     }
-  });
+  }); {% endcomment %}
 </script>
 
 <style>
