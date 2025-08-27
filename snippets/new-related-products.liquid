@@ -1,6 +1,5 @@
-{%- if recommendations.performed and recommendations.products_count > 0 -%}
+{% assign related_product = product %}
   <div class="row g-4">
-    {% for related_product in recommendations.products limit: section.settings.product_items %}
       <div class="col-12 col-sm-6 col-md-4 col-lg-3">
         <div class="item card h-100" data-product-id="{{ related_product.id }}">
           <a href="{{ related_product.url }}" class="grid-item text-decoration-none text-dark">
@@ -53,8 +52,6 @@
           </div>
         </div>
       </div>
-    {% endfor %}
+
   </div>
-{%- else -%}
-  <p class="text-muted">No related products found.</p>
-{%- endif -%}
+
