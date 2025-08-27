@@ -1,65 +1,60 @@
-{{ 'featured-products.css' | asset_url | stylesheet_tag }}
-{% assign product_obj = product %}
-<section class="featured-products container py-5">
+{%- if recommendations.performed and recommendations.products_count > 0 -%}
   <div class="row g-4">
-    <div class="col-12 col-sm-6 col-md-4 col-lg-3">
-      <div class="item card h-100" data-product-id="{{ product_obj.id }}">
-        <a href="{{ product_obj.url }}" class="grid-item text-decoration-none text-dark">
-          <img
-            src="{{ product_obj.featured_image | image_url: width: 400 }}"
-            alt="{{ product_obj.title }}"
-            class="card-img-top img-fluid"
-          >
-          <div class="card-body">
-            <h2 class="card-title">{{ product_obj.title }}</h2>
-            <div class="card-text _description small text-muted">
-              {{ product_obj.description | strip_html | truncate: 100 }}
+    {% for related_product in recommendations.products limit: section.settings.product_items %}
+      <div class="col-12">
+        <div class="item card h-100" data-product-id="{{ related_product.id }}">
+          <a href="{{ related_product.url }}" class="grid-item text-decoration-none text-dark">
+            <img 
+              src="{{ related_product.featured_image | image_url: width: 400 }}" 
+              alt="{{ related_product.title }}" 
+              class="card-img-top img-fluid"
+            />
+            <div class="card-body">
+              <h2 class="card-title h6">{{ related_product.title }}</h2>
+              <div class="card-text _description small text-muted">
+                {{ related_product.description | strip_html | truncate: 100 }}
+              </div>
             </div>
-          </div>
-        </a>
+          </a>
 
-        <div class="card-footer bg-white border-top-0">
-          <p class="_price fw-bold mb-2" data-price>{{ product_obj.price | money }}</p>
+          <div class="card-footer bg-white border-top-0">
+            <p class="_price fw-bold mb-2" data-price>{{ related_product.price | money }}</p>
 
-          <div class="_status d-flex align-items-center mb-2">
-            {% if product_obj.available %}
-              <span class="_stock in-stock bg-success rounded-circle me-2" style="width:10px; height:10px;"></span>
-              <span class="_status_text text-success small">In Stock</span>
-            {% else %}
-              <span class="_stock out-of-stock bg-danger rounded-circle me-2" style="width:10px; height:10px;"></span>
-              <span class="_status_text text-danger small">Sold Out</span>
+            <div class="_status d-flex align-items-center mb-2">
+              {% if related_product.available %}
+                <span class="_stock in-stock bg-success rounded-circle me-2" style="width:10px; height:10px;"></span>
+                <span class="_status_text text-success small">In Stock</span>
+              {% else %}
+                <span class="_stock out-of-stock bg-danger rounded-circle me-2" style="width:10px; height:10px;"></span>
+                <span class="_status_text text-danger small">Sold Out</span>
+              {% endif %}
+            </div>
+
+            {% if related_product.available %}
+              <form method="post" action="/cart/add">
+                {% if related_product.variants.size > 1 %}
+                  <select name="id" class="form-select form-select-sm mb-2 variant-select" data-product="{{ related_product.id }}">
+                    {% for variant in related_product.variants %}
+                      <option 
+                        value="{{ variant.id }}" 
+                        data-price="{{ variant.price | money }}"
+                        {% unless variant.available %}disabled{% endunless %}
+                      >
+                        {{ variant.title }}{% unless variant.available %} - Sold Out{% endunless %}
+                      </option>
+                    {% endfor %}
+                  </select>
+                {% else %}
+                  <input type="hidden" name="id" value="{{ related_product.variants.first.id }}">
+                {% endif %}
+                <button type="submit" class="btn btn-primary btn-sm text-uppercase add-to-cart-btn">Add to Cart</button>
+              </form>
             {% endif %}
           </div>
-
-          {% if product_obj.available %}
-            <form method="post" action="/cart/add">
-              {% if product_obj.variants.size > 1 %}
-                <select
-                  name="id"
-                  class="form-select form-select-sm mb-2 variant-select"
-                  data-product="{{ product_obj.id }}"
-                >
-                  {% for variant in product_obj.variants %}
-                    <option
-                      value="{{ variant.id }}"
-                      data-price="{{ variant.price | money }}"
-                      {% unless variant.available %}
-                        disabled
-                      {% endunless %}
-                    >
-                      {{ variant.title -}}
-                      {%- unless variant.available %} - Sold Out{% endunless %}
-                    </option>
-                  {% endfor %}
-                </select>
-              {% else %}
-                <input type="hidden" name="id" value="{{ product_obj.variants.first.id }}">
-              {% endif %}
-              <button type="submit" class="btn btn-primary btn-sm text-uppercase add-to-cart-btn">Add to Cart</button>
-            </form>
-          {% endif %}
         </div>
       </div>
-    </div>
+    {% endfor %}
   </div>
-</section>
+{%- else -%}
+  <p class="text-muted">No related products found.</p>
+{%- endif -%}
