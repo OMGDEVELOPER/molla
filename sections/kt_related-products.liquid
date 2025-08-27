@@ -86,6 +86,7 @@
       {% if recommendations.products_count > 0 %}
         {%- for prd in recommendations.products -%}
           <div class="swiper-slide grid-item p-style-{{grid_ly}}">
+            <h1>{{ grid_ly }}</h1>
             {%- render "product-grid-item", product: prd, grid_layout: grid_ly, st_card: st_card -%}
           </div>
         {%-endfor-%}
