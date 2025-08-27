@@ -90,17 +90,10 @@
             </li>
           </ul>
         </div>
-        <div class="specialization">
-          <div class="title">Specialization</div>
-          <ul>
-            {% for specialization in item.specialization.value %}
-              <li class="">{{ specialization }}</li>
-            {% endfor %}
-          </ul>
-        </div>
+      
         <div class="cta">
-          <a href="{{ item.request_quote_link.value }}"><button class="request-a-quote">Request a Quote</button></a>
-          <a href="/pages/installers/{{ item.title | handleize  }}"><button class="view-details">View Details</button></a>
+          <a href="{{ item.request_quote_link.value }}"><button class="request-a-quote">View large images</button></a>
+          
         </div>
       </div>
     </div>
