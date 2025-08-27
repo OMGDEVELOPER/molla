@@ -59,8 +59,8 @@
     assign cssAlign_rev = 'left'
   endif
 -%}
-{% render 'new-related-products' %}
-<h1>asd</h1>
+{% render 'new-related-products', section:section, settings:settings %}
+
 {%- unless section.settings.off_section -%}
   {%- assign width_section = section.settings.width_section -%}
   {%- assign width_content = section.settings.width_content -%}
