@@ -84,3 +84,138 @@
     </div>
   </div>
 </div>
+
+<script>
+  let selectOptions = document.getElementById('here_about_us');
+  let oTherOption = document.getElementById('here_about_us_other_field');
+  selectOptions.addEventListener('change', function(e) {
+    if (e.target.value === 'Other') {
+      oTherOption.classList.remove('hidden');
+    }else{
+       oTherOption.classList.add('hidden');
+    }
+  });
+</script>
+
+<style>
+  #quote-popup button:hover{
+    background: #FFF;
+    color: #000;
+    border: 1px solid #127FB5;
+  }
+  #quote-popup button{
+    border-radius: 4px;
+    background: #127FB5;
+    color: #FFF;
+    border: none;
+  }
+  #quote-popup .lead.text-primary{
+    color: #000 !important;
+    font-size: 14px;
+    font-style: normal !important;
+    font-weight: 400;
+  }
+  #quote-popup .title{
+    color: #000;
+    text-align: center;
+    font-size: 36px;
+    font-weight: 700;
+    line-height: 62px;
+  }
+  #here_about_us_other_field.hidden{
+  display:none;
+}
+  /* Button */
+  .get-quote-btn {
+    background-color: #000;
+    color: #fff;
+    padding: 10px 18px;
+    border: none;
+    cursor: pointer;
+    border-radius: 4px;
+  }
+  .get-quote-btn:hover {
+    background-color: #333;
+  }
+
+  /* Popup */
+  .quote-popup {
+    display: none;
+    position: fixed;
+    z-index: 9999;
+    left: 0; top: 0;
+    width: 100%; height: 100%;
+    background-color: rgba(0,0,0,0.6);
+  }
+
+  /* Popup Content */
+  .quote-popup-content {
+    background: #fff;
+    margin: 10% auto;
+    padding: 20px;
+    width: 90%;
+    max-width: 500px;
+    position: relative;
+    border-radius: 8px;
+  }
+
+  /* Close Button */
+  .close-popup {
+    position: absolute;
+    top: 10px; right: 15px;
+    font-size: 28px;
+    cursor: pointer;
+  }
+
+  /* Form Styles */
+  .quote-form label {
+    display: block;
+    margin-top: 12px;
+    font-weight: 600;
+  }
+  .quote-form input,
+  .quote-form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-top: 6px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+  }
+  .submit-quote-btn {
+    background: #000;
+    color: #fff;
+    padding: 10px 18px;
+    margin-top: 15px;
+    border: none;
+    cursor: pointer;
+    border-radius: 4px;
+  }
+  .submit-quote-btn:hover {
+    background: #333;
+  }
+</style>
+
+<script>
+  document.addEventListener('DOMContentLoaded', function () {
+    const quoteBtn = document.getElementById('get-quote-btn');
+    const quotePopup = document.getElementById('quote-popup');
+    const closePopup = document.getElementById('close-quote-popup');
+
+    // Open popup
+    quoteBtn.addEventListener('click', function () {
+      quotePopup.style.display = 'block';
+    });
+
+    // Close popup
+    closePopup.addEventListener('click', function () {
+      quotePopup.style.display = 'none';
+    });
+
+    // Close on outside click
+    window.addEventListener('click', function (event) {
+      if (event.target == quotePopup) {
+        quotePopup.style.display = 'none';
+      }
+    });
+  });
+</script>
