@@ -1,14 +1,58 @@
-{{ "featured-products.css" | asset_url | stylesheet_tag }}
-<section class="featured-products container py-5 new-related-products">
-  <h1 class="__heading text-center mb-4">FEATURED PRODUCTS</h1>
+<!-- snippets/simple-related-products.liquid -->
+{%- liquid
+  assign grid_ly = section.settings.product_grid_layout | default: 'col-12 col-sm-6 col-md-4 col-lg-3'
+
+  capture st_card
+    echo settings.use_new_label
+    echo '|'
+    echo settings.new_day
+    echo '|'
+    echo settings.use_sale_label
+    echo '|'
+    echo settings.product_grid_layout
+    echo '|'
+    echo settings.qs_show_vars_list
+    echo '|'
+    echo settings.use_quickview
+    echo '|'
+    echo settings.use_wishlist
+    echo '|'
+    echo settings.use_compare
+    echo '|'
+    echo settings.use_countdown_grid
+    echo '|'
+    echo settings.countdown_grid_style
+    echo '|'
+    echo settings.use_vendor_grid
+    echo '|'
+    echo settings.use_review_grid
+    echo '|'
+    echo settings.use_add_to_cart_btn
+    echo '|'
+    echo settings.qs_hide_only_1_opt
+  endcapture
+  assign st_card = st_card | split: '|'
+-%}
+
+<section class="related-products container py-5">
+  {% if section.settings.title_section != blank %}
+    <h2 class="text-center mb-4">{{ section.settings.title_section }}</h2>
+  {% endif %}
 
   <div class="row g-4">
-    {% for prd in section.settings.product_lists %}
-      {% assign grid_ly = 'col-12 col-sm-6 col-md-4 col-lg-3' %}
-      {% assign st_card = 'card h-100' %}
-      <div class="{{ grid_ly }}">
-        {%- render "product-grid-item", product: prd, grid_layout: grid_ly, st_card: st_card -%}
-      </div>
-    {% endfor %}
+    {%- if section.settings.recommendations_enable and recommendations.performed -%}
+      {%- for prd in recommendations.products limit: section.settings.product_items -%}
+        <div class="{{ grid_ly }}">
+          {%- render "product-grid-item", product: prd, grid_layout: grid_ly, st_card: st_card -%}
+        </div>
+      {%- endfor -%}
+    {%- elsif section.settings.product_related_collection != blank -%}
+      {%- assign collection = collections[section.settings.product_related_collection] -%}
+      {%- for prd in collection.products limit: section.settings.product_items -%}
+        <div class="{{ grid_ly }}">
+          {%- render "product-grid-item", product: prd, grid_layout: grid_ly, st_card: st_card -%}
+        </div>
+      {%- endfor -%}
+    {%- endif -%}
   </div>
 </section>
