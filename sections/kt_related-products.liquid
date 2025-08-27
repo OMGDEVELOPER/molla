@@ -60,7 +60,7 @@
   endif
 -%}
   {%- for prd in recommendations.products -%}
-    {{ prd.title }}
+    <h1>{{ prd.url }}</h1>
   {% endfor %}
 
 {%- unless section.settings.off_section -%}
