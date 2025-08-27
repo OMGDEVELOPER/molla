@@ -1,0 +1,14 @@
+{{ "featured-products.css" | asset_url | stylesheet_tag }}
+<section class="featured-products container py-5 new-related-products">
+  <h1 class="__heading text-center mb-4">FEATURED PRODUCTS</h1>
+
+  <div class="row g-4">
+    {% for prd in section.settings.product_lists %}
+      {% assign grid_ly = 'col-12 col-sm-6 col-md-4 col-lg-3' %}
+      {% assign st_card = 'card h-100' %}
+      <div class="{{ grid_ly }}">
+        {%- render "product-grid-item", product: prd, grid_layout: grid_ly, st_card: st_card -%}
+      </div>
+    {% endfor %}
+  </div>
+</section>
