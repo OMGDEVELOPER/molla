@@ -62,9 +62,7 @@
 
 
 {% comment %} I need to pull related product data here {% endcomment %}
-{% render 'new-related-products',
-  product: product,
-%}
+
 
 
 {%- unless section.settings.off_section -%}
@@ -130,6 +128,9 @@
           {%- if i == 1 -%}{%- assign related = true -%}{%- endif -%}
           <div class="swiper-slide grid-item p-style-{{grid_ly}}">
             {% comment %} {%- render "product-grid-item", product: prd, grid_layout: grid_ly, st_card: st_card -%} {% endcomment %}
+             {% render 'new-related-products',
+  product: product,
+%}
           </div>
           {%- if i > product_limit -%}{%-break-%}{%- endif -%}
         {%- endfor -%}
