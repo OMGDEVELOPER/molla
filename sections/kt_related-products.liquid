@@ -59,7 +59,13 @@
     assign cssAlign_rev = 'left'
   endif
 -%}
-<h1>asd</h1>
+  {%- if recommendations.performed -%}
+    {%- capture products_map -%}
+      {%- for product in recommendations.products -%}
+        <h1>{{ product.url }}</h1>
+      {% endfor %}
+    {% endcapture %}
+  {% endif %}
 
 {%- unless section.settings.off_section -%}
   {%- assign width_section = section.settings.width_section -%}
