@@ -126,11 +126,8 @@
           {%- if s < score or current_product.handle == prd.handle or prd.available == false -%}{%-continue-%}{%- endif -%}
           {%- assign i = i | plus: 1 -%}
           {%- if i == 1 -%}{%- assign related = true -%}{%- endif -%}
-          <div class="">
-            {% comment %} {%- render "product-grid-item", product: prd, grid_layout: grid_ly, st_card: st_card -%} {% endcomment %}
-             {% render 'new-related-products',
-  product: prd,
-%}
+          <div class="swiper-slide grid-item p-style-{{grid_ly}}">
+            {%- render "product-grid-item", product: prd, grid_layout: grid_ly, st_card: st_card -%}
           </div>
           {%- if i > product_limit -%}{%-break-%}{%- endif -%}
         {%- endfor -%}
