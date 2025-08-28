@@ -132,6 +132,11 @@
                   </ul>
                 </div>
               </div>
+              {% comment %}  {% endcomment %}
+              {% for img in item.gallery.value %}
+                <img src="{{ img | image_url }}" alt="{{ img.alt | escape }}" class="gallery-thumb">
+              {% endfor %}
+            
             </li>
           {% endfor %}
         </ul>
