@@ -23,12 +23,12 @@
 
 #installer-modal .heading_content button{
       border-radius: var(--radius-full, 9999px);
-    border: 1px solid #127FB5;
+    border: 1px solid #3C4043;
     background: var(--Colors-Background-bg-primary, #FFF);
     display: flex;
     padding: var(--spacing-xxs, 2px) var(--spacing-md, 8px);
     align-items: center;
-    color: #127fb5;
+    color: #3C4043;
     text-align: center;
     font-family: Karla;
     font-size: 12px;
