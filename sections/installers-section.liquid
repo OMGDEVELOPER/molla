@@ -182,6 +182,8 @@
       });
   });
 </script>
+
+
 <script>
   document.addEventListener('DOMContentLoaded', function () {
     const modal = document.getElementById('installer-modal');
@@ -195,36 +197,100 @@
     const installerItems = document.querySelectorAll('#installerGrid .item');
     const loadMoreBtn = document.getElementById('loadMoreBtn');
 
-    // Function to show items based on pagination
-    function updatePagination() {
-      const totalItems = installerItems.length;
-      const maxVisible = currentPage * itemsPerPage;
-      installerItems.forEach((item, index) => {
-        if (index < maxVisible) {
-          item.style.display = "block";
+    // Current filter state
+    let currentSearch = "";
+    let currentTag = "all";
+
+    // Initial mark all as visible
+    installerItems.forEach((item) => (item.dataset.visible = "true"));
+
+    // =========================
+    // MAIN APPLY FUNCTION
+    // =========================
+    function applyFilters() {
+      const visibleItems = [];
+
+      installerItems.forEach((item) => {
+        const title = item.querySelector('.title').textContent.toLowerCase();
+        const tagsText = item.querySelector('.tags').textContent.toLowerCase();
+        const tagsArr = Array.from(item.querySelectorAll('.tags .tag')).map(t => t.textContent.trim().toLowerCase());
+
+        // Search condition
+        const matchesSearch =
+          title.includes(currentSearch) || tagsText.includes(currentSearch);
+
+        // Tag condition
+        const matchesTag =
+          currentTag === "all" || tagsArr.includes(currentTag.toLowerCase());
+
+        // Combine conditions
+        if (matchesSearch && matchesTag) {
+          item.dataset.visible = "true";
+          visibleItems.push(item);
         } else {
-          item.style.display = "none";
+          item.dataset.visible = "false";
         }
       });
 
-      // Hide button if all items are shown
-      if (maxVisible >= totalItems) {
+      // Reset display
+      installerItems.forEach((item) => (item.style.display = "none"));
+
+      // Show paginated visible items
+      visibleItems.forEach((item, index) => {
+        if (index < currentPage * itemsPerPage) {
+          item.style.display = "block";
+        }
+      });
+
+      // Toggle Load More
+      if (currentPage * itemsPerPage >= visibleItems.length) {
         loadMoreBtn.style.display = "none";
       } else {
         loadMoreBtn.style.display = "inline-block";
       }
     }
 
-    // Initial load
-    updatePagination();
-
-    // Load more button
-    loadMoreBtn.addEventListener('click', () => {
+    // =========================
+    // PAGINATION
+    // =========================
+    function updatePagination() {
       currentPage++;
-      updatePagination();
+      applyFilters();
+    }
+
+    // Initial load
+    applyFilters();
+
+    // Load more
+    loadMoreBtn.addEventListener('click', updatePagination);
+
+    // =========================
+    // TAG FILTER
+    // =========================
+    const tagButtons = document.querySelectorAll('.tag-filter-btn');
+    tagButtons.forEach((btn) => {
+      btn.addEventListener('click', () => {
+        currentTag = btn.dataset.tag;
+        currentPage = 1; // reset pagination
+        tagButtons.forEach((b) => b.classList.remove('active'));
+        btn.classList.add('active');
+        applyFilters();
+      });
     });
 
-    // Open modal with correct slide
+    // =========================
+    // SEARCH FILTER
+    // =========================
+    const searchInput = document.getElementById('installerSearch');
+    searchInput.addEventListener('keyup', () => {
+      currentSearch = searchInput.value.toLowerCase();
+      currentPage = 1; // reset pagination
+      applyFilters();
+    });
+
+    // =========================
+    // MODAL
+    // =========================
     document.querySelectorAll('.open-modal').forEach((btn) => {
       btn.addEventListener('click', function () {
         const index = parseInt(this.dataset.index, 10);
@@ -245,66 +311,6 @@
     [closeBtn, overlay].forEach((el) =>
       el.addEventListener('click', () => modal.classList.add('hidden'))
     );
-
-    // Tag filtering
-    const tagButtons = document.querySelectorAll('.tag-filter-btn');
-    tagButtons.forEach((btn) => {
-      btn.addEventListener('click', () => {
-        const selectedTag = btn.dataset.tag;
-        currentPage = 1; // reset pagination
-        installerItems.forEach((item) => {
-          const tags = Array.from(item.querySelectorAll('.tags .tag')).map((t) =>
-            t.textContent.trim()
-          );
-          if (selectedTag === 'all' || tags.includes(selectedTag)) {
-            item.dataset.visible = "true";
-          } else {
-            item.dataset.visible = "false";
-          }
-        });
-        applyFilters();
-      });
-    });
-
-    // Search filtering
-    const searchInput = document.getElementById('installerSearch');
-    searchInput.addEventListener('keyup', () => {
-      const query = searchInput.value.toLowerCase();
-      currentPage = 1; // reset pagination
-      installerItems.forEach((item) => {
-        const title = item.querySelector('.title').textContent.toLowerCase();
-        const tags = item.querySelector('.tags').textContent.toLowerCase();
-        if (title.includes(query) || tags.includes(query)) {
-          item.dataset.visible = "true";
-        } else {
-          item.dataset.visible = "false";
-        }
-      });
-      applyFilters();
-    });
-
-    // Apply combined filters + pagination
-    function applyFilters() {
-      const visibleItems = Array.from(installerItems).filter(
-        (item) => item.dataset.visible !== "false"
-      );
-      installerItems.forEach((item) => (item.style.display = "none"));
-
-      visibleItems.forEach((item, index) => {
-        if (index < currentPage * itemsPerPage) {
-          item.style.display = "block";
-        }
-      });
-
-      if (currentPage * itemsPerPage >= visibleItems.length) {
-        loadMoreBtn.style.display = "none";
-      } else {
-        loadMoreBtn.style.display = "inline-block";
-      }
-    }
-
-    // Default state
-    installerItems.forEach((item) => (item.dataset.visible = "true"));
-    applyFilters();
   });
 </script>
+
