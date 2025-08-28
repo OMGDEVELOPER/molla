@@ -1,3 +1,6 @@
+#installer-modal .details ul{
+  padding:0px;
+}
 #installer-modal .details ul li a{
   color:#000;
 }
