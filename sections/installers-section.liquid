@@ -59,49 +59,53 @@
   </div>
 </section>
 
-
-
-<div class="grid grid-cols-3 container">
-  {% for item in section.settings.installers_list %}
-    <div class="item">
-      <div class="featured-img">
-        
+<div class="grid grid-cols-3 container installers-grid">
+  {% paginate section.settings.installers_list by 6 %}
+    {% for item in section.settings.installers_list %}
+      <div class="item">
+        <div class="featured-img">
           <a class="open-modal" 
             data-images='[{% for img in item.gallery.value %}{"src":"{{ img | image_url }}","alt":"{{ img.alt | escape }}" }{% unless forloop.last %},{% endunless %}{% endfor %}]'>
-        {{ item.featured_image | image_url: width: item.featured_image.width | image_tag: alt: item.featured_image.alt }}
+            {{ item.featured_image | image_url: width: item.featured_image.width | image_tag: alt: item.featured_image.alt }}
           </a>
+        </div>
+        <div class="installer-details">
+          <div class="title">{{ item.title }}</div>
+          <div class="tags">
+            {% for tag in item.tags.value %}
+              <span class="tag">{{ tag }}</span>
+              {%- unless forloop.last %}, {% endunless %}
+            {% endfor %}
+          </div>
+          <div class="details">
+            <ul>
+              <li>
+                <img src="https://cdn.shopify.com/s/files/1/0936/3328/2419/files/location_on.png?v=1754363429">
+                <span>{{ item.address }}</span>
+              </li>
+              <li>
+                <img src="https://cdn.shopify.com/s/files/1/0936/3328/2419/files/user.svg?v=1756295623">
+                <span><a href="mailto:{{ item.author }}">{{ item.author }}</a></span>
+              </li>
+              <li>
+                <img src="https://cdn.shopify.com/s/files/1/0936/3328/2419/files/call.png?v=1754363436">
+                <span><a href="tel:{{ item.phone }}">{{ item.phone }}</a></span>
+              </li>
+            </ul>
+          </div>
+          <div class="cta">
+            <a href="/pages/installers/{{ item.title | handleize }}">View large images</a>
+          </div>
+        </div>
       </div>
-      <div class="installer-details">
-        <div class="title">{{ item.title }}</div>
-        <div class="tags">
-          {% for tag in item.tags.value %}
-            <span class="tag">{{ tag }}</span>
-            {%- unless forloop.last %}, {% endunless %}
-          {% endfor %}
-        </div>
-        <div class="details">
-          <ul>
-            <li>
-              <img src="https://cdn.shopify.com/s/files/1/0936/3328/2419/files/location_on.png?v=1754363429">
-              <span>{{ item.address }}</span>
-            </li>
-            <li>
-              <img src="https://cdn.shopify.com/s/files/1/0936/3328/2419/files/user.svg?v=1756295623">
-              <span><a href="mailto:{{ item.author }}">{{ item.author }}</a></span>
-            </li>
-            <li>
-              <img src="https://cdn.shopify.com/s/files/1/0936/3328/2419/files/call.png?v=1754363436">
-              <span><a href="tel:{{ item.phone }}">{{ item.phone }}</a></span>
-            </li>
-          </ul>
-        </div>
-        <div class="cta">
-          <a href="/pages/installers/{{ item.title | handleize }}">View large images</a>
+    {% endfor %}
 
-        </div>
+    {% if paginate.next %}
+      <div class="load-more-container text-center my-4">
+        <button id="loadMore" class="btn btn-primary" data-next="{{ paginate.next.url }}">Load More</button>
       </div>
-    </div>
-  {% endfor %}
+    {% endif %}
+  {% endpaginate %}
 </div>
 
 <!-- Modal -->
@@ -117,196 +121,118 @@
   </div>
 </div>
 
-<style>
-.installer-modal {
-  position: fixed;
-  inset: 0;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  z-index: 999;
-}
-.installer-modal.hidden { display: none; }
-.modal-overlay {
-  position: absolute;
-  inset: 0;
-  background: rgba(0,0,0,0.7);
-}
-.modal-content {
-  position: relative;
-  background: #fff;
-  padding: 20px;
-  max-width: 900px;
-  width: 90%;
-  border-radius: 10px;
-  z-index: 1000;
-}
-.modal-close {
-  position: absolute;
-  top: 10px;
-  right: 15px;
-  background: none;
-  border: none;
-  font-size: 2rem;
-  cursor: pointer;
-}
-.installer-filters .btn-group button:last-child{
-    border-top-right-radius: 15px;
-    border-bottom-right-radius: 15px;
-}
-.installer-filters .btn-group button{
-  background: var(--Colors-Background-bg-primary, #FFF);
-  border: 1px solid #C5C5C5;
-  padding:10px 16px;
-  font-family: Karla;
-  font-size: 16px;
-  font-style: normal;
-  font-weight: 600;
-  line-height: normal;
-}
-
-.installer-filters .btn-group button.tag-filter-all{
-    border-top-left-radius: 15px;
-    border-bottom-left-radius: 15px;
-}
-.installer-filters .btn-group button.active{
-  
-    background: #127FB5 !important;
-    color: #FFF;
-    font-family: Karla;
-    font-size: 16px;
-    font-style: normal;
-    font-weight: 600;
-    line-height: normal;
-
-  }
-.installer-filters {
-  background: #f9f9f9;
-  padding: 48px 0px;
-  margin-bottom: 20px;
-}
-.tag-filters button {
-  background: #fff;
-  border: 1px solid #ccc;
-  padding: 6px 15px;
-  border-radius: 4px;
-  cursor: pointer;
-  font-size: 14px;
-}
-.tag-filters button.active {
-  background: #007bff;
-  border-color: #007bff;
-  color: #fff;
-}
-.search-input {
-  border: 1px solid #ccc;
-  padding: 6px 12px;
-  border-radius: 4px;
-  font-size: 14px;
-}
-
-
-</style>
-
 <script>
 document.addEventListener('DOMContentLoaded', function () {
-  // Dropdown filters
-  const selectGroups = document.querySelectorAll('.select-group');
-  selectGroups.forEach((group) => {
-    const button = group.querySelector('button');
-    const options = group.querySelector('ul');
-    button.addEventListener('click', function (e) {
-      e.preventDefault();
-      document.querySelectorAll('.select-group ul').forEach((ul) => {
-        if (ul !== options) ul.classList.remove('show');
-      });
-      options.classList.toggle('show');
-    });
-    options.querySelectorAll('li').forEach((li) => {
-      li.addEventListener('click', function () {
-        button.childNodes[0].nodeValue = this.textContent;
-        options.classList.remove('show');
-      });
-    });
-  });
-  document.addEventListener('click', function (e) {
-    if (!e.target.closest('.select-group')) {
-      document.querySelectorAll('.select-group ul').forEach((ul) => {
-        ul.classList.remove('show');
-      });
-    }
-  });
-
-  // Splide modal
+  // Splide modal setup
   const modal = document.getElementById('installer-modal');
   const closeBtn = modal.querySelector('.modal-close');
   const overlay = modal.querySelector('.modal-overlay');
   const splideList = modal.querySelector('.splide__list');
   let splide;
 
-  document.querySelectorAll('.open-modal').forEach(btn => {
-    btn.addEventListener('click', function () {
-      const images = JSON.parse(this.dataset.images);
-      splideList.innerHTML = '';
-      images.forEach(img => {
-        splideList.innerHTML += `
-          <li class="splide__slide">
-            <img src="${img.src}" alt="${img.alt || ''}" />
-          </li>`;
+  function bindModalEvents(scope = document) {
+    scope.querySelectorAll('.open-modal').forEach(btn => {
+      btn.addEventListener('click', function () {
+        const images = JSON.parse(this.dataset.images);
+        splideList.innerHTML = '';
+        images.forEach(img => {
+          splideList.innerHTML += `
+            <li class="splide__slide">
+              <img src="${img.src}" alt="${img.alt || ''}" />
+            </li>`;
+        });
+        modal.classList.remove('hidden');
+        if (splide) splide.destroy();
+        splide = new Splide('#installer-splide', {
+          type: 'loop',
+          perPage: 1,
+          pagination: true,
+          arrows: true,
+        }).mount();
       });
-      modal.classList.remove('hidden');
-      if (splide) splide.destroy();
-      splide = new Splide('#installer-splide', {
-        type: 'loop',
-        perPage: 1,
-        pagination: true,
-        arrows: true,
-      }).mount();
     });
-  });
+  }
+  bindModalEvents();
 
   [closeBtn, overlay].forEach(el =>
     el.addEventListener('click', () => modal.classList.add('hidden'))
   );
- {% comment %}  {% endcomment %}
+
   // Tag filtering
   const tagButtons = document.querySelectorAll('.tag-filter-btn');
-  const installerItems = document.querySelectorAll('.grid .item');
+  function bindFiltering(scope = document) {
+    const installerItems = scope.querySelectorAll('.grid .item');
+    tagButtons.forEach(btn => {
+      btn.addEventListener('click', () => {
+        const selectedTag = btn.dataset.tag;
+        installerItems.forEach(item => {
+          const tags = Array.from(item.querySelectorAll('.tags .tag')).map(t => t.textContent.trim());
+          if (selectedTag === 'all' || tags.includes(selectedTag)) {
+            item.style.display = 'block';
+          } else {
+            item.style.display = 'none';
+          }
+        });
+        tagButtons.forEach(b => b.classList.remove('active'));
+        btn.classList.add('active');
+      });
+    });
+  }
+  bindFiltering();
 
-  tagButtons.forEach(btn => {
-    btn.addEventListener('click', () => {
-      const selectedTag = btn.dataset.tag;
-
+  // Search filtering
+  const searchInput = document.getElementById('installerSearch');
+  function bindSearch(scope = document) {
+    const installerItems = scope.querySelectorAll('.grid .item');
+    searchInput.addEventListener('keyup', () => {
+      const query = searchInput.value.toLowerCase();
       installerItems.forEach(item => {
-        const tags = Array.from(item.querySelectorAll('.tags .tag')).map(t => t.textContent.trim());
-
-        if (selectedTag === 'all' || tags.includes(selectedTag)) {
+        const title = item.querySelector('.title').textContent.toLowerCase();
+        const tags = item.querySelector('.tags').textContent.toLowerCase();
+        if (title.includes(query) || tags.includes(query)) {
           item.style.display = 'block';
         } else {
           item.style.display = 'none';
         }
       });
-
-      // Active state
-      tagButtons.forEach(b => b.classList.remove('active'));
-      btn.classList.add('active');
     });
-  });
+  }
+  bindSearch();
 
-  // Search filtering
-  const searchInput = document.getElementById('installerSearch');
-  searchInput.addEventListener('keyup', () => {
-    const query = searchInput.value.toLowerCase();
-    installerItems.forEach(item => {
-      const title = item.querySelector('.title').textContent.toLowerCase();
-      const tags = item.querySelector('.tags').textContent.toLowerCase();
-      if (title.includes(query) || tags.includes(query)) {
-        item.style.display = 'block';
-      } else {
-        item.style.display = 'none';
-      }
+  // Load More
+  const loadMoreBtn = document.getElementById('loadMore');
+  if (loadMoreBtn) {
+    loadMoreBtn.addEventListener('click', function () {
+      const nextUrl = this.dataset.next;
+      this.textContent = 'Loading...';
+      fetch(nextUrl)
+        .then(res => res.text())
+        .then(data => {
+          const parser = new DOMParser();
+          const htmlDoc = parser.parseFromString(data, 'text/html');
+          const newItems = htmlDoc.querySelectorAll('.grid .item');
+          const nextButton = htmlDoc.querySelector('#loadMore');
+          const grid = document.querySelector('.installers-grid');
+
+          newItems.forEach(item => grid.appendChild(item));
+
+          // Rebind modal, filters, search to new items
+          bindModalEvents(grid);
+          bindFiltering(grid);
+          bindSearch(grid);
+
+          if (nextButton) {
+            this.dataset.next = nextButton.dataset.next;
+            this.textContent = 'Load More';
+          } else {
+            this.remove();
+          }
+        })
+        .catch(err => {
+          console.error('Load more failed:', err);
+          this.textContent = 'Error';
+        });
     });
-  });
-
+  }
 });
 </script>
