@@ -12,6 +12,9 @@
 #installer-modal .details ul li{
   display:flex;
   align-items:center;
+  list-style: none;
+  gap: 15px;
+  padding: 4px 0px;
 }
 #installer-modal .details ul li a{
   color: #050505;
