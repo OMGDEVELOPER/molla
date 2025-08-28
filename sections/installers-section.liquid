@@ -274,7 +274,7 @@ document.addEventListener('DOMContentLoaded', function () {
       applyFilters();
     });
   }
-
+  function setImageGalleryimg(){
     let imgGalleryItems = document.querySelectorAll('item-gallery img');
     let installerImgElement = document.querySelector('.featured-img img');
     console.log(imgGalleryItems)
@@ -285,7 +285,7 @@ document.addEventListener('DOMContentLoaded', function () {
         installerImgElement.setAttribute('srcset',imgSrc);
       })
     })
-  
+  }
 
   /**
    * INIT ALL
@@ -296,9 +296,11 @@ document.addEventListener('DOMContentLoaded', function () {
     initPagination();
     initFilters();
     applyFilters(); // initial state
+    setImageGalleryimg();
   }
 
   init();
+  
   console.log('asd')
 });
 </script>
