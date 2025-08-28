@@ -63,7 +63,7 @@
 
 <div class="grid grid-cols-3 container">
   {% paginate section.settings.installers_list by 1 %}
-    {{ section.settings.installers_list.length }}
+  <h1>{{ section.settings.installers_list }}</h1>
   {% for item in section.settings.installers_list %}
     <div class="item">
       <div class="featured-img">
