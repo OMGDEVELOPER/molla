@@ -45,13 +45,14 @@
     flex-wrap: wrap;
 }
 #installer-modal .modal-slide-content .featured-img{
-    padding: 48px;
+    padding: 28px;
     background: #000;
 }
 #installer-modal .modal-slide-content .featured-img img{
     max-height: 300px;
     width: 100%;
     object-fit: cover;
+    border-radius:10px;
 }
 .load-more-container{
   margin:25px;
