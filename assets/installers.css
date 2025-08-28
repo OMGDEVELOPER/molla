@@ -9,6 +9,10 @@
 #installer-modal .details ul{
   padding:0px;
 }
+#installer-modal .details ul li{
+  display:flex;
+  justify-content:center;
+}
 #installer-modal .details ul li a{
   color: #050505;
   font-family: Karla;
