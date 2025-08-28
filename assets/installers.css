@@ -30,6 +30,8 @@
 #installer-modal .item-gallery img{
   width:90px;
   height:60px;
+  border-radius: 10px;
+  margin-top: 20px;
 }
 #installer-modal .item-gallery{
   display: flex;
