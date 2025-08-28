@@ -274,18 +274,18 @@ document.addEventListener('DOMContentLoaded', function () {
       applyFilters();
     });
   }
-  function setImageGalleryimg(){
+
     let imgGalleryItems = document.querySelectorAll('item-gallery img');
     let installerImgElement = document.querySelector('.featured-img img');
     console.log(imgGalleryItems)
-    imgGalleryItems.forEach(item=>{
+    imgGalleryItems.forEach(function(item){
       item.addEventListener('click',function(){
         let imgSrc = item.getAttribute('src');
         installerImgElement.setAttribute('src',imgSrc);
         installerImgElement.setAttribute('srcset',imgSrc);
       })
     })
-  }
+  
 
   /**
    * INIT ALL
@@ -299,7 +299,6 @@ document.addEventListener('DOMContentLoaded', function () {
   }
 
   init();
-  setImageGalleryimg();
   console.log('asd')
 });
 </script>
