@@ -282,10 +282,11 @@ document.addEventListener('DOMContentLoaded', function () {
     
     imgGalleryItems.forEach(function(item){
       item.addEventListener('click',function(){
-        console.log(item)
+        
         let imgSrc = item.getAttribute('src');
         installerImgElement.setAttribute('src',imgSrc);
         installerImgElement.setAttribute('srcset',imgSrc);
+        console.log(imgSrc)
       })
     })
   }
