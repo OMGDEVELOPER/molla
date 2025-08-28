@@ -59,11 +59,13 @@
   {% for item in section.settings.installers_list %}
     <div class="item" data-index="{{ forloop.index0 }}">
       <div class="featured-img">
-        {{
-          item.featured_image
-          | image_url: width: item.featured_image.width
-          | image_tag: alt: item.featured_image.alt
-        }}
+        <a href="/pages/installers/{{ item.title | handleize }}">
+          {{
+            item.featured_image
+            | image_url: width: item.featured_image.width
+            | image_tag: alt: item.featured_image.alt
+          }}
+        </a>
       </div>
       <div class="installer-details">
         <div class="title">{{ item.title }}</div>
