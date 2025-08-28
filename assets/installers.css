@@ -1,6 +1,8 @@
-#installer-modal .modal-box-content,
-#installer-modal .item-gallery{
+#installer-modal .modal-box-content{
   padding:24px;
+}
+#installer-modal .item-gallery{
+  
 }
 #installer-modal .title{
   color: var(--colors-text-text-primary-900, #181D27);
