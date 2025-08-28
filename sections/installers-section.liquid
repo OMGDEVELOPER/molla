@@ -146,6 +146,31 @@
   font-size: 2rem;
   cursor: pointer;
 }
+.installer-filters {
+  background: #f9f9f9;
+  padding: 15px;
+  margin-bottom: 20px;
+}
+.tag-filters button {
+  background: #fff;
+  border: 1px solid #ccc;
+  padding: 6px 15px;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 14px;
+}
+.tag-filters button.active {
+  background: #007bff;
+  border-color: #007bff;
+  color: #fff;
+}
+.search-input {
+  border: 1px solid #ccc;
+  padding: 6px 12px;
+  border-radius: 4px;
+  font-size: 14px;
+}
+
 
 </style>
 
@@ -209,7 +234,8 @@ document.addEventListener('DOMContentLoaded', function () {
   [closeBtn, overlay].forEach(el =>
     el.addEventListener('click', () => modal.classList.add('hidden'))
   );
-    // Tag filter logic
+ {% comment %}  {% endcomment %}
+  // Tag filtering
   const tagButtons = document.querySelectorAll('.tag-filter-btn');
   const installerItems = document.querySelectorAll('.grid .item');
 
@@ -219,16 +245,32 @@ document.addEventListener('DOMContentLoaded', function () {
 
       installerItems.forEach(item => {
         const tags = Array.from(item.querySelectorAll('.tags .tag')).map(t => t.textContent.trim());
-        if (tags.includes(selectedTag)) {
+
+        if (selectedTag === 'all' || tags.includes(selectedTag)) {
           item.style.display = 'block';
         } else {
           item.style.display = 'none';
         }
       });
 
-      // Highlight active button
+      // Active state
       tagButtons.forEach(b => b.classList.remove('active'));
       btn.classList.add('active');
+    });
+  });
+
+  // Search filtering
+  const searchInput = document.getElementById('installerSearch');
+  searchInput.addEventListener('keyup', () => {
+    const query = searchInput.value.toLowerCase();
+    installerItems.forEach(item => {
+      const title = item.querySelector('.title').textContent.toLowerCase();
+      const tags = item.querySelector('.tags').textContent.toLowerCase();
+      if (title.includes(query) || tags.includes(query)) {
+        item.style.display = 'block';
+      } else {
+        item.style.display = 'none';
+      }
     });
   });
 
