@@ -5,11 +5,6 @@
       padding: 16px 24px;
 }
 /* Wrapper for flexible layout */
-.tag-filters-wrapper {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 8px;
-}
 
 /* On mobile, turn into grid */
 @media (max-width: 767px) {
