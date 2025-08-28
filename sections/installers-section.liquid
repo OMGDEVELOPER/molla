@@ -114,22 +114,24 @@
                 <div class="featured-img">
                 {{ item.featured_image | image_url: width: 800 | image_tag: alt: item.featured_image.alt }}
                 </div>
-                <h3 class="title">{{ item.title }}</h3>
-                <div class="details">
-                  <ul>
-                    <li>
-                      <img src="https://cdn.shopify.com/s/files/1/0936/3328/2419/files/location_on.png?v=1754363429">
-                      <span>{{ item.address }}</span>
-                    </li>
-                    <li>
-                      <img src="https://cdn.shopify.com/s/files/1/0936/3328/2419/files/user.svg?v=1756295623">
-                      <span><a href="mailto:{{ item.author }}">{{ item.author }}</a></span>
-                    </li>
-                    <li>
-                      <img src="https://cdn.shopify.com/s/files/1/0936/3328/2419/files/call.png?v=1754363436">
-                      <span><a href="tel:{{ item.phone }}">{{ item.phone }}</a></span>
-                    </li>
-                  </ul>
+                <div class="modal-box-content">
+                  <h3 class="title">{{ item.title }}</h3>
+                  <div class="details">
+                    <ul>
+                      <li>
+                        <img src="https://cdn.shopify.com/s/files/1/0936/3328/2419/files/location_on.png?v=1754363429">
+                        <span>{{ item.address }}</span>
+                      </li>
+                      <li>
+                        <img src="https://cdn.shopify.com/s/files/1/0936/3328/2419/files/user.svg?v=1756295623">
+                        <span><a href="mailto:{{ item.author }}">{{ item.author }}</a></span>
+                      </li>
+                      <li>
+                        <img src="https://cdn.shopify.com/s/files/1/0936/3328/2419/files/call.png?v=1754363436">
+                        <span><a href="tel:{{ item.phone }}">{{ item.phone }}</a></span>
+                      </li>
+                    </ul>
+                  </div>
                 </div>
               </div>
               {% comment %}  {% endcomment %}
