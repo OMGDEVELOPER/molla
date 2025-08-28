@@ -235,7 +235,7 @@ document.addEventListener('DOMContentLoaded', () => {
       
       if(subMenuContainer){
         subMenuContainer.classList.remove('hidden')
-        if(window.innerWidth < 768){
+        if(window.innerWidth <= 768){
           subMenuContainer.classList.add('hidden')
         }
       }
@@ -255,7 +255,7 @@ document.addEventListener('DOMContentLoaded', () => {
         document.querySelectorAll('.submenu__items.lvl-1 .submenu-items-name').forEach(i => i.classList.remove('activeMenuItem'));
      
         e.target.classList.add('activeMenuItem');
-        if(window.innerWidth < 768){
+        if(window.innerWidth <= 768){
           document.querySelector('.row > .item__1').classList.add('hide-main');
         }
         let submenuItem = document.querySelector(`.extra-columns[menu-id="${menu_id}"]`);
