@@ -44,6 +44,10 @@
     gap: 10px;
     flex-wrap: wrap;
 }
+#installer-modal .modal-slide-content .featured-img{
+    padding: 48px;
+    background: #000;
+}
 #installer-modal .modal-slide-content .featured-img img{
     max-height: 300px;
     width: 100%;
