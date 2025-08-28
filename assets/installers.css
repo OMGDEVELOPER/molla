@@ -254,8 +254,8 @@
 @media (max-width: 768px) {
   .installer-filters .btn-group button:last-child,
   .installer-filters .btn-group button.tag-filter-a{
-    border-top-right-radius: 0px;
-    border-bottom-right-radius: 0px;
+    border-top-right-radius: 0px !important;
+    border-bottom-right-radius: 0px !important;
   }
 }
 .installer-filters .btn-group button{
