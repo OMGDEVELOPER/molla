@@ -1,3 +1,6 @@
+#installer-modal .modal-slide-content .item-gallery{
+  display:flex;
+}
 #installer-modal .modal-slide-content .featured-img img{
     max-height: 300px;
     width: 100%;
