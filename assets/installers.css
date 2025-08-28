@@ -38,6 +38,11 @@
        .installers-section .grid .item .featured-img img{
             border-top-left-radius: 15px;
             border-top-right-radius: 15px;
+            height: 315px;
+            min-height: 315px;
+            max-height: 315px;
+            width: 100%;
+            object-fit: cover;
        }
        .installers-section .grid .item .details{
         margin-top:32px;
