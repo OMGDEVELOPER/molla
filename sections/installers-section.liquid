@@ -19,13 +19,17 @@
   ]
 }
 {% endschema %}
+
 {{ 'installers.css' | asset_url | stylesheet_tag }}
+{{ 'https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css' | stylesheet_tag }}
+<script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/js/splide.min.js"></script>
+
 <section class="installer-filters">
   <div class="container">
     <form>
       <div class="select-group">
-        <button class="">
-          Select State<img src="https://cdn.shopify.com/s/files/1/0936/3328/2419/files/keyboard_arrow_down_1.svg?v=1754556117">
+        <button class="">Select State
+          <img src="https://cdn.shopify.com/s/files/1/0936/3328/2419/files/keyboard_arrow_down_1.svg?v=1754556117">
         </button>
         <ul class="state-options">
           <li>NSW</li>
@@ -33,21 +37,21 @@
         </ul>
       </div>
       <div class="select-group">
-        <button class="">
-          Product Type<img src="https://cdn.shopify.com/s/files/1/0936/3328/2419/files/keyboard_arrow_down_1.svg?v=1754556117">
+        <button class="">Product Type
+          <img src="https://cdn.shopify.com/s/files/1/0936/3328/2419/files/keyboard_arrow_down_1.svg?v=1754556117">
         </button>
         <ul class="product-type-options">
-          <li>NSW</li>
-          <li>QLD</li>
+          <li>Type A</li>
+          <li>Type B</li>
         </ul>
       </div>
       <div class="select-group">
-        <button class="">
-          Installer Type<img src="https://cdn.shopify.com/s/files/1/0936/3328/2419/files/keyboard_arrow_down_1.svg?v=1754556117">
+        <button class="">Installer Type
+          <img src="https://cdn.shopify.com/s/files/1/0936/3328/2419/files/keyboard_arrow_down_1.svg?v=1754556117">
         </button>
         <ul class="installer-type-options">
-          <li>NSW</li>
-          <li>QLD</li>
+          <li>Residential</li>
+          <li>Commercial</li>
         </ul>
       </div>
       <div class="submit-filter">
@@ -56,12 +60,12 @@
     </form>
   </div>
 </section>
+
 <div class="grid grid-cols-3 container">
   {% for item in section.settings.installers_list %}
     <div class="item">
       <div class="featured-img">
-        {% comment %} <img src="https://cdn.shopify.com/s/files/1/0936/3328/2419/files/Image_3.png?v=1756290740"> {% endcomment %}
-           {{ item.featured_image | image_url: width: item.featured_image.width | image_tag: alt: item.featured_image.alt }}
+        {{ item.featured_image | image_url: width: item.featured_image.width | image_tag: alt: item.featured_image.alt }}
       </div>
       <div class="installer-details">
         <div class="title">{{ item.title }}</div>
@@ -78,61 +82,133 @@
               <span>{{ item.address }}</span>
             </li>
             <li>
-              {% comment %} <img src="https://cdn.shopify.com/s/files/1/0936/3328/2419/files/mail.png?v=1754363429"> {% endcomment %}
               <img src="https://cdn.shopify.com/s/files/1/0936/3328/2419/files/user.svg?v=1756295623">
               <span><a href="mailto:{{ item.author }}">{{ item.author }}</a></span>
             </li>
             <li>
               <img src="https://cdn.shopify.com/s/files/1/0936/3328/2419/files/call.png?v=1754363436">
-              <span
-                ><a href="tel:{{ item.phone }}">{{ item.phone }}</a></span
-              >
+              <span><a href="tel:{{ item.phone }}">{{ item.phone }}</a></span>
             </li>
           </ul>
         </div>
-      
         <div class="cta">
-          <a href="/pages/installers/{{ item.title | handleize  }}">View large images</a>
+          <button class="open-modal" 
+            data-images='[{% for img in item.gallery.value %}{"src":"{{ img | image_url }}","alt":"{{ img.alt | escape }}" }{% unless forloop.last %},{% endunless %}{% endfor %}]'>
+            View large images
+          </button>
         </div>
       </div>
     </div>
   {% endfor %}
 </div>
+
+<!-- Modal -->
+<div id="installer-modal" class="installer-modal hidden">
+  <div class="modal-overlay"></div>
+  <div class="modal-content">
+    <button class="modal-close">&times;</button>
+    <div id="installer-splide" class="splide">
+      <div class="splide__track">
+        <ul class="splide__list"></ul>
+      </div>
+    </div>
+  </div>
+</div>
+
+<style>
+.installer-modal {
+  position: fixed;
+  inset: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 999;
+}
+.installer-modal.hidden { display: none; }
+.modal-overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(0,0,0,0.7);
+}
+.modal-content {
+  position: relative;
+  background: #fff;
+  padding: 20px;
+  max-width: 900px;
+  width: 90%;
+  border-radius: 10px;
+  z-index: 1000;
+}
+.modal-close {
+  position: absolute;
+  top: 10px;
+  right: 15px;
+  background: none;
+  border: none;
+  font-size: 2rem;
+  cursor: pointer;
+}
+</style>
+
 <script>
-  document.addEventListener('DOMContentLoaded', function () {
-    const selectGroups = document.querySelectorAll('.select-group');
-
-    selectGroups.forEach((group) => {
-      const button = group.querySelector('button');
-      const options = group.querySelector('ul');
-
-      // Toggle dropdown on button click
-      button.addEventListener('click', function (e) {
-        e.preventDefault();
-        // Close all other dropdowns
-        document.querySelectorAll('.select-group ul').forEach((ul) => {
-          if (ul !== options) ul.classList.remove('show');
-        });
-        // Toggle current dropdown
-        options.classList.toggle('show');
+document.addEventListener('DOMContentLoaded', function () {
+  // Dropdown filters
+  const selectGroups = document.querySelectorAll('.select-group');
+  selectGroups.forEach((group) => {
+    const button = group.querySelector('button');
+    const options = group.querySelector('ul');
+    button.addEventListener('click', function (e) {
+      e.preventDefault();
+      document.querySelectorAll('.select-group ul').forEach((ul) => {
+        if (ul !== options) ul.classList.remove('show');
       });
-
-      // Update button text on option click
-      options.querySelectorAll('li').forEach((li) => {
-        li.addEventListener('click', function () {
-          button.childNodes[0].nodeValue = this.textContent;
-          options.classList.remove('show');
-        });
-      });
+      options.classList.toggle('show');
     });
-
-    // Optional: close dropdown if clicked outside
-    document.addEventListener('click', function (e) {
-      if (!e.target.closest('.select-group')) {
-        document.querySelectorAll('.select-group ul').forEach((ul) => {
-          ul.classList.remove('show');
-        });
-      }
+    options.querySelectorAll('li').forEach((li) => {
+      li.addEventListener('click', function () {
+        button.childNodes[0].nodeValue = this.textContent;
+        options.classList.remove('show');
+      });
     });
   });
+  document.addEventListener('click', function (e) {
+    if (!e.target.closest('.select-group')) {
+      document.querySelectorAll('.select-group ul').forEach((ul) => {
+        ul.classList.remove('show');
+      });
+    }
+  });
+
+  // Splide modal
+  const modal = document.getElementById('installer-modal');
+  const closeBtn = modal.querySelector('.modal-close');
+  const overlay = modal.querySelector('.modal-overlay');
+  const splideList = modal.querySelector('.splide__list');
+  let splide;
+
+  document.querySelectorAll('.open-modal').forEach(btn => {
+    btn.addEventListener('click', function () {
+      const images = JSON.parse(this.dataset.images);
+      splideList.innerHTML = '';
+      images.forEach(img => {
+        splideList.innerHTML += `
+          <li class="splide__slide">
+            <img src="${img.src}" alt="${img.alt || ''}" />
+          </li>`;
+      });
+      modal.classList.remove('hidden');
+      if (splide) splide.destroy();
+      splide = new Splide('#installer-splide', {
+        type: 'loop',
+        perPage: 1,
+        pagination: true,
+        arrows: true,
+      }).mount();
+    });
+  });
+
+  [closeBtn, overlay].forEach(el =>
+    el.addEventListener('click', () => modal.classList.add('hidden'))
+  );
+});
 </script>
