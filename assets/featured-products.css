@@ -22,6 +22,7 @@
   font-weight: 700;
   line-height: 62px;
   margin-bottom: 50px;
+  text-transform:uppercase;
 }
 
 /* ===== Responsive Grid Fix (if using your old layout) ===== */
