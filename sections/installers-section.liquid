@@ -200,5 +200,28 @@ document.addEventListener('DOMContentLoaded', function () {
   [closeBtn, overlay].forEach(el =>
     el.addEventListener('click', () => modal.classList.add('hidden'))
   );
+    // Tag filter logic
+  const tagButtons = document.querySelectorAll('.tag-filter-btn');
+  const installerItems = document.querySelectorAll('.grid .item');
+
+  tagButtons.forEach(btn => {
+    btn.addEventListener('click', () => {
+      const selectedTag = btn.dataset.tag;
+
+      installerItems.forEach(item => {
+        const tags = Array.from(item.querySelectorAll('.tags .tag')).map(t => t.textContent.trim());
+        if (tags.includes(selectedTag)) {
+          item.style.display = 'block';
+        } else {
+          item.style.display = 'none';
+        }
+      });
+
+      // Highlight active button
+      tagButtons.forEach(b => b.classList.remove('active'));
+      btn.classList.add('active');
+    });
+  });
+
 });
 </script>
