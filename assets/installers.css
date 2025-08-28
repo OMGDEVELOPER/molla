@@ -24,6 +24,7 @@
 #installer-modal .heading_content{
   display:flex;
   align-items:center;
+  justify-content:space-between;
 }
 #installer-modal .modal-box-content{
   padding:24px;
