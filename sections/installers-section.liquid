@@ -43,7 +43,7 @@
           {% assign unique_tags = all_tags | split: "," | uniq %}
           {% for tag in unique_tags %}
             {% if tag != blank %}
-              <button type="button" class="btn btn-outline-secondary tag-filter-btn" data-tag="{{ tag | escape }}">{{ tag }}</button>
+              <button type="button" class="btn tag-filter-btn" data-tag="{{ tag | escape }}">{{ tag }}</button>
             {% endif %}
           {% endfor %}
         </div>
