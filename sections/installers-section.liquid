@@ -114,7 +114,8 @@
             <li class="splide__slide">
               <div class="modal-slide-content">
                 <div class="featured-img">
-                <img src="{{ item.featured_image | img_url : 'full'  }}" alt="{{ item.featured_image.title }}">
+                {% comment %} {{ item.featured_image | image_url: width: 800 | image_tag: alt: item.featured_image.alt }} {% endcomment %}
+                <img src="{{ item.featured_image | img_url : '800'  }}" alt="{{ item.featured_image.title }}">
                 </div>
                 <div class="modal-box-content">
                   <div class="heading_content">
