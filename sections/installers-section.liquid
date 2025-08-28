@@ -30,7 +30,7 @@
       <!-- Tag Filters -->
       <div class="col-md-8">
         <div class="btn-group" role="group" aria-label="Tag filters">
-          <button type="button" class="tag-filter-btn active" data-tag="all">All</button>
+          <button type="button" class="tag-filter-btn active tag-filter-all" data-tag="all">All</button>
           {% assign all_tags = "" %}
           {% for item in section.settings.installers_list %}
             {% for tag in item.tags.value %}
@@ -151,7 +151,6 @@
   cursor: pointer;
 }
 .installer-filters .btn-group button{
-  
   background: var(--Colors-Background-bg-primary, #FFF);
   border: 1px solid #C5C5C5;
   padding:16px;
@@ -162,6 +161,10 @@
   line-height: normal;
 }
 
+.installer-filters .btn-group button.tag-filter-all{
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+}
 .installer-filters .btn-group button.active{
   
     background: #127FB5 !important;
