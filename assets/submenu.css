@@ -18,7 +18,7 @@ submenu{
 @media (max-width:768px){
   .submenu.active{
       margin:auto;
-      padding:0;
+      /* padding:0; */
   }
   .submenu .row .item.item__1{
     max-width:100%;
