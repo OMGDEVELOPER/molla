@@ -3,7 +3,9 @@
   height:60px;
 }
 #installer-modal .item-gallery{
-  display:flex;
+  display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
 }
 #installer-modal .modal-slide-content .featured-img img{
     max-height: 300px;
