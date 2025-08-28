@@ -182,6 +182,7 @@ document.addEventListener('DOMContentLoaded', function () {
       arrows: true,
       start: index,
     }).mount();
+    setImageGalleryimg();
   }
 
   function closeModal() {
@@ -193,7 +194,7 @@ document.addEventListener('DOMContentLoaded', function () {
       btn.addEventListener('click', function () {
         const index = parseInt(this.dataset.index, 10);
         openModal(index);
-        setImageGalleryimg();
+        
       });
     });
     [closeBtn, overlay].forEach((el) =>
