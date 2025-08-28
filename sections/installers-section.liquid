@@ -60,7 +60,8 @@
   {% for item in section.settings.installers_list %}
     <div class="item">
       <div class="featured-img">
-        <img src="https://cdn.shopify.com/s/files/1/0936/3328/2419/files/Image_3.png?v=1756290740">
+        {% comment %} <img src="https://cdn.shopify.com/s/files/1/0936/3328/2419/files/Image_3.png?v=1756290740"> {% endcomment %}
+           {{ item.featured_image | image_url: width: item.featured_image.width | image_tag: alt: item.featured_image.alt }}
       </div>
       <div class="installer-details">
         <div class="title">{{ item.title }}</div>
