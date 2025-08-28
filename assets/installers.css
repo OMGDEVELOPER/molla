@@ -4,9 +4,7 @@
 .load-more-container button{
       padding: 16px 24px;
 }
-/* Wrapper for flexible layout */
 
-/* On mobile, turn into grid */
 @media (max-width: 767px) {
   .tag-filters-wrapper {
     display: grid;
