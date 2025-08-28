@@ -9,7 +9,7 @@
   }
 
   .masonry-item {
-    position: absolute;
+    /* position: absolute; */
     transition: all 0.3s ease;
   }
 
@@ -55,7 +55,7 @@
   </div>
 </div>
 
-<script>
+{% comment %} <script>
   document.addEventListener("DOMContentLoaded", function () {
     const grid = document.querySelector(".masonry-grid");
     const items = Array.from(grid.querySelectorAll(".masonry-item"));
@@ -116,4 +116,4 @@
     waitForImages(layoutItems);
     window.addEventListener("resize", layoutItems);
   });
-</script>
+</script> {% endcomment %}
