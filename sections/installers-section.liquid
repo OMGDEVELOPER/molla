@@ -150,6 +150,16 @@
 
     // Close modal
     [closeBtn, overlay].forEach((el) => el.addEventListener('click', () => modal.classList.add('hidden')));
-    {% comment %} {% endcomment %} // Tag filtering const tagButtons = document.querySelectorAll('.tag-filter-btn'); const installerItems = document.querySelectorAll('.grid .item'); tagButtons.forEach(btn => { btn.addEventListener('click', () => { const selectedTag = btn.dataset.tag; installerItems.forEach(item => { const tags = Array.from(item.querySelectorAll('.tags .tag')).map(t => t.textContent.trim()); if (selectedTag === 'all' || tags.includes(selectedTag)) { item.style.display = 'block'; } else { item.style.display = 'none'; } }); // Active state tagButtons.forEach(b => b.classList.remove('active')); btn.classList.add('active'); }); }); // Search filtering const searchInput = document.getElementById('installerSearch'); searchInput.addEventListener('keyup', () => { const query = searchInput.value.toLowerCase(); installerItems.forEach(item => { const title = item.querySelector('.title').textContent.toLowerCase(); const tags = item.querySelector('.tags').textContent.toLowerCase(); if (title.includes(query) || tags.includes(query)) { item.style.display = 'block'; } else { item.style.display = 'none'; } }); });
+    {% comment %} {% endcomment %} // Tag filtering
+     const tagButtons = document.querySelectorAll('.tag-filter-btn'); 
+     const installerItems = document.querySelectorAll('.grid .item'); 
+     tagButtons.forEach(btn => { 
+      btn.addEventListener('click', () => { 
+        const selectedTag = btn.dataset.tag; installerItems.forEach(item => { 
+          const tags = Array.from(item.querySelectorAll('.tags .tag')).map(t => t.textContent.trim()); 
+          if (selectedTag === 'all' || tags.includes(selectedTag)) { item.style.display = 'block'; }
+          else { item.style.display = 'none'; } }); // Active state 
+          tagButtons.forEach(b => b.classList.remove('active')); btn.classList.add('active'); }); }); // Search filtering 
+          const searchInput = document.getElementById('installerSearch'); searchInput.addEventListener('keyup', () => { const query = searchInput.value.toLowerCase(); installerItems.forEach(item => { const title = item.querySelector('.title').textContent.toLowerCase(); const tags = item.querySelector('.tags').textContent.toLowerCase(); if (title.includes(query) || tags.includes(query)) { item.style.display = 'block'; } else { item.style.display = 'none'; } }); });
   });
 </script>
