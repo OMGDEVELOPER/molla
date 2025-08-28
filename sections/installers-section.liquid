@@ -59,7 +59,7 @@
   {% for item in section.settings.installers_list %}
     <div class="item" data-index="{{ forloop.index0 }}">
       <div class="featured-img">
-        <a href="{{ item.url  }}">
+        <a href="{{ item.handle  }}">
           {{
             item.featured_image
             | image_url: width: item.featured_image.width
