@@ -14,8 +14,12 @@ submenu{
   display: block;
   visibility: visible;
   opacity: 1;
-  margin:0;
-  padding:0;
+}
+@media (max-width:768px){
+  .submenu.active{
+      margin:0;
+      padding:0;
+  }
 }
 .submenu .row {}
 .submenu .row .item{
