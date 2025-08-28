@@ -1,3 +1,6 @@
+#installer-modal .modal-box-content{
+  padding:10px;
+}
 #installer-modal .title{
   color: var(--colors-text-text-primary-900, #181D27);
   font-family: Karla;
