@@ -279,9 +279,10 @@ document.addEventListener('DOMContentLoaded', function () {
   function setImageGalleryimg(){
     let imgGalleryItems = document.querySelectorAll('.item-gallery img');
     let installerImgElement = document.querySelector('.featured-img img');
-    console.log(imgGalleryItems)
+    
     imgGalleryItems.forEach(function(item){
       item.addEventListener('click',function(){
+        console.log(item)
         let imgSrc = item.getAttribute('src');
         installerImgElement.setAttribute('src',imgSrc);
         installerImgElement.setAttribute('srcset',imgSrc);
