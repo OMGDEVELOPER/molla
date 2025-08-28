@@ -2,7 +2,7 @@
   padding:24px;
 }
 #installer-modal .item-gallery{
-  
+  padding:0 24px 24px 24px;
 }
 #installer-modal .title{
   color: var(--colors-text-text-primary-900, #181D27);
