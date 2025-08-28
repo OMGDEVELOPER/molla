@@ -11,7 +11,7 @@
 }
 #installer-modal .details ul li{
   display:flex;
-  justify-content:center;
+  align-items:center;
 }
 #installer-modal .details ul li a{
   color: #050505;
