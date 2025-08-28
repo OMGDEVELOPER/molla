@@ -4,6 +4,44 @@
 .load-more-container button{
       padding: 16px 24px;
 }
+/* Make tag buttons look like chips */
+.tag-filter-btn {
+  border: 1px solid #ddd;
+  border-radius: 20px;
+  padding: 6px 14px;
+  margin: 4px;
+  background: #f8f9fa;
+  font-size: 14px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.tag-filter-btn:hover {
+  background: #e9ecef;
+}
+
+.tag-filter-btn.active {
+  background: #007bff;
+  color: #fff;
+  border-color: #007bff;
+}
+
+/* Wrapper for flexible layout */
+.tag-filters-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+/* On mobile, turn into grid */
+@media (max-width: 767px) {
+  .tag-filters-wrapper {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
+    gap: 10px;
+  }
+}
+
     .installers-section .grid {
       padding:6rem 0;
     }
