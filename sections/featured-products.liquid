@@ -1,7 +1,7 @@
 {{ "featured-products.css" | asset_url | stylesheet_tag }}
 
 <section class="featured-products container py-5">
-  <h1 class="__heading text-center mb-4">FEATURED PRODUCTS</h1>
+  <h1 class="__heading text-center mb-4">{{ section.settings.heading }}</h1>
 
   <div class="row g-4">
     {% for product in section.settings.product_lists %}
@@ -85,6 +85,12 @@
 {
   "name": "Featured Products",
   "settings": [
+    {
+      "type": "text",
+      "id": "heading",
+      "label": "Heading",
+      "default":"Featured Products"
+    },
     {
       "type": "product_list",
       "id": "product_lists",
