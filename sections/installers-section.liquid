@@ -274,6 +274,20 @@ document.addEventListener('DOMContentLoaded', function () {
       applyFilters();
     });
   }
+  function setImageGalleryimg(){
+    let imgGalleryItems = document.querySelectorAll('item-gallery img');
+    let installerImgElement = document.querySelector('.featured-img img')
+    imgGalleryItems.forEach(item=>{
+      item.addEventListener('click',function(){
+        let imgSrc = item.getAttribute('src');
+        installerImgElement.setAttribute('src',imgSrc);
+        installerImgElement.setAttribute('srcset',imgSrc);
+      })
+    })
+  }
+  function loadGalleryimage(){
+    
+  }
 
   /**
    * INIT ALL
