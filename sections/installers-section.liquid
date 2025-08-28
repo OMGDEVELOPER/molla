@@ -24,7 +24,7 @@
 {{ 'https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css' | stylesheet_tag }}
 <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/js/splide.min.js"></script>
 
-<section class="installer-filters">
+<section class="installer-filters" id="installers-{{ section.id }}" data-section-id="{{ section.id }}">
   <div class="container">
     <div class="row align-items-center">
       <!-- Tag Filters -->
@@ -59,52 +59,57 @@
   </div>
 </section>
 
-
-
-<div class="grid grid-cols-3 container">
-  {% paginate section.settings.installers_list by 1 %}
-  <h1>{{ section.settings.installers_list }}</h1>
-  {% for item in section.settings.installers_list %}
-    <div class="item">
-      <div class="featured-img">
-        
+<div class="grid grid-cols-3 container installers-grid" data-section-id="{{ section.id }}">
+  {% paginate section.settings.installers_list by 6 %}
+    {% for item in section.settings.installers_list %}
+      <div class="item" data-id="{{ item.id }}">
+        <div class="featured-img">
           <a class="open-modal" 
             data-images='[{% for img in item.gallery.value %}{"src":"{{ img | image_url }}","alt":"{{ img.alt | escape }}" }{% unless forloop.last %},{% endunless %}{% endfor %}]'>
-        {{ item.featured_image | image_url: width: item.featured_image.width | image_tag: alt: item.featured_image.alt }}
+            {{ item.featured_image | image_url: width: item.featured_image.width | image_tag: alt: item.featured_image.alt }}
           </a>
+        </div>
+        <div class="installer-details">
+          <div class="title">{{ item.title }}</div>
+          <div class="tags">
+            {% for tag in item.tags.value %}
+              <span class="tag">{{ tag }}</span>
+              {%- unless forloop.last %}, {% endunless %}
+            {% endfor %}
+          </div>
+          <div class="details">
+            <ul>
+              <li>
+                <img src="https://cdn.shopify.com/s/files/1/0936/3328/2419/files/location_on.png?v=1754363429">
+                <span>{{ item.address }}</span>
+              </li>
+              <li>
+                <img src="https://cdn.shopify.com/s/files/1/0936/3328/2419/files/user.svg?v=1756295623">
+                <span><a href="mailto:{{ item.author }}">{{ item.author }}</a></span>
+              </li>
+              <li>
+                <img src="https://cdn.shopify.com/s/files/1/0936/3328/2419/files/call.png?v=1754363436">
+                <span><a href="tel:{{ item.phone }}">{{ item.phone }}</a></span>
+              </li>
+            </ul>
+          </div>
+          <div class="cta">
+            <a href="/pages/installers/{{ item.title | handleize }}">View large images</a>
+          </div>
+        </div>
       </div>
-      <div class="installer-details">
-        <div class="title">{{ item.title }}</div>
-        <div class="tags">
-          {% for tag in item.tags.value %}
-            <span class="tag">{{ tag }}</span>
-            {%- unless forloop.last %}, {% endunless %}
-          {% endfor %}
-        </div>
-        <div class="details">
-          <ul>
-            <li>
-              <img src="https://cdn.shopify.com/s/files/1/0936/3328/2419/files/location_on.png?v=1754363429">
-              <span>{{ item.address }}</span>
-            </li>
-            <li>
-              <img src="https://cdn.shopify.com/s/files/1/0936/3328/2419/files/user.svg?v=1756295623">
-              <span><a href="mailto:{{ item.author }}">{{ item.author }}</a></span>
-            </li>
-            <li>
-              <img src="https://cdn.shopify.com/s/files/1/0936/3328/2419/files/call.png?v=1754363436">
-              <span><a href="tel:{{ item.phone }}">{{ item.phone }}</a></span>
-            </li>
-          </ul>
-        </div>
-        <div class="cta">
-          <a href="/pages/installers/{{ item.title | handleize }}">View large images</a>
+    {% endfor %}
 
-        </div>
+    {% if paginate.next %}
+      <div class="load-more-container text-center my-4">
+        <button id="loadMore-{{ section.id }}" class="btn btn-primary"
+                data-next="{{ paginate.next.url }}"
+                data-section-id="{{ section.id }}">
+          Load More
+        </button>
       </div>
-    </div>
-  {% endfor %}
-{% endpaginate %}
+    {% endif %}
+  {% endpaginate %}
 </div>
 
 <!-- Modal -->
@@ -120,15 +125,14 @@
   </div>
 </div>
 
-
-
 <script>
 document.addEventListener('DOMContentLoaded', function () {
-  // Dropdown filters
+  // ================= Existing dropdown filter support (kept) =================
   const selectGroups = document.querySelectorAll('.select-group');
   selectGroups.forEach((group) => {
     const button = group.querySelector('button');
     const options = group.querySelector('ul');
+    if (!button || !options) return;
     button.addEventListener('click', function (e) {
       e.preventDefault();
       document.querySelectorAll('.select-group ul').forEach((ul) => {
@@ -151,76 +155,132 @@ document.addEventListener('DOMContentLoaded', function () {
     }
   });
 
-  // Splide modal
+  // ================= Modal (Splide) =================
   const modal = document.getElementById('installer-modal');
   const closeBtn = modal.querySelector('.modal-close');
   const overlay = modal.querySelector('.modal-overlay');
   const splideList = modal.querySelector('.splide__list');
   let splide;
 
-  document.querySelectorAll('.open-modal').forEach(btn => {
-    btn.addEventListener('click', function () {
-      const images = JSON.parse(this.dataset.images);
-      splideList.innerHTML = '';
-      images.forEach(img => {
-        splideList.innerHTML += `
-          <li class="splide__slide">
-            <img src="${img.src}" alt="${img.alt || ''}" />
-          </li>`;
+  function bindModalEvents(scope = document) {
+    scope.querySelectorAll('.open-modal').forEach(btn => {
+      btn.addEventListener('click', function () {
+        const images = this.dataset.images ? JSON.parse(this.dataset.images) : [];
+        splideList.innerHTML = '';
+        images.forEach(img => {
+          splideList.insertAdjacentHTML('beforeend', `
+            <li class="splide__slide">
+              <img src="${img.src}" alt="${img.alt || ''}" />
+            </li>`);
+        });
+        modal.classList.remove('hidden');
+        if (splide) splide.destroy();
+        splide = new Splide('#installer-splide', {
+          type: 'loop',
+          perPage: 1,
+          pagination: true,
+          arrows: true,
+        }).mount();
       });
-      modal.classList.remove('hidden');
-      if (splide) splide.destroy();
-      splide = new Splide('#installer-splide', {
-        type: 'loop',
-        perPage: 1,
-        pagination: true,
-        arrows: true,
-      }).mount();
     });
-  });
+  }
+  bindModalEvents();
 
   [closeBtn, overlay].forEach(el =>
     el.addEventListener('click', () => modal.classList.add('hidden'))
   );
- {% comment %}  {% endcomment %}
-  // Tag filtering
+
+  // ================= Tag + Search filtering (works for new items too) =================
   const tagButtons = document.querySelectorAll('.tag-filter-btn');
-  const installerItems = document.querySelectorAll('.grid .item');
+  const searchInput = document.getElementById('installerSearch');
+
+  function getActiveTag() {
+    const active = document.querySelector('.tag-filter-btn.active');
+    return active ? active.dataset.tag : 'all';
+    }
+  function getQuery() {
+    return (searchInput?.value || '').toLowerCase();
+  }
+  function applyFilters() {
+    const selectedTag = getActiveTag();
+    const query = getQuery();
+    document.querySelectorAll('.installers-grid .item').forEach(item => {
+      const title = (item.querySelector('.title')?.textContent || '').toLowerCase();
+      const tagsText = (item.querySelector('.tags')?.textContent || '').toLowerCase();
+      const hasTag = selectedTag === 'all' || tagsText.split(/\s|,|\u00A0/).includes(selectedTag.toLowerCase());
+      const matchesQuery = !query || title.includes(query) || tagsText.includes(query);
+      item.style.display = (hasTag && matchesQuery) ? 'block' : 'none';
+    });
+  }
 
   tagButtons.forEach(btn => {
     btn.addEventListener('click', () => {
-      const selectedTag = btn.dataset.tag;
-
-      installerItems.forEach(item => {
-        const tags = Array.from(item.querySelectorAll('.tags .tag')).map(t => t.textContent.trim());
-
-        if (selectedTag === 'all' || tags.includes(selectedTag)) {
-          item.style.display = 'block';
-        } else {
-          item.style.display = 'none';
-        }
-      });
-
-      // Active state
       tagButtons.forEach(b => b.classList.remove('active'));
       btn.classList.add('active');
+      applyFilters();
     });
   });
 
-  // Search filtering
-  const searchInput = document.getElementById('installerSearch');
-  searchInput.addEventListener('keyup', () => {
-    const query = searchInput.value.toLowerCase();
-    installerItems.forEach(item => {
-      const title = item.querySelector('.title').textContent.toLowerCase();
-      const tags = item.querySelector('.tags').textContent.toLowerCase();
-      if (title.includes(query) || tags.includes(query)) {
-        item.style.display = 'block';
-      } else {
-        item.style.display = 'none';
+  if (searchInput) {
+    searchInput.addEventListener('keyup', applyFilters);
+  }
+
+  // Initial apply (in case)
+  applyFilters();
+
+  // ================= Load More with section rendering (no duplicates) =================
+  const grid = document.querySelector('.installers-grid');
+  const loadMoreBtn = document.getElementById('loadMore-{{ section.id }}');
+
+  function appendNewItemsFromHTML(htmlString) {
+    const temp = document.createElement('div');
+    temp.innerHTML = htmlString;
+
+    // Get items from the returned section only
+    const newItems = temp.querySelectorAll('.installers-grid .item');
+
+    newItems.forEach(item => {
+      const id = item.getAttribute('data-id');
+      if (!id || !grid.querySelector('[data-id="' + id + '"]')) {
+        grid.appendChild(item);
       }
     });
-  });
 
+    // Re-bind modal for new items
+    bindModalEvents(grid);
+
+    // Re-apply current filters to include new items
+    applyFilters();
+
+    // Update / remove Load More button depending on next page
+    const nextBtn = temp.querySelector('.load-more-container button[id^="loadMore-"]');
+    if (nextBtn) {
+      loadMoreBtn.dataset.next = nextBtn.dataset.next;
+      loadMoreBtn.textContent = 'Load More';
+    } else if (loadMoreBtn) {
+      loadMoreBtn.remove();
+    }
+  }
+
+  if (loadMoreBtn) {
+    loadMoreBtn.addEventListener('click', function () {
+      const nextUrl = this.dataset.next || '';
+      if (!nextUrl) return;
+
+      this.textContent = 'Loading...';
+
+      // Ensure we fetch JUST this section’s HTML for the next page
+      const sectionParam = 'section_id={{ section.id }}';
+      const fetchUrl = nextUrl + (nextUrl.includes('?') ? '&' : '?') + sectionParam;
+
+      fetch(fetchUrl, { credentials: 'same-origin' })
+        .then(res => res.text())
+        .then(html => appendNewItemsFromHTML(html))
+        .catch(err => {
+          console.error('Load more failed:', err);
+          this.textContent = 'Error';
+        });
+    });
+  }
 });
 </script>
