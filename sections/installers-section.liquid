@@ -66,10 +66,10 @@
     <div class="item">
       <div class="featured-img">
         
-          <button class="open-modal" 
+          <a class="open-modal" 
             data-images='[{% for img in item.gallery.value %}{"src":"{{ img | image_url }}","alt":"{{ img.alt | escape }}" }{% unless forloop.last %},{% endunless %}{% endfor %}]'>
         {{ item.featured_image | image_url: width: item.featured_image.width | image_tag: alt: item.featured_image.alt }}
-                  </button>
+          </a>
       </div>
       <div class="installer-details">
         <div class="title">{{ item.title }}</div>
