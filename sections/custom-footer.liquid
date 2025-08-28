@@ -30,7 +30,7 @@
     display: flex;
     align-items: center;
     gap: 10px;
-    flex-wrap:wrap;
+    {% comment %} flex-wrap:wrap; {% endcomment %}
   }
   .custom-footer .row .item .links-with-icon a img {
     width: 32px;
@@ -45,6 +45,10 @@
     font-weight: 400;
   }
   @media (max-width:768px){
+    .custom-footer .row .item .links-with-icon a img {
+      width: 20px;
+      height: 20px;
+    }
     .custom-footer .row .resources ul li a {
       font-size: 12px;
     }
