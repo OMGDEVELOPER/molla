@@ -182,7 +182,7 @@ document.addEventListener('DOMContentLoaded', function () {
       arrows: true,
       start: index,
     }).mount();
-    setImageGalleryimg();
+    
   }
 
   function closeModal() {
@@ -298,6 +298,7 @@ document.addEventListener('DOMContentLoaded', function () {
     initPagination();
     initFilters();
     applyFilters(); // initial state
+    setImageGalleryimg();
   }
 
   init();
