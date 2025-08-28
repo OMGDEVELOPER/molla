@@ -32,8 +32,30 @@
       </div>
       <div class="installer-details">
         <div class="title">{{ item.title }}</div>
+        <div class="tags">
+          {% for tag in item.tags.value %}
+            <span class="tag">{{ tag }}</span>
+            {%- unless forloop.last %}, {% endunless %}
+          {% endfor %}
+        </div>
+        <div class="details">
+          <ul>
+            <li>
+              <img src="https://cdn.shopify.com/s/files/1/0936/3328/2419/files/location_on.png?v=1754363429">
+              <span>{{ item.address }}</span>
+            </li>
+            <li>
+              <img src="https://cdn.shopify.com/s/files/1/0936/3328/2419/files/user.svg?v=1756295623">
+              <span><a href="mailto:{{ item.author }}">{{ item.author }}</a></span>
+            </li>
+            <li>
+              <img src="https://cdn.shopify.com/s/files/1/0936/3328/2419/files/call.png?v=1754363436">
+              <span><a href="tel:{{ item.phone }}">{{ item.phone }}</a></span>
+            </li>
+          </ul>
+        </div>
         <div class="cta">
-          <button class="open-modal">View Details</button>
+          <button class="open-modal" data-index="{{ forloop.index0 }}">View large images</button>
         </div>
       </div>
     </div>
@@ -52,8 +74,8 @@
             <li class="splide__slide">
               <div class="modal-slide-content">
                 {{ item.featured_image | image_url: width: 800 | image_tag: alt: item.featured_image.alt }}
-                <h3>{{ item.title }}</h3>
-                <p>{{ item.description }}</p>
+                <h3 class="title">{{ item.title }}</h3>
+                <p class="description">{{ item.description }}</p>
               </div>
             </li>
           {% endfor %}
@@ -70,19 +92,19 @@ document.addEventListener('DOMContentLoaded', function () {
   const overlay = modal.querySelector('.modal-overlay');
   let splide;
 
-  // Open modal on button click
-  document.querySelectorAll('.open-modal').forEach((btn, index) => {
+  // Open modal with correct slide
+  document.querySelectorAll('.open-modal').forEach((btn) => {
     btn.addEventListener('click', function () {
+      const index = parseInt(this.dataset.index, 10);
       modal.classList.remove('hidden');
 
-      // Init or re-init Splide
       if (splide) splide.destroy();
       splide = new Splide('#installer-splide', {
         type: 'loop',
         perPage: 1,
         pagination: true,
         arrows: true,
-        start: index, // open at clicked item
+        start: index
       }).mount();
     });
   });
