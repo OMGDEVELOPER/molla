@@ -1,6 +1,9 @@
 .load-more-container{
   margin:25px;
 }
+.load-more-container button{
+      padding: 16px 24px;
+}
     .installers-section .grid {
       padding:6rem 0;
     }
