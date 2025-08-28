@@ -193,6 +193,7 @@ document.addEventListener('DOMContentLoaded', function () {
       btn.addEventListener('click', function () {
         const index = parseInt(this.dataset.index, 10);
         openModal(index);
+        setImageGalleryimg();
       });
     });
     [closeBtn, overlay].forEach((el) =>
@@ -299,12 +300,6 @@ document.addEventListener('DOMContentLoaded', function () {
   }
 
   init();
-  setTimeout(function(){
- console.log('asd')
-  setImageGalleryimg();
-  },3000)
- 
- 
 });
 </script>
 
