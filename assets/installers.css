@@ -1,3 +1,6 @@
+#installer-modal .splide__arrow--prev{
+  left:5px;
+}
 #installer-modal .splide__arrow--prev,
 #installer-modal .splide__arrow--next{
   top:30%;
