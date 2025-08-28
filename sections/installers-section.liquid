@@ -55,9 +55,9 @@
     </div>
   </div>
 </section>
-<div class="grid grid-cols-3 container">
+<div class="grid grid-cols-3 container" id="installerGrid">
   {% for item in section.settings.installers_list %}
-    <div class="item">
+    <div class="item" data-index="{{ forloop.index0 }}">
       <div class="featured-img">
         {{
           item.featured_image
@@ -81,15 +81,11 @@
             </li>
             <li>
               <img src="https://cdn.shopify.com/s/files/1/0936/3328/2419/files/user.svg?v=1756295623">
-              <span
-                ><a href="mailto:{{ item.author }}">{{ item.author }}</a></span
-              >
+              <span><a href="mailto:{{ item.author }}">{{ item.author }}</a></span>
             </li>
             <li>
               <img src="https://cdn.shopify.com/s/files/1/0936/3328/2419/files/call.png?v=1754363436">
-              <span
-                ><a href="tel:{{ item.phone }}">{{ item.phone }}</a></span
-              >
+              <span><a href="tel:{{ item.phone }}">{{ item.phone }}</a></span>
             </li>
           </ul>
         </div>
@@ -100,7 +96,10 @@
     </div>
   {% endfor %}
 </div>
-
+<!-- Load More Button -->
+<div class="load-more-container text-center">
+  <button id="loadMoreBtn" class="btn">Load More</button>
+</div>
 <!-- Modal -->
 <div id="installer-modal" class="installer-modal hidden">
   <div class="modal-overlay"></div>
