@@ -438,7 +438,7 @@
             "grid_gutter": 10,
             "banner-effect": "banner-effect5",
             "image_1": "shopify://shop_images/low-angle-modern-house-roof_1.png",
-            "image_link_1": "",
+            "image_link_1": "shopify://collections",
             "stitle_1": "30% OFF",
             "color_stitle_1": "#ff0404",
             "titlex_1": "Best Offer Today!<br>\n<a href=\"/collections\">\n<button class=\"_new-btn\">\nNew Product Collections</button></a>",
