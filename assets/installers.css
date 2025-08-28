@@ -1,3 +1,7 @@
+#installer-modal .item-gallery img{
+  width:100px;
+  height:100px;
+}
 #installer-modal .item-gallery{
   display:flex;
 }
