@@ -25,7 +25,7 @@
 <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/js/splide.min.js"></script>
 
 <section class="installer-filters">
-  <div class="container">
+  <div class="container flex justify-between items-center">
 
     {% assign all_tags = "" %}
     {% for item in section.settings.installers_list %}
@@ -38,7 +38,9 @@
 
     {% assign unique_tags = all_tags | split: "," | uniq %}
 
-    <div class="tag-filters">
+    <!-- Tag Filter Buttons -->
+    <div class="tag-filters flex gap-2">
+      <button class="tag-filter-btn active" data-tag="all">All</button>
       {% for tag in unique_tags %}
         {% if tag != blank %}
           <button class="tag-filter-btn" data-tag="{{ tag | escape }}">{{ tag }}</button>
@@ -46,8 +48,14 @@
       {% endfor %}
     </div>
 
+    <!-- Search -->
+    <div class="installer-search">
+      <input type="text" id="installerSearch" placeholder="Search" class="search-input" />
+    </div>
+
   </div>
 </section>
+
 
 <div class="grid grid-cols-3 container">
   {% for item in section.settings.installers_list %}
@@ -137,23 +145,6 @@
   border: none;
   font-size: 2rem;
   cursor: pointer;
-}
-.tag-filters {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 10px;
-  margin-bottom: 20px;
-}
-.tag-filter-btn {
-  background: #eee;
-  border: none;
-  padding: 8px 15px;
-  border-radius: 5px;
-  cursor: pointer;
-}
-.tag-filter-btn.active {
-  background: #333;
-  color: #fff;
 }
 
 </style>
