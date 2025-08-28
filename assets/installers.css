@@ -2,7 +2,7 @@
   left:24px;
 }
 #installer-modal .splide__arrow--next{
-  right:24px;
+  right:20px;
 }
 #installer-modal .splide__arrow--prev,
 #installer-modal .splide__arrow--next{
@@ -68,7 +68,7 @@
     flex-wrap: wrap;
 }
 #installer-modal .modal-slide-content .featured-img{
-    padding: 48px;
+    padding: 40px;
     background: #000;
 }
 #installer-modal .modal-slide-content .featured-img img{
