@@ -17,7 +17,7 @@ submenu{
 }
 @media (max-width:768px){
   .submenu.active{
-      margin:0;
+      margin:auto;
       padding:0;
   }
 }
