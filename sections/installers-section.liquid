@@ -30,7 +30,7 @@
       <!-- Tag Filters -->
       <div class="col-md-8">
         <div class="btn-group" role="group" aria-label="Tag filters">
-          <button type="button" class="btn btn-primary tag-filter-btn active" data-tag="all">All</button>
+          <button type="button" class="tag-filter-btn active" data-tag="all">All</button>
           {% assign all_tags = "" %}
           {% for item in section.settings.installers_list %}
             {% for tag in item.tags.value %}
@@ -42,7 +42,7 @@
           {% assign unique_tags = all_tags | split: "," | uniq %}
           {% for tag in unique_tags %}
             {% if tag != blank %}
-              <a type="button" class="btn tag-filter-btn" data-tag="{{ tag | escape }}">{{ tag }}</a>
+              <button type="button" class="tag-filter-btn" data-tag="{{ tag | escape }}">{{ tag }}</button>
             {% endif %}
           {% endfor %}
         </div>
