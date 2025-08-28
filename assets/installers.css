@@ -1,3 +1,11 @@
+#installer-modal .details .title{
+  color: var(--colors-text-text-primary-900, #181D27);
+  font-family: Karla;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: var(--Line-height-text-lg, 28px); /* 155.556% */
+}
 #installer-modal .details ul{
   padding:0px;
 }
