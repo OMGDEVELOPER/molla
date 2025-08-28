@@ -101,7 +101,7 @@
     <div class="custom-blog-grid">
       {% assign blog_handle = section.settings.blog %}
       {% if blogs[blog_handle].articles.size > 0 %}
-        {% for article in blogs[blog_handle].articles limit: 3 %}
+        {% for article in blogs[blog_handle].articles limit: section.settings.limit %}
           <div class="custom-blog-card">
             {% if article.image %}
               <img src="{{ article.image | img_url: '800x' }}" alt="{{ article.image.alt | escape }}">
@@ -157,6 +157,12 @@
       "type": "blog",
       "id": "blog",
       "label": "Select Blog"
+    },
+    {
+      "type": "number",
+      "id": "limit",
+      "label": "Limit",
+      "default":3
     }
   ],
   "presets": [
