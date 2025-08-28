@@ -540,7 +540,8 @@
       "name": "Custom Blog Section",
       "settings": {
         "heading": "BLOGS",
-        "blog": "posts"
+        "blog": "posts",
+        "limit": 3
       }
     },
     "1754631334889c183b": {
