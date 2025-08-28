@@ -1,7 +1,7 @@
 /*  submenu styles */
 submenu{
   position: absolute;
-  z-index: 1;
+  z-index: 9999;
   width: 100%;
 }
 .submenu{
@@ -14,6 +14,8 @@ submenu{
   display: block;
   visibility: visible;
   opacity: 1;
+  margin:0;
+  padding:0;
 }
 .submenu .row {}
 .submenu .row .item{
