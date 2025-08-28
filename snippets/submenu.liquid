@@ -360,7 +360,7 @@ document.addEventListener('DOMContentLoaded', () => {
         item.addEventListener('click', function (e) {
          
           const navMenu = this.closest('.nav-menu');
-          if(window.innerWidth < 768){
+          if(window.innerWidth <= 768){
             if(navMenu){
               console.log('added hidden to');
               console.log(navMenu);
