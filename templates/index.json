@@ -482,6 +482,7 @@
       "type": "featured-products",
       "name": "Featured Products",
       "settings": {
+        "heading": "Featured Products",
         "product_lists": [
           "twin-wall-roof-sheets",
           "wpc-decking",
@@ -498,7 +499,7 @@
         "left_title": "Big Discounts",
         "left_text": "If you become one of our retailers",
         "left_button_label": "BE OUR PARTNER",
-        "left_button_link": "shopify://collections",
+        "left_button_link": "shopify://pages/contact",
         "bg_group1": "shopify://shop_images/Frame_23.png",
         "group1_title": "Retail Weekend Sale!",
         "group1_subheading": "GET UP TO 50% OFF",
@@ -521,6 +522,7 @@
       "type": "featured-products",
       "name": "Featured Products",
       "settings": {
+        "heading": "Featured Products",
         "product_lists": [
           "aluminium-angle-1",
           "aluminium-angle",
