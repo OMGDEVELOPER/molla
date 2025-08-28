@@ -251,6 +251,12 @@
     border-top-right-radius: 15px;
     border-bottom-right-radius: 15px;
 }
+@media (max-width: 768px) {
+  .installer-filters .btn-group button:last-child{
+    border-top-right-radius: 0px;
+    border-bottom-right-radius: 0px;
+}
+}
 .installer-filters .btn-group button{
   background: var(--Colors-Background-bg-primary, #FFF);
   border: 1px solid #C5C5C5;
