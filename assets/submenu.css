@@ -20,6 +20,9 @@ submenu{
       margin:auto;
       padding:0;
   }
+  .submenu .row .item.item__1{
+    max-width:100%;
+  }
 }
 .submenu .row {}
 .submenu .row .item{
