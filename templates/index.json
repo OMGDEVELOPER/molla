@@ -521,6 +521,9 @@
     },
     "about_section_tPd4dz": {
       "type": "about-section",
+      "custom_css": [
+        ".item_who_we_are {background-color:#f6f6f6 !important;}"
+      ],
       "name": "About Section",
       "settings": {
         "heading": "About Us",
