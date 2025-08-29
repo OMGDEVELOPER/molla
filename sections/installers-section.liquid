@@ -276,26 +276,18 @@ document.addEventListener('DOMContentLoaded', function () {
       applyFilters();
     });
   }
-  function setImageGalleryimg() {
-  const imgGalleryItems = document.querySelectorAll('.item-gallery img');
-
-  imgGalleryItems.forEach((thumb, thumbIndex) => {
-    thumb.addEventListener('click', function () {
-      // Find which installer this thumbnail belongs to
-      const installerItem = this.closest('.item');
-      const index = Array.from(installerItems).indexOf(installerItem);
-
-      // Open modal with that installer's gallery
-      openModal(index);
-
-      // Jump Splide to the clicked thumbnail’s index
-      if (splide) {
-        splide.go(thumbIndex);
-      }
-    });
-  });
-}
-
+  function setImageGalleryimg(){
+    let imgGalleryItems = document.querySelectorAll('.item-gallery img');
+    imgGalleryItems.forEach(function(item){
+      item.addEventListener('click',function(){
+        let installerImgElement = document.querySelector('#installer-modal .is-active .featured-img img');
+        let imgSrc = item.getAttribute('src');
+        installerImgElement.setAttribute('src',imgSrc);
+        installerImgElement.setAttribute('srcset',imgSrc);
+        console.log(installerImgElement)
+      })
+    })
+  }
 
   /**
    * INIT ALL
