@@ -11,7 +11,8 @@
     align-content: space-around;
   }
   .quantity.js-item-quantity{
-        align-items: flex-end !important;
+    align-items: flex-end !important;
+    margin-top: 0;
   }
   .quantity.js-item-quantity .control{
     max-height:40px;
