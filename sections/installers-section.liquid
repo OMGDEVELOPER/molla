@@ -113,7 +113,7 @@
           {% for item in section.settings.installers_list %}
             <li class="splide__slide">
               <div class="modal-slide-content">
-                <div class="featured-img">
+                <div class="featured-img-modal">
                 {{ item.featured_image | image_url: width: 800 | image_tag: alt: item.featured_image.alt }}
                 </div>
                 <div class="modal-box-content">
@@ -280,7 +280,7 @@ document.addEventListener('DOMContentLoaded', function () {
     let imgGalleryItems = document.querySelectorAll('.item-gallery img');
     imgGalleryItems.forEach(function(item){
       item.addEventListener('click',function(){
-        let installerImgElement = document.querySelector('#installer-modal .is-active .modal-slide-content .featured-img img');
+        let installerImgElement = document.querySelector('#installer-modal .is-active .featured-img-modal img');
         let imgSrc = item.getAttribute('src');
         installerImgElement.setAttribute('src',imgSrc);
         installerImgElement.setAttribute('srcset',imgSrc);
