@@ -224,7 +224,7 @@
         "1612493432487-0"
       ],
       "custom_css": [
-        ".content_template--24874075292019__1612493432487{margin-bottom: 0px !important;}"
+        ".content_template--24874075292019__1612493432487 {margin-bottom: 0px !important;}"
       ],
       "settings": {
         "title": "Banner template 2",
@@ -524,7 +524,7 @@
     "about_section_tPd4dz": {
       "type": "about-section",
       "custom_css": [
-        ".item_who_we_are {background-color: #f6f6f6 !important;}"
+        ".item_who_we_are {background-color: #f6f6f6 !important; margin-bottom:5rem;}"
       ],
       "name": "About Section",
       "settings": {
