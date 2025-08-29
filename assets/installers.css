@@ -88,6 +88,8 @@
     flex-wrap: nowrap;
     flex-direction: row;
     overflow-x: scroll;
+    width: 90%;
+    margin: auto;
 }
 /* #installer-modal .item-gallery{
   display: flex;
