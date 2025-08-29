@@ -62,7 +62,7 @@
         "image_agPjC9"
       ],
       "custom_css": [
-        "@media (max-width: 768px) {.slideshow__title h1 {line-height: normal; margin-top: 70px; }}"
+        "@media (max-width: 768px) {.slideshow__title h1 {line-height: normal; margin-top: 70px; } .sl-anime.slideshow__subtitle{font-size:18px !important; line-height: normal !important; }}"
       ],
       "name": "Master",
       "settings": {
