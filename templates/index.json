@@ -441,7 +441,7 @@
             "image_link_1": "shopify://collections",
             "stitle_1": "We Can Help!",
             "color_stitle_1": "#ff0404",
-            "titlex_1": "A Tradie Or Looking To Diy<br>\n<a href=\"/collections\" style=\"display:none;\">\n</a><a href=\"tel:1300%20242%20799\" style=\"color:#FF0404;\">Call: 1300 242 799</a><br>\n<button class=\"_new-btn\">\nNew Product Collections</button>",
+            "titlex_1": "A Tradie Or Looking To Diy<br>\n<a href=\"/collections\" style=\"display:none;\">\n<button class=\"_new-btn\">\nNew Product Collections</button></a>\n\n<a href=\"tel:1300%20242%20799\" style=\"color:#FF0404;\">Call: 1300 242 799</a><br>",
             "color_titlex_1": "#333333",
             "name_btn_1": "Shop Now",
             "style_btn_1": "btn-primary-white",
