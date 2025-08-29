@@ -13,6 +13,9 @@
   .quantity.js-item-quantity{
         align-items: flex-end !important;
   }
+  .quantity.js-item-quantity .control{
+    max-height:40px;
+  }
 }
 /* 
 **** Related Products ****
