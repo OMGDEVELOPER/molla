@@ -1,26 +1,42 @@
 <div class="w-100" data-block="item_who_we_are">
-	  <div class="content_1566459607551" data-respon="{'el':'.content_1566459607551','mt':'5rem','mb':'','p':'5rem 0'}">
-      <div class="section-width container">
-      	<div class="row">
-          <div class="col-lg-5">
-            <h2 class="title">Who We Are</h2>
-            <p class="lead text-primary mb-3">Pellentesque odio nisi, euismod pharetra a ultricies <br>in diam. Sed arcu. Cras consequat</p><p class="mb-2">Sed pretium, ligula sollicitudin laoreet viverra, tortor libero sodales leo, eget blandit nunc tortor eu nibh. Suspendisse potenti. Sed egestas, ante et vulputate volutpat, uctus metus libero eu augue. </p>
-            
-            <a href="#" class="btn btn-sm btn-minwidth btn-outline-primary-2">
-              <span>VIEW OUR NEWS</span><i class="fkt-long-arrow-right"></i>
+  <div class="content_1566459607551" data-respon="{'el':'.content_1566459607551','mt':'5rem','mb':'','p':'5rem 0'}">
+    <div class="section-width container">
+      <div class="row">
+        <div class="col-lg-5">
+          {% if section.settings.heading != blank %}
+            <h2 class="title">{{ section.settings.heading }}</h2>
+          {% endif %}
+
+          {% if section.settings.subheading != blank %}
+            <p class="lead text-primary mb-3">{{ section.settings.subheading }}</p>
+          {% endif %}
+
+          {% if section.settings.description != blank %}
+            <p class="mb-2">{{ section.settings.description }}</p>
+          {% endif %}
+
+          {% if section.settings.button_label != blank %}
+            <a href="{{ section.settings.button_link }}" class="btn btn-sm btn-minwidth btn-outline-primary-2">
+              <span>{{ section.settings.button_label }}</span><i class="fkt-long-arrow-right"></i>
             </a>
-            
-          </div>
-          <div class="col-lg-6 offset-lg-1">
-            <div class="about-images"><div class="img__banner lazyloaded" style="padding-bottom: 64.2857%; background-image: url(&quot;https://midas-theme.myshopify.com/cdn/shop/files/Untitled-1.jpg?v=1614721670&quot;);" data-bgset="//midas-theme.myshopify.com/cdn/shop/files/Untitled-1_180x.jpg?v=1614721670 180w 116h,//midas-theme.myshopify.com/cdn/shop/files/Untitled-1_360x.jpg?v=1614721670 360w 231h,//midas-theme.myshopify.com/cdn/shop/files/Untitled-1_540x.jpg?v=1614721670 540w 347h,//midas-theme.myshopify.com/cdn/shop/files/Untitled-1.jpg?v=1614721670 560w 360h" aria-label="midas-theme"><picture style="display: none;"><source data-srcset="//midas-theme.myshopify.com/cdn/shop/files/Untitled-1_180x.jpg?v=1614721670 180w 116h,//midas-theme.myshopify.com/cdn/shop/files/Untitled-1_360x.jpg?v=1614721670 360w 231h,//midas-theme.myshopify.com/cdn/shop/files/Untitled-1_540x.jpg?v=1614721670 540w 347h,//midas-theme.myshopify.com/cdn/shop/files/Untitled-1.jpg?v=1614721670 560w 360h" sizes="580px" srcset="//midas-theme.myshopify.com/cdn/shop/files/Untitled-1_180x.jpg?v=1614721670 180w 116h,//midas-theme.myshopify.com/cdn/shop/files/Untitled-1_360x.jpg?v=1614721670 360w 231h,//midas-theme.myshopify.com/cdn/shop/files/Untitled-1_540x.jpg?v=1614721670 540w 347h,//midas-theme.myshopify.com/cdn/shop/files/Untitled-1.jpg?v=1614721670 560w 360h"><img alt="" class="lazyautosizes lazyloaded" data-sizes="auto" data-parent-fit="cover" sizes="580px"></picture></div>
+          {% endif %}
+        </div>
+
+        <div class="col-lg-6 offset-lg-1">
+          {% if section.settings.image != blank %}
+            <div class="about-images">
+              <div class="img__banner" style="padding-bottom: 64.2857%; background-image: url('{{ section.settings.image | image_url: width: 800 }}');">
+                <img src="{{ section.settings.image | image_url: width: 800 }}" alt="{{ section.settings.image.alt | escape }}">
+              </div>
             </div>
-          </div>
+          {% endif %}
         </div>
       </div>
-	  </div>
-	</div>
+    </div>
+  </div>
+</div>
 
-    {% schema %}
+{% schema %}
 {
   "name": "About Section",
   "settings": [
@@ -28,12 +44,36 @@
       "type": "text",
       "id": "heading",
       "label": "Heading",
-      "default":"About Section"
+      "default": "Who We Are"
     },
     {
-      "type": "product_list",
-      "id": "product_lists",
-      "label": "Product Lists"
+      "type": "textarea",
+      "id": "subheading",
+      "label": "Subheading",
+      "default": "Pellentesque odio nisi, euismod pharetra a ultricies in diam. Sed arcu. Cras consequat"
+    },
+    {
+      "type": "textarea",
+      "id": "description",
+      "label": "Description",
+      "default": "Sed pretium, ligula sollicitudin laoreet viverra, tortor libero sodales leo, eget blandit nunc tortor eu nibh. Suspendisse potenti."
+    },
+    {
+      "type": "text",
+      "id": "button_label",
+      "label": "Button Label",
+      "default": "VIEW OUR NEWS"
+    },
+    {
+      "type": "url",
+      "id": "button_link",
+      "label": "Button Link",
+    
+    },
+    {
+      "type": "image_picker",
+      "id": "image",
+      "label": "Image"
     }
   ],
   "presets": [
