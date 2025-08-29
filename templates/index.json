@@ -437,6 +437,7 @@
             "title": "Banner type 2",
             "grid_gutter": 10,
             "banner-effect": "banner-effect5",
+            "image_1": "shopify://shop_images/Frame_23_3.png",
             "image_link_1": "shopify://collections",
             "stitle_1": "We Can Help!",
             "color_stitle_1": "#ff0404",
