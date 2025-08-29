@@ -115,7 +115,6 @@
               <div class="modal-slide-content">
                 <div class="featured-img">
                 {{ item.featured_image | image_url: width: 800 | image_tag: alt: item.featured_image.alt }}
-                
                 </div>
                 <div class="modal-box-content">
                   <div class="heading_content">
@@ -279,7 +278,7 @@ document.addEventListener('DOMContentLoaded', function () {
   }
   function setImageGalleryimg(){
     let imgGalleryItems = document.querySelectorAll('.item-gallery img');
-    let installerImgElement = document.querySelector('.featured-img img');
+    let installerImgElement = document.querySelector('#installer-modal .featured-img img');
     
     imgGalleryItems.forEach(function(item){
       item.addEventListener('click',function(){
