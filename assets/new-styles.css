@@ -1,7 +1,7 @@
 @media (max-width:768px){
   .product-detail-image .images .thumbnails{
-    visibility:hidden;
-    opacity:0;
+    /* visibility:hidden;
+    opacity:0; */
   }
 }
 /* 
