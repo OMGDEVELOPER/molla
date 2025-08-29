@@ -281,7 +281,8 @@ document.addEventListener('DOMContentLoaded', function () {
     imgGalleryItems.forEach(function(item){
       item.addEventListener('click',function(){
         let installerImgElement = document.querySelector('#installer-modal .is-active');
-        console.log(installerImgElement)
+
+        console.log(installerImgElement.querySelector('.featured-img'))
         {% comment %} let imgSrc = item.getAttribute('src');
         installerImgElement.closest('img').setAttribute('src',imgSrc);
         installerImgElement.closest('img').setAttribute('srcset',imgSrc); {% endcomment %}
