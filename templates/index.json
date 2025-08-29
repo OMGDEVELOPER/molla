@@ -519,6 +519,14 @@
         "group2_link_2": "https://bighandsbuildingsupplydev.myshopify.com/collections/roofing"
       }
     },
+    "about_section_tPd4dz": {
+      "type": "about-section",
+      "name": "About Section",
+      "settings": {
+        "heading": "About Section",
+        "product_lists": []
+      }
+    },
     "featured_products_t8qqga": {
       "type": "featured-products",
       "name": "Featured Products",
@@ -734,6 +742,7 @@
     "1612493432487",
     "featured_products_73YWRz",
     "featured_banner_iHg4iT",
+    "about_section_tPd4dz",
     "featured_products_t8qqga",
     "custom_blog_section_drLJ4n",
     "1754631334889c183b",
