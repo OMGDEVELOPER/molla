@@ -280,13 +280,13 @@ document.addEventListener('DOMContentLoaded', function () {
     let imgGalleryItems = document.querySelectorAll('.item-gallery img');
     imgGalleryItems.forEach(function(item){
       item.addEventListener('click',function(){
-        let installerImgElement = document.querySelector('#installer-modal .is-active .featured-img-modal img');
+        let installerImgElement = document.querySelector('#installer-modal .is-active .featured-img-modal');
         let imgSrc = item.getAttribute('src');
-        installerImgElement.setAttribute('src',imgSrc);
-        installerImgElement.setAttribute('srcset',imgSrc);
-        console.log(item)
+        installerImgElement.closest('img').setAttribute('src',imgSrc);
+        installerImgElement.closest('img').setAttribute('srcset',imgSrc);
+       
         console.log(installerImgElement)
-        installerImgElement.classList.add('asd')
+        {% comment %} installerImgElement.innerHTML = {% endcomment %}
       })
     })
   }
