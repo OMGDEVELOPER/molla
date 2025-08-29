@@ -304,6 +304,7 @@ div[data-section-type="banner-section"] .banner-title {
   }
   ._loyalty-text{
     line-height:normal !important;
+    font-size:14px !important;
   }
 }
 ._loyalty-text{
