@@ -187,6 +187,57 @@
         "css_section": ".section_id .slideshow__title{\n  color: #222;\n  font-size: 1.4rem;\n  letter-spacing: -.01em;\n  margin-bottom: .5rem;\n}\n.section_id .slideshow__subtitle{\n  color: #222;\n  font-size: 4rem;\n  line-height: 1.2;\n  letter-spacing: -.03em;\n  margin-bottom: 1.2rem;\n}\n.section_id .slideshow__description{\n  color: #142b6f;\n  margin-bottom: 2rem;\n  clear: both;\n  font-size: 3.9rem;\n  line-height: 2.4rem;\n  letter-spacing: -3px;\n}\n.section_id .btn {\n  font-size: 1.1rem;\n  min-width: 9rem;\n  padding: .65rem 1rem;\n}\n@media (min-width: 576px){\n  .section_id .btn {\n    font-size: 1.2rem;\n    min-width: 11rem;\n    padding-top: .75rem;\n    padding-bottom: .75rem;\n  }\n}\n@media (min-width: 768px){\n  .section_id .slideshow__subtitle{\n    font-size: 4.2rem;\n  }\n  .section_id .slideshow__description{\n  line-height: 1;\n  font-size: 6.9rem;\n  letter-spacing: -4px;\n  }\n  .section_id .btn {\n    font-size: 1.3rem;\n    min-width: 13rem;\n    padding: .95rem 1.5rem;\n  }\n}\n@media (min-width: 1200px){\n  .section_id .slideshow__subtitle{\n    font-size: 8rem;\n  }\n  .section_id .slideshow__description{\n  font-size: 7.9rem;\n  color: var(--secondary);\n  }\n  .section_id .btn {\n  font-size: 1.4rem;\n  min-width: 15rem;\n  padding: 1.15rem 3rem;\n  letter-spacing: 1px;\n  }\n}\n.imgRatio__text-wrap{\nbackground: #33333391;\n}\n.subheading{\n    margin-top: 1.5rem;\n}\n.sl-anime.slideshow__description{\n    margin-bottom: 4rem;\n}"
       }
     },
+    "1612493432487": {
+      "type": "md_banner_template_2",
+      "blocks": {
+        "1612493432487-0": {
+          "type": "4",
+          "settings": {
+            "turnoff": false,
+            "title": "Banner type 2",
+            "grid_gutter": 10,
+            "banner-effect": "banner-effect5",
+            "image_1": "shopify://shop_images/Frame_23_3.png",
+            "image_link_1": "shopify://collections",
+            "stitle_1": "We Can Help!",
+            "color_stitle_1": "#ff0404",
+            "titlex_1": "A Tradie Or Looking To Diy<br>\n<a href=\"/collections\" style=\"display:none;\">\n<button class=\"_new-btn\">\nNew Product Collections</button></a>\n\n<a href=\"tel:1300%20242%20799\" style=\"color:#FF0404;\">Call: 1300 242 799</a><br>",
+            "color_titlex_1": "#333333",
+            "name_btn_1": "Shop Now",
+            "style_btn_1": "btn-primary-white",
+            "style_btn_rounded_1": "btn-rounded",
+            "btn_shadow_1": true,
+            "image_2": "shopify://shop_images/low-angle-modern-house-roof_1_1.png",
+            "image_link_2": "shopify://pages/installers",
+            "stitle_2": "<p class=\"_contractor_text\">Until the end of September!</p>",
+            "color_stitle_2": "#777777",
+            "titlex_2": "<span class=\"build-big\" style=\"\">Limited Time Double Carport Deal.</span><br>\n<p class=\"_loyalty-text\" style=\"\">Upgrade to a 5.5m × 6.2m Cantilever Aluminium Frame Carport</p>\n<p class=\"_loyalty-text\" style=\"\">– Beige frame with a sleek dark blue roof, just  <span style=\"font-weight:bold;\">$5,580</span></p>",
+            "color_titlex_2": "#ffffff",
+            "name_btn_2": "LEARN MORE",
+            "style_btn_2": "btn-primary-white",
+            "style_btn_rounded_2": "",
+            "btn_shadow_2": false
+          }
+        }
+      },
+      "block_order": [
+        "1612493432487-0"
+      ],
+      "custom_css": [],
+      "settings": {
+        "title": "Banner template 2",
+        "off_mobile": false,
+        "off_desktop": false,
+        "width_section": "w-100",
+        "width_content": true,
+        "section_margin_top": "6rem",
+        "section_margin_bottom": "9rem",
+        "section_padding": "0 0 9rem",
+        "section_bg": "#ffffff",
+        "section_bg_op": 1,
+        "preview": false
+      }
+    },
     "shop_by_cat_cPTB3g": {
       "type": "shop-by-cat",
       "name": "Shop By Categories",
@@ -427,57 +478,6 @@
         "product_grid_layout": ""
       }
     },
-    "1612493432487": {
-      "type": "md_banner_template_2",
-      "blocks": {
-        "1612493432487-0": {
-          "type": "4",
-          "settings": {
-            "turnoff": false,
-            "title": "Banner type 2",
-            "grid_gutter": 10,
-            "banner-effect": "banner-effect5",
-            "image_1": "shopify://shop_images/Frame_23_3.png",
-            "image_link_1": "shopify://collections",
-            "stitle_1": "We Can Help!",
-            "color_stitle_1": "#ff0404",
-            "titlex_1": "A Tradie Or Looking To Diy<br>\n<a href=\"/collections\" style=\"display:none;\">\n<button class=\"_new-btn\">\nNew Product Collections</button></a>\n\n<a href=\"tel:1300%20242%20799\" style=\"color:#FF0404;\">Call: 1300 242 799</a><br>",
-            "color_titlex_1": "#333333",
-            "name_btn_1": "Shop Now",
-            "style_btn_1": "btn-primary-white",
-            "style_btn_rounded_1": "btn-rounded",
-            "btn_shadow_1": true,
-            "image_2": "shopify://shop_images/low-angle-modern-house-roof_1_1.png",
-            "image_link_2": "shopify://pages/installers",
-            "stitle_2": "<p class=\"_contractor_text\">Until the end of September!</p>",
-            "color_stitle_2": "#777777",
-            "titlex_2": "<span class=\"build-big\" style=\"\">Limited Time Double Carport Deal.</span><br>\n<p class=\"_loyalty-text\" style=\"\">Upgrade to a 5.5m × 6.2m Cantilever Aluminium Frame Carport</p>\n<p class=\"_loyalty-text\" style=\"\">– Beige frame with a sleek dark blue roof, just  <span style=\"font-weight:bold;\">$5,580</span></p>",
-            "color_titlex_2": "#ffffff",
-            "name_btn_2": "LEARN MORE",
-            "style_btn_2": "btn-primary-white",
-            "style_btn_rounded_2": "",
-            "btn_shadow_2": false
-          }
-        }
-      },
-      "block_order": [
-        "1612493432487-0"
-      ],
-      "custom_css": [],
-      "settings": {
-        "title": "Banner template 2",
-        "off_mobile": false,
-        "off_desktop": false,
-        "width_section": "w-100",
-        "width_content": true,
-        "section_margin_top": "",
-        "section_margin_bottom": "9rem",
-        "section_padding": "0 0 9rem",
-        "section_bg": "#ffffff",
-        "section_bg_op": 1,
-        "preview": false
-      }
-    },
     "featured_products_73YWRz": {
       "type": "featured-products",
       "name": "Featured Products",
@@ -522,7 +522,7 @@
     "about_section_tPd4dz": {
       "type": "about-section",
       "custom_css": [
-        ".item_who_we_are {background-color:#f6f6f6 !important;}"
+        ".item_who_we_are {background-color: #f6f6f6 !important;}"
       ],
       "name": "About Section",
       "settings": {
@@ -742,11 +742,11 @@
   },
   "order": [
     "1610529558279ffc95",
+    "1612493432487",
     "shop_by_cat_cPTB3g",
     "1610587586114",
     "1610590433794",
     "1566437726874",
-    "1612493432487",
     "featured_products_73YWRz",
     "featured_banner_iHg4iT",
     "about_section_tPd4dz",
