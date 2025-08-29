@@ -4,6 +4,12 @@
     opacity:0;
     /* display:none; */
   }
+  .entry-buttons{
+    flex-direction: column;
+    display: flex;
+    justify-content: center;
+    align-content: space-around;
+  }
 }
 /* 
 **** Related Products ****
