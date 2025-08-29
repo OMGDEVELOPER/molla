@@ -77,8 +77,8 @@
   list-style:none;
 }
 #installer-modal .item-gallery img{
-  width:90px;
-  height:60px;
+  width: 150px;
+  height: 120px;
   border-radius: 10px;
   margin-bottom: 20px;
 }
