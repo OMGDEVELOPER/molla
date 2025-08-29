@@ -78,7 +78,7 @@
               <!-- Buttons -->
               <div class="mt-3 grid-items">
                 <button type="submit" class="btn btn-primary">Request Quote</button>
-                <button type="reset" class="btn btn-outline-secondary">Clear</button>
+                <button type="reset" class="btn btn-outline-secondary clear">Clear</button>
               </div>
             </form>
 
@@ -102,6 +102,10 @@
 </script>
 
 <style>
+  #quote-popup .grid-items .clear{
+    background:none;
+    color:#000;
+  }
   #quote-popup .grid-items{
    display:grid;
    grid-template-columns:auto auto;
