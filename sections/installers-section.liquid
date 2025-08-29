@@ -276,7 +276,18 @@ document.addEventListener('DOMContentLoaded', function () {
       applyFilters();
     });
   }
- 
+  function setImageGalleryimg(){
+    let imgGalleryItems = document.querySelectorAll('.item-gallery img');
+    imgGalleryItems.forEach(function(item){
+      item.addEventListener('click',function(){
+        let installerImgElement = document.querySelector('#installer-modal .is-active .featured-img img');
+        let imgSrc = item.getAttribute('src');
+        installerImgElement.setAttribute('src',imgSrc);
+        installerImgElement.setAttribute('srcset',imgSrc);
+        console.log(installerImgElement)
+      })
+    })
+  }
 
   /**
    * INIT ALL
