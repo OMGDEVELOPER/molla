@@ -61,6 +61,9 @@
       "block_order": [
         "image_agPjC9"
       ],
+      "custom_css": [
+        "@media(max-width:768px){.slideshow__title h1{line-height: normal; margin-top: 50px;}}"
+      ],
       "name": "Master",
       "settings": {
         "title": "Slideshow Master",
