@@ -30,9 +30,9 @@
     "article_layout": "03",
     "store_locator_link": "",
     "get_a_quote_link": "shopify://pages/installers",
-    "contact_us_link": "shopify://pages/contact",
+    "contact_us_link": "",
     "phone_number": "1300 242 799",
-    "install_guide_link": "https://bighandsbuildingsupplydev.myshopify.com/blogs/posts",
+    "install_guide_link": "",
     "sections": {
       "kt-dear-customers": {
         "type": "kt-dear-customers",
