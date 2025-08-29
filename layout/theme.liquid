@@ -171,6 +171,10 @@
     {% comment %} {% endcomment %}
     <script src="{{ 'nav-menu.js' | asset_url }}" defer="defer"></script>
     <script src="{{ 'google-review.js' | asset_url }}" defer="defer"></script>
+    <script>
+      let asd = document.querySelector('.product-detail-image .images .thumbnails');
+      console.log(asd)
+    </script>
    {% render 'get-a-quote' %}
 
   </body>
