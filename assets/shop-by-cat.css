@@ -41,7 +41,7 @@
   left: -15px;
 }
 @media(max-width:768px) {
- .shop-by-cat .icon__heading p {
+ .shop-by-cat .icon__heading a {
   text-align: center;
  } 
   .shop-by-cat h1.__heading{
@@ -69,7 +69,7 @@
   margin-bottom: 3rem;
 }
 
-.shop-by-cat .icon__heading p {
+.shop-by-cat .icon__heading a {
   margin: 0;
   color: #fff;
   padding-top: 10px;
