@@ -62,7 +62,7 @@
         "image_agPjC9"
       ],
       "custom_css": [
-        "@media (max-width: 768px) {.slideshow__title h1 {line-height: normal; margin-top: 70px; } .sl-anime.slideshow__subtitle{font-size:18px !important; line-height: normal !important; }}"
+        "@media (max-width: 768px) {.slideshow__title h1 {line-height: normal; margin-top: 70px; } .sl-anime.slideshow__subtitle {font-size: 18px !important; line-height: normal !important; }}"
       ],
       "name": "Master",
       "settings": {
@@ -102,11 +102,8 @@
       "name": "Installers",
       "settings": {
         "installers_list": [
-          "elite-roof-systems",
-          "coolbuild-solutions",
-          "copy-of-cool-build-solutions",
-          "copy-of-elite-roof-systems",
-          "copy-of-copy-of-elite-roof-systems"
+          "copy-of-copy-of-elite-roof-systems",
+          "aziz"
         ]
       }
     },
