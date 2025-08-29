@@ -223,7 +223,9 @@
       "block_order": [
         "1612493432487-0"
       ],
-      "custom_css": [],
+      "custom_css": [
+        ".content_template--24874075292019__1612493432487{margin-bottom: 0px !important;}"
+      ],
       "settings": {
         "title": "Banner template 2",
         "off_mobile": false,
