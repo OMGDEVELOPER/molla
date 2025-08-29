@@ -173,13 +173,13 @@
     <script src="{{ 'google-review.js' | asset_url }}" defer="defer"></script>
     <script>
       document.addEventListener('DOMContentLoaded',function(){ 
-        if(window.innerWidth <= 768){
+        if(window.innerWidth < 768){
           setTimeout(function(){
             let asd = document.querySelector('.product-detail-image .images .thumbnails');
             asd.style.display = "none"
           },1000)
-        })
         }
+      })
       
     </script>
    {% render 'get-a-quote' %}
