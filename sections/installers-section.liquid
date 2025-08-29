@@ -278,7 +278,7 @@ document.addEventListener('DOMContentLoaded', function () {
   }
   function setImageGalleryimg(){
     let imgGalleryItems = document.querySelectorAll('.item-gallery img');
-    let installerImgElement = document.querySelector('#installer-modal .featured-img img');
+    let installerImgElement = document.querySelector('#installer-modal .splide__slide.is-active .featured-img img');
     
     imgGalleryItems.forEach(function(item){
       item.addEventListener('click',function(){
