@@ -172,10 +172,12 @@
     <script src="{{ 'nav-menu.js' | asset_url }}" defer="defer"></script>
     <script src="{{ 'google-review.js' | asset_url }}" defer="defer"></script>
     <script>
-      setTimeout(function(){
-        let asd = document.querySelector('.product-detail-image .images .thumbnails');
-        console.log(asd)
-      },1000)
+      document.addEventListener('DOMContentLoaded',function(){ 
+        setTimeout(function(){
+          let asd = document.querySelector('.product-detail-image .images .thumbnails');
+          console.log(asd)
+        },1000)
+      })
       
     </script>
    {% render 'get-a-quote' %}
