@@ -90,6 +90,9 @@
     overflow-x: scroll;
     width: 90%;
     margin: auto;
+    padding: 5px;
+    margin-bottom: 3rem;
+
 }
 /* #installer-modal .item-gallery{
   display: flex;
