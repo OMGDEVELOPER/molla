@@ -301,6 +301,7 @@ div[data-section-type="banner-section"] .banner-title {
   .build-big{
     letter-spacing: normal !important;
     line-height:normal !important;
+    font-size:20px !important;
   }
   ._loyalty-text{
     line-height:normal !important;
