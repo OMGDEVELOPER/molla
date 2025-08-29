@@ -25,7 +25,7 @@
         <div class="col-lg-6 offset-lg-1">
           {% if section.settings.image != blank %}
             <div class="about-images">
-              <div class="img__banner" style="padding-bottom: 64.2857%; background-image: url('{{ section.settings.image | image_url: width: 800 }}');">
+              <div class="">
                 <img src="{{ section.settings.image | image_url: width: 800 }}" alt="{{ section.settings.image.alt | escape }}">
               </div>
             </div>
