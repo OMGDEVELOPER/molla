@@ -115,7 +115,7 @@
               <div class="modal-slide-content">
                 <div class="featured-img-modal featured-img">
                 {% comment %} {{ item.featured_image | image_url: width: 800 | image_tag: alt: item.featured_image.alt }} {% endcomment %}
-                <img src="{{ item.featured_image | image_url: width: 800 }}">
+                <img src="{{ item.featured_image | image_url: width: 800 }}" class="img-modal">
                 </div>
                 <div class="modal-box-content">
                   <div class="heading_content">
@@ -284,8 +284,8 @@ document.addEventListener('DOMContentLoaded', function () {
         let installerImgElement = document.querySelector('#installer-modal .is-active');
         let imgSrc = item.getAttribute('src');
         console.log(imgSrc)
-        installerImgElement.querySelector('.featured-img img').setAttribute('src',imgSrc);
-        installerImgElement.querySelector('.featured-img img').setAttribute('srcset',imgSrc);
+        installerImgElement.querySelector('.img-modal').setAttribute('src',imgSrc);
+        installerImgElement.querySelector('.img-modal').setAttribute('srcset',imgSrc);
 
        
        
