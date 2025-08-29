@@ -83,7 +83,7 @@
         "use_dots": false,
         "dots_mode": "default",
         "use_scrollbar": false,
-        "h_reponsive": "",
+        "h_reponsive": "700",
         "h_reponsive_768": "400",
         "h_reponsive_992": "",
         "h_reponsive_1200": "",
