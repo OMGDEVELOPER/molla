@@ -283,9 +283,10 @@ document.addEventListener('DOMContentLoaded', function () {
       item.addEventListener('click',function(){
         let installerImgElement = document.querySelector('#installer-modal .is-active.is-visible');
         let imgSrc = item.getAttribute('src');
-        console.log(installerImgElement.querySelector('.img-modal'))
-        {% comment %} .setAttribute('src',imgSrc);
-        installerImgElement.querySelector('.img-modal').setAttribute('srcset',imgSrc); {% endcomment %}
+        let activeEl = installerImgElement.querySelector('.img-modal');
+        
+        activeEl.setAttribute('src',imgSrc);
+        activeEl.setAttribute('srcset',imgSrc);
 
        
        
