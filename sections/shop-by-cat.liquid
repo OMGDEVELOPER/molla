@@ -15,13 +15,11 @@
       {% if collection_obj != blank %}
         <div class="item">
           <div class="icon__heading" icon-src="{{ collection_obj.metafields.custom.icon | image_url: width:ollection_obj.metafields.custom.icon.width }}">
-           <p class="col-12" href="{{ collection_obj.url }}">{{ collection_obj.title }}</p>
+           <a class="col-12" href="{{ collection_obj.url }}">{{ collection_obj.title }}</a>
           </div>
           <div class="_box d-flex sm-grid">
             <div class="col-12 col-md-6 col-sm-12 block_content">
-              <div>
-                {{ collection_obj.metafields.custom.excerpt | metafield_tag | truncatewords:5 }}
-              </div>
+              {{ collection_obj.metafields.custom.excerpt | metafield_tag  }}
             </div>
             <div class="col-12 col-md-6 col-sm-12 img_content">
               {% if collection_obj.featured_image != blank %}
