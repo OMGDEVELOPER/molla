@@ -62,7 +62,7 @@
         "image_agPjC9"
       ],
       "custom_css": [
-        "@media(max-width:768px){.slideshow__title h1{line-height: normal; margin-top: 50px;}}"
+        "@media (max-width: 768px) {.slideshow__title h1 {line-height: normal; margin-top: 70px; }}"
       ],
       "name": "Master",
       "settings": {
