@@ -493,6 +493,7 @@
     },
     "featured_banner_iHg4iT": {
       "type": "featured-banner",
+      "disabled": true,
       "name": "Featured Banner",
       "settings": {
         "bg_item1": "shopify://shop_images/Frame_21.png",
