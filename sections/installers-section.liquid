@@ -282,7 +282,7 @@ document.addEventListener('DOMContentLoaded', function () {
       item.addEventListener('click',function(){
         let installerImgElement = document.querySelector('#installer-modal .is-active');
         let imgSrc = item.getAttribute('src');
-
+        console.log(imgSrc)
         installerImgElement.querySelector('.featured-img img').setAttribute('src',imgSrc);
         installerImgElement.querySelector('.featured-img img').setAttribute('srcset',imgSrc);
 
