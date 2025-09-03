@@ -329,10 +329,15 @@ document.addEventListener('DOMContentLoaded', function () {
 
   // Init GLightbox
   let imgsModal = document.querySelectorAll('.img-modal');
+ 
   imgsModal.forEach((item)=>{
     item.addEventListener('click',function(e){
       e.preventDefault();
-      console.log('asd')
+      let LighboxImgContainer = document.querySelector('.lightbox-img');
+      let srcimg = item.getAttribute('href');
+      LighboxImgContainer.setAttribute('src',srcimg);
+      console.log(srcimg)
+
     })
   })
   
