@@ -130,10 +130,10 @@
                 <div class="custom-blog-excerpt">
                 {{ article.excerpt_or_content | strip_html | truncate: 120 }}
                 </div>
-                <div class="custom-blog-button">
-                <a href="{{ article.url }}">READ MORE</a>
-                </div>
-            </div>
+              </div>
+              <div class="custom-blog-button">
+              <a href="{{ article.url }}">READ MORE</a>
+              </div>
           </div>
         {% endfor %}
       {% else %}
