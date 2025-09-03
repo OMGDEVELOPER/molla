@@ -326,20 +326,14 @@ document.addEventListener('DOMContentLoaded', () => {
           }
 
           ReloadSubmenu(currentMenuActive);
-
           let submenu = e.target.querySelector('.submenu-items-container');
-          console.log(submenu);
-          
           if (submenu) {
             submenu.style.display = 'block';
             menuHistory.push(submenu);
           }else{
             menuHistory.push(subMenuContainer);
           }
-          
-          console.log('submenu-with children');
-          console.log(menuHistory);
-          
+        
         });
       });
     }, 1000);
