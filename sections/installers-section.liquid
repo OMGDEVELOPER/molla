@@ -334,6 +334,12 @@ document.addEventListener('DOMContentLoaded', function () {
   let Installermodal = document.querySelector('#installer-splide');
   let Lighboxmodal = document.querySelector('.new-lightbox');
   let Closemodalbtn = document.querySelector('.modal-close');
+  let ClosemodalbtnLightbox = document.querySelector('.lightbox-modal-close');
+
+  ClosemodalbtnLightbox.addEventListener('click',function(){
+     Lighboxmodal.style.display = "none";
+     Installermodal.style.display = "block";
+  })
  
   imgsModal.forEach((item)=>{
     item.addEventListener('click',function(e){
