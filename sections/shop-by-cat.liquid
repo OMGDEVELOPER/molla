@@ -1,6 +1,7 @@
 {{ "shop-by-cat.css" | asset_url | stylesheet_tag }}
 
-<section class="shop-by-cat category_section section-width container">
+<section class="shop-by-cat category_section ">
+  <div class="section-width container">
   {% if section.settings.title != blank %}
     <h1 class="__heading">{{ section.settings.title }}</h1>
   {% endif %}
@@ -30,6 +31,7 @@
         </div>
       {% endif %}
     {% endfor %}
+  </div>
   </div>
 </section>
 {% javascript %}
