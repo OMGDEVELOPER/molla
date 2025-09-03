@@ -329,6 +329,8 @@ document.addEventListener('DOMContentLoaded', function () {
 
   // Init GLightbox
   let imgsModal = document.querySelectorAll('.img-modal');
+  let Installermodal = document.querySelector('#installer-splide');
+  let Lighboxmodal = document.querySelector('.new-lightbox');
  
   imgsModal.forEach((item)=>{
     item.addEventListener('click',function(e){
@@ -336,6 +338,8 @@ document.addEventListener('DOMContentLoaded', function () {
       let LighboxImgContainer = document.querySelector('.lightbox-img');
       let srcimg = item.getAttribute('src');
       LighboxImgContainer.setAttribute('src',srcimg);
+      Installermodal.style.display = "none";
+      Lighboxmodal.style.display = "unset";
       console.log(srcimg)
 
     })
