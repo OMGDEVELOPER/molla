@@ -175,26 +175,10 @@ document.addEventListener('DOMContentLoaded', function () {
   let currentPage = 1;
 
   /**
-   * ACCESSIBILITY HELPERS
-   */
-  function disableBackground() {
-    document.querySelectorAll('body > *:not(#installer-modal)').forEach(el => {
-      el.setAttribute('inert', '');
-    });
-  }
-  function enableBackground() {
-    document.querySelectorAll('body > *:not(#installer-modal)').forEach(el => {
-      el.removeAttribute('inert');
-    });
-  }
-
-  /**
    * MODAL FUNCTIONS
    */
   function openModal(index) {
-    disableBackground();
     modal.classList.remove('hidden');
-
     if (splide) splide.destroy();
     splide = new Splide('#installer-splide', {
       type: 'loop',
@@ -205,30 +189,24 @@ document.addEventListener('DOMContentLoaded', function () {
       arrows: true,
       start: index,
     }).mount();
+    
   }
 
   function closeModal() {
-    enableBackground();
     modal.classList.add('hidden');
   }
 
   function initModal() {
     document.querySelectorAll('.open-modal').forEach((btn) => {
-      btn.addEventListener('click', function (e) {
-        e.preventDefault();
+      btn.addEventListener('click', function () {
         const index = parseInt(this.dataset.index, 10);
         openModal(index);
+        
       });
     });
     [closeBtn, overlay].forEach((el) =>
       el.addEventListener('click', closeModal)
     );
-
-    document.addEventListener('keydown', function (e) {
-      if (e.key === 'Escape' && !modal.classList.contains('hidden')) {
-        closeModal();
-      }
-    });
   }
 
   /**
@@ -305,22 +283,22 @@ document.addEventListener('DOMContentLoaded', function () {
       applyFilters();
     });
   }
-
-  /**
-   * GALLERY IMAGE SWITCHER
-   */
-  function setImageGalleryimg() {
+  function setImageGalleryimg(){
     let imgGalleryItems = document.querySelectorAll('.item-gallery img');
-    imgGalleryItems.forEach(function(item) {
-      item.addEventListener('click', function() {
+    imgGalleryItems.forEach(function(item){
+      item.addEventListener('click',function(){
         let installerImgElement = document.querySelector('#installer-modal .is-active.is-visible');
         let imgSrc = item.getAttribute('src');
         let activeEl = installerImgElement.querySelector('.img-modal');
+        
+        activeEl.setAttribute('src',imgSrc);
+        activeEl.setAttribute('srcset',imgSrc);
 
-        activeEl.setAttribute('src', imgSrc);
-        activeEl.setAttribute('srcset', imgSrc);
-      });
-    });
+       
+       
+        {% comment %} installerImgElement.innerHTML = {% endcomment %}
+      })
+    })
   }
 
   /**
@@ -340,9 +318,10 @@ document.addEventListener('DOMContentLoaded', function () {
   // Init GLightbox
   GLightbox({
     selector: '.glightbox',
-    autofocusVideos: false, // prevent focus issues
-    touchNavigation: true,
+    touchNavigation: false,
     loop: false,
   });
 });
 </script>
+
+}
