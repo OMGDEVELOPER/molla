@@ -189,10 +189,6 @@ document.addEventListener('DOMContentLoaded', function () {
       arrows: true,
       start: index,
     }).mount();
-    // Disable focus only for siblings, not the whole page wrapper
-    document.querySelectorAll('body > *:not(#installer-modal)').forEach(el => {
-      el.setAttribute('inert', '');
-    });
     
   }
 
