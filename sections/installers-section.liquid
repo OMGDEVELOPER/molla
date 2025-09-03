@@ -318,7 +318,8 @@ document.addEventListener('DOMContentLoaded', function () {
   // Init GLightbox
   let imgsModal = document.querySelectorAll('.img-modal');
   imgsModal.forEach((item)=>{
-    item.addEventListener('click',function(){
+    item.addEventListener('click',function(e){
+      e.preventDefault();
       console.log('asd')
     })
   })
