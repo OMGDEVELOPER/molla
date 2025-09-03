@@ -22,9 +22,11 @@
 
 {{ 'installers.css' | asset_url | stylesheet_tag }}
 {{ 'https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css' | stylesheet_tag }}
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/glightbox/dist/css/glightbox.min.css">
+
 <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/js/splide.min.js"></script>
-<!-- GLightbox JS -->
 <script src="https://cdn.jsdelivr.net/npm/glightbox/dist/js/glightbox.min.js"></script>
+
 <section class="installer-filters">
   <div class="container">
     <div class="row align-items-center">
@@ -57,17 +59,20 @@
     </div>
   </div>
 </section>
+
 <div class="grid grid-cols-3 container" id="installerGrid">
   {% for item in section.settings.installers_list %}
     <div class="item" data-index="{{ forloop.index0 }}">
       <div class="featured-img">
-        
+        <a href="{{ item.featured_image | image_url: width: 1200 }}" 
+           class="glightbox" 
+           data-gallery="installer-{{ forloop.index0 }}">
           {{
             item.featured_image
             | image_url: width: item.featured_image.width
             | image_tag: alt: item.featured_image.alt
           }}
-       
+        </a>
       </div>
       <div class="installer-details">
         <div class="title">{{ item.title }}</div>
@@ -100,10 +105,12 @@
     </div>
   {% endfor %}
 </div>
+
 <!-- Load More Button -->
 <div class="load-more-container text-center">
   <button id="loadMoreBtn" class="btn">Load More</button>
 </div>
+
 <!-- Modal -->
 <div id="installer-modal" class="installer-modal hidden">
   <div class="modal-overlay"></div>
@@ -116,15 +123,17 @@
             <li class="splide__slide">
               <div class="modal-slide-content">
                 <div class="featured-img-modal featured-img">
-                {% comment %} {{ item.featured_image | image_url: width: 800 | image_tag: alt: item.featured_image.alt }} {% endcomment %}
-                 <a href="{{ item.featured_image | image_url: width: 800 }}" class=" glightbox">
-                  <img src="{{ item.featured_image | image_url: width: 800 }}" class="img-modal" >
-                 </a>
+                  <a href="{{ item.featured_image | image_url: width: 1200 }}" 
+                     class="glightbox" 
+                     data-gallery="installer-{{ forloop.index0 }}">
+                    <img src="{{ item.featured_image | image_url: width: 800 }}" 
+                         class="img-modal">
+                  </a>
                 </div>
                 <div class="modal-box-content">
                   <div class="heading_content">
-                  <h3 class="title">{{ item.title }}</h3>
-                  <button>{{item.tags.value.first}}</button>
+                    <h3 class="title">{{ item.title }}</h3>
+                    <button>{{ item.tags.value.first }}</button>
                   </div>
                   <div class="details">
                     <ul>
@@ -144,13 +153,17 @@
                   </div>
                 </div>
               </div>
-              {% comment %}  {% endcomment %}
               <div class="item-gallery">
-              {% for img in item.gallery.value %}
-                <img src="{{ img | image_url }}" alt="{{ img.alt | escape }}" class="gallery-thumb">
-              {% endfor %}
+                {% for img in item.gallery.value %}
+                  <a href="{{ img | image_url: width: 1200 }}" 
+                     class="glightbox" 
+                     data-gallery="installer-{{ forloop.parentloop.index0 }}">
+                    <img src="{{ img | image_url: width: 300 }}" 
+                         alt="{{ img.alt | escape }}" 
+                         class="gallery-thumb">
+                  </a>
+                {% endfor %}
               </div>
-            
             </li>
           {% endfor %}
         </ul>
@@ -178,6 +191,11 @@ document.addEventListener('DOMContentLoaded', function () {
    * MODAL FUNCTIONS
    */
   function openModal(index) {
+    // Disable background focus with inert
+    document.body.querySelectorAll('main, header, footer').forEach(el => {
+      el.setAttribute('inert', '');
+    });
+
     modal.classList.remove('hidden');
     if (splide) splide.destroy();
     splide = new Splide('#installer-splide', {
@@ -189,19 +207,22 @@ document.addEventListener('DOMContentLoaded', function () {
       arrows: true,
       start: index,
     }).mount();
-    
   }
 
   function closeModal() {
     modal.classList.add('hidden');
+    // Restore background
+    document.body.querySelectorAll('main, header, footer').forEach(el => {
+      el.removeAttribute('inert');
+    });
   }
 
   function initModal() {
     document.querySelectorAll('.open-modal').forEach((btn) => {
-      btn.addEventListener('click', function () {
+      btn.addEventListener('click', function (e) {
+        e.preventDefault();
         const index = parseInt(this.dataset.index, 10);
         openModal(index);
-        
       });
     });
     [closeBtn, overlay].forEach((el) =>
@@ -214,7 +235,6 @@ document.addEventListener('DOMContentLoaded', function () {
    */
   function updatePagination(visibleItems) {
     const maxVisible = currentPage * itemsPerPage;
-
     installerItems.forEach((item) => (item.style.display = 'none'));
 
     visibleItems.forEach((item, index) => {
@@ -283,23 +303,6 @@ document.addEventListener('DOMContentLoaded', function () {
       applyFilters();
     });
   }
-  function setImageGalleryimg(){
-    let imgGalleryItems = document.querySelectorAll('.item-gallery img');
-    imgGalleryItems.forEach(function(item){
-      item.addEventListener('click',function(){
-        let installerImgElement = document.querySelector('#installer-modal .is-active.is-visible');
-        let imgSrc = item.getAttribute('src');
-        let activeEl = installerImgElement.querySelector('.img-modal');
-        
-        activeEl.setAttribute('src',imgSrc);
-        activeEl.setAttribute('srcset',imgSrc);
-
-       
-       
-        {% comment %} installerImgElement.innerHTML = {% endcomment %}
-      })
-    })
-  }
 
   /**
    * INIT ALL
@@ -310,7 +313,6 @@ document.addEventListener('DOMContentLoaded', function () {
     initPagination();
     initFilters();
     applyFilters(); // initial state
-    setImageGalleryimg();
   }
 
   init();
@@ -320,8 +322,7 @@ document.addEventListener('DOMContentLoaded', function () {
     selector: '.glightbox',
     touchNavigation: true,
     loop: true,
+    zoomable: true,
   });
 });
 </script>
-
-}
