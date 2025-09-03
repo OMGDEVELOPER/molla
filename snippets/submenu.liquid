@@ -297,17 +297,13 @@ document.addEventListener('DOMContentLoaded', () => {
   function loadSubmenuItems() {
     allSubmenus.forEach(sub => sub.style.display = 'none');
     
-    // let submenuChildrens = document.querySelectorAll('.submenu-with-children');
-    // console.log(submenuChildrens);
     setTimeout(() => {
       let submenuChildrens = document.querySelectorAll('.submenu-with-children');
-      console.log(submenuChildrens);
+      
       submenuChildrens.forEach((item) => {
         item.addEventListener('click', function(e) {
           const subMenuContainer = this.closest('.item');
-          //  if(subMenuContainer && !subMenuContainer.classList.contains('hidden')){
-          //   // subMenuContainer.classList.add('hidden')
-          //  }
+         
           if (e.target.classList.contains('submenu-items-name')) {
             removeActiveClass();
             e.target.classList.add('activeMenuItem');
