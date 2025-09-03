@@ -340,9 +340,9 @@ document.addEventListener('DOMContentLoaded', function () {
       let LighboxImgContainer = document.querySelector('.lightbox-img');
       let srcimg = item.getAttribute('src');
       LighboxImgContainer.setAttribute('src',srcimg);
-      {% comment %} Installermodal.style.display = "none"; {% endcomment %}
-      {% comment %} Lighboxmodal.style.display = "unset";
-      Closemodal.style.display = "none"; {% endcomment %}
+      Installermodal.style.display = "none";
+      Lighboxmodal.style.display = "unset";
+      Closemodal.style.display = "none"; 
       console.log(srcimg)
 
     })
