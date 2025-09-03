@@ -334,7 +334,7 @@ document.addEventListener('DOMContentLoaded', function () {
     item.addEventListener('click',function(e){
       e.preventDefault();
       let LighboxImgContainer = document.querySelector('.lightbox-img');
-      let srcimg = item.getAttribute('href');
+      let srcimg = item.getAttribute('src');
       LighboxImgContainer.setAttribute('src',srcimg);
       console.log(srcimg)
 
