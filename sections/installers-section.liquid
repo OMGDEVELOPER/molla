@@ -316,10 +316,12 @@ document.addEventListener('DOMContentLoaded', function () {
   init();
 
   // Init GLightbox
-  GLightbox({
-    selector: '.glightbox',
-    touchNavigation: false,
-    loop: false,
-  });
+  let imgsModal = document.querySelectorAll('.img-modal');
+  imgsModal.forEach((item)=>{
+    item.addEventListener('click',function(){
+      console.log('asd')
+    })
+  })
+  
 });
 </script>
