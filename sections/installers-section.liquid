@@ -333,7 +333,7 @@ document.addEventListener('DOMContentLoaded', function () {
   let imgsModal = document.querySelectorAll('.img-modal');
   let Installermodal = document.querySelector('#installer-splide');
   let Lighboxmodal = document.querySelector('.new-lightbox');
-  let Closemodal = document.querySelector('.modal-close');
+  let Closemodalbtn = document.querySelector('.modal-close');
  
   imgsModal.forEach((item)=>{
     item.addEventListener('click',function(e){
@@ -343,7 +343,7 @@ document.addEventListener('DOMContentLoaded', function () {
       LighboxImgContainer.setAttribute('src',srcimg);
       Installermodal.style.display = "none";
       Lighboxmodal.style.display = "unset";
-      {% comment %} Closemodal.style.display = "none";  {% endcomment %}
+      Closemodalbtn.style.display = "none"; 
       console.log(srcimg)
 
     })
