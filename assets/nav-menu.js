@@ -46,7 +46,6 @@ document.addEventListener('DOMContentLoaded', function () {
           // e.target.classList.add('activeMenuItem')
         }
         let parentItem = e.target.closest('.item__1__group');
-        console.log('parent item triggered');
         if(window.innerWidth < 768){
           if(parentItem.classList.contains('hidden')){
             parentItem.classList.remove('hidden')
