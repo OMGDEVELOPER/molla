@@ -242,6 +242,9 @@
     },
     "shop_by_cat_cPTB3g": {
       "type": "shop-by-cat",
+      "custom_css": [
+        ".shop-by-cat{}"
+      ],
       "name": "Shop By Categories",
       "settings": {
         "title": "SHOP BY CATEGORIES",
