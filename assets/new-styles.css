@@ -412,3 +412,11 @@ div[data-section-type="banner-section"] .banner-title {
   min-width: 7rem;
   flex-shrink: 0;
 }
+
+.fake_select.combobox>ul li.selected, .fake_select.combobox>ul li:hover {
+    color: #000;
+}
+
+.fake_select.combobox label {
+    color: #000;
+}
