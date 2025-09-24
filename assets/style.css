@@ -9769,3 +9769,8 @@ body:not(.popIn) .block-minicart.icon-fixed {
 	width: auto;
 	max-width: none;
 }
+
+.box-search .item-search .thumb img {
+    width: auto;
+    height: auto;
+}
