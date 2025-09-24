@@ -111,6 +111,8 @@ position: absolute;
   height: 120px;
   border-radius: 10px;
   margin-bottom: 20px;
+  object-fit: cover;
+  margin-inline: initial;
 }
 #installer-modal .item-gallery{
   display: flex;
