@@ -120,7 +120,6 @@ position: absolute;
     flex-wrap: wrap;
 } */
 #installer-modal .modal-slide-content .featured-img{
-    padding: 25px;
     background: #000;
 }
 #installer-modal .modal-slide-content .featured-img img{
