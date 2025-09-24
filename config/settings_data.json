@@ -160,6 +160,13 @@
               "item_url": "https://bighandsbuildingsupplydev.myshopify.com/blogs/posts"
             }
           },
+          "standard_nav_item_nFY9Fb": {
+            "type": "standard_nav_item",
+            "settings": {
+              "item_label": "Installation Guides",
+              "item_url": "shopify://blogs/installation-guides"
+            }
+          },
           "with_submenu_item_JeeeDA": {
             "type": "with_submenu_item",
             "settings": {
@@ -261,6 +268,7 @@
           "standard_nav_item_ip9A4G",
           "standard_nav_item_XhUAtK",
           "standard_nav_item_QWK7JN",
+          "standard_nav_item_nFY9Fb",
           "with_submenu_item_JeeeDA",
           "standard_nav_item_hUjtQc",
           "parent_menu_jcK6fc",
