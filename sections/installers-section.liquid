@@ -303,8 +303,8 @@ document.addEventListener('DOMContentLoaded', function () {
         let imgSrc = item.getAttribute('src');
         let activeEl = installerImgElement.querySelector('.img-modal');
         
-        activeEl.setAttribute('src',imgSrc);
-        activeEl.setAttribute('srcset',imgSrc);
+        activeEl?.setAttribute('src',imgSrc);
+        activeEl?.setAttribute('srcset',imgSrc);
 
        
        
