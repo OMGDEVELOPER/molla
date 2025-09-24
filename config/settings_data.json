@@ -11,6 +11,7 @@
   "current": {
     "purchase_code": "b843305e-cc9f-46b8-ac05-26d757d8af14",
     "apple_touch_icon": "shopify://shop_images/favicon.png",
+    "favicon": "shopify://shop_images/favicon.png",
     "import_header": "custom-header",
     "import_footer": "02",
     "dir_body": "ltr",
