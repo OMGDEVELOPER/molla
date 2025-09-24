@@ -420,3 +420,7 @@ div[data-section-type="banner-section"] .banner-title {
 .fake_select.combobox label {
     color: #000 !important;
 }
+
+.banner.banner-cat .img__banner:before{
+  opacity: 0.2 !important;
+}
