@@ -20,10 +20,66 @@
             "img": "shopify://shop_images/door-acc.jpg",
             "block_width": "4"
           }
+        },
+        "collection_cqxetE": {
+          "type": "collection",
+          "settings": {
+            "collection": "structural-product",
+            "block_width": "4"
+          }
+        },
+        "collection_wfJ63c": {
+          "type": "collection",
+          "settings": {
+            "collection": "fencing",
+            "block_width": "4"
+          }
+        },
+        "collection_nycV7d": {
+          "type": "collection",
+          "settings": {
+            "collection": "outdoor-living",
+            "block_width": "4"
+          }
+        },
+        "collection_UfGU8H": {
+          "type": "collection",
+          "settings": {
+            "collection": "coolroom",
+            "block_width": "4"
+          }
+        },
+        "collection_yi3J96": {
+          "type": "collection",
+          "settings": {
+            "collection": "insulated-wall-panel",
+            "block_width": "4"
+          }
+        },
+        "collection_3dkxNp": {
+          "type": "collection",
+          "settings": {
+            "collection": "gutter-fascia",
+            "block_width": "4"
+          }
+        },
+        "collection_Prg3XE": {
+          "type": "collection",
+          "settings": {
+            "collection": "roof",
+            "block_width": "4"
+          }
         }
       },
       "block_order": [
-        "1571026123226"
+        "1571026123226",
+        "collection_cqxetE",
+        "collection_wfJ63c",
+        "collection_nycV7d",
+        "collection_UfGU8H",
+        "collection_yi3J96",
+        "collection_3dkxNp",
+        "collection_Prg3XE"
       ],
       "settings": {
         "list_coll_width_section": "container",
