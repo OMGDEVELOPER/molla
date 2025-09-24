@@ -64,7 +64,7 @@
       "settings": {
         "list_coll_width_section": "container",
         "list_coll_width_content": true,
-        "display_type": "all",
+        "display_type": "selected",
         "sort": "alphabetical",
         "grid": "3"
       }
