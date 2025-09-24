@@ -769,7 +769,9 @@
             <div class="text-content position-absolute wait-for-css">
               <h4 class="banner-subtitle" style="--color: {{block.settings.color_stitle_1}}">{{block.settings.stitle_1}}</h4>
               <h3 class="banner-title" style="--color: {{block.settings.color_titlex_1}}">{{block.settings.titlex_1}}</h3>
+              {% if block.settings.image_link_1 and  block.settings.name_btn_1 != blank %}
               <a href="{{block.settings.image_link_1|default:'#'}}" class="btn {{block.settings.style_btn_1}} {{block.settings.style_btn_rounded_1}}{%if block.settings.btn_shadow_1%} btn-shadow{%endif%}" aria-label="{{block.settings.name_btn_1| strip_html}}">{{block.settings.name_btn_1}}</a>
+              {% endif %}
             </div>
             {%- assign use_css = true -%}
             {%- endunless -%}
@@ -784,7 +786,9 @@
             <div class="text-content position-absolute wait-for-css">
               <h4 class="banner-subtitle" style="--color: {{block.settings.color_stitle_2}}">{{block.settings.stitle_2}}</h4>
               <h3 class="banner-title" style="--color: {{block.settings.color_titlex_2}}">{{block.settings.titlex_2}}</h3>
+               {% if block.settings.image_link_2 and  block.settings.name_btn_2 != blank %}
               <a href="{{block.settings.image_link_2|default:'#'}}" class="btn {{block.settings.style_btn_2}} {{block.settings.style_btn_rounded_2}}{%if block.settings.btn_shadow_2%} btn-shadow{%endif%}" aria-label="{{block.settings.name_btn_2| strip_html}}">{{block.settings.name_btn_2}}</a>
+            {% endif %}
             </div>
             {%- assign use_css = true -%}
             {%- endunless -%}
