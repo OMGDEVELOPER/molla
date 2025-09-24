@@ -13,6 +13,10 @@ position: absolute;
     height: 10px;
     align-items: center;
 }
+#installer-splide {
+    border-radius: 10px;
+    overflow: hidden;
+}
 #installer-modal .splide__arrow--prev{
   left:20px;
 }
