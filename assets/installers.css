@@ -70,6 +70,7 @@ position: absolute;
   backdrop-filter: blur(5px);
   border-top-left-radius: 10px;
   border-bottom-left-radius: 10px;
+  max-width: 200px;
 }
 #installer-modal .item-gallery{
   padding:0 24px 24px 24px;
