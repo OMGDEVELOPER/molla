@@ -409,14 +409,14 @@ div[data-section-type="banner-section"] .banner-title {
 }
 
 .product-form__item>label {
-  min-width: 7rem;
+  min-width: 7rem !important;
   flex-shrink: 0;
 }
 
 .fake_select.combobox>ul li.selected, .fake_select.combobox>ul li:hover {
-    color: #000;
+    color: #000 !important;
 }
 
 .fake_select.combobox label {
-    color: #000;
+    color: #000 !important;
 }
