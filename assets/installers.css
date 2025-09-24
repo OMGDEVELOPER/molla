@@ -363,7 +363,6 @@ position: absolute;
   position: relative;
   background: #fff;
   /* padding: 20px; */
-  max-width: 800px;
   width: 90%;
   border-radius: 10px;
   z-index: 1000;
