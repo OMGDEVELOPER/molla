@@ -127,9 +127,7 @@
               <div class="modal-slide-content">
                 <div class="featured-img-modal featured-img">
                 {% comment %} {{ item.featured_image | image_url: width: 800 | image_tag: alt: item.featured_image.alt }} {% endcomment %}
-                 <a href="{{ item.featured_image | image_url: width: 800 }}" class="">
-                  <img src="{{ item.featured_image | image_url: width: 800 }}" class="img-modal" >
-                 </a>
+                 <img src="{{ item.featured_image | image_url: width: item.featured_image.width }}" class="img-modal" >
                 </div>
                 <div class="modal-box-content">
                   <div class="heading_content">
