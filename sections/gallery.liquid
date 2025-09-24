@@ -60,7 +60,7 @@
             <li class="splide__slide">
               {% if item.image %}
                 <a href="{{ item.image | image_url: width: 1600 }}" class="glightbox" data-gallery="slider-gallery">
-                  <img src="{{ item.image | image_url: width: 800 }}" alt="{{ item.title | escape }}">
+                  {{ item.image | image_url: width: item.image.width, height: item.image.height | image_tag  }}
                 </a>
               {% endif %}
             </li>
