@@ -67,11 +67,11 @@
         "numbershow_enable": true,
         "gridlist_enable": true,
         "list_enable": false,
-        "sidebar": "left",
+        "sidebar": "",
         "grid": "3",
         "layout": "default",
         "limit": 16,
-        "use_flts": true,
+        "use_flts": false,
         "filters_type": "sidebar"
       }
     }
