@@ -388,6 +388,8 @@ position: absolute;
   border: none;
   font-size: 2rem;
   cursor: pointer;
+  color: #fff;
+  z-index: 999;
 }
 .installer-filters .btn-group button:last-child{
     border-top-right-radius: 15px;
