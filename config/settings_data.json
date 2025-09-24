@@ -30,6 +30,7 @@
     "show_sticky_img": false,
     "blog_layout": "02",
     "article_layout": "03",
+    "fbt_prds": 3,
     "store_locator_link": "",
     "get_a_quote_link": "shopify://pages/installers",
     "contact_us_link": "",
