@@ -402,3 +402,8 @@ div[data-section-type="banner-section"] .banner-title {
     width: auto;
     height: auto;
 }
+
+.splide__slide img {
+    display: block;
+    margin-inline:  auto;
+}
