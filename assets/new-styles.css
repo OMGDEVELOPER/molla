@@ -397,3 +397,8 @@ div[data-section-type="banner-section"] .banner-title {
   /* opacity:1 !important;
   visibility:visible !important; */
 }
+
+.box-search .item-search .thumb img {
+    width: auto;
+    height: auto;
+}
