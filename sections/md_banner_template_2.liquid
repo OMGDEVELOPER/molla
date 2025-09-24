@@ -52,7 +52,7 @@
                   {%- if block.settings.titlex_1 != blank -%}
                   <h3 class="banner-title" style="--color: {{block.settings.color_titlex_1}}">{{block.settings.titlex_1}}</h3>
                   {% endif %}
-                  {%- if block.settings.name_btn_1 != blank -%}
+                  {%- if block.settings.name_btn_1 != blank and block.settings.image_link_1 -%}
                   <a href="{{block.settings.image_link_1|default:'#'}}" class="btn {{block.settings.style_btn_1}} {{block.settings.style_btn_rounded_1}}{%if block.settings.btn_shadow_1%} btn-shadow{%endif%}" aria-label="{{block.settings.name_btn_1| strip_html}}">{{block.settings.name_btn_1}}</a>
                   {%- endif -%}
                 </div>
