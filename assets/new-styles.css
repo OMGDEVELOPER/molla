@@ -407,3 +407,8 @@ div[data-section-type="banner-section"] .banner-title {
     display: block;
     margin-inline:  auto;
 }
+
+.product-form__item>label {
+  min-width: 7rem;
+  flex-shrink: 0;
+}
