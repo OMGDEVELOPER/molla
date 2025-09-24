@@ -4,8 +4,8 @@
   <div class="section-width{%if settings.list_coll_width_content and settings.list_coll_width_section == 'w-100'%} container{%else%} w-100{%endif%}" data-section-id="{{ section_id }}" data-section-type="collection-template">
     <div class="d-flex align-items-center">
       {%- if settings.use_flts -%}
-      <div class="filter-by filterMobile d-lg-none{%unless items_filter_check.size <= 0 or current_tags.size == null %} hasFilter{% endunless %}"><span class="ico"><i class="fkt-bars" aria-hidden="true"></i></span><span class="layered_subtitle">{{'collections.filters.title'|t}}</span></div>
-      <div class="filter-by filterCanvas d-none d-lg-block{%unless items_filter_check.size <= 0 or current_tags.size == null %} hasFilter{% endunless %}"><span class="ico"><i class="fkt-bars" aria-hidden="true"></i></span><span class="layered_subtitle">{{'collections.filters.title'|t}}</span></div>
+      <div class="filter-by filterMobile d-none{%unless items_filter_check.size <= 0 or current_tags.size == null %} hasFilter{% endunless %}"><span class="ico"><i class="fkt-bars" aria-hidden="true"></i></span><span class="layered_subtitle">{{'collections.filters.title'|t}}</span></div>
+      <div class="filter-by filterCanvas d-none {%unless items_filter_check.size <= 0 or current_tags.size == null %} hasFilter{% endunless %}"><span class="ico"><i class="fkt-bars" aria-hidden="true"></i></span><span class="layered_subtitle">{{'collections.filters.title'|t}}</span></div>
       {%- endif -%}
       <span class="result-count d-none">
         {%- assign current_offset = paginate.current_offset | plus:1 -%}
