@@ -13,14 +13,6 @@
     "main": {
       "type": "list-collections-template",
       "blocks": {
-        "collection_y3LT8M": {
-          "type": "collection",
-          "settings": {
-            "collection": "aluminium-angle",
-            "img": "shopify://shop_images/image2-1.jpg",
-            "block_width": "4"
-          }
-        },
         "1571026123226": {
           "type": "collection",
           "settings": {
@@ -28,38 +20,10 @@
             "img": "shopify://shop_images/door-acc.jpg",
             "block_width": "4"
           }
-        },
-        "collection_WtBxyM": {
-          "type": "collection",
-          "settings": {
-            "collection": "aluminium-angle",
-            "img": "shopify://shop_images/image2-1.jpg",
-            "block_width": "4"
-          }
-        },
-        "collection_zHjDJW": {
-          "type": "collection",
-          "settings": {
-            "collection": "accessories",
-            "img": "shopify://shop_images/door-acc.jpg",
-            "block_width": "6"
-          }
-        },
-        "collection_ebGVDq": {
-          "type": "collection",
-          "settings": {
-            "collection": "accessories",
-            "img": "shopify://shop_images/door-acc.jpg",
-            "block_width": "6"
-          }
         }
       },
       "block_order": [
-        "collection_y3LT8M",
-        "1571026123226",
-        "collection_WtBxyM",
-        "collection_zHjDJW",
-        "collection_ebGVDq"
+        "1571026123226"
       ],
       "settings": {
         "list_coll_width_section": "container",
