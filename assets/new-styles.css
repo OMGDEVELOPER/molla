@@ -432,3 +432,35 @@ div[data-section-type="banner-section"] .banner-title {
 .content_kt_related-products .product-variants-wrapper {
   display: none;
 }
+
+.content_kt_related-products .swiper-slide.grid-item {
+    display: flex;
+    align-items: stretch;
+}
+
+.content_kt_related-products  .product.product-card.product-inner.smallCard {
+    display: flex;
+    align-items: stretch;
+}
+
+.content_kt_related-products .product-cart form {
+    display: flex;
+    align-items: stretch;
+}
+
+.content_kt_related-products .product-body {
+    flex-grow: 1;
+}
+
+.content_kt_related-products .product-body .product-price {
+    flex-grow: 1;
+}
+
+.content_kt_related-products .product-card form {
+    display: flex;
+    flex-direction: column;
+}
+
+.content_kt_related-products .product-cta-wrapper {
+    flex-grow: 1;
+}
