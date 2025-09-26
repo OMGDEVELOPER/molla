@@ -150,7 +150,7 @@
     {%- if template.directory == 'customers' -%}
       <script src="{{ 'shopify_common.js' | shopify_asset_url }}" defer="defer"></script>
     {%- endif -%}
-    <script src="{{ 'theme.min.js' | asset_url }}" defer="defer"></script>
+    <script src="{{ 'theme.js' | asset_url }}" defer="defer"></script>
     <script src="{{ 'custom.min.js' | asset_url }}" defer="defer"></script>
     {%- if template.name == 'cart' and settings.ajax_cart_page -%}
       <script src="{{ 'theme.ajax-cart-page.min.js' | asset_url }}" defer="defer"></script>
