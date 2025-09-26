@@ -436,6 +436,8 @@ div[data-section-type="banner-section"] .banner-title {
 .content_kt_related-products .swiper-slide.grid-item {
     display: flex;
     align-items: stretch;
+    flex-grow: 1;
+    height: auto;
 }
 
 .content_kt_related-products  .product.product-card.product-inner.smallCard {
