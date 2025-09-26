@@ -1360,6 +1360,17 @@ theme.Swiper = (function() {
       config.watchOverflow = true;
       config.a11y = false;
       config.watchSlidesVisibility = true;
+      var breakpoints = $(this).data('breakpoints');
+      if (breakpoints && typeof breakpoints === 'string') {
+        try {
+          config.breakpoints = JSON.parse(breakpoints);
+        } catch(e) {
+          console.warn('Invalid breakpoints JSON', e);
+        }
+      } else if (typeof breakpoints === 'object') {
+        config.breakpoints = breakpoints;
+      }
+
       if (config.nav) {
         config.navigation = {
           nextEl: '.swiper-button-next',
