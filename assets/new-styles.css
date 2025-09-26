@@ -424,3 +424,7 @@ div[data-section-type="banner-section"] .banner-title {
 .banner.banner-cat .img__banner:before{
   opacity: 0.2 !important;
 }
+
+.content_kt_related-products .images {
+  aspect-ratio: 1/1;
+}
