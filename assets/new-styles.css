@@ -428,3 +428,7 @@ div[data-section-type="banner-section"] .banner-title {
 .content_kt_related-products .images {
   aspect-ratio: 1/1;
 }
+
+.content_kt_related-products .product-variants-wrapper {
+  display: none;
+}
