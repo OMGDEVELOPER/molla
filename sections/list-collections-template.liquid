@@ -285,6 +285,71 @@
       {%- assign grid_item_width = ' col-xs-6 col-sm-4 col-lg-3' -%}
       {%- assign limit = '24' -%}
       {%- paginate collection.products by limit %}
+        <div data-section-id="{{ section_id }}" data-section-type="collection-template">
+          <div class="shop-top kt--drop-w kt--drop-w-d d-flex flex-wrap flex-lg-nowrap align-items-center">
+            {%- if section.settings.use_flts -%}
+              <div class="filter-by filterMobile d-lg-none">
+                <span class="ico"><i class="fkt-bars" aria-hidden="true"></i></span
+                ><span class="layered_subtitle">{{ 'collections.filters.title' | t }}</span>
+              </div>
+              {%- if section.settings.filters_type == 'off-canvas' -%}
+                <div class="filter-by filterCanvas d-none d-lg-block">
+                  <span class="ico"><i class="fkt-bars" aria-hidden="true"></i></span
+                  ><span class="layered_subtitle">{{ 'collections.filters.title' | t }}</span>
+                </div>
+              {% endif -%}
+            {%- endif -%}
+            <span class="result-count d-none d-md-block ml-auto mx-sm-auto">
+              {%- liquid
+                assign current_offset = paginate.current_offset | plus: 1
+                assign current_product_size = collection.products.size | plus: paginate.current_offset
+                if limit > paginate.items
+                  echo 'collections.general.results_limit_html' | t: count: paginate.items
+                else
+                  if current_tags == blank
+                    echo 'collections.general.results_with_count_html' | t: count: current_offset, curent_count: current_product_size, pr_count: collection.all_products_count
+                  else
+                    echo 'collections.general.results_with_count_html' | t: count: current_offset, curent_count: current_product_size, pr_count: paginate.items
+                  endif
+                endif
+              -%}
+            </span>
+            {%- if section.settings.sort_enable -%}
+              <div class="sorter d-flex align-items-center ml-auto ml-md-0">
+                <span class="label d-none d-xs-block">{{ 'collections.sorting.title' | t }} </span>
+                <div class="select-wrapper kt--drop-i" id="sort_by">
+                  {%- assign sort_by = collection.sort_by | default: collection.default_sort_by -%}
+                  <div class="kt--drop-title mb-0 btn-rounded">
+                    <span class="kt--drop-text">
+                      {%- assign sort_by_name = collection.sort_options | where: 'value', sort_by | first -%}
+                      {{- sort_by_name.name -}}</span
+                    ><span class="ico"><i class="fkt-angle-down" aria-hidden="true"></i></span>
+                  </div>
+                  <ul class="kt--drop-in list-unstyled">
+                    {%- for option in collection.sort_options -%}
+                      <li class="form-check{% if option.value == sort_by %} selected{% endif %}">
+                        <input
+                          class="form-check-input d-none"
+                          id="sort-by-{{ forloop.index }}"
+                          type="radio"
+                          name="sort_by"
+                          value="{{ option.value | escape }}"
+                          {% if option.value == sort_by %}
+                            checked
+                          {% endif %}
+                        >
+                        <label class="form-check-label w-100" for="sort-by-{{ forloop.index }}" role="button">
+                          <span class="form-check-title">{{ option.name | escape }}</span>
+                        </label>
+                      </li>
+                    {%- endfor -%}
+                  </ul>
+                </div>
+              </div>
+            {%- endif -%}
+            {%- render 'kt_gridlist_layout', layout_gl: layout_gl, gl: gl, limit: limit, ly: ly -%}
+          </div>
+        </div>
         <div class="collection-products">
           <ul
             class="products-grid product-listing product-list-grid ly__{{ly}}_items row flex-flow list-unstyled p-style-{{grid_ly}}"
