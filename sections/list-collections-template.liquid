@@ -1,4 +1,5 @@
 <!-- list-collections-template.liquid -->
+{{ 'sub-categories.css' | asset_url | stylesheet_tag }}
 {%- assign collection = collections['all'] -%}
 <div class="{{section.settings.list_coll_width_section}}">
   <div class="section-width{%if settings.list_coll_width_content and settings.list_coll_width_section == 'w-100'%} container{%else%} w-100{%endif%}" data-section-id="{{ section_id }}" data-section-type="collection-template">
@@ -49,13 +50,13 @@
               {%- if section.settings.sort == 'products_low' or section.settings.sort == 'date' or section.settings.sort == 'alphabetical' -%}
                 {%- for collection in collections -%}
                   <div class="ly__ms grid-item {{grid_item_width}}">
-                    {%- render 'collection-grid-item', collection: collection, collection_image_size: collection_image_size%}
+                    {%- render 'collection-grid-item-new', collection: collection, collection_image_size: collection_image_size%}
                   </div>
                 {%- endfor -%}
               {%- else -%}
                 {%- for collection in collections reversed -%}
                   <div class="ly__ms grid-item {{grid_item_width}}">
-                    {%- render 'collection-grid-item', collection: collection, collection_image_size: collection_image_size%}
+                    {%- render 'collection-grid-item-new', collection: collection, collection_image_size: collection_image_size%}
                   </div>
                 {%- endfor -%}
               {%- endif -%}
@@ -72,7 +73,7 @@
                   {%- assign grid_item_width = 'col-12 col-md-6' -%}
                 {%- endcase -%}
                 <div class="ly__ms grid-item {{grid_item_width}}">
-                  {%- render 'collection-grid-item', block: block, collection: collections[block.settings.collection], collection_image_size: collection_image_size%}
+                  {%- render 'collection-grid-item-new', block: block, collection: collections[block.settings.collection], collection_image_size: collection_image_size%}
                 </div>
               {%- endfor -%}
             {%- endif -%}
