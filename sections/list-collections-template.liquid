@@ -33,6 +33,108 @@
   assign st_card = st_card | split: '|'  
   
   assign grid_ly = settings.grid_layout | default: st_card[3]
+  assign dir_body = settings.dir_body
+  assign cssAlign = 'left'
+  assign cssAlign_rev = 'right'
+  if dir_body == 'rtl'
+    assign cssAlign = 'right'
+    assign cssAlign_rev = 'left'
+  endif
+  assign view = cart.attributes.theme_coll_layout | split: '_'
+  assign limit = settings.coll_limit
+  case settings.coll_grid
+    when '1'
+      assign gl = '1'
+      assign layout_gl = '1grid'
+    when '2'
+      assign gl = '2'
+      assign layout_gl = '2grid'
+    when '3'
+      assign gl = '3'
+      assign layout_gl = '3grid'
+    when '4'
+      assign gl = '4'
+      assign layout_gl = '4grid'
+    when '5'
+      assign gl = '5'
+      assign layout_gl = '5grid'
+    when '6'
+      assign gl = '6'
+      assign layout_gl = '6grid'
+  endcase
+  if settings.coll_list_enable
+    assign ly = settings.coll_sidebar_layout | append: 'lis'
+    assign gl = 'list'
+    assign layout_gl = 'list'
+  else
+    if settings.coll_masonry == true
+      assign ly = 'ms'
+    else
+      assign ly = 'gr'
+    endif    
+  endif
+  if view.size == 2
+    assign split_check = view[0] | split: 'gr'
+    assign split_check_ = view[0] | split: 'li'
+    assign limit = view[1] | replace: 'pds','' | plus: 0
+    if split_check contains 'id'
+      assign gl = view[0] | replace: 'grid',''
+      assign layout_gl = view[0]
+      if settings.coll_masonry == true
+        assign ly = 'ms'
+      else
+        assign ly = 'gr'
+      endif
+    elsif split_check_ contains 'st'
+    assign ly = settings.coll_sidebar_layout | append: 'lis'
+      assign gl = 'list'
+      assign layout_gl = view[0]
+    endif
+  elsif view != blank
+    assign split_check = view[0] | split: 'gr'
+    assign split_check_ = view[0] | split: 'li'
+    if split_check contains 'id'
+      assign gl = view[0] | replace: 'grid',''
+      assign layout_gl = view[0]
+      if settings.coll_masonry == true
+        assign ly = 'ms'
+      else
+        assign ly = 'gr'
+      endif
+    elsif split_check_ contains 'st'
+      assign ly = settings.coll_sidebar_layout | append: 'lis'
+      assign gl = 'list'
+      assign layout_gl = view[0]
+    endif
+  endif
+  assign section_id = 'collection-template'
+  case limit
+    when 16
+      assign limit_pds = '_16pds'
+    when 20
+      assign limit_pds = '_20pds'
+    when 30
+      assign limit_pds = '_30pds'
+    when 50
+      assign limit_pds = '_50pds'
+    else
+      assign limit_pds = ''
+  endcase
+  case gl
+    when '2'
+      assign grid_item_width = ' col-xs-6'
+    when '3'
+      assign grid_item_width = ' col-xs-6 col-sm-4'
+    when '4'
+      assign grid_item_width = ' col-xs-6 col-sm-4 col-lg-3'
+    when '5'
+      assign grid_item_width = ' col-xs-6 col-sm-4 col-lg-2-10'
+    when '6'
+      assign grid_item_width = ' col-xs-6 col-sm-4 col-lg-2-10 col-xl-2'
+    when 'list'
+      assign grid_item_width = ' col-12'
+  endcase
+  assign settings_collection_layout = settings.coll_layout
 -%}
 {%- assign collection = collections['all'] -%}
 <div class="{{section.settings.list_coll_width_section}}">
@@ -145,8 +247,6 @@
         {%- assign ly = 'gr' -%}
         {%- assign grid_item_width = ' col-xs-6 col-sm-4 col-lg-3' -%}
         {%- assign limit = '24' -%}
-        {%- assign cssAlign = 'left' -%}
-        {%- assign cssAlign_rev = 'right' -%}
         {%-paginate collection.products by limit %}
           <div class="collection-products">
             <ul class="products-grid product-listing product-list-grid ly__{{ly}}_items row flex-flow list-unstyled p-style-{{grid_ly}}" 
