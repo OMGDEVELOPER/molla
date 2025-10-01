@@ -7,17 +7,22 @@
 {% else %}
   {% assign image_item = blank %}
 {% endif %}
-
-<div class="banner banner-cat banner-badge mb-2">
-  <div class="position-relative {{block.settings.banner-effect}}">
-    {%-assign width = image_item.width | default: 550.00 -%}{%-assign height = image_item.height | default: 550.00 | plus: 0.00-%}
-    <a href="{{ collection.url }}" class="img__banner lazyload" style="padding-bottom: {{height|divided_by: width | times: 100.00000000}}%;" data-bgset="{%- render 'bgset', image: image_item -%}" data-sizes="auto" aria-label="{{shop.name | escape}}"{% if image_item == blank %} title="550x550 px"{% endif %}></a>
-    <div class="text-content wait-for-css">
-      <a class="banner-link" href="{{ collection.url }}">
-        <h3 class="banner-title">{{ collection.title }}</h3>
-        <h4 class="banner-subtitle">{{'sections.products_section.products_count'| t : count : collection.all_products_count}}</h4>
-        <span class="banner-link-text">{{'collections.list_collection.button_name'|t}}</span>
-      </a>
-    </div>
-  </div>
+<div class="subcategory-item">
+    <a href="{{ collection.url }}" class="subcategory-item__link">
+        <div class="subcategory-item__image">
+        {%- if collection.image -%}
+            <img
+            src="{{ collection.image | image_url: width: 400, height: 200, crop: 'center' }}"
+            alt="{{ collection.title | escape }}"
+            class="subcategory-item__image-element"
+            loading="lazy"
+            width="400"
+            height="200"
+            >
+        {%- endif -%}
+        </div>
+        <div class="subcategory-item__content">
+        <h3 class="subcategory-item__title">{{ collection.title }}</h3>
+        </div>
+    </a>
 </div>
