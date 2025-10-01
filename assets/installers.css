@@ -87,7 +87,6 @@ position: absolute;
 }
 #installer-modal .modal-box-content .details{
   display: flex;
-  justify-content: flex-end;
 }
 #installer-modal .details ul li a{
   color: #050505;
