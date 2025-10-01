@@ -379,6 +379,9 @@ position: absolute;
   cursor: pointer;
   color: #fff;
   z-index: 999;
+  padding: 5px;
+    line-height: 1;
+    border-radius: 50%;
 }
 .installer-filters .btn-group button:last-child{
     border-top-right-radius: 15px;
