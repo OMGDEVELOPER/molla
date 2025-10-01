@@ -123,7 +123,7 @@ position: absolute;
     flex-wrap: wrap;
 } */
 #installer-modal .modal-slide-content .featured-img{
-    background: #000;
+    background: #fafafa;
 }
 #installer-modal .modal-slide-content .featured-img img{
     max-height: 60vh;
