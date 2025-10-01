@@ -105,35 +105,41 @@
     </div>
   </div>
 
-  {%- assign grid_ly = '02 p-style-20' -%}
-  {%- assign ly = 'gr' -%}
-  {%- assign grid_item_width = ' col-xs-6 col-sm-4 col-lg-3' -%}
-  {%- assign limit = '24' -%}
-  {%- assign cssAlign = 'left' -%}
-  {%- assign cssAlign_rev = 'right' -%}
-  {%-paginate collection.products by limit %}
-    <div class="collection-products">
-      <ul class="products-grid product-listing product-list-grid ly__{{ly}}_items row flex-flow list-unstyled p-style-{{grid_ly}}" 
-        data-grid="{{grid_item_width}}" data-layout="{{ly}}">
-        {%- for product in collection.products limit: limit -%}
-          {%- if ly contains 'lis' -%}
-            <li class="grid-item list{{grid_item_width}} ly__{{ly}}">
-              {% render 'product-list-item', product: product, grid_layout: grid_ly, masonry: settings.coll_masonry, st_card: st_card  %}
-            </li>
-          {%- else -%}
-            <li class="grid-item{{grid_item_width}} ly__{{ly}}">
-              {%- render "product-grid-item", product: product, grid_layout: grid_ly, masonry: settings.coll_masonry, st_card: st_card -%}
-            </li>
-          {%- endif -%}
-        {%- endfor -%}
-      </ul>
+  <div class="section-width container main-content no-sidebar filters-default">
+    <div class="row">
+      <div class="col-12">
+        {%- assign grid_ly = '02 p-style-20' -%}
+        {%- assign ly = 'gr' -%}
+        {%- assign grid_item_width = ' col-xs-6 col-sm-4 col-lg-3' -%}
+        {%- assign limit = '24' -%}
+        {%- assign cssAlign = 'left' -%}
+        {%- assign cssAlign_rev = 'right' -%}
+        {%-paginate collection.products by limit %}
+          <div class="collection-products">
+            <ul class="products-grid product-listing product-list-grid ly__{{ly}}_items row flex-flow list-unstyled p-style-{{grid_ly}}" 
+              data-grid="{{grid_item_width}}" data-layout="{{ly}}">
+              {%- for product in collection.products limit: limit -%}
+                {%- if ly contains 'lis' -%}
+                  <li class="grid-item list{{grid_item_width}} ly__{{ly}}">
+                    {% render 'product-list-item', product: product, grid_layout: grid_ly, masonry: settings.coll_masonry, st_card: st_card  %}
+                  </li>
+                {%- else -%}
+                  <li class="grid-item{{grid_item_width}} ly__{{ly}}">
+                    {%- render "product-grid-item", product: product, grid_layout: grid_ly, masonry: settings.coll_masonry, st_card: st_card -%}
+                  </li>
+                {%- endif -%}
+              {%- endfor -%}
+            </ul>
+          </div>
+          <div class="pagination_ text-center">
+              {%- if paginate.pages > 1 -%}
+                {%- render 'pagination', paginate: paginate, cssAlign: cssAlign, cssAlign_rev: cssAlign_rev -%}
+              {%- endif -%}
+          </div>
+        {% endpaginate -%}
+      </div>
     </div>
-    <div class="pagination_ text-center">
-        {%- if paginate.pages > 1 -%}
-          {%- render 'pagination', paginate: paginate, cssAlign: cssAlign, cssAlign_rev: cssAlign_rev -%}
-        {%- endif -%}
-    </div>
-  {% endpaginate -%}
+  </div>
 {%style%}
   .banner.banner-cat .text-content {
     position: absolute;
