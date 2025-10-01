@@ -645,6 +645,119 @@
           "label": "4"
         }
       ]
+    },
+    {
+      "type": "header",
+      "content": "Function settings"
+    },
+    {
+      "type": "checkbox",
+      "id": "sort_enable",
+      "label": "Enable sorting",
+      "default": true
+    },
+    {
+      "type": "checkbox",
+      "id": "masonry",
+      "label": "Using masonry layout?"
+    },
+    {
+      "type": "checkbox",
+      "id": "numbershow_enable",
+      "label": "Show selector number show?",
+      "default": true
+    },
+    {
+      "type": "checkbox",
+      "id": "gridlist_enable",
+      "label": "Show button switch layout?",
+      "default": true
+    },
+    {
+      "type": "header",
+      "content": "Layout settings"
+    },
+    {
+      "type": "checkbox",
+      "id": "list_enable",
+      "label": "*Enable collection list items"
+    },
+    {
+      "type": "select",
+      "id": "sidebar",
+      "label": "Sidebar",
+      "options": [
+        {
+          "value": "",
+          "label": "None"
+        },
+        {
+          "value": "left",
+          "label": "Left"
+        },
+        {
+          "value": "right",
+          "label": "Right"
+        }
+      ]
+    },
+    {
+      "type": "select",
+      "id": "layout",
+      "label": "Paging layout",
+      "options": [
+        {
+          "label": "Paging",
+          "value": "default"
+        },
+        {
+          "label": "Button loadmore",
+          "value": "loadmore"
+        },
+        {
+          "label": "Infinity load",
+          "value": "infinity"
+        }
+      ],
+      "default": "default"
+    },
+    {
+      "type": "range",
+      "id": "limit",
+      "min": 5,
+      "max": 50,
+      "step": 1,
+      "label": "Limit display product",
+      "default": 16
+    },
+    {
+      "type": "header",
+      "content": "Filters settings"
+    },
+    {
+      "type": "checkbox",
+      "id": "use_flts",
+      "label": "Use Filters?",
+      "default": true
+    },
+    {
+      "type": "header",
+      "content": "Type"
+    },
+    {
+      "type": "select",
+      "id": "filters_type",
+      "label": "Filters type",
+      "options": [
+        {
+          "value": "sidebar",
+          "label": "Sidebar"
+        },
+        {
+          "value": "off-canvas",
+          "label": "Off-Canvas"
+        }
+      ]
     }
   ],
   "blocks": [
