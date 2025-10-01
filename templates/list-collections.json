@@ -92,7 +92,7 @@
         "numbershow_enable": true,
         "gridlist_enable": true,
         "list_enable": false,
-        "sidebar": "right",
+        "sidebar": "",
         "layout": "default",
         "limit": 16,
         "use_flts": true,
