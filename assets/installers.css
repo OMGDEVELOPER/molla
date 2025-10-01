@@ -379,9 +379,12 @@ position: absolute;
   cursor: pointer;
   color: #fff;
   z-index: 999;
-  padding: 5px;
-    line-height: 1;
-    border-radius: 50%;
+  line-height: 1;
+  border-radius: 50%;
+  width: 30px;
+  height: 30px;
+  display: inline-flex;
+  align-items: center;
 }
 .installer-filters .btn-group button:last-child{
     border-top-right-radius: 15px;
