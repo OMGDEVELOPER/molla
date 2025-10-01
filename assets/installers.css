@@ -58,7 +58,7 @@ position: absolute;
 #installer-modal .heading_content{
   display:flex;
   align-items:center;
-  justify-content:space-between;
+  gap: 15px;
 }
 #installer-modal .modal-box-content{
   padding:24px;
