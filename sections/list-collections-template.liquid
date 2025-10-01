@@ -1,5 +1,39 @@
 <!-- list-collections-template.liquid -->
 {{ 'sub-categories.css' | asset_url | stylesheet_tag }}
+{%- liquid
+  capture st_card
+    echo settings.use_new_label
+    echo '|'
+    echo settings.new_day
+    echo '|'
+    echo settings.use_sale_label
+    echo '|'
+    echo settings.product_grid_layout
+    echo '|'
+    echo settings.qs_show_vars_list
+    echo '|'
+    echo settings.use_quickview
+    echo '|'
+    echo settings.use_wishlist
+    echo '|'
+    echo settings.use_compare
+    echo '|'
+    echo settings.use_countdown_grid
+    echo '|'
+    echo settings.countdown_grid_style
+    echo '|'
+    echo settings.use_vendor_grid
+    echo '|'
+    echo settings.use_review_grid
+    echo '|'
+    echo settings.use_add_to_cart_btn
+    echo '|'
+    echo settings.qs_hide_only_1_opt
+  endcapture
+  assign st_card = st_card | split: '|'  
+  
+  assign grid_ly = settings.grid_layout | default: st_card[3]
+-%}
 {%- assign collection = collections['all'] -%}
 <div class="{{section.settings.list_coll_width_section}}">
   <div class="section-width{%if settings.list_coll_width_content and settings.list_coll_width_section == 'w-100'%} container{%else%} w-100{%endif%}" data-section-id="{{ section_id }}" data-section-type="collection-template">
@@ -104,7 +138,6 @@
       <div class="kt--filter-grs kt--filter-grs-d" data-toggle="show"></div>
     </div>
   </div>
-
   <div class="section-width container main-content no-sidebar filters-default">
     <div class="row">
       <div class="col-12">
@@ -140,6 +173,7 @@
       </div>
     </div>
   </div>
+  
 {%style%}
   .banner.banner-cat .text-content {
     position: absolute;
