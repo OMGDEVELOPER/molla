@@ -181,12 +181,9 @@ PRODUCT
       color: #666; }
 
 .product-body {
-  position: relative;
   display: flex;
   display: -ms-flexbox;
       flex-direction: column;
-  flex-wrap: wrap;
-  -ms-flex-wrap: wrap;
   padding: 1rem 1rem 1.6rem;
   -webkit-transition: all .35s ease;
   transition: all .35s ease; }
