@@ -1096,6 +1096,7 @@
       {%- endif -%}
     </div>
     <div class="product-body">
+      <div>
       {%- if st_card[10] == 'true' -%}
       <a href="{{routes.collections_url}}/vendors?q={{product.vendor}}"><span>{{product.vendor}}</span></a>
       {%- endif -%}
@@ -1111,6 +1112,7 @@
         </div>
       </div>
       {%-endif-%}
+    </div>
       <div class="product-cta-wrapper btns_1">
         {% if st_card[12] == 'true' %}
           {%- if product.has_only_default_variant -%}
