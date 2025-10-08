@@ -62,7 +62,7 @@
 {%-liquid
   assign view = cart.attributes.theme_coll_layout | split: '_'
   assign limit = settings.coll_limit
-  case settings.coll_grid
+  case section.settings.grid
     when '1'
       assign gl = '1'
       assign layout_gl = '1grid'
