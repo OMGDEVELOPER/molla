@@ -1509,12 +1509,6 @@ span[class^="UnitPrice-"] {
   -webkit-box-shadow: 0 5px 10px rgba(0, 0, 0, 0.05);
   box-shadow: 0 5px 10px rgba(0, 0, 0, 0.05); }
 @media (hover: hover) {
-  .p-style-20 .product {
-    -webkit-box-shadow: 0 5px 20px rgba(0, 0, 0, 0);
-    box-shadow: 0 5px 20px rgba(0, 0, 0, 0); }
-    .p-style-20 .product:hover {
-      -webkit-box-shadow: 0 5px 20px rgba(0, 0, 0, 0.05);
-      box-shadow: 0 5px 20px rgba(0, 0, 0, 0.05); }
   .p-style-20 .product-body {
     padding-left: 2rem;
     padding-right: 2rem; }
