@@ -29,7 +29,7 @@ ul.list_1{
 }
 .content__variants_list,
 .content_kt_related-products .product-loop-variants{
-  display:none !important;
+  /* display:none !important; */
 }
 .content_kt_related-products .swiper-wrapper{
   margin-bottom:10rem;
