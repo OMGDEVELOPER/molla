@@ -2056,6 +2056,7 @@ span[class^="UnitPrice-"] {
   .product-loop-variants span.swatch-title {
     display: inline-block;
     font-size: 12px;
+    text-align: left;
   }
   .product-loop-variants .comma {
     display: none; }
