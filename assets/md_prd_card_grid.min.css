@@ -610,13 +610,8 @@ span[class^="UnitPrice-"] {
     box-shadow: 0 0 2px #BDBDBD; }
     .p-style-02 .product:hover .product-cta-wrapper {
       opacity: 1;
-      top: calc(100% - 2rem);
-      top: -ms-calc(100% - 2rem);
-      top: -webkit-calc(100% - 2rem);
       visibility: visible;
-      pointer-events: auto;
-      -webkit-box-shadow: 0 2px 2px #BDBDBD;
-      box-shadow: 0 2px 2px #BDBDBD; }
+      pointer-events: auto; }
   .p-style-02 .product-cta-wrapper {
     z-index: 1;
     border-radius: 5px;
