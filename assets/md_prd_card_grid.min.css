@@ -2061,7 +2061,7 @@ span[class^="UnitPrice-"] {
   .product-loop-variants .comma {
     display: none; }
   .product-loop-variants:last-child .swatch[data-available="false"] {
-    opacity: 0.5; }
+    opacity: 0.3; }
   .product-loop-variants.list_1 li.swatch-on-grid {
     padding: 0; }
     .product-loop-variants.list_1 li.swatch-on-grid.active span.swatch-title, .product-loop-variants.list_1 li.swatch-on-grid:hover span.swatch-title {
