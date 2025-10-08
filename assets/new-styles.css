@@ -29,6 +29,7 @@ ul.list_1{
 }
 
 .product-variants-wrapper {
+     padding-block: 1.5rem;
   ul.list_1{
   display:block;
 }
