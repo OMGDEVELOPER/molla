@@ -186,10 +186,11 @@ PRODUCT
       flex-direction: column;
   padding: 1rem 1rem 1.6rem;
   -webkit-transition: all .35s ease;
-  transition: all .35s ease; }
+  transition: all .35s ease;
+    flex-grow: 1;
+    justify-content: space-between; }
   .product-body > * {
     --width: 100%;
-    flex: 1 1 100%;
     max-width: var(--width); }
 
 .product-price {
