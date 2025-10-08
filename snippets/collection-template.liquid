@@ -59,6 +59,7 @@
     assign cssAlign_rev = 'left'
   endif
 -%}
+{{ section.settings.grid }}
 {%-liquid
   assign view = cart.attributes.theme_coll_layout | split: '_'
   assign limit = section.settings.limit
