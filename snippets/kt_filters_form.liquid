@@ -8,7 +8,8 @@
 		  </div>
 		  <ul class="product-categories kt--filter-gr-i_ul list-unstyled">
 		    {%- if block.settings.list_categories_linklist == blank -%}
-		      {%- for lin_1 in collections -%}
+				{% assign sub_categories = collection.metafields.custom.sub_category.value %}
+		      {%- for lin_1 in sub_categories -%}
 		        <li class="{% if lin_1.handle == collection.handle %} current-cat{% endif %}">
 		          <a class="custom-control custom-checkbox"{% if lin_1.handle == collection.handle %} href="javascript:void(0)"{%else%} href="{{lin_1.url | default: 'javascript:void(0)'}}"{% endif %}>
 		            <span class="custom-control-label">{{lin_1.title}}</span>
