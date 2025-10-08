@@ -2117,7 +2117,7 @@ span[class^="UnitPrice-"] {
     padding: 0.25rem; }
     .product-loop-variants.circle[data-usecolor="true"] li.swatch-on-grid .swatch, .product-loop-variants.square[data-usecolor="true"] li.swatch-on-grid .swatch {
       border: .2rem solid #fff; }
-    .product-loop-variants.circle[data-usecolor="true"] li.swatch-on-grid.active .swatch, .product-loop-variants.square[data-usecolor="true"] li.swatch-on-grid.active .swatch {
+    .product-loop-variants.circle[data-usecolor="true"] li.swatch-on-grid .swatch, .product-loop-variants.square[data-usecolor="true"] li.swatch-on-grid .swatch {
       -webkit-box-shadow: 0 0 0 0.1rem #cccccc;
       box-shadow: 0 0 0 0.1rem #cccccc; }
   .product-loop-variants.circle[data-usecolor="true"] .more .swatch .swatch-title:before, .product-loop-variants.square[data-usecolor="true"] .more .swatch .swatch-title:before {
