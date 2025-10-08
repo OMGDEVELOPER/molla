@@ -59,7 +59,6 @@
     assign cssAlign_rev = 'left'
   endif
 -%}
-{{ section.settings.grid }}
 {%-liquid
   assign view = cart.attributes.theme_coll_layout | split: '_'
   assign limit = section.settings.limit
@@ -93,40 +92,6 @@
     else
       assign ly = 'gr'
     endif    
-  endif
-  if view.size == 2
-    assign split_check = view[0] | split: 'gr'
-    assign split_check_ = view[0] | split: 'li'
-    assign limit = view[1] | replace: 'pds','' | plus: 0
-    if split_check contains 'id'
-      assign gl = view[0] | replace: 'grid',''
-      assign layout_gl = view[0]
-      if settings.coll_masonry == true
-        assign ly = 'ms'
-      else
-        assign ly = 'gr'
-      endif
-    elsif split_check_ contains 'st'
-    assign ly = settings.coll_sidebar_layout | append: 'lis'
-      assign gl = 'list'
-      assign layout_gl = view[0]
-    endif
-  elsif view != blank
-    assign split_check = view[0] | split: 'gr'
-    assign split_check_ = view[0] | split: 'li'
-    if split_check contains 'id'
-      assign gl = view[0] | replace: 'grid',''
-      assign layout_gl = view[0]
-      if settings.coll_masonry == true
-        assign ly = 'ms'
-      else
-        assign ly = 'gr'
-      endif
-    elsif split_check_ contains 'st'
-      assign ly = settings.coll_sidebar_layout | append: 'lis'
-      assign gl = 'list'
-      assign layout_gl = view[0]
-    endif
   endif
   assign section_id = 'collection-template'
   case limit
