@@ -18,7 +18,7 @@
           "settings": {
             "list_categories_linklist": "",
             "key": "kt_categories",
-            "always_show": false
+            "always_show": true
           }
         },
         "92ca61f1-fdfb-4bad-a6ad-17468f154ca6": {
@@ -64,14 +64,14 @@
         "show_desc": true,
         "sort_enable": true,
         "masonry": false,
-        "numbershow_enable": true,
-        "gridlist_enable": true,
+        "numbershow_enable": false,
+        "gridlist_enable": false,
         "list_enable": false,
         "sidebar": "",
         "grid": "3",
         "layout": "default",
         "limit": 16,
-        "use_flts": false,
+        "use_flts": true,
         "filters_type": "sidebar"
       }
     }
