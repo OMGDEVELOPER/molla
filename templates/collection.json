@@ -18,7 +18,7 @@
           "settings": {
             "list_categories_linklist": "",
             "key": "kt_categories",
-            "always_show": true
+            "always_show": false
           }
         },
         "92ca61f1-fdfb-4bad-a6ad-17468f154ca6": {
