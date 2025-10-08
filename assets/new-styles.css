@@ -27,6 +27,12 @@
 ul.list_1{
   display:none;
 }
+
+.product-variants-wrapper {
+  ul.list_1{
+  display:block;
+}
+}
 .content__variants_list,
 .content_kt_related-products .product-loop-variants{
   /* display:none !important; */
