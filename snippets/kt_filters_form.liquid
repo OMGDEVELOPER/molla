@@ -12,86 +12,129 @@
         <ul class="product-categories kt--filter-gr-i_ul list-unstyled">
           {%- if block.settings.list_categories_linklist == blank -%}
             {% assign sub_categories = collection.metafields.custom.sub_category.value %}
-            {%- for lin_1 in sub_categories -%}
-              <li class="{% if lin_1.handle == collection.handle %} current-cat{% endif %}">
-                <a
-                  class="custom-control custom-checkbox"
-                  {% if lin_1.handle == collection.handle %}
-                    href="javascript:void(0)"
-                  {% else %}
-                    href="{{lin_1.url | default: 'javascript:void(0)'}}"
-                  {% endif %}
-                >
-                  <span class="custom-control-label">{{ lin_1.title }}</span>
-                  <span class="count">{{ lin_1.all_products_count }}</span>
-                </a>
-              </li>
-            {%- endfor -%}
+            {%- if sub_categories.size > 0 -%}
+              {%- for lin_1 in sub_categories -%}
+                <li class="{% if lin_1.handle == collection.handle %} current-cat{% endif %}">
+                  <div class="custom-control custom-checkbox">
+                    <input
+                      class="custom-control-input"
+                      id="collection-{{ lin_1.handle }}-{{sc}}"
+                      type="checkbox"
+                      name="collection"
+                      value="{{ lin_1.handle }}"
+                      {% if lin_1.handle == collection.handle %}
+                        checked
+                      {% endif %}
+                    >
+                    <label class="custom-control-label" for="collection-{{ lin_1.handle }}-{{sc}}">
+                      <span class="custom-check-title">{{ lin_1.title }}</span>
+                      <span class="count">({{ lin_1.all_products_count }})</span>
+                    </label>
+                  </div>
+                </li>
+              {%- endfor -%}
+            {%- else -%}
+              {%- for lin_1 in collections -%}
+                <li class="{% if lin_1.handle == collection.handle %} current-cat{% endif %}">
+                  <div class="custom-control custom-checkbox">
+                    <input
+                      class="custom-control-input"
+                      id="collection-{{ lin_1.handle }}-{{sc}}"
+                      type="checkbox"
+                      name="collection"
+                      value="{{ lin_1.handle }}"
+                      {% if lin_1.handle == collection.handle %}
+                        checked
+                      {% endif %}
+                    >
+                    <label class="custom-control-label" for="collection-{{ lin_1.handle }}-{{sc}}">
+                      <span class="custom-check-title">{{ lin_1.title }}</span>
+                      <span class="count">({{ lin_1.all_products_count }})</span>
+                    </label>
+                  </div>
+                </li>
+              {%- endfor -%}
+            {%- endif -%}
           {%- else -%}
             {%- assign list_categories_linklist = linklists[block.settings.list_categories_linklist].links -%}
             {%- for lin_1 in list_categories_linklist -%}
               <li class="level-1{%if lin_1.links.size > 0%} level-has-child{%endif%}{% if lin_1.active %} current-cat showAny{% endif %}{%if forloop.first%} opened{%endif%}">
-                <a
-                  class="custom-control custom-checkbox"
-                  {% if lin_1.active %}
-                    href="javascript:void(0)"
-                  {% else %}
-                    href="{{lin_1.url | default: 'javascript:void(0)'}}"
-                  {% endif %}
-                >
-                  <span class="custom-control-label">{{ lin_1.title }}</span>
-                  {%- if lin_1.type == 'collection_link' -%}
-                    <span
-                      class="count{%if lin_1.url != lin_1.object.url%} lazyload{%endif%}"
-                      data-include="{{lin_1.url}}?view=count_with_tag"
-                      >({{ lin_1.object.all_products_count }})</span
-                    >
-                  {%- endif -%}
-                  {% if lin_1.links.size > 0 %}<i class="fas fa-chevron-down"></i>{% endif %}
-                </a>
+                <div class="custom-control custom-checkbox">
+                  <input
+                    class="custom-control-input"
+                    id="collection-{{ lin_1.handle }}-{{sc}}"
+                    type="checkbox"
+                    name="collection"
+                    value="{{ lin_1.handle }}"
+                    {% if lin_1.active %}
+                      checked
+                    {% endif %}
+                  >
+                  <label class="custom-control-label" for="collection-{{ lin_1.handle }}-{{sc}}">
+                    <span class="custom-check-title">{{ lin_1.title }}</span>
+                    {%- if lin_1.type == 'collection_link' -%}
+                      <span
+                        class="count{%if lin_1.url != lin_1.object.url%} lazyload{%endif%}"
+                        data-include="{{lin_1.url}}?view=count_with_tag"
+                        >({{ lin_1.object.all_products_count }})</span
+                      >
+                    {%- endif -%}
+                    {% if lin_1.links.size > 0 %}<i class="fas fa-chevron-down"></i>{% endif %}
+                  </label>
+                </div>
                 {% if lin_1.links.size == 0 -%}{%- continue -%}{%- endif -%}
                 <ul class="child_collection list-unstyled">
                   {% for lin_2 in lin_1.links -%}
                     <li class="level-2{%if lin_2.links.size > 0%} level-has-child{%endif%}{% if lin_2.active %} current-cat{% endif %}">
-                      <a
-                        class="custom-control custom-checkbox"
-                        {% if lin_2.active %}
-                          href="javascript:void(0)"
-                        {% else %}
-                          href="{{lin_2.url | default: 'javascript:void(0)'}}"
-                        {% endif %}
-                      >
-                        <span class="custom-control-label">{{ lin_2.title }}</span>
-                        {%- if lin_2.type == 'collection_link' -%}
-                          <span
-                            class="count{%if lin_2.url != lin_2.object.url%} lazyload{%endif%}"
-                            data-include="{{lin_2.url}}?view=count_with_tag"
-                            >({{ lin_2.object.all_products_count }})</span
-                          >
-                        {%- endif -%}
-                        {% if lin_2.links.size > 0 %}<i class="fas fa-chevron-down"></i>{% endif %}
-                      </a>
+                      <div class="custom-control custom-checkbox">
+                        <input
+                          class="custom-control-input"
+                          id="collection-{{ lin_2.handle }}-{{sc}}"
+                          type="checkbox"
+                          name="collection"
+                          value="{{ lin_2.handle }}"
+                          {% if lin_2.active %}
+                            checked
+                          {% endif %}
+                        >
+                        <label class="custom-control-label" for="collection-{{ lin_2.handle }}-{{sc}}">
+                          <span class="custom-check-title">{{ lin_2.title }}</span>
+                          {%- if lin_2.type == 'collection_link' -%}
+                            <span
+                              class="count{%if lin_2.url != lin_2.object.url%} lazyload{%endif%}"
+                              data-include="{{lin_2.url}}?view=count_with_tag"
+                              >({{ lin_2.object.all_products_count }})</span
+                            >
+                          {%- endif -%}
+                          {% if lin_2.links.size > 0 %}<i class="fas fa-chevron-down"></i>{% endif %}
+                        </label>
+                      </div>
                       {% if lin_2.links.size == 0 -%}{%- continue -%}{%- endif -%}
                       <ul class="child_collection list-unstyled">
                         {% for lin_3 in lin_2.links -%}
                           <li class="level-3{% if lin_3.active %} current-cat{% endif %}">
-                            <a
-                              class="custom-control custom-checkbox"
-                              {% if lin_3.active %}
-                                href="javascript:void(0)"
-                              {% else %}
-                                href="{{lin_3.url | default: 'javascript:void(0)'}}"
-                              {% endif %}
-                            >
-                              <span class="custom-control-label">{{ lin_3.title }}</span>
-                              {%- if lin_3.type == 'collection_link' -%}
-                                <span
-                                  class="count{%if lin_3.url != lin_3.object.url%} lazyload{%endif%}"
-                                  data-include="{{lin_3.url}}?view=count_with_tag"
-                                  >({{ lin_3.object.all_products_count }})</span
-                                >
-                              {%- endif -%}
-                            </a>
+                            <div class="custom-control custom-checkbox">
+                              <input
+                                class="custom-control-input"
+                                id="collection-{{ lin_3.handle }}-{{sc}}"
+                                type="checkbox"
+                                name="collection"
+                                value="{{ lin_3.handle }}"
+                                {% if lin_3.active %}
+                                  checked
+                                {% endif %}
+                              >
+                              <label class="custom-control-label" for="collection-{{ lin_3.handle }}-{{sc}}">
+                                <span class="custom-check-title">{{ lin_3.title }}</span>
+                                {%- if lin_3.type == 'collection_link' -%}
+                                  <span
+                                    class="count{%if lin_3.url != lin_3.object.url%} lazyload{%endif%}"
+                                    data-include="{{lin_3.url}}?view=count_with_tag"
+                                    >({{ lin_3.object.all_products_count }})</span
+                                  >
+                                {%- endif -%}
+                              </label>
+                            </div>
                           </li>
                         {%- endfor -%}
                       </ul>
