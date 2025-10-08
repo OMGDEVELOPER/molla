@@ -2051,13 +2051,12 @@ span[class^="UnitPrice-"] {
     justify-content: center;
     -ms-flex-pack: center;
     cursor: pointer;
-    white-space: nowrap;
     position: relative;
     color: #666; }
   .product-loop-variants span.swatch-title {
     display: inline-block;
     font-size: 12px;
-    white-space: nowrap; }
+  }
   .product-loop-variants .comma {
     display: none; }
   .product-loop-variants:last-child .swatch[data-available="false"] {
