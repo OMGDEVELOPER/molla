@@ -634,8 +634,8 @@ span[class^="UnitPrice-"] {
   box-shadow: 0 0 2px #BDBDBD;
   margin-top: 1px; }
   .p-style-02 .product:hover {
-    -webkit-box-shadow: 0 2px #BDBDBD;
-    box-shadow: 0 0 2px #BDBDBD; }
+  -webkit-box-shadow: 0 5px 10px rgba(0, 0, 0, 0.05);
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.05);  }
 @media (hover: none) {
   .p-style-02 .product-cta-wrapper {
     order: -1;
@@ -1505,8 +1505,9 @@ span[class^="UnitPrice-"] {
   color: #ccc; }
 
 .p-style-20 .product {
-  -webkit-box-shadow: 0 5px 10px rgba(0, 0, 0, 0.05);
-  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.05); }
+
+    -webkit-box-shadow: 0 2px #BDBDBD;
+    box-shadow: 0 0 2px #BDBDBD;}
 @media (hover: hover) {
   .p-style-20 .product-body {
     padding-left: 2rem;
