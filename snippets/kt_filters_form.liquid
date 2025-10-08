@@ -12,7 +12,6 @@
         <ul class="product-categories kt--filter-gr-i_ul list-unstyled">
           {%- if block.settings.list_categories_linklist == blank -%}
             {% assign sub_categories = collection.metafields.custom.sub_category.value %}
-            {%- if sub_categories.size > 0 -%}
               {%- for lin_1 in sub_categories -%}
                 <li class="{% if lin_1.handle == collection.handle %} current-cat{% endif %}">
                   <div class="custom-control custom-checkbox">
@@ -33,28 +32,6 @@
                   </div>
                 </li>
               {%- endfor -%}
-            {%- else -%}
-              {%- for lin_1 in collections -%}
-                <li class="{% if lin_1.handle == collection.handle %} current-cat{% endif %}">
-                  <div class="custom-control custom-checkbox">
-                    <input
-                      class="custom-control-input"
-                      id="collection-{{ lin_1.handle }}-{{sc}}"
-                      type="checkbox"
-                      name="collection"
-                      value="{{ lin_1.handle }}"
-                      {% if lin_1.handle == collection.handle %}
-                        checked
-                      {% endif %}
-                    >
-                    <label class="custom-control-label" for="collection-{{ lin_1.handle }}-{{sc}}">
-                      <span class="custom-check-title">{{ lin_1.title }}</span>
-                      <span class="count">({{ lin_1.all_products_count }})</span>
-                    </label>
-                  </div>
-                </li>
-              {%- endfor -%}
-            {%- endif -%}
           {%- else -%}
             {%- assign list_categories_linklist = linklists[block.settings.list_categories_linklist].links -%}
             {%- for lin_1 in list_categories_linklist -%}
