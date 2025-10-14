@@ -13,7 +13,7 @@
           {%- if block.settings.list_categories_linklist == blank -%}
             {% assign sub_categories = collection.metafields.custom.sub_category.value %}
             {%- for lin_1 in sub_categories -%}
-              <li class="{% if lin_1.handle == collection.handle %} current-cat{% endif %}">
+              <li class="{% if lin_1.active %} current-cat{% endif %}">
                 <div class="custom-control custom-checkbox">
                   <input
                     class="custom-control-input collection-checkbox"
@@ -21,7 +21,7 @@
                     type="checkbox"
                     name="collection"
                     value="{{ lin_1.handle }}"
-                    {% if lin_1.handle == collection.handle %}
+                    {% if lin_1.active %}
                       checked
                     {% endif %}
                   >
@@ -234,6 +234,3 @@
   <input type="hidden" name="sort_by" value="{{obj.sort_by | default: obj.default_sort_by}}">
   <button type="submit" class="_flt_submit d-none"></button>
 </form>
-<script>
-
-  </script>
