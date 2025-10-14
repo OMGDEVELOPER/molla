@@ -1795,7 +1795,8 @@
 {%- when '24' -%}
   {%- render 'product-item-prices', product: product, on_sale: on_sale, price_varies: price_varies-%}
 {%- else -%}
-<div class="product product-card product-inner --card{% if show_variant %} ktlz{%endif%}"{%unless product.has_only_default_variant%} data-href="{{product.handle}}"{{ktlz}}{%endunless%}>
+   {%- assign collection_handles = product.collections | map: 'handle' | map: 'collection-' | join: ' ' -%}
+<div class="product product-card product-inner --card {{ collection_handles }} {% if show_variant %} ktlz{%endif%}"{%unless product.has_only_default_variant%} data-href="{{product.handle}}"{{ktlz}}{%endunless%}>
   <form method="post" action="{{ routes.cart_add_url }}"{%unless product.has_only_default_variant%} id="ProductSection-{{product.id}}-{{block_id}}" class="form form-ajax-- ktlz-form-pid-{{product.id}}" data-p-id="{{product.id}}" data-section-id="-{{product.id}}-{{block_id}}" data-options="{{product.options.size}}" data-pr-vrs{%endunless%}>{{-card-}}
   </form>
 </div>
