@@ -3030,3 +3030,46 @@ theme.init = function() {
 };
 
 $(theme.init);
+
+  // Collection-based product filtering
+  $(document).on('change', '.collection-checkbox', function () {
+    filterProductsByCollection();
+  });
+
+  function filterProductsByCollection() {
+    var selectedCollections = [];
+    var $checkboxes = $('.collection-checkbox:checked');
+
+    // Get all selected collection handles
+    $checkboxes.each(function () {
+      selectedCollections.push('collection-' + $(this).val());
+    });
+
+    var $products = $('.product-card');
+
+    if (selectedCollections.length === 0) {
+      // Show all products if no collections are selected
+      $products.show();
+    } else {
+      // Filter products based on selected collections
+      $products.each(function () {
+        var $product = $(this);
+        var productClasses = $product.attr('class').split(' ');
+        var hasMatchingCollection = false;
+
+        // Check if product has any of the selected collection classes
+        for (var i = 0; i < selectedCollections.length; i++) {
+          if (productClasses.indexOf(selectedCollections[i]) !== -1) {
+            hasMatchingCollection = true;
+            break;
+          }
+        }
+
+        if (hasMatchingCollection) {
+          $product.show();
+        } else {
+          $product.hide();
+        }
+      });
+    }
+  }
