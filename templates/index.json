@@ -250,9 +250,14 @@
         "title": "SHOP BY CATEGORIES",
         "description": "",
         "categories": [
-          "roofing",
-          "insulated-eps-roof",
-          "wall"
+          "accessories",
+          "structural-product",
+          "fencing",
+          "outdoor-living",
+          "coolroom",
+          "insulated-wall-panel",
+          "gutter-fascia",
+          "roof"
         ]
       }
     },
