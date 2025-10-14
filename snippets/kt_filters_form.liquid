@@ -12,33 +12,33 @@
         <ul class="product-categories kt--filter-gr-i_ul list-unstyled">
           {%- if block.settings.list_categories_linklist == blank -%}
             {% assign sub_categories = collection.metafields.custom.sub_category.value %}
-              {%- for lin_1 in sub_categories -%}
-                <li class="{% if lin_1.handle == collection.handle %} current-cat{% endif %}">
-                  <div class="custom-control custom-checkbox">
-                    <input
-                      class="custom-control-input collection-checkbox"
-                      id="collection-{{ lin_1.handle }}-{{sc}}"
-                      type="checkbox"
-                      name="collection"
-                      value="{{ lin_1.handle }}"
-                      {% if lin_1.handle == collection.handle %}
-                        checked
-                      {% endif %}
-                    >
-                    <label class="custom-control-label" for="collection-{{ lin_1.handle }}-{{sc}}">
-                      <span class="custom-check-title">{{ lin_1.title }}</span>
-                      <span class="count">({{ lin_1.all_products_count }})</span>
-                    </label>
-                  </div>
-                </li>
-              {%- endfor -%}
+            {%- for lin_1 in sub_categories -%}
+              <li class="{% if lin_1.handle == collection.handle %} current-cat{% endif %}">
+                <div class="custom-control custom-checkbox">
+                  <input
+                    class="custom-control-input collection-checkbox"
+                    id="collection-{{ lin_1.handle }}-{{sc}}"
+                    type="checkbox"
+                    name="collection"
+                    value="{{ lin_1.handle }}"
+                    {% if lin_1.handle == collection.handle %}
+                      checked
+                    {% endif %}
+                  >
+                  <label class="custom-control-label" for="collection-{{ lin_1.handle }}-{{sc}}">
+                    <span class="custom-check-title">{{ lin_1.title }}</span>
+                    <span class="count">({{ lin_1.all_products_count }})</span>
+                  </label>
+                </div>
+              </li>
+            {%- endfor -%}
           {%- else -%}
             {%- assign list_categories_linklist = linklists[block.settings.list_categories_linklist].links -%}
             {%- for lin_1 in list_categories_linklist -%}
               <li class="level-1{%if lin_1.links.size > 0%} level-has-child{%endif%}{% if lin_1.active %} current-cat showAny{% endif %}{%if forloop.first%} opened{%endif%}">
                 <div class="custom-control custom-checkbox">
                   <input
-                    class="custom-control-input"
+                    class="custom-control-input collection-checkbox"
                     id="collection-{{ lin_1.handle }}-{{sc}}"
                     type="checkbox"
                     name="collection"
@@ -65,7 +65,7 @@
                     <li class="level-2{%if lin_2.links.size > 0%} level-has-child{%endif%}{% if lin_2.active %} current-cat{% endif %}">
                       <div class="custom-control custom-checkbox">
                         <input
-                          class="custom-control-input"
+                          class="custom-control-input collection-checkbox"
                           id="collection-{{ lin_2.handle }}-{{sc}}"
                           type="checkbox"
                           name="collection"
@@ -92,7 +92,7 @@
                           <li class="level-3{% if lin_3.active %} current-cat{% endif %}">
                             <div class="custom-control custom-checkbox">
                               <input
-                                class="custom-control-input"
+                                class="custom-control-input collection-checkbox"
                                 id="collection-{{ lin_3.handle }}-{{sc}}"
                                 type="checkbox"
                                 name="collection"
