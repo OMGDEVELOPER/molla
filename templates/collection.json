@@ -74,9 +74,17 @@
         "use_flts": true,
         "filters_type": "sidebar"
       }
+    },
+    "rich_text_mmPXwq": {
+      "type": "rich-text",
+      "name": "Rich text",
+      "settings": {
+        "content": "{{ collection.description }}"
+      }
     }
   },
   "order": [
-    "main"
+    "main",
+    "rich_text_mmPXwq"
   ]
 }
