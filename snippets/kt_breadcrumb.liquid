@@ -38,6 +38,11 @@
         {%- endif -%}
         <li><span>{{ product.title | strip_html }}</span></li>
       {%-elsif template contains 'collection' and collection.handle-%}
+        <li>
+          <a href="/collections/">
+            <span>Collections</span>
+          </a>
+        </li>
         {%- assign parent_collection_handle = collection.metafields.custom.parent_category -%}
         {%- if parent_collection_handle -%}
           {%- assign breadcrumb_collection = collections[parent_collection_handle] -%}
