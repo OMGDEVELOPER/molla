@@ -20,13 +20,17 @@
         </a>
       </li>
       {%-if template contains 'product'-%}
-        {%-if product.collections.size > 0-%}
-        <li>
-          <a title="{{collection.title | default: product.collections.first.title }}" href="{{ collection.url | default: product.collections.first.url }}" itemprop="url">
-            <span>{{ collection.title | default: product.collections.first.title }}</span>
-          </a>
-        </li>
-        {%-endif-%}
+         {%- assign parent_collection_handle = product.collections.first -%}
+         {%- if parent_collection_handle -%}
+          {%- assign breadcrumb_collection = collections[parent_collection_handle] -%}
+          {%- if breadcrumb_collection -%}
+            {%-
+              render 'collection-breadcrumb',
+              collections: collections,
+              collection: breadcrumb_collection,
+            -%}
+          {%- endif -%}
+        {%- endif -%}
         <li><span>{{ product.title | strip_html | truncatewords: 4 }}</span></li>
       {%-elsif template contains 'collection' and collection.handle-%}
         {%- assign parent_collection_handle = collection.metafields.custom.parent_category -%}
