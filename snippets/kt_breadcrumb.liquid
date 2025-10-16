@@ -20,7 +20,7 @@
         </a>
       </li>
       {%-if template contains 'product'-%}
-         {%- assign parent_collection_handle = product.collections.first -%}
+         {%- assign parent_collection_handle = product.collections.first.handle -%}
          {%- if parent_collection_handle -%}
           {%- assign breadcrumb_collection = collections[parent_collection_handle] -%}
           {%- if breadcrumb_collection -%}
