@@ -31,7 +31,7 @@
             -%}
           {%- endif -%}
         {%- endif -%}
-        <li><span>{{ product.title | strip_html | truncatewords: 4 }}</span></li>
+        <li><span>{{ product.title | strip_html }}</span></li>
       {%-elsif template contains 'collection' and collection.handle-%}
         {%- assign parent_collection_handle = collection.metafields.custom.parent_category -%}
         {%- if parent_collection_handle -%}
